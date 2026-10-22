@@ -5,7 +5,7 @@ package main
 // lay_compiler.go` working byte-identically.
 
 import (
-	"github.com/kbelludoo/FloppyURL/lint"
+	"github.com/kbelludoo/agent-go/lint"
 )
 
 // CompileLAY delegates to lint.Compile.

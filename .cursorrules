@@ -1,0 +1,4 @@
+# AI-Memory Integration
+Consulte a documentação e memória do projeto em .ai-memory/
+Verifique .ai-memory/handoff.json ao iniciar e atualize ao concluir grandes tarefas.
+Busca rápida: go run ./cmd/ai-memory search "<query>"

@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kbelludoo/FloppyURL/pkg/knowledge"
+	"github.com/kbelludoo/agent-go/pkg/knowledge"
 )
 
 // PipelineOrchestrator manages the autonomous cycle between VPS error collection,

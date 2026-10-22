@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kbelludoo/FloppyURL/pkg/verifier"
+	"github.com/kbelludoo/agent-go/pkg/verifier"
 )
 
 // ProtectedPorts holds the list of inviolable bot ports that must never be terminated.

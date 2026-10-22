@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/kbelludoo/FloppyURL/pkg/network"
-	"github.com/kbelludoo/FloppyURL/pkg/opencode"
+	"github.com/kbelludoo/agent-go/pkg/network"
+	"github.com/kbelludoo/agent-go/pkg/opencode"
 )
 
 // Router implements an OpenAI-compatible gateway with token compression and auto-fallback.
@@ -23,8 +23,32 @@ type Router struct {
 	acpError error
 }
 
+func loadDotEnv() {
+	for _, p := range []string{".env", "../.env", "../../.env"} {
+		data, err := os.ReadFile(p)
+		if err == nil {
+			for _, line := range strings.Split(string(data), "\n") {
+				line = strings.TrimSpace(line)
+				if line == "" || strings.HasPrefix(line, "#") {
+					continue
+				}
+				parts := strings.SplitN(line, "=", 2)
+				if len(parts) == 2 {
+					k := strings.TrimSpace(parts[0])
+					v := strings.Trim(strings.TrimSpace(parts[1]), `"'`)
+					if os.Getenv(k) == "" {
+						os.Setenv(k, v)
+					}
+				}
+			}
+			break
+		}
+	}
+}
+
 // NewRouter creates and initializes a Router using environment variables.
 func NewRouter() *Router {
+	loadDotEnv()
 	pool := NewPool()
 	acp, acpErr := opencode.NewACPFromEnv()
 
@@ -171,6 +195,27 @@ func NewRouter() *Router {
 			APIKey:     codecraftKey,
 			DefaultMod: ccModel,
 			Active:     true,
+		})
+	}
+
+	// 2.8 AgentRouter Gateway (https://agentrouter.org/v1 - DeepSeek v4 Flash com client spoofing)
+	arKey := os.Getenv("AGENTROUTER_API_KEY")
+	arBase := "https://agentrouter.org/v1"
+	if arKey != "" {
+		arModel := os.Getenv("AGENTROUTER_MODEL")
+		if arModel == "" {
+			arModel = "deepseek-v4-flash"
+		}
+		defaultChain = append(defaultChain, Provider{
+			Name:       "agentrouter-primary",
+			BaseURL:    arBase,
+			APIKey:     arKey,
+			DefaultMod: arModel,
+			Headers: map[string]string{
+				"User-Agent": "codex_cli_rs",
+				"Originator": "codex_cli_rs",
+			},
+			Active: true,
 		})
 	}
 

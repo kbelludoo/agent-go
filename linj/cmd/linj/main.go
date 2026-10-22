@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/kbelludoo/FloppyURL/linj"
+	"github.com/kbelludoo/agent-go/linj"
 )
 
 func main() {

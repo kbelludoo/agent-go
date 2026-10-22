@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/kbelludoo/FloppyURL/pkg/knowledge"
+	"github.com/kbelludoo/agent-go/pkg/knowledge"
 )
 
 func getRSS() uint64 {

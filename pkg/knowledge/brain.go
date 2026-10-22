@@ -12,6 +12,9 @@ import (
 	"sort"
 	"strings"
 	"sync"
+	"unsafe"
+
+	"github.com/kbelludoo/agent-go/pkg/neural"
 )
 
 const (
@@ -114,23 +117,12 @@ func (b *Brain) TotalChunks() int {
 	return len(b.chunks) + b.totalOnDisk
 }
 
-// CosineSimilarity calculates the normalized dot product between two vectors.
+// CosineSimilarity calculates the normalized dot product between two vectors using pure AVX2 Assembly.
 func CosineSimilarity(a, b []float32) float64 {
 	if len(a) == 0 || len(b) == 0 || len(a) != len(b) {
 		return 0
 	}
-	var dot, normA, normB float64
-	for i := range a {
-		ai := float64(a[i])
-		bi := float64(b[i])
-		dot += ai * bi
-		normA += ai * ai
-		normB += bi * bi
-	}
-	if normA == 0 || normB == 0 {
-		return 0
-	}
-	return dot / (math.Sqrt(normA) * math.Sqrt(normB))
+	return float64(neural.CosineSimilarity(a, b))
 }
 
 // SearchByVector performs Cosine similarity search (using on-demand streaming if configured, or in-memory).
@@ -668,34 +660,9 @@ func SearchOnDemand(filePath string, queryVec []float32, topK int) ([]SearchResu
 			break
 		}
 
-		// Fast Cosine similarity with 4x unrolling
-		var dot, normB float64
-		k := 0
-		for ; k <= int(dim)-4; k += 4 {
-			b0 := binary.LittleEndian.Uint32(vecBuf[k*4 : (k+1)*4])
-			b1 := binary.LittleEndian.Uint32(vecBuf[(k+1)*4 : (k+2)*4])
-			b2 := binary.LittleEndian.Uint32(vecBuf[(k+2)*4 : (k+3)*4])
-			b3 := binary.LittleEndian.Uint32(vecBuf[(k+3)*4 : (k+4)*4])
-
-			f0 := float64(math.Float32frombits(b0))
-			f1 := float64(math.Float32frombits(b1))
-			f2 := float64(math.Float32frombits(b2))
-			f3 := float64(math.Float32frombits(b3))
-
-			dot += float64(queryVec[k])*f0 + float64(queryVec[k+1])*f1 + float64(queryVec[k+2])*f2 + float64(queryVec[k+3])*f3
-			normB += f0*f0 + f1*f1 + f2*f2 + f3*f3
-		}
-		for ; k < int(dim); k++ {
-			b := binary.LittleEndian.Uint32(vecBuf[k*4 : (k+1)*4])
-			f := float64(math.Float32frombits(b))
-			dot += float64(queryVec[k]) * f
-			normB += f * f
-		}
-
-		sim := 0.0
-		if normB > 0 {
-			sim = dot / (normQuery * math.Sqrt(normB))
-		}
+		// Zero-copy cast bytes to float32 slice and compute Cosine Similarity in pure AVX2 Assembly!
+		chunkVec := unsafe.Slice((*float32)(unsafe.Pointer(&vecBuf[0])), dim)
+		sim := float64(neural.CosineSimilarity(queryVec, chunkVec))
 
 		// Keep top-K candidates
 		if len(candidates) < topK {

@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/kbelludoo/FloppyURL/pkg/opencode"
+	"github.com/kbelludoo/agent-go/pkg/opencode"
 )
 
 func main() {

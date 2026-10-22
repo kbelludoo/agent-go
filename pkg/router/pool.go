@@ -12,7 +12,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/kbelludoo/FloppyURL/pkg/network"
+	"github.com/kbelludoo/agent-go/pkg/network"
 	"golang.org/x/net/proxy"
 )
 
@@ -36,6 +36,7 @@ type Provider struct {
 	DefaultMod string
 	Active     bool
 	LocalIP    net.IP
+	Headers    map[string]string
 	// Circuit breaker metrics
 	failCount  int64
 	lastFailed time.Time
@@ -163,6 +164,9 @@ func (p *Pool) ForwardWithFallback(ctx context.Context, modelAlias string, reqMa
 		httpReq.Header.Set("Content-Type", "application/json")
 		httpReq.Header.Set("Authorization", "Bearer "+prov.APIKey)
 		httpReq.Header.Set("User-Agent", "RouterGo/1.0 (FloppyURL-Omni)")
+		for k, v := range prov.Headers {
+			httpReq.Header.Set(k, v)
+		}
 
 		// Automatic IP Egress rotation: Bind to dedicated LocalIP if set, else alternate SP1/SP2
 		clientToUse := p.client

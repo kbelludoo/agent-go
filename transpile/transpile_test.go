@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kbelludoo/FloppyURL/lint"
+	"github.com/kbelludoo/agent-go/lint"
 )
 
 func TestHTMLToLayTranspile(t *testing.T) {

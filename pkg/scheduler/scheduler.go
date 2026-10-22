@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kbelludoo/FloppyURL/pkg/watchdog"
+	"github.com/kbelludoo/agent-go/pkg/watchdog"
 )
 
 // ScheduledTask defines a pending or recurring scheduled intention.

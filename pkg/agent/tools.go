@@ -12,16 +12,16 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kbelludoo/FloppyURL/pkg/knowledge"
-	"github.com/kbelludoo/FloppyURL/pkg/memory"
-	"github.com/kbelludoo/FloppyURL/pkg/navigator"
-	"github.com/kbelludoo/FloppyURL/pkg/neural"
-	"github.com/kbelludoo/FloppyURL/pkg/scheduler"
-	"github.com/kbelludoo/FloppyURL/pkg/server"
-	"github.com/kbelludoo/FloppyURL/pkg/skills"
-	"github.com/kbelludoo/FloppyURL/pkg/subagent"
-	"github.com/kbelludoo/FloppyURL/pkg/verifier"
-	"github.com/kbelludoo/FloppyURL/pkg/watchdog"
+	"github.com/kbelludoo/agent-go/pkg/knowledge"
+	"github.com/kbelludoo/agent-go/pkg/memory"
+	"github.com/kbelludoo/agent-go/pkg/navigator"
+	"github.com/kbelludoo/agent-go/pkg/neural"
+	"github.com/kbelludoo/agent-go/pkg/scheduler"
+	"github.com/kbelludoo/agent-go/pkg/server"
+	"github.com/kbelludoo/agent-go/pkg/skills"
+	"github.com/kbelludoo/agent-go/pkg/subagent"
+	"github.com/kbelludoo/agent-go/pkg/verifier"
+	"github.com/kbelludoo/agent-go/pkg/watchdog"
 )
 
 var globalNavigator = navigator.NewAutonomousNavigator()

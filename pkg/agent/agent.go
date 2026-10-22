@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/kbelludoo/FloppyURL/pkg/memory"
-	"github.com/kbelludoo/FloppyURL/pkg/skills"
+	"github.com/kbelludoo/agent-go/pkg/memory"
+	"github.com/kbelludoo/agent-go/pkg/skills"
 )
 
 const systemPromptTemplate = `You are a powerful server-side AI agent running inside FloppyURL — a lightweight Go web server.

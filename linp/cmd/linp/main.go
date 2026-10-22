@@ -8,7 +8,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/kbelludoo/FloppyURL/linp"
+	"github.com/kbelludoo/agent-go/linp"
 )
 
 func main() {

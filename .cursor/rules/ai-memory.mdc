@@ -1,0 +1,15 @@
+---
+description: AI-Memory Cross-Agent Wiki & Handoff Integration
+globs: *
+alwaysApply: true
+---
+
+# AI-Memory (Cursor Agent Instructions)
+
+You are operating within a project that uses **ai-memory** (Git-backed Markdown Wiki with SQLite FTS5).
+
+## Guidelines:
+1. **Read Active Context**: Check `.ai-memory/handoff.json` to pick up exactly where other agents (Antigravity, OpenCode, Agent-Go) left off.
+2. **Knowledge Wiki**: Key project architecture, stack constraints, and decisions are stored as Markdown in `.ai-memory/`.
+3. **Fast Memory Search**: Run `ai-memory search "<query>"` or `go run ./cmd/ai-memory search "<query>"` to search past decisions and bot knowledge.
+4. **Handoff On Task Complete**: Before concluding significant milestones, update `.ai-memory/handoff.json` or run `ai-memory handoff write` so the next agent has full context.

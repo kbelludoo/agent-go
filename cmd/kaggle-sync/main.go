@@ -9,7 +9,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/kbelludoo/FloppyURL/pkg/kaggle"
+	"github.com/kbelludoo/agent-go/pkg/kaggle"
 )
 
 func main() {

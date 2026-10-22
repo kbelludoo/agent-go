@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/kbelludoo/FloppyURL/linz"
+	"github.com/kbelludoo/agent-go/linz"
 )
 
 func main() {

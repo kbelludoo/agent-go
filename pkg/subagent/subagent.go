@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kbelludoo/FloppyURL/pkg/memory"
-	"github.com/kbelludoo/FloppyURL/pkg/watchdog"
+	"github.com/kbelludoo/agent-go/pkg/memory"
+	"github.com/kbelludoo/agent-go/pkg/watchdog"
 )
 
 // SubagentRecord tracks the lifecycle and output of a detached subagent goroutine.

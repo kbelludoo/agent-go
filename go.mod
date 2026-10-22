@@ -1,4 +1,4 @@
-module github.com/kbelludoo/FloppyURL
+module github.com/kbelludoo/agent-go
 
 go 1.26.0
 

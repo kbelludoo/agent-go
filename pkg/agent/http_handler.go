@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kbelludoo/FloppyURL/pkg/watchdog"
+	"github.com/kbelludoo/agent-go/pkg/watchdog"
 )
 
 // sessions holds per-session Agents (keyed by X-Session-ID header).

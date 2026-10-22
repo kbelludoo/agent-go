@@ -1,0 +1,5 @@
+# Derived cache files - do not commit to git
+index.db
+index.db-*
+*.tmp
+*.log

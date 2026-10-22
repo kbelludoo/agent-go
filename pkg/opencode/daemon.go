@@ -3,7 +3,6 @@ package opencode
 import (
 	"bytes"
 	"context"
-	"encoding/base64"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -16,33 +15,50 @@ import (
 	"time"
 )
 
-// DaemonClient interacts with the headless OpenCode daemon (opencode serve --port 4096).
+// DaemonClient interacts with the headless OpenCode daemon (opencode serve).
 type DaemonClient struct {
 	BaseURL     string
 	AuthHeader  string
 	Credentials []string // List of credential IDs to rotate
+	Server      *ServerClient
 	rrIndex     uint64
 	client      *http.Client
 	mu          sync.Mutex
 }
 
 // NewDaemonClient creates a daemon client connected to the local opencode serve instance.
+// It automatically attempts to discover a running instance via DiscoverLocalService("").
+// If discovery fails or is overridden by OPENCODE_DAEMON_URL, it falls back to env vars or default.
 func NewDaemonClient() *DaemonClient {
 	baseURL := os.Getenv("OPENCODE_DAEMON_URL")
+	password := os.Getenv("OPENCODE_SERVER_PASSWORD")
+
+	// 1. Auto-discover local service if not explicitly specified via environment
+	if baseURL == "" {
+		if reg, err := DiscoverLocalService(""); err == nil && reg.URL != "" {
+			baseURL = reg.URL
+			if password == "" {
+				password = reg.Password
+			}
+			log.Printf("[opencode-daemon] Auto-descoberto OpenCode local em %s (PID %d)", baseURL, reg.PID)
+		}
+	}
+
 	if baseURL == "" {
 		baseURL = "http://127.0.0.1:4096"
 	}
 	baseURL = strings.TrimRight(baseURL, "/")
 
-	password := os.Getenv("OPENCODE_SERVER_PASSWORD")
 	if password == "" {
 		password = "opencode_agent_secret_2026"
 	}
-	auth := base64.StdEncoding.EncodeToString([]byte("opencode:" + password))
+	authHeader := BasicAuthHeader(DefaultUsername, password)
+	serverClient := NewServerClient(baseURL, password)
 
 	dc := &DaemonClient{
 		BaseURL:    baseURL,
-		AuthHeader: "Basic " + auth,
+		AuthHeader: authHeader,
+		Server:     serverClient,
 		client:     &http.Client{Timeout: 90 * time.Second},
 	}
 
@@ -65,6 +81,13 @@ func NewDaemonClient() *DaemonClient {
 
 // IsAvailable checks if the OpenCode daemon is online and responsive.
 func (d *DaemonClient) IsAvailable() bool {
+	if d.Server != nil {
+		ctx, cancel := context.WithTimeout(context.Background(), 2*time.Second)
+		defer cancel()
+		_, err := d.Server.Probe(ctx)
+		return err == nil
+	}
+
 	req, err := http.NewRequest(http.MethodGet, d.BaseURL+"/api/info", nil)
 	if err != nil {
 		return false

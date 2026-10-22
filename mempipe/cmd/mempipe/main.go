@@ -11,7 +11,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/kbelludoo/FloppyURL/mempipe"
+	"github.com/kbelludoo/agent-go/mempipe"
 )
 
 func main() {

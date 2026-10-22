@@ -20,7 +20,7 @@ import (
 
 	"github.com/tdewolff/minify/v2"
 	minifyHtml "github.com/tdewolff/minify/v2/html"
-	"github.com/kbelludoo/FloppyURL/pkg/watchdog"
+	"github.com/kbelludoo/agent-go/pkg/watchdog"
 )
 
 

@@ -14,8 +14,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/kbelludoo/FloppyURL/pkg/network"
-	"github.com/kbelludoo/FloppyURL/pkg/opencode"
+	"github.com/kbelludoo/agent-go/pkg/network"
+	"github.com/kbelludoo/agent-go/pkg/opencode"
 )
 
 var nvidiaHTTPClient = &http.Client{
@@ -126,7 +126,31 @@ func (c *LLMClient) SetModel(model string) {
 	c.Providers[0].Model = model
 }
 
+func loadDotEnv() {
+	for _, p := range []string{".env", "../.env", "../../.env"} {
+		data, err := os.ReadFile(p)
+		if err == nil {
+			for _, line := range strings.Split(string(data), "\n") {
+				line = strings.TrimSpace(line)
+				if line == "" || strings.HasPrefix(line, "#") {
+					continue
+				}
+				parts := strings.SplitN(line, "=", 2)
+				if len(parts) == 2 {
+					k := strings.TrimSpace(parts[0])
+					v := strings.Trim(strings.TrimSpace(parts[1]), `"'`)
+					if os.Getenv(k) == "" {
+						os.Setenv(k, v)
+					}
+				}
+			}
+			break
+		}
+	}
+}
+
 func NewLLMClient(baseURL, apiKey, model string) *LLMClient {
+	loadDotEnv()
 	// ACP owns the complete agent turn, including provider auth and tools.
 	// Do not initialize direct providers or account rotation in this mode.
 	acp, acpErr := opencode.NewACPFromEnv()
@@ -332,6 +356,24 @@ func NewLLMClient(baseURL, apiKey, model string) *LLMClient {
 		}
 	}
 
+	// 2.8 AgentRouter Gateway (https://agentrouter.org/v1 - DeepSeek v4 Flash, GPT, Claude com client spoofing)
+	if arKey := os.Getenv("AGENTROUTER_API_KEY"); arKey != "" {
+		arModel := os.Getenv("AGENTROUTER_MODEL")
+		if arModel == "" {
+			arModel = "deepseek-v4-flash"
+		}
+		providers = append(providers, UpstreamProvider{
+			Name:    "agentrouter-primary",
+			BaseURL: "https://agentrouter.org/v1",
+			APIKey:  arKey,
+			Model:   arModel,
+			Headers: map[string]string{
+				"User-Agent": "codex_cli_rs",
+				"Originator": "codex_cli_rs",
+			},
+		})
+	}
+
 	// 3. Fallback Kilo Gateway (Modelo 100% Free: kilo-auto/free)
 	if kiloKey := os.Getenv("KILO_API_KEY"); kiloKey != "" {
 		providers = append(providers, UpstreamProvider{
@@ -527,6 +569,9 @@ func (c *LLMClient) completeWithProvider(ctx context.Context, prov UpstreamProvi
 	} else if prov.NoRotate {
 		httpClient = &http.Client{}
 	}
+	if httpClient == nil {
+		httpClient = http.DefaultClient
+	}
 
 	maxAttempts := 1
 	if isNvidia {
@@ -559,7 +604,7 @@ func (c *LLMClient) completeWithProvider(ctx context.Context, prov UpstreamProvi
 		if prov.APIKey != "" && httpReq.Header.Get("Authorization") == "" && httpReq.Header.Get("X-Api-Key") == "" {
 			httpReq.Header.Set("Authorization", "Bearer "+prov.APIKey)
 		}
-		httpReq.Header.Set("HTTP-Referer", "https://github.com/kbelludoo/FloppyURL")
+		httpReq.Header.Set("HTTP-Referer", "https://github.com/kbelludoo/agent-go")
 		httpReq.Header.Set("X-Title", "Agent Go")
 
 		resp, err = httpClient.Do(httpReq)

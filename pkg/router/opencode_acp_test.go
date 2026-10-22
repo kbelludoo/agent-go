@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kbelludoo/FloppyURL/pkg/opencode"
+	"github.com/kbelludoo/agent-go/pkg/opencode"
 	acp "github.com/coder/acp-go-sdk"
 	opencodesdk "github.com/ethpandaops/opencode-agent-sdk-go"
 )

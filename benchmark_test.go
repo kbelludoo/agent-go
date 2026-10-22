@@ -13,8 +13,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kbelludoo/FloppyURL/mempipe"
-	"github.com/kbelludoo/FloppyURL/transpile"
+	"github.com/kbelludoo/agent-go/mempipe"
+	"github.com/kbelludoo/agent-go/transpile"
 	"github.com/andybalholm/brotli"
 )
 

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/kbelludoo/FloppyURL/pkg/knowledge"
+	"github.com/kbelludoo/agent-go/pkg/knowledge"
 )
 
 func main() {

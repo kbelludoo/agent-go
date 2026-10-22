@@ -14,7 +14,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kbelludoo/FloppyURL/pkg/watchdog"
+	"github.com/kbelludoo/agent-go/pkg/watchdog"
 )
 
 // SkillTool defines a tool provided by a skill.
