@@ -725,6 +725,9 @@ func getEvolutionEngine() *neural.EvolutionEngine {
 // ExecuteTool runs the requested tool by name with JSON arguments.
 func ExecuteTool(ctx context.Context, name, arguments string) (string, error) {
 
+	if res, handled, err := executeGraphTool(ctx, name, arguments); handled {
+		return res, err
+	}
 	// 1. Check if tool is handled by an active modular skill
 	if res, handled, err := skills.GetRegistry().ExecuteActiveTool(ctx, name, arguments); handled {
 		return res, err
