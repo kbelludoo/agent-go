@@ -3,6 +3,10 @@
     "ai-memory": {
       "command": "go",
       "args": ["run", "./cmd/ai-memory", "mcp"]
+    },
+    "go-graphify": {
+      "command": "go",
+      "args": ["run", "./cmd/go-graphify", "mcp"]
     }
   }
 }
