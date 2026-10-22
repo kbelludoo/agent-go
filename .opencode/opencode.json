@@ -3,13 +3,13 @@
   "mcp": {
     "go-graphify": {
       "type": "local",
-      "command": "go",
-      "args": ["run", "./cmd/go-graphify", "mcp"]
+      "command": "go-graphify",
+      "args": ["mcp"]
     },
     "ai-memory": {
       "type": "local",
-      "command": "go",
-      "args": ["run", "./cmd/ai-memory", "mcp"]
+      "command": "ai-memory",
+      "args": ["mcp"]
     }
   }
 }
