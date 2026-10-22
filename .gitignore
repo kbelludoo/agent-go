@@ -19,10 +19,21 @@ session/
 kaggle.json
 .scratch/
 
+# Python banido (repositório 100% Go)
+*.py
+*.pyc
+*.ipynb
+__pycache__/
+
 # Binários compilados
-agent-go-linux
+*-linux
+ai-memory
+ai-memory.exe
+opencode-connect
+opencode-connect.exe
+agent-go
+agent-go.exe
 floppy-server
-floppy-server-linux
 benchmark_brain_linux
 *.bin
 *.lnk
