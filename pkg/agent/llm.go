@@ -68,6 +68,7 @@ type UpstreamProvider struct {
 	Headers  map[string]string
 	NoRotate bool
 	LocalIP  net.IP
+	Client   *http.Client
 }
 
 type LLMClient struct {
@@ -202,49 +203,31 @@ func NewLLMClient(baseURL, apiKey, model string) *LLMClient {
 		}
 	}
 
-	// 0.1 OpenCode Multi-Account Slots with Dedicated IP Binding
+	// 0.1 OpenCode Multi-Account Slots with Dedicated 1:1 IP Binding (1 token = 1 IP exclusivo)
 	if tokensEnv := os.Getenv("OPENCODE_TOKENS"); tokensEnv != "" {
-		tokens := strings.Split(tokensEnv, ",")
-		var ips []net.IP
-		if ipsEnv := os.Getenv("ROTATING_IPS"); ipsEnv != "" {
-			for _, part := range strings.Split(ipsEnv, ",") {
-				if ip := net.ParseIP(strings.TrimSpace(part)); ip != nil {
-					ips = append(ips, ip)
-				}
-			}
-		}
-
+		bindings := network.ParseTokenIPBindings(tokensEnv, os.Getenv("ROTATING_IPS"))
 		defaultModel := os.Getenv("OPENCODE_MODEL")
 		if defaultModel == "" {
 			defaultModel = "deepseek-v4.1-flash-free"
 		}
 
-		loadedSlots := 0
-		for i, tok := range tokens {
-			tok = strings.TrimSpace(tok)
-			if tok == "" {
-				continue
-			}
-			var boundIP net.IP
-			if len(ips) > 0 {
-				boundIP = ips[i%len(ips)]
-			}
-			provName := fmt.Sprintf("opencode-slot-%d", i+1)
-			if boundIP != nil {
-				provName = fmt.Sprintf("opencode-slot-%d-%s", i+1, boundIP.String())
+		for _, b := range bindings {
+			provName := fmt.Sprintf("opencode-slot-%d", b.Index)
+			if b.LocalIP != nil {
+				provName = fmt.Sprintf("opencode-slot-%d-%s", b.Index, b.LocalIP.String())
 			}
 			providers = append(providers, UpstreamProvider{
 				Name:     provName,
 				BaseURL:  "https://opencode.ai/zen/v1",
-				APIKey:   tok,
+				APIKey:   b.Token,
 				Model:    defaultModel,
-				LocalIP:  boundIP,
+				LocalIP:  b.LocalIP,
+				Client:   network.NewDedicatedIPClient(b.LocalIP, 35*time.Second),
 				NoRotate: true,
 			})
-			loadedSlots++
 		}
-		if loadedSlots > 0 {
-			log.Printf("[llm] opencode: %d conta(s) configurada(s) com binding de IP dedicado", loadedSlots)
+		if len(bindings) > 0 {
+			log.Printf("[llm] opencode: %d conta(s) configurada(s) com binding 1:1 de IP dedicado", len(bindings))
 		}
 	}
 
@@ -372,6 +355,37 @@ func NewLLMClient(baseURL, apiKey, model string) *LLMClient {
 				"Originator": "codex_cli_rs",
 			},
 		})
+	}
+
+	// 2.8.1 AgentRouter Multi-Account Slots with Dedicated 1:1 IP Binding (1 token = 1 IP exclusivo)
+	if arTokens := os.Getenv("AGENTROUTER_TOKENS"); arTokens != "" {
+		bindings := network.ParseTokenIPBindings(arTokens, os.Getenv("ROTATING_IPS"))
+		arModel := os.Getenv("AGENTROUTER_MODEL")
+		if arModel == "" {
+			arModel = "deepseek-v4-flash"
+		}
+		for _, b := range bindings {
+			provName := fmt.Sprintf("agentrouter-slot-%d", b.Index)
+			if b.LocalIP != nil {
+				provName = fmt.Sprintf("agentrouter-slot-%d-%s", b.Index, b.LocalIP.String())
+			}
+			providers = append(providers, UpstreamProvider{
+				Name:     provName,
+				BaseURL:  "https://agentrouter.org/v1",
+				APIKey:   b.Token,
+				Model:    arModel,
+				LocalIP:  b.LocalIP,
+				Client:   network.NewDedicatedIPClient(b.LocalIP, 35*time.Second),
+				Headers: map[string]string{
+					"User-Agent": "codex_cli_rs",
+					"Originator": "codex_cli_rs",
+				},
+				NoRotate: true,
+			})
+		}
+		if len(bindings) > 0 {
+			log.Printf("[llm] agentrouter: %d conta(s) configurada(s) com binding 1:1 de IP dedicado", len(bindings))
+		}
 	}
 
 	// 3. Fallback Kilo Gateway (Modelo 100% Free: kilo-auto/free)
@@ -549,23 +563,12 @@ func (c *LLMClient) completeWithProvider(ctx context.Context, prov UpstreamProvi
 	defer provCancel()
 
 	httpClient := c.HTTPClient
-	if isNvidia {
+	if prov.Client != nil {
+		httpClient = prov.Client
+	} else if isNvidia {
 		httpClient = nvidiaHTTPClient
 	} else if prov.LocalIP != nil {
-		httpClient = &http.Client{
-			Transport: &http.Transport{
-				DialContext: func(ctx context.Context, network, addr string) (net.Conn, error) {
-					dialer := &net.Dialer{
-						Timeout:   15 * time.Second,
-						KeepAlive: 30 * time.Second,
-						LocalAddr: &net.TCPAddr{IP: prov.LocalIP},
-					}
-					return dialer.DialContext(ctx, network, addr)
-				},
-				DisableKeepAlives: true,
-			},
-			Timeout: 35 * time.Second,
-		}
+		httpClient = network.NewDedicatedIPClient(prov.LocalIP, 35*time.Second)
 	} else if prov.NoRotate {
 		httpClient = &http.Client{}
 	}

@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"io"
 	"log"
-	"net"
 	"net/http"
 	"os"
 	"strings"
@@ -83,49 +82,30 @@ func NewRouter() *Router {
 	// Setup primary provider chain com modelos 100% gratuitos
 	var defaultChain []Provider
 
-	// 0. OpenCode Multi-Account Slots with Dedicated IP Binding
+	// 0. OpenCode Multi-Account Slots with Dedicated 1:1 IP Binding (1 token = 1 IP exclusivo)
 	if tokensEnv := os.Getenv("OPENCODE_TOKENS"); tokensEnv != "" {
-		tokens := strings.Split(tokensEnv, ",")
-		var ips []net.IP
-		if ipsEnv := os.Getenv("ROTATING_IPS"); ipsEnv != "" {
-			for _, part := range strings.Split(ipsEnv, ",") {
-				if ip := net.ParseIP(strings.TrimSpace(part)); ip != nil {
-					ips = append(ips, ip)
-				}
-			}
-		}
-
+		bindings := network.ParseTokenIPBindings(tokensEnv, os.Getenv("ROTATING_IPS"))
 		defaultModel := os.Getenv("OPENCODE_MODEL")
 		if defaultModel == "" {
 			defaultModel = "deepseek-v4.1-flash-free"
 		}
 
-		loadedSlots := 0
-		for i, tok := range tokens {
-			tok = strings.TrimSpace(tok)
-			if tok == "" {
-				continue
-			}
-			var boundIP net.IP
-			if len(ips) > 0 {
-				boundIP = ips[i%len(ips)]
-			}
-			provName := fmt.Sprintf("opencode-slot-%d", i+1)
-			if boundIP != nil {
-				provName = fmt.Sprintf("opencode-slot-%d-%s", i+1, boundIP.String())
+		for _, b := range bindings {
+			provName := fmt.Sprintf("opencode-slot-%d", b.Index)
+			if b.LocalIP != nil {
+				provName = fmt.Sprintf("opencode-slot-%d-%s", b.Index, b.LocalIP.String())
 			}
 			defaultChain = append(defaultChain, Provider{
 				Name:       provName,
 				BaseURL:    "https://opencode.ai/zen/v1",
-				APIKey:     tok,
+				APIKey:     b.Token,
 				DefaultMod: defaultModel,
-				LocalIP:    boundIP,
+				LocalIP:    b.LocalIP,
 				Active:     true,
 			})
-			loadedSlots++
 		}
-		if loadedSlots > 0 {
-			log.Printf("[RouterGo] opencode: %d conta(s) configurada(s) com binding de IP dedicado no router", loadedSlots)
+		if len(bindings) > 0 {
+			log.Printf("[RouterGo] opencode: %d conta(s) configurada(s) com binding 1:1 de IP dedicado no router", len(bindings))
 		}
 	}
 
