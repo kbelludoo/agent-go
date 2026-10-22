@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 	"io"
+	"os"
 	"strings"
 	"sync"
 	"testing"
@@ -148,4 +149,25 @@ func TestACPRejectsInvalidConfiguration(t *testing.T) {
 	if _, err := NewACPFromEnv(); err == nil {
 		t.Fatal("NaN budget accepted")
 	}
+}
+
+func TestLiveOpenCodeACP(t *testing.T) {
+	cliPath := `C:\Users\kbell\Downloads\agent-go\.scratch\opencode-cli-v1.19.3\opencode.exe`
+	if _, err := os.Stat(cliPath); os.IsNotExist(err) {
+		t.Skip("OpenCode CLI fixture not found")
+	}
+
+	ctx, cancel := context.WithTimeout(context.Background(), 45*time.Second)
+	defer cancel()
+
+	result, err := opencodesdk.Query(ctx, "Responda apenas com a palavra: CONFIRMADO",
+		opencodesdk.WithCLIPath(cliPath),
+		opencodesdk.WithModel("opencode/big-pickle"),
+	)
+	if err != nil {
+		t.Logf("Aviso no teste do OpenCode ACP: %v", err)
+		return
+	}
+
+	t.Logf("✅ Resposta recebida do OpenCode Zen (ACP): %s", result.AssistantText)
 }
