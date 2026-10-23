@@ -1,40 +1,7 @@
 {
-  "last_updated": "2026-10-23T14:23:05Z",
+  "last_updated": "2026-10-23T14:24:12Z",
   "total_quarantine": 36,
   "quarantine_sites": [
-    {
-      "id": 7,
-      "domain": "",
-      "url": "https://pt.wikihow.com/Purificar-%C3%8",
-      "status_code": 504,
-      "error_message": "failed to create request: parse \"https://pt.wikihow.com/Purificar-%C3%8\": invalid URL escape \"%8\"",
-      "first_seen": "2026-10-23T13:03:33Z",
-      "last_seen": "2026-10-23T13:03:33Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to create request: parse \"https://pt.wikihow.com/Purificar-%C3%8\": invalid URL escape \"%8\". Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 17,
-      "domain": "stackoverflow.com",
-      "url": "https://stackoverflow.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:09:22Z",
-      "last_seen": "2026-10-23T13:09:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 19,
-      "domain": "www.bloomberg.com",
-      "url": "https://www.bloomberg.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:16:10Z",
-      "last_seen": "2026-10-23T13:16:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 21,
       "domain": "www.forbes.com",
@@ -395,6 +362,39 @@
       "error_message": "HTTP 403",
       "first_seen": "2026-10-23T13:47:58Z",
       "last_seen": "2026-10-23T13:47:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 7,
+      "domain": "",
+      "url": "https://pt.wikihow.com/Purificar-%C3%8",
+      "status_code": 504,
+      "error_message": "failed to create request: parse \"https://pt.wikihow.com/Purificar-%C3%8\": invalid URL escape \"%8\"",
+      "first_seen": "2026-10-23T13:03:33Z",
+      "last_seen": "2026-10-23T13:03:33Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to create request: parse \"https://pt.wikihow.com/Purificar-%C3%8\": invalid URL escape \"%8\". Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 17,
+      "domain": "stackoverflow.com",
+      "url": "https://stackoverflow.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:09:22Z",
+      "last_seen": "2026-10-23T13:09:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 19,
+      "domain": "www.bloomberg.com",
+      "url": "https://www.bloomberg.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:16:10Z",
+      "last_seen": "2026-10-23T13:16:10Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
