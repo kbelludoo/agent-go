@@ -1,7 +1,24 @@
 {
-  "last_updated": "2026-10-23T15:05:49Z",
-  "total_distinct_sites": 711,
+  "last_updated": "2026-10-23T15:06:49Z",
+  "total_distinct_sites": 716,
   "distinct_sites": [
+    {
+      "id": 49,
+      "domain": "kafka.apache.org",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://kafka.apache.org/",
+      "title": "Apache Kafka",
+      "status_code": 200,
+      "duration_ms": 16,
+      "raw_bytes": 24230,
+      "markdown_bytes": 7534,
+      "token_reduction_pct": 68.90631448617417,
+      "interactive_elements": 82,
+      "rss_mib": 22.91796875,
+      "first_seen": "2026-10-23T12:53:33Z",
+      "ai_summary": "O site oficial do Apache Kafka apresenta a plataforma open-source de streaming de eventos distribuídos, usada para pipelines de dados, análises em tempo real e integração de sistemas em alta escala. Ele oferece downloads, documentação, casos de uso, comunidade e recursos para aprender e adotar o Kafka.",
+      "ai_provider": "stop"
+    },
     {
       "id": 449,
       "domain": "assine.uol.com.br",
@@ -807,6 +824,21 @@
       "first_seen": "2026-10-23T15:01:34Z",
       "ai_summary": "Este é o blog técnico da Wikimedia (Diff), que reúne histórias da comunidade técnica sobre o software e a infraestrutura de código aberto por trás da Wikipédia e dos demais projetos de conhecimento livre. Ele oferece artigos e atualizações sobre tecnologia, desempenho, APIs e iniciativas técnicas da Wikimedia.",
       "ai_provider": "stop"
+    },
+    {
+      "id": 711,
+      "domain": "search.scielo.org",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://search.scielo.org/?q=*\u0026lang=en\u0026filter[in][]=scl",
+      "title": "Establishing a secure connection ...",
+      "status_code": 403,
+      "duration_ms": 63,
+      "raw_bytes": 2183,
+      "markdown_bytes": 82,
+      "token_reduction_pct": 96.2437013284471,
+      "interactive_elements": 0,
+      "rss_mib": 26.4453125,
+      "first_seen": "2026-10-23T15:05:57Z"
     },
     {
       "id": 26,
@@ -1831,6 +1863,23 @@
       "rss_mib": 22.4453125,
       "first_seen": "2026-10-23T14:37:34Z",
       "ai_summary": "A Suno Research é uma plataforma de pesquisa e conteúdo sobre investimentos que oferece recomendações, análises e cases para ajudar pequenos e médios investidores a ter sucesso na bolsa e em renda variável. Ela reúne relatórios, cursos, ferramentas e assinaturas voltadas ao mercado financeiro.",
+      "ai_provider": "stop"
+    },
+    {
+      "id": 712,
+      "domain": "slashdot.org",
+      "category": "Comunidades \u0026 Notícias Tech",
+      "url": "https://slashdot.org/recent",
+      "title": "Slashdot: News for nerds, stuff that matters, \u0026 software",
+      "status_code": 200,
+      "duration_ms": 3090,
+      "raw_bytes": 153665,
+      "markdown_bytes": 44104,
+      "token_reduction_pct": 71.29860410633522,
+      "interactive_elements": 216,
+      "rss_mib": 27.5859375,
+      "first_seen": "2026-10-23T15:06:13Z",
+      "ai_summary": "O Slashdot é um site de notícias e agregação de conteúdo voltado para tecnologia, ciência e cultura \"nerd\", onde os próprios usuários enviam e discutem histórias. Ele oferece notícias, enquetes, seções de tópicos e um sistema comunitário de moderação de comentários.",
       "ai_provider": "stop"
     },
     {
@@ -5756,6 +5805,23 @@
       "first_seen": "2026-10-23T14:47:34Z"
     },
     {
+      "id": 714,
+      "domain": "www.sublimehq.com",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://www.sublimehq.com/store/text",
+      "title": "Buy - Sublime Text",
+      "status_code": 200,
+      "duration_ms": 845,
+      "raw_bytes": 18731,
+      "markdown_bytes": 1408,
+      "token_reduction_pct": 92.48304949015001,
+      "interactive_elements": 28,
+      "rss_mib": 27.11328125,
+      "first_seen": "2026-10-23T15:06:34Z",
+      "ai_summary": "Esta é a página de compra do Sublime Text, onde se pode adquirir licenças pessoais ou empresariais do editor, inclusive em bundle com o Sublime Merge. A licença pessoal custa US$99 em pagamento único com 3 anos de atualizações; a empresarial é uma assinatura anual por assento.",
+      "ai_provider": "stop"
+    },
+    {
       "id": 19,
       "domain": "ge.globo.com",
       "category": "Documentações \u0026 Web Aberta",
@@ -8627,6 +8693,23 @@
       "first_seen": "2026-10-23T15:02:47Z"
     },
     {
+      "id": 715,
+      "domain": "servicos.terra.com.br",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://servicos.terra.com.br/para-voce/terra-mail/?utm_source=portal-terra\u0026utm_medium=espaco-fixo\u0026utm_campaign=header-headerds\u0026utm_content=lp\u0026utm_term=terra-mail-b2c_pos-01\u0026cdConvenio=CVTR00001907",
+      "title": "E-mail Seguro e Confiável para Você | Terra Mail",
+      "status_code": 200,
+      "duration_ms": 287,
+      "raw_bytes": 229071,
+      "markdown_bytes": 11710,
+      "token_reduction_pct": 94.88804781050418,
+      "interactive_elements": 70,
+      "rss_mib": 27.51171875,
+      "first_seen": "2026-10-23T15:06:46Z",
+      "ai_summary": "O Terra Mail é um serviço de e-mail pago da Terra que oferece segurança, antivírus, antispam e suporte 24h, com funções integradas como calendário. A página apresenta os planos do serviço, incluindo uma promoção de até 6 meses grátis no plano anual.",
+      "ai_provider": "stop"
+    },
+    {
       "id": 47,
       "domain": "developer.mozilla.org",
       "category": "Frameworks \u0026 Web Standards",
@@ -11450,6 +11533,23 @@
       "ai_provider": "stop"
     },
     {
+      "id": 713,
+      "domain": "plataforma.stoodi.com.br",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://plataforma.stoodi.com.br/",
+      "title": "Voomp Play - Plataforma de cursos",
+      "status_code": 200,
+      "duration_ms": 226,
+      "raw_bytes": 13552,
+      "markdown_bytes": 0,
+      "token_reduction_pct": 100,
+      "interactive_elements": 0,
+      "rss_mib": 24.7265625,
+      "first_seen": "2026-10-23T15:06:22Z",
+      "ai_summary": "Com base no título e no trecho disponíveis, o site parece ser a **Voomp Play**, uma plataforma online de cursos (hospedada no domínio Stoodi) voltada para o ensino/aprendizagem via videoaulas e conteúdos digitais. O acesso ao conteúdo provavelmente exige login, e não há detalhes visíveis sobre catálogo, preços ou áreas oferecidas.",
+      "ai_provider": "stop"
+    },
+    {
       "id": 1,
       "domain": "en.wikipedia.org",
       "category": "Ciência \u0026 Enciclopédias",
@@ -11898,23 +11998,6 @@
       "rss_mib": 25.82421875,
       "first_seen": "2026-10-23T15:02:22Z",
       "ai_summary": "O site é a documentação oficial do MySQL, reunindo manuais de referência, notas de versão e guias dos produtos e serviços MySQL. Ele oferece recursos sobre MySQL Server, HeatWave, conectores, ferramentas empresariais e soluções em nuvem.",
-      "ai_provider": "stop"
-    },
-    {
-      "id": 49,
-      "domain": "kafka.apache.org",
-      "category": "Documentações \u0026 Web Aberta",
-      "url": "https://kafka.apache.org/",
-      "title": "Apache Kafka",
-      "status_code": 200,
-      "duration_ms": 16,
-      "raw_bytes": 24230,
-      "markdown_bytes": 7534,
-      "token_reduction_pct": 68.90631448617417,
-      "interactive_elements": 82,
-      "rss_mib": 22.91796875,
-      "first_seen": "2026-10-23T12:53:33Z",
-      "ai_summary": "O site oficial do Apache Kafka apresenta a plataforma open-source de streaming de eventos distribuídos, usada para pipelines de dados, análises em tempo real e integração de sistemas em alta escala. Ele oferece downloads, documentação, casos de uso, comunidade e recursos para aprender e adotar o Kafka.",
       "ai_provider": "stop"
     }
   ]
