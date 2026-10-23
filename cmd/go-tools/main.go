@@ -17,6 +17,7 @@ import (
 	"github.com/kbelludoo/agent-go/pkg/depaudit"
 	"github.com/kbelludoo/agent-go/pkg/diffsummary"
 	"github.com/kbelludoo/agent-go/pkg/graph"
+	"github.com/kbelludoo/agent-go/pkg/hindsight"
 	"github.com/kbelludoo/agent-go/pkg/jsonlquery"
 	"github.com/kbelludoo/agent-go/pkg/jsonrepair"
 	"github.com/kbelludoo/agent-go/pkg/logdedup"
@@ -468,6 +469,80 @@ func main() {
 			os.Exit(1)
 		}
 
+	// 22. Hindsight - Long-Term Cognitive Memory (Retain / Recall / Reflect)
+	case "memory", "hindsight":
+		if len(os.Args) < 3 {
+			fmt.Fprintln(os.Stderr, "Uso:\n  go-tools memory retain <bank> <type> <subject> <content>\n  go-tools memory recall <bank> <query> [topK]\n  go-tools memory reflect <bank>")
+			os.Exit(1)
+		}
+		sub := os.Args[2]
+		homeDir, _ := os.UserHomeDir()
+		dbPath := os.Getenv("HINDSIGHT_DB")
+		if dbPath == "" {
+			dbPath = homeDir + "/.hindsight.db"
+		}
+		store, err := hindsight.Open(dbPath)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "Erro ao abrir banco de memória Hindsight: %v\n", err)
+			os.Exit(1)
+		}
+		defer store.Close()
+
+		switch sub {
+		case "retain":
+			if len(os.Args) < 7 {
+				fmt.Fprintln(os.Stderr, "Uso: go-tools memory retain <bank> <fact|preference|lesson|decision> <subject> <content>")
+				os.Exit(1)
+			}
+			bank := os.Args[3]
+			fType := hindsight.FactType(os.Args[4])
+			subject := os.Args[5]
+			content := os.Args[6]
+			m, err := store.Retain(bank, fType, subject, content)
+			if err != nil {
+				fmt.Fprintf(os.Stderr, "Erro ao reter memória: %v\n", err)
+				os.Exit(1)
+			}
+			fmt.Printf("🧠 [Hindsight Retain] Memória %s registrada (banco: %s, tipo: %s, subject: %s)\n",
+				m.ID, m.Bank, m.Type, m.Subject)
+
+		case "recall":
+			if len(os.Args) < 5 {
+				fmt.Fprintln(os.Stderr, "Uso: go-tools memory recall <bank> <query> [topK]")
+				os.Exit(1)
+			}
+			bank := os.Args[3]
+			query := os.Args[4]
+			topK := 5
+			if len(os.Args) > 5 {
+				if k, err := strconv.Atoi(os.Args[5]); err == nil && k > 0 {
+					topK = k
+				}
+			}
+			hits, err := store.Recall(bank, query, topK)
+			if err != nil {
+				fmt.Fprintf(os.Stderr, "Erro ao recordar memória: %v\n", err)
+				os.Exit(1)
+			}
+			fmt.Println(hindsight.FormatRecalled(hits))
+
+		case "reflect":
+			bank := "default"
+			if len(os.Args) > 3 {
+				bank = os.Args[3]
+			}
+			report, err := store.Reflect(bank)
+			if err != nil {
+				fmt.Fprintf(os.Stderr, "Erro na reflexão de memória: %v\n", err)
+				os.Exit(1)
+			}
+			fmt.Println(report)
+
+		default:
+			fmt.Fprintf(os.Stderr, "Ação de memória desconhecida: %s (use retain, recall ou reflect)\n", sub)
+			os.Exit(1)
+		}
+
 	case "help", "--help", "-h":
 		printUsage()
 
@@ -507,7 +582,8 @@ COMANDOS DISPONÍVEIS:
   go-tools dep-audit [dir]                     Gera manifesto compacto de dependências (evita alucinação de libs)
   go-tools jsonl-query <arquivo.jsonl> [termo] Filtra transcripts .jsonl via streaming sem gastar RAM
   go-tools cron-lite <cmd> [retries] [timeout] Executor leve de tarefas agendadas com retry e timeout (< 1MB RAM)
+  go-tools memory retain/recall/reflect        Memória cognitiva persistente Hindsight em Go puro (< 1ms, zero Postgres)
 
-TODAS AS 21 FERRAMENTAS SÃO NATIVAS, COMPILADAS EM BINÁRIO ESTÁTICO SEM DEPENDÊNCIAS.`)
+TODAS AS 22 FERRAMENTAS SÃO NATIVAS, COMPILADAS EM BINÁRIO ESTÁTICO SEM DEPENDÊNCIAS.`)
 	flag.PrintDefaults()
 }
