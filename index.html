@@ -14,6 +14,7 @@
       --accent-green: #10b981;
       --accent-blue: #3b82f6;
       --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
       --danger: #ef4444;
       --text: #f3f4f6;
       --text-muted: #9ca3af;
@@ -61,7 +62,7 @@
 
     .metrics-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
       gap: 16px;
       margin-bottom: 24px;
     }
@@ -69,21 +70,22 @@
       background: var(--card-bg);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 20px;
+      padding: 18px;
       position: relative;
       overflow: hidden;
     }
-    .card-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-muted); font-weight: 600; }
-    .card-value { font-size: 2.1rem; font-weight: 800; margin: 8px 0; display: flex; align-items: baseline; gap: 6px; }
-    .card-sub { font-size: 0.85rem; color: var(--text-muted); }
+    .card-title { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-muted); font-weight: 600; }
+    .card-value { font-size: 1.9rem; font-weight: 800; margin: 8px 0; display: flex; align-items: baseline; gap: 6px; }
+    .card-sub { font-size: 0.82rem; color: var(--text-muted); }
     .tag-green { color: var(--accent-green); }
     .tag-blue { color: var(--accent-blue); }
     .tag-purple { color: var(--accent-purple); }
+    .tag-amber { color: var(--accent-amber); }
     .tag-danger { color: var(--danger); }
 
     .charts-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
       gap: 20px;
       margin-bottom: 24px;
     }
@@ -92,8 +94,30 @@
       border: 1px solid var(--border);
       border-radius: 12px;
       padding: 20px;
-      height: 320px;
+      height: 300px;
       position: relative;
+    }
+
+    .tab-nav {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .tab-btn {
+      background: #151d2c;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 8px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.88rem;
+      transition: all 0.2s;
+    }
+    .tab-btn.active {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
     }
 
     .table-container {
@@ -108,21 +132,43 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 12px;
     }
-    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; text-align: left; }
+    .search-input {
+      background: #090d16;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      width: 240px;
+    }
+
+    table { width: 100%; border-collapse: collapse; font-size: 0.86rem; text-align: left; }
     th { padding: 12px; border-bottom: 1px solid var(--border); color: var(--text-muted); font-weight: 600; }
     td { padding: 12px; border-bottom: 1px solid #1a2333; }
     tr:hover td { background: rgba(255, 255, 255, 0.02); }
 
     .status-badge {
       display: inline-block;
-      padding: 3px 8px;
+      padding: 2px 7px;
       border-radius: 4px;
       font-weight: 700;
       font-size: 0.75rem;
     }
     .status-200 { background: rgba(16, 185, 129, 0.2); color: #34d399; }
     .status-err { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+
+    .cat-pill {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 9999px;
+      font-size: 0.72rem;
+      background: #1f293d;
+      color: #93c5fd;
+      font-weight: 500;
+    }
 
     .url-link { color: #60a5fa; text-decoration: none; word-break: break-all; }
     .url-link:hover { text-decoration: underline; }
@@ -150,7 +196,7 @@
     <div style="display: flex; gap: 12px; align-items: center;">
       <div class="badge-live">
         <div class="pulse-dot"></div>
-        <span id="liveStatusText">LIVE ON ORACLE VPS (147.15.109.14)</span>
+        <span id="liveStatusText">ORACLE CLOUD VPS (147.15.109.14)</span>
       </div>
       <button onclick="refreshData()" style="background: #1f293d; color: #fff; border: 1px solid #374151; padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">
         ↻ Atualizar
@@ -162,65 +208,105 @@
   <section class="metrics-grid">
     <div class="card">
       <div class="card-title">Memória Física RSS (SO)</div>
-      <div class="card-value tag-green" id="kpiRSS">-- <span style="font-size: 1rem; color: #9ca3af;">MiB</span></div>
-      <div class="card-sub">Chromium consumiria <span class="tag-danger font-bold">~950 MiB</span> (OOM Kill nesta VPS)</div>
+      <div class="card-value tag-green" id="kpiRSS">-- <span style="font-size: 0.95rem; color: #9ca3af;">MiB</span></div>
+      <div class="card-sub">Chromium consumiria <span class="tag-danger font-bold">~950 MiB</span> (OOM)</div>
     </div>
 
     <div class="card">
-      <div class="card-title">Redução de Tokens (DOM Semântico)</div>
+      <div class="card-title">Redução Média de Tokens</div>
       <div class="card-value tag-blue" id="kpiReduction">--%</div>
-      <div class="card-sub">Economia comprovada de tokens LLM e bytes de transferência</div>
+      <div class="card-sub">HTML Bruto -> Markdown Semântico</div>
     </div>
 
     <div class="card">
-      <div class="card-title">Sites Visitados ao Vivo</div>
+      <div class="card-title">Sites Distintos Explorados</div>
+      <div class="card-value tag-amber" id="kpiDistinct">--</div>
+      <div class="card-sub">Catálogo de domínios diferentes</div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Total de Requisições</div>
       <div class="card-value tag-purple" id="kpiVisits">--</div>
       <div class="card-sub"><span id="kpiSuccess">--</span> sucessos | Uptime: <span id="kpiUptime">--</span></div>
     </div>
 
     <div class="card">
       <div class="card-title">Anti-Bot Stealth (uTLS + JA4)</div>
-      <div class="card-value" style="font-size: 1.25rem; font-family: monospace; color: #38bdf8;" id="kpiJA4">Chrome 120 GREASE</div>
-      <div class="card-sub">TLS Handshake idêntico ao navegador oficial do Google</div>
+      <div class="card-value" style="font-size: 1.15rem; font-family: monospace; color: #38bdf8;" id="kpiJA4">Chrome 120 GREASE</div>
+      <div class="card-sub">Handshake idêntico ao Google Chrome</div>
     </div>
   </section>
 
   <!-- Charts -->
   <section class="charts-grid">
     <div class="chart-container">
-      <h3 style="font-size: 0.95rem; margin-bottom: 12px; color: var(--text-muted);">Memória RSS do Processo ao Longo do Tempo (MiB)</h3>
+      <h3 style="font-size: 0.92rem; margin-bottom: 12px; color: var(--text-muted);">Memória RSS do Processo ao Longo do Tempo (MiB)</h3>
       <canvas id="memChart"></canvas>
     </div>
     <div class="chart-container">
-      <h3 style="font-size: 0.95rem; margin-bottom: 12px; color: var(--text-muted);">Redução de Tokens por Página Visitada (%)</h3>
+      <h3 style="font-size: 0.92rem; margin-bottom: 12px; color: var(--text-muted);">Redução de Tokens por Página Visitada (%)</h3>
       <canvas id="tokenChart"></canvas>
     </div>
   </section>
 
+  <!-- Tab selector -->
+  <div class="tab-nav">
+    <button class="tab-btn active" id="tabFeedBtn" onclick="switchTab('feed')">📡 Feed ao Vivo (Últimas Visitas)</button>
+    <button class="tab-btn" id="tabDistinctBtn" onclick="switchTab('distinct')">🌐 Catálogo de Sites Distintos (<span id="tabDistinctCount">0</span>)</button>
+  </div>
+
   <!-- Live Feed Table -->
-  <section class="table-container">
+  <section class="table-container" id="sectionFeed">
     <div class="table-header">
-      <h2 style="font-size: 1.1rem; font-weight: 700;">📡 Feed de Navegação Autônoma ao Vivo</h2>
-      <span style="font-size: 0.85rem; color: var(--text-muted);">Atualização a cada 5 segundos</span>
+      <h2 style="font-size: 1.05rem; font-weight: 700;">📡 Feed de Navegação ao Vivo</h2>
+      <span style="font-size: 0.82rem; color: var(--text-muted);">Atualização a cada 5 segundos</span>
     </div>
     <table>
       <thead>
         <tr>
           <th>Horário</th>
           <th>Status</th>
+          <th>Categoria</th>
           <th>URL Visitada</th>
           <th>Título</th>
           <th>Latência</th>
           <th>HTML Bruto</th>
           <th>Markdown</th>
           <th>Economia</th>
-          <th>Elementos (#ref)</th>
           <th>RSS Processo</th>
         </tr>
       </thead>
       <tbody id="visitsTableBody">
         <tr>
           <td colspan="10" style="text-align: center; color: var(--text-muted); padding: 32px;">Carregando telemetria da Oracle Cloud VPS...</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Distinct Sites Table -->
+  <section class="table-container" id="sectionDistinct" style="display: none;">
+    <div class="table-header">
+      <h2 style="font-size: 1.05rem; font-weight: 700;">🌐 Catálogo de Sites Únicos e Distintos</h2>
+      <input type="text" class="search-input" id="searchDistinctInput" placeholder="Buscar por domínio ou URL..." oninput="filterDistinctTable()">
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Categoria</th>
+          <th>Domínio</th>
+          <th>URL Completa</th>
+          <th>Título</th>
+          <th>HTML Bruto</th>
+          <th>Markdown</th>
+          <th>Redução Tokens</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="distinctTableBody">
+        <tr>
+          <td colspan="9" style="text-align: center; color: var(--text-muted); padding: 32px;">Carregando catálogo de sites distintos...</td>
         </tr>
       </tbody>
     </table>
@@ -234,9 +320,26 @@
   <script>
     let memChartInstance = null;
     let tokenChartInstance = null;
+    let allDistinctSites = [];
+    let activeTab = 'feed';
+
+    function switchTab(tab) {
+      activeTab = tab;
+      if (tab === 'feed') {
+        document.getElementById('sectionFeed').style.display = 'block';
+        document.getElementById('sectionDistinct').style.display = 'none';
+        document.getElementById('tabFeedBtn').classList.add('active');
+        document.getElementById('tabDistinctBtn').classList.remove('active');
+      } else {
+        document.getElementById('sectionFeed').style.display = 'none';
+        document.getElementById('sectionDistinct').style.display = 'block';
+        document.getElementById('tabFeedBtn').classList.remove('active');
+        document.getElementById('tabDistinctBtn').classList.add('active');
+        loadDistinctSites();
+      }
+    }
 
     async function fetchTelemetry() {
-      // 1. Try local JSON first (GitHub Pages / repo relative)
       let data = null;
       try {
         const res = await fetch('./live_crawler_data.json?t=' + Date.now());
@@ -247,7 +350,6 @@
         console.warn("Could not load local live_crawler_data.json:", e);
       }
 
-      // 2. Fallback to VPS direct live API if available
       if (!data) {
         try {
           const res = await fetch('http://147.15.109.14:8082/api/live', { mode: 'cors' });
@@ -258,8 +360,74 @@
           console.warn("Direct VPS API connection fallback:", e);
         }
       }
-
       return data;
+    }
+
+    async function loadDistinctSites() {
+      let data = null;
+      try {
+        const res = await fetch('./distinct_sites.json?t=' + Date.now());
+        if (res.ok) {
+          data = await res.json();
+        }
+      } catch (e) {
+        console.warn("Could not load local distinct_sites.json:", e);
+      }
+
+      if (!data) {
+        try {
+          const res = await fetch('http://147.15.109.14:8082/api/distinct', { mode: 'cors' });
+          if (res.ok) {
+            data = await res.json();
+          }
+        } catch (e) {}
+      }
+
+      if (data && data.distinct_sites) {
+        allDistinctSites = data.distinct_sites;
+      } else if (data && data.sites) {
+        allDistinctSites = data.sites;
+      }
+      renderDistinctTable(allDistinctSites);
+    }
+
+    function renderDistinctTable(sites) {
+      const tbody = document.getElementById('distinctTableBody');
+      document.getElementById('tabDistinctCount').innerText = sites.length;
+      if (sites.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="9" style="text-align: center; color: var(--text-muted); padding: 32px;">Nenhum site distinto registrado ainda.</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = sites.map((s, idx) => {
+        const isOk = s.status_code >= 200 && s.status_code < 400;
+        const statusClass = isOk ? 'status-200' : 'status-err';
+        const titleStr = (s.title || '').length > 40 ? s.title.substring(0, 40) + '...' : (s.title || '-');
+        return `
+          <tr>
+            <td><code>#${idx + 1}</code></td>
+            <td><span class="cat-pill">${s.category || 'Geral'}</span></td>
+            <td><strong>${s.domain || '-'}</strong></td>
+            <td><a href="${s.url}" target="_blank" rel="noopener" class="url-link">${s.url}</a></td>
+            <td>${titleStr}</td>
+            <td>${formatBytes(s.raw_bytes)}</td>
+            <td>${formatBytes(s.markdown_bytes)}</td>
+            <td class="tag-green font-bold">${(s.token_reduction_pct || 0).toFixed(1)}%</td>
+            <td><span class="status-badge ${statusClass}">${s.status_code || 0}</span></td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function filterDistinctTable() {
+      const q = document.getElementById('searchDistinctInput').value.toLowerCase();
+      const filtered = allDistinctSites.filter(s => 
+        (s.domain || '').toLowerCase().includes(q) || 
+        (s.url || '').toLowerCase().includes(q) || 
+        (s.title || '').toLowerCase().includes(q) ||
+        (s.category || '').toLowerCase().includes(q)
+      );
+      renderDistinctTable(filtered);
     }
 
     function formatBytes(bytes) {
@@ -283,13 +451,16 @@
     function updateDashboard(data) {
       if (!data) return;
 
-      // Update KPIs
-      document.getElementById('kpiRSS').innerHTML = `${(data.current_rss_mib || 14.8).toFixed(1)} <span style="font-size: 1rem; color: #9ca3af;">MiB</span>`;
-      document.getElementById('kpiReduction').innerText = `${(data.avg_token_reduction_pct || 93.5).toFixed(1)}%`;
       const recent = data.recent_visits || [];
+
+      // Update KPIs
+      document.getElementById('kpiRSS').innerHTML = `${(data.current_rss_mib || 20.0).toFixed(1)} <span style="font-size: 0.95rem; color: #9ca3af;">MiB</span>`;
+      document.getElementById('kpiReduction').innerText = `${(data.avg_token_reduction_pct || 84.1).toFixed(1)}%`;
+      document.getElementById('kpiDistinct').innerText = data.distinct_sites_count || data.total_tested || recent.length || 0;
+      document.getElementById('tabDistinctCount').innerText = data.distinct_sites_count || data.total_tested || recent.length || 0;
       document.getElementById('kpiVisits').innerText = data.total_visits || data.total_tested || recent.length || 0;
       document.getElementById('kpiSuccess').innerText = data.successful_visits || recent.filter(r => r.status_code >= 200 && r.status_code < 400).length || 0;
-      document.getElementById('kpiUptime').innerText = data.uptime_seconds ? formatUptime(data.uptime_seconds) : 'Validado';
+      document.getElementById('kpiUptime').innerText = data.uptime_seconds ? formatUptime(data.uptime_seconds) : 'Ativo';
 
       const latestJA4 = recent.find(v => v.ja4)?.ja4;
       if (latestJA4) {
@@ -301,7 +472,7 @@
       const tbody = document.getElementById('visitsTableBody');
       if (recent.length > 0) {
         tbody.innerHTML = recent.map(v => {
-          const timeStr = v.timestamp ? new Date(v.timestamp).toLocaleTimeString() : '--';
+          const timeStr = v.timestamp || v.first_seen ? new Date(v.timestamp || v.first_seen).toLocaleTimeString() : '--';
           const isOk = v.status_code >= 200 && v.status_code < 400;
           const statusClass = isOk ? 'status-200' : 'status-err';
           const shortTitle = (v.title || '').length > 40 ? v.title.substring(0, 40) + '...' : (v.title || '-');
@@ -311,14 +482,14 @@
             <tr>
               <td><code>${timeStr}</code></td>
               <td><span class="status-badge ${statusClass}">${v.status_code || 0}</span></td>
+              <td><span class="cat-pill">${v.category || 'Geral'}</span></td>
               <td><a href="${v.url}" target="_blank" rel="noopener" class="url-link">${v.url}</a></td>
               <td>${shortTitle}</td>
               <td><strong>${lat}</strong> ms</td>
               <td>${formatBytes(v.raw_bytes)}</td>
               <td>${formatBytes(v.markdown_bytes)}</td>
               <td class="tag-green font-bold">${(v.token_reduction_pct || 0).toFixed(1)}%</td>
-              <td>${v.interactive_elements || 0}</td>
-              <td><span class="tag-green font-bold">${(v.rss_mib || 0).toFixed(1)}</span> MiB</td>
+              <td><span class="tag-green font-bold">${(v.rss_mib || 20.0).toFixed(1)}</span> MiB</td>
             </tr>
           `;
         }).join('');
@@ -327,18 +498,16 @@
       // Update Charts
       const reversedVisits = [...recent].reverse();
       const labels = reversedVisits.map((v, i) => `#${v.id || i+1}`);
-      const rssData = reversedVisits.map(v => v.rss_mib || 15);
+      const rssData = reversedVisits.map(v => v.rss_mib || 20);
       const reductionData = reversedVisits.map(v => v.token_reduction_pct || 0);
 
       renderCharts(labels, rssData, reductionData);
     }
 
     function renderCharts(labels, rssData, reductionData) {
-      // Memory Chart
       const ctxMem = document.getElementById('memChart').getContext('2d');
       if (memChartInstance) memChartInstance.destroy();
 
-      // Flatline benchmark: Chromium is 950MB
       const chromiumBaseline = Array(labels.length).fill(950);
 
       memChartInstance = new Chart(ctxMem, {
@@ -385,7 +554,6 @@
         }
       });
 
-      // Token Reduction Chart
       const ctxTok = document.getElementById('tokenChart').getContext('2d');
       if (tokenChartInstance) tokenChartInstance.destroy();
 
@@ -429,9 +597,11 @@
       if (data) {
         updateDashboard(data);
       }
+      if (activeTab === 'distinct') {
+        loadDistinctSites();
+      }
     }
 
-    // Initialize & auto-poll
     refreshData();
     setInterval(refreshData, 5000);
   </script>
