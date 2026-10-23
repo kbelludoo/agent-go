@@ -1,6 +1,11 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
+    "hindsight": {
+      "type": "local",
+      "command": "go-tools",
+      "args": ["memory", "mcp"]
+    },
     "go-graphify": {
       "type": "local",
       "command": "go-graphify",

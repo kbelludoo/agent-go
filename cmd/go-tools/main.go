@@ -538,6 +538,12 @@ func main() {
 			}
 			fmt.Println(report)
 
+		case "mcp":
+			if err := hindsight.ServeMCP(store, os.Stdin, os.Stdout); err != nil {
+				fmt.Fprintf(os.Stderr, "MCP hindsight error: %v\n", err)
+				os.Exit(1)
+			}
+
 		default:
 			fmt.Fprintf(os.Stderr, "Ação de memória desconhecida: %s (use retain, recall ou reflect)\n", sub)
 			os.Exit(1)

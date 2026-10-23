@@ -1,11 +1,15 @@
 {
   "mcpServers": {
-    "ai-memory": {
-      "command": "ai-memory",
-      "args": ["mcp"]
+    "hindsight": {
+      "command": "go-tools",
+      "args": ["memory", "mcp"]
     },
     "go-graphify": {
       "command": "go-graphify",
+      "args": ["mcp"]
+    },
+    "ai-memory": {
+      "command": "ai-memory",
       "args": ["mcp"]
     }
   }
