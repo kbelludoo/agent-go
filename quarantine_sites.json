@@ -1,84 +1,7 @@
 {
-  "last_updated": "2026-10-23T20:24:51Z",
+  "last_updated": "2026-10-23T20:25:51Z",
   "total_quarantine": 109,
   "quarantine_sites": [
-    {
-      "id": 55,
-      "domain": "www.harvardonline.harvard.edu",
-      "url": "https://www.harvardonline.harvard.edu/",
-      "status_code": 429,
-      "error_message": "HTTP 429",
-      "first_seen": "2026-10-23T15:29:45Z",
-      "last_seen": "2026-10-23T15:30:09Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
-    },
-    {
-      "id": 69,
-      "domain": "www.instagram.com",
-      "url": "https://www.instagram.com/accounts/password/reset/?next=https%3A%2F%2Fwww.instagram.com%2FShopee_BR",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T16:13:09Z",
-      "last_seen": "2026-10-23T16:13:09Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 72,
-      "domain": "shop.fsf.org",
-      "url": "https://shop.fsf.org/",
-      "status_code": 503,
-      "error_message": "HTTP 503",
-      "first_seen": "2026-10-23T16:38:34Z",
-      "last_seen": "2026-10-23T16:38:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 77,
-      "domain": "cern.ch",
-      "url": "https://cern.ch/scientists",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T17:13:13Z",
-      "last_seen": "2026-10-23T17:13:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 7,
-      "domain": "",
-      "url": "https://pt.wikihow.com/Purificar-%C3%8",
-      "status_code": 504,
-      "error_message": "failed to create request: parse \"https://pt.wikihow.com/Purificar-%C3%8\": invalid URL escape \"%8\"",
-      "first_seen": "2026-10-23T13:03:33Z",
-      "last_seen": "2026-10-23T13:03:33Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to create request: parse \"https://pt.wikihow.com/Purificar-%C3%8\": invalid URL escape \"%8\". Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 35,
-      "domain": "opentechresearch.org",
-      "url": "https://opentechresearch.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:16:58Z",
-      "last_seen": "2026-10-23T14:16:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 37,
-      "domain": "www.sciencedirect.com",
-      "url": "https://www.sciencedirect.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:31:22Z",
-      "last_seen": "2026-10-23T14:31:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 39,
       "domain": "stackexchange.com",
@@ -1199,6 +1122,83 @@
       "first_seen": "2026-10-23T15:18:10Z",
       "last_seen": "2026-10-23T16:57:58Z",
       "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 55,
+      "domain": "www.harvardonline.harvard.edu",
+      "url": "https://www.harvardonline.harvard.edu/",
+      "status_code": 429,
+      "error_message": "HTTP 429",
+      "first_seen": "2026-10-23T15:29:45Z",
+      "last_seen": "2026-10-23T15:30:09Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
+    },
+    {
+      "id": 69,
+      "domain": "www.instagram.com",
+      "url": "https://www.instagram.com/accounts/password/reset/?next=https%3A%2F%2Fwww.instagram.com%2FShopee_BR",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T16:13:09Z",
+      "last_seen": "2026-10-23T16:13:09Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 72,
+      "domain": "shop.fsf.org",
+      "url": "https://shop.fsf.org/",
+      "status_code": 503,
+      "error_message": "HTTP 503",
+      "first_seen": "2026-10-23T16:38:34Z",
+      "last_seen": "2026-10-23T16:38:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 77,
+      "domain": "cern.ch",
+      "url": "https://cern.ch/scientists",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T17:13:13Z",
+      "last_seen": "2026-10-23T17:13:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 7,
+      "domain": "",
+      "url": "https://pt.wikihow.com/Purificar-%C3%8",
+      "status_code": 504,
+      "error_message": "failed to create request: parse \"https://pt.wikihow.com/Purificar-%C3%8\": invalid URL escape \"%8\"",
+      "first_seen": "2026-10-23T13:03:33Z",
+      "last_seen": "2026-10-23T13:03:33Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to create request: parse \"https://pt.wikihow.com/Purificar-%C3%8\": invalid URL escape \"%8\". Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 35,
+      "domain": "opentechresearch.org",
+      "url": "https://opentechresearch.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:16:58Z",
+      "last_seen": "2026-10-23T14:16:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 37,
+      "domain": "www.sciencedirect.com",
+      "url": "https://www.sciencedirect.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:31:22Z",
+      "last_seen": "2026-10-23T14:31:22Z",
+      "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
