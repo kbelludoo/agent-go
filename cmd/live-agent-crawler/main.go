@@ -1,16 +1,19 @@
 package main
 
 import (
+	"bufio"
 	"context"
 	"encoding/json"
 	"flag"
 	"fmt"
 	"log"
 	"net/http"
+	"net/url"
 	"os"
 	"os/exec"
 	"os/signal"
 	"path/filepath"
+	"strings"
 	"sync"
 	"syscall"
 	"time"
@@ -19,10 +22,11 @@ import (
 	"github.com/kbelludoo/agent-go/pkg/navigator"
 )
 
-// VisitMetric represents a single empirical observation of a live website.
-type VisitMetric struct {
+// DistinctSiteRecord represents a verified unique website visited by the autonomous engine.
+type DistinctSiteRecord struct {
 	ID                  uint64  `json:"id"`
-	Timestamp           string  `json:"timestamp"`
+	Domain              string  `json:"domain"`
+	Category            string  `json:"category"`
 	URL                 string  `json:"url"`
 	Title               string  `json:"title"`
 	StatusCode          int     `json:"status_code"`
@@ -32,24 +36,26 @@ type VisitMetric struct {
 	TokenReductionPct   float64 `json:"token_reduction_pct"`
 	InteractiveElements int     `json:"interactive_elements"`
 	RSSMiB              float64 `json:"rss_mib"`
+	FirstSeen           string  `json:"first_seen"`
 	JA4                 string  `json:"ja4,omitempty"`
 }
 
 // TelemetryPayload represents the full state served to GitHub Pages and the API.
 type TelemetryPayload struct {
-	LastUpdated          string        `json:"last_updated"`
-	UptimeSeconds        int64         `json:"uptime_seconds"`
-	HostInfo             string        `json:"host_info"`
-	BrowserEngine        string        `json:"browser_engine"`
-	TotalVisits          uint64        `json:"total_visits"`
-	SuccessfulVisits     uint64        `json:"successful_visits"`
-	AvgTokenReductionPct float64       `json:"avg_token_reduction_pct"`
-	TotalRawBytes        int64         `json:"total_raw_bytes"`
-	TotalMarkdownBytes   int64         `json:"total_markdown_bytes"`
-	BytesSaved           int64         `json:"bytes_saved"`
-	CurrentRSSMiB        float64       `json:"current_rss_mib"`
-	ChromiumRAMEstimate  string        `json:"chromium_ram_estimate"`
-	RecentVisits         []VisitMetric `json:"recent_visits"`
+	LastUpdated           string               `json:"last_updated"`
+	UptimeSeconds         int64                `json:"uptime_seconds"`
+	HostInfo              string               `json:"host_info"`
+	BrowserEngine         string               `json:"browser_engine"`
+	TotalVisits           uint64               `json:"total_visits"`
+	DistinctSitesCount    int                  `json:"distinct_sites_count"`
+	SuccessfulVisits      uint64               `json:"successful_visits"`
+	AvgTokenReductionPct  float64              `json:"avg_token_reduction_pct"`
+	TotalRawBytes         int64                `json:"total_raw_bytes"`
+	TotalMarkdownBytes    int64                `json:"total_markdown_bytes"`
+	BytesSaved            int64                `json:"bytes_saved"`
+	CurrentRSSMiB         float64              `json:"current_rss_mib"`
+	ChromiumRAMEstimate   string               `json:"chromium_ram_estimate"`
+	RecentVisits          []DistinctSiteRecord `json:"recent_visits"`
 }
 
 var defaultSeedURLs = []string{
@@ -57,79 +63,133 @@ var defaultSeedURLs = []string{
 	"https://news.ycombinator.com/",
 	"https://thehackernews.com/",
 	"https://en.wikipedia.org/wiki/Special:Random",
+	"https://pt.wikipedia.org/wiki/Especial:Aleat%C3%B3ria",
 	"https://github.com/trending",
 	"https://tls.peet.ws/api/all",
 	"https://httpbin.org/headers",
 	"https://lobste.rs/",
+	"https://slashdot.org/",
 	"https://phys.org/",
+	"https://arstechnica.com/",
+}
+
+func categorizeURL(rawURL string) string {
+	u, err := url.Parse(rawURL)
+	if err != nil {
+		return "Web Aberta"
+	}
+	host := strings.ToLower(u.Hostname())
+	switch {
+	case strings.Contains(host, "hackernews") || strings.Contains(host, "security") || strings.Contains(host, "bleepingcomputer"):
+		return "Cibersegurança & Defesa"
+	case strings.Contains(host, "github") || strings.Contains(host, "gitlab") || strings.Contains(host, "crates") || strings.Contains(host, "golang") || strings.Contains(host, "rust-lang"):
+		return "Dev, Repos & Compiladores"
+	case strings.Contains(host, "wikipedia") || strings.Contains(host, "phys.org") || strings.Contains(host, "nature") || strings.Contains(host, "arxiv"):
+		return "Ciência & Enciclopédias"
+	case strings.Contains(host, "ycombinator") || strings.Contains(host, "lobste.rs") || strings.Contains(host, "slashdot") || strings.Contains(host, "arstechnica"):
+		return "Comunidades & Notícias Tech"
+	case strings.Contains(host, "tls.peet.ws") || strings.Contains(host, "httpbin"):
+		return "Auditoria uTLS & Fingerprint"
+	case strings.Contains(host, "react") || strings.Contains(host, "vue") || strings.Contains(host, "svelte") || strings.Contains(host, "nextjs") || strings.Contains(host, "angular") || strings.Contains(host, "mozilla") || strings.Contains(host, "web.dev"):
+		return "Frameworks & Web Standards"
+	case strings.Contains(host, "docker") || strings.Contains(host, "kubernetes") || strings.Contains(host, "redis") || strings.Contains(host, "postgresql"):
+		return "Infraestrutura & Cloud"
+	default:
+		return "Documentações & Web Aberta"
+	}
 }
 
 func main() {
 	addr := flag.String("addr", ":8082", "HTTP API listen address (CORS enabled for live dashboard)")
 	outputJSON := flag.String("output", "docs/live_crawler_data.json", "Path to save live telemetry JSON for GitHub Pages")
-	intervalSec := flag.Int("interval", 15, "Seconds between autonomous site visits")
+	distinctJSON := flag.String("distinct-output", "docs/distinct_sites.json", "Path to save distinct sites catalog")
+	seedFile := flag.String("seed", "data/distinct_seed_sites.txt", "Path to text file containing seed URLs")
+	intervalSec := flag.Int("interval", 12, "Seconds between autonomous site visits")
 	gitPushInterval := flag.Int("git-interval", 5, "Minutes between git commit/push of telemetry")
 	flag.Parse()
 
-	log.Printf("🚀 Iniciando AI-Go-Browser Live Autonomous Crawler na VPS")
-	log.Printf("📊 Telemetria será gravada em: %s", *outputJSON)
+	log.Printf("🚀 Iniciando AI-Go-Browser Live Autonomous Distinct Crawler na VPS")
+	log.Printf("📊 Telemetria ao vivo: %s | Catálogo de sites distintos: %s", *outputJSON, *distinctJSON)
 	log.Printf("🌐 Servidor HTTP API na porta: %s", *addr)
 
-	// Ensure output directory exists
-	dir := filepath.Dir(*outputJSON)
-	if dir != "" && dir != "." {
-		_ = os.MkdirAll(dir, 0755)
-	}
+	// Ensure directories exist
+	_ = os.MkdirAll(filepath.Dir(*outputJSON), 0755)
+	_ = os.MkdirAll(filepath.Dir(*distinctJSON), 0755)
 
 	session := navigator.NewSession()
 	var (
-		mu           sync.RWMutex
-		visitCounter uint64
-		successCount uint64
-		visits       []VisitMetric
-		startTime    = time.Now()
-		totalRaw     int64
-		totalMD      int64
-		lastJA4      string
+		mu            sync.RWMutex
+		visitCounter  uint64
+		successCount  uint64
+		recentVisits  []DistinctSiteRecord
+		distinctMap   = make(map[string]DistinctSiteRecord) // Key: domain or unique URL
+		startTime     = time.Now()
+		totalRaw      int64
+		totalMD       int64
+		lastJA4       string
+		visitedSet    = make(map[string]bool)
 	)
 
-	// Try reading existing telemetry data to preserve history across restarts
-	if data, err := os.ReadFile(*outputJSON); err == nil {
-		var existing TelemetryPayload
-		if err := json.Unmarshal(data, &existing); err == nil {
-			visitCounter = existing.TotalVisits
-			successCount = existing.SuccessfulVisits
-			totalRaw = existing.TotalRawBytes
-			totalMD = existing.TotalMarkdownBytes
-			visits = existing.RecentVisits
-			log.Printf("🔄 Histórico recuperado: %d visitas anteriores", visitCounter)
+	// Load seeds from file if exists
+	var seedList []string
+	if file, err := os.Open(*seedFile); err == nil {
+		scanner := bufio.NewScanner(file)
+		for scanner.Scan() {
+			line := strings.TrimSpace(scanner.Text())
+			if line != "" && !strings.HasPrefix(line, "#") {
+				seedList = append(seedList, line)
+			}
+		}
+		_ = file.Close()
+		log.Printf("📋 Carregadas %d URLs sementes do arquivo %s", len(seedList), *seedFile)
+	}
+
+	if len(seedList) == 0 {
+		seedList = defaultSeedURLs
+	}
+
+	// Try reading existing distinct catalog to preserve history across restarts
+	if data, err := os.ReadFile(*distinctJSON); err == nil {
+		var catalog struct {
+			Sites []DistinctSiteRecord `json:"distinct_sites"`
+		}
+		if err := json.Unmarshal(data, &catalog); err == nil {
+			for _, s := range catalog.Sites {
+				distinctMap[s.URL] = s
+				visitedSet[s.URL] = true
+			}
+			log.Printf("🔄 Catálogo recuperado: %d sites distintos anteriores", len(distinctMap))
 		}
 	}
 
-	// Dynamic queue with seed URLs
-	urlQueue := make([]string, len(defaultSeedURLs))
-	copy(urlQueue, defaultSeedURLs)
-	queueIdx := 0
+	// Dynamic queue
+	urlQueue := make([]string, 0, len(seedList)*2)
+	for _, u := range seedList {
+		if !visitedSet[u] || strings.Contains(u, "Random") || strings.Contains(u, "Aleat") {
+			urlQueue = append(urlQueue, u)
+		}
+	}
 
 	getNextURL := func() string {
 		mu.Lock()
 		defer mu.Unlock()
 		if len(urlQueue) == 0 {
-			urlQueue = append(urlQueue, defaultSeedURLs...)
+			// If queue emptied, reload seed list
+			for _, u := range seedList {
+				urlQueue = append(urlQueue, u)
+			}
 		}
-		u := urlQueue[queueIdx%len(urlQueue)]
-		queueIdx++
+		u := urlQueue[0]
+		urlQueue = urlQueue[1:]
 		return u
 	}
 
 	addURLToQueue := func(u string) {
 		mu.Lock()
 		defer mu.Unlock()
-		if len(urlQueue) > 100 {
-			// keep queue bounded
-			urlQueue = urlQueue[len(urlQueue)-50:]
+		if !visitedSet[u] && len(urlQueue) < 500 {
+			urlQueue = append(urlQueue, u)
 		}
-		urlQueue = append(urlQueue, u)
 	}
 
 	buildPayload := func() TelemetryPayload {
@@ -147,8 +207,8 @@ func main() {
 			curRSS = mem.RSSMiB
 		}
 
-		recentCopy := make([]VisitMetric, len(visits))
-		copy(recentCopy, visits)
+		recentCopy := make([]DistinctSiteRecord, len(recentVisits))
+		copy(recentCopy, recentVisits)
 
 		return TelemetryPayload{
 			LastUpdated:          time.Now().UTC().Format(time.RFC3339),
@@ -156,22 +216,45 @@ func main() {
 			HostInfo:             "Oracle Cloud VPS (147.15.109.14 - Ubuntu x86_64, 1GB RAM)",
 			BrowserEngine:        "ai-go-browser v2.0 (uTLS Chrome 120 + JA4 GREASE + Native DOM Action)",
 			TotalVisits:          visitCounter,
+			DistinctSitesCount:   len(distinctMap),
 			SuccessfulVisits:     successCount,
 			AvgTokenReductionPct: avgRed,
 			TotalRawBytes:        totalRaw,
 			TotalMarkdownBytes:   totalMD,
 			BytesSaved:           totalRaw - totalMD,
 			CurrentRSSMiB:        curRSS,
-			ChromiumRAMEstimate:  "900 - 1400 MB (Causaria OOM Kill imediato na VPS de 1GB)",
+			ChromiumRAMEstimate:  "900 - 1400 MB (Causaria OOM Kill nesta VPS de 1GB)",
 			RecentVisits:         recentCopy,
 		}
 	}
 
-	saveJSON := func() {
+	saveData := func() {
+		mu.RLock()
 		payload := buildPayload()
-		bytesData, err := json.MarshalIndent(payload, "", "  ")
-		if err == nil {
-			_ = os.WriteFile(*outputJSON, bytesData, 0644)
+
+		// Build distinct list
+		distinctList := make([]DistinctSiteRecord, 0, len(distinctMap))
+		for _, v := range distinctMap {
+			distinctList = append(distinctList, v)
+		}
+		mu.RUnlock()
+
+		if b, err := json.MarshalIndent(payload, "", "  "); err == nil {
+			_ = os.WriteFile(*outputJSON, b, 0644)
+		}
+
+		catalogPayload := struct {
+			LastUpdated   string               `json:"last_updated"`
+			TotalDistinct int                  `json:"total_distinct_sites"`
+			DistinctSites []DistinctSiteRecord `json:"distinct_sites"`
+		}{
+			LastUpdated:   time.Now().UTC().Format(time.RFC3339),
+			TotalDistinct: len(distinctList),
+			DistinctSites: distinctList,
+		}
+
+		if b, err := json.MarshalIndent(catalogPayload, "", "  "); err == nil {
+			_ = os.WriteFile(*distinctJSON, b, 0644)
 		}
 	}
 
@@ -189,6 +272,21 @@ func main() {
 			}
 			payload := buildPayload()
 			_ = json.NewEncoder(w).Encode(payload)
+		})
+
+		mux.HandleFunc("/api/distinct", func(w http.ResponseWriter, r *http.Request) {
+			w.Header().Set("Access-Control-Allow-Origin", "*")
+			w.Header().Set("Content-Type", "application/json")
+			mu.RLock()
+			distinctList := make([]DistinctSiteRecord, 0, len(distinctMap))
+			for _, v := range distinctMap {
+				distinctList = append(distinctList, v)
+			}
+			mu.RUnlock()
+			_ = json.NewEncoder(w).Encode(map[string]any{
+				"total": len(distinctList),
+				"sites": distinctList,
+			})
 		})
 
 		mux.HandleFunc("/healthz", func(w http.ResponseWriter, r *http.Request) {
@@ -214,10 +312,10 @@ func main() {
 			ticker := time.NewTicker(time.Duration(*gitPushInterval) * time.Minute)
 			defer ticker.Stop()
 			for range ticker.C {
-				saveJSON()
-				cmd := exec.Command("git", "add", *outputJSON)
+				saveData()
+				cmd := exec.Command("git", "add", *outputJSON, *distinctJSON)
 				_ = cmd.Run()
-				cmd = exec.Command("git", "commit", "-m", fmt.Sprintf("chore(telemetry): live crawler update [%s] [skip ci]", time.Now().UTC().Format("15:04:05")))
+				cmd = exec.Command("git", "commit", "-m", fmt.Sprintf("chore(telemetry): update distinct sites catalog [%s] [skip ci]", time.Now().UTC().Format("15:04:05")))
 				_ = cmd.Run()
 				cmd = exec.Command("git", "push")
 				_ = cmd.Run()
@@ -235,78 +333,92 @@ func main() {
 	ticker := time.NewTicker(time.Duration(*intervalSec) * time.Second)
 	defer ticker.Stop()
 
-	// Perform initial visit immediately
 	performVisit := func() {
 		targetURL := getNextURL()
 		navCtx, navCancel := context.WithTimeout(ctx, 12*time.Second)
 		defer navCancel()
+
+		parsed, _ := url.Parse(targetURL)
+		domain := ""
+		if parsed != nil {
+			domain = parsed.Hostname()
+		}
 
 		log.Printf("🌐 [%s] Navegando via uTLS: %s", time.Now().Format("15:04:05"), targetURL)
 		snap, err := session.Navigate(navCtx, targetURL)
 
 		mu.Lock()
 		visitCounter++
-		metric := VisitMetric{
+		visitedSet[targetURL] = true
+
+		record := DistinctSiteRecord{
 			ID:        visitCounter,
-			Timestamp: time.Now().UTC().Format(time.RFC3339),
+			Domain:    domain,
+			Category:  categorizeURL(targetURL),
 			URL:       targetURL,
+			FirstSeen: time.Now().UTC().Format(time.RFC3339),
 		}
 
 		if err != nil {
 			log.Printf("   ⚠️ Falha ao navegar em %s: %v", targetURL, err)
-			metric.StatusCode = 504
-			metric.Title = fmt.Sprintf("Erro: %v", err)
+			record.StatusCode = 504
+			record.Title = fmt.Sprintf("Erro: %v", err)
 		} else {
 			successCount++
-			metric.Title = snap.Title
-			metric.StatusCode = snap.StatusCode
-			metric.DurationMs = snap.DurationMs
-			metric.RawBytes = snap.RawBytes
-			metric.MarkdownBytes = snap.MarkdownBytes
-			metric.TokenReductionPct = snap.TokenReduction
-			metric.InteractiveElements = len(snap.Elements)
-			metric.RSSMiB = snap.RSSMiB
+			record.Title = snap.Title
+			record.StatusCode = snap.StatusCode
+			record.DurationMs = snap.DurationMs
+			record.RawBytes = snap.RawBytes
+			record.MarkdownBytes = snap.MarkdownBytes
+			record.TokenReductionPct = snap.TokenReduction
+			record.InteractiveElements = len(snap.Elements)
+			record.RSSMiB = snap.RSSMiB
 
 			totalRaw += int64(snap.RawBytes)
 			totalMD += int64(snap.MarkdownBytes)
 
-			// If auditing TLS peet ws, parse JA4
 			if targetURL == "https://tls.peet.ws/api/all" && snap.CleanText != "" {
 				var peetData struct {
 					JA4 string `json:"ja4"`
 				}
 				if json.Unmarshal([]byte(snap.CleanText), &peetData) == nil && peetData.JA4 != "" {
 					lastJA4 = peetData.JA4
-					metric.JA4 = lastJA4
+					record.JA4 = lastJA4
 				}
 			}
 
-			// Add discovered links to queue for autonomous crawling
+			// Add discovered external links to queue for autonomous exploration
 			addedCount := 0
 			for _, el := range snap.Elements {
 				if el.Tag == "a" && el.Href != "" && (el.Type == "link" || el.Type == "") {
-					if len(el.Href) > 10 && (el.Href[:4] == "http") {
-						addURLToQueue(el.Href)
-						addedCount++
-						if addedCount >= 3 {
-							break
+					if len(el.Href) > 10 && strings.HasPrefix(el.Href, "http") {
+						linkParsed, _ := url.Parse(el.Href)
+						if linkParsed != nil && linkParsed.Hostname() != domain && !visitedSet[el.Href] {
+							addURLToQueue(el.Href)
+							addedCount++
+							if addedCount >= 2 {
+								break
+							}
 						}
 					}
 				}
 			}
 
-			log.Printf("   ✅ Status: %d | Latência: %dms | Bruto: %d KB | Redução Tokens: %.1f%% | RSS Processo: %.2f MiB",
-				snap.StatusCode, snap.DurationMs, snap.RawBytes/1024, snap.TokenReduction, snap.RSSMiB)
+			log.Printf("   ✅ [%s] Status: %d | Latência: %dms | Bruto: %d KB | Redução: %.1f%% | RSS: %.2f MiB | Distintos: %d",
+				record.Category, snap.StatusCode, snap.DurationMs, snap.RawBytes/1024, snap.TokenReduction, snap.RSSMiB, len(distinctMap)+1)
 		}
 
+		// Save into distinct map
+		distinctMap[targetURL] = record
+
 		// Keep recent 50 visits
-		visits = append([]VisitMetric{metric}, visits...)
-		if len(visits) > 50 {
-			visits = visits[:50]
+		recentVisits = append([]DistinctSiteRecord{record}, recentVisits...)
+		if len(recentVisits) > 50 {
+			recentVisits = recentVisits[:50]
 		}
 		mu.Unlock()
 
-		saveJSON()
+		saveData()
 	}
 
 	// Run first visit immediately
@@ -316,7 +428,7 @@ func main() {
 		select {
 		case <-sigChan:
 			log.Printf("🛑 Sinal de interrupção recebido. Salvando dados e encerrando...")
-			saveJSON()
+			saveData()
 			return
 		case <-ticker.C:
 			performVisit()
