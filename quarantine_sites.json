@@ -1,18 +1,7 @@
 {
-  "last_updated": "2026-10-23T13:12:01Z",
+  "last_updated": "2026-10-23T13:13:01Z",
   "total_quarantine": 17,
   "quarantine_sites": [
-    {
-      "id": 16,
-      "domain": "stackoverflow.com",
-      "url": "https://stackoverflow.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:09:10Z",
-      "last_seen": "2026-10-23T13:09:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 1,
       "domain": "etsy.com",
@@ -188,6 +177,17 @@
       "last_seen": "2026-10-23T13:06:22Z",
       "attempts": 1,
       "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 16,
+      "domain": "stackoverflow.com",
+      "url": "https://stackoverflow.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:09:10Z",
+      "last_seen": "2026-10-23T13:09:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
