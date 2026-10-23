@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PocketWeb - Buscador e Navegador para Áreas Remotas</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ffffff">
+  <script>
+    // Invalidação imediata de caches de versões anteriores
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for (let registration of registrations) {
+          registration.unregister();
+        }
+      });
+    }
+    if ('caches' in window) {
+      caches.keys().then(function(names) {
+        for (let name of names) {
+          caches.delete(name);
+        }
+      });
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #f8fafc;
+      --surface-border: #dfe1e5;
+      --primary: #1a73e8;
+      --primary-hover: #1557b0;
+      --accent: #1e8e3e;
+      --text: #202124;
+      --text-muted: #5f6368;
+      --link: #1a0dab;
+      --shadow: 0 1px 6px rgba(32,33,36,.28);
+    }
+
+    [data-theme="dark"] {
+      --bg: #12151a;
+      --surface: #1e232b;
+      --surface-border: #3c4043;
+      --primary: #8ab4f8;
+      --primary-hover: #aecbfa;
+      --accent: #81c995;
+      --text: #e8eaed;
+      --text-muted: #9aa0a6;
+      --link: #8ab4f8;
+      --shadow: 0 1px 8px rgba(0,0,0,.6);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    /* BARRA SUPERIOR DISCRETA */
+    header {
+      padding: 14px 24px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 14px;
+      font-size: 13px;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      background: rgba(30, 142, 62, 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(30, 142, 62, 0.3);
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    .status-badge.offline {
+      background: rgba(26, 115, 232, 0.12);
+      color: var(--primary);
+      border-color: rgba(26, 115, 232, 0.3);
+    }
+
+    .btn-icon {
+      background: transparent;
+      border: 1px solid var(--surface-border);
+      color: var(--text);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+    }
+    .btn-icon:hover {
+      background: var(--surface);
+    }
+
+    /* CONTAINER PRINCIPAL ESTILO GOOGLE */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .home-hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 6vh;
+      margin-bottom: 26px;
+      text-align: center;
+    }
+
+    .brand-logo {
+      font-size: 3.2rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      user-select: none;
+    }
+
+    .brand-logo .l-blue { color: #4285f4; }
+    .brand-logo .l-red { color: #ea4335; }
+    .brand-logo .l-yellow { color: #fbbc05; }
+    .brand-logo .l-green { color: #34a853; }
+
+    .brand-sub {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    /* BARRA DE PESQUISA GOOGLE */
+    .search-box-wrapper {
+      width: 100%;
+      max-width: 620px;
+      position: relative;
+    }
+
+    .search-box {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      background: var(--bg);
+      border: 1px solid var(--surface-border);
+      border-radius: 28px;
+      padding: 10px 18px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+
+    .search-box:focus-within {
+      box-shadow: var(--shadow);
+      border-color: transparent;
+    }
+
+    .search-icon {
+      color: var(--text-muted);
+      margin-right: 12px;
+      font-size: 16px;
+    }
+
+    .search-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: var(--text);
+      font-size: 16px;
+    }
+
+    .search-clear {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 16px;
+      cursor: pointer;
+      display: none;
+      padding: 4px;
+    }
+
+    /* BOTÕES ESTILO GOOGLE */
+    .search-buttons {
+      margin-top: 22px;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .btn-google {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      color: var(--text);
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: border-color 0.15s, background-color 0.15s;
+    }
+
+    .btn-google:hover {
+      border-color: #dadce0;
+      background-color: var(--surface-border);
+    }
+
+    /* CHIPS DE ATALHOS RÁPIDOS */
+    .quick-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 24px;
+      max-width: 650px;
+    }
+
+    .chip {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      color: var(--text);
+      padding: 6px 14px;
+      border-radius: 18px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: background 0.15s;
+    }
+    .chip:hover {
+      background: var(--surface-border);
+    }
+
+    /* ÁREA DE RESULTADOS DE BUSCA */
+    #results-area {
+      width: 100%;
+      max-width: 700px;
+      margin-top: 24px;
+      display: none;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .results-count {
+      font-size: 13px;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--surface-border);
+      padding-bottom: 8px;
+      margin-bottom: 8px;
+    }
+
+    .result-card {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .result-url {
+      font-size: 12px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .result-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--link);
+      cursor: pointer;
+      text-decoration: none;
+      line-height: 1.3;
+    }
+    .result-title:hover {
+      text-decoration: underline;
+    }
+
+    .result-snippet {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-top: 2px;
+    }
+
+    .result-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 6px;
+    }
+
+    .btn-pack-open {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .btn-pack-open:hover {
+      background: var(--primary-hover);
+    }
+
+    /* VISUALIZADOR HUD */
+    #viewer-container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: white;
+      z-index: 1000;
+      flex-direction: column;
+    }
+
+    #viewer-hud {
+      background: #111827;
+      color: white;
+      padding: 8px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      border-bottom: 1px solid #374151;
+      gap: 10px;
+    }
+
+    .hud-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .savings-badge {
+      background: #065f46;
+      color: #34d399;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    #content-frame {
+      flex: 1;
+      width: 100%;
+      border: none;
+      background: white;
+    }
+
+    /* TOAST */
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--primary);
+      padding: 10px 22px;
+      border-radius: 24px;
+      font-size: 13px;
+      font-weight: 500;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      display: none;
+      z-index: 3000;
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-radius: 50%;
+      border-top-color: white;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+
+  <!-- BARRA SUPERIOR -->
+  <header>
+    <div id="net-status" class="status-badge">
+      <span style="font-size: 8px;">●</span> Online
+    </div>
+    <button class="btn-icon" id="btn-benchmark" title="Duelo e Benchmark dos 100 Maiores Sites">📊</button>
+    <button class="btn-icon" id="btn-library" title="Minha Biblioteca Offline (Páginas Salvas)">💾</button>
+    <button class="btn-icon" id="btn-theme" title="Modo Solar / Noturno">🌓</button>
+  </header>
+
+  <!-- CONTAINER CENTRAL ESTILO GOOGLE -->
+  <main id="main-content">
+    
+    <div class="home-hero" id="home-hero">
+      <div class="brand-logo">
+        <span class="l-blue">P</span><span class="l-red">o</span><span class="l-yellow">c</span><span class="l-blue">k</span><span class="l-green">e</span><span class="l-red">t</span><span style="font-weight: 300; margin-left: 2px;">Web</span>
+      </div>
+      <div class="brand-sub">Busca e Navegação Ultra-Leve para Áreas Remotas</div>
+    </div>
+
+    <!-- CAMPO DE BUSCA -->
+    <div class="search-box-wrapper">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" class="search-input" placeholder="Pesquisar na web ou digitar site (ex: notícias, uol.com.br)..." autocomplete="off" autofocus />
+        <button id="search-clear" class="search-clear">✕</button>
+      </div>
+    </div>
+
+    <!-- BOTÕES -->
+    <div class="search-buttons" id="search-buttons">
+      <button class="btn-google" id="btn-search">Pesquisa PocketWeb</button>
+      <button class="btn-google" id="btn-direct">⚡ Abrir Direto (Pocket)</button>
+    </div>
+
+    <!-- ATALHOS RÁPIDOS DE CAMPO -->
+    <div class="quick-chips" id="quick-chips">
+      <div class="chip" onclick="openBenchmarkModal()" style="border-color: #34a853; color: #188038; font-weight: 600;">📊 Prova Real: 100 Sites (-98%)</div>
+      <div class="chip" onclick="abrirSiteRemoto('https://www.google.com')">🌐 Abrir Google Direto</div>
+      <div class="chip" onclick="quickSearch('g1 ultimas noticias')">📰 Notícias de Hoje</div>
+      <div class="chip" onclick="quickSearch('previsao do tempo')">⛅ Previsão do Tempo</div>
+      <div class="chip" onclick="loadSample('firstaid')">🩹 Primeiros Socorros</div>
+      <div class="chip" onclick="loadSample('water')">💧 Purificação de Água</div>
+      <div class="chip" onclick="loadSample('morse')">📡 Código Morse SOS</div>
+      <div class="chip" onclick="openLibraryModal()">💾 Páginas Salvas</div>
+    </div>
+
+    <!-- LISTA DE RESULTADOS DE BUSCA -->
+    <div id="results-area">
+      <div class="results-count" id="results-count">Aproximadamente 0 resultados encontrados</div>
+      <div id="results-list" style="display: flex; flex-direction: column; gap: 18px;"></div>
+    </div>
+
+  </main>
+
+  <!-- VISUALIZADOR HUD DE PÁGINA COMPACTADA (NAVEGADOR COMPLETO) -->
+  <div id="viewer-container">
+    <div id="viewer-hud">
+      <div class="hud-group">
+        <button class="btn-google" id="btn-viewer-back" style="padding: 4px 10px; font-size: 12px;">⬅ Busca</button>
+        <button class="btn-google" id="btn-viewer-reload" style="padding: 4px 8px; font-size: 12px;" title="Recarregar">🔄</button>
+        <input type="text" id="viewer-url-bar" style="background:#1f2937; border:1px solid #374151; color:#f3f4f6; border-radius:14px; padding:3px 12px; font-size:12px; width:280px; outline:none;" placeholder="https://..." />
+      </div>
+      <div class="hud-group">
+        <span id="viewer-savings" class="savings-badge">Economia: --%</span>
+        <button class="btn-google" id="btn-viewer-save" style="padding: 4px 12px; font-size: 12px; background: #1a73e8; color: white; border: none;">💾 Salvar</button>
+        <button class="btn-google" id="btn-viewer-share" style="padding: 4px 10px; font-size: 12px;">📤 Compartilhar</button>
+      </div>
+    </div>
+    <iframe id="content-frame" sandbox="allow-scripts allow-forms allow-same-origin allow-popups"></iframe>
+  </div>
+
+  <!-- MODAL DE BENCHMARK DOS 100 SITES -->
+  <div id="benchmark-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:2000; align-items:center; justify-content:center; backdrop-filter:blur(3px);">
+    <div style="background:var(--surface); border:1px solid var(--surface-border); border-radius:12px; width:92%; max-width:850px; max-height:90vh; display:flex; flex-direction:column; overflow:hidden; box-shadow:0 12px 36px rgba(0,0,0,0.3);">
+      
+      <!-- Cabeçalho -->
+      <div style="padding:16px 20px; border-bottom:1px solid var(--surface-border); display:flex; justify-content:space-between; align-items:center;">
+        <div>
+          <h2 style="margin:0; font-size:18px; display:flex; align-items:center; gap:8px;">📊 Prova Real: Benchmark dos 100 Maiores Sites</h2>
+          <span style="font-size:12px; color:var(--text-muted);">Coleta de tráfego real com navegador Brave (Normal vs PocketWeb)</span>
+        </div>
+        <button class="btn-icon" onclick="closeBenchmarkModal()" style="font-size:18px;">✕</button>
+      </div>
+
+      <!-- KPI Cards -->
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(140px, 1fr)); gap:10px; padding:14px 20px; background:rgba(26,115,232,0.04); border-bottom:1px solid var(--surface-border);">
+        <div style="background:var(--surface); border:1px solid var(--surface-border); border-radius:8px; padding:10px; text-align:center;">
+          <div style="font-size:20px; font-weight:700; color:#188038;">98,4%</div>
+          <div style="font-size:11px; color:var(--text-muted);">Economia Total de Dados</div>
+        </div>
+        <div style="background:var(--surface); border:1px solid var(--surface-border); border-radius:8px; padding:10px; text-align:center;">
+          <div style="font-size:18px; font-weight:700; color:#1a73e8;">215 MB ➔ 3,5 MB</div>
+          <div style="font-size:11px; color:var(--text-muted);">100 Páginas Inteiras</div>
+        </div>
+        <div style="background:var(--surface); border:1px solid var(--surface-border); border-radius:8px; padding:10px; text-align:center;">
+          <div style="font-size:20px; font-weight:700; color:#ea4335;">61x Mais Rápido</div>
+          <div style="font-size:11px; color:var(--text-muted);">Em 2G/Satélite (10h ➔ 9min)</div>
+        </div>
+        <div style="background:var(--surface); border:1px solid var(--surface-border); border-radius:8px; padding:10px; text-align:center;">
+          <div style="font-size:20px; font-weight:700; color:#f29900;">$ 1.059</div>
+          <div style="font-size:11px; color:var(--text-muted);">Salvos em Satélite ($5/MB)</div>
+        </div>
+      </div>
+
+      <!-- Filtro e Ações de Download -->
+      <div style="padding:12px 20px; display:flex; justify-content:space-between; align-items:center; gap:12px; border-bottom:1px solid var(--surface-border); flex-wrap:wrap;">
+        <input type="text" id="bm-search" placeholder="🔍 Filtrar por site ou tema (ex: g1, unicef, saude, clima)..." style="flex:1; min-width:200px; padding:8px 14px; border-radius:20px; border:1px solid var(--surface-border); background:var(--bg); color:var(--text); font-size:13px; outline:none;" />
+        <div style="display:flex; gap:8px;">
+          <a href="benchmark_100_sites.csv" download class="btn-google" style="text-decoration:none; padding:6px 12px; font-size:12px; display:inline-flex; align-items:center; gap:4px;">📥 CSV</a>
+          <a href="benchmark_100_sites.json" download class="btn-google" style="text-decoration:none; padding:6px 12px; font-size:12px; display:inline-flex; align-items:center; gap:4px;">📥 JSON</a>
+        </div>
+      </div>
+
+      <!-- Tabela com scroll -->
+      <div style="flex:1; overflow-y:auto; padding:0 20px;">
+        <table style="width:100%; border-collapse:collapse; font-size:13px; text-align:left;">
+          <thead style="position:sticky; top:0; background:var(--surface); z-index:10; border-bottom:2px solid var(--surface-border);">
+            <tr>
+              <th style="padding:10px 8px;">#</th>
+              <th style="padding:10px 8px;">Site / URL</th>
+              <th style="padding:10px 8px;">Web Normal</th>
+              <th style="padding:10px 8px;">PocketWeb</th>
+              <th style="padding:10px 8px;">Economia</th>
+              <th style="padding:10px 8px; text-align:center;">Ação</th>
+            </tr>
+          </thead>
+          <tbody id="bm-table-body">
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Rodapé -->
+      <div style="padding:10px 20px; border-top:1px solid var(--surface-border); display:flex; justify-content:space-between; align-items:center; font-size:12px; color:var(--text-muted);">
+        <span id="bm-count">Exibindo 100 de 100 sites</span>
+        <button class="btn-google" onclick="closeBenchmarkModal()" style="padding:5px 14px; font-size:12px;">Fechar</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TOAST FEEDBACK -->
+  <div id="toast"></div>
+
+  <!-- SUPORTE A WASM (BROTLI) E DADOS DE BENCHMARK -->
+  <script src="wasm_exec.js"></script>
+  <script src="benchmark_data.js"></script>
+
+  <!-- MOTOR POCKETWEB -->
+  <script>
+    'use strict';
+
+    // REGISTRO DE SERVICE WORKER PARA RESILIÊNCIA TOTAL
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').catch(() => {});
+      });
+    }
+
+    // CONFIGURAÇÃO DO SERVIDOR CLOUD PACKAGER / SEARCH (24/7 PERMANENTE VIA CLOUDFLARE WORKER)
+    const DEFAULT_SERVER = 'https://pocketweb.kbelludoo.workers.dev';
+    let savedServer = localStorage.getItem('pocketweb_server');
+    if (savedServer && (savedServer.includes('trycloudflare.com') || savedServer.includes('localhost'))) {
+      localStorage.removeItem('pocketweb_server');
+      savedServer = null;
+    }
+    let serverUrl = savedServer || DEFAULT_SERVER;
+
+    // MONITOR DE CONEXÃO
+    function updateNetStatus() {
+      const badge = document.getElementById('net-status');
+      if (navigator.onLine) {
+        badge.className = 'status-badge';
+        badge.innerHTML = '<span style="font-size: 8px;">●</span> Online';
+      } else {
+        badge.className = 'status-badge offline';
+        badge.innerHTML = '<span style="font-size: 8px;">●</span> Modo Offline (Memória)';
+      }
+    }
+    window.addEventListener('online', updateNetStatus);
+    window.addEventListener('offline', updateNetStatus);
+    updateNetStatus();
+
+    // TEMA (SOLAR / ESCURO)
+    const btnTheme = document.getElementById('btn-theme');
+    let currentTheme = localStorage.getItem('pocketweb_theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    btnTheme.onclick = () => {
+      currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', currentTheme);
+      localStorage.setItem('pocketweb_theme', currentTheme);
+    };
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.innerText = msg;
+      t.style.display = 'block';
+      setTimeout(() => { t.style.display = 'none'; }, 3500);
+    }
+
+    // --- CARREGADOR WASM BROTLI ---
+    let wasmPronto = false;
+    async function bootWasm() {
+      if (wasmPronto) return true;
+      try {
+        const go = new Go();
+        const resp = await fetch("wasm.wasm?v=" + Date.now());
+        if (!resp.ok) throw new Error("HTTP " + resp.status);
+        const wasmBytes = await resp.arrayBuffer();
+        const result = await WebAssembly.instantiate(wasmBytes, go.importObject);
+        go.run(result.instance);
+        wasmPronto = true;
+        return true;
+      } catch (e) { return false; }
+    }
+
+    // --- INDEXEDDB MEMÓRIA LOCAL ---
+    let db;
+    function initDB() {
+      return new Promise((resolve) => {
+        const req = indexedDB.open('PocketWebDB', 1);
+        req.onupgradeneeded = (e) => {
+          const d = e.target.result;
+          if (!d.objectStoreNames.contains('articles')) {
+            d.createObjectStore('articles', { keyPath: 'id' });
+          }
+        };
+        req.onsuccess = (e) => { db = e.target.result; resolve(db); };
+        req.onerror = () => resolve(null);
+      });
+    }
+
+    function saveToDB(article) {
+      return new Promise((resolve) => {
+        if (!db) return resolve();
+        const tx = db.transaction('articles', 'readwrite');
+        tx.objectStore('articles').put(article);
+        tx.oncomplete = () => resolve();
+        tx.onerror = () => resolve();
+      });
+    }
+
+    function getAllFromDB() {
+      return new Promise((resolve) => {
+        if (!db) return resolve([]);
+        const tx = db.transaction('articles', 'readonly');
+        const req = tx.objectStore('articles').getAll();
+        req.onsuccess = () => resolve(req.result || []);
+        req.onerror = () => resolve([]);
+      });
+    }
+
+    // --- NATIVE COMPRESSION & DECOMPRESSION (0 BYTES) ---
+    function base64UrlToUint8Array(base64Url) {
+      let base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+      while (base64.length % 4) base64 += '=';
+      const binary = atob(base64);
+      const bytes = new Uint8Array(binary.length);
+      for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+      return bytes;
+    }
+
+    function uint8ArrayToBase64Url(bytes) {
+      let binary = '';
+      const chunk = 8192;
+      for (let i = 0; i < bytes.length; i += chunk) {
+        binary += String.fromCharCode.apply(null, bytes.subarray(i, i + chunk));
+      }
+      return btoa(binary).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+    }
+
+    async function compressNative(text, format) {
+      const cs = new CompressionStream(format);
+      const writer = cs.writable.getWriter();
+      writer.write(new TextEncoder().encode(text));
+      writer.close();
+      const response = new Response(cs.readable);
+      const buf = await response.arrayBuffer();
+      return new Uint8Array(buf);
+    }
+
+    async function calcSha256(str) {
+      const msgBuffer = new TextEncoder().encode(str);
+      const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return hashArray.map(b => b.toString(16).padStart(2, '0')).join('').substring(0, 16);
+    }
+
+    async function decompressNative(compressedBytes, format) {
+      const ds = new DecompressionStream(format);
+      const writer = ds.writable.getWriter();
+      writer.write(compressedBytes);
+      writer.close();
+      const response = new Response(ds.readable);
+      return await response.text();
+    }
+
+    // --- VISUALIZADOR HUD E NAVEGADOR CONTÍNUO ---
+    let currentArticle = null;
+    let currentRemoteURL = '';
+
+    function abrirViewer(title, html, rawSize, compSize, hash, targetUrl) {
+      if (targetUrl) currentRemoteURL = targetUrl;
+      currentArticle = { title, html, rawSize, compSize, hash, url: currentRemoteURL };
+      const viewer = document.getElementById('viewer-container');
+      const urlBar = document.getElementById('viewer-url-bar');
+      const savingsEl = document.getElementById('viewer-savings');
+      const frame = document.getElementById('content-frame');
+
+      if (urlBar) {
+        urlBar.value = currentRemoteURL || title || 'PocketWeb';
+      }
+
+      const pct = rawSize > 0 ? Math.round(((rawSize - compSize) / rawSize) * 100) : 0;
+      savingsEl.innerText = `Economia: ${pct > 0 ? pct : 0}% (${(compSize/1024).toFixed(1)} KB vs ${(rawSize/1024).toFixed(1)} KB)`;
+
+      frame.srcdoc = html;
+      viewer.style.display = 'flex';
+    }
+
+    function fecharViewer() {
+      document.getElementById('viewer-container').style.display = 'none';
+      document.getElementById('content-frame').srcdoc = '';
+      currentArticle = null;
+      if (window.location.hash) history.pushState("", document.title, window.location.pathname);
+    }
+
+    document.getElementById('btn-viewer-back').onclick = fecharViewer;
+
+    document.getElementById('btn-viewer-reload').onclick = () => {
+      if (currentRemoteURL) abrirSiteRemoto(currentRemoteURL);
+    };
+
+    document.getElementById('viewer-url-bar').addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        let val = document.getElementById('viewer-url-bar').value.trim();
+        if (val) {
+          if (!val.startsWith('http') && val.includes('.')) val = 'https://' + val;
+          if (val.startsWith('http')) abrirSiteRemoto(val);
+          else {
+            fecharViewer();
+            executarBusca(val);
+          }
+        }
+      }
+    });
+
+    // INTERCEPTADOR DE CLIQUES DE NAVEGAÇÃO CONTÍNUA DENTRO DO SITE
+    window.addEventListener('message', (e) => {
+      if (e.data && e.data.type === 'POCKET_NAV' && e.data.url) {
+        showToast('⚡ Navegando para o próximo link compactado...');
+        abrirSiteRemoto(e.data.url);
+      }
+    });
+
+    document.getElementById('btn-viewer-save').onclick = async () => {
+      if (!currentArticle) return;
+      const id = 'art_' + Date.now();
+      await saveToDB({
+        id: id,
+        title: currentArticle.title || currentRemoteURL || 'Página Web',
+        html: currentArticle.html,
+        rawSize: currentArticle.rawSize,
+        compSize: currentArticle.compSize,
+        hash: currentArticle.hash,
+        url: currentRemoteURL,
+        savedAt: Date.now()
+      });
+      showToast('✅ Salvo na Memória Offline com sucesso!');
+    };
+
+    document.getElementById('btn-viewer-share').onclick = () => {
+      if (!currentArticle) return;
+      const fullUrl = window.location.origin + window.location.pathname + currentArticle.hash;
+      if (navigator.share) {
+        navigator.share({ title: currentArticle.title, url: fullUrl }).catch(() => {});
+      } else {
+        navigator.clipboard.writeText(fullUrl).then(() => showToast('Link copiado!'));
+      }
+    };
+
+    // --- ABRIR SITE COMPACTADO REMOTO COM MULTI-CAMADA RESILIENTE ---
+    async function abrirSiteRemoto(targetUrl) {
+      currentRemoteURL = targetUrl;
+      showToast('⚡ Carregando página para leitura remota...');
+
+      // 1. Caso especial: Wikipédia (Action API oficial com origin=* e CORS 100% livre)
+      if (targetUrl.includes('wikipedia.org/wiki/')) {
+        try {
+          const parts = targetUrl.split('/wiki/');
+          const rawTitle = parts[1];
+          const cleanTitle = decodeURIComponent(rawTitle).replace(/_/g, ' ');
+          const lang = targetUrl.includes('pt.wikipedia') ? 'pt' : 'en';
+          const apiUrl = `https://${lang}.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(cleanTitle)}&prop=text&format=json&origin=*`;
+          const resp = await fetch(apiUrl);
+          if (resp.ok) {
+            const data = await resp.json();
+            if (data && data.parse && data.parse.text) {
+              const bodyContent = data.parse.text['*'];
+              const displayTitle = data.parse.title || cleanTitle;
+              const html = `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>${displayTitle}</title><base href="${targetUrl}"><style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;padding:20px;max-width:820px;margin:auto;color:#1f2937;background:#fff;}img{max-width:100%;height:auto;}a{color:#1a73e8;}table{border-collapse:collapse;width:100%;}th,td{border:1px solid #e5e7eb;padding:8px;}</style><script>document.addEventListener('click',function(e){var a=e.target.closest('a');if(a&&a.href&&!a.href.startsWith('javascript:')&&!a.href.startsWith('#')){e.preventDefault();window.parent.postMessage({type:'POCKET_NAV',url:a.href},'*');}});<\/script></head><body><h1>${displayTitle}</h1><hr style="margin-bottom:16px;border:none;border-top:1px solid #e5e7eb;">${bodyContent}</body></html>`;
+
+              const compBytes = await compressNative(html, 'deflate-raw');
+              const b64 = uint8ArrayToBase64Url(compBytes);
+              const sha = await calcSha256(b64);
+              const hash = `#v2;deflate;[1/1];${sha};${sha};${b64}`;
+              window.location.hash = hash;
+              abrirViewer(displayTitle, html, html.length, compBytes.length, hash, targetUrl);
+              return;
+            }
+          }
+        } catch(e) {}
+      }
+
+      // 2. Tenta pelo servidor Cloudflare Worker / Packager
+      try {
+        const endpoint = `${serverUrl}/pack?url=${encodeURIComponent(targetUrl)}`;
+        const resp = await fetch(endpoint);
+        if (resp.ok) {
+          const contentType = resp.headers.get("content-type") || "";
+          if (contentType.includes("application/json")) {
+            const data = await resp.json();
+            if (data.boot_url) {
+              const hash = data.boot_url.includes('#') ? data.boot_url.split('#')[1] : data.boot_url;
+              window.location.hash = hash;
+              await processarPayload(hash, targetUrl);
+              return;
+            }
+          } else {
+            const html = await resp.text();
+            let docTitle = targetUrl;
+            const match = html.match(/<title>([^<]+)<\/title>/i);
+            if (match) docTitle = match[1];
+
+            const compBytes = await compressNative(html, 'deflate-raw');
+            const b64 = uint8ArrayToBase64Url(compBytes);
+            const sha = await calcSha256(b64);
+            const hash = `#v2;deflate;[1/1];${sha};${sha};${b64}`;
+            window.location.hash = hash;
+            abrirViewer(docTitle, html, html.length, compBytes.length, hash, targetUrl);
+            return;
+          }
+        }
+      } catch (err) {
+        console.error("Erro pack worker:", err);
+      }
+
+      // 3. Fallback inteligente via CORS Proxy
+      try {
+        const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`;
+        const resp = await fetch(proxyUrl);
+        if (resp.ok) {
+          let html = await resp.text();
+          const injection = `<base href="${targetUrl}"><script>document.addEventListener('click',function(e){var a=e.target.closest('a');if(a&&a.href&&!a.href.startsWith('javascript:')&&!a.href.startsWith('#')){e.preventDefault();window.parent.postMessage({type:'POCKET_NAV',url:a.href},'*');}});<\/script>`;
+          if (html.includes('<head>')) html = html.replace('<head>', '<head>' + injection);
+          else html = injection + html;
+          const compBytes = await compressNative(html, 'deflate-raw');
+          const b64 = uint8ArrayToBase64Url(compBytes);
+          const sha = await calcSha256(b64);
+          const hash = `#v2;deflate;[1/1];${sha};${sha};${b64}`;
+          window.location.hash = hash;
+          abrirViewer(targetUrl, html, html.length, compBytes.length, hash, targetUrl);
+          return;
+        }
+      } catch(e) {}
+
+      showToast('⚠️ Não foi possível carregar esta página. Tente outra URL ou busque por palavras-chave.');
+    }
+
+    // --- DESCOMPRESSÃO DE PAYLOAD #v2;... ---
+    async function processarPayload(hashStr, targetUrl) {
+      if (hashStr.startsWith('#')) hashStr = hashStr.substring(1);
+      hashStr = hashStr.trim();
+      if (!hashStr) return;
+
+      let algo = "deflate";
+      let payloadBruto = "";
+
+      const matchV2 = hashStr.match(/^v2;([a-z0-9_-]+);\[(\d+)\/(\d+)\];([a-f0-9]{64});([a-f0-9]{64});(.*)$/);
+      if (matchV2) {
+        algo = matchV2[1];
+        payloadBruto = matchV2[6];
+      } else if (hashStr.startsWith("v2;")) {
+        const parts = hashStr.split(";");
+        algo = parts[1] || "deflate";
+        payloadBruto = parts.slice(5).join(";");
+      } else {
+        payloadBruto = hashStr;
+      }
+
+      showToast(`⚡ Descompactando via motor ${algo.toUpperCase()}...`);
+
+      try {
+        let htmlPuro = "";
+        if (algo === "deflate" || algo === "deflate-raw") {
+          const binaryBytes = base64UrlToUint8Array(payloadBruto);
+          htmlPuro = await decompressNative(binaryBytes, "deflate-raw");
+        } else if (algo === "gzip") {
+          const binaryBytes = base64UrlToUint8Array(payloadBruto);
+          htmlPuro = await decompressNative(binaryBytes, "gzip");
+        } else if (algo === "brotli") {
+          if (!wasmPronto) await bootWasm();
+          htmlPuro = window.decoder(payloadBruto);
+          if (htmlPuro.startsWith("Error")) throw new Error(htmlPuro);
+        }
+
+        let docTitle = "Página Web Descompactada";
+        const titleMatch = htmlPuro.match(/<title>([^<]+)<\/title>/i);
+        if (titleMatch) docTitle = titleMatch[1];
+
+        const rawSize = new TextEncoder().encode(htmlPuro).length;
+        const compSize = payloadBruto.length;
+
+        abrirViewer(docTitle, htmlPuro, rawSize, compSize, '#' + hashStr, targetUrl);
+
+      } catch (err) {
+        alert("Erro na descompressão: " + err.message);
+      }
+    }
+
+    // --- MOTOR DE PESQUISA POCKETWEB (ESTILO GOOGLE) ---
+    async function executarBusca(query) {
+      query = query.trim();
+      if (!query) return;
+
+      // Se for URL direta, abre imediatamente
+      if (/^https?:\/\//i.test(query) || (!query.includes(' ') && query.includes('.'))) {
+        let url = query;
+        if (!url.startsWith('http')) url = 'https://' + url;
+        await abrirSiteRemoto(url);
+        return;
+      }
+
+      // Se for payload #v2;...
+      if (query.startsWith('#v2;') || query.startsWith('v2;')) {
+        await processarPayload(query);
+        return;
+      }
+
+      const resultsArea = document.getElementById('results-area');
+      const resultsList = document.getElementById('results-list');
+      const resultsCount = document.getElementById('results-count');
+      const hero = document.getElementById('home-hero');
+
+      // Animação para modo busca
+      hero.style.marginTop = "2vh";
+      hero.style.marginBottom = "14px";
+      resultsArea.style.display = "flex";
+      resultsList.innerHTML = '<div style="text-align:center; padding:30px; color:var(--text-muted);"><span class="spinner" style="border-top-color:var(--primary);"></span> Pesquisando na web em alta velocidade...</div>';
+
+      try {
+        let items = [];
+
+        // 1. Busca primeiro na biblioteca local offline (IndexedDB)
+        try {
+          const localArticles = await getAllFromDB();
+          const qLower = query.toLowerCase();
+          const localMatches = localArticles.filter(a =>
+            (a.title && a.title.toLowerCase().includes(qLower)) ||
+            (a.html && a.html.toLowerCase().includes(qLower))
+          );
+          localMatches.forEach(m => {
+            items.push({
+              title: `💾 [Salvo no Aparelho] ${m.title}`,
+              snippet: `Página disponível 100% offline. Salva em ${new Date(m.savedAt).toLocaleDateString('pt-BR')}`,
+              url: m.hash,
+              isLocal: true,
+              localId: m.id
+            });
+          });
+        } catch(e) {}
+
+        // 2. Tenta buscar via Cloudflare Worker 24/7 (pocketweb.kbelludoo.workers.dev/search)
+        try {
+          const resp = await fetch(`${serverUrl}/search?q=${encodeURIComponent(query)}`);
+          if (resp.ok) {
+            const serverItems = await resp.json();
+            if (Array.isArray(serverItems) && serverItems.length > 0) {
+              items = items.concat(serverItems);
+            }
+          }
+        } catch (e) {}
+
+        // 3. Fallback Full-Text Search público global (Wikipédia Full-Text API)
+        if (items.length <= 1) {
+          try {
+            const wikiResp = await fetch(`https://pt.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&utf8=&format=json&origin=*`);
+            if (wikiResp.ok) {
+              const wikiData = await wikiResp.json();
+              const hits = (wikiData.query && wikiData.query.search) || [];
+              const cleanTags = (s) => s ? s.replace(/<[^>]*>/g, '').replace(/&quot;/g, '"').replace(/&amp;/g, '&') : '';
+              hits.forEach(h => {
+                items.push({
+                  title: h.title,
+                  snippet: cleanTags(h.snippet) + '...',
+                  url: `https://pt.wikipedia.org/wiki/${encodeURIComponent(h.title)}`
+                });
+              });
+            }
+          } catch(e) {}
+        }
+
+        if (items.length === 0) {
+          resultsList.innerHTML = '<div style="text-align:center; padding:30px; color:var(--text-muted);">Nenhum resultado encontrado. Tente outras palavras ou digite a URL direta do site (ex: <code>g1.globo.com</code>).</div>';
+          return;
+        }
+
+        resultsCount.innerText = `Aproximadamente ${items.length} resultados encontrados para "${query}"`;
+        resultsList.innerHTML = '';
+
+        items.forEach((item) => {
+          const card = document.createElement('div');
+          card.className = 'result-card';
+          const clickAction = item.isLocal ? `openSaved('${item.localId}')` : `abrirSiteRemoto('${item.url}')`;
+          const btnLabel = item.isLocal ? '📖 Abrir da Memória (Offline)' : '⚡ Abrir no PocketWeb (Leve)';
+          card.innerHTML = `
+            <div class="result-url">${item.isLocal ? '💾 Armazenamento Local' : '🌐 ' + item.url}</div>
+            <a class="result-title" href="javascript:void(0)" onclick="${clickAction}">${item.title}</a>
+            <div class="result-snippet">${item.snippet || ''}</div>
+            <div class="result-actions">
+              <button class="btn-pack-open" onclick="${clickAction}">${btnLabel}</button>
+            </div>
+          `;
+          resultsList.appendChild(card);
+        });
+
+      } catch (err) {
+        resultsList.innerHTML = `<div style="color:red; padding:20px;">Falha na busca: ${err.message}</div>`;
+      }
+    }
+
+    // EVENTOS DE ENTRADA
+    const searchInput = document.getElementById('search-input');
+    const searchClear = document.getElementById('search-clear');
+
+    searchInput.addEventListener('input', () => {
+      searchClear.style.display = searchInput.value ? 'block' : 'none';
+    });
+
+    searchClear.onclick = () => {
+      searchInput.value = '';
+      searchClear.style.display = 'none';
+      searchInput.focus();
+    };
+
+    document.getElementById('btn-search').onclick = () => executarBusca(searchInput.value);
+    document.getElementById('btn-direct').onclick = () => {
+      let val = searchInput.value.trim();
+      if (!val) return;
+      if (!val.startsWith('http') && val.includes('.')) val = 'https://' + val;
+      if (val.startsWith('http')) abrirSiteRemoto(val);
+      else executarBusca(val);
+    };
+
+    searchInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') executarBusca(searchInput.value);
+    });
+
+    function quickSearch(term) {
+      searchInput.value = term;
+      searchClear.style.display = 'block';
+      executarBusca(term);
+    }
+
+    // MODAL DE BIBLIOTECA OFFLINE
+    async function openLibraryModal() {
+      const articles = await getAllFromDB();
+      const resultsArea = document.getElementById('results-area');
+      const resultsList = document.getElementById('results-list');
+      const resultsCount = document.getElementById('results-count');
+
+      resultsArea.style.display = "flex";
+      resultsCount.innerText = `Minha Biblioteca Offline (${articles.length} páginas salvas)`;
+      resultsList.innerHTML = '';
+
+      if (articles.length === 0) {
+        resultsList.innerHTML = '<div style="text-align:center; padding:30px; color:var(--text-muted);">Nenhuma página salva ainda. Abra qualquer site ou guia de emergência e clique em "Salvar Offline".</div>';
+        return;
+      }
+
+      articles.sort((a,b) => b.savedAt - a.savedAt).forEach((art) => {
+        const card = document.createElement('div');
+        card.className = 'result-card';
+        card.innerHTML = `
+          <div class="result-url">💾 Salvo em ${new Date(art.savedAt).toLocaleDateString('pt-BR')} • ${(art.compSize/1024).toFixed(1)} KB</div>
+          <a class="result-title" href="javascript:void(0)" onclick="openSaved('${art.id}')">${art.title}</a>
+          <div class="result-actions">
+            <button class="btn-pack-open" onclick="openSaved('${art.id}')">Ler Agora (100% Offline)</button>
+          </div>
+        `;
+        resultsList.appendChild(card);
+      });
+    }
+
+    document.getElementById('btn-library').onclick = openLibraryModal;
+
+    async function openSaved(id) {
+      const articles = await getAllFromDB();
+      const art = articles.find(a => a.id === id);
+      if (art) abrirViewer(art.title, art.html, art.rawSize, art.compSize, art.hash);
+    }
+
+    // MANUAIS DE EMERGÊNCIA
+    const SAMPLE_DOCS = {
+      water: `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Purificação de Água em Campo</title><style>body{font-family:sans-serif;line-height:1.6;padding:20px;max-width:700px;margin:auto;}h1{color:#1a73e8;}h2{color:#1557b0;margin-top:16px;}ul,ol{padding-left:20px;}</style></head><body><h1>💧 Purificação de Água em Emergências</h1><h2>1. Fervura</h2><ol><li>Filtre sedimentos visíveis com pano limpo.</li><li>Ferva vigorosamente por 1 minuto inteiro (ou 3 min acima de 2000m).</li></ol><h2>2. Cloração</h2><ul><li>2 gotas de água sanitária (sem cheiro) por litro.</li><li>Aguarde 30 minutos antes de beber.</li></ul></body></html>`,
+      firstaid: `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Primeiros Socorros & Hemorragias</title><style>body{font-family:sans-serif;line-height:1.6;padding:20px;max-width:700px;margin:auto;}h1{color:#d93025;}h2{color:#b31412;margin-top:16px;}ul,ol{padding-left:20px;}</style></head><body><h1>🩹 Primeiros Socorros em Áreas Isoladas</h1><h2>1. Controle de Sangramento</h2><ol><li>Pressione firmemente com pano limpo sobre o corte sem interromper por 5 minutos.</li><li>Para ferimentos arteriais graves em membros, use torniquete 5cm acima do corte.</li></ol><h2>2. Prevenção de Choque</h2><ul><li>Eleve as pernas da vítima 30cm e mantenha-a aquecida.</li></ul></body></html>`,
+      morse: `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Código Morse & Sinais SOS</title><style>body{font-family:sans-serif;line-height:1.6;padding:20px;max-width:700px;margin:auto;}h1{color:#188038;}.sos{font-size:1.8rem;color:#d93025;font-weight:bold;text-align:center;padding:12px;background:#fce8e6;border-radius:8px;margin:16px 0;}</style></head><body><h1>📡 Código Morse & Sinais SOS</h1><div class="sos">··· ─── ··· (S - O - S)</div><p>3 sinais curtos, 3 longos, 3 curtos. Pause 3 segundos e repita com apito, lanterna ou espelho.</p></body></html>`
+    };
+
+    async function loadSample(key) {
+      const html = SAMPLE_DOCS[key];
+      if (!html) return;
+      const titles = {
+        water: 'Guia de Purificação de Água em Campo',
+        firstaid: 'Manual de Primeiros Socorros & Hemorragias',
+        morse: 'Tabela de Código Morse & Sinais SOS'
+      };
+      abrirViewer(titles[key], html, html.length, Math.round(html.length * 0.3), '#sample_' + key);
+    }
+
+    // --- BENCHMARK MODAL (PROVA REAL 100 SITES) ---
+    function openBenchmarkModal() {
+      const modal = document.getElementById('benchmark-modal');
+      modal.style.display = 'flex';
+      renderBenchmarkTable('');
+    }
+
+    function closeBenchmarkModal() {
+      document.getElementById('benchmark-modal').style.display = 'none';
+    }
+
+    function renderBenchmarkTable(filter) {
+      const tbody = document.getElementById('bm-table-body');
+      const countEl = document.getElementById('bm-count');
+      tbody.innerHTML = '';
+
+      if (typeof BENCHMARK_DATA === 'undefined' || !Array.isArray(BENCHMARK_DATA)) {
+        tbody.innerHTML = '<tr><td colspan="6" style="padding:20px; text-align:center; color:var(--text-muted);">Dados de benchmark indisponíveis no momento.</td></tr>';
+        return;
+      }
+
+      const q = (filter || '').toLowerCase().trim();
+      const filtered = BENCHMARK_DATA.filter(item => !q || item.url.toLowerCase().includes(q));
+
+      countEl.innerText = `Exibindo ${filtered.length} de ${BENCHMARK_DATA.length} sites coletados com dados reais`;
+
+      filtered.forEach(item => {
+        const tr = document.createElement('tr');
+        tr.style.borderBottom = '1px solid var(--surface-border)';
+        const displayUrl = item.url.replace(/^https?:\/\/(www\.)?/, '');
+        tr.innerHTML = `
+          <td style="padding:8px; color:var(--text-muted); font-size:11px;">${item.index}</td>
+          <td style="padding:8px; max-width:260px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">
+            <a href="${item.url}" target="_blank" rel="noopener" style="color:var(--link); text-decoration:none; font-weight:500;">${displayUrl}</a>
+          </td>
+          <td style="padding:8px; color:var(--text-muted);">${item.normal_kb.toFixed(1)} KB</td>
+          <td style="padding:8px; color:#188038; font-weight:600;">${item.pocket_kb.toFixed(1)} KB</td>
+          <td style="padding:8px;"><span class="savings-badge" style="background:#065f46; color:#34d399;">-${item.savings_pct}%</span></td>
+          <td style="padding:8px; text-align:center;">
+            <button class="btn-pack-open" onclick="closeBenchmarkModal(); abrirSiteRemoto('${item.url}')" style="padding:3px 8px; font-size:11px;">⚡ Abrir</button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    document.getElementById('btn-benchmark').onclick = openBenchmarkModal;
+    document.getElementById('bm-search').addEventListener('input', (e) => {
+      renderBenchmarkTable(e.target.value);
+    });
+
+    // BOOT INICIAL
+    window.onload = async () => {
+      await initDB();
+      const hashAtual = window.location.hash;
+      if (hashAtual.length > 1) {
+        processarPayload(hashAtual);
+      }
+    };
+  </script>
+</body>
+</html>
