@@ -1,52 +1,7 @@
 {
-  "last_updated": "2026-10-23T12:34:42Z",
-  "total_distinct_sites": 33,
+  "last_updated": "2026-10-23T12:34:57Z",
+  "total_distinct_sites": 34,
   "distinct_sites": [
-    {
-      "id": 4,
-      "domain": "tls.peet.ws",
-      "category": "Auditoria uTLS \u0026 Fingerprint",
-      "url": "https://tls.peet.ws/api/all",
-      "title": "uTLS Chrome 120 Fingerprint",
-      "status_code": 200,
-      "duration_ms": 721,
-      "raw_bytes": 7770,
-      "markdown_bytes": 6098,
-      "token_reduction_pct": 21.5,
-      "interactive_elements": 0,
-      "rss_mib": 18.4,
-      "first_seen": "2026-10-23T01:05:14Z"
-    },
-    {
-      "id": 3,
-      "domain": "amazon.com",
-      "category": "Documentações \u0026 Web Aberta",
-      "url": "https://amazon.com/",
-      "title": "",
-      "status_code": 202,
-      "duration_ms": 356,
-      "raw_bytes": 2007,
-      "markdown_bytes": 0,
-      "token_reduction_pct": 100,
-      "interactive_elements": 0,
-      "rss_mib": 28.2421875,
-      "first_seen": "2026-10-23T12:29:41Z"
-    },
-    {
-      "id": 15,
-      "domain": "askubuntu.com",
-      "category": "Documentações \u0026 Web Aberta",
-      "url": "https://askubuntu.com/",
-      "title": "Just a moment...",
-      "status_code": 403,
-      "duration_ms": 152,
-      "raw_bytes": 5905,
-      "markdown_bytes": 0,
-      "token_reduction_pct": 100,
-      "interactive_elements": 0,
-      "rss_mib": 20.5390625,
-      "first_seen": "2026-10-23T12:32:05Z"
-    },
     {
       "id": 16,
       "domain": "aws.amazon.com",
@@ -474,6 +429,23 @@
       "first_seen": "2026-10-23T12:32:54Z"
     },
     {
+      "id": 29,
+      "domain": "cilium.io",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://cilium.io/",
+      "title": "Cilium - Cloud Native, eBPF-based Networking, Observability, and Security",
+      "status_code": 200,
+      "duration_ms": 1013,
+      "raw_bytes": 200251,
+      "markdown_bytes": 0,
+      "token_reduction_pct": 100,
+      "interactive_elements": 0,
+      "rss_mib": 19.98828125,
+      "first_seen": "2026-10-23T12:34:54Z",
+      "ai_summary": "O Cilium é uma solução cloud native baseada em eBPF que oferece rede, observabilidade e segurança para cargas de trabalho em ambientes como Kubernetes. Ele fornece conectividade de alto desempenho, visibilidade detalhada do tráfego e políticas de segurança em tempo de execução na camada do kernel.",
+      "ai_provider": "stop"
+    },
+    {
       "id": 1,
       "domain": "go.dev",
       "category": "Dev, Repos \u0026 Compiladores",
@@ -534,6 +506,51 @@
       "interactive_elements": 0,
       "rss_mib": 48.3203125,
       "first_seen": "2026-10-23T12:31:06Z"
+    },
+    {
+      "id": 4,
+      "domain": "tls.peet.ws",
+      "category": "Auditoria uTLS \u0026 Fingerprint",
+      "url": "https://tls.peet.ws/api/all",
+      "title": "uTLS Chrome 120 Fingerprint",
+      "status_code": 200,
+      "duration_ms": 721,
+      "raw_bytes": 7770,
+      "markdown_bytes": 6098,
+      "token_reduction_pct": 21.5,
+      "interactive_elements": 0,
+      "rss_mib": 18.4,
+      "first_seen": "2026-10-23T01:05:14Z"
+    },
+    {
+      "id": 3,
+      "domain": "amazon.com",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://amazon.com/",
+      "title": "",
+      "status_code": 202,
+      "duration_ms": 356,
+      "raw_bytes": 2007,
+      "markdown_bytes": 0,
+      "token_reduction_pct": 100,
+      "interactive_elements": 0,
+      "rss_mib": 28.2421875,
+      "first_seen": "2026-10-23T12:29:41Z"
+    },
+    {
+      "id": 15,
+      "domain": "askubuntu.com",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://askubuntu.com/",
+      "title": "Just a moment...",
+      "status_code": 403,
+      "duration_ms": 152,
+      "raw_bytes": 5905,
+      "markdown_bytes": 0,
+      "token_reduction_pct": 100,
+      "interactive_elements": 0,
+      "rss_mib": 20.5390625,
+      "first_seen": "2026-10-23T12:32:05Z"
     }
   ]
 }
