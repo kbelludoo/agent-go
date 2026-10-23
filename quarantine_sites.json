@@ -1,7 +1,161 @@
 {
-  "last_updated": "2026-10-23T18:03:27Z",
+  "last_updated": "2026-10-23T18:04:38Z",
   "total_quarantine": 90,
   "quarantine_sites": [
+    {
+      "id": 39,
+      "domain": "stackexchange.com",
+      "url": "https://stackexchange.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:32:34Z",
+      "last_seen": "2026-10-23T14:38:34Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 73,
+      "domain": "www.gov.br",
+      "url": "https://www.gov.br/conselho-nacional-de-saude/pt-br/search?origem=termos\u0026SearchableText=Desenrola Brasil",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-23T16:39:33Z",
+      "last_seen": "2026-10-23T16:39:33Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 80,
+      "domain": "shop.alz.org",
+      "url": "https://shop.alz.org",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T17:27:33Z",
+      "last_seen": "2026-10-23T17:27:33Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 82,
+      "domain": "www.securityfocus.com",
+      "url": "http://www.securityfocus.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.securityfocus.com/: Get \"http://www.securityfocus.com/\": dial tcp4 135.125.97.155:80: connect: connection refused",
+      "first_seen": "2026-10-23T17:33:58Z",
+      "last_seen": "2026-10-23T17:34:22Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.securityfocus.com/: Get \"http://www.securityfocus.com/\": dial tcp4 135.125.97.155:80: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 11,
+      "domain": "reference.deno.land",
+      "url": "https://reference.deno.land/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-23T13:06:10Z",
+      "last_seen": "2026-10-23T13:06:10Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 26,
+      "domain": "www.reddit.com",
+      "url": "https://www.reddit.com/r/technology",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:24:45Z",
+      "last_seen": "2026-10-23T13:24:45Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 42,
+      "domain": "infograficos.valor.globo.com",
+      "url": "https://infograficos.valor.globo.com/carteira-valor/?menu_valor",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:47:34Z",
+      "last_seen": "2026-10-23T14:47:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 61,
+      "domain": "support.x.com",
+      "url": "https://support.x.com/articles/20170514",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:50:58Z",
+      "last_seen": "2026-10-23T17:09:46Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 68,
+      "domain": "service.elsevier.com",
+      "url": "https://service.elsevier.com/app/contact/supporthub/sciencedirect/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T16:11:24Z",
+      "last_seen": "2026-10-23T16:11:46Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 88,
+      "domain": "lp.suno.com.br",
+      "url": "https://lp.suno.com.br/suno-mentoria-de-sucesso/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://lp.suno.com.br/suno-mentoria-de-sucesso/: Get \"https://lp.suno.com.br/suno-mentoria-de-sucesso/\": context deadline exceeded",
+      "first_seen": "2026-10-23T17:57:33Z",
+      "last_seen": "2026-10-23T17:57:46Z",
+      "attempts": 2,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 4,
+      "domain": "nytimes.com",
+      "url": "https://nytimes.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T12:59:58Z",
+      "last_seen": "2026-10-23T12:59:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 22,
+      "domain": "www.gov.br",
+      "url": "https://www.gov.br/receitafederal/pt-b",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:19:22Z",
+      "last_seen": "2026-10-23T13:19:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 33,
+      "domain": "home.web.cern.ch",
+      "url": "http://home.web.cern.ch/topics/birth-web",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:53:24Z",
+      "last_seen": "2026-10-23T13:53:24Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 85,
+      "domain": "paineldecompras.economia.gov.br",
+      "url": "http://paineldecompras.economia.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host",
+      "first_seen": "2026-10-23T17:39:51Z",
+      "last_seen": "2026-10-23T17:40:48Z",
+      "attempts": 3,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
     {
       "id": 5,
       "domain": "phys.org",
@@ -837,160 +991,6 @@
       "last_seen": "2026-10-23T14:31:22Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 39,
-      "domain": "stackexchange.com",
-      "url": "https://stackexchange.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:32:34Z",
-      "last_seen": "2026-10-23T14:38:34Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 73,
-      "domain": "www.gov.br",
-      "url": "https://www.gov.br/conselho-nacional-de-saude/pt-br/search?origem=termos\u0026SearchableText=Desenrola Brasil",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-23T16:39:33Z",
-      "last_seen": "2026-10-23T16:39:33Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 80,
-      "domain": "shop.alz.org",
-      "url": "https://shop.alz.org",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T17:27:33Z",
-      "last_seen": "2026-10-23T17:27:33Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 82,
-      "domain": "www.securityfocus.com",
-      "url": "http://www.securityfocus.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.securityfocus.com/: Get \"http://www.securityfocus.com/\": dial tcp4 135.125.97.155:80: connect: connection refused",
-      "first_seen": "2026-10-23T17:33:58Z",
-      "last_seen": "2026-10-23T17:34:22Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.securityfocus.com/: Get \"http://www.securityfocus.com/\": dial tcp4 135.125.97.155:80: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 11,
-      "domain": "reference.deno.land",
-      "url": "https://reference.deno.land/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-23T13:06:10Z",
-      "last_seen": "2026-10-23T13:06:10Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 26,
-      "domain": "www.reddit.com",
-      "url": "https://www.reddit.com/r/technology",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:24:45Z",
-      "last_seen": "2026-10-23T13:24:45Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 42,
-      "domain": "infograficos.valor.globo.com",
-      "url": "https://infograficos.valor.globo.com/carteira-valor/?menu_valor",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:47:34Z",
-      "last_seen": "2026-10-23T14:47:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 61,
-      "domain": "support.x.com",
-      "url": "https://support.x.com/articles/20170514",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:50:58Z",
-      "last_seen": "2026-10-23T17:09:46Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 68,
-      "domain": "service.elsevier.com",
-      "url": "https://service.elsevier.com/app/contact/supporthub/sciencedirect/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T16:11:24Z",
-      "last_seen": "2026-10-23T16:11:46Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 88,
-      "domain": "lp.suno.com.br",
-      "url": "https://lp.suno.com.br/suno-mentoria-de-sucesso/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://lp.suno.com.br/suno-mentoria-de-sucesso/: Get \"https://lp.suno.com.br/suno-mentoria-de-sucesso/\": context deadline exceeded",
-      "first_seen": "2026-10-23T17:57:33Z",
-      "last_seen": "2026-10-23T17:57:46Z",
-      "attempts": 2,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 4,
-      "domain": "nytimes.com",
-      "url": "https://nytimes.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T12:59:58Z",
-      "last_seen": "2026-10-23T12:59:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 22,
-      "domain": "www.gov.br",
-      "url": "https://www.gov.br/receitafederal/pt-b",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:19:22Z",
-      "last_seen": "2026-10-23T13:19:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 33,
-      "domain": "home.web.cern.ch",
-      "url": "http://home.web.cern.ch/topics/birth-web",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:53:24Z",
-      "last_seen": "2026-10-23T13:53:24Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 85,
-      "domain": "paineldecompras.economia.gov.br",
-      "url": "http://paineldecompras.economia.gov.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host",
-      "first_seen": "2026-10-23T17:39:51Z",
-      "last_seen": "2026-10-23T17:40:48Z",
-      "attempts": 3,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
