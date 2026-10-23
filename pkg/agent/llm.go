@@ -128,7 +128,15 @@ func (c *LLMClient) SetModel(model string) {
 }
 
 func loadDotEnv() {
-	for _, p := range []string{".env", "../.env", "../../.env"} {
+	candidates := []string{
+		".env",
+		"../.env",
+		"../../.env",
+		"C:/Users/kbell/Downloads/agent-go/.env",
+		"/home/ubuntu/agent-go-crawler/.env",
+		"/home/ubuntu/ai-go-browser/.env",
+	}
+	for _, p := range candidates {
 		data, err := os.ReadFile(p)
 		if err == nil {
 			for _, line := range strings.Split(string(data), "\n") {
@@ -139,7 +147,7 @@ func loadDotEnv() {
 				parts := strings.SplitN(line, "=", 2)
 				if len(parts) == 2 {
 					k := strings.TrimSpace(parts[0])
-					v := strings.Trim(strings.TrimSpace(parts[1]), `"'`)
+					v := strings.Trim(strings.TrimSpace(parts[1]), `"'`+"\r")
 					if os.Getenv(k) == "" {
 						os.Setenv(k, v)
 					}
@@ -152,11 +160,9 @@ func loadDotEnv() {
 
 func NewLLMClient(baseURL, apiKey, model string) *LLMClient {
 	loadDotEnv()
-	// ACP owns the complete agent turn, including provider auth and tools.
-	// Do not initialize direct providers or account rotation in this mode.
 	acp, acpErr := opencode.NewACPFromEnv()
-	if acp != nil || acpErr != nil {
-		return &LLMClient{ACP: acp, acpError: acpErr, acpModel: model}
+	if acpErr != nil {
+		acp = nil
 	}
 	var providers []UpstreamProvider
 
@@ -434,6 +440,8 @@ func NewLLMClient(baseURL, apiKey, model string) *LLMClient {
 	}
 
 	return &LLMClient{
+		ACP:        acp,
+		acpModel:   model,
 		Providers:  providers,
 		HTTPClient: network.NewRotatingHTTPClient(120 * time.Second),
 		Daemon:     opencode.NewDaemonClient(),
@@ -441,19 +449,15 @@ func NewLLMClient(baseURL, apiKey, model string) *LLMClient {
 }
 
 func (c *LLMClient) Complete(ctx context.Context, messages []Message, tools []ToolDef) (*Message, string, error) {
-	if c.acpError != nil {
-		return nil, "", c.acpError
-	}
-	if c.ACP != nil {
+	if c.ACP != nil && c.acpError == nil {
 		sdkTools, err := acpTools(tools)
-		if err != nil {
-			return nil, "", err
+		if err == nil {
+			result, err := c.ACP.Complete(ctx, c.acpModel, messages, sdkTools...)
+			if err == nil {
+				return &Message{Role: "assistant", Content: result.AssistantText}, "stop", nil
+			}
+			log.Printf("[llm] ACP falhou: %v. Tentando provedores upstream em cascata...", err)
 		}
-		result, err := c.ACP.Complete(ctx, c.acpModel, messages, sdkTools...)
-		if err != nil {
-			return nil, "", err
-		}
-		return &Message{Role: "assistant", Content: result.AssistantText}, "stop", nil
 	}
 	// 0. Primary: OpenCode Local Headless Daemon (rotacionando todas as contas conectadas)
 	if c.Daemon != nil && c.Daemon.IsAvailable() {

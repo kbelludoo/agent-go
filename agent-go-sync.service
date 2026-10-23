@@ -1,0 +1,9 @@
+[Unit]
+Description=Sync Agent-Go telemetry to GitHub Pages
+After=network.target
+
+[Service]
+Type=oneshot
+User=ubuntu
+WorkingDirectory=/home/ubuntu/agent-go-crawler/docs
+ExecStart=/home/ubuntu/agent-go-crawler/sync_pages.sh

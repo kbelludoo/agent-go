@@ -76,11 +76,29 @@ func (s *Session) Navigate(ctx context.Context, destURL string) (*PageSnapshot, 
 	if err != nil {
 		return nil, fmt.Errorf("failed to fetch URL %s: %w", destURL, err)
 	}
-	defer resp.Body.Close()
+	// Read body with context cancellation protection and 10MB max limit
+	var bodyBytes []byte
+	bodyChan := make(chan []byte, 1)
+	readErrChan := make(chan error, 1)
 
-	bodyBytes, err := io.ReadAll(resp.Body)
-	if err != nil {
-		return nil, fmt.Errorf("failed to read response body: %w", err)
+	go func() {
+		defer resp.Body.Close()
+		limited := io.LimitReader(resp.Body, 10*1024*1024)
+		b, rErr := io.ReadAll(limited)
+		if rErr != nil {
+			readErrChan <- rErr
+			return
+		}
+		bodyChan <- b
+	}()
+
+	select {
+	case <-ctx.Done():
+		_ = resp.Body.Close()
+		return nil, fmt.Errorf("context cancelled or timed out while reading response from %s: %w", destURL, ctx.Err())
+	case rErr := <-readErrChan:
+		return nil, fmt.Errorf("failed to read response body from %s: %w", destURL, rErr)
+	case bodyBytes = <-bodyChan:
 	}
 	duration := time.Since(start)
 
