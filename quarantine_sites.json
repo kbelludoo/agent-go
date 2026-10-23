@@ -1,7 +1,18 @@
 {
-  "last_updated": "2026-10-23T20:44:04Z",
+  "last_updated": "2026-10-23T20:45:02Z",
   "total_quarantine": 110,
   "quarantine_sites": [
+    {
+      "id": 92,
+      "domain": "chrome-extension",
+      "url": "http://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf: Get \"http://chrome-extension//efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf\": dial tcp4: lookup chrome-extension on 127.0.0.53:53: server misbehaving",
+      "first_seen": "2026-10-23T18:15:57Z",
+      "last_seen": "2026-10-23T18:15:57Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf: Get \"http://chrome-extension//efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf\": dial tcp4: lookup chrome-extension on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
+    },
     {
       "id": 10,
       "domain": "pt.wikipedia.org",
@@ -1200,17 +1211,6 @@
       "last_seen": "2026-10-23T18:00:50Z",
       "attempts": 1,
       "diagnosis": "Erro de transporte de rede: failed to parse HTML: html: open stack of elements exceeds 512 nodes. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 92,
-      "domain": "chrome-extension",
-      "url": "http://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf: Get \"http://chrome-extension//efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf\": dial tcp4: lookup chrome-extension on 127.0.0.53:53: server misbehaving",
-      "first_seen": "2026-10-23T18:15:57Z",
-      "last_seen": "2026-10-23T18:15:57Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf: Get \"http://chrome-extension//efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf\": dial tcp4: lookup chrome-extension on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
