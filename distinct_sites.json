@@ -1,7 +1,24 @@
 {
-  "last_updated": "2026-10-23T12:54:48Z",
-  "total_distinct_sites": 132,
+  "last_updated": "2026-10-23T12:55:48Z",
+  "total_distinct_sites": 137,
   "distinct_sites": [
+    {
+      "id": 55,
+      "domain": "learnxinyminutes.com",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://learnxinyminutes.com/",
+      "title": "Learn X in Y Minutes: Scenic Programming Language Tours",
+      "status_code": 200,
+      "duration_ms": 300,
+      "raw_bytes": 80299,
+      "markdown_bytes": 42838,
+      "token_reduction_pct": 46.65188856648277,
+      "interactive_elements": 868,
+      "rss_mib": 23.984375,
+      "first_seen": "2026-10-23T12:54:46Z",
+      "ai_summary": "O site oferece tours rápidos e comunitários de diversas linguagens de programação, funcionando como uma visão geral concisa de sintaxe e conceitos. Também disponibiliza traduções desses guias em vários idiomas.",
+      "ai_provider": "stop"
+    },
     {
       "id": 49,
       "domain": "docs.docker.com",
@@ -754,6 +771,23 @@
       "ai_provider": "stop"
     },
     {
+      "id": 56,
+      "domain": "lite.cnn.com",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://lite.cnn.com/",
+      "title": "Breaking News, Latest News and Videos | CNN",
+      "status_code": 200,
+      "duration_ms": 229,
+      "raw_bytes": 265915,
+      "markdown_bytes": 17202,
+      "token_reduction_pct": 93.5310155500818,
+      "interactive_elements": 105,
+      "rss_mib": 25.1484375,
+      "first_seen": "2026-10-23T12:54:58Z",
+      "ai_summary": "O site é uma versão leve da CNN com notícias de última hora e principais manchetes internacionais. Ele oferece acesso rápido e simplificado a reportagens e atualizações jornalísticas.",
+      "ai_provider": "stop"
+    },
+    {
       "id": 51,
       "domain": "docs.rs",
       "category": "Documentações \u0026 Web Aberta",
@@ -786,6 +820,21 @@
       "first_seen": "2026-10-23T12:44:22Z",
       "ai_summary": "O Estadão é um portal de jornalismo brasileiro que reúne as últimas notícias do Brasil e do mundo, com destaque para política, eleições, esportes e economia. Além da cobertura noticiosa, oferece colunas de opinião, análises e seções temáticas como carros, investimentos, tecnologia, gastronomia e cultura.",
       "ai_provider": "stop"
+    },
+    {
+      "id": 58,
+      "domain": "magazineluiza.com.br",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://magazineluiza.com.br/",
+      "title": "Magazine Luiza | Não é possível acessar a página",
+      "status_code": 403,
+      "duration_ms": 47,
+      "raw_bytes": 1083,
+      "markdown_bytes": 235,
+      "token_reduction_pct": 78.30101569713757,
+      "interactive_elements": 1,
+      "rss_mib": 23.11328125,
+      "first_seen": "2026-10-23T12:55:21Z"
     },
     {
       "id": 19,
@@ -1083,6 +1132,23 @@
       "rss_mib": 55.34375,
       "first_seen": "2026-10-23T12:52:48Z",
       "ai_summary": "Esta é a página da Wikipédia em italiano sobre a Itália, com um artigo enciclopédico abrangente que cobre etimologia, história, geografia, sociedade, política, instituições e símbolos do país. Ela oferece uma visão geral detalhada e organizada para consulta e estudo.",
+      "ai_provider": "stop"
+    },
+    {
+      "id": 59,
+      "domain": "manualdousuario.net",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://manualdousuario.net",
+      "title": "Manual do Usuário ⁄ Vida digital saudável / por Rodrigo Ghedin",
+      "status_code": 200,
+      "duration_ms": 165,
+      "raw_bytes": 43236,
+      "markdown_bytes": 13423,
+      "token_reduction_pct": 68.95411231381257,
+      "interactive_elements": 113,
+      "rss_mib": 22.44921875,
+      "first_seen": "2026-10-23T12:55:34Z",
+      "ai_summary": "O Manual do Usuário é um blog de tecnologia mantido por Rodrigo Ghedin, com foco em vida digital saudável — abordando notícias, privacidade, software livre e o impacto das big techs. Além dos textos, oferece podcast, newsletter, fórum de debates (Órbita), uma lojinha e seções colaborativas como \"Mesa de trabalho\", \"Mochila\" e \"Celular\".",
       "ai_provider": "stop"
     },
     {
@@ -1535,6 +1601,23 @@
       "ai_provider": "stop"
     },
     {
+      "id": 60,
+      "domain": "maven.apache.org",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://maven.apache.org/",
+      "title": "Welcome to Apache Maven – Maven",
+      "status_code": 200,
+      "duration_ms": 20,
+      "raw_bytes": 12930,
+      "markdown_bytes": 7834,
+      "token_reduction_pct": 39.41221964423821,
+      "interactive_elements": 83,
+      "rss_mib": 22.8046875,
+      "first_seen": "2026-10-23T12:55:45Z",
+      "ai_summary": "O site é a página oficial do Apache Maven, uma ferramenta de build para projetos Java que, por meio de um POM, gerencia compilação, testes e documentação. Ele oferece downloads, instruções de instalação e configuração, além de documentação, plugins, extensões e recursos da comunidade.",
+      "ai_provider": "stop"
+    },
+    {
       "id": 21,
       "domain": "br.investing.com",
       "category": "Documentações \u0026 Web Aberta",
@@ -1634,6 +1717,23 @@
       "rss_mib": 23,
       "first_seen": "2026-10-23T12:50:22Z",
       "ai_summary": "O site do Grafana Labs apresenta uma plataforma de observabilidade full-stack, o Grafana Cloud, que unifica telemetria e usa IA para monitorar sistemas e agentes de IA. Ele oferece ferramentas para análise de causa raiz, redução de custos de telemetria e integração com dados e ferramentas existentes, sem lock-in.",
+      "ai_provider": "stop"
+    },
+    {
+      "id": 57,
+      "domain": "lobste.rs",
+      "category": "Comunidades \u0026 Notícias Tech",
+      "url": "https://lobste.rs/",
+      "title": "Lobsters",
+      "status_code": 200,
+      "duration_ms": 766,
+      "raw_bytes": 58055,
+      "markdown_bytes": 16521,
+      "token_reduction_pct": 71.54250279906984,
+      "interactive_elements": 245,
+      "rss_mib": 22.59765625,
+      "first_seen": "2026-10-23T12:55:10Z",
+      "ai_summary": "Lobsters é uma comunidade de agregação de links e discussões técnicas sobre programação, software e tecnologia. Ela oferece postagens de artigos, comentários, busca e listas de conteúdo recente/popular para desenvolvedores.",
       "ai_provider": "stop"
     },
     {
@@ -2181,23 +2281,6 @@
       "rss_mib": 25.16015625,
       "first_seen": "2026-10-23T12:48:34Z",
       "ai_summary": "GitHub é uma plataforma para hospedar, gerenciar e colaborar em projetos de código, com controle de versão, revisão, automação e segurança. Ela oferece ferramentas como Copilot, Actions e Codespaces, além de uma ampla comunidade open source.",
-      "ai_provider": "stop"
-    },
-    {
-      "id": 55,
-      "domain": "learnxinyminutes.com",
-      "category": "Documentações \u0026 Web Aberta",
-      "url": "https://learnxinyminutes.com/",
-      "title": "Learn X in Y Minutes: Scenic Programming Language Tours",
-      "status_code": 200,
-      "duration_ms": 300,
-      "raw_bytes": 80299,
-      "markdown_bytes": 42838,
-      "token_reduction_pct": 46.65188856648277,
-      "interactive_elements": 868,
-      "rss_mib": 23.984375,
-      "first_seen": "2026-10-23T12:54:46Z",
-      "ai_summary": "O site oferece tours rápidos e comunitários de diversas linguagens de programação, funcionando como uma visão geral concisa de sintaxe e conceitos. Também disponibiliza traduções desses guias em vários idiomas.",
       "ai_provider": "stop"
     }
   ]
