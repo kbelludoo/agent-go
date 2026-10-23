@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-23T12:37:10Z",
-  "total_distinct_sites": 45,
+  "last_updated": "2026-10-23T12:37:33Z",
+  "total_distinct_sites": 47,
   "distinct_sites": [
     {
       "id": 8,
@@ -119,6 +119,23 @@
       "rss_mib": 34.4765625,
       "first_seen": "2026-10-23T12:35:42Z",
       "ai_summary": "A CNBC é um portal de notícias financeiras e de negócios que cobre mercados de ações, economia, tecnologia, política e investimentos, oferecendo cotações, vídeos ao vivo, análises e ferramentas como screener de ações. Também disponibiliza conteúdo premium (CNBC PRO) e programas como o Investing Club para investidores.",
+      "ai_provider": "stop"
+    },
+    {
+      "id": 42,
+      "domain": "dev.to",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://dev.to",
+      "title": "DEV Community",
+      "status_code": 200,
+      "duration_ms": 203,
+      "raw_bytes": 275527,
+      "markdown_bytes": 32602,
+      "token_reduction_pct": 88.1674028316644,
+      "interactive_elements": 394,
+      "rss_mib": 23.3671875,
+      "first_seen": "2026-10-23T12:37:29Z",
+      "ai_summary": "A DEV Community é uma comunidade online onde desenvolvedores compartilham conhecimento, publicam artigos e acompanham novidades sobre programação e carreira em tecnologia. Ela oferece posts, desafios, vídeos, trilhas de aprendizado, tags populares e espaços de discussão para networking e crescimento profissional.",
       "ai_provider": "stop"
     },
     {
@@ -462,6 +479,23 @@
       "rss_mib": 19.59765625,
       "first_seen": "2026-10-23T12:36:41Z",
       "ai_summary": "O site é a página oficial da linguagem de programação Dart, com visão geral, documentação, tutoriais e novidades. Ele oferece recursos para aprender, usar e instalar Dart, além de acesso a ferramentas como DartPad e pub.dev.",
+      "ai_provider": "stop"
+    },
+    {
+      "id": 41,
+      "domain": "deno.land",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://deno.land/",
+      "title": "Deno, the drop-in JavaScript runtime for Node developers",
+      "status_code": 200,
+      "duration_ms": 3246,
+      "raw_bytes": 286124,
+      "markdown_bytes": 20129,
+      "token_reduction_pct": 92.96493827850863,
+      "interactive_elements": 203,
+      "rss_mib": 27.24609375,
+      "first_seen": "2026-10-23T12:37:20Z",
+      "ai_summary": "O Deno é um runtime JavaScript/TypeScript de código aberto, rápido e compatível com Node.js, posicionado como mais estável que o Bun. Ele já vem com ferramentas integradas como gerenciador de pacotes, test runner, formatador, linter, compilador e outras, além de oferecer serviços comerciais como Deno Deploy e Deno Sandbox.",
       "ai_provider": "stop"
     },
     {
