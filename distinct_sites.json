@@ -1,39 +1,7 @@
 {
-  "last_updated": "2026-10-23T12:35:44Z",
-  "total_distinct_sites": 38,
+  "last_updated": "2026-10-23T12:35:57Z",
+  "total_distinct_sites": 39,
   "distinct_sites": [
-    {
-      "id": 25,
-      "domain": "canaltech.com.br",
-      "category": "Documentações \u0026 Web Aberta",
-      "url": "https://canaltech.com.br",
-      "title": "Canaltech - Notícias de Tecnologia, Ciência e Entretenimento",
-      "status_code": 200,
-      "duration_ms": 26,
-      "raw_bytes": 281762,
-      "markdown_bytes": 19195,
-      "token_reduction_pct": 93.18751286546802,
-      "interactive_elements": 152,
-      "rss_mib": 19.328125,
-      "first_seen": "2026-10-23T12:34:05Z",
-      "ai_summary": "O Canaltech é um portal brasileiro de notícias e conteúdo sobre tecnologia, ciência, entretenimento, games, carros e produtos. Ele oferece últimas notícias, análises, reviews, tutoriais, vídeos, podcasts e ofertas.",
-      "ai_provider": "stop"
-    },
-    {
-      "id": 27,
-      "domain": "cell.com",
-      "category": "Documentações \u0026 Web Aberta",
-      "url": "https://cell.com/",
-      "title": "Just a moment...",
-      "status_code": 403,
-      "duration_ms": 2055,
-      "raw_bytes": 5950,
-      "markdown_bytes": 0,
-      "token_reduction_pct": 100,
-      "interactive_elements": 0,
-      "rss_mib": 18.7578125,
-      "first_seen": "2026-10-23T12:34:31Z"
-    },
     {
       "id": 28,
       "domain": "cheat.sh",
@@ -254,6 +222,23 @@
       "rss_mib": 22.53125,
       "first_seen": "2026-10-23T12:32:17Z",
       "ai_summary": "A AWS é a plataforma de computação em nuvem mais abrangente do mundo, oferecendo uma ampla gama de serviços como computação, armazenamento, bancos de dados, analytics e inteligência artificial. O site apresenta produtos, soluções, preços e recursos para ajudar organizações a inovar, reduzir custos e escalar com eficiência.",
+      "ai_provider": "stop"
+    },
+    {
+      "id": 34,
+      "domain": "code.visualstudio.com",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://code.visualstudio.com/",
+      "title": "Visual Studio Code - The open source AI code editor | Your home for multi-agent development",
+      "status_code": 200,
+      "duration_ms": 790,
+      "raw_bytes": 248475,
+      "markdown_bytes": 17692,
+      "token_reduction_pct": 92.87976657611429,
+      "interactive_elements": 71,
+      "rss_mib": 31.49609375,
+      "first_seen": "2026-10-23T12:35:54Z",
+      "ai_summary": "O site oficial do Visual Studio Code apresenta o editor de código open source com recursos de IA e desenvolvimento multiagente. Oferece downloads para macOS, Windows e Linux, além de documentação, extensões e novidades.",
       "ai_provider": "stop"
     },
     {
@@ -619,6 +604,38 @@
       "first_seen": "2026-10-23T12:33:29Z",
       "ai_summary": "O Brasil Escola é um portal educacional brasileiro que reúne conteúdos de diversas disciplinas e recursos para estudantes e professores. Ele oferece materiais e ferramentas para Enem, vestibular, Encceja, exercícios, simulados, correção de redação e apoio aos estudos.",
       "ai_provider": "stop"
+    },
+    {
+      "id": 25,
+      "domain": "canaltech.com.br",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://canaltech.com.br",
+      "title": "Canaltech - Notícias de Tecnologia, Ciência e Entretenimento",
+      "status_code": 200,
+      "duration_ms": 26,
+      "raw_bytes": 281762,
+      "markdown_bytes": 19195,
+      "token_reduction_pct": 93.18751286546802,
+      "interactive_elements": 152,
+      "rss_mib": 19.328125,
+      "first_seen": "2026-10-23T12:34:05Z",
+      "ai_summary": "O Canaltech é um portal brasileiro de notícias e conteúdo sobre tecnologia, ciência, entretenimento, games, carros e produtos. Ele oferece últimas notícias, análises, reviews, tutoriais, vídeos, podcasts e ofertas.",
+      "ai_provider": "stop"
+    },
+    {
+      "id": 27,
+      "domain": "cell.com",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://cell.com/",
+      "title": "Just a moment...",
+      "status_code": 403,
+      "duration_ms": 2055,
+      "raw_bytes": 5950,
+      "markdown_bytes": 0,
+      "token_reduction_pct": 100,
+      "interactive_elements": 0,
+      "rss_mib": 18.7578125,
+      "first_seen": "2026-10-23T12:34:31Z"
     }
   ]
 }
