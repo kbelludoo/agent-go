@@ -1,24 +1,7 @@
 {
-  "last_updated": "2026-10-23T12:53:50Z",
-  "total_distinct_sites": 127,
+  "last_updated": "2026-10-23T12:54:48Z",
+  "total_distinct_sites": 132,
   "distinct_sites": [
-    {
-      "id": 24,
-      "domain": "github.com",
-      "category": "Dev, Repos \u0026 Compiladores",
-      "url": "https://github.com/",
-      "title": "GitHub · A mudança é constante. O GitHub mantém você à frente. · GitHub · GitHub",
-      "status_code": 200,
-      "duration_ms": 107,
-      "raw_bytes": 583208,
-      "markdown_bytes": 13638,
-      "token_reduction_pct": 97.66155471118367,
-      "interactive_elements": 176,
-      "rss_mib": 25.16015625,
-      "first_seen": "2026-10-23T12:48:34Z",
-      "ai_summary": "GitHub é uma plataforma para hospedar, gerenciar e colaborar em projetos de código, com controle de versão, revisão, automação e segurança. Ela oferece ferramentas como Copilot, Actions e Codespaces, além de uma ampla comunidade open source.",
-      "ai_provider": "stop"
-    },
     {
       "id": 49,
       "domain": "docs.docker.com",
@@ -437,6 +420,21 @@
       "first_seen": "2026-10-23T12:51:34Z",
       "ai_summary": "O Hexdocs é o serviço oficial de hospedagem de documentação para pacotes publicados no Hex (o gerenciador de pacotes do ecossistema Elixir/Erlang). Ele oferece documentação gerada automaticamente para essas bibliotecas, permitindo navegar por módulos, funções e tipos de forma pesquisável e com links cruzados.",
       "ai_provider": "stop"
+    },
+    {
+      "id": 51,
+      "domain": "kernel.org",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://kernel.org",
+      "title": "The Linux Kernel Archives",
+      "status_code": 200,
+      "duration_ms": 386,
+      "raw_bytes": 19152,
+      "markdown_bytes": 6856,
+      "token_reduction_pct": 64.20217209690894,
+      "interactive_elements": 89,
+      "rss_mib": 22.1328125,
+      "first_seen": "2026-10-23T12:53:58Z"
     },
     {
       "id": 16,
@@ -1933,6 +1931,23 @@
       "ai_provider": "stop"
     },
     {
+      "id": 52,
+      "domain": "kotlinlang.org",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://kotlinlang.org/",
+      "title": "Kotlin Programming Language",
+      "status_code": 200,
+      "duration_ms": 1076,
+      "raw_bytes": 73430,
+      "markdown_bytes": 9373,
+      "token_reduction_pct": 87.23546234509057,
+      "interactive_elements": 88,
+      "rss_mib": 22.06640625,
+      "first_seen": "2026-10-23T12:54:11Z",
+      "ai_summary": "O site oficial da linguagem Kotlin apresenta seus recursos e vantagens, com foco em concisão, multiplataforma e suporte a Android, backend e IA. Ele oferece documentação, guias, APIs, exemplos, playground e materiais para aprender e desenvolver com Kotlin.",
+      "ai_provider": "stop"
+    },
+    {
       "id": 34,
       "domain": "code.visualstudio.com",
       "category": "Documentações \u0026 Web Aberta",
@@ -1964,6 +1979,23 @@
       "rss_mib": 30.38671875,
       "first_seen": "2026-10-23T12:49:46Z",
       "ai_summary": "O site oficial da linguagem Go oferece documentação, especificações, biblioteca padrão, guias e novidades sobre releases. Também reúne casos de uso, segurança, comunidade, eventos e recursos para aprender e desenvolver com Go.",
+      "ai_provider": "stop"
+    },
+    {
+      "id": 54,
+      "domain": "kubernetes.io",
+      "category": "Infraestrutura \u0026 Cloud",
+      "url": "https://kubernetes.io/",
+      "title": "Kubernetes",
+      "status_code": 200,
+      "duration_ms": 222,
+      "raw_bytes": 41608,
+      "markdown_bytes": 7938,
+      "token_reduction_pct": 80.92193808882907,
+      "interactive_elements": 62,
+      "rss_mib": 22.11328125,
+      "first_seen": "2026-10-23T12:54:34Z",
+      "ai_summary": "O site oficial do Kubernetes (K8s) apresenta essa plataforma open source de orquestração de contêineres, usada para automatizar implantação, escalonamento e gerenciamento de aplicações containerizadas em escala planetária. Ele oferece documentação, versões, blog, treinamentos e informações da comunidade para quem quer aprender ou adotar a tecnologia.",
       "ai_provider": "stop"
     },
     {
@@ -2084,6 +2116,23 @@
       "ai_provider": "stop"
     },
     {
+      "id": 53,
+      "domain": "krebsonsecurity.com",
+      "category": "Cibersegurança \u0026 Defesa",
+      "url": "https://krebsonsecurity.com",
+      "title": "Krebs on Security – In-depth security news and investigation",
+      "status_code": 200,
+      "duration_ms": 1030,
+      "raw_bytes": 107067,
+      "markdown_bytes": 51275,
+      "token_reduction_pct": 52.109426807513046,
+      "interactive_elements": 128,
+      "rss_mib": 22.37109375,
+      "first_seen": "2026-10-23T12:54:22Z",
+      "ai_summary": "Krebs on Security é um site de notícias e investigações aprofundadas sobre segurança cibernética, cobrindo vulnerabilidades, ataques e ameaças digitais. Ele oferece reportagens e análises detalhadas, como a recente falha crítica no PHP que pode causar quedas em massa de sites.",
+      "ai_provider": "stop"
+    },
+    {
       "id": 41,
       "domain": "deno.land",
       "category": "Documentações \u0026 Web Aberta",
@@ -2115,6 +2164,40 @@
       "rss_mib": 40.6953125,
       "first_seen": "2026-10-23T12:31:29Z",
       "ai_summary": "O arXiv é um serviço gratuito e de acesso aberto que arquiva e distribui mais de 3,2 milhões de artigos acadêmicos em áreas como física, matemática, computação e estatística. Ele permite buscar e navegar por esses textos, que não passam por revisão por pares no site.",
+      "ai_provider": "stop"
+    },
+    {
+      "id": 24,
+      "domain": "github.com",
+      "category": "Dev, Repos \u0026 Compiladores",
+      "url": "https://github.com/",
+      "title": "GitHub · A mudança é constante. O GitHub mantém você à frente. · GitHub · GitHub",
+      "status_code": 200,
+      "duration_ms": 107,
+      "raw_bytes": 583208,
+      "markdown_bytes": 13638,
+      "token_reduction_pct": 97.66155471118367,
+      "interactive_elements": 176,
+      "rss_mib": 25.16015625,
+      "first_seen": "2026-10-23T12:48:34Z",
+      "ai_summary": "GitHub é uma plataforma para hospedar, gerenciar e colaborar em projetos de código, com controle de versão, revisão, automação e segurança. Ela oferece ferramentas como Copilot, Actions e Codespaces, além de uma ampla comunidade open source.",
+      "ai_provider": "stop"
+    },
+    {
+      "id": 55,
+      "domain": "learnxinyminutes.com",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://learnxinyminutes.com/",
+      "title": "Learn X in Y Minutes: Scenic Programming Language Tours",
+      "status_code": 200,
+      "duration_ms": 300,
+      "raw_bytes": 80299,
+      "markdown_bytes": 42838,
+      "token_reduction_pct": 46.65188856648277,
+      "interactive_elements": 868,
+      "rss_mib": 23.984375,
+      "first_seen": "2026-10-23T12:54:46Z",
+      "ai_summary": "O site oferece tours rápidos e comunitários de diversas linguagens de programação, funcionando como uma visão geral concisa de sintaxe e conceitos. Também disponibiliza traduções desses guias em vários idiomas.",
       "ai_provider": "stop"
     }
   ]
