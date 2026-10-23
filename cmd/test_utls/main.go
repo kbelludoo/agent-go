@@ -3,40 +3,32 @@ package main
 import (
 	"context"
 	"fmt"
-	"io"
-	"net/http"
 	"time"
 
-	"ai-go-browser/browser"
+	"github.com/kbelludoo/agent-go/pkg/navigator"
 )
 
 func main() {
-	tr := browser.NewSafeTransport(false)
-	client := &http.Client{
-		Transport: tr,
-		Timeout:   10 * time.Second,
-	}
-	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
-	defer cancel()
+	session := navigator.NewSession()
 
-	fmt.Println("Iniciando GET para aliexpress.com...")
-	req, err := http.NewRequestWithContext(ctx, "GET", "https://aliexpress.com/", nil)
-	if err != nil {
-		fmt.Printf("Erro req: %v\n", err)
-		return
+	targets := []string{
+		"https://www.inpe.br",
+		"https://azure.microsoft.com/blog/",
+		"https://events.linuxfoundation.org/sponsor-AAIF-AgentsForums26?utm_source=luma",
 	}
-	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
-	resp, err := client.Do(req)
-	if err != nil {
-		fmt.Printf("Erro no Do: %v\n", err)
-		return
+
+	for _, target := range targets {
+		fmt.Printf("\n🌐 Testando Self-Healing em %s...\n", target)
+		tCtx, tCancel := context.WithTimeout(context.Background(), 15*time.Second)
+		start := time.Now()
+		snap, err := session.Navigate(tCtx, target)
+		tCancel()
+		if err != nil {
+			fmt.Printf("❌ Erro: %v\n", err)
+			continue
+		}
+		fmt.Printf("✅ Sucesso! Status: %d | Latência: %dms | Título: %q | Bruto: %d KB -> Markdown: %d KB (%.1f%% red.)\n",
+			snap.StatusCode, time.Since(start).Milliseconds(), snap.Title, snap.RawBytes/1024, snap.MarkdownBytes/1024, snap.TokenReduction)
 	}
-	defer resp.Body.Close()
-	fmt.Printf("Status: %d, lendo body...\n", resp.StatusCode)
-	b, err := io.ReadAll(resp.Body)
-	if err != nil {
-		fmt.Printf("Erro no ReadAll: %v\n", err)
-		return
-	}
-	fmt.Printf("Sucesso! Bytes: %d\n", len(b))
 }
+

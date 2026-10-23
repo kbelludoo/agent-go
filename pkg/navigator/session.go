@@ -36,7 +36,7 @@ func NewSession() *Session {
 			Transport: tr,
 			Timeout:   25 * time.Second,
 		},
-		UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+		UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
 		Timeout:   25 * time.Second,
 		History:   []string{},
 	}
@@ -63,7 +63,7 @@ func (s *Session) Navigate(ctx context.Context, destURL string) (*PageSnapshot, 
 	req.Header.Set("User-Agent", s.UserAgent)
 	req.Header.Set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8")
 	req.Header.Set("Accept-Language", "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7")
-	req.Header.Set("Sec-Ch-Ua", `"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"`)
+	req.Header.Set("Sec-Ch-Ua", `"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"`)
 	req.Header.Set("Sec-Ch-Ua-Mobile", "?0")
 	req.Header.Set("Sec-Ch-Ua-Platform", `"Windows"`)
 	req.Header.Set("Sec-Fetch-Dest", "document")
@@ -103,31 +103,67 @@ func (s *Session) Navigate(ctx context.Context, destURL string) (*PageSnapshot, 
 	duration := time.Since(start)
 
 	finalURL := resp.Request.URL.String()
+	contentType := strings.ToLower(resp.Header.Get("Content-Type"))
 
-	snapshot, err := ParseHTML(finalURL, resp.StatusCode, bytes.NewReader(bodyBytes))
-	if err != nil {
-		return nil, err
-	}
-
-	// Enrich snapshot with ai-go-browser DOM & Token distillation
-	snapshot.RawBytes = len(bodyBytes)
-	if doc, docErr := browser.ParseDocument(bodyBytes, finalURL, resp.StatusCode, len(bodyBytes)); docErr == nil {
-		p := doc.PageWithMarkdown(25000, true)
-		snapshot.MarkdownBytes = len(p.Markdown)
-		if snapshot.MarkdownBytes == 0 && len(p.Text) > 0 {
-			snapshot.MarkdownBytes = len(p.Text)
+	var snapshot *PageSnapshot
+	if strings.Contains(contentType, "application/pdf") || strings.Contains(contentType, "application/octet-stream") || strings.HasSuffix(strings.ToLower(finalURL), ".pdf") || strings.HasSuffix(strings.ToLower(finalURL), ".dmg") || strings.HasSuffix(strings.ToLower(finalURL), ".zip") {
+		summary := fmt.Sprintf("Documento binário/PDF detectado (%s, %d bytes) em %s", contentType, len(bodyBytes), finalURL)
+		snapshot = &PageSnapshot{
+			URL:           finalURL,
+			Title:         fmt.Sprintf("Arquivo [%s]", contentType),
+			StatusCode:    resp.StatusCode,
+			CleanText:     summary,
+			RawBytes:      len(bodyBytes),
+			MarkdownBytes: len(summary),
+			Forms:         make(map[string]*HTMLForm),
 		}
 		if snapshot.RawBytes > 0 {
 			snapshot.TokenReduction = (1.0 - float64(snapshot.MarkdownBytes)/float64(snapshot.RawBytes)) * 100
-			if snapshot.TokenReduction < 0 {
-				snapshot.TokenReduction = 0
-			}
 		}
 	} else {
-		nativePage := browser.Parse(bodyBytes, finalURL, resp.StatusCode, len(bodyBytes), 25000)
-		snapshot.MarkdownBytes = len(nativePage.Text)
-		if snapshot.RawBytes > 0 {
-			snapshot.TokenReduction = (1.0 - float64(snapshot.MarkdownBytes)/float64(snapshot.RawBytes)) * 100
+		var parseErr error
+		snapshot, parseErr = ParseHTML(finalURL, resp.StatusCode, bytes.NewReader(bodyBytes))
+		if parseErr != nil {
+			// Fallback to linear O(N) tokenizer when DOM depth exceeds 512 nodes
+			nativePage := browser.Parse(bodyBytes, finalURL, resp.StatusCode, len(bodyBytes), 25000)
+			snapshot = &PageSnapshot{
+				URL:        finalURL,
+				Title:      nativePage.Title,
+				StatusCode: resp.StatusCode,
+				CleanText:  nativePage.Text,
+				Forms:      make(map[string]*HTMLForm),
+			}
+			for i, l := range nativePage.Links {
+				snapshot.Elements = append(snapshot.Elements, InteractiveElement{
+					Index: i + 1,
+					Tag:   "a",
+					Type:  "link",
+					Text:  l.Label,
+					Href:  l.URL,
+				})
+			}
+		}
+
+		// Enrich snapshot with ai-go-browser DOM & Token distillation
+		snapshot.RawBytes = len(bodyBytes)
+		if doc, docErr := browser.ParseDocument(bodyBytes, finalURL, resp.StatusCode, len(bodyBytes)); docErr == nil {
+			p := doc.PageWithMarkdown(25000, true)
+			snapshot.MarkdownBytes = len(p.Markdown)
+			if snapshot.MarkdownBytes == 0 && len(p.Text) > 0 {
+				snapshot.MarkdownBytes = len(p.Text)
+			}
+			if snapshot.RawBytes > 0 {
+				snapshot.TokenReduction = (1.0 - float64(snapshot.MarkdownBytes)/float64(snapshot.RawBytes)) * 100
+				if snapshot.TokenReduction < 0 {
+					snapshot.TokenReduction = 0
+				}
+			}
+		} else {
+			nativePage := browser.Parse(bodyBytes, finalURL, resp.StatusCode, len(bodyBytes), 25000)
+			snapshot.MarkdownBytes = len(nativePage.Text)
+			if snapshot.RawBytes > 0 {
+				snapshot.TokenReduction = (1.0 - float64(snapshot.MarkdownBytes)/float64(snapshot.RawBytes)) * 100
+			}
 		}
 	}
 	snapshot.DurationMs = duration.Milliseconds()

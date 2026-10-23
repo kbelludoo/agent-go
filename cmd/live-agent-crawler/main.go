@@ -117,6 +117,45 @@ type GoogleNewsRSS struct {
 	} `xml:"channel"`
 }
 
+func atomicWriteFile(path string, data []byte) error {
+	tmp := path + ".tmp"
+	if err := os.WriteFile(tmp, data, 0644); err != nil {
+		return err
+	}
+	return os.Rename(tmp, path)
+}
+
+func isValidExplorationURL(rawURL string) bool {
+	if len(rawURL) < 10 || len(rawURL) > 300 {
+		return false
+	}
+	if strings.Contains(rawURL, "chrome-extension") || strings.Contains(rawURL, "javascript:") || strings.Contains(rawURL, "mailto:") {
+		return false
+	}
+	u, err := url.Parse(rawURL)
+	if err != nil || (u.Scheme != "http" && u.Scheme != "https") || u.Host == "" {
+		return false
+	}
+	if _, err := url.QueryUnescape(u.RawPath); err != nil {
+		return false
+	}
+	host := strings.ToLower(u.Hostname())
+	// Skip login/redirect walls that do not add content diversity
+	if host == "accounts.google.com" || host == "l.facebook.com" || host == "login.microsoftonline.com" || host == "t.co" {
+		return false
+	}
+	lowerPath := strings.ToLower(u.Path)
+	for _, badExt := range []string{".dmg", ".exe", ".msi", ".iso", ".zip", ".tar.gz", ".mp4", ".mp3", ".avi", ".apk"} {
+		if strings.HasSuffix(lowerPath, badExt) {
+			return false
+		}
+	}
+	if strings.Contains(lowerPath, "/signin") || strings.Contains(lowerPath, "/login") || strings.Contains(lowerPath, "/oauth") {
+		return false
+	}
+	return true
+}
+
 func categorizeURL(rawURL string) string {
 	u, err := url.Parse(rawURL)
 	if err != nil {
@@ -226,7 +265,7 @@ func main() {
 	quarantineJSON := flag.String("quarantine-output", "docs/quarantine_sites.json", "Path to save quarantined failed sites for browser self-healing research")
 	seedFile := flag.String("seed", "data/distinct_seed_sites.txt", "Path to text file containing seed URLs")
 	intervalSec := flag.Int("interval", 12, "Seconds between autonomous site visits")
-	gitPushInterval := flag.Int("git-interval", 5, "Minutes between git commit/push of telemetry")
+	gitPushInterval := flag.Int("git-interval", 0, "Minutes between internal git commit/push (0 = managed by systemd timer)")
 	flag.Parse()
 
 	log.Printf("🚀 Iniciando AI-Go-Browser + Agent-Go Autonomous AI Crawler na VPS")
@@ -324,7 +363,7 @@ func main() {
 				mu.Lock()
 				added := 0
 				for _, l := range newLinks {
-					if !visitedSet[l] && len(urlQueue) < 500 {
+					if isValidExplorationURL(l) && !visitedSet[l] && len(urlQueue) < 500 {
 						urlQueue = append(urlQueue, l)
 						added++
 					}
@@ -346,7 +385,7 @@ func main() {
 	}
 
 	addURLToQueueLocked := func(u string) {
-		if !visitedSet[u] && len(urlQueue) < 500 {
+		if isValidExplorationURL(u) && !visitedSet[u] && len(urlQueue) < 500 {
 			urlQueue = append(urlQueue, u)
 		}
 	}
@@ -405,7 +444,7 @@ func main() {
 		mu.RUnlock()
 
 		if b, err := json.MarshalIndent(payload, "", "  "); err == nil {
-			_ = os.WriteFile(*outputJSON, b, 0644)
+			_ = atomicWriteFile(*outputJSON, b)
 		}
 
 		catalogPayload := struct {
@@ -419,7 +458,7 @@ func main() {
 		}
 
 		if b, err := json.MarshalIndent(catalogPayload, "", "  "); err == nil {
-			_ = os.WriteFile(*distinctJSON, b, 0644)
+			_ = atomicWriteFile(*distinctJSON, b)
 		}
 
 		quarantinePayload := struct {
@@ -433,7 +472,7 @@ func main() {
 		}
 
 		if b, err := json.MarshalIndent(quarantinePayload, "", "  "); err == nil {
-			_ = os.WriteFile(*quarantineJSON, b, 0644)
+			_ = atomicWriteFile(*quarantineJSON, b)
 		}
 	}
 
@@ -540,6 +579,25 @@ func main() {
 
 		log.Printf("🌐 [%s] Navegando via uTLS: %s", time.Now().Format("15:04:05"), targetURL)
 		snap, err := session.Navigate(navCtx, targetURL)
+
+		// Adaptive Self-Healing Retry on 403/405
+		if err == nil && snap != nil && (snap.StatusCode == 403 || snap.StatusCode == 405) {
+			var healURL string
+			if strings.Contains(domain, "reddit.com") && !strings.Contains(domain, "old.reddit.com") {
+				healURL = strings.Replace(targetURL, domain, "old.reddit.com", 1)
+			} else if snap.StatusCode == 405 && !strings.HasSuffix(targetURL, "/") {
+				healURL = targetURL + "/"
+			}
+			if healURL != "" {
+				log.Printf("   🩹 [Self-Healing] Tentando rota alternativa para HTTP %d: %s", snap.StatusCode, healURL)
+				healCtx, healCancel := context.WithTimeout(ctx, 10*time.Second)
+				if healSnap, healErr := session.Navigate(healCtx, healURL); healErr == nil && healSnap.StatusCode < 400 {
+					snap = healSnap
+					log.Printf("   ✨ [Self-Healing] Sucesso! Site recuperado via %s (Status %d)", healURL, snap.StatusCode)
+				}
+				healCancel()
+			}
+		}
 
 		record := DistinctSiteRecord{
 			Domain:    domain,
