@@ -509,7 +509,7 @@ func main() {
 				saveData()
 				cmd := exec.Command("git", "add", *outputJSON, *distinctJSON)
 				_ = cmd.Run()
-				cmd = exec.Command("git", "commit", "-m", fmt.Sprintf("chore(telemetry): update distinct sites catalog [%s] [skip ci]", time.Now().UTC().Format("15:04:05")))
+				cmd = exec.Command("git", "commit", "-m", fmt.Sprintf("chore(telemetry): update distinct sites catalog [%s]", time.Now().UTC().Format("15:04:05")))
 				_ = cmd.Run()
 				cmd = exec.Command("git", "push")
 				_ = cmd.Run()
