@@ -196,7 +196,7 @@
     <div style="display: flex; gap: 12px; align-items: center;">
       <div class="badge-live">
         <div class="pulse-dot"></div>
-        <span id="liveStatusText">ORACLE CLOUD VPS (147.15.109.14)</span>
+        <span id="liveStatusText">AO VIVO // VPS (147.15.109.14) // Auto-Sync: 15s</span>
       </div>
       <button onclick="refreshData()" style="background: #1f293d; color: #fff; border: 1px solid #374151; padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">
         ↻ Atualizar
@@ -343,7 +343,7 @@
     async function fetchTelemetry() {
       let data = null;
       try {
-        const res = await fetch('./live_crawler_data.json?t=' + Date.now());
+        const res = await fetch('./live_crawler_data.json?t=' + Date.now(), { cache: 'no-store' });
         if (res.ok) {
           data = await res.json();
         }
@@ -353,7 +353,7 @@
 
       if (!data) {
         try {
-          const res = await fetch('http://147.15.109.14:8082/api/live', { mode: 'cors' });
+          const res = await fetch('http://147.15.109.14:8082/api/live', { mode: 'cors', cache: 'no-store' });
           if (res.ok) {
             data = await res.json();
           }
@@ -367,7 +367,7 @@
     async function loadDistinctSites() {
       let data = null;
       try {
-        const res = await fetch('./distinct_sites.json?t=' + Date.now());
+        const res = await fetch('./distinct_sites.json?t=' + Date.now(), { cache: 'no-store' });
         if (res.ok) {
           data = await res.json();
         }
@@ -377,7 +377,7 @@
 
       if (!data) {
         try {
-          const res = await fetch('http://147.15.109.14:8082/api/distinct', { mode: 'cors' });
+          const res = await fetch('http://147.15.109.14:8082/api/distinct', { mode: 'cors', cache: 'no-store' });
           if (res.ok) {
             data = await res.json();
           }
@@ -608,7 +608,7 @@
     }
 
     refreshData();
-    setInterval(refreshData, 5000);
+    setInterval(refreshData, 3000);
   </script>
 </body>
 </html>
