@@ -1,7 +1,139 @@
 {
-  "last_updated": "2026-10-23T23:16:36Z",
+  "last_updated": "2026-10-23T23:17:25Z",
   "total_quarantine": 108,
   "quarantine_sites": [
+    {
+      "id": 78,
+      "domain": "app.beehiiv.com",
+      "url": "https://app.beehiiv.com/signup",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T17:13:46Z",
+      "last_seen": "2026-10-23T17:13:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 62,
+      "domain": "help.x.com",
+      "url": "https://help.x.com/resources/accessibility",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:51:09Z",
+      "last_seen": "2026-10-23T17:09:57Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 16,
+      "domain": "stackoverflow.com",
+      "url": "https://stackoverflow.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:09:10Z",
+      "last_seen": "2026-10-23T13:09:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 113,
+      "domain": "codeberg.org",
+      "url": "https://codeberg.org/kytta/toot",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T21:37:34Z",
+      "last_seen": "2026-10-23T21:37:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 15,
+      "domain": "specs.openstack.org",
+      "url": "https://specs.openstack.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:08:34Z",
+      "last_seen": "2026-10-23T13:08:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 108,
+      "domain": "etsy.app.link",
+      "url": "https://etsy.app.link/d7nDUdp49V",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://etsy.app.link/d7nDUdp49V: Get \"https://etsy.app.link/d7nDUdp49V\": stopped after 10 redirects",
+      "first_seen": "2026-10-23T23:10:34Z",
+      "last_seen": "2026-10-23T23:16:22Z",
+      "attempts": 8,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://etsy.app.link/d7nDUdp49V: Get \"https://etsy.app.link/d7nDUdp49V\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 114,
+      "domain": "account.microsoft.com",
+      "url": "https://account.microsoft.com",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-23T21:46:46Z",
+      "last_seen": "2026-10-23T22:55:03Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 99,
+      "domain": "careers.washingtonpost.com",
+      "url": "https://careers.washingtonpost.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://careers.washingtonpost.com/: Get \"https://careers.washingtonpost.com/\": read tcp4 10.0.1.126:55150-\u003e23.11.234.135:443: use of closed network connection",
+      "first_seen": "2026-10-23T19:49:33Z",
+      "last_seen": "2026-10-23T19:49:33Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://careers.washingtonpost.com/: Get \"https://careers.washingtonpost.com/\": read tcp4 10.0.1.126:55150-\u003e23.11.234.135:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 117,
+      "domain": "cybersecuritynews.com",
+      "url": "https://cybersecuritynews.com/popular-zero-day-vulnerabilities/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T22:38:28Z",
+      "last_seen": "2026-10-23T22:38:28Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 94,
+      "domain": "tsc.worldwildlife.org",
+      "url": "https://tsc.worldwildlife.org/page/support-wwf",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T18:29:58Z",
+      "last_seen": "2026-10-23T18:30:22Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 77,
+      "domain": "cern.ch",
+      "url": "https://cern.ch/scientists",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T17:13:13Z",
+      "last_seen": "2026-10-23T17:13:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 37,
+      "domain": "www.sciencedirect.com",
+      "url": "https://www.sciencedirect.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:31:22Z",
+      "last_seen": "2026-10-23T22:56:28Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 48,
       "domain": "www.commerce.gov",
@@ -1056,138 +1188,6 @@
       "first_seen": "2026-10-23T15:05:57Z",
       "last_seen": "2026-10-23T15:05:57Z",
       "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 78,
-      "domain": "app.beehiiv.com",
-      "url": "https://app.beehiiv.com/signup",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T17:13:46Z",
-      "last_seen": "2026-10-23T17:13:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 62,
-      "domain": "help.x.com",
-      "url": "https://help.x.com/resources/accessibility",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:51:09Z",
-      "last_seen": "2026-10-23T17:09:57Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 16,
-      "domain": "stackoverflow.com",
-      "url": "https://stackoverflow.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:09:10Z",
-      "last_seen": "2026-10-23T13:09:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 113,
-      "domain": "codeberg.org",
-      "url": "https://codeberg.org/kytta/toot",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T21:37:34Z",
-      "last_seen": "2026-10-23T21:37:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 15,
-      "domain": "specs.openstack.org",
-      "url": "https://specs.openstack.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:08:34Z",
-      "last_seen": "2026-10-23T13:08:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 108,
-      "domain": "etsy.app.link",
-      "url": "https://etsy.app.link/d7nDUdp49V",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://etsy.app.link/d7nDUdp49V: Get \"https://etsy.app.link/d7nDUdp49V\": stopped after 10 redirects",
-      "first_seen": "2026-10-23T23:10:34Z",
-      "last_seen": "2026-10-23T23:16:22Z",
-      "attempts": 8,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://etsy.app.link/d7nDUdp49V: Get \"https://etsy.app.link/d7nDUdp49V\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 114,
-      "domain": "account.microsoft.com",
-      "url": "https://account.microsoft.com",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-23T21:46:46Z",
-      "last_seen": "2026-10-23T22:55:03Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 99,
-      "domain": "careers.washingtonpost.com",
-      "url": "https://careers.washingtonpost.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://careers.washingtonpost.com/: Get \"https://careers.washingtonpost.com/\": read tcp4 10.0.1.126:55150-\u003e23.11.234.135:443: use of closed network connection",
-      "first_seen": "2026-10-23T19:49:33Z",
-      "last_seen": "2026-10-23T19:49:33Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://careers.washingtonpost.com/: Get \"https://careers.washingtonpost.com/\": read tcp4 10.0.1.126:55150-\u003e23.11.234.135:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 117,
-      "domain": "cybersecuritynews.com",
-      "url": "https://cybersecuritynews.com/popular-zero-day-vulnerabilities/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T22:38:28Z",
-      "last_seen": "2026-10-23T22:38:28Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 94,
-      "domain": "tsc.worldwildlife.org",
-      "url": "https://tsc.worldwildlife.org/page/support-wwf",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T18:29:58Z",
-      "last_seen": "2026-10-23T18:30:22Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 77,
-      "domain": "cern.ch",
-      "url": "https://cern.ch/scientists",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T17:13:13Z",
-      "last_seen": "2026-10-23T17:13:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 37,
-      "domain": "www.sciencedirect.com",
-      "url": "https://www.sciencedirect.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:31:22Z",
-      "last_seen": "2026-10-23T22:56:28Z",
-      "attempts": 2,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
