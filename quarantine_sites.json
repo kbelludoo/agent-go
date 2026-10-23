@@ -1,7 +1,73 @@
 {
-  "last_updated": "2026-10-23T14:59:39Z",
-  "total_quarantine": 46,
+  "last_updated": "2026-10-23T15:00:49Z",
+  "total_quarantine": 47,
   "quarantine_sites": [
+    {
+      "id": 15,
+      "domain": "specs.openstack.org",
+      "url": "https://specs.openstack.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:08:34Z",
+      "last_seen": "2026-10-23T13:08:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 28,
+      "domain": "www.theguardian.com",
+      "url": "https://www.theguardian.com/internatio",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:26:58Z",
+      "last_seen": "2026-10-23T13:26:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 14,
+      "domain": "sciencedirect.com",
+      "url": "https://sciencedirect.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:07:22Z",
+      "last_seen": "2026-10-23T13:07:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 23,
+      "domain": "www.inpe.br",
+      "url": "https://www.inpe.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.inpe.br: Get \"https://www.inpe.br\": tls: failed to verify certificate: x509: certificate signed by unknown authority",
+      "first_seen": "2026-10-23T13:20:57Z",
+      "last_seen": "2026-10-23T13:20:57Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.inpe.br: Get \"https://www.inpe.br\": tls: failed to verify certificate: x509: certificate signed by unknown authority. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 25,
+      "domain": "www.reddit.com",
+      "url": "https://www.reddit.com/r/brasil",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:24:33Z",
+      "last_seen": "2026-10-23T13:24:33Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 36,
+      "domain": "symposium.opentechresearch.org",
+      "url": "https://symposium.opentechresearch.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:17:10Z",
+      "last_seen": "2026-10-23T14:17:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 43,
       "domain": "bloomberg.com",
@@ -377,6 +443,17 @@
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
+      "id": 47,
+      "domain": "brasil.gov.br",
+      "url": "https://brasil.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z",
+      "first_seen": "2026-10-23T15:00:09Z",
+      "last_seen": "2026-10-23T15:00:09Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
       "id": 4,
       "domain": "nytimes.com",
       "url": "https://nytimes.com/",
@@ -439,72 +516,6 @@
       "error_message": "HTTP 403",
       "first_seen": "2026-10-23T13:01:58Z",
       "last_seen": "2026-10-23T13:01:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 15,
-      "domain": "specs.openstack.org",
-      "url": "https://specs.openstack.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:08:34Z",
-      "last_seen": "2026-10-23T13:08:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 28,
-      "domain": "www.theguardian.com",
-      "url": "https://www.theguardian.com/internatio",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:26:58Z",
-      "last_seen": "2026-10-23T13:26:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 14,
-      "domain": "sciencedirect.com",
-      "url": "https://sciencedirect.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:07:22Z",
-      "last_seen": "2026-10-23T13:07:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 23,
-      "domain": "www.inpe.br",
-      "url": "https://www.inpe.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.inpe.br: Get \"https://www.inpe.br\": tls: failed to verify certificate: x509: certificate signed by unknown authority",
-      "first_seen": "2026-10-23T13:20:57Z",
-      "last_seen": "2026-10-23T13:20:57Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.inpe.br: Get \"https://www.inpe.br\": tls: failed to verify certificate: x509: certificate signed by unknown authority. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 25,
-      "domain": "www.reddit.com",
-      "url": "https://www.reddit.com/r/brasil",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:24:33Z",
-      "last_seen": "2026-10-23T13:24:33Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 36,
-      "domain": "symposium.opentechresearch.org",
-      "url": "https://symposium.opentechresearch.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:17:10Z",
-      "last_seen": "2026-10-23T14:17:10Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
