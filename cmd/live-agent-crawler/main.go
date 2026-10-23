@@ -344,8 +344,25 @@ func main() {
 		visitCounter = uint64(len(distinctMap) + len(quarantineMap))
 	}
 
-	// Dynamic queue
+	// Dynamic queue: prioritize re-testing healable quarantine sites first (up to 15 per restart), then unvisited seeds
 	urlQueue := make([]string, 0, len(seedList)*2)
+	requeuedQuarantine := 0
+	for qURL, qSite := range quarantineMap {
+		if qSite.Attempts < 4 && isValidExplorationURL(qURL) {
+			delete(visitedSet, qURL)
+			urlQueue = append(urlQueue, qURL)
+			requeuedQuarantine++
+			if requeuedQuarantine >= 15 {
+				break
+			}
+		} else if !isValidExplorationURL(qURL) {
+			// Clean invalid extension/binary URLs from quarantine
+			delete(quarantineMap, qURL)
+		}
+	}
+	if requeuedQuarantine > 0 {
+		log.Printf("🩹 [Self-Healing] %d sites da quarentena enfileirados para re-teste via Cloudflare WARP + uTLS", requeuedQuarantine)
+	}
 	for _, u := range seedList {
 		if !visitedSet[u] || strings.Contains(u, "Random") || strings.Contains(u, "Aleat") {
 			urlQueue = append(urlQueue, u)
@@ -713,6 +730,9 @@ func main() {
 			}
 			quarantineMap[targetURL] = *qRec
 			log.Printf("   🧪 [Laboratório de Quarentena] Site %s registrado: %s", targetURL, qRec.Diagnosis)
+		} else if _, wasQuarantined := quarantineMap[targetURL]; wasQuarantined {
+			delete(quarantineMap, targetURL)
+			log.Printf("   ✨ [Self-Healing] Site %s curado com sucesso (HTTP %d) e removido da quarentena!", targetURL, record.StatusCode)
 		}
 
 		if err == nil {
