@@ -1,84 +1,7 @@
 {
-  "last_updated": "2026-10-23T18:05:35Z",
+  "last_updated": "2026-10-23T18:06:39Z",
   "total_quarantine": 91,
   "quarantine_sites": [
-    {
-      "id": 64,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/tanishq-sangwan/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T15:56:10Z",
-      "last_seen": "2026-10-23T15:56:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 78,
-      "domain": "app.beehiiv.com",
-      "url": "https://app.beehiiv.com/signup",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T17:13:46Z",
-      "last_seen": "2026-10-23T17:13:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 81,
-      "domain": "speakerdex.co",
-      "url": "https://speakerdex.co/marcel",
-      "status_code": 436,
-      "error_message": "HTTP 436",
-      "first_seen": "2026-10-23T17:30:13Z",
-      "last_seen": "2026-10-23T17:30:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 436 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 43,
-      "domain": "bloomberg.com",
-      "url": "https://bloomberg.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:54:22Z",
-      "last_seen": "2026-10-23T14:54:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 56,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/buildful-ai/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T15:30:34Z",
-      "last_seen": "2026-10-23T15:30:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 76,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/TR/sparql11-query/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T16:49:45Z",
-      "last_seen": "2026-10-23T17:46:22Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 79,
-      "domain": "wbd.com",
-      "url": "https://wbd.com/visitor-agreement/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T17:20:46Z",
-      "last_seen": "2026-10-23T17:20:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 12,
       "domain": "reuters.com",
@@ -1000,6 +923,83 @@
       "error_message": "HTTP 403",
       "first_seen": "2026-10-23T13:08:34Z",
       "last_seen": "2026-10-23T13:08:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 64,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/tanishq-sangwan/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T15:56:10Z",
+      "last_seen": "2026-10-23T15:56:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 78,
+      "domain": "app.beehiiv.com",
+      "url": "https://app.beehiiv.com/signup",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T17:13:46Z",
+      "last_seen": "2026-10-23T17:13:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 81,
+      "domain": "speakerdex.co",
+      "url": "https://speakerdex.co/marcel",
+      "status_code": 436,
+      "error_message": "HTTP 436",
+      "first_seen": "2026-10-23T17:30:13Z",
+      "last_seen": "2026-10-23T17:30:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 436 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 43,
+      "domain": "bloomberg.com",
+      "url": "https://bloomberg.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:54:22Z",
+      "last_seen": "2026-10-23T14:54:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 56,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/buildful-ai/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T15:30:34Z",
+      "last_seen": "2026-10-23T15:30:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 76,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/TR/sparql11-query/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T16:49:45Z",
+      "last_seen": "2026-10-23T17:46:22Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 79,
+      "domain": "wbd.com",
+      "url": "https://wbd.com/visitor-agreement/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T17:20:46Z",
+      "last_seen": "2026-10-23T17:20:46Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
