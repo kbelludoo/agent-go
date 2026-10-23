@@ -1,7 +1,51 @@
 {
-  "last_updated": "2026-10-23T15:52:30Z",
+  "last_updated": "2026-10-23T15:53:24Z",
   "total_quarantine": 62,
   "quarantine_sites": [
+    {
+      "id": 1,
+      "domain": "etsy.com",
+      "url": "https://etsy.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T12:44:34Z",
+      "last_seen": "2026-10-23T12:44:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 13,
+      "domain": "science.org",
+      "url": "https://science.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:07:10Z",
+      "last_seen": "2026-10-23T13:07:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 27,
+      "domain": "www.reuters.com",
+      "url": "https://www.reuters.com",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T13:24:58Z",
+      "last_seen": "2026-10-23T13:24:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 46,
+      "domain": "faq-login-unico.servicos.gov.br",
+      "url": "http://faq-login-unico.servicos.gov.br/en/latest/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://faq-login-unico.servicos.gov.br/en/latest/: Get \"https://faq-login-unico.servicos.gov.br/en/latest/\": tls: failed to verify certificate: x509: certificate is valid for faq.acesso.gov.br, not faq-login-unico.servicos.gov.br",
+      "first_seen": "2026-10-23T14:59:09Z",
+      "last_seen": "2026-10-23T14:59:09Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://faq-login-unico.servicos.gov.br/en/latest/: Get \"https://faq-login-unico.servicos.gov.br/en/latest/\": tls: failed to verify certificate: x509: certificate is valid for faq.acesso.gov.br, not faq-login-unico.servicos.gov.br. Sugestão: Verificar rota de egress e resolução DNS."
+    },
     {
       "id": 54,
       "domain": "gitlab.com",
@@ -639,50 +683,6 @@
       "last_seen": "2026-10-23T15:19:45Z",
       "attempts": 1,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.grupoglobo.globo.com/: Get \"https://www.grupoglobo.globo.com/\": tls: failed to verify certificate: x509: certificate is valid for academiadenegocios.g.globo, not www.grupoglobo.globo.com. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 1,
-      "domain": "etsy.com",
-      "url": "https://etsy.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T12:44:34Z",
-      "last_seen": "2026-10-23T12:44:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 13,
-      "domain": "science.org",
-      "url": "https://science.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:07:10Z",
-      "last_seen": "2026-10-23T13:07:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 27,
-      "domain": "www.reuters.com",
-      "url": "https://www.reuters.com",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T13:24:58Z",
-      "last_seen": "2026-10-23T13:24:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 46,
-      "domain": "faq-login-unico.servicos.gov.br",
-      "url": "http://faq-login-unico.servicos.gov.br/en/latest/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://faq-login-unico.servicos.gov.br/en/latest/: Get \"https://faq-login-unico.servicos.gov.br/en/latest/\": tls: failed to verify certificate: x509: certificate is valid for faq.acesso.gov.br, not faq-login-unico.servicos.gov.br",
-      "first_seen": "2026-10-23T14:59:09Z",
-      "last_seen": "2026-10-23T14:59:09Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://faq-login-unico.servicos.gov.br/en/latest/: Get \"https://faq-login-unico.servicos.gov.br/en/latest/\": tls: failed to verify certificate: x509: certificate is valid for faq.acesso.gov.br, not faq-login-unico.servicos.gov.br. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
