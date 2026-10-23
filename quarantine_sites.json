@@ -1,18 +1,7 @@
 {
-  "last_updated": "2026-10-23T17:01:30Z",
+  "last_updated": "2026-10-23T17:02:42Z",
   "total_quarantine": 76,
   "quarantine_sites": [
-    {
-      "id": 33,
-      "domain": "home.web.cern.ch",
-      "url": "http://home.web.cern.ch/topics/birth-web",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:53:24Z",
-      "last_seen": "2026-10-23T13:53:24Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 5,
       "domain": "phys.org",
@@ -835,6 +824,17 @@
       "error_message": "HTTP 404",
       "first_seen": "2026-10-23T13:19:22Z",
       "last_seen": "2026-10-23T13:19:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 33,
+      "domain": "home.web.cern.ch",
+      "url": "http://home.web.cern.ch/topics/birth-web",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:53:24Z",
+      "last_seen": "2026-10-23T13:53:24Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
