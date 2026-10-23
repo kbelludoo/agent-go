@@ -1,17 +1,292 @@
 {
-  "last_updated": "2026-10-23T15:35:17Z",
-  "total_quarantine": 56,
+  "last_updated": "2026-10-23T15:36:22Z",
+  "total_quarantine": 57,
   "quarantine_sites": [
     {
-      "id": 2,
-      "domain": "forbes.com",
-      "url": "https://forbes.com/",
+      "id": 43,
+      "domain": "bloomberg.com",
+      "url": "https://bloomberg.com",
       "status_code": 403,
       "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T12:46:22Z",
-      "last_seen": "2026-10-23T12:46:22Z",
+      "first_seen": "2026-10-23T14:54:22Z",
+      "last_seen": "2026-10-23T14:54:22Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 56,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/buildful-ai/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T15:30:34Z",
+      "last_seen": "2026-10-23T15:30:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 12,
+      "domain": "reuters.com",
+      "url": "https://reuters.com/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T13:06:22Z",
+      "last_seen": "2026-10-23T13:06:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 34,
+      "domain": "www.reuters.com",
+      "url": "https://www.reuters.com/world/asia-pacific/eu-agency-warns-websites-may-need-be-taken-offline-php-prepares-patches-2026-10-21/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T13:58:46Z",
+      "last_seen": "2026-10-23T13:58:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 52,
+      "domain": "www.grupoglobo.globo.com",
+      "url": "https://www.grupoglobo.globo.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.grupoglobo.globo.com/: Get \"https://www.grupoglobo.globo.com/\": tls: failed to verify certificate: x509: certificate is valid for academiadenegocios.g.globo, not www.grupoglobo.globo.com",
+      "first_seen": "2026-10-23T15:19:45Z",
+      "last_seen": "2026-10-23T15:19:45Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.grupoglobo.globo.com/: Get \"https://www.grupoglobo.globo.com/\": tls: failed to verify certificate: x509: certificate is valid for academiadenegocios.g.globo, not www.grupoglobo.globo.com. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 1,
+      "domain": "etsy.com",
+      "url": "https://etsy.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T12:44:34Z",
+      "last_seen": "2026-10-23T12:44:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 13,
+      "domain": "science.org",
+      "url": "https://science.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:07:10Z",
+      "last_seen": "2026-10-23T13:07:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 27,
+      "domain": "www.reuters.com",
+      "url": "https://www.reuters.com",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T13:24:58Z",
+      "last_seen": "2026-10-23T13:24:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 46,
+      "domain": "faq-login-unico.servicos.gov.br",
+      "url": "http://faq-login-unico.servicos.gov.br/en/latest/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://faq-login-unico.servicos.gov.br/en/latest/: Get \"https://faq-login-unico.servicos.gov.br/en/latest/\": tls: failed to verify certificate: x509: certificate is valid for faq.acesso.gov.br, not faq-login-unico.servicos.gov.br",
+      "first_seen": "2026-10-23T14:59:09Z",
+      "last_seen": "2026-10-23T14:59:09Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://faq-login-unico.servicos.gov.br/en/latest/: Get \"https://faq-login-unico.servicos.gov.br/en/latest/\": tls: failed to verify certificate: x509: certificate is valid for faq.acesso.gov.br, not faq-login-unico.servicos.gov.br. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 54,
+      "domain": "gitlab.com",
+      "url": "https://gitlab.com/users/sign_in/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:24:34Z",
+      "last_seen": "2026-10-23T15:24:58Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 57,
+      "domain": "docs.tuxcare.com",
+      "url": "https://docs.tuxcare.com/els-for-runtimes-and-libraries/jquery/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T15:36:22Z",
+      "last_seen": "2026-10-23T15:36:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 6,
+      "domain": "producthunt.com",
+      "url": "https://producthunt.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:02:57Z",
+      "last_seen": "2026-10-23T13:02:57Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 24,
+      "domain": "www.nytimes.com",
+      "url": "https://www.nytimes.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:23:22Z",
+      "last_seen": "2026-10-23T13:23:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 48,
+      "domain": "www.commerce.gov",
+      "url": "https://www.commerce.gov",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:02:58Z",
+      "last_seen": "2026-10-23T15:02:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 51,
+      "domain": "www.ft.com",
+      "url": "https://www.ft.com/products",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:18:10Z",
+      "last_seen": "2026-10-23T15:18:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 55,
+      "domain": "www.harvardonline.harvard.edu",
+      "url": "https://www.harvardonline.harvard.edu/",
+      "status_code": 429,
+      "error_message": "HTTP 429",
+      "first_seen": "2026-10-23T15:29:45Z",
+      "last_seen": "2026-10-23T15:30:09Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
+    },
+    {
+      "id": 7,
+      "domain": "",
+      "url": "https://pt.wikihow.com/Purificar-%C3%8",
+      "status_code": 504,
+      "error_message": "failed to create request: parse \"https://pt.wikihow.com/Purificar-%C3%8\": invalid URL escape \"%8\"",
+      "first_seen": "2026-10-23T13:03:33Z",
+      "last_seen": "2026-10-23T13:03:33Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to create request: parse \"https://pt.wikihow.com/Purificar-%C3%8\": invalid URL escape \"%8\". Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 35,
+      "domain": "opentechresearch.org",
+      "url": "https://opentechresearch.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:16:58Z",
+      "last_seen": "2026-10-23T14:16:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 37,
+      "domain": "www.sciencedirect.com",
+      "url": "https://www.sciencedirect.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:31:22Z",
+      "last_seen": "2026-10-23T14:31:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 39,
+      "domain": "stackexchange.com",
+      "url": "https://stackexchange.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:32:34Z",
+      "last_seen": "2026-10-23T14:38:34Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 11,
+      "domain": "reference.deno.land",
+      "url": "https://reference.deno.land/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-23T13:06:10Z",
+      "last_seen": "2026-10-23T13:06:10Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 26,
+      "domain": "www.reddit.com",
+      "url": "https://www.reddit.com/r/technology",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:24:45Z",
+      "last_seen": "2026-10-23T13:24:45Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 42,
+      "domain": "infograficos.valor.globo.com",
+      "url": "https://infograficos.valor.globo.com/carteira-valor/?menu_valor",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:47:34Z",
+      "last_seen": "2026-10-23T14:47:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 4,
+      "domain": "nytimes.com",
+      "url": "https://nytimes.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T12:59:58Z",
+      "last_seen": "2026-10-23T12:59:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 22,
+      "domain": "www.gov.br",
+      "url": "https://www.gov.br/receitafederal/pt-b",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:19:22Z",
+      "last_seen": "2026-10-23T13:19:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 33,
+      "domain": "home.web.cern.ch",
+      "url": "http://home.web.cern.ch/topics/birth-web",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:53:24Z",
+      "last_seen": "2026-10-23T13:53:24Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
       "id": 5,
@@ -21,17 +296,6 @@
       "error_message": "HTTP 403",
       "first_seen": "2026-10-23T13:01:58Z",
       "last_seen": "2026-10-23T13:01:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 15,
-      "domain": "specs.openstack.org",
-      "url": "https://specs.openstack.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:08:34Z",
-      "last_seen": "2026-10-23T13:08:34Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
@@ -102,28 +366,6 @@
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
-      "id": 43,
-      "domain": "bloomberg.com",
-      "url": "https://bloomberg.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:54:22Z",
-      "last_seen": "2026-10-23T14:54:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 56,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/buildful-ai/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T15:30:34Z",
-      "last_seen": "2026-10-23T15:30:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
       "id": 9,
       "domain": "pt.wikipedia.org",
       "url": "https://pt.wikipedia.org/wiki/Crise_cl",
@@ -133,17 +375,6 @@
       "last_seen": "2026-10-23T13:04:10Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 12,
-      "domain": "reuters.com",
-      "url": "https://reuters.com/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T13:06:22Z",
-      "last_seen": "2026-10-23T13:06:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
       "id": 16,
@@ -164,17 +395,6 @@
       "error_message": "HTTP 401",
       "first_seen": "2026-10-23T13:14:46Z",
       "last_seen": "2026-10-23T13:14:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 34,
-      "domain": "www.reuters.com",
-      "url": "https://www.reuters.com/world/asia-pacific/eu-agency-warns-websites-may-need-be-taken-offline-php-prepares-patches-2026-10-21/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T13:58:46Z",
-      "last_seen": "2026-10-23T13:58:46Z",
       "attempts": 1,
       "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
@@ -212,39 +432,6 @@
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
-      "id": 1,
-      "domain": "etsy.com",
-      "url": "https://etsy.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T12:44:34Z",
-      "last_seen": "2026-10-23T12:44:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 13,
-      "domain": "science.org",
-      "url": "https://science.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:07:10Z",
-      "last_seen": "2026-10-23T13:07:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 27,
-      "domain": "www.reuters.com",
-      "url": "https://www.reuters.com",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T13:24:58Z",
-      "last_seen": "2026-10-23T13:24:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
       "id": 30,
       "domain": "www.yahoo.com",
       "url": "https://www.yahoo.com/",
@@ -278,39 +465,6 @@
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
-      "id": 46,
-      "domain": "faq-login-unico.servicos.gov.br",
-      "url": "http://faq-login-unico.servicos.gov.br/en/latest/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://faq-login-unico.servicos.gov.br/en/latest/: Get \"https://faq-login-unico.servicos.gov.br/en/latest/\": tls: failed to verify certificate: x509: certificate is valid for faq.acesso.gov.br, not faq-login-unico.servicos.gov.br",
-      "first_seen": "2026-10-23T14:59:09Z",
-      "last_seen": "2026-10-23T14:59:09Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://faq-login-unico.servicos.gov.br/en/latest/: Get \"https://faq-login-unico.servicos.gov.br/en/latest/\": tls: failed to verify certificate: x509: certificate is valid for faq.acesso.gov.br, not faq-login-unico.servicos.gov.br. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 52,
-      "domain": "www.grupoglobo.globo.com",
-      "url": "https://www.grupoglobo.globo.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.grupoglobo.globo.com/: Get \"https://www.grupoglobo.globo.com/\": tls: failed to verify certificate: x509: certificate is valid for academiadenegocios.g.globo, not www.grupoglobo.globo.com",
-      "first_seen": "2026-10-23T15:19:45Z",
-      "last_seen": "2026-10-23T15:19:45Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.grupoglobo.globo.com/: Get \"https://www.grupoglobo.globo.com/\": tls: failed to verify certificate: x509: certificate is valid for academiadenegocios.g.globo, not www.grupoglobo.globo.com. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 6,
-      "domain": "producthunt.com",
-      "url": "https://producthunt.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:02:57Z",
-      "last_seen": "2026-10-23T13:02:57Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
       "id": 10,
       "domain": "pt.wikipedia.org",
       "url": "https://pt.wikipedia.org/wiki/Sa%C3%BA",
@@ -329,17 +483,6 @@
       "error_message": "HTTP 403",
       "first_seen": "2026-10-23T13:17:33Z",
       "last_seen": "2026-10-23T13:17:33Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 24,
-      "domain": "www.nytimes.com",
-      "url": "https://www.nytimes.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:23:22Z",
-      "last_seen": "2026-10-23T13:23:22Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
@@ -375,28 +518,6 @@
       "last_seen": "2026-10-23T14:56:58Z",
       "attempts": 1,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.ouvidoria.sp.gov.br/Portal/Default.aspx: Get \"https://www.ouvidoria.sp.gov.br/Portal/Default.aspx\": tls: failed to verify certificate: x509: certificate signed by unknown authority. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 48,
-      "domain": "www.commerce.gov",
-      "url": "https://www.commerce.gov",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:02:58Z",
-      "last_seen": "2026-10-23T15:02:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 7,
-      "domain": "",
-      "url": "https://pt.wikihow.com/Purificar-%C3%8",
-      "status_code": 504,
-      "error_message": "failed to create request: parse \"https://pt.wikihow.com/Purificar-%C3%8\": invalid URL escape \"%8\"",
-      "first_seen": "2026-10-23T13:03:33Z",
-      "last_seen": "2026-10-23T13:03:33Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to create request: parse \"https://pt.wikihow.com/Purificar-%C3%8\": invalid URL escape \"%8\". Sugestão: Verificar rota de egress e resolução DNS."
     },
     {
       "id": 17,
@@ -443,36 +564,14 @@
       "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
     },
     {
-      "id": 35,
-      "domain": "opentechresearch.org",
-      "url": "https://opentechresearch.org/",
+      "id": 49,
+      "domain": "search.scielo.org",
+      "url": "https://search.scielo.org/?q=*\u0026lang=en\u0026filter[in][]=scl",
       "status_code": 403,
       "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:16:58Z",
-      "last_seen": "2026-10-23T14:16:58Z",
+      "first_seen": "2026-10-23T15:05:57Z",
+      "last_seen": "2026-10-23T15:05:57Z",
       "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 37,
-      "domain": "www.sciencedirect.com",
-      "url": "https://www.sciencedirect.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:31:22Z",
-      "last_seen": "2026-10-23T14:31:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 39,
-      "domain": "stackexchange.com",
-      "url": "https://stackexchange.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:32:34Z",
-      "last_seen": "2026-10-23T14:38:34Z",
-      "attempts": 2,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -483,39 +582,6 @@
       "error_message": "HTTP 403",
       "first_seen": "2026-10-23T12:55:21Z",
       "last_seen": "2026-10-23T12:55:21Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 11,
-      "domain": "reference.deno.land",
-      "url": "https://reference.deno.land/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-23T13:06:10Z",
-      "last_seen": "2026-10-23T13:06:10Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 26,
-      "domain": "www.reddit.com",
-      "url": "https://www.reddit.com/r/technology",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:24:45Z",
-      "last_seen": "2026-10-23T13:24:45Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 42,
-      "domain": "infograficos.valor.globo.com",
-      "url": "https://infograficos.valor.globo.com/carteira-valor/?menu_valor",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:47:34Z",
-      "last_seen": "2026-10-23T14:47:34Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
@@ -531,39 +597,6 @@
       "diagnosis": "Erro de transporte de rede: failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z. Sugestão: Verificar rota de egress e resolução DNS."
     },
     {
-      "id": 49,
-      "domain": "search.scielo.org",
-      "url": "https://search.scielo.org/?q=*\u0026lang=en\u0026filter[in][]=scl",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:05:57Z",
-      "last_seen": "2026-10-23T15:05:57Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 54,
-      "domain": "gitlab.com",
-      "url": "https://gitlab.com/users/sign_in/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:24:34Z",
-      "last_seen": "2026-10-23T15:24:58Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 4,
-      "domain": "nytimes.com",
-      "url": "https://nytimes.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T12:59:58Z",
-      "last_seen": "2026-10-23T12:59:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
       "id": 8,
       "domain": "pt.wikihow.com",
       "url": "https://pt.wikihow.com/Tratar-uma-Quei",
@@ -575,48 +608,26 @@
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
-      "id": 22,
-      "domain": "www.gov.br",
-      "url": "https://www.gov.br/receitafederal/pt-b",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:19:22Z",
-      "last_seen": "2026-10-23T13:19:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 33,
-      "domain": "home.web.cern.ch",
-      "url": "http://home.web.cern.ch/topics/birth-web",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:53:24Z",
-      "last_seen": "2026-10-23T13:53:24Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 51,
-      "domain": "www.ft.com",
-      "url": "https://www.ft.com/products",
+      "id": 2,
+      "domain": "forbes.com",
+      "url": "https://forbes.com/",
       "status_code": 403,
       "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:18:10Z",
-      "last_seen": "2026-10-23T15:18:10Z",
+      "first_seen": "2026-10-23T12:46:22Z",
+      "last_seen": "2026-10-23T12:46:22Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
-      "id": 55,
-      "domain": "www.harvardonline.harvard.edu",
-      "url": "https://www.harvardonline.harvard.edu/",
-      "status_code": 429,
-      "error_message": "HTTP 429",
-      "first_seen": "2026-10-23T15:29:45Z",
-      "last_seen": "2026-10-23T15:30:09Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
+      "id": 15,
+      "domain": "specs.openstack.org",
+      "url": "https://specs.openstack.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:08:34Z",
+      "last_seen": "2026-10-23T13:08:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
