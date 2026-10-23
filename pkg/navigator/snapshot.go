@@ -25,12 +25,18 @@ type InteractiveElement struct {
 
 // PageSnapshot represents a compact, token-optimized semantic representation of a webpage.
 type PageSnapshot struct {
-	URL        string               `json:"url"`
-	Title      string               `json:"title"`
-	StatusCode int                  `json:"status_code"`
-	CleanText  string               `json:"clean_text"`
-	Elements   []InteractiveElement `json:"elements"`
-	Forms      map[string]*HTMLForm `json:"forms"`
+	URL            string               `json:"url"`
+	Title          string               `json:"title"`
+	StatusCode     int                  `json:"status_code"`
+	CleanText      string               `json:"clean_text"`
+	Elements       []InteractiveElement `json:"elements"`
+	Forms          map[string]*HTMLForm `json:"forms"`
+	RawBytes       int                  `json:"raw_bytes,omitempty"`
+	MarkdownBytes  int                  `json:"markdown_bytes,omitempty"`
+	TokenReduction float64              `json:"token_reduction_pct,omitempty"`
+	RSSMiB         float64              `json:"rss_mib,omitempty"`
+	DurationMs     int64                `json:"duration_ms,omitempty"`
+	Engine         string               `json:"engine,omitempty"`
 }
 
 // HTMLForm tracks form fields and submission destination.

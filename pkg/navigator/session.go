@@ -1,36 +1,43 @@
 package navigator
 
 import (
+	"bytes"
 	"context"
 	"fmt"
+	"io"
 	"net/http"
 	"net/http/cookiejar"
 	"net/url"
+	"os"
 	"strings"
 	"sync"
 	"time"
+
+	"ai-go-browser/browser"
 )
 
 // Session manages a browser session with persistent cookies, history, and state.
 type Session struct {
-	mu         sync.Mutex
-	client     *http.Client
-	Current    *PageSnapshot
-	History    []string
-	UserAgent  string
-	Timeout    time.Duration
+	mu        sync.Mutex
+	client    *http.Client
+	Current   *PageSnapshot
+	History   []string
+	UserAgent string
+	Timeout   time.Duration
 }
 
-// NewSession creates an isolated browser session with automatic cookie handling.
+// NewSession creates an isolated browser session backed by the ai-go-browser uTLS engine.
 func NewSession() *Session {
 	jar, _ := cookiejar.New(nil)
+	tr := browser.NewSafeTransport(false)
 	return &Session{
 		client: &http.Client{
-			Jar:     jar,
-			Timeout: 20 * time.Second,
+			Jar:       jar,
+			Transport: tr,
+			Timeout:   25 * time.Second,
 		},
-		UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 AI-Go-Navigator/2.0",
-		Timeout:   20 * time.Second,
+		UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+		Timeout:   25 * time.Second,
 		History:   []string{},
 	}
 }
@@ -47,14 +54,23 @@ func (s *Session) Navigate(ctx context.Context, destURL string) (*PageSnapshot, 
 		}
 	}
 
+	start := time.Now()
 	req, err := http.NewRequestWithContext(ctx, "GET", destURL, nil)
 	if err != nil {
 		return nil, fmt.Errorf("failed to create request: %w", err)
 	}
 
 	req.Header.Set("User-Agent", s.UserAgent)
-	req.Header.Set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
+	req.Header.Set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8")
 	req.Header.Set("Accept-Language", "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7")
+	req.Header.Set("Sec-Ch-Ua", `"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"`)
+	req.Header.Set("Sec-Ch-Ua-Mobile", "?0")
+	req.Header.Set("Sec-Ch-Ua-Platform", `"Windows"`)
+	req.Header.Set("Sec-Fetch-Dest", "document")
+	req.Header.Set("Sec-Fetch-Mode", "navigate")
+	req.Header.Set("Sec-Fetch-Site", "none")
+	req.Header.Set("Sec-Fetch-User", "?1")
+	req.Header.Set("Upgrade-Insecure-Requests", "1")
 
 	resp, err := s.client.Do(req)
 	if err != nil {
@@ -62,11 +78,46 @@ func (s *Session) Navigate(ctx context.Context, destURL string) (*PageSnapshot, 
 	}
 	defer resp.Body.Close()
 
+	bodyBytes, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return nil, fmt.Errorf("failed to read response body: %w", err)
+	}
+	duration := time.Since(start)
+
 	finalURL := resp.Request.URL.String()
 
-	snapshot, err := ParseHTML(finalURL, resp.StatusCode, resp.Body)
+	snapshot, err := ParseHTML(finalURL, resp.StatusCode, bytes.NewReader(bodyBytes))
 	if err != nil {
 		return nil, err
+	}
+
+	// Enrich snapshot with ai-go-browser DOM & Token distillation
+	snapshot.RawBytes = len(bodyBytes)
+	if doc, docErr := browser.ParseDocument(bodyBytes, finalURL, resp.StatusCode, len(bodyBytes)); docErr == nil {
+		p := doc.PageWithMarkdown(25000, true)
+		snapshot.MarkdownBytes = len(p.Markdown)
+		if snapshot.MarkdownBytes == 0 && len(p.Text) > 0 {
+			snapshot.MarkdownBytes = len(p.Text)
+		}
+		if snapshot.RawBytes > 0 {
+			snapshot.TokenReduction = (1.0 - float64(snapshot.MarkdownBytes)/float64(snapshot.RawBytes)) * 100
+			if snapshot.TokenReduction < 0 {
+				snapshot.TokenReduction = 0
+			}
+		}
+	} else {
+		nativePage := browser.Parse(bodyBytes, finalURL, resp.StatusCode, len(bodyBytes), 25000)
+		snapshot.MarkdownBytes = len(nativePage.Text)
+		if snapshot.RawBytes > 0 {
+			snapshot.TokenReduction = (1.0 - float64(snapshot.MarkdownBytes)/float64(snapshot.RawBytes)) * 100
+		}
+	}
+	snapshot.DurationMs = duration.Milliseconds()
+	snapshot.Engine = "ai-go-browser (uTLS JA4 + Native Token Reducer)"
+
+	mem := browser.ReadProcessMemory(os.Getpid())
+	if mem.Available {
+		snapshot.RSSMiB = mem.RSSMiB
 	}
 
 	s.Current = snapshot

@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-10-23T01:05:16Z",
+  "host_info": "Oracle Cloud VPS (147.15.109.14 - Ubuntu x86_64, 1GB RAM)",
+  "engine": "ai-go-browser (uTLS JA4 Chrome 120 + Native DOM Reducer)",
+  "total_tested": 5,
+  "avg_token_reduction_pct": 84.0942276690384,
+  "current_rss_mib": 20.046875,
+  "chromium_comparison": "900 - 1400 MB (Inviável nesta máquina de 1GB)",
+  "recent_visits": [
+    {
+      "id": 1,
+      "url": "https://go.dev/blog/",
+      "title": "The Go Blog - The Go Programming Language",
+      "status_code": 200,
+      "latency_ms": 561,
+      "raw_bytes": 32204,
+      "markdown_bytes": 7069,
+      "token_reduction_pct": 78.04931064464043,
+      "interactive_elements": 79,
+      "rss_mib": 17.4296875
+    },
+    {
+      "id": 2,
+      "url": "https://news.ycombinator.com/",
+      "title": "Hacker News",
+      "status_code": 200,
+      "latency_ms": 527,
+      "raw_bytes": 34431,
+      "markdown_bytes": 14647,
+      "token_reduction_pct": 57.45984723069327,
+      "interactive_elements": 199,
+      "rss_mib": 18.44921875
+    },
+    {
+      "id": 3,
+      "url": "https://en.wikipedia.org/wiki/Special:Random",
+      "title": "Ada Pometti - Wikipedia",
+      "status_code": 200,
+      "latency_ms": 1241,
+      "raw_bytes": 85713,
+      "markdown_bytes": 12454,
+      "token_reduction_pct": 85.4701153850641,
+      "interactive_elements": 140,
+      "rss_mib": 18.359375
+    },
+    {
+      "id": 4,
+      "url": "https://tls.peet.ws/api/all",
+      "title": "",
+      "status_code": 200,
+      "latency_ms": 721,
+      "raw_bytes": 7770,
+      "markdown_bytes": 6098,
+      "token_reduction_pct": 21.51866151866152,
+      "interactive_elements": 0,
+      "rss_mib": 18.390625
+    },
+    {
+      "id": 5,
+      "url": "https://thehackernews.com/",
+      "title": "The Hacker News | #1 Trusted Source for Cybersecurity News",
+      "status_code": 200,
+      "latency_ms": 302,
+      "raw_bytes": 195319,
+      "markdown_bytes": 16267,
+      "token_reduction_pct": 91.67157317004491,
+      "interactive_elements": 101,
+      "rss_mib": 20.03515625
+    }
+  ]
+}
