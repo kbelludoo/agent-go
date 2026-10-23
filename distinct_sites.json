@@ -1,24 +1,7 @@
 {
-  "last_updated": "2026-10-23T12:44:25Z",
-  "total_distinct_sites": 80,
+  "last_updated": "2026-10-23T12:44:34Z",
+  "total_distinct_sites": 81,
   "distinct_sites": [
-    {
-      "id": 3,
-      "domain": "estadao.com.br",
-      "category": "Documentações \u0026 Web Aberta",
-      "url": "https://estadao.com.br/",
-      "title": "Estadão | As Últimas Notícias do Brasil e do Mundo - Estadão",
-      "status_code": 200,
-      "duration_ms": 141,
-      "raw_bytes": 1551665,
-      "markdown_bytes": 57034,
-      "token_reduction_pct": 96.32433547189632,
-      "interactive_elements": 393,
-      "rss_mib": 50.22265625,
-      "first_seen": "2026-10-23T12:44:22Z",
-      "ai_summary": "O Estadão é um portal de jornalismo brasileiro que reúne as últimas notícias do Brasil e do mundo, com destaque para política, eleições, esportes e economia. Além da cobertura noticiosa, oferece colunas de opinião, análises e seções temáticas como carros, investimentos, tecnologia, gastronomia e cultura.",
-      "ai_provider": "stop"
-    },
     {
       "id": 18,
       "domain": "bestbuy.com",
@@ -963,6 +946,21 @@
       "ai_provider": "stop"
     },
     {
+      "id": 4,
+      "domain": "etsy.com",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://etsy.com/",
+      "title": "etsy.com",
+      "status_code": 403,
+      "duration_ms": 198,
+      "raw_bytes": 804,
+      "markdown_bytes": 43,
+      "token_reduction_pct": 94.65174129353234,
+      "interactive_elements": 0,
+      "rss_mib": 39.078125,
+      "first_seen": "2026-10-23T12:44:34Z"
+    },
+    {
       "id": 26,
       "domain": "caniuse.com",
       "category": "Documentações \u0026 Web Aberta",
@@ -1320,6 +1318,23 @@
       "rss_mib": 31.49609375,
       "first_seen": "2026-10-23T12:35:54Z",
       "ai_summary": "O site oficial do Visual Studio Code apresenta o editor de código open source com recursos de IA e desenvolvimento multiagente. Oferece downloads para macOS, Windows e Linux, além de documentação, extensões e novidades.",
+      "ai_provider": "stop"
+    },
+    {
+      "id": 3,
+      "domain": "estadao.com.br",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://estadao.com.br/",
+      "title": "Estadão | As Últimas Notícias do Brasil e do Mundo - Estadão",
+      "status_code": 200,
+      "duration_ms": 141,
+      "raw_bytes": 1551665,
+      "markdown_bytes": 57034,
+      "token_reduction_pct": 96.32433547189632,
+      "interactive_elements": 393,
+      "rss_mib": 50.22265625,
+      "first_seen": "2026-10-23T12:44:22Z",
+      "ai_summary": "O Estadão é um portal de jornalismo brasileiro que reúne as últimas notícias do Brasil e do mundo, com destaque para política, eleições, esportes e economia. Além da cobertura noticiosa, oferece colunas de opinião, análises e seções temáticas como carros, investimentos, tecnologia, gastronomia e cultura.",
       "ai_provider": "stop"
     }
   ]
