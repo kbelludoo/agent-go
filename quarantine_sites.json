@@ -1,29 +1,7 @@
 {
-  "last_updated": "2026-10-23T17:43:14Z",
+  "last_updated": "2026-10-23T17:44:13Z",
   "total_quarantine": 85,
   "quarantine_sites": [
-    {
-      "id": 43,
-      "domain": "bloomberg.com",
-      "url": "https://bloomberg.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:54:22Z",
-      "last_seen": "2026-10-23T14:54:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 56,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/buildful-ai/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T15:30:34Z",
-      "last_seen": "2026-10-23T15:30:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 76,
       "domain": "www.w3.org",
@@ -936,6 +914,28 @@
       "last_seen": "2026-10-23T17:30:13Z",
       "attempts": 1,
       "diagnosis": "HTTP 436 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 43,
+      "domain": "bloomberg.com",
+      "url": "https://bloomberg.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:54:22Z",
+      "last_seen": "2026-10-23T14:54:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 56,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/buildful-ai/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T15:30:34Z",
+      "last_seen": "2026-10-23T15:30:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
