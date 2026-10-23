@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-23T12:34:57Z",
-  "total_distinct_sites": 34,
+  "last_updated": "2026-10-23T12:35:10Z",
+  "total_distinct_sites": 35,
   "distinct_sites": [
     {
       "id": 16,
@@ -266,6 +266,23 @@
       "rss_mib": 20.6953125,
       "first_seen": "2026-10-23T12:33:54Z",
       "ai_summary": "Este é o site oficial da Universidade de Cambridge, que reúne informações sobre graduação, pós-graduação, educação continuada, pesquisa, notícias, eventos, bibliotecas, museus, alumni e parcerias com empresas. Ele funciona como portal central para estudantes, pesquisadores, funcionários e visitantes conhecerem e se conectarem à universidade.",
+      "ai_provider": "stop"
+    },
+    {
+      "id": 30,
+      "domain": "cloud.google.com",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://cloud.google.com/",
+      "title": "Serviços de computação em nuvem | Google Cloud",
+      "status_code": 200,
+      "duration_ms": 625,
+      "raw_bytes": 2224009,
+      "markdown_bytes": 96290,
+      "token_reduction_pct": 95.67043118980185,
+      "interactive_elements": 861,
+      "rss_mib": 31.43359375,
+      "first_seen": "2026-10-23T12:35:06Z",
+      "ai_summary": "O site apresenta os serviços de computação em nuvem do Google Cloud, com foco em criar com IA, implantar e escalar aplicações, analisar e proteger dados. Ele também oferece créditos gratuitos, soluções como Gemini Enterprise e recursos de segurança para empresas.",
       "ai_provider": "stop"
     },
     {
