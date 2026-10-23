@@ -1,7 +1,24 @@
 {
-  "last_updated": "2026-10-23T12:29:41Z",
-  "total_distinct_sites": 8,
+  "last_updated": "2026-10-23T12:30:08Z",
+  "total_distinct_sites": 10,
   "distinct_sites": [
+    {
+      "id": 1,
+      "domain": "aliexpress.com",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://aliexpress.com/",
+      "title": "AliExpress - Comprar eletrônicos, produtos chinês de moda, para casa \u0026 jardim e automotivos vindos diretamente do site da China - AliExpress.com",
+      "status_code": 200,
+      "duration_ms": 2317,
+      "raw_bytes": 409245,
+      "markdown_bytes": 10459,
+      "token_reduction_pct": 97.44431819570184,
+      "interactive_elements": 100,
+      "rss_mib": 27.359375,
+      "first_seen": "2026-10-23T12:29:19Z",
+      "ai_summary": "O AliExpress é um marketplace global que oferece uma enorme variedade de produtos, como eletrônicos, moda, casa, automotivos, beleza e brinquedos. Ele se destaca por preços baixos, ofertas diárias e opções de frete grátis ou entrega rápida para o Brasil.",
+      "ai_provider": "stop"
+    },
     {
       "id": 2,
       "domain": "alpinelinux.org",
@@ -18,6 +35,55 @@
       "first_seen": "2026-10-23T12:29:30Z",
       "ai_summary": "O site oficial do Alpine Linux apresenta uma distribuição Linux leve, simples e voltada à segurança, baseada em musl libc e BusyBox. Ele oferece downloads, informações sobre versões, documentação/wiki, pacotes, espelhos, segurança e canais da comunidade.",
       "ai_provider": "stop"
+    },
+    {
+      "id": 4,
+      "domain": "angular.dev",
+      "category": "Frameworks \u0026 Web Standards",
+      "url": "https://angular.dev/",
+      "title": "Home • Angular",
+      "status_code": 200,
+      "duration_ms": 246,
+      "raw_bytes": 102669,
+      "markdown_bytes": 3650,
+      "token_reduction_pct": 96.44488599285081,
+      "interactive_elements": 48,
+      "rss_mib": 28.00390625,
+      "first_seen": "2026-10-23T12:29:53Z",
+      "ai_summary": "O angular.dev é o site oficial do framework Angular, apresentando seus recursos para criar aplicações web escaláveis com confiança, como Signals, Control Flow e Hydration. Ele oferece documentação, tutoriais interativos, playground, referências e recursos com IA para desenvolvedores.",
+      "ai_provider": "stop"
+    },
+    {
+      "id": 5,
+      "domain": "apache.org",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://apache.org/",
+      "title": "Welcome to The Apache Software Foundation | Apache Software Foundation",
+      "status_code": 200,
+      "duration_ms": 126,
+      "raw_bytes": 52852,
+      "markdown_bytes": 12922,
+      "token_reduction_pct": 75.55059411185954,
+      "interactive_elements": 130,
+      "rss_mib": 26.43359375,
+      "first_seen": "2026-10-23T12:30:05Z",
+      "ai_summary": "O site da Apache Software Foundation apresenta a fundação e sua missão de oferecer software de código aberto para o bem público, abrigando centenas de projetos confiáveis. Ele reúne informações sobre projetos, downloads, comunidade, governança, eventos e formas de contribuir ou apoiar a ASF.",
+      "ai_provider": "stop"
+    },
+    {
+      "id": 4,
+      "domain": "tls.peet.ws",
+      "category": "Auditoria uTLS \u0026 Fingerprint",
+      "url": "https://tls.peet.ws/api/all",
+      "title": "uTLS Chrome 120 Fingerprint",
+      "status_code": 200,
+      "duration_ms": 721,
+      "raw_bytes": 7770,
+      "markdown_bytes": 6098,
+      "token_reduction_pct": 21.5,
+      "interactive_elements": 0,
+      "rss_mib": 18.4,
+      "first_seen": "2026-10-23T01:05:14Z"
     },
     {
       "id": 3,
@@ -80,21 +146,6 @@
       "first_seen": "2026-10-23T01:05:13Z"
     },
     {
-      "id": 4,
-      "domain": "tls.peet.ws",
-      "category": "Auditoria uTLS \u0026 Fingerprint",
-      "url": "https://tls.peet.ws/api/all",
-      "title": "uTLS Chrome 120 Fingerprint",
-      "status_code": 200,
-      "duration_ms": 721,
-      "raw_bytes": 7770,
-      "markdown_bytes": 6098,
-      "token_reduction_pct": 21.5,
-      "interactive_elements": 0,
-      "rss_mib": 18.4,
-      "first_seen": "2026-10-23T01:05:14Z"
-    },
-    {
       "id": 5,
       "domain": "thehackernews.com",
       "category": "Cibersegurança \u0026 Defesa",
@@ -108,23 +159,6 @@
       "interactive_elements": 101,
       "rss_mib": 20,
       "first_seen": "2026-10-23T01:05:16Z"
-    },
-    {
-      "id": 1,
-      "domain": "aliexpress.com",
-      "category": "Documentações \u0026 Web Aberta",
-      "url": "https://aliexpress.com/",
-      "title": "AliExpress - Comprar eletrônicos, produtos chinês de moda, para casa \u0026 jardim e automotivos vindos diretamente do site da China - AliExpress.com",
-      "status_code": 200,
-      "duration_ms": 2317,
-      "raw_bytes": 409245,
-      "markdown_bytes": 10459,
-      "token_reduction_pct": 97.44431819570184,
-      "interactive_elements": 100,
-      "rss_mib": 27.359375,
-      "first_seen": "2026-10-23T12:29:19Z",
-      "ai_summary": "O AliExpress é um marketplace global que oferece uma enorme variedade de produtos, como eletrônicos, moda, casa, automotivos, beleza e brinquedos. Ele se destaca por preços baixos, ofertas diárias e opções de frete grátis ou entrega rápida para o Brasil.",
-      "ai_provider": "stop"
     }
   ]
 }
