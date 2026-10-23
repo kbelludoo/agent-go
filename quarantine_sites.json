@@ -1,7 +1,117 @@
 {
-  "last_updated": "2026-10-23T20:11:36Z",
+  "last_updated": "2026-10-23T20:12:36Z",
   "total_quarantine": 109,
   "quarantine_sites": [
+    {
+      "id": 2,
+      "domain": "forbes.com",
+      "url": "https://forbes.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T12:46:22Z",
+      "last_seen": "2026-10-23T12:46:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 15,
+      "domain": "specs.openstack.org",
+      "url": "https://specs.openstack.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:08:34Z",
+      "last_seen": "2026-10-23T13:08:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 64,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/tanishq-sangwan/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T15:56:10Z",
+      "last_seen": "2026-10-23T15:56:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 78,
+      "domain": "app.beehiiv.com",
+      "url": "https://app.beehiiv.com/signup",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T17:13:46Z",
+      "last_seen": "2026-10-23T17:13:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 81,
+      "domain": "speakerdex.co",
+      "url": "https://speakerdex.co/marcel",
+      "status_code": 436,
+      "error_message": "HTTP 436",
+      "first_seen": "2026-10-23T17:30:13Z",
+      "last_seen": "2026-10-23T17:30:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 436 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 98,
+      "domain": "www.wpintelligence.com",
+      "url": "https://www.wpintelligence.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.wpintelligence.com/: Get \"https://wpintelligence.washingtonpost.com/products/wp-intelligence/\": read tcp4 10.0.1.126:49284-\u003e23.11.234.135:443: use of closed network connection",
+      "first_seen": "2026-10-23T19:49:09Z",
+      "last_seen": "2026-10-23T19:50:09Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.wpintelligence.com/: Get \"https://wpintelligence.washingtonpost.com/products/wp-intelligence/\": read tcp4 10.0.1.126:49284-\u003e23.11.234.135:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 107,
+      "domain": "techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/category/Microsoft365Copilot",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T20:07:34Z",
+      "last_seen": "2026-10-23T20:07:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 109,
+      "domain": "worldwildlife.org",
+      "url": "https://worldwildlife.org",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T20:09:33Z",
+      "last_seen": "2026-10-23T20:09:33Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 43,
+      "domain": "bloomberg.com",
+      "url": "https://bloomberg.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:54:22Z",
+      "last_seen": "2026-10-23T14:54:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 56,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/buildful-ai/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T15:30:34Z",
+      "last_seen": "2026-10-23T15:30:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 76,
       "domain": "www.w3.org",
@@ -1090,116 +1200,6 @@
       "last_seen": "2026-10-23T20:09:22Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 2,
-      "domain": "forbes.com",
-      "url": "https://forbes.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T12:46:22Z",
-      "last_seen": "2026-10-23T12:46:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 15,
-      "domain": "specs.openstack.org",
-      "url": "https://specs.openstack.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:08:34Z",
-      "last_seen": "2026-10-23T13:08:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 64,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/tanishq-sangwan/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T15:56:10Z",
-      "last_seen": "2026-10-23T15:56:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 78,
-      "domain": "app.beehiiv.com",
-      "url": "https://app.beehiiv.com/signup",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T17:13:46Z",
-      "last_seen": "2026-10-23T17:13:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 81,
-      "domain": "speakerdex.co",
-      "url": "https://speakerdex.co/marcel",
-      "status_code": 436,
-      "error_message": "HTTP 436",
-      "first_seen": "2026-10-23T17:30:13Z",
-      "last_seen": "2026-10-23T17:30:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 436 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 98,
-      "domain": "www.wpintelligence.com",
-      "url": "https://www.wpintelligence.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.wpintelligence.com/: Get \"https://wpintelligence.washingtonpost.com/products/wp-intelligence/\": read tcp4 10.0.1.126:49284-\u003e23.11.234.135:443: use of closed network connection",
-      "first_seen": "2026-10-23T19:49:09Z",
-      "last_seen": "2026-10-23T19:50:09Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.wpintelligence.com/: Get \"https://wpintelligence.washingtonpost.com/products/wp-intelligence/\": read tcp4 10.0.1.126:49284-\u003e23.11.234.135:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 107,
-      "domain": "techcommunity.microsoft.com",
-      "url": "https://techcommunity.microsoft.com/category/Microsoft365Copilot",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T20:07:34Z",
-      "last_seen": "2026-10-23T20:07:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 109,
-      "domain": "worldwildlife.org",
-      "url": "https://worldwildlife.org",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T20:09:33Z",
-      "last_seen": "2026-10-23T20:09:33Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 43,
-      "domain": "bloomberg.com",
-      "url": "https://bloomberg.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:54:22Z",
-      "last_seen": "2026-10-23T14:54:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 56,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/buildful-ai/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T15:30:34Z",
-      "last_seen": "2026-10-23T15:30:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
