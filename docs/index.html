@@ -312,6 +312,7 @@
   <div class="tab-nav">
     <button class="tab-btn active" id="tabFeedBtn" onclick="switchTab('feed')">📡 Feed ao Vivo (Últimas Visitas)</button>
     <button class="tab-btn" id="tabDistinctBtn" onclick="switchTab('distinct')">🌐 Catálogo de Sites Distintos (<span id="tabDistinctCount">0</span>)</button>
+    <button class="tab-btn" id="tabQuarantineBtn" onclick="switchTab('quarantine')" style="border-color: rgba(239, 68, 68, 0.4);">🧪 Laboratório de Quarentena & Self-Healing (<span id="tabQuarantineCount" style="color: #f87171;">0</span>)</button>
   </div>
 
   <!-- Live Feed Table -->
@@ -373,6 +374,35 @@
     </table>
   </section>
 
+  <!-- Quarantine & Self-Healing Research Table -->
+  <section class="table-container" id="sectionQuarantine" style="display: none; border-color: rgba(239, 68, 68, 0.3);">
+    <div class="table-header">
+      <div>
+        <h2 style="font-size: 1.05rem; font-weight: 700; color: #f87171;">🧪 Laboratório de Quarentena & Melhoria do Navegador</h2>
+        <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 4px;">Sites que retornaram erro (ex: 403 WAF, 405 Method, 504 Timeout) gravados para análise de handshake e auto-correção do ai-go-browser.</p>
+      </div>
+      <input type="text" class="search-input" id="searchQuarantineInput" placeholder="Filtrar por domínio ou erro..." oninput="filterQuarantineTable()">
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Domínio</th>
+          <th>URL Falha</th>
+          <th>Status / Erro</th>
+          <th>Tentativas</th>
+          <th>Último Registro</th>
+          <th>🔬 Diagnóstico & Sugestão de Melhoria Técnica</th>
+        </tr>
+      </thead>
+      <tbody id="quarantineTableBody">
+        <tr>
+          <td colspan="7" style="text-align: center; color: var(--text-muted); padding: 32px;">Carregando laboratório de quarentena...</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
   <footer class="footer">
     <div><strong>AI-Go-Browser:</strong> 100% Pure Go Web Engine & Action Resolver. Sem Chromium. Sem Node.js. Sem dependências pesadas.</div>
     <div>Oracle VPS: <code>147.15.109.14 (Ubuntu x86_64, 1GB RAM)</code> | Repositórios: <a href="https://github.com/kbelludoo/agent-go" class="url-link">agent-go</a> • <a href="https://github.com/kbelludoo/ai-go-browser" class="url-link">ai-go-browser</a></div>
@@ -382,21 +412,23 @@
     let memChartInstance = null;
     let tokenChartInstance = null;
     let allDistinctSites = [];
+    let allQuarantineSites = [];
     let activeTab = 'feed';
 
     function switchTab(tab) {
       activeTab = tab;
-      if (tab === 'feed') {
-        document.getElementById('sectionFeed').style.display = 'block';
-        document.getElementById('sectionDistinct').style.display = 'none';
-        document.getElementById('tabFeedBtn').classList.add('active');
-        document.getElementById('tabDistinctBtn').classList.remove('active');
-      } else {
-        document.getElementById('sectionFeed').style.display = 'none';
-        document.getElementById('sectionDistinct').style.display = 'block';
-        document.getElementById('tabFeedBtn').classList.remove('active');
-        document.getElementById('tabDistinctBtn').classList.add('active');
+      document.getElementById('sectionFeed').style.display = tab === 'feed' ? 'block' : 'none';
+      document.getElementById('sectionDistinct').style.display = tab === 'distinct' ? 'block' : 'none';
+      document.getElementById('sectionQuarantine').style.display = tab === 'quarantine' ? 'block' : 'none';
+
+      document.getElementById('tabFeedBtn').classList.toggle('active', tab === 'feed');
+      document.getElementById('tabDistinctBtn').classList.toggle('active', tab === 'distinct');
+      document.getElementById('tabQuarantineBtn').classList.toggle('active', tab === 'quarantine');
+
+      if (tab === 'distinct') {
         loadDistinctSites();
+      } else if (tab === 'quarantine') {
+        loadQuarantineSites();
       }
     }
 
@@ -497,6 +529,72 @@
       renderDistinctTable(filtered);
     }
 
+    async function loadQuarantineSites() {
+      let data = null;
+      try {
+        const res = await fetch('./quarantine_sites.json?t=' + Date.now(), { cache: 'no-store' });
+        if (res.ok) {
+          data = await res.json();
+        }
+      } catch (e) {
+        console.warn("Could not load local quarantine_sites.json:", e);
+      }
+
+      if (!data) {
+        try {
+          const res = await fetch('http://147.15.109.14:8082/api/quarantine', { mode: 'cors', cache: 'no-store' });
+          if (res.ok) {
+            data = await res.json();
+          }
+        } catch (e) {}
+      }
+
+      if (data && data.quarantine_sites) {
+        allQuarantineSites = data.quarantine_sites;
+      } else if (data && data.sites) {
+        allQuarantineSites = data.sites;
+      }
+      renderQuarantineTable(allQuarantineSites);
+    }
+
+    function renderQuarantineTable(sites) {
+      const tbody = document.getElementById('quarantineTableBody');
+      document.getElementById('tabQuarantineCount').innerText = sites.length;
+      if (sites.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 32px;">Nenhum site em quarentena no momento. O navegador navegou com sucesso em todos os alvos!</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = sites.map((s, idx) => {
+        const statusClass = s.status_code === 403 ? 'status-err' : (s.status_code === 405 ? 'status-err' : 'status-err');
+        const lastSeenStr = s.last_seen ? new Date(s.last_seen).toLocaleTimeString() : '--';
+        return `
+          <tr>
+            <td><code>#${idx + 1}</code></td>
+            <td><strong>${s.domain || '-'}</strong></td>
+            <td><a href="${s.url}" target="_blank" rel="noopener" class="url-link">${s.url}</a></td>
+            <td><span class="status-badge ${statusClass}">${s.status_code || 0}</span></td>
+            <td><span style="font-weight: 700; color: #fbbf24;">${s.attempts || 1}x</span></td>
+            <td><code>${lastSeenStr}</code></td>
+            <td style="max-width: 360px;">
+              <div style="font-size: 0.84rem; color: #fca5a5; line-height: 1.4; font-weight: 500;">${s.diagnosis || s.error_message || 'Falha registrada'}</div>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function filterQuarantineTable() {
+      const q = document.getElementById('searchQuarantineInput').value.toLowerCase();
+      const filtered = allQuarantineSites.filter(s => 
+        (s.domain || '').toLowerCase().includes(q) || 
+        (s.url || '').toLowerCase().includes(q) || 
+        (s.diagnosis || '').toLowerCase().includes(q) ||
+        (s.error_message || '').toLowerCase().includes(q)
+      );
+      renderQuarantineTable(filtered);
+    }
+
     function formatBytes(bytes) {
       if (!bytes || bytes === 0) return '0 B';
       const k = 1024;
@@ -525,6 +623,9 @@
       document.getElementById('kpiReduction').innerText = `${(data.avg_token_reduction_pct || 84.1).toFixed(1)}%`;
       document.getElementById('kpiDistinct').innerText = data.distinct_sites_count || data.total_tested || recent.length || 0;
       document.getElementById('tabDistinctCount').innerText = data.distinct_sites_count || data.total_tested || recent.length || 0;
+      if (document.getElementById('tabQuarantineCount')) {
+        document.getElementById('tabQuarantineCount').innerText = data.quarantine_sites_count || allQuarantineSites.length || 0;
+      }
       document.getElementById('kpiVisits').innerText = data.total_visits || data.total_tested || recent.length || 0;
       document.getElementById('kpiSuccess').innerText = data.successful_visits || recent.filter(r => r.status_code >= 200 && r.status_code < 400).length || 0;
       document.getElementById('kpiUptime').innerText = data.uptime_seconds ? formatUptime(data.uptime_seconds) : 'Ativo';
@@ -681,6 +782,8 @@
       }
       if (activeTab === 'distinct') {
         loadDistinctSites();
+      } else if (activeTab === 'quarantine') {
+        loadQuarantineSites();
       }
     }
 

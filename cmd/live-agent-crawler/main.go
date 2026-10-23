@@ -46,6 +46,19 @@ type DistinctSiteRecord struct {
 	JA4                 string  `json:"ja4,omitempty"`
 }
 
+// QuarantineSiteRecord represents a site that failed (e.g. 403, 405, 504) saved for browser improvement research.
+type QuarantineSiteRecord struct {
+	ID           uint64 `json:"id"`
+	Domain       string `json:"domain"`
+	URL          string `json:"url"`
+	StatusCode   int    `json:"status_code"`
+	ErrorMessage string `json:"error_message"`
+	FirstSeen    string `json:"first_seen"`
+	LastSeen     string `json:"last_seen"`
+	Attempts     int    `json:"attempts"`
+	Diagnosis    string `json:"diagnosis"`
+}
+
 // TelemetryPayload represents the full state served to GitHub Pages and the API.
 type TelemetryPayload struct {
 	LastUpdated           string               `json:"last_updated"`
@@ -56,6 +69,7 @@ type TelemetryPayload struct {
 	TotalVisits           uint64               `json:"total_visits"`
 	DistinctSitesCount    int                  `json:"distinct_sites_count"`
 	SuccessfulVisits      uint64               `json:"successful_visits"`
+	QuarantineSitesCount  int                  `json:"quarantine_sites_count"`
 	AvgTokenReductionPct  float64              `json:"avg_token_reduction_pct"`
 	TotalRawBytes         int64                `json:"total_raw_bytes"`
 	TotalMarkdownBytes    int64                `json:"total_markdown_bytes"`
@@ -129,6 +143,33 @@ func categorizeURL(rawURL string) string {
 	}
 }
 
+func diagnoseFailure(statusCode int, err error) string {
+	if err != nil {
+		errStr := err.Error()
+		switch {
+		case strings.Contains(errStr, "timeout") || strings.Contains(errStr, "context deadline"):
+			return "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+		case strings.Contains(errStr, "handshake"):
+			return "Falha de handshake TLS: Servidor pode exigir suite de criptografia específica ou ALPN restrito. Sugestão: Simular Firefox ou Safari TLS."
+		default:
+			return fmt.Sprintf("Erro de transporte de rede: %s. Sugestão: Verificar rota de egress e resolução DNS.", errStr)
+		}
+	}
+
+	switch statusCode {
+	case 405:
+		return "HTTP 405 Method Not Allowed: Servidor rejeita certas requisições uTLS/H2 ou exige barra final ('/'). Sugestão: Testar fallback HTTP/1.1 e normalizar trailing slash."
+	case 403:
+		return "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+	case 429:
+		return "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
+	case 500, 502, 503, 504:
+		return fmt.Sprintf("HTTP %d Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos.", statusCode)
+	default:
+		return fmt.Sprintf("HTTP %d inesperado. Salvo para análise e aprimoramento do motor de navegação.", statusCode)
+	}
+}
+
 // DiscoverDynamicURLs fetches fresh URLs from Google News RSS and DuckDuckGo HTML without browser overhead.
 func DiscoverDynamicURLs(ctx context.Context, query string) []string {
 	var discovered []string
@@ -182,6 +223,7 @@ func main() {
 	addr := flag.String("addr", ":8082", "HTTP API listen address (CORS enabled for live dashboard)")
 	outputJSON := flag.String("output", "docs/live_crawler_data.json", "Path to save live telemetry JSON for GitHub Pages")
 	distinctJSON := flag.String("distinct-output", "docs/distinct_sites.json", "Path to save distinct sites catalog")
+	quarantineJSON := flag.String("quarantine-output", "docs/quarantine_sites.json", "Path to save quarantined failed sites for browser self-healing research")
 	seedFile := flag.String("seed", "data/distinct_seed_sites.txt", "Path to text file containing seed URLs")
 	intervalSec := flag.Int("interval", 12, "Seconds between autonomous site visits")
 	gitPushInterval := flag.Int("git-interval", 5, "Minutes between git commit/push of telemetry")
@@ -204,8 +246,9 @@ func main() {
 		visitCounter uint64
 		successCount uint64
 		recentVisits []DistinctSiteRecord
-		distinctMap  = make(map[string]DistinctSiteRecord)
-		startTime    = time.Now()
+		distinctMap   = make(map[string]DistinctSiteRecord)
+		quarantineMap = make(map[string]QuarantineSiteRecord)
+		startTime     = time.Now()
 		totalRaw     int64
 		totalMD      int64
 		visitedSet   = make(map[string]bool)
@@ -241,6 +284,19 @@ func main() {
 				visitedSet[s.URL] = true
 			}
 			log.Printf("🔄 Catálogo recuperado: %d sites distintos anteriores", len(distinctMap))
+		}
+	}
+
+	// Try reading existing quarantine catalog
+	if data, err := os.ReadFile(*quarantineJSON); err == nil {
+		var qCatalog struct {
+			Sites []QuarantineSiteRecord `json:"quarantine_sites"`
+		}
+		if err := json.Unmarshal(data, &qCatalog); err == nil {
+			for _, s := range qCatalog.Sites {
+				quarantineMap[s.URL] = s
+			}
+			log.Printf("🧪 Quarentena recuperada: %d sites para laboratório de self-healing", len(quarantineMap))
 		}
 	}
 
@@ -322,6 +378,7 @@ func main() {
 			TotalVisits:          visitCounter,
 			DistinctSitesCount:   len(distinctMap),
 			SuccessfulVisits:     successCount,
+			QuarantineSitesCount: len(quarantineMap),
 			AvgTokenReductionPct: avgRed,
 			TotalRawBytes:        totalRaw,
 			TotalMarkdownBytes:   totalMD,
@@ -339,6 +396,11 @@ func main() {
 		distinctList := make([]DistinctSiteRecord, 0, len(distinctMap))
 		for _, v := range distinctMap {
 			distinctList = append(distinctList, v)
+		}
+
+		quarantineList := make([]QuarantineSiteRecord, 0, len(quarantineMap))
+		for _, v := range quarantineMap {
+			quarantineList = append(quarantineList, v)
 		}
 		mu.RUnlock()
 
@@ -358,6 +420,20 @@ func main() {
 
 		if b, err := json.MarshalIndent(catalogPayload, "", "  "); err == nil {
 			_ = os.WriteFile(*distinctJSON, b, 0644)
+		}
+
+		quarantinePayload := struct {
+			LastUpdated     string                 `json:"last_updated"`
+			TotalQuarantine int                    `json:"total_quarantine"`
+			QuarantineSites []QuarantineSiteRecord `json:"quarantine_sites"`
+		}{
+			LastUpdated:     time.Now().UTC().Format(time.RFC3339),
+			TotalQuarantine: len(quarantineList),
+			QuarantineSites: quarantineList,
+		}
+
+		if b, err := json.MarshalIndent(quarantinePayload, "", "  "); err == nil {
+			_ = os.WriteFile(*quarantineJSON, b, 0644)
 		}
 	}
 
@@ -389,6 +465,21 @@ func main() {
 			_ = json.NewEncoder(w).Encode(map[string]any{
 				"total": len(distinctList),
 				"sites": distinctList,
+			})
+		})
+
+		mux.HandleFunc("/api/quarantine", func(w http.ResponseWriter, r *http.Request) {
+			w.Header().Set("Access-Control-Allow-Origin", "*")
+			w.Header().Set("Content-Type", "application/json")
+			mu.RLock()
+			qList := make([]QuarantineSiteRecord, 0, len(quarantineMap))
+			for _, v := range quarantineMap {
+				qList = append(qList, v)
+			}
+			mu.RUnlock()
+			_ = json.NewEncoder(w).Encode(map[string]any{
+				"total": len(qList),
+				"sites": qList,
 			})
 		})
 
@@ -519,11 +610,47 @@ func main() {
 			}
 		}
 
+		// Check if site failed and needs quarantine for browser improvement
+		isFailure := (err != nil) || (snap != nil && snap.StatusCode >= 400)
+		var qRec *QuarantineSiteRecord
+		if isFailure {
+			status := 504
+			errMsg := "Timeout ou falha de rede"
+			if err != nil {
+				errMsg = err.Error()
+			} else if snap != nil {
+				status = snap.StatusCode
+				errMsg = fmt.Sprintf("HTTP %d", snap.StatusCode)
+			}
+			qRec = &QuarantineSiteRecord{
+				Domain:       domain,
+				URL:          targetURL,
+				StatusCode:   status,
+				ErrorMessage: errMsg,
+				LastSeen:     time.Now().UTC().Format(time.RFC3339),
+				Diagnosis:    diagnoseFailure(status, err),
+			}
+		}
+
 		// Update state safely with mutex
 		mu.Lock()
 		visitCounter++
 		record.ID = visitCounter
 		visitedSet[targetURL] = true
+
+		if qRec != nil {
+			if existing, ok := quarantineMap[targetURL]; ok {
+				qRec.ID = existing.ID
+				qRec.FirstSeen = existing.FirstSeen
+				qRec.Attempts = existing.Attempts + 1
+			} else {
+				qRec.ID = uint64(len(quarantineMap) + 1)
+				qRec.FirstSeen = time.Now().UTC().Format(time.RFC3339)
+				qRec.Attempts = 1
+			}
+			quarantineMap[targetURL] = *qRec
+			log.Printf("   🧪 [Laboratório de Quarentena] Site %s registrado: %s", targetURL, qRec.Diagnosis)
+		}
 
 		if err == nil {
 			successCount++
