@@ -1,7 +1,128 @@
 {
-  "last_updated": "2026-10-23T22:58:13Z",
+  "last_updated": "2026-10-23T22:59:20Z",
   "total_quarantine": 107,
   "quarantine_sites": [
+    {
+      "id": 60,
+      "domain": "sverigesradio.se",
+      "url": "https://sverigesradio.se/radioleaks",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:49:23Z",
+      "last_seen": "2026-10-23T15:49:23Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 98,
+      "domain": "www.wpintelligence.com",
+      "url": "https://www.wpintelligence.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.wpintelligence.com/: Get \"https://wpintelligence.washingtonpost.com/products/wp-intelligence/\": read tcp4 10.0.1.126:49284-\u003e23.11.234.135:443: use of closed network connection",
+      "first_seen": "2026-10-23T19:49:09Z",
+      "last_seen": "2026-10-23T19:50:09Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.wpintelligence.com/: Get \"https://wpintelligence.washingtonpost.com/products/wp-intelligence/\": read tcp4 10.0.1.126:49284-\u003e23.11.234.135:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 50,
+      "domain": "shop.wired.com",
+      "url": "https://shop.wired.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:09:58Z",
+      "last_seen": "2026-10-23T15:10:10Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 53,
+      "domain": "getbootstrap.com",
+      "url": "https://getbootstrap.com/docs/6.0/getting-started/introduction/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T15:20:58Z",
+      "last_seen": "2026-10-23T22:56:03Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 8,
+      "domain": "pt.wikihow.com",
+      "url": "https://pt.wikihow.com/Tratar-uma-Quei",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:03:46Z",
+      "last_seen": "2026-10-23T13:03:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 23,
+      "domain": "www.inpe.br",
+      "url": "https://www.inpe.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.inpe.br: Get \"https://www.inpe.br\": tls: failed to verify certificate: x509: certificate signed by unknown authority",
+      "first_seen": "2026-10-23T13:20:57Z",
+      "last_seen": "2026-10-23T13:20:57Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.inpe.br: Get \"https://www.inpe.br\": tls: failed to verify certificate: x509: certificate signed by unknown authority. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 85,
+      "domain": "paineldecompras.economia.gov.br",
+      "url": "http://paineldecompras.economia.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host",
+      "first_seen": "2026-10-23T17:39:51Z",
+      "last_seen": "2026-10-23T18:19:14Z",
+      "attempts": 4,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 5,
+      "domain": "phys.org",
+      "url": "https://phys.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:01:58Z",
+      "last_seen": "2026-10-23T13:01:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 54,
+      "domain": "gitlab.com",
+      "url": "https://gitlab.com/users/sign_in/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:24:34Z",
+      "last_seen": "2026-10-23T15:24:58Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 110,
+      "domain": "www.podiobooks.com",
+      "url": "http://www.podiobooks.com/podiobooks/book.php?ID=126",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T20:37:46Z",
+      "last_seen": "2026-10-23T20:37:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 4,
+      "domain": "nytimes.com",
+      "url": "https://nytimes.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T12:59:58Z",
+      "last_seen": "2026-10-23T22:57:27Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 6,
       "domain": "producthunt.com",
@@ -163,8 +284,8 @@
       "status_code": 504,
       "error_message": "failed to fetch URL http://www.efc.ca/pages/doc/crypto-export.html: Get \"http://www.efc.ca/pages/doc/crypto-export.html\": dial tcp4: lookup www.efc.ca on 127.0.0.53:53: server misbehaving",
       "first_seen": "2026-10-23T15:54:48Z",
-      "last_seen": "2026-10-23T15:54:48Z",
-      "attempts": 1,
+      "last_seen": "2026-10-23T22:58:24Z",
+      "attempts": 2,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.efc.ca/pages/doc/crypto-export.html: Get \"http://www.efc.ca/pages/doc/crypto-export.html\": dial tcp4: lookup www.efc.ca on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
     },
     {
@@ -174,8 +295,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-23T20:09:22Z",
-      "last_seen": "2026-10-23T20:09:22Z",
-      "attempts": 1,
+      "last_seen": "2026-10-23T22:58:34Z",
+      "attempts": 2,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -185,8 +306,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-23T20:02:10Z",
-      "last_seen": "2026-10-23T20:02:22Z",
-      "attempts": 2,
+      "last_seen": "2026-10-23T22:58:45Z",
+      "attempts": 3,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -196,8 +317,8 @@
       "status_code": 404,
       "error_message": "HTTP 404",
       "first_seen": "2026-10-23T13:26:58Z",
-      "last_seen": "2026-10-23T13:26:58Z",
-      "attempts": 1,
+      "last_seen": "2026-10-23T22:58:57Z",
+      "attempts": 2,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
@@ -207,8 +328,8 @@
       "status_code": 504,
       "error_message": "failed to fetch URL https://lp.suno.com.br/suno-mentoria-de-sucesso/: Get \"https://lp.suno.com.br/suno-mentoria-de-sucesso/\": context deadline exceeded",
       "first_seen": "2026-10-23T17:57:33Z",
-      "last_seen": "2026-10-23T17:57:46Z",
-      "attempts": 2,
+      "last_seen": "2026-10-23T22:59:20Z",
+      "attempts": 3,
       "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     },
     {
@@ -1056,127 +1177,6 @@
       "first_seen": "2026-10-23T14:31:46Z",
       "last_seen": "2026-10-23T14:31:46Z",
       "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 60,
-      "domain": "sverigesradio.se",
-      "url": "https://sverigesradio.se/radioleaks",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:49:23Z",
-      "last_seen": "2026-10-23T15:49:23Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 98,
-      "domain": "www.wpintelligence.com",
-      "url": "https://www.wpintelligence.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.wpintelligence.com/: Get \"https://wpintelligence.washingtonpost.com/products/wp-intelligence/\": read tcp4 10.0.1.126:49284-\u003e23.11.234.135:443: use of closed network connection",
-      "first_seen": "2026-10-23T19:49:09Z",
-      "last_seen": "2026-10-23T19:50:09Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.wpintelligence.com/: Get \"https://wpintelligence.washingtonpost.com/products/wp-intelligence/\": read tcp4 10.0.1.126:49284-\u003e23.11.234.135:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 50,
-      "domain": "shop.wired.com",
-      "url": "https://shop.wired.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:09:58Z",
-      "last_seen": "2026-10-23T15:10:10Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 53,
-      "domain": "getbootstrap.com",
-      "url": "https://getbootstrap.com/docs/6.0/getting-started/introduction/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T15:20:58Z",
-      "last_seen": "2026-10-23T22:56:03Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 8,
-      "domain": "pt.wikihow.com",
-      "url": "https://pt.wikihow.com/Tratar-uma-Quei",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:03:46Z",
-      "last_seen": "2026-10-23T13:03:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 23,
-      "domain": "www.inpe.br",
-      "url": "https://www.inpe.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.inpe.br: Get \"https://www.inpe.br\": tls: failed to verify certificate: x509: certificate signed by unknown authority",
-      "first_seen": "2026-10-23T13:20:57Z",
-      "last_seen": "2026-10-23T13:20:57Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.inpe.br: Get \"https://www.inpe.br\": tls: failed to verify certificate: x509: certificate signed by unknown authority. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 85,
-      "domain": "paineldecompras.economia.gov.br",
-      "url": "http://paineldecompras.economia.gov.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host",
-      "first_seen": "2026-10-23T17:39:51Z",
-      "last_seen": "2026-10-23T18:19:14Z",
-      "attempts": 4,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 5,
-      "domain": "phys.org",
-      "url": "https://phys.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:01:58Z",
-      "last_seen": "2026-10-23T13:01:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 54,
-      "domain": "gitlab.com",
-      "url": "https://gitlab.com/users/sign_in/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:24:34Z",
-      "last_seen": "2026-10-23T15:24:58Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 110,
-      "domain": "www.podiobooks.com",
-      "url": "http://www.podiobooks.com/podiobooks/book.php?ID=126",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T20:37:46Z",
-      "last_seen": "2026-10-23T20:37:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 4,
-      "domain": "nytimes.com",
-      "url": "https://nytimes.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T12:59:58Z",
-      "last_seen": "2026-10-23T22:57:27Z",
-      "attempts": 3,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
