@@ -1,22 +1,7 @@
 {
-  "last_updated": "2026-10-23T12:32:21Z",
-  "total_distinct_sites": 21,
+  "last_updated": "2026-10-23T12:33:22Z",
+  "total_distinct_sites": 26,
   "distinct_sites": [
-    {
-      "id": 3,
-      "domain": "en.wikipedia.org",
-      "category": "Ciência \u0026 Enciclopédias",
-      "url": "https://en.wikipedia.org/wiki/Special:Random",
-      "title": "Ada Pometti - Wikipedia",
-      "status_code": 200,
-      "duration_ms": 1241,
-      "raw_bytes": 85713,
-      "markdown_bytes": 12454,
-      "token_reduction_pct": 85.5,
-      "interactive_elements": 140,
-      "rss_mib": 18.4,
-      "first_seen": "2026-10-23T01:05:13Z"
-    },
     {
       "id": 5,
       "domain": "thehackernews.com",
@@ -63,6 +48,38 @@
       "interactive_elements": 0,
       "rss_mib": 48.3203125,
       "first_seen": "2026-10-23T12:31:06Z"
+    },
+    {
+      "id": 17,
+      "domain": "azure.microsoft.com",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://azure.microsoft.com/",
+      "title": "Erro: failed to fetch URL https://azure.microsoft.com/: Get \"https://azure.microsoft.com/pt-br\": read tcp4 10.0.1.126:46254-\u003e23.201.218.61:443: use of closed network connection",
+      "status_code": 504,
+      "duration_ms": 0,
+      "raw_bytes": 0,
+      "markdown_bytes": 0,
+      "token_reduction_pct": 0,
+      "interactive_elements": 0,
+      "rss_mib": 0,
+      "first_seen": "2026-10-23T12:32:41Z"
+    },
+    {
+      "id": 20,
+      "domain": "books.toscrape.com",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://books.toscrape.com/",
+      "title": "All products | Books to Scrape - Sandbox",
+      "status_code": 200,
+      "duration_ms": 856,
+      "raw_bytes": 51294,
+      "markdown_bytes": 11082,
+      "token_reduction_pct": 78.39513393379343,
+      "interactive_elements": 94,
+      "rss_mib": 19.37890625,
+      "first_seen": "2026-10-23T12:33:06Z",
+      "ai_summary": "Este é o Books to Scrape, um site de demonstração criado especificamente para práticas de web scraping, que simula uma loja online com 1.000 livros fictícios organizados por categorias. Ele oferece listagens de títulos com preços, avaliações e status de estoque — todos valores aleatórios e sem significado real — além de páginas de detalhes e navegação paginada.",
+      "ai_provider": "stop"
     },
     {
       "id": 4,
@@ -124,6 +141,23 @@
       "rss_mib": 22.53125,
       "first_seen": "2026-10-23T12:32:17Z",
       "ai_summary": "A AWS é a plataforma de computação em nuvem mais abrangente do mundo, oferecendo uma ampla gama de serviços como computação, armazenamento, bancos de dados, analytics e inteligência artificial. O site apresenta produtos, soluções, preços e recursos para ajudar organizações a inovar, reduzir custos e escalar com eficiência.",
+      "ai_provider": "stop"
+    },
+    {
+      "id": 18,
+      "domain": "bestbuy.com",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://bestbuy.com/",
+      "title": "Best Buy International: Select your Country - Best Buy",
+      "status_code": 200,
+      "duration_ms": 246,
+      "raw_bytes": 7042,
+      "markdown_bytes": 1343,
+      "token_reduction_pct": 80.92871343368361,
+      "interactive_elements": 6,
+      "rss_mib": 22.58984375,
+      "first_seen": "2026-10-23T12:32:41Z",
+      "ai_summary": "Este site é a página internacional da Best Buy para selecionar país e idioma (Canadá ou Estados Unidos). Ele direciona clientes internacionais para a loja online bestbuy.com, onde podem comprar produtos e receber pedidos em endereços ou lojas nos EUA.",
       "ai_provider": "stop"
     },
     {
@@ -325,6 +359,38 @@
       "ai_provider": "stop"
     },
     {
+      "id": 19,
+      "domain": "bloomberg.com",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://bloomberg.com/",
+      "title": "Bloomberg - Are you a robot?",
+      "status_code": 403,
+      "duration_ms": 756,
+      "raw_bytes": 13856,
+      "markdown_bytes": 908,
+      "token_reduction_pct": 93.44688221709006,
+      "interactive_elements": 6,
+      "rss_mib": 18.99609375,
+      "first_seen": "2026-10-23T12:32:54Z"
+    },
+    {
+      "id": 21,
+      "domain": "br.investing.com",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://br.investing.com",
+      "title": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
+      "status_code": 200,
+      "duration_ms": 708,
+      "raw_bytes": 1329395,
+      "markdown_bytes": 60254,
+      "token_reduction_pct": 95.4675623121796,
+      "interactive_elements": 674,
+      "rss_mib": 29.8828125,
+      "first_seen": "2026-10-23T12:33:18Z",
+      "ai_summary": "O Investing.com Brasil é um portal de finanças e investimentos que reúne cotações, notícias e análises sobre mercados, câmbio, commodities, índices e ações. Ele oferece dados e ferramentas para acompanhar o mercado e apoiar decisões de investimento.",
+      "ai_provider": "stop"
+    },
+    {
       "id": 1,
       "domain": "go.dev",
       "category": "Dev, Repos \u0026 Compiladores",
@@ -338,6 +404,21 @@
       "interactive_elements": 79,
       "rss_mib": 17.4,
       "first_seen": "2026-10-23T01:05:10Z"
+    },
+    {
+      "id": 3,
+      "domain": "en.wikipedia.org",
+      "category": "Ciência \u0026 Enciclopédias",
+      "url": "https://en.wikipedia.org/wiki/Special:Random",
+      "title": "Ada Pometti - Wikipedia",
+      "status_code": 200,
+      "duration_ms": 1241,
+      "raw_bytes": 85713,
+      "markdown_bytes": 12454,
+      "token_reduction_pct": 85.5,
+      "interactive_elements": 140,
+      "rss_mib": 18.4,
+      "first_seen": "2026-10-23T01:05:13Z"
     }
   ]
 }
