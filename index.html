@@ -103,6 +103,44 @@
       gap: 10px;
       margin-bottom: 16px;
     }
+
+    .ai-spotlight {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(59, 130, 246, 0.1));
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+    .ai-spotlight-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .ai-tag {
+      background: rgba(139, 92, 246, 0.25);
+      border: 1px solid #8b5cf6;
+      color: #c4b5fd;
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .ai-summary-text {
+      font-size: 1.02rem;
+      line-height: 1.5;
+      color: #f1f5f9;
+      font-weight: 400;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 14px 18px;
+      border-radius: 8px;
+      border-left: 4px solid #8b5cf6;
+      margin-top: 10px;
+    }
     .tab-btn {
       background: #151d2c;
       border: 1px solid var(--border);
@@ -249,6 +287,27 @@
     </div>
   </section>
 
+  <!-- Spotlight: Último Resumo da IA -->
+  <section class="ai-spotlight" id="aiSpotlightBox">
+    <div class="ai-spotlight-header">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="font-size: 1.1rem;">🤖</span>
+        <strong style="color: #c4b5fd; font-size: 0.92rem;">ÚLTIMO SITE ANALISADO PELA IA DO AGENT-GO</strong>
+      </div>
+      <div style="display: flex; gap: 8px; align-items: center;">
+        <span class="ai-tag" id="spotlightProvider">DeepSeek v4.1 Flash (Fallback Cascade)</span>
+        <span style="font-size: 0.8rem; color: #94a3b8;" id="spotlightTime">--</span>
+      </div>
+    </div>
+    <div style="margin-top: 4px; font-size: 0.9rem;">
+      <span style="color: #94a3b8;">Site:</span> <a href="#" id="spotlightURL" target="_blank" rel="noopener" style="color: #60a5fa; font-weight: 600; text-decoration: none;">--</a>
+      <span style="color: #64748b; margin-left: 8px;" id="spotlightTitle">--</span>
+    </div>
+    <div class="ai-summary-text" id="spotlightSummary">
+      Aguardando primeira leitura de síntese da IA...
+    </div>
+  </section>
+
   <!-- Tab selector -->
   <div class="tab-nav">
     <button class="tab-btn active" id="tabFeedBtn" onclick="switchTab('feed')">📡 Feed ao Vivo (Últimas Visitas)</button>
@@ -299,6 +358,7 @@
           <th>Domínio</th>
           <th>URL Completa</th>
           <th>Título</th>
+          <th>💬 Síntese da IA (Agent-Go)</th>
           <th>HTML Bruto</th>
           <th>Markdown</th>
           <th>Redução Tokens</th>
@@ -307,7 +367,7 @@
       </thead>
       <tbody id="distinctTableBody">
         <tr>
-          <td colspan="9" style="text-align: center; color: var(--text-muted); padding: 32px;">Carregando catálogo de sites distintos...</td>
+          <td colspan="10" style="text-align: center; color: var(--text-muted); padding: 32px;">Carregando catálogo de sites distintos...</td>
         </tr>
       </tbody>
     </table>
@@ -403,7 +463,9 @@
       tbody.innerHTML = sites.map((s, idx) => {
         const isOk = s.status_code >= 200 && s.status_code < 400;
         const statusClass = isOk ? 'status-200' : 'status-err';
-        const titleStr = (s.title || '').length > 40 ? s.title.substring(0, 40) + '...' : (s.title || '-');
+        const titleStr = (s.title || '').length > 35 ? s.title.substring(0, 35) + '...' : (s.title || '-');
+        const aiText = s.ai_summary ? s.ai_summary : '<span style="color:#64748b; font-style:italic;">(Processado via DOM uTLS)</span>';
+        const aiProv = s.ai_provider ? `<div style="font-size: 0.72rem; color: #a78bfa; margin-top: 3px; font-weight: 600;">[IA: ${s.ai_provider}]</div>` : '';
         return `
           <tr>
             <td><code>#${idx + 1}</code></td>
@@ -411,6 +473,10 @@
             <td><strong>${s.domain || '-'}</strong></td>
             <td><a href="${s.url}" target="_blank" rel="noopener" class="url-link">${s.url}</a></td>
             <td>${titleStr}</td>
+            <td style="max-width: 320px;">
+              <div style="font-size: 0.84rem; color: #f1f5f9; line-height: 1.4;">${aiText}</div>
+              ${aiProv}
+            </td>
             <td>${formatBytes(s.raw_bytes)}</td>
             <td>${formatBytes(s.markdown_bytes)}</td>
             <td class="tag-green font-bold">${(s.token_reduction_pct || 0).toFixed(1)}%</td>
@@ -467,6 +533,17 @@
       if (latestJA4) {
         document.getElementById('kpiJA4').innerText = latestJA4.substring(0, 15) + '...';
         document.getElementById('kpiJA4').title = latestJA4;
+      }
+
+      // Preenche o Card Spotlight com o último site resumido pela IA
+      const latestAISite = recent.find(v => v.ai_summary && v.ai_summary.trim() !== '');
+      if (latestAISite) {
+        document.getElementById('spotlightProvider').innerText = (latestAISite.ai_provider || 'DeepSeek') + ' (Agent-Go Cascade)';
+        document.getElementById('spotlightTime').innerText = latestAISite.first_seen ? new Date(latestAISite.first_seen).toLocaleTimeString() : 'Agora';
+        document.getElementById('spotlightURL').innerText = latestAISite.url;
+        document.getElementById('spotlightURL').href = latestAISite.url;
+        document.getElementById('spotlightTitle').innerText = latestAISite.title ? `(${latestAISite.title})` : '';
+        document.getElementById('spotlightSummary').innerText = `"${latestAISite.ai_summary}"`;
       }
 
       // Update Table
