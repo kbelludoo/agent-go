@@ -1,172 +1,7 @@
 {
-  "last_updated": "2026-10-23T22:24:37Z",
+  "last_updated": "2026-10-23T22:25:39Z",
   "total_quarantine": 116,
   "quarantine_sites": [
-    {
-      "id": 28,
-      "domain": "www.theguardian.com",
-      "url": "https://www.theguardian.com/internatio",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:26:58Z",
-      "last_seen": "2026-10-23T13:26:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 53,
-      "domain": "getbootstrap.com",
-      "url": "https://getbootstrap.com/docs/6.0/getting-started/introduction/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T15:20:58Z",
-      "last_seen": "2026-10-23T15:20:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 70,
-      "domain": "superuser.com",
-      "url": "https://superuser.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T16:17:58Z",
-      "last_seen": "2026-10-23T16:17:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 116,
-      "domain": "join.slack.com",
-      "url": "https://join.slack.com/share/enQtMTE1OTk4NTI5NzUyMTctMDY3ODA1YzNkYzlmOGFkNTA3YzE0MjdlMzFkODZmYzNmNTg1Yjk3YzY3MmNmMjI1YWU5MzgyNjcwZDg1N2QyNQ",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T22:16:46Z",
-      "last_seen": "2026-10-23T22:16:58Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 14,
-      "domain": "sciencedirect.com",
-      "url": "https://sciencedirect.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:07:22Z",
-      "last_seen": "2026-10-23T13:07:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 23,
-      "domain": "www.inpe.br",
-      "url": "https://www.inpe.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.inpe.br: Get \"https://www.inpe.br\": tls: failed to verify certificate: x509: certificate signed by unknown authority",
-      "first_seen": "2026-10-23T13:20:57Z",
-      "last_seen": "2026-10-23T13:20:57Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.inpe.br: Get \"https://www.inpe.br\": tls: failed to verify certificate: x509: certificate signed by unknown authority. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 74,
-      "domain": "azure.microsoft.com",
-      "url": "https://azure.microsoft.com/blog/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://azure.microsoft.com/blog/: Get \"https://azure.microsoft.com/pt-br/blog/\": read tcp4 10.0.1.126:41256-\u003e23.201.218.61:443: use of closed network connection",
-      "first_seen": "2026-10-23T16:47:57Z",
-      "last_seen": "2026-10-23T16:47:57Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://azure.microsoft.com/blog/: Get \"https://azure.microsoft.com/pt-br/blog/\": read tcp4 10.0.1.126:41256-\u003e23.201.218.61:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 107,
-      "domain": "techcommunity.microsoft.com",
-      "url": "https://techcommunity.microsoft.com/category/Microsoft365Copilot",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T20:07:34Z",
-      "last_seen": "2026-10-23T20:07:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 109,
-      "domain": "worldwildlife.org",
-      "url": "https://worldwildlife.org",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T20:09:33Z",
-      "last_seen": "2026-10-23T20:09:33Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 45,
-      "domain": "especiais.gazetadopovo.com.br",
-      "url": "https://especiais.gazetadopovo.com.br/lp/quem-e-quem-nas-fraudes-do-inss-ebook-gratis/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:58:22Z",
-      "last_seen": "2026-10-23T14:58:34Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 63,
-      "domain": "www.efc.ca",
-      "url": "http://www.efc.ca/pages/doc/crypto-export.html",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.efc.ca/pages/doc/crypto-export.html: Get \"http://www.efc.ca/pages/doc/crypto-export.html\": dial tcp4: lookup www.efc.ca on 127.0.0.53:53: server misbehaving",
-      "first_seen": "2026-10-23T15:54:48Z",
-      "last_seen": "2026-10-23T15:54:48Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.efc.ca/pages/doc/crypto-export.html: Get \"http://www.efc.ca/pages/doc/crypto-export.html\": dial tcp4: lookup www.efc.ca on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 92,
-      "domain": "chrome-extension",
-      "url": "http://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf: Get \"http://chrome-extension//efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf\": dial tcp4: lookup chrome-extension on 127.0.0.53:53: server misbehaving",
-      "first_seen": "2026-10-23T18:15:57Z",
-      "last_seen": "2026-10-23T18:15:57Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf: Get \"http://chrome-extension//efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf\": dial tcp4: lookup chrome-extension on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 115,
-      "domain": "events.linuxfoundation.org",
-      "url": "https://events.linuxfoundation.org/sponsor-AAIF-AgentsForums26?utm_source=luma",
-      "status_code": 504,
-      "error_message": "failed to parse HTML: html: open stack of elements exceeds 512 nodes",
-      "first_seen": "2026-10-23T22:05:46Z",
-      "last_seen": "2026-10-23T22:05:46Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to parse HTML: html: open stack of elements exceeds 512 nodes. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 38,
-      "domain": "www.sciencedirect.com",
-      "url": "https://www.sciencedirect.com/user/institution/login?targetURL=%2F",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:31:46Z",
-      "last_seen": "2026-10-23T14:31:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 40,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/techcrunch",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T14:43:10Z",
-      "last_seen": "2026-10-23T14:43:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 58,
       "domain": "cayugacollection.com",
@@ -1277,6 +1112,171 @@
       "last_seen": "2026-10-23T21:07:22Z",
       "attempts": 2,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 28,
+      "domain": "www.theguardian.com",
+      "url": "https://www.theguardian.com/internatio",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:26:58Z",
+      "last_seen": "2026-10-23T13:26:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 53,
+      "domain": "getbootstrap.com",
+      "url": "https://getbootstrap.com/docs/6.0/getting-started/introduction/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T15:20:58Z",
+      "last_seen": "2026-10-23T15:20:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 70,
+      "domain": "superuser.com",
+      "url": "https://superuser.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T16:17:58Z",
+      "last_seen": "2026-10-23T16:17:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 116,
+      "domain": "join.slack.com",
+      "url": "https://join.slack.com/share/enQtMTE1OTk4NTI5NzUyMTctMDY3ODA1YzNkYzlmOGFkNTA3YzE0MjdlMzFkODZmYzNmNTg1Yjk3YzY3MmNmMjI1YWU5MzgyNjcwZDg1N2QyNQ",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T22:16:46Z",
+      "last_seen": "2026-10-23T22:16:58Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 14,
+      "domain": "sciencedirect.com",
+      "url": "https://sciencedirect.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:07:22Z",
+      "last_seen": "2026-10-23T13:07:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 23,
+      "domain": "www.inpe.br",
+      "url": "https://www.inpe.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.inpe.br: Get \"https://www.inpe.br\": tls: failed to verify certificate: x509: certificate signed by unknown authority",
+      "first_seen": "2026-10-23T13:20:57Z",
+      "last_seen": "2026-10-23T13:20:57Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.inpe.br: Get \"https://www.inpe.br\": tls: failed to verify certificate: x509: certificate signed by unknown authority. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 74,
+      "domain": "azure.microsoft.com",
+      "url": "https://azure.microsoft.com/blog/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://azure.microsoft.com/blog/: Get \"https://azure.microsoft.com/pt-br/blog/\": read tcp4 10.0.1.126:41256-\u003e23.201.218.61:443: use of closed network connection",
+      "first_seen": "2026-10-23T16:47:57Z",
+      "last_seen": "2026-10-23T16:47:57Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://azure.microsoft.com/blog/: Get \"https://azure.microsoft.com/pt-br/blog/\": read tcp4 10.0.1.126:41256-\u003e23.201.218.61:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 107,
+      "domain": "techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/category/Microsoft365Copilot",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T20:07:34Z",
+      "last_seen": "2026-10-23T20:07:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 109,
+      "domain": "worldwildlife.org",
+      "url": "https://worldwildlife.org",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T20:09:33Z",
+      "last_seen": "2026-10-23T20:09:33Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 45,
+      "domain": "especiais.gazetadopovo.com.br",
+      "url": "https://especiais.gazetadopovo.com.br/lp/quem-e-quem-nas-fraudes-do-inss-ebook-gratis/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:58:22Z",
+      "last_seen": "2026-10-23T14:58:34Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 63,
+      "domain": "www.efc.ca",
+      "url": "http://www.efc.ca/pages/doc/crypto-export.html",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.efc.ca/pages/doc/crypto-export.html: Get \"http://www.efc.ca/pages/doc/crypto-export.html\": dial tcp4: lookup www.efc.ca on 127.0.0.53:53: server misbehaving",
+      "first_seen": "2026-10-23T15:54:48Z",
+      "last_seen": "2026-10-23T15:54:48Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.efc.ca/pages/doc/crypto-export.html: Get \"http://www.efc.ca/pages/doc/crypto-export.html\": dial tcp4: lookup www.efc.ca on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 92,
+      "domain": "chrome-extension",
+      "url": "http://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf: Get \"http://chrome-extension//efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf\": dial tcp4: lookup chrome-extension on 127.0.0.53:53: server misbehaving",
+      "first_seen": "2026-10-23T18:15:57Z",
+      "last_seen": "2026-10-23T18:15:57Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf: Get \"http://chrome-extension//efaidnbmnnnibpcajpcglclefindmkaj/https://www.drgoulu.com/wp-content/uploads/2017/09/Rheology-of-cats.pdf\": dial tcp4: lookup chrome-extension on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 115,
+      "domain": "events.linuxfoundation.org",
+      "url": "https://events.linuxfoundation.org/sponsor-AAIF-AgentsForums26?utm_source=luma",
+      "status_code": 504,
+      "error_message": "failed to parse HTML: html: open stack of elements exceeds 512 nodes",
+      "first_seen": "2026-10-23T22:05:46Z",
+      "last_seen": "2026-10-23T22:05:46Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to parse HTML: html: open stack of elements exceeds 512 nodes. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 38,
+      "domain": "www.sciencedirect.com",
+      "url": "https://www.sciencedirect.com/user/institution/login?targetURL=%2F",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:31:46Z",
+      "last_seen": "2026-10-23T14:31:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 40,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/techcrunch",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T14:43:10Z",
+      "last_seen": "2026-10-23T14:43:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
