@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-23T12:59:50Z",
-  "total_quarantine": 3,
+  "last_updated": "2026-10-23T13:00:50Z",
+  "total_quarantine": 4,
   "quarantine_sites": [
     {
       "id": 1,
@@ -32,6 +32,17 @@
       "error_message": "HTTP 403",
       "first_seen": "2026-10-23T12:55:21Z",
       "last_seen": "2026-10-23T12:55:21Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 4,
+      "domain": "nytimes.com",
+      "url": "https://nytimes.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T12:59:58Z",
+      "last_seen": "2026-10-23T12:59:58Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
