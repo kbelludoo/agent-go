@@ -1,29 +1,7 @@
 {
-  "last_updated": "2026-10-23T15:49:23Z",
+  "last_updated": "2026-10-23T15:50:30Z",
   "total_quarantine": 60,
   "quarantine_sites": [
-    {
-      "id": 3,
-      "domain": "magazineluiza.com.br",
-      "url": "https://magazineluiza.com.br/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T12:55:21Z",
-      "last_seen": "2026-10-23T12:55:21Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 47,
-      "domain": "brasil.gov.br",
-      "url": "https://brasil.gov.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z",
-      "first_seen": "2026-10-23T15:00:09Z",
-      "last_seen": "2026-10-23T15:00:09Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z. Sugestão: Verificar rota de egress e resolução DNS."
-    },
     {
       "id": 8,
       "domain": "pt.wikihow.com",
@@ -661,6 +639,28 @@
       "last_seen": "2026-10-23T15:05:57Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 3,
+      "domain": "magazineluiza.com.br",
+      "url": "https://magazineluiza.com.br/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T12:55:21Z",
+      "last_seen": "2026-10-23T12:55:21Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 47,
+      "domain": "brasil.gov.br",
+      "url": "https://brasil.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z",
+      "first_seen": "2026-10-23T15:00:09Z",
+      "last_seen": "2026-10-23T15:00:09Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
