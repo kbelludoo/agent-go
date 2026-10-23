@@ -1,73 +1,7 @@
 {
-  "last_updated": "2026-10-23T23:56:13Z",
+  "last_updated": "2026-10-23T23:57:09Z",
   "total_quarantine": 115,
   "quarantine_sites": [
-    {
-      "id": 42,
-      "domain": "infograficos.valor.globo.com",
-      "url": "https://infograficos.valor.globo.com/carteira-valor/?menu_valor",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:47:34Z",
-      "last_seen": "2026-10-23T14:47:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 116,
-      "domain": "join.slack.com",
-      "url": "https://join.slack.com/share/enQtMTE1OTk4NTI5NzUyMTctMDY3ODA1YzNkYzlmOGFkNTA3YzE0MjdlMzFkODZmYzNmNTg1Yjk3YzY3MmNmMjI1YWU5MzgyNjcwZDg1N2QyNQ",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T22:16:46Z",
-      "last_seen": "2026-10-23T22:16:58Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 29,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:28:57Z",
-      "last_seen": "2026-10-23T13:28:57Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 72,
-      "domain": "shop.fsf.org",
-      "url": "https://shop.fsf.org/",
-      "status_code": 503,
-      "error_message": "HTTP 503",
-      "first_seen": "2026-10-23T16:38:34Z",
-      "last_seen": "2026-10-23T16:38:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 88,
-      "domain": "lp.suno.com.br",
-      "url": "https://lp.suno.com.br/suno-mentoria-de-sucesso/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://lp.suno.com.br/suno-mentoria-de-sucesso/: Get \"https://lp.suno.com.br/suno-mentoria-de-sucesso/\": context deadline exceeded",
-      "first_seen": "2026-10-23T17:57:33Z",
-      "last_seen": "2026-10-23T22:59:20Z",
-      "attempts": 3,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 112,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/reidhoffman/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T23:31:09Z",
-      "last_seen": "2026-10-23T23:31:09Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 68,
       "domain": "service.elsevier.com",
@@ -757,8 +691,8 @@
       "status_code": 404,
       "error_message": "HTTP 404",
       "first_seen": "2026-10-23T23:45:09Z",
-      "last_seen": "2026-10-23T23:55:22Z",
-      "attempts": 10,
+      "last_seen": "2026-10-23T23:57:09Z",
+      "attempts": 12,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
@@ -1266,6 +1200,72 @@
       "last_seen": "2026-10-23T18:19:21Z",
       "attempts": 1,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL https://digisusgmp.saude.gov.br: Get \"https://digisusgmp.saude.gov.br\": read tcp4 10.0.1.126:37608-\u003e189.9.35.156:443: read: connection reset by peer. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 42,
+      "domain": "infograficos.valor.globo.com",
+      "url": "https://infograficos.valor.globo.com/carteira-valor/?menu_valor",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:47:34Z",
+      "last_seen": "2026-10-23T14:47:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 116,
+      "domain": "join.slack.com",
+      "url": "https://join.slack.com/share/enQtMTE1OTk4NTI5NzUyMTctMDY3ODA1YzNkYzlmOGFkNTA3YzE0MjdlMzFkODZmYzNmNTg1Yjk3YzY3MmNmMjI1YWU5MzgyNjcwZDg1N2QyNQ",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T22:16:46Z",
+      "last_seen": "2026-10-23T22:16:58Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 29,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:28:57Z",
+      "last_seen": "2026-10-23T13:28:57Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 72,
+      "domain": "shop.fsf.org",
+      "url": "https://shop.fsf.org/",
+      "status_code": 503,
+      "error_message": "HTTP 503",
+      "first_seen": "2026-10-23T16:38:34Z",
+      "last_seen": "2026-10-23T16:38:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 88,
+      "domain": "lp.suno.com.br",
+      "url": "https://lp.suno.com.br/suno-mentoria-de-sucesso/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://lp.suno.com.br/suno-mentoria-de-sucesso/: Get \"https://lp.suno.com.br/suno-mentoria-de-sucesso/\": context deadline exceeded",
+      "first_seen": "2026-10-23T17:57:33Z",
+      "last_seen": "2026-10-23T22:59:20Z",
+      "attempts": 3,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 112,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/reidhoffman/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T23:31:09Z",
+      "last_seen": "2026-10-23T23:31:09Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
