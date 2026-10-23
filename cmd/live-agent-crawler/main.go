@@ -339,6 +339,11 @@ func main() {
 		}
 	}
 
+	if len(distinctMap) > 0 {
+		successCount = uint64(len(distinctMap))
+		visitCounter = uint64(len(distinctMap) + len(quarantineMap))
+	}
+
 	// Dynamic queue
 	urlQueue := make([]string, 0, len(seedList)*2)
 	for _, u := range seedList {
