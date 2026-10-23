@@ -6,20 +6,40 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	"strconv"
+	"strings"
 	"time"
 
+	"github.com/kbelludoo/agent-go/pkg/bm25"
 	"github.com/kbelludoo/agent-go/pkg/caveman"
+	"github.com/kbelludoo/agent-go/pkg/cronlite"
 	"github.com/kbelludoo/agent-go/pkg/dcp"
+	"github.com/kbelludoo/agent-go/pkg/depaudit"
 	"github.com/kbelludoo/agent-go/pkg/diffsummary"
 	"github.com/kbelludoo/agent-go/pkg/graph"
+	"github.com/kbelludoo/agent-go/pkg/jsonlquery"
+	"github.com/kbelludoo/agent-go/pkg/jsonrepair"
+	"github.com/kbelludoo/agent-go/pkg/logdedup"
+	"github.com/kbelludoo/agent-go/pkg/openapislim"
 	"github.com/kbelludoo/agent-go/pkg/packager"
 	"github.com/kbelludoo/agent-go/pkg/patcher"
+	"github.com/kbelludoo/agent-go/pkg/promptguard"
 	"github.com/kbelludoo/agent-go/pkg/sanitizer"
 	"github.com/kbelludoo/agent-go/pkg/schemamcp"
 	"github.com/kbelludoo/agent-go/pkg/scraper"
 	"github.com/kbelludoo/agent-go/pkg/supervisor"
+	"github.com/kbelludoo/agent-go/pkg/testfilter"
+	"github.com/kbelludoo/agent-go/pkg/toon"
 	"github.com/kbelludoo/agent-go/pkg/vault"
 )
+
+func readFileOrText(arg string) string {
+	data, err := os.ReadFile(arg)
+	if err == nil {
+		return string(data)
+	}
+	return arg
+}
 
 func main() {
 	if len(os.Args) < 2 {
@@ -52,12 +72,7 @@ func main() {
 			fmt.Fprintln(os.Stderr, "Uso: go-tools sanitize <arquivo_ou_texto>")
 			os.Exit(1)
 		}
-		input := os.Args[2]
-		data, err := os.ReadFile(input)
-		text := input
-		if err == nil {
-			text = string(data)
-		}
+		text := readFileOrText(os.Args[2])
 		redactor := sanitizer.NewRedactor()
 		fmt.Println(redactor.Redact(text))
 
@@ -141,19 +156,11 @@ func main() {
 
 	// 7. Structural Git Diff Summarizer (go-diff-summary)
 	case "diff-summary", "diffsummary":
-		input := ""
-		if len(os.Args) > 2 {
-			data, err := os.ReadFile(os.Args[2])
-			if err == nil {
-				input = string(data)
-			} else {
-				input = os.Args[2]
-			}
-		}
-		if input == "" {
+		if len(os.Args) < 3 {
 			fmt.Fprintln(os.Stderr, "Uso: go-tools diff-summary <diff_text_ou_arquivo>")
 			os.Exit(1)
 		}
+		input := readFileOrText(os.Args[2])
 		res := diffsummary.SummarizeDiff(input)
 		fmt.Fprintf(os.Stderr, "[go-diff-summary] ~%d tokens estimados\n\n", res.EstimatedTokens)
 		fmt.Println(res.SummaryText)
@@ -179,12 +186,7 @@ func main() {
 			fmt.Fprintln(os.Stderr, "Uso: go-tools caveman <arquivo_ou_texto>")
 			os.Exit(1)
 		}
-		input := os.Args[2]
-		data, err := os.ReadFile(input)
-		text := input
-		if err == nil {
-			text = string(data)
-		}
+		text := readFileOrText(os.Args[2])
 		cleaned := caveman.StripProlixity(text)
 		fmt.Fprintf(os.Stderr, "[go-caveman] Economia: %.1f%% chars\n\n",
 			float64(len(text)-len(cleaned))/float64(len(text))*100.0)
@@ -241,7 +243,7 @@ func main() {
 			fmt.Printf("🔓 Arquivo decriptado com sucesso em %s\n", outFile)
 		}
 
-	// 11. AST Graphify Tools
+	// 11. AST Graphify Tools (map & who-calls)
 	case "map":
 		dir := "."
 		if len(os.Args) > 2 {
@@ -272,6 +274,200 @@ func main() {
 		}
 		fmt.Println(cg.FormatWhoCalls(target))
 
+	// 12. Malformed LLM JSON Repairer (go-json-repair)
+	case "json-repair", "jsonrepair":
+		if len(os.Args) < 3 {
+			fmt.Fprintln(os.Stderr, "Uso: go-tools json-repair <arquivo_ou_json_quebrado>")
+			os.Exit(1)
+		}
+		raw := readFileOrText(os.Args[2])
+		res := jsonrepair.Repair(raw)
+		fmt.Fprintf(os.Stderr, "[go-json-repair] valid=%v | fixes=%d\n\n", res.IsValidNow, res.FixesApplied)
+		fmt.Println(res.RepairedJSON)
+
+	// 13. Token-Oriented Object Notation (go-toon)
+	case "toon":
+		if len(os.Args) < 3 {
+			fmt.Fprintln(os.Stderr, "Uso: go-tools toon <arquivo.json_ou_string> [decode]")
+			os.Exit(1)
+		}
+		raw := readFileOrText(os.Args[2])
+		if len(os.Args) > 3 && os.Args[3] == "decode" {
+			out, err := toon.DecodeTable(raw)
+			if err != nil {
+				fmt.Fprintf(os.Stderr, "Erro decodificando TOON: %v\n", err)
+				os.Exit(1)
+			}
+			fmt.Println(string(out))
+			return
+		}
+		res, err := toon.Encode([]byte(raw))
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "Erro codificando TOON: %v\n", err)
+			os.Exit(1)
+		}
+		fmt.Fprintf(os.Stderr, "[go-toon] Redução: %.1f%% (%d -> %d bytes, ~%d tokens)\n\n",
+			res.ReductionPercent, res.OriginalBytes, res.CompressedBytes, res.EstimatedTokens)
+		fmt.Println(res.Encoded)
+
+	// 14. Structural Log Deduplicator (go-log-dedup)
+	case "log-dedup", "logdedup":
+		if len(os.Args) < 3 {
+			fmt.Fprintln(os.Stderr, "Uso: go-tools log-dedup <arquivo.log_ou_texto>")
+			os.Exit(1)
+		}
+		raw := readFileOrText(os.Args[2])
+		res := logdedup.Deduplicate(raw)
+		fmt.Fprintf(os.Stderr, "[go-log-dedup] %d linhas -> %d templates únicos (%.1f%% redução)\n\n",
+			res.OriginalLines, res.UniqueTemplates, res.ReductionPercent)
+		fmt.Println(res.Summary)
+
+	// 15. In-Memory Okapi BM25 Lexical Search (go-bm25)
+	case "bm25", "search":
+		if len(os.Args) < 3 {
+			fmt.Fprintln(os.Stderr, "Uso: go-tools bm25 <query> [diretorio] [topK]")
+			os.Exit(1)
+		}
+		query := os.Args[2]
+		dir := "."
+		if len(os.Args) > 3 {
+			dir = os.Args[3]
+		}
+		topK := 5
+		if len(os.Args) > 4 {
+			if k, err := strconv.Atoi(os.Args[4]); err == nil && k > 0 {
+				topK = k
+			}
+		}
+		idx, totalBytes, err := bm25.IndexDirectory(dir)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "Erro ao indexar BM25: %v\n", err)
+			os.Exit(1)
+		}
+		hits := idx.Search(query, topK)
+		out := bm25.FormatResults(hits)
+		fmt.Fprintf(os.Stderr, "[go-bm25] %d docs indexados (%d KB) -> Top %d resultados (~%d tokens)\n\n",
+			len(idx.Docs), totalBytes/1024, len(hits), (len(out)+3)/4)
+		fmt.Println(out)
+
+	// 16. Silent Test Failure Extractor (go-test-filter)
+	case "test-filter", "testfilter":
+		if len(os.Args) < 3 {
+			fmt.Fprintln(os.Stderr, "Uso: go-tools test-filter <saida_de_teste_ou_arquivo>")
+			os.Exit(1)
+		}
+		raw := readFileOrText(os.Args[2])
+		res := testfilter.Filter(raw)
+		fmt.Fprintf(os.Stderr, "[go-test-filter] Redução: %.1f%% (%d -> %d bytes)\n\n",
+			res.ReductionPercent, res.OriginalBytes, res.CompressedBytes)
+		fmt.Println(res.FilteredOutput)
+
+	// 17. OpenAPI / Swagger Spec Condenser (go-openapi-slim)
+	case "openapi-slim", "openapislim":
+		if len(os.Args) < 3 {
+			fmt.Fprintln(os.Stderr, "Uso: go-tools openapi-slim <swagger.json> [filtro_rota]")
+			os.Exit(1)
+		}
+		raw := readFileOrText(os.Args[2])
+		filter := ""
+		if len(os.Args) > 3 {
+			filter = os.Args[3]
+		}
+		res, err := openapislim.Slim([]byte(raw), filter)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "Erro no OpenAPI Slim: %v\n", err)
+			os.Exit(1)
+		}
+		fmt.Fprintf(os.Stderr, "[go-openapi-slim] %d rotas | %.1f%% redução (~%d tokens)\n\n",
+			res.EndpointsCount, res.ReductionPercent, res.EstimatedTokens)
+		fmt.Println(res.Markdown)
+
+	// 18. Prompt Injection & Unicode Smuggling Guard (go-prompt-guard)
+	case "prompt-guard", "promptguard":
+		if len(os.Args) < 3 {
+			fmt.Fprintln(os.Stderr, "Uso: go-tools prompt-guard <arquivo_ou_texto>")
+			os.Exit(1)
+		}
+		raw := readFileOrText(os.Args[2])
+		res := promptguard.Scan(raw)
+		fmt.Fprintf(os.Stderr, "[go-prompt-guard] safe=%v | risk=%d/100 | threats=%v | invisible_removed=%d\n\n",
+			res.Safe, res.RiskScore, res.ThreatsDetected, res.InvisibleRemoved)
+		fmt.Println(res.SanitizedText)
+
+	// 19. Dependency Manifest Auditor (go-dep-audit)
+	case "dep-audit", "depaudit":
+		dir := "."
+		if len(os.Args) > 2 {
+			dir = os.Args[2]
+		}
+		res, err := depaudit.AuditDirectory(dir)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "Erro em dep-audit: %v\n", err)
+			os.Exit(1)
+		}
+		fmt.Fprintf(os.Stderr, "[go-dep-audit] %d dependências diretas (~%d tokens, %.1f%% redução)\n\n",
+			res.DirectDepsCount, res.EstimatedTokens, res.ReductionPercent)
+		fmt.Println(res.CompactManifest)
+
+	// 20. Streaming JSONL Transcript Filter (go-jsonl-query)
+	case "jsonl-query", "jsonlquery":
+		if len(os.Args) < 3 {
+			fmt.Fprintln(os.Stderr, "Uso: go-tools jsonl-query <arquivo.jsonl> [keyword]")
+			os.Exit(1)
+		}
+		filePath := os.Args[2]
+		keyword := ""
+		if len(os.Args) > 3 {
+			keyword = os.Args[3]
+		}
+		f, err := os.Open(filePath)
+		if err != nil {
+			// Fallback to raw string reader if passed inline
+			res, _ := jsonlquery.StreamQuery(strings.NewReader(filePath), jsonlquery.DefaultQueryOptions(keyword))
+			fmt.Println(res.CompactOutput)
+			return
+		}
+		defer f.Close()
+		res, err := jsonlquery.StreamQuery(f, jsonlquery.DefaultQueryOptions(keyword))
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "Erro no jsonl-query: %v\n", err)
+			os.Exit(1)
+		}
+		fmt.Fprintf(os.Stderr, "[go-jsonl-query] %d/%d linhas encontradas (%.1f%% redução)\n\n",
+			res.MatchedLines, res.TotalLines, res.ReductionPercent)
+		fmt.Println(res.CompactOutput)
+
+	// 21. Lightweight Task Runner with Retry & Timeout (go-cron-lite)
+	case "cron-lite", "cronlite":
+		if len(os.Args) < 3 {
+			fmt.Fprintln(os.Stderr, "Uso: go-tools cron-lite <comando_shell> [retries] [timeout_sec]")
+			os.Exit(1)
+		}
+		shellCmd := os.Args[2]
+		retries := 1
+		if len(os.Args) > 3 {
+			if r, err := strconv.Atoi(os.Args[3]); err == nil {
+				retries = r
+			}
+		}
+		timeoutSec := 15
+		if len(os.Args) > 4 {
+			if t, err := strconv.Atoi(os.Args[4]); err == nil && t > 0 {
+				timeoutSec = t
+			}
+		}
+		res := cronlite.RunOnce(context.Background(), cronlite.JobSpec{
+			Name:       "cli-job",
+			Command:    shellCmd,
+			Timeout:    time.Duration(timeoutSec) * time.Second,
+			MaxRetries: retries,
+			RetryDelay: 500 * time.Millisecond,
+		})
+		fmt.Println(cronlite.FormatResult(res))
+		if !res.Success {
+			os.Exit(1)
+		}
+
 	case "help", "--help", "-h":
 		printUsage()
 
@@ -283,22 +479,35 @@ func main() {
 }
 
 func printUsage() {
-	fmt.Println(`go-tools - Suíte Nativa de Alta Performance em Go Puro para IA & Bots
+	fmt.Println(`go-tools - Suíte Nativa de Alta Performance em Go Puro para IA & Bots (21 Ferramentas)
 
 COMANDOS DISPONÍVEIS:
+  [Série 1 - Contexto, AST, Segurança & Bots]
+  go-tools map [dir]                           Gera esqueleto AST de assinaturas (go-graphify, -90% tokens)
+  go-tools who-calls <funcao> [dir]            Localiza quem chama a função em 0.02ms
   go-tools pack [dir]                          Empacota e poda o repositório (go-repomix, -16% a -50% tokens)
   go-tools sanitize <arquivo_ou_texto>         Redige chaves de API, senhas e segredos antes do LLM (0.01ms)
   go-tools scrape <url>                        Extrai Markdown limpo sem Node/Puppeteer (0.006ms, -66% tokens)
   go-tools patch <arquivo> <antigo> <novo>     Aplica edições com tolerância a CRLF/indentação (zero falhas)
   go-tools bots [host]                         Monitora os 15 bots do VPS em paralelo (< 2MB RAM)
-  go-tools dcp <transcript.json>               Compactador dinâmico de histórico (-90% tokens em tool outputs)
-  go-tools diff-summary <diff_file>            Resumo estrutural de git diff (50-90% menos tokens)
+  go-tools dcp <transcript.json>               Compactador dinâmico de histórico (-92% tokens em tool outputs)
+  go-tools diff-summary <diff_file>            Resumo estrutural de git diff (-85% tokens)
   go-tools schema <sqlite.db>                  Inspetor nativo de schema SQLite (0.7ms, ~140 tokens)
   go-tools caveman <arquivo_ou_texto>          Remove preâmbulos e prolixidade de respostas (-78% tokens)
   go-tools vault encrypt/decrypt <in> <out>    Cofre criptografado AES-256-GCM para chaves sem expor no disco
-  go-tools map [dir]                           Gera esqueleto AST de assinaturas (go-graphify map)
-  go-tools who-calls <funcao> [dir]            Localiza quem chama a função em 0.02ms
 
-TODAS AS FERRAMENTAS SÃO NATIVAS, COMPILADAS EM BINÁRIO ESTÁTICO SEM DEPENDÊNCIAS.`)
+  [Série 2 - Compressão Avançada, Busca BM25, Reparo & Guardrails]
+  go-tools json-repair <json_quebrado>         Conserta JSON truncado/inválido de LLMs em microssegundos
+  go-tools toon <arquivo.json> [decode]        Converte JSON denso para notação tabular TOON (-40% a -60% tokens)
+  go-tools log-dedup <arquivo.log>             Agrupa logs repetitivos e stack traces (-95% tokens)
+  go-tools bm25 <query> [dir] [topK]           Motor de busca lexical Okapi BM25 em memória (< 1ms, zero DB)
+  go-tools test-filter <test_output>           Filtra saídas de testes exibindo apenas falhas (-90%+ tokens)
+  go-tools openapi-slim <swagger.json> [rota]  Comprime specs OpenAPI gigantes em 1 linha por rota (-90% tokens)
+  go-tools prompt-guard <texto>                Bloqueia Prompt Injection e caracteres Unicode invisíveis
+  go-tools dep-audit [dir]                     Gera manifesto compacto de dependências (evita alucinação de libs)
+  go-tools jsonl-query <arquivo.jsonl> [termo] Filtra transcripts .jsonl via streaming sem gastar RAM
+  go-tools cron-lite <cmd> [retries] [timeout] Executor leve de tarefas agendadas com retry e timeout (< 1MB RAM)
+
+TODAS AS 21 FERRAMENTAS SÃO NATIVAS, COMPILADAS EM BINÁRIO ESTÁTICO SEM DEPENDÊNCIAS.`)
 	flag.PrintDefaults()
 }
