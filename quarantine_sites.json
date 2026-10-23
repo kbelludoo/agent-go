@@ -1,117 +1,7 @@
 {
-  "last_updated": "2026-10-23T13:47:37Z",
-  "total_quarantine": 30,
+  "last_updated": "2026-10-23T13:48:39Z",
+  "total_quarantine": 31,
   "quarantine_sites": [
-    {
-      "id": 3,
-      "domain": "magazineluiza.com.br",
-      "url": "https://magazineluiza.com.br/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T12:55:21Z",
-      "last_seen": "2026-10-23T12:55:21Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 11,
-      "domain": "reference.deno.land",
-      "url": "https://reference.deno.land/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-23T13:06:10Z",
-      "last_seen": "2026-10-23T13:06:10Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 26,
-      "domain": "www.reddit.com",
-      "url": "https://www.reddit.com/r/technology",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:24:45Z",
-      "last_seen": "2026-10-23T13:24:45Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 4,
-      "domain": "nytimes.com",
-      "url": "https://nytimes.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T12:59:58Z",
-      "last_seen": "2026-10-23T12:59:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 8,
-      "domain": "pt.wikihow.com",
-      "url": "https://pt.wikihow.com/Tratar-uma-Quei",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:03:46Z",
-      "last_seen": "2026-10-23T13:03:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 22,
-      "domain": "www.gov.br",
-      "url": "https://www.gov.br/receitafederal/pt-b",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:19:22Z",
-      "last_seen": "2026-10-23T13:19:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 2,
-      "domain": "forbes.com",
-      "url": "https://forbes.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T12:46:22Z",
-      "last_seen": "2026-10-23T12:46:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 5,
-      "domain": "phys.org",
-      "url": "https://phys.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:01:58Z",
-      "last_seen": "2026-10-23T13:01:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 15,
-      "domain": "specs.openstack.org",
-      "url": "https://specs.openstack.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:08:34Z",
-      "last_seen": "2026-10-23T13:08:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 28,
-      "domain": "www.theguardian.com",
-      "url": "https://www.theguardian.com/internatio",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:26:58Z",
-      "last_seen": "2026-10-23T13:26:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 14,
       "domain": "sciencedirect.com",
@@ -289,6 +179,17 @@
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
+      "id": 31,
+      "domain": "trust.grafana.com",
+      "url": "https://trust.grafana.com/?pg=hp\u0026plcmt=secure-compliant-proven-button",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:47:58Z",
+      "last_seen": "2026-10-23T13:47:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
       "id": 7,
       "domain": "",
       "url": "https://pt.wikihow.com/Purificar-%C3%8",
@@ -331,6 +232,116 @@
       "last_seen": "2026-10-23T13:18:22Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 3,
+      "domain": "magazineluiza.com.br",
+      "url": "https://magazineluiza.com.br/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T12:55:21Z",
+      "last_seen": "2026-10-23T12:55:21Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 11,
+      "domain": "reference.deno.land",
+      "url": "https://reference.deno.land/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-23T13:06:10Z",
+      "last_seen": "2026-10-23T13:06:10Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 26,
+      "domain": "www.reddit.com",
+      "url": "https://www.reddit.com/r/technology",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:24:45Z",
+      "last_seen": "2026-10-23T13:24:45Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 4,
+      "domain": "nytimes.com",
+      "url": "https://nytimes.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T12:59:58Z",
+      "last_seen": "2026-10-23T12:59:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 8,
+      "domain": "pt.wikihow.com",
+      "url": "https://pt.wikihow.com/Tratar-uma-Quei",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:03:46Z",
+      "last_seen": "2026-10-23T13:03:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 22,
+      "domain": "www.gov.br",
+      "url": "https://www.gov.br/receitafederal/pt-b",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:19:22Z",
+      "last_seen": "2026-10-23T13:19:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 2,
+      "domain": "forbes.com",
+      "url": "https://forbes.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T12:46:22Z",
+      "last_seen": "2026-10-23T12:46:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 5,
+      "domain": "phys.org",
+      "url": "https://phys.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:01:58Z",
+      "last_seen": "2026-10-23T13:01:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 15,
+      "domain": "specs.openstack.org",
+      "url": "https://specs.openstack.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:08:34Z",
+      "last_seen": "2026-10-23T13:08:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 28,
+      "domain": "www.theguardian.com",
+      "url": "https://www.theguardian.com/internatio",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:26:58Z",
+      "last_seen": "2026-10-23T13:26:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
