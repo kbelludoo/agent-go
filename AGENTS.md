@@ -19,6 +19,7 @@ go-tools memory retain agent lesson <identificador_curto> "<descricao_da_regra_o
 Ou via ferramenta MCP `hindsight_retain(bank="agent", type="lesson", subject="...", content="...")`.
 
 ### 3. Diretrizes Ativas no Banco `agent`:
+- **Regra Fundamental de Rigor:** Todo resultado, benchmark, consumo de RAM e latência DEVE ser medido com testes reais (go test -bench), nunca inventado ou estimado.
 - **Preferência:** Sempre priorizar ferramentas em Go puro sem CGO ou Python/Node.js adicionais.
 - **MBVM-DB Smart Slicing:** Antes de inspecionar ou alterar código, use mbvm-db slice . <Symbol> [depth] para obter apenas o subgrafo de dependências (~200 tokens, 99.5% de economia) em vez de ler arquivos brutos.
 - **Lição VPS:** Na VPS Oracle, compilações Go devem definir `export GOTMPDIR=/home/ubuntu/tmp` para não esgotar o disco em memória `tmpfs` (/tmp).
