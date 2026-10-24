@@ -1,7 +1,18 @@
 {
-  "last_updated": "2026-10-24T21:22:25Z",
+  "last_updated": "2026-10-24T21:23:25Z",
   "total_quarantine": 158,
   "quarantine_sites": [
+    {
+      "id": 157,
+      "domain": "sdgs.un.org",
+      "url": "https://sdgs.un.org/ar",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T20:40:06Z",
+      "last_seen": "2026-10-24T21:03:59Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 12,
       "domain": "reuters.com",
@@ -1728,17 +1739,6 @@
       "last_seen": "2026-10-24T19:35:11Z",
       "attempts": 1,
       "diagnosis": "HTTP 520 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 157,
-      "domain": "sdgs.un.org",
-      "url": "https://sdgs.un.org/ar",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T20:40:06Z",
-      "last_seen": "2026-10-24T21:03:59Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
