@@ -1,84 +1,7 @@
 {
-  "last_updated": "2026-10-24T21:08:11Z",
+  "last_updated": "2026-10-24T21:09:12Z",
   "total_quarantine": 158,
   "quarantine_sites": [
-    {
-      "id": 108,
-      "domain": "etsy.app.link",
-      "url": "https://etsy.app.link/d7nDUdp49V",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://etsy.app.link/d7nDUdp49V: Get \"https://etsy.app.link/d7nDUdp49V\": stopped after 10 redirects",
-      "first_seen": "2026-10-23T23:10:34Z",
-      "last_seen": "2026-10-23T23:16:22Z",
-      "attempts": 8,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://etsy.app.link/d7nDUdp49V: Get \"https://etsy.app.link/d7nDUdp49V\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 2,
-      "domain": "forbes.com",
-      "url": "https://forbes.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T12:46:22Z",
-      "last_seen": "2026-10-23T12:46:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 102,
-      "domain": "shop.fsf.org",
-      "url": "http://shop.fsf.org/",
-      "status_code": 503,
-      "error_message": "HTTP 503",
-      "first_seen": "2026-10-23T19:57:58Z",
-      "last_seen": "2026-10-23T22:55:41Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 111,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/tiny-spec-inc/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T00:38:23Z",
-      "last_seen": "2026-10-24T00:38:59Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 137,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/sachinsharmaofficial/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T18:31:35Z",
-      "last_seen": "2026-10-24T18:31:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 151,
-      "domain": "www.twitter.com",
-      "url": "http://www.twitter.com/rgcooke",
-      "status_code": 520,
-      "error_message": "HTTP 520",
-      "first_seen": "2026-10-24T19:35:11Z",
-      "last_seen": "2026-10-24T19:35:11Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 520 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 157,
-      "domain": "sdgs.un.org",
-      "url": "https://sdgs.un.org/ar",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T20:40:06Z",
-      "last_seen": "2026-10-24T21:03:59Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 12,
       "domain": "reuters.com",
@@ -1738,6 +1661,83 @@
       "first_seen": "2026-10-24T15:49:59Z",
       "last_seen": "2026-10-24T16:07:47Z",
       "attempts": 8,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 108,
+      "domain": "etsy.app.link",
+      "url": "https://etsy.app.link/d7nDUdp49V",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://etsy.app.link/d7nDUdp49V: Get \"https://etsy.app.link/d7nDUdp49V\": stopped after 10 redirects",
+      "first_seen": "2026-10-23T23:10:34Z",
+      "last_seen": "2026-10-23T23:16:22Z",
+      "attempts": 8,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://etsy.app.link/d7nDUdp49V: Get \"https://etsy.app.link/d7nDUdp49V\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 2,
+      "domain": "forbes.com",
+      "url": "https://forbes.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T12:46:22Z",
+      "last_seen": "2026-10-23T12:46:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 102,
+      "domain": "shop.fsf.org",
+      "url": "http://shop.fsf.org/",
+      "status_code": 503,
+      "error_message": "HTTP 503",
+      "first_seen": "2026-10-23T19:57:58Z",
+      "last_seen": "2026-10-23T22:55:41Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 111,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/tiny-spec-inc/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T00:38:23Z",
+      "last_seen": "2026-10-24T00:38:59Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 137,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/sachinsharmaofficial/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T18:31:35Z",
+      "last_seen": "2026-10-24T18:31:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 151,
+      "domain": "www.twitter.com",
+      "url": "http://www.twitter.com/rgcooke",
+      "status_code": 520,
+      "error_message": "HTTP 520",
+      "first_seen": "2026-10-24T19:35:11Z",
+      "last_seen": "2026-10-24T19:35:11Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 520 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 157,
+      "domain": "sdgs.un.org",
+      "url": "https://sdgs.un.org/ar",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T20:40:06Z",
+      "last_seen": "2026-10-24T21:03:59Z",
+      "attempts": 6,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
