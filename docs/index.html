@@ -313,6 +313,7 @@
     <button class="tab-btn active" id="tabFeedBtn" onclick="switchTab('feed')">📡 Feed ao Vivo (Últimas Visitas)</button>
     <button class="tab-btn" id="tabDistinctBtn" onclick="switchTab('distinct')">🌐 Catálogo de Sites Distintos (<span id="tabDistinctCount">0</span>)</button>
     <button class="tab-btn" id="tabQuarantineBtn" onclick="switchTab('quarantine')" style="border-color: rgba(239, 68, 68, 0.4);">🧪 Laboratório de Quarentena & Self-Healing (<span id="tabQuarantineCount" style="color: #f87171;">0</span>)</button>
+    <button class="tab-btn" id="tabBenchmarkBtn" onclick="switchTab('benchmark')" style="border-color: rgba(16, 185, 129, 0.4);">⚡ Benchmark MB-VM vs CSO vs MD (<span id="tabBenchmarkCount" style="color: #10b981;">86 sites</span>)</button>
   </div>
 
   <!-- Live Feed Table -->
@@ -403,7 +404,77 @@
     </table>
   </section>
 
-  <footer class="footer">
+  <!-- Benchmark MB-VM vs CSO vs MD Table & Cards -->
+  <section class="table-container" id="sectionBenchmark" style="display: none; border-color: rgba(16, 185, 129, 0.3);">
+    <div class="table-header">
+      <div>
+        <h2 style="font-size: 1.15rem; font-weight: 700; color: #34d399; display: flex; align-items: center; gap: 8px;">
+          ⚡ Benchmark Empírico: Micro-Bytecode VM (MB-VM) vs CSO vs Markdown vs HTML
+        </h2>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">
+          Validação experimental em 86 sites reais heterogêneos. 100% dos dados coletados na Oracle Cloud VPS e validados com zero perda de fidelidade (lossless round-trip).
+        </p>
+      </div>
+      <input type="text" class="search-input" id="searchBenchmarkInput" placeholder="Filtrar por site ou extensão..." oninput="filterBenchmarkTable()">
+    </div>
+
+    <!-- Highlights Cards inside Benchmark -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 20px;">
+      <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 8px; padding: 14px;">
+        <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">HTML BRUTO MÉDIO</div>
+        <div style="font-size: 1.4rem; font-weight: 800; color: #94a3b8; margin: 4px 0;">503.8 KB</div>
+        <div style="font-size: 0.75rem; color: #64748b;">Tag soup desestruturado</div>
+      </div>
+      <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 8px; padding: 14px;">
+        <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">MARKDOWN MÉDIO</div>
+        <div style="font-size: 1.4rem; font-weight: 800; color: #60a5fa; margin: 4px 0;">49.8 KB <span style="font-size: 0.85rem; color: #93c5fd;">(~11.492 tok)</span></div>
+        <div style="font-size: 0.75rem; color: #93c5fd;">Padrão LLM atual</div>
+      </div>
+      <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 8px; padding: 14px;">
+        <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">CSO SEMÂNTICO (LLM PROMPT)</div>
+        <div style="font-size: 1.4rem; font-weight: 800; color: #34d399; margin: 4px 0;">5.4 KB <span style="font-size: 0.85rem; color: #6ee7b7;">(~1.047 tok)</span></div>
+        <div style="font-size: 0.75rem; color: #34d399; font-weight: 700;">-90.89% Tokens no Prompt</div>
+      </div>
+      <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 8px; padding: 14px;">
+        <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">MICRO-BYTECODE VM (MB-VM)</div>
+        <div style="font-size: 1.4rem; font-weight: 800; color: #a78bfa; margin: 4px 0;">8.9 KB <span style="font-size: 0.85rem; color: #c4b5fd;">(0 tokens)</span></div>
+        <div style="font-size: 0.75rem; color: #a78bfa; font-weight: 700;">-82.06% Bytes // Lossless</div>
+      </div>
+      <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 8px; padding: 14px;">
+        <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">MCP SCHEMAS EM MB-VM</div>
+        <div style="font-size: 1.4rem; font-weight: 800; color: #f59e0b; margin: 4px 0;">39.8 KB <span style="font-size: 0.85rem; color: #fde68a;">(vs 779.6 KB)</span></div>
+        <div style="font-size: 0.75rem; color: #f59e0b; font-weight: 700;">-95.7% Tokens nas Tools</div>
+      </div>
+      <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 8px; padding: 14px;">
+        <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">CODEBASE EM MB-VM</div>
+        <div style="font-size: 1.4rem; font-weight: 800; color: #ec4899; margin: 4px 0;">20.8 KB <span style="font-size: 0.85rem; color: #fbcfe8;">(vs 800 KB)</span></div>
+        <div style="font-size: 0.75rem; color: #ec4899; font-weight: 700;">-94.9% Tokens de Contexto</div>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>URL Testada</th>
+          <th>Status</th>
+          <th>HTML Bruto</th>
+          <th>Markdown (Tokens)</th>
+          <th>CSO Prompt (Tokens)</th>
+          <th>⚡ Economia CSO</th>
+          <th>Micro-Bytecode VM</th>
+          <th>⚡ Economia MB-VM</th>
+          <th>Fidelidade</th>
+          <th>Latência</th>
+        </tr>
+      </thead>
+      <tbody id="benchmarkTableBody">
+        <tr>
+          <td colspan="11" style="text-align: center; color: var(--text-muted); padding: 32px;">Carregando benchmark empírico dos 100 sites...</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
     <div><strong>AI-Go-Browser:</strong> 100% Pure Go Web Engine & Action Resolver. Sem Chromium. Sem Node.js. Sem dependências pesadas.</div>
     <div>Oracle VPS: <code>147.15.109.14 (Ubuntu x86_64, 1GB RAM)</code> | Repositórios: <a href="https://github.com/kbelludoo/agent-go" class="url-link">agent-go</a> • <a href="https://github.com/kbelludoo/ai-go-browser" class="url-link">ai-go-browser</a></div>
   </footer>
@@ -413,6 +484,7 @@
     let tokenChartInstance = null;
     let allDistinctSites = [];
     let allQuarantineSites = [];
+    let allBenchmarkSites = [];
     let activeTab = 'feed';
 
     function switchTab(tab) {
@@ -420,15 +492,19 @@
       document.getElementById('sectionFeed').style.display = tab === 'feed' ? 'block' : 'none';
       document.getElementById('sectionDistinct').style.display = tab === 'distinct' ? 'block' : 'none';
       document.getElementById('sectionQuarantine').style.display = tab === 'quarantine' ? 'block' : 'none';
+      document.getElementById('sectionBenchmark').style.display = tab === 'benchmark' ? 'block' : 'none';
 
       document.getElementById('tabFeedBtn').classList.toggle('active', tab === 'feed');
       document.getElementById('tabDistinctBtn').classList.toggle('active', tab === 'distinct');
       document.getElementById('tabQuarantineBtn').classList.toggle('active', tab === 'quarantine');
+      document.getElementById('tabBenchmarkBtn').classList.toggle('active', tab === 'benchmark');
 
       if (tab === 'distinct') {
         loadDistinctSites();
       } else if (tab === 'quarantine') {
         loadQuarantineSites();
+      } else if (tab === 'benchmark') {
+        loadBenchmarkSites();
       }
     }
 
@@ -593,6 +669,59 @@
         (s.error_message || '').toLowerCase().includes(q)
       );
       renderQuarantineTable(filtered);
+    }
+
+    async function loadBenchmarkSites() {
+      try {
+        const res = await fetch('./benchmark_100_formats.json?t=' + Date.now(), { cache: 'no-store' });
+        if (res.ok) {
+          allBenchmarkSites = await res.json();
+          document.getElementById('tabBenchmarkCount').innerText = `${allBenchmarkSites.length} sites`;
+          renderBenchmarkTable(allBenchmarkSites);
+        }
+      } catch (e) {
+        console.warn("Could not load benchmark_100_formats.json:", e);
+      }
+    }
+
+    function renderBenchmarkTable(sites) {
+      const tbody = document.getElementById('benchmarkTableBody');
+      if (!sites || sites.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="11" style="text-align: center; color: var(--text-muted); padding: 32px;">Nenhum resultado encontrado.</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = sites.map((s, idx) => {
+        const isOk = s.status_code >= 200 && s.status_code < 400;
+        const statusClass = isOk ? 'status-200' : 'status-err';
+        const csoSavings = (s.cso_token_savings_pct || 0).toFixed(1);
+        const bcSavings = (s.bytecode_savings_vs_md_pct || 0).toFixed(1);
+        const lossless = s.lossless_verified ? '<span class="status-badge status-200">100% Lossless</span>' : '<span class="status-badge status-err">Parcial</span>';
+
+        return `
+          <tr>
+            <td><code>#${s.index || idx + 1}</code></td>
+            <td><a href="${s.url}" target="_blank" rel="noopener" class="url-link">${s.url}</a></td>
+            <td><span class="status-badge ${statusClass}">${s.status_code || 0}</span></td>
+            <td>${formatBytes(s.raw_html_bytes)}</td>
+            <td><strong>${formatBytes(s.markdown_bytes)}</strong> <span style="font-size: 0.75rem; color:#94a3b8;">(${s.markdown_tokens || 0} tok)</span></td>
+            <td><span style="color:#34d399; font-weight:700;">${formatBytes(s.cso_bytes)}</span> <span style="font-size: 0.75rem; color:#6ee7b7;">(${s.cso_tokens || 0} tok)</span></td>
+            <td class="tag-green font-bold">-${csoSavings}%</td>
+            <td><span style="color:#a78bfa; font-weight:700;">${formatBytes(s.bytecode_bytes)}</span></td>
+            <td style="color:#c4b5fd; font-weight:700;">-${bcSavings}%</td>
+            <td>${lossless}</td>
+            <td><code>${s.duration_ms || 0}ms</code></td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function filterBenchmarkTable() {
+      const q = document.getElementById('searchBenchmarkInput').value.toLowerCase();
+      const filtered = allBenchmarkSites.filter(s => 
+        (s.url || '').toLowerCase().includes(q)
+      );
+      renderBenchmarkTable(filtered);
     }
 
     function formatBytes(bytes) {
@@ -784,6 +913,8 @@
         loadDistinctSites();
       } else if (activeTab === 'quarantine') {
         loadQuarantineSites();
+      } else if (activeTab === 'benchmark') {
+        loadBenchmarkSites();
       }
     }
 

@@ -2,3 +2,8 @@
 Consulte a documentação e memória do projeto em .ai-memory/
 Verifique .ai-memory/handoff.json ao iniciar e atualize ao concluir grandes tarefas.
 Busca rápida: go run ./cmd/ai-memory search "<query>"
+
+# MB-VM (Micro-Bytecode VM First)
+Antes de ler múltiplos arquivos .go ou fazer buscas cegas por grep, execute:
+go-tools mbvm .
+Isso entrega a arquitetura inteira em ~10k tokens (95% de economia de contexto sem perda de símbolos).

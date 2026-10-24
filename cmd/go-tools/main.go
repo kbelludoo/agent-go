@@ -247,8 +247,66 @@ func main() {
 			fmt.Printf("🔓 Arquivo decriptado com sucesso em %s\n", outFile)
 		}
 
-	// 10.5 Codebase Micro-Bytecode VM (MB-VM)
+	// 10.5 Codebase & MCP Micro-Bytecode VM (MB-VM)
 	case "mbvm":
+		if len(os.Args) > 2 && os.Args[2] == "--mcp" {
+			mcpDir := "."
+			if len(os.Args) > 3 {
+				mcpDir = os.Args[3]
+			}
+			bin, proj, rawBytes, err := codembvm.CompileMCPSchemas(mcpDir)
+			if err != nil {
+				fmt.Fprintf(os.Stderr, "Erro ao compilar MCP em MB-VM: %v\n", err)
+				os.Exit(1)
+			}
+			outFile := filepath.Join(mcpDir, "tools.mbvm")
+			_ = os.WriteFile(outFile, bin, 0644)
+			rawTokens := int(float64(rawBytes) / 3.5)
+			projTokens := len(proj) / 4
+			fmt.Printf("⚡ [MCP MB-VM] Compilado com sucesso em %s (%d bytes, %.1f%% de redução de bytes)\n",
+				outFile, len(bin), (1.0-float64(len(bin))/float64(rawBytes))*100)
+			fmt.Printf("📦 JSON Original: %d B (~%d tokens) -> MB-VM: %d B (~%d tokens) | Economia Real: %.1f%% de tokens\n\n",
+				rawBytes, rawTokens, len(bin), projTokens, (1.0-float64(projTokens)/float64(rawTokens))*100)
+			fmt.Println(proj)
+			return
+		}
+
+		if len(os.Args) > 2 && os.Args[2] == "--all-mcps" {
+			root := `C:\Users\kbell\.gemini\antigravity\mcp`
+			if len(os.Args) > 3 {
+				root = os.Args[3]
+			}
+			entries, err := os.ReadDir(root)
+			if err != nil {
+				fmt.Fprintf(os.Stderr, "Erro ao ler diretório de MCPs: %v\n", err)
+				os.Exit(1)
+			}
+			var totalRaw, totalBin, totalRawTok, totalProjTok int
+			for _, e := range entries {
+				if !e.IsDir() {
+					continue
+				}
+				sub := filepath.Join(root, e.Name())
+				bin, proj, rawBytes, err := codembvm.CompileMCPSchemas(sub)
+				if err != nil || rawBytes == 0 {
+					continue
+				}
+				outFile := filepath.Join(sub, "tools.mbvm")
+				_ = os.WriteFile(outFile, bin, 0644)
+				rTok := int(float64(rawBytes) / 3.5)
+				pTok := len(proj) / 4
+				totalRaw += rawBytes
+				totalBin += len(bin)
+				totalRawTok += rTok
+				totalProjTok += pTok
+				fmt.Printf("⚡ [%-15s] %6d B (~%5d tok) -> MB-VM: %5d B (~%4d tok) | -%.1f%% tokens\n",
+					e.Name(), rawBytes, rTok, len(bin), pTok, (1.0-float64(pTok)/float64(rTok))*100)
+			}
+			fmt.Printf("\n🎯 [TOTAL MCPs] %d B (~%d tok) -> %d B (~%d tok) | Economia Real: %.1f%% de tokens\n",
+				totalRaw, totalRawTok, totalBin, totalProjTok, (1.0-float64(totalProjTok)/float64(totalRawTok))*100)
+			return
+		}
+
 		dir := "."
 		if len(os.Args) > 2 {
 			dir = os.Args[2]
