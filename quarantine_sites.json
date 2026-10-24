@@ -1,73 +1,7 @@
 {
-  "last_updated": "2026-10-24T02:01:15Z",
+  "last_updated": "2026-10-24T02:02:16Z",
   "total_quarantine": 121,
   "quarantine_sites": [
-    {
-      "id": 58,
-      "domain": "cayugacollection.com",
-      "url": "https://cayugacollection.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:47:10Z",
-      "last_seen": "2026-10-23T15:47:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 111,
-      "domain": "account.ncbi.nlm.nih.gov",
-      "url": "https://account.ncbi.nlm.nih.gov/myncbi/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T21:07:10Z",
-      "last_seen": "2026-10-23T21:07:22Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 35,
-      "domain": "opentechresearch.org",
-      "url": "https://opentechresearch.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:16:58Z",
-      "last_seen": "2026-10-23T14:16:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 65,
-      "domain": "invent.kde.org",
-      "url": "https://invent.kde.org/websites/endof10-org",
-      "status_code": 501,
-      "error_message": "HTTP 501",
-      "first_seen": "2026-10-23T15:56:58Z",
-      "last_seen": "2026-10-23T15:56:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 501 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 9,
-      "domain": "pt.wikipedia.org",
-      "url": "https://pt.wikipedia.org/wiki/Crise_cl",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:04:10Z",
-      "last_seen": "2026-10-24T00:11:29Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 48,
-      "domain": "www.commerce.gov",
-      "url": "https://www.commerce.gov",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:02:58Z",
-      "last_seen": "2026-10-23T22:57:05Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 73,
       "domain": "www.gov.br",
@@ -1332,6 +1266,72 @@
       "last_seen": "2026-10-24T00:55:18Z",
       "attempts": 2,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 58,
+      "domain": "cayugacollection.com",
+      "url": "https://cayugacollection.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:47:10Z",
+      "last_seen": "2026-10-23T15:47:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 111,
+      "domain": "account.ncbi.nlm.nih.gov",
+      "url": "https://account.ncbi.nlm.nih.gov/myncbi/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T21:07:10Z",
+      "last_seen": "2026-10-23T21:07:22Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 35,
+      "domain": "opentechresearch.org",
+      "url": "https://opentechresearch.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:16:58Z",
+      "last_seen": "2026-10-23T14:16:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 65,
+      "domain": "invent.kde.org",
+      "url": "https://invent.kde.org/websites/endof10-org",
+      "status_code": 501,
+      "error_message": "HTTP 501",
+      "first_seen": "2026-10-23T15:56:58Z",
+      "last_seen": "2026-10-23T15:56:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 501 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 9,
+      "domain": "pt.wikipedia.org",
+      "url": "https://pt.wikipedia.org/wiki/Crise_cl",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:04:10Z",
+      "last_seen": "2026-10-24T00:11:29Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 48,
+      "domain": "www.commerce.gov",
+      "url": "https://www.commerce.gov",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:02:58Z",
+      "last_seen": "2026-10-23T22:57:05Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
