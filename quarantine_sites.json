@@ -1,62 +1,7 @@
 {
-  "last_updated": "2026-10-24T10:40:27Z",
+  "last_updated": "2026-10-24T10:41:41Z",
   "total_quarantine": 127,
   "quarantine_sites": [
-    {
-      "id": 108,
-      "domain": "etsy.app.link",
-      "url": "https://etsy.app.link/d7nDUdp49V",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://etsy.app.link/d7nDUdp49V: Get \"https://etsy.app.link/d7nDUdp49V\": stopped after 10 redirects",
-      "first_seen": "2026-10-23T23:10:34Z",
-      "last_seen": "2026-10-23T23:16:22Z",
-      "attempts": 8,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://etsy.app.link/d7nDUdp49V: Get \"https://etsy.app.link/d7nDUdp49V\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 2,
-      "domain": "forbes.com",
-      "url": "https://forbes.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T12:46:22Z",
-      "last_seen": "2026-10-23T12:46:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 102,
-      "domain": "shop.fsf.org",
-      "url": "http://shop.fsf.org/",
-      "status_code": 503,
-      "error_message": "HTTP 503",
-      "first_seen": "2026-10-23T19:57:58Z",
-      "last_seen": "2026-10-23T22:55:41Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 111,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/tiny-spec-inc/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T00:38:23Z",
-      "last_seen": "2026-10-24T00:38:59Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 12,
-      "domain": "reuters.com",
-      "url": "https://reuters.com/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T13:06:22Z",
-      "last_seen": "2026-10-24T00:27:59Z",
-      "attempts": 5,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 69,
       "domain": "www.instagram.com",
@@ -1398,6 +1343,61 @@
       "last_seen": "2026-10-24T00:10:54Z",
       "attempts": 2,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 108,
+      "domain": "etsy.app.link",
+      "url": "https://etsy.app.link/d7nDUdp49V",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://etsy.app.link/d7nDUdp49V: Get \"https://etsy.app.link/d7nDUdp49V\": stopped after 10 redirects",
+      "first_seen": "2026-10-23T23:10:34Z",
+      "last_seen": "2026-10-23T23:16:22Z",
+      "attempts": 8,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://etsy.app.link/d7nDUdp49V: Get \"https://etsy.app.link/d7nDUdp49V\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 2,
+      "domain": "forbes.com",
+      "url": "https://forbes.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T12:46:22Z",
+      "last_seen": "2026-10-23T12:46:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 102,
+      "domain": "shop.fsf.org",
+      "url": "http://shop.fsf.org/",
+      "status_code": 503,
+      "error_message": "HTTP 503",
+      "first_seen": "2026-10-23T19:57:58Z",
+      "last_seen": "2026-10-23T22:55:41Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 111,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/tiny-spec-inc/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T00:38:23Z",
+      "last_seen": "2026-10-24T00:38:59Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 12,
+      "domain": "reuters.com",
+      "url": "https://reuters.com/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T13:06:22Z",
+      "last_seen": "2026-10-24T00:27:59Z",
+      "attempts": 5,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
