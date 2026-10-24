@@ -171,10 +171,14 @@ func (s *Session) Navigate(ctx context.Context, destURL string) (*PageSnapshot, 
 		snapshot.RawBytes = len(bodyBytes)
 		if doc, docErr := browser.ParseDocument(bodyBytes, finalURL, resp.StatusCode, len(bodyBytes)); docErr == nil {
 			p := doc.PageWithMarkdown(25000, true)
+			snapshot.MarkdownText = p.Markdown
 			snapshot.MarkdownBytes = len(p.Markdown)
 			if snapshot.MarkdownBytes == 0 && len(p.Text) > 0 {
 				snapshot.MarkdownBytes = len(p.Text)
 			}
+			snapshot.CSOText = p.ToCSO(12000)
+			snapshot.CSOBytes = len(snapshot.CSOText)
+			snapshot.CSOTokenEst = browser.EstimateTokens(snapshot.CSOText)
 			if snapshot.RawBytes > 0 {
 				snapshot.TokenReduction = (1.0 - float64(snapshot.MarkdownBytes)/float64(snapshot.RawBytes)) * 100
 				if snapshot.TokenReduction < 0 {
@@ -184,6 +188,9 @@ func (s *Session) Navigate(ctx context.Context, destURL string) (*PageSnapshot, 
 		} else {
 			nativePage := browser.Parse(bodyBytes, finalURL, resp.StatusCode, len(bodyBytes), 25000)
 			snapshot.MarkdownBytes = len(nativePage.Text)
+			snapshot.CSOText = nativePage.ToCSO(12000)
+			snapshot.CSOBytes = len(snapshot.CSOText)
+			snapshot.CSOTokenEst = browser.EstimateTokens(snapshot.CSOText)
 			if snapshot.RawBytes > 0 {
 				snapshot.TokenReduction = (1.0 - float64(snapshot.MarkdownBytes)/float64(snapshot.RawBytes)) * 100
 			}

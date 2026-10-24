@@ -7,6 +7,7 @@ import (
 	"testing"
 	"time"
 
+	"ai-go-browser/browser"
 	"ai-go-browser/pkg/memory"
 	"github.com/kbelludoo/agent-go/pkg/navigator"
 )
@@ -59,4 +60,44 @@ func TestBrowserCognitiveMemoryLive(t *testing.T) {
 		t.Fatalf("expected playbook for go.dev, got nil")
 	}
 	t.Logf("📘 Domain Playbook verificado para 'go.dev': LastVisited=%s", pb.LastVisited.Format(time.RFC3339))
+}
+
+func TestCSOEmpiricalReductionRealWebsites(t *testing.T) {
+	session := navigator.NewSession()
+	urls := []string{
+		"https://news.ycombinator.com/",
+		"https://thehackernews.com/",
+	}
+
+	for _, u := range urls {
+		ctx, cancel := context.WithTimeout(context.Background(), 12*time.Second)
+		snap, err := session.Navigate(ctx, u)
+		cancel()
+
+		if err != nil {
+			t.Logf("⚠️ Falha ao acessar %s: %v", u, err)
+			continue
+		}
+
+		mdContent := snap.MarkdownText
+		if mdContent == "" {
+			mdContent = snap.CleanText
+		}
+		tokensMD := browser.EstimateTokens(mdContent)
+		tokensCSO := browser.EstimateTokens(snap.CSOText)
+		reductionPct := 0.0
+		if tokensMD > 0 {
+			reductionPct = (1.0 - float64(tokensCSO)/float64(tokensMD)) * 100
+		}
+
+		t.Logf("🌐 Site Real: %s (Status %d)", u, snap.StatusCode)
+		t.Logf("   HTML Bruto: %d bytes", snap.RawBytes)
+		t.Logf("   Markdown:   %d bytes | Tokens Est: %d", snap.MarkdownBytes, tokensMD)
+		t.Logf("   CSO:        %d bytes | Tokens Est: %d", snap.CSOBytes, tokensCSO)
+		t.Logf("   🎯 Economia de tokens CSO vs Markdown: %.2f%%", reductionPct)
+
+		if tokensCSO >= tokensMD && snap.MarkdownBytes > 200 {
+			t.Errorf("esperava CSO (%d tokens) menor que Markdown (%d tokens)", tokensCSO, tokensMD)
+		}
+	}
 }

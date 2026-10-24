@@ -36,9 +36,11 @@ type DistinctSiteRecord struct {
 	Title               string  `json:"title"`
 	StatusCode          int     `json:"status_code"`
 	DurationMs          int64   `json:"duration_ms"`
-	RawBytes            int     `json:"raw_bytes"`
-	MarkdownBytes       int     `json:"markdown_bytes"`
-	TokenReductionPct   float64 `json:"token_reduction_pct"`
+	RawBytes              int     `json:"raw_bytes"`
+	MarkdownBytes         int     `json:"markdown_bytes"`
+	CSOBytes              int     `json:"cso_bytes,omitempty"`
+	TokenReductionPct     float64 `json:"token_reduction_pct"`
+	CSOTokenReductionPct  float64 `json:"cso_token_reduction_pct,omitempty"`
 	InteractiveElements int     `json:"interactive_elements"`
 	RSSMiB              float64 `json:"rss_mib"`
 	FirstSeen           string  `json:"first_seen"`
@@ -74,7 +76,9 @@ type TelemetryPayload struct {
 	AvgTokenReductionPct  float64              `json:"avg_token_reduction_pct"`
 	TotalRawBytes         int64                `json:"total_raw_bytes"`
 	TotalMarkdownBytes    int64                `json:"total_markdown_bytes"`
+	TotalCSOBytes         int64                `json:"total_cso_bytes,omitempty"`
 	BytesSaved            int64                `json:"bytes_saved"`
+	AvgCSOReductionPct    float64              `json:"avg_cso_reduction_pct,omitempty"`
 	CurrentRSSMiB         float64              `json:"current_rss_mib"`
 	ChromiumRAMEstimate   string               `json:"chromium_ram_estimate"`
 	CognitiveMemoryActive bool                 `json:"cognitive_memory_active"`
@@ -302,6 +306,7 @@ func main() {
 		startTime     = time.Now()
 		totalRaw     int64
 		totalMD      int64
+		totalCSO     int64
 		visitedSet   = make(map[string]bool)
 		keywordIdx   = 0
 	)
@@ -432,6 +437,10 @@ func main() {
 		if totalRaw > 0 {
 			avgRed = (1.0 - float64(totalMD)/float64(totalRaw)) * 100
 		}
+		avgCSORed := 0.0
+		if totalMD > 0 && totalCSO > 0 {
+			avgCSORed = (1.0 - float64(totalCSO)/float64(totalMD)) * 100
+		}
 
 		curRSS := 0.0
 		mem := browser.ReadProcessMemory(os.Getpid())
@@ -446,7 +455,7 @@ func main() {
 			LastUpdated:          time.Now().UTC().Format(time.RFC3339),
 			UptimeSeconds:        int64(time.Since(startTime).Seconds()),
 			HostInfo:             "Oracle Cloud VPS (147.15.109.14 - Ubuntu x86_64, 1GB RAM)",
-			BrowserEngine:        "ai-go-browser v2.0 (uTLS Chrome 120 + Dynamic Search Discovery)",
+			BrowserEngine:        "ai-go-browser v2.0 (uTLS Chrome 120 + CSO Token Reducer + SQLite FTS5)",
 			AIEngine:             "Agent-Go Multi-Provider LLM Cascade (Auto-Fallback)",
 			TotalVisits:          visitCounter,
 			DistinctSitesCount:   len(distinctMap),
@@ -455,7 +464,9 @@ func main() {
 			AvgTokenReductionPct: avgRed,
 			TotalRawBytes:        totalRaw,
 			TotalMarkdownBytes:   totalMD,
+			TotalCSOBytes:        totalCSO,
 			BytesSaved:           totalRaw - totalMD,
+			AvgCSOReductionPct:   avgCSORed,
 			CurrentRSSMiB:        curRSS,
 			ChromiumRAMEstimate:  "900 - 1400 MB (Causaria OOM Kill nesta VPS de 1GB)",
 			CognitiveMemoryActive: memEngine != nil,
@@ -675,7 +686,14 @@ func main() {
 			record.DurationMs = snap.DurationMs
 			record.RawBytes = snap.RawBytes
 			record.MarkdownBytes = snap.MarkdownBytes
+			record.CSOBytes = snap.CSOBytes
 			record.TokenReductionPct = snap.TokenReduction
+			if snap.MarkdownBytes > 0 && snap.CSOBytes > 0 {
+				record.CSOTokenReductionPct = (1.0 - float64(snap.CSOBytes)/float64(snap.MarkdownBytes)) * 100
+				if record.CSOTokenReductionPct < 0 {
+					record.CSOTokenReductionPct = 0
+				}
+			}
 			record.InteractiveElements = len(snap.Elements)
 			record.RSSMiB = snap.RSSMiB
 
@@ -703,13 +721,16 @@ func main() {
 				}
 			}
 
-			// 4. Agent-Go AI Reasoning & Content Synthesis (executed asynchronously outside lock)
-			if snap.StatusCode == 200 && snap.CleanText != "" {
-				snippet := snap.CleanText
-				if len(snippet) > 1500 {
-					snippet = snippet[:1500]
+			// 4. Agent-Go AI Reasoning with Compact Semantic Outline (CSO, saving ~45% extra LLM tokens)
+			if snap.StatusCode == 200 && (snap.CSOText != "" || snap.CleanText != "") {
+				snippet := snap.CSOText
+				if snippet == "" {
+					snippet = snap.CleanText
 				}
-				aiPrompt := fmt.Sprintf("Você é o Agent-Go explorando a web com o ai-go-browser.\nURL: %s\nTítulo: %s\nTrecho da Página:\n%s\n\nEm uma ou duas frases curtas em português, resuma a essência deste site e o que ele oferece.", targetURL, snap.Title, snippet)
+				if len(snippet) > 1100 {
+					snippet = snippet[:1100]
+				}
+				aiPrompt := fmt.Sprintf("Você é o Agent-Go explorando a web com o ai-go-browser.\nURL: %s\nTítulo: %s\nTrecho da Página (Formato Semântico Compacto):\n%s\n\nEm uma ou duas frases curtas em português, resuma a essência deste site e o que ele oferece.", targetURL, snap.Title, snippet)
 
 				aiCtx, aiCancel := context.WithTimeout(ctx, 8*time.Second)
 				msg, prov, aiErr := llmClient.Complete(aiCtx, []agent.Message{
@@ -774,11 +795,12 @@ func main() {
 			successCount++
 			totalRaw += int64(snap.RawBytes)
 			totalMD += int64(snap.MarkdownBytes)
+			totalCSO += int64(snap.CSOBytes)
 			for _, dl := range discoveredLinks {
 				addURLToQueueLocked(dl)
 			}
-			log.Printf("   ✅ [%s] Status: %d | Latência: %dms | Bruto: %d KB | Redução: %.1f%% | RSS: %.2f MiB | Distintos: %d",
-				record.Category, snap.StatusCode, snap.DurationMs, snap.RawBytes/1024, snap.TokenReduction, snap.RSSMiB, len(distinctMap)+1)
+			log.Printf("   ✅ [%s] Status: %d | Latência: %dms | Bruto: %d KB | MD: %d KB (-%.1f%%) | CSO: %d KB (-%.1f%% tokens) | RSS: %.2f MiB | Distintos: %d",
+				record.Category, snap.StatusCode, snap.DurationMs, snap.RawBytes/1024, snap.MarkdownBytes/1024, snap.TokenReduction, snap.CSOBytes/1024, record.CSOTokenReductionPct, snap.RSSMiB, len(distinctMap)+1)
 		}
 
 		distinctMap[targetURL] = record

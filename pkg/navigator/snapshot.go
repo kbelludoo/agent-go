@@ -29,6 +29,10 @@ type PageSnapshot struct {
 	Title          string               `json:"title"`
 	StatusCode     int                  `json:"status_code"`
 	CleanText      string               `json:"clean_text"`
+	MarkdownText   string               `json:"markdown_text,omitempty"`
+	CSOText        string               `json:"cso_text,omitempty"`
+	CSOBytes       int                  `json:"cso_bytes,omitempty"`
+	CSOTokenEst    int                  `json:"cso_token_estimate,omitempty"`
 	Elements       []InteractiveElement `json:"elements"`
 	Forms          map[string]*HTMLForm `json:"forms"`
 	RawBytes       int                  `json:"raw_bytes,omitempty"`
