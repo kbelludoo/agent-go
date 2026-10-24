@@ -511,12 +511,21 @@
     async function fetchTelemetry() {
       let data = null;
       try {
-        const res = await fetch('./live_crawler_data.json?t=' + Date.now(), { cache: 'no-store' });
+        const res = await fetch('https://kbelludoo.github.io/agent-go/live_crawler_data.json?t=' + Date.now(), { cache: 'no-store' });
         if (res.ok) {
           data = await res.json();
         }
       } catch (e) {
-        console.warn("Could not load local live_crawler_data.json:", e);
+        console.warn("Could not load agent-go live_crawler_data.json:", e);
+      }
+
+      if (!data) {
+        try {
+          const res = await fetch('./live_crawler_data.json?t=' + Date.now(), { cache: 'no-store' });
+          if (res.ok) {
+            data = await res.json();
+          }
+        } catch (e) {}
       }
 
       if (!data) {
@@ -535,12 +544,21 @@
     async function loadDistinctSites() {
       let data = null;
       try {
-        const res = await fetch('./distinct_sites.json?t=' + Date.now(), { cache: 'no-store' });
+        const res = await fetch('https://kbelludoo.github.io/agent-go/distinct_sites.json?t=' + Date.now(), { cache: 'no-store' });
         if (res.ok) {
           data = await res.json();
         }
       } catch (e) {
-        console.warn("Could not load local distinct_sites.json:", e);
+        console.warn("Could not load agent-go distinct_sites.json:", e);
+      }
+
+      if (!data) {
+        try {
+          const res = await fetch('./distinct_sites.json?t=' + Date.now(), { cache: 'no-store' });
+          if (res.ok) {
+            data = await res.json();
+          }
+        } catch (e) {}
       }
 
       if (!data) {
@@ -608,12 +626,21 @@
     async function loadQuarantineSites() {
       let data = null;
       try {
-        const res = await fetch('./quarantine_sites.json?t=' + Date.now(), { cache: 'no-store' });
+        const res = await fetch('https://kbelludoo.github.io/agent-go/quarantine_sites.json?t=' + Date.now(), { cache: 'no-store' });
         if (res.ok) {
           data = await res.json();
         }
       } catch (e) {
-        console.warn("Could not load local quarantine_sites.json:", e);
+        console.warn("Could not load agent-go quarantine_sites.json:", e);
+      }
+
+      if (!data) {
+        try {
+          const res = await fetch('./quarantine_sites.json?t=' + Date.now(), { cache: 'no-store' });
+          if (res.ok) {
+            data = await res.json();
+          }
+        } catch (e) {}
       }
 
       if (!data) {
@@ -673,7 +700,10 @@
 
     async function loadBenchmarkSites() {
       try {
-        const res = await fetch('./benchmark_100_formats.json?t=' + Date.now(), { cache: 'no-store' });
+        let res = await fetch('https://kbelludoo.github.io/agent-go/benchmark_100_formats.json?t=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) {
+          res = await fetch('./benchmark_100_formats.json?t=' + Date.now(), { cache: 'no-store' });
+        }
         if (res.ok) {
           allBenchmarkSites = await res.json();
           document.getElementById('tabBenchmarkCount').innerText = `${allBenchmarkSites.length} sites`;
