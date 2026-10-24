@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-24T13:44:27Z",
+  "last_updated": "2026-10-24T13:45:27Z",
   "total_quarantine": 129,
   "quarantine_sites": [
     {
@@ -284,8 +284,8 @@
       "status_code": 999,
       "error_message": "HTTP 999",
       "first_seen": "2026-10-24T13:32:35Z",
-      "last_seen": "2026-10-24T13:43:47Z",
-      "attempts": 9,
+      "last_seen": "2026-10-24T13:45:11Z",
+      "attempts": 10,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
