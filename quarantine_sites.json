@@ -1,62 +1,7 @@
 {
-  "last_updated": "2026-10-24T23:42:26Z",
+  "last_updated": "2026-10-24T23:43:26Z",
   "total_quarantine": 173,
   "quarantine_sites": [
-    {
-      "id": 109,
-      "domain": "www.scielo.org",
-      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter\u0026lang=en",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T00:30:04Z",
-      "last_seen": "2026-10-24T00:30:04Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 124,
-      "domain": "www.legacy.com",
-      "url": "https://www.legacy.com/us/obituaries/bostonglobe/browse",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T03:59:59Z",
-      "last_seen": "2026-10-24T04:49:11Z",
-      "attempts": 18,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 136,
-      "domain": "uk.trustpilot.com",
-      "url": "https://uk.trustpilot.com/review/link.springer.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T18:24:47Z",
-      "last_seen": "2026-10-24T18:37:59Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 163,
-      "domain": "de.linkedin.com",
-      "url": "https://de.linkedin.com/company/springernature?trk=nav_type_overview",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T21:31:11Z",
-      "last_seen": "2026-10-24T21:52:11Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 164,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/uas/request-password-reset?trk=csm-v2_forgot_password",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T21:55:35Z",
-      "last_seen": "2026-10-24T21:55:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 117,
       "domain": "cybersecuritynews.com",
@@ -1904,6 +1849,61 @@
       "last_seen": "2026-10-23T22:57:27Z",
       "attempts": 3,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 109,
+      "domain": "www.scielo.org",
+      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter\u0026lang=en",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T00:30:04Z",
+      "last_seen": "2026-10-24T00:30:04Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 124,
+      "domain": "www.legacy.com",
+      "url": "https://www.legacy.com/us/obituaries/bostonglobe/browse",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T03:59:59Z",
+      "last_seen": "2026-10-24T04:49:11Z",
+      "attempts": 18,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 136,
+      "domain": "uk.trustpilot.com",
+      "url": "https://uk.trustpilot.com/review/link.springer.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T18:24:47Z",
+      "last_seen": "2026-10-24T18:37:59Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 163,
+      "domain": "de.linkedin.com",
+      "url": "https://de.linkedin.com/company/springernature?trk=nav_type_overview",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T21:31:11Z",
+      "last_seen": "2026-10-24T21:52:11Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 164,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/uas/request-password-reset?trk=csm-v2_forgot_password",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T21:55:35Z",
+      "last_seen": "2026-10-24T21:55:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
