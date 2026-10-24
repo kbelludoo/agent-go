@@ -1,18 +1,7 @@
 {
-  "last_updated": "2026-10-24T13:53:38Z",
+  "last_updated": "2026-10-24T13:54:37Z",
   "total_quarantine": 129,
   "quarantine_sites": [
-    {
-      "id": 128,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/ready-education/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T11:12:35Z",
-      "last_seen": "2026-10-24T11:13:11Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 59,
       "domain": "sverigesradio.se",
@@ -1420,6 +1409,17 @@
       "last_seen": "2026-10-24T03:10:14Z",
       "attempts": 9,
       "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 128,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/ready-education/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T11:12:35Z",
+      "last_seen": "2026-10-24T11:13:11Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
