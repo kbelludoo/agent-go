@@ -1,62 +1,7 @@
 {
-  "last_updated": "2026-10-24T14:31:15Z",
+  "last_updated": "2026-10-24T14:32:16Z",
   "total_quarantine": 129,
   "quarantine_sites": [
-    {
-      "id": 64,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/tanishq-sangwan/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T15:56:10Z",
-      "last_seen": "2026-10-23T15:56:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 108,
-      "domain": "iris.paho.org",
-      "url": "https://iris.paho.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T20:09:22Z",
-      "last_seen": "2026-10-23T22:58:34Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 5,
-      "domain": "phys.org",
-      "url": "https://phys.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:01:58Z",
-      "last_seen": "2026-10-23T13:01:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 42,
-      "domain": "infograficos.valor.globo.com",
-      "url": "https://infograficos.valor.globo.com/carteira-valor/?menu_valor",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:47:34Z",
-      "last_seen": "2026-10-23T14:47:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 116,
-      "domain": "key.accessibility.harvard.edu",
-      "url": "https://key.accessibility.harvard.edu/request-asl-interpreting",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:43:23Z",
-      "last_seen": "2026-10-24T00:45:23Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 28,
       "domain": "www.theguardian.com",
@@ -1419,6 +1364,61 @@
       "first_seen": "2026-10-23T14:58:22Z",
       "last_seen": "2026-10-23T14:58:34Z",
       "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 64,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/tanishq-sangwan/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T15:56:10Z",
+      "last_seen": "2026-10-23T15:56:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 108,
+      "domain": "iris.paho.org",
+      "url": "https://iris.paho.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T20:09:22Z",
+      "last_seen": "2026-10-23T22:58:34Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 5,
+      "domain": "phys.org",
+      "url": "https://phys.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:01:58Z",
+      "last_seen": "2026-10-23T13:01:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 42,
+      "domain": "infograficos.valor.globo.com",
+      "url": "https://infograficos.valor.globo.com/carteira-valor/?menu_valor",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:47:34Z",
+      "last_seen": "2026-10-23T14:47:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 116,
+      "domain": "key.accessibility.harvard.edu",
+      "url": "https://key.accessibility.harvard.edu/request-asl-interpreting",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:43:23Z",
+      "last_seen": "2026-10-24T00:45:23Z",
+      "attempts": 3,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
