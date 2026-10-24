@@ -1,84 +1,7 @@
 {
-  "last_updated": "2026-10-24T17:13:35Z",
+  "last_updated": "2026-10-24T17:14:37Z",
   "total_quarantine": 130,
   "quarantine_sites": [
-    {
-      "id": 29,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:28:57Z",
-      "last_seen": "2026-10-24T00:28:11Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 24,
-      "domain": "www.nytimes.com",
-      "url": "https://www.nytimes.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:23:22Z",
-      "last_seen": "2026-10-24T00:12:18Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 101,
-      "domain": "ds.tl",
-      "url": "http://ds.tl/help-third-party-plugins",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://ds.tl/help-third-party-plugins: Get \"http://ds.tl/help-third-party-plugins\": dial tcp4: lookup ds.tl on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-23T19:53:58Z",
-      "last_seen": "2026-10-24T00:08:54Z",
-      "attempts": 4,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://ds.tl/help-third-party-plugins: Get \"http://ds.tl/help-third-party-plugins\": dial tcp4: lookup ds.tl on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 80,
-      "domain": "shop.alz.org",
-      "url": "https://shop.alz.org",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T17:27:33Z",
-      "last_seen": "2026-10-24T00:26:35Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 4,
-      "domain": "nytimes.com",
-      "url": "https://nytimes.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T12:59:58Z",
-      "last_seen": "2026-10-23T22:57:27Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 109,
-      "domain": "www.scielo.org",
-      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter\u0026lang=en",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T00:30:04Z",
-      "last_seen": "2026-10-24T00:30:04Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 124,
-      "domain": "www.legacy.com",
-      "url": "https://www.legacy.com/us/obituaries/bostonglobe/browse",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T03:59:59Z",
-      "last_seen": "2026-10-24T04:49:11Z",
-      "attempts": 18,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 117,
       "domain": "cybersecuritynews.com",
@@ -1430,6 +1353,83 @@
       "first_seen": "2026-10-23T16:01:22Z",
       "last_seen": "2026-10-24T00:25:47Z",
       "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 29,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:28:57Z",
+      "last_seen": "2026-10-24T00:28:11Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 24,
+      "domain": "www.nytimes.com",
+      "url": "https://www.nytimes.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:23:22Z",
+      "last_seen": "2026-10-24T00:12:18Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 101,
+      "domain": "ds.tl",
+      "url": "http://ds.tl/help-third-party-plugins",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://ds.tl/help-third-party-plugins: Get \"http://ds.tl/help-third-party-plugins\": dial tcp4: lookup ds.tl on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-23T19:53:58Z",
+      "last_seen": "2026-10-24T00:08:54Z",
+      "attempts": 4,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://ds.tl/help-third-party-plugins: Get \"http://ds.tl/help-third-party-plugins\": dial tcp4: lookup ds.tl on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 80,
+      "domain": "shop.alz.org",
+      "url": "https://shop.alz.org",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T17:27:33Z",
+      "last_seen": "2026-10-24T00:26:35Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 4,
+      "domain": "nytimes.com",
+      "url": "https://nytimes.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T12:59:58Z",
+      "last_seen": "2026-10-23T22:57:27Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 109,
+      "domain": "www.scielo.org",
+      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter\u0026lang=en",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T00:30:04Z",
+      "last_seen": "2026-10-24T00:30:04Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 124,
+      "domain": "www.legacy.com",
+      "url": "https://www.legacy.com/us/obituaries/bostonglobe/browse",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T03:59:59Z",
+      "last_seen": "2026-10-24T04:49:11Z",
+      "attempts": 18,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
