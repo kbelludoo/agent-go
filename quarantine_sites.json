@@ -1,7 +1,150 @@
 {
-  "last_updated": "2026-10-24T21:44:48Z",
+  "last_updated": "2026-10-24T21:45:48Z",
   "total_quarantine": 162,
   "quarantine_sites": [
+    {
+      "id": 34,
+      "domain": "www.reuters.com",
+      "url": "https://www.reuters.com/world/asia-pacific/eu-agency-warns-websites-may-need-be-taken-offline-php-prepares-patches-2026-10-21/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T13:58:46Z",
+      "last_seen": "2026-10-23T13:58:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 114,
+      "domain": "it.linkedin.com",
+      "url": "https://it.linkedin.com/school/universit-degli-studi-di-perugia/?trk=public_profile_topcard-school",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T23:42:22Z",
+      "last_seen": "2026-10-23T23:42:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 33,
+      "domain": "home.web.cern.ch",
+      "url": "http://home.web.cern.ch/topics/birth-web",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:53:24Z",
+      "last_seen": "2026-10-23T13:53:24Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 142,
+      "domain": "www.linkedin.com",
+      "url": "http://www.linkedin.com/shareArticle?mini=true\u0026url=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026title=Cosmic Pathways\u0026source=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-24T18:52:34Z",
+      "last_seen": "2026-10-24T18:52:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 113,
+      "domain": "blog.wikimedia.dk",
+      "url": "http://blog.wikimedia.dk/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://blog.wikimedia.dk/: Get \"http://blog.wikimedia.dk/\": dial tcp4: lookup blog.wikimedia.dk on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-23T23:36:09Z",
+      "last_seen": "2026-10-23T23:36:09Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://blog.wikimedia.dk/: Get \"http://blog.wikimedia.dk/\": dial tcp4: lookup blog.wikimedia.dk on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 91,
+      "domain": "education.github.com",
+      "url": "https://education.github.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects",
+      "first_seen": "2026-10-23T18:04:59Z",
+      "last_seen": "2026-10-23T18:04:59Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 84,
+      "domain": "www.loc.gov",
+      "url": "https://www.loc.gov/collections/copyright-historical-record-books-1870-to-1977/about-this-collection/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T17:38:58Z",
+      "last_seen": "2026-10-23T17:38:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 114,
+      "domain": "hwpi.harvard.edu",
+      "url": "https://hwpi.harvard.edu/ldcnetwork",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:43:00Z",
+      "last_seen": "2026-10-24T00:45:00Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 160,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/springernature/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T21:29:11Z",
+      "last_seen": "2026-10-24T21:29:11Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 78,
+      "domain": "app.beehiiv.com",
+      "url": "https://app.beehiiv.com/signup",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T17:13:46Z",
+      "last_seen": "2026-10-23T17:13:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 107,
+      "domain": "spmaisdigital.sp.gov.br",
+      "url": "https://spmaisdigital.sp.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://spmaisdigital.sp.gov.br: Get \"https://spmaisdigital.sp.gov.br\": dial tcp4: lookup spmaisdigital.sp.gov.br on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-24T00:28:59Z",
+      "last_seen": "2026-10-24T00:29:22Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://spmaisdigital.sp.gov.br: Get \"https://spmaisdigital.sp.gov.br\": dial tcp4: lookup spmaisdigital.sp.gov.br on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 113,
+      "domain": "www.scielo.org",
+      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T00:42:05Z",
+      "last_seen": "2026-10-24T00:55:33Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 147,
+      "domain": "w3.ibm.com",
+      "url": "https://w3.ibm.com/w3publisher/w3-privacy-notice",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://w3.ibm.com/w3publisher/w3-privacy-notice: Get \"https://w3.ibm.com/w3publisher/w3-privacy-notice\": dial tcp4: lookup w3.ibm.com on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-24T19:12:23Z",
+      "last_seen": "2026-10-24T19:12:23Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://w3.ibm.com/w3publisher/w3-privacy-notice: Get \"https://w3.ibm.com/w3publisher/w3-privacy-notice\": dial tcp4: lookup w3.ibm.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
     {
       "id": 97,
       "domain": "www.gov.br",
@@ -1640,149 +1783,6 @@
       "last_seen": "2026-10-23T23:03:09Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 34,
-      "domain": "www.reuters.com",
-      "url": "https://www.reuters.com/world/asia-pacific/eu-agency-warns-websites-may-need-be-taken-offline-php-prepares-patches-2026-10-21/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T13:58:46Z",
-      "last_seen": "2026-10-23T13:58:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 114,
-      "domain": "it.linkedin.com",
-      "url": "https://it.linkedin.com/school/universit-degli-studi-di-perugia/?trk=public_profile_topcard-school",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T23:42:22Z",
-      "last_seen": "2026-10-23T23:42:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 33,
-      "domain": "home.web.cern.ch",
-      "url": "http://home.web.cern.ch/topics/birth-web",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:53:24Z",
-      "last_seen": "2026-10-23T13:53:24Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 142,
-      "domain": "www.linkedin.com",
-      "url": "http://www.linkedin.com/shareArticle?mini=true\u0026url=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026title=Cosmic Pathways\u0026source=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-24T18:52:34Z",
-      "last_seen": "2026-10-24T18:52:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 113,
-      "domain": "blog.wikimedia.dk",
-      "url": "http://blog.wikimedia.dk/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://blog.wikimedia.dk/: Get \"http://blog.wikimedia.dk/\": dial tcp4: lookup blog.wikimedia.dk on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-23T23:36:09Z",
-      "last_seen": "2026-10-23T23:36:09Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://blog.wikimedia.dk/: Get \"http://blog.wikimedia.dk/\": dial tcp4: lookup blog.wikimedia.dk on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 91,
-      "domain": "education.github.com",
-      "url": "https://education.github.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects",
-      "first_seen": "2026-10-23T18:04:59Z",
-      "last_seen": "2026-10-23T18:04:59Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 84,
-      "domain": "www.loc.gov",
-      "url": "https://www.loc.gov/collections/copyright-historical-record-books-1870-to-1977/about-this-collection/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T17:38:58Z",
-      "last_seen": "2026-10-23T17:38:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 114,
-      "domain": "hwpi.harvard.edu",
-      "url": "https://hwpi.harvard.edu/ldcnetwork",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:43:00Z",
-      "last_seen": "2026-10-24T00:45:00Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 160,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/springernature/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T21:29:11Z",
-      "last_seen": "2026-10-24T21:29:11Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 78,
-      "domain": "app.beehiiv.com",
-      "url": "https://app.beehiiv.com/signup",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T17:13:46Z",
-      "last_seen": "2026-10-23T17:13:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 107,
-      "domain": "spmaisdigital.sp.gov.br",
-      "url": "https://spmaisdigital.sp.gov.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://spmaisdigital.sp.gov.br: Get \"https://spmaisdigital.sp.gov.br\": dial tcp4: lookup spmaisdigital.sp.gov.br on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-24T00:28:59Z",
-      "last_seen": "2026-10-24T00:29:22Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://spmaisdigital.sp.gov.br: Get \"https://spmaisdigital.sp.gov.br\": dial tcp4: lookup spmaisdigital.sp.gov.br on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 113,
-      "domain": "www.scielo.org",
-      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T00:42:05Z",
-      "last_seen": "2026-10-24T00:55:33Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 147,
-      "domain": "w3.ibm.com",
-      "url": "https://w3.ibm.com/w3publisher/w3-privacy-notice",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://w3.ibm.com/w3publisher/w3-privacy-notice: Get \"https://w3.ibm.com/w3publisher/w3-privacy-notice\": dial tcp4: lookup w3.ibm.com on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-24T19:12:23Z",
-      "last_seen": "2026-10-24T19:12:23Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://w3.ibm.com/w3publisher/w3-privacy-notice: Get \"https://w3.ibm.com/w3publisher/w3-privacy-notice\": dial tcp4: lookup w3.ibm.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
