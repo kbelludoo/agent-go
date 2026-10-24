@@ -1,40 +1,7 @@
 {
-  "last_updated": "2026-10-24T03:10:31Z",
+  "last_updated": "2026-10-24T03:11:31Z",
   "total_quarantine": 123,
   "quarantine_sites": [
-    {
-      "id": 15,
-      "domain": "specs.openstack.org",
-      "url": "https://specs.openstack.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:08:34Z",
-      "last_seen": "2026-10-23T13:08:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 107,
-      "domain": "techcommunity.microsoft.com",
-      "url": "https://techcommunity.microsoft.com/category/Microsoft365Copilot",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T20:07:34Z",
-      "last_seen": "2026-10-23T20:07:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 100,
-      "domain": "wpintelligence.washingtonpost.com",
-      "url": "https://wpintelligence.washingtonpost.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://wpintelligence.washingtonpost.com/: Get \"https://wpintelligence.washingtonpost.com/\": read tcp4 10.0.1.126:41780-\u003e2.16.169.205:443: use of closed network connection",
-      "first_seen": "2026-10-23T19:49:45Z",
-      "last_seen": "2026-10-23T23:00:32Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://wpintelligence.washingtonpost.com/: Get \"https://wpintelligence.washingtonpost.com/\": read tcp4 10.0.1.126:41780-\u003e2.16.169.205:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
-    },
     {
       "id": 53,
       "domain": "getbootstrap.com",
@@ -1354,6 +1321,39 @@
       "last_seen": "2026-10-24T00:55:47Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 15,
+      "domain": "specs.openstack.org",
+      "url": "https://specs.openstack.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:08:34Z",
+      "last_seen": "2026-10-23T13:08:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 107,
+      "domain": "techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/category/Microsoft365Copilot",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T20:07:34Z",
+      "last_seen": "2026-10-23T20:07:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 100,
+      "domain": "wpintelligence.washingtonpost.com",
+      "url": "https://wpintelligence.washingtonpost.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://wpintelligence.washingtonpost.com/: Get \"https://wpintelligence.washingtonpost.com/\": read tcp4 10.0.1.126:41780-\u003e2.16.169.205:443: use of closed network connection",
+      "first_seen": "2026-10-23T19:49:45Z",
+      "last_seen": "2026-10-23T23:00:32Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://wpintelligence.washingtonpost.com/: Get \"https://wpintelligence.washingtonpost.com/\": read tcp4 10.0.1.126:41780-\u003e2.16.169.205:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
