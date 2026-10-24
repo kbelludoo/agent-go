@@ -550,24 +550,26 @@ func main() {
 			os.Exit(1)
 		}
 
-	// 22. Hindsight - Long-Term Cognitive Memory (Retain / Recall / Reflect)
+	// 22. Hindsight - Long-Term Cognitive Memory (Retain / Recall / Reflect / Slice)
 	case "memory", "hindsight":
 		if len(os.Args) < 3 {
-			fmt.Fprintln(os.Stderr, "Uso:\n  go-tools memory retain <bank> <type> <subject> <content>\n  go-tools memory recall <bank> <query> [topK]\n  go-tools memory reflect <bank>")
+			fmt.Fprintln(os.Stderr, "Uso:\n  go-tools memory retain <bank> <type> <subject> <content>\n  go-tools memory recall <bank> <query> [topK]\n  go-tools memory slice <bank> <subject> [depth]\n  go-tools memory reflect <bank>")
 			os.Exit(1)
 		}
 		sub := os.Args[2]
 		homeDir, _ := os.UserHomeDir()
-		dbPath := os.Getenv("HINDSIGHT_DB")
-		if dbPath == "" {
-			dbPath = homeDir + "/.hindsight.db"
+
+		// Primary High-Performance Engine: MBVM-DB (.hindsight.mbvm)
+		mbvmPath := os.Getenv("HINDSIGHT_MBVM")
+		if mbvmPath == "" {
+			mbvmPath = homeDir + "/.hindsight.mbvm"
 		}
-		store, err := hindsight.Open(dbPath)
+		mbvmStore, err := hindsight.OpenMBVM(mbvmPath)
 		if err != nil {
-			fmt.Fprintf(os.Stderr, "Erro ao abrir banco de memória Hindsight: %v\n", err)
+			fmt.Fprintf(os.Stderr, "Erro ao abrir motor MBVM-DB de memória: %v\n", err)
 			os.Exit(1)
 		}
-		defer store.Close()
+		defer mbvmStore.Close()
 
 		switch sub {
 		case "retain":
@@ -579,12 +581,12 @@ func main() {
 			fType := hindsight.FactType(os.Args[4])
 			subject := os.Args[5]
 			content := os.Args[6]
-			m, err := store.Retain(bank, fType, subject, content)
+			m, err := mbvmStore.Retain(bank, fType, subject, content)
 			if err != nil {
 				fmt.Fprintf(os.Stderr, "Erro ao reter memória: %v\n", err)
 				os.Exit(1)
 			}
-			fmt.Printf("🧠 [Hindsight Retain] Memória %s registrada (banco: %s, tipo: %s, subject: %s)\n",
+			fmt.Printf("⚡ [Hindsight MBVM-DB] Memória %s gravada em micro-bytecode (banco: %s, tipo: %s, subject: %s)\n",
 				m.ID, m.Bank, m.Type, m.Subject)
 
 		case "recall":
@@ -600,19 +602,34 @@ func main() {
 					topK = k
 				}
 			}
-			hits, err := store.Recall(bank, query, topK)
+			hits, err := mbvmStore.Recall(bank, query, topK)
 			if err != nil {
 				fmt.Fprintf(os.Stderr, "Erro ao recordar memória: %v\n", err)
 				os.Exit(1)
 			}
 			fmt.Println(hindsight.FormatRecalled(hits))
 
+		case "slice":
+			if len(os.Args) < 5 {
+				fmt.Fprintln(os.Stderr, "Uso: go-tools memory slice <bank> <subject> [depth]")
+				os.Exit(1)
+			}
+			bank := os.Args[3]
+			subject := os.Args[4]
+			depth := 1
+			if len(os.Args) > 5 {
+				if d, err := strconv.Atoi(os.Args[5]); err == nil && d > 0 {
+					depth = d
+				}
+			}
+			fmt.Println(mbvmStore.Slice(bank, subject, depth))
+
 		case "reflect":
 			bank := "default"
 			if len(os.Args) > 3 {
 				bank = os.Args[3]
 			}
-			report, err := store.Reflect(bank)
+			report, err := mbvmStore.Reflect(bank)
 			if err != nil {
 				fmt.Fprintf(os.Stderr, "Erro na reflexão de memória: %v\n", err)
 				os.Exit(1)
@@ -620,13 +637,24 @@ func main() {
 			fmt.Println(report)
 
 		case "mcp":
+			// Fallback/Legacy SQLite support for MCP or direct MBVM
+			dbPath := os.Getenv("HINDSIGHT_DB")
+			if dbPath == "" {
+				dbPath = homeDir + "/.hindsight.db"
+			}
+			store, err := hindsight.Open(dbPath)
+			if err != nil {
+				fmt.Fprintf(os.Stderr, "Erro ao abrir SQLite: %v\n", err)
+				os.Exit(1)
+			}
+			defer store.Close()
 			if err := hindsight.ServeMCP(store, os.Stdin, os.Stdout); err != nil {
 				fmt.Fprintf(os.Stderr, "MCP hindsight error: %v\n", err)
 				os.Exit(1)
 			}
 
 		default:
-			fmt.Fprintf(os.Stderr, "Ação de memória desconhecida: %s (use retain, recall ou reflect)\n", sub)
+			fmt.Fprintf(os.Stderr, "Ação de memória desconhecida: %s (use retain, recall, slice ou reflect)\n", sub)
 			os.Exit(1)
 		}
 
