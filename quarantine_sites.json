@@ -1,7 +1,40 @@
 {
-  "last_updated": "2026-10-24T01:20:26Z",
+  "last_updated": "2026-10-24T01:21:27Z",
   "total_quarantine": 121,
   "quarantine_sites": [
+    {
+      "id": 95,
+      "domain": "docs.moodle.org",
+      "url": "https://docs.moodle.org",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T18:38:10Z",
+      "last_seen": "2026-10-23T20:17:58Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 21,
+      "domain": "www.forbes.com",
+      "url": "https://www.forbes.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:18:22Z",
+      "last_seen": "2026-10-23T13:18:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 111,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/dshapero/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T23:28:21Z",
+      "last_seen": "2026-10-23T23:31:21Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 105,
       "domain": "chat.stackexchange.com",
@@ -1299,39 +1332,6 @@
       "last_seen": "2026-10-23T13:53:11Z",
       "attempts": 1,
       "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 95,
-      "domain": "docs.moodle.org",
-      "url": "https://docs.moodle.org",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T18:38:10Z",
-      "last_seen": "2026-10-23T20:17:58Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 21,
-      "domain": "www.forbes.com",
-      "url": "https://www.forbes.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:18:22Z",
-      "last_seen": "2026-10-23T13:18:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 111,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/dshapero/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T23:28:21Z",
-      "last_seen": "2026-10-23T23:31:21Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
