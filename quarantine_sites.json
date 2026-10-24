@@ -1,73 +1,7 @@
 {
-  "last_updated": "2026-10-24T23:55:36Z",
+  "last_updated": "2026-10-24T23:56:37Z",
   "total_quarantine": 173,
   "quarantine_sites": [
-    {
-      "id": 9,
-      "domain": "pt.wikipedia.org",
-      "url": "https://pt.wikipedia.org/wiki/Crise_cl",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:04:10Z",
-      "last_seen": "2026-10-24T00:11:29Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 48,
-      "domain": "www.commerce.gov",
-      "url": "https://www.commerce.gov",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:02:58Z",
-      "last_seen": "2026-10-23T22:57:05Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 134,
-      "domain": "github.com",
-      "url": "https://github.com/mojodocs",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T18:17:23Z",
-      "last_seen": "2026-10-24T18:17:23Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 127,
-      "domain": "twitter.com",
-      "url": "https://twitter.com/intent/tweet?url=http://www.nngroup.com/articles/designing-effective-carousels/\u0026text=Carousel Usability: Designing an Effective UI for Websites with Content Overload\u0026via=nngroup",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-24T09:39:47Z",
-      "last_seen": "2026-10-24T11:15:22Z",
-      "attempts": 37,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 133,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/thecodeforge-io-a0676b3b5/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T18:06:47Z",
-      "last_seen": "2026-10-24T18:07:00Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 172,
-      "domain": "au.linkedin.com",
-      "url": "https://au.linkedin.com/in/mcannonbrookes?trk=article-ssr-frontend-pulse_little-mention",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T22:42:59Z",
-      "last_seen": "2026-10-24T23:26:23Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 73,
       "domain": "www.gov.br",
@@ -1904,6 +1838,72 @@
       "last_seen": "2026-10-23T15:56:58Z",
       "attempts": 1,
       "diagnosis": "HTTP 501 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 9,
+      "domain": "pt.wikipedia.org",
+      "url": "https://pt.wikipedia.org/wiki/Crise_cl",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:04:10Z",
+      "last_seen": "2026-10-24T00:11:29Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 48,
+      "domain": "www.commerce.gov",
+      "url": "https://www.commerce.gov",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:02:58Z",
+      "last_seen": "2026-10-23T22:57:05Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 134,
+      "domain": "github.com",
+      "url": "https://github.com/mojodocs",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T18:17:23Z",
+      "last_seen": "2026-10-24T18:17:23Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 127,
+      "domain": "twitter.com",
+      "url": "https://twitter.com/intent/tweet?url=http://www.nngroup.com/articles/designing-effective-carousels/\u0026text=Carousel Usability: Designing an Effective UI for Websites with Content Overload\u0026via=nngroup",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-24T09:39:47Z",
+      "last_seen": "2026-10-24T11:15:22Z",
+      "attempts": 37,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 133,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/thecodeforge-io-a0676b3b5/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T18:06:47Z",
+      "last_seen": "2026-10-24T18:07:00Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 172,
+      "domain": "au.linkedin.com",
+      "url": "https://au.linkedin.com/in/mcannonbrookes?trk=article-ssr-frontend-pulse_little-mention",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T22:42:59Z",
+      "last_seen": "2026-10-24T23:26:23Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
