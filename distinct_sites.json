@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-24T16:22:00Z",
+  "last_updated": "2026-10-24T16:23:00Z",
   "total_distinct_sites": 2592,
   "distinct_sites": [
     {
@@ -4072,22 +4072,22 @@
       "ai_provider": "stop"
     },
     {
-      "id": 6992,
+      "id": 6995,
       "domain": "integrations.greenhouse.com",
       "category": "Documentações \u0026 Web Aberta",
       "url": "https://integrations.greenhouse.com",
       "title": "Greenhouse Partner Directory",
       "status_code": 200,
-      "duration_ms": 220,
+      "duration_ms": 70,
       "raw_bytes": 517855,
       "markdown_bytes": 17791,
       "cso_bytes": 686,
       "token_reduction_pct": 96.56448233578898,
       "cso_token_reduction_pct": 96.14411781237703,
       "interactive_elements": 273,
-      "rss_mib": 82.26171875,
-      "first_seen": "2026-10-24T16:21:59Z",
-      "ai_summary": "O site **Greenhouse Partner Directory** apresenta uma plataforma integrada para recrutamento, reunindo ferramentas de sourcing, entrevistas com IA e soluções de ATS, destacando-se pela integração de tecnologias avançadas para otimizar o processo de contratação.",
+      "rss_mib": 83.4921875,
+      "first_seen": "2026-10-24T16:22:35Z",
+      "ai_summary": "O site **Greenhouse Partner Directory** apresenta uma plataforma integrada para recrutamento, reunindo ferramentas de sourcing, entrevistas por IA e soluções de ATS (Sistema de Gerenciamento de Candidatos). Ele destaca a combinação de tecnologias avançadas para simplificar o processo de contratação.",
       "ai_provider": "stop"
     },
     {
@@ -32752,6 +32752,23 @@
       "ai_provider": "stop"
     },
     {
+      "id": 4639,
+      "domain": "eepurl.com",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "http://eepurl.com/yFXIe8bfTe",
+      "title": "Cybersecurity Awareness Month; AI tools and features",
+      "status_code": 200,
+      "duration_ms": 984,
+      "raw_bytes": 76667,
+      "markdown_bytes": 20578,
+      "cso_bytes": 8582,
+      "token_reduction_pct": 73.15924713370812,
+      "cso_token_reduction_pct": 58.29526678977549,
+      "interactive_elements": 109,
+      "rss_mib": 75.2109375,
+      "first_seen": "2026-10-24T08:31:23Z"
+    },
+    {
       "id": 228,
       "domain": "www.w3schools.com",
       "category": "Documentações \u0026 Web Aberta",
@@ -34430,21 +34447,21 @@
       "ai_provider": "stop"
     },
     {
-      "id": 6990,
+      "id": 6996,
       "domain": "app.greenhouse.io",
       "category": "Documentações \u0026 Web Aberta",
       "url": "https://app.greenhouse.io/users/sign_in",
       "title": "Sign In | Greenhouse Recruiting",
       "status_code": 200,
-      "duration_ms": 606,
-      "raw_bytes": 40177,
+      "duration_ms": 819,
+      "raw_bytes": 40183,
       "markdown_bytes": 411,
       "cso_bytes": 706,
-      "token_reduction_pct": 98.97702665704259,
+      "token_reduction_pct": 98.97717940422567,
       "interactive_elements": 13,
-      "rss_mib": 76.88671875,
-      "first_seen": "2026-10-24T16:21:35Z",
-      "ai_summary": "O site **Greenhouse Recruiting** é uma plataforma de recrutamento que facilita o processo de contratação, oferecendo ferramentas para decisões de contratação mais inteligentes e eficientes. Ele permite login via Google ou e-mail, com opções de recuperação de senha e acesso ao painel \"MyGreenhouse\".",
+      "rss_mib": 77.6171875,
+      "first_seen": "2026-10-24T16:22:47Z",
+      "ai_summary": "O site **Greenhouse Recruiting** é uma plataforma de recrutamento que facilita o processo de contratação, oferecendo ferramentas para decisões de contratação mais inteligentes e eficientes. Ele permite login via Google ou e-mail, com opções de recuperação de senha e acesso ao painel **MyGreenhouse**.",
       "ai_provider": "stop"
     },
     {
@@ -38223,21 +38240,21 @@
       "ai_provider": "stop"
     },
     {
-      "id": 6991,
+      "id": 6997,
       "domain": "my.greenhouse.io",
       "category": "Documentações \u0026 Web Aberta",
       "url": "https://my.greenhouse.io/users/sign_in",
       "title": "MyGreenhouse",
       "status_code": 200,
-      "duration_ms": 136,
+      "duration_ms": 147,
       "raw_bytes": 7252,
       "markdown_bytes": 0,
       "cso_bytes": 150,
       "token_reduction_pct": 100,
       "interactive_elements": 0,
-      "rss_mib": 80.60546875,
-      "first_seen": "2026-10-24T16:21:47Z",
-      "ai_summary": "O MyGreenhouse é uma plataforma que ajuda na busca de empregos, autocompletando candidaturas e enviando novas oportunidades por e-mail.",
+      "rss_mib": 81.04296875,
+      "first_seen": "2026-10-24T16:22:59Z",
+      "ai_summary": "O MyGreenhouse é uma plataforma que ajuda na busca de empregos, autocompletando aplicações e enviando novas oportunidades por e-mail.",
       "ai_provider": "stop"
     },
     {
@@ -43967,23 +43984,6 @@
       "first_seen": "2026-10-24T04:48:47Z",
       "ai_summary": "Esta é uma página de formulário de pesquisa online hospedada no Qualtrics, vinculada à Harvard, usada para coletar respostas de participantes. O site oferece a infraestrutura da Qualtrics para criar, distribuir e responder a pesquisas.",
       "ai_provider": "stop"
-    },
-    {
-      "id": 4639,
-      "domain": "eepurl.com",
-      "category": "Documentações \u0026 Web Aberta",
-      "url": "http://eepurl.com/yFXIe8bfTe",
-      "title": "Cybersecurity Awareness Month; AI tools and features",
-      "status_code": 200,
-      "duration_ms": 984,
-      "raw_bytes": 76667,
-      "markdown_bytes": 20578,
-      "cso_bytes": 8582,
-      "token_reduction_pct": 73.15924713370812,
-      "cso_token_reduction_pct": 58.29526678977549,
-      "interactive_elements": 109,
-      "rss_mib": 75.2109375,
-      "first_seen": "2026-10-24T08:31:23Z"
     }
   ]
 }
