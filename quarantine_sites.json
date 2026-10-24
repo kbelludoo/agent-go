@@ -1,51 +1,7 @@
 {
-  "last_updated": "2026-10-24T00:28:40Z",
-  "total_quarantine": 106,
+  "last_updated": "2026-10-24T00:29:43Z",
+  "total_quarantine": 107,
   "quarantine_sites": [
-    {
-      "id": 34,
-      "domain": "www.reuters.com",
-      "url": "https://www.reuters.com/world/asia-pacific/eu-agency-warns-websites-may-need-be-taken-offline-php-prepares-patches-2026-10-21/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T13:58:46Z",
-      "last_seen": "2026-10-23T13:58:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 19,
-      "domain": "www.bloomberg.com",
-      "url": "https://www.bloomberg.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:16:10Z",
-      "last_seen": "2026-10-23T13:16:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 10,
-      "domain": "pt.wikipedia.org",
-      "url": "https://pt.wikipedia.org/wiki/Sa%C3%BA",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:04:58Z",
-      "last_seen": "2026-10-24T00:11:53Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 87,
-      "domain": "content.digitalpublicgoods.net",
-      "url": "https://content.digitalpublicgoods.net/2025-DPG-Ecosystem-Report.pdf",
-      "status_code": 504,
-      "error_message": "failed to parse HTML: html: open stack of elements exceeds 512 nodes",
-      "first_seen": "2026-10-23T17:49:23Z",
-      "last_seen": "2026-10-23T17:49:23Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to parse HTML: html: open stack of elements exceeds 512 nodes. Sugestão: Verificar rota de egress e resolução DNS."
-    },
     {
       "id": 33,
       "domain": "home.web.cern.ch",
@@ -232,6 +188,17 @@
       "last_seen": "2026-10-23T23:27:09Z",
       "attempts": 6,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 107,
+      "domain": "spmaisdigital.sp.gov.br",
+      "url": "https://spmaisdigital.sp.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://spmaisdigital.sp.gov.br: Get \"https://spmaisdigital.sp.gov.br\": dial tcp4: lookup spmaisdigital.sp.gov.br on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-24T00:28:59Z",
+      "last_seen": "2026-10-24T00:29:22Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://spmaisdigital.sp.gov.br: Get \"https://spmaisdigital.sp.gov.br\": dial tcp4: lookup spmaisdigital.sp.gov.br on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
     },
     {
       "id": 97,
@@ -1167,6 +1134,50 @@
       "last_seen": "2026-10-23T23:31:21Z",
       "attempts": 2,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 34,
+      "domain": "www.reuters.com",
+      "url": "https://www.reuters.com/world/asia-pacific/eu-agency-warns-websites-may-need-be-taken-offline-php-prepares-patches-2026-10-21/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T13:58:46Z",
+      "last_seen": "2026-10-23T13:58:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 19,
+      "domain": "www.bloomberg.com",
+      "url": "https://www.bloomberg.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:16:10Z",
+      "last_seen": "2026-10-23T13:16:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 10,
+      "domain": "pt.wikipedia.org",
+      "url": "https://pt.wikipedia.org/wiki/Sa%C3%BA",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:04:58Z",
+      "last_seen": "2026-10-24T00:11:53Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 87,
+      "domain": "content.digitalpublicgoods.net",
+      "url": "https://content.digitalpublicgoods.net/2025-DPG-Ecosystem-Report.pdf",
+      "status_code": 504,
+      "error_message": "failed to parse HTML: html: open stack of elements exceeds 512 nodes",
+      "first_seen": "2026-10-23T17:49:23Z",
+      "last_seen": "2026-10-23T17:49:23Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to parse HTML: html: open stack of elements exceeds 512 nodes. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
