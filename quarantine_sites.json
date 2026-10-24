@@ -1,18 +1,7 @@
 {
-  "last_updated": "2026-10-24T17:17:49Z",
+  "last_updated": "2026-10-24T17:18:47Z",
   "total_quarantine": 130,
   "quarantine_sites": [
-    {
-      "id": 102,
-      "domain": "shop.fsf.org",
-      "url": "http://shop.fsf.org/",
-      "status_code": 503,
-      "error_message": "HTTP 503",
-      "first_seen": "2026-10-23T19:57:58Z",
-      "last_seen": "2026-10-23T22:55:41Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
     {
       "id": 111,
       "domain": "www.linkedin.com",
@@ -1431,6 +1420,17 @@
       "last_seen": "2026-10-23T12:46:22Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 102,
+      "domain": "shop.fsf.org",
+      "url": "http://shop.fsf.org/",
+      "status_code": 503,
+      "error_message": "HTTP 503",
+      "first_seen": "2026-10-23T19:57:58Z",
+      "last_seen": "2026-10-23T22:55:41Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
     }
   ]
 }
