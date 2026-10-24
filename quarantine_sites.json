@@ -1,7 +1,29 @@
 {
-  "last_updated": "2026-10-24T13:50:39Z",
+  "last_updated": "2026-10-24T13:51:38Z",
   "total_quarantine": 129,
   "quarantine_sites": [
+    {
+      "id": 68,
+      "domain": "service.elsevier.com",
+      "url": "https://service.elsevier.com/app/contact/supporthub/sciencedirect/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T16:11:24Z",
+      "last_seen": "2026-10-23T22:59:58Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 113,
+      "domain": "codeberg.org",
+      "url": "https://codeberg.org/kytta/toot",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T21:37:34Z",
+      "last_seen": "2026-10-23T21:37:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 61,
       "domain": "support.x.com",
@@ -1398,28 +1420,6 @@
       "last_seen": "2026-10-23T16:49:33Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 68,
-      "domain": "service.elsevier.com",
-      "url": "https://service.elsevier.com/app/contact/supporthub/sciencedirect/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T16:11:24Z",
-      "last_seen": "2026-10-23T22:59:58Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 113,
-      "domain": "codeberg.org",
-      "url": "https://codeberg.org/kytta/toot",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T21:37:34Z",
-      "last_seen": "2026-10-23T21:37:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
