@@ -14,6 +14,7 @@ import (
 	"time"
 
 	"ai-go-browser/browser"
+	"ai-go-browser/pkg/memory"
 )
 
 // Session manages a browser session with persistent cookies, history, and state.
@@ -24,6 +25,7 @@ type Session struct {
 	History   []string
 	UserAgent string
 	Timeout   time.Duration
+	Memory    *memory.Engine
 }
 
 // NewSession creates an isolated browser session backed by the ai-go-browser uTLS engine.
@@ -40,6 +42,27 @@ func NewSession() *Session {
 		Timeout:   25 * time.Second,
 		History:   []string{},
 	}
+}
+
+// WithMemory attaches a persistent cognitive memory engine to the session and its transport.
+func (s *Session) WithMemory(m *memory.Engine) *Session {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	s.Memory = m
+	if st, ok := s.client.Transport.(*browser.SafeTransport); ok {
+		st.WithMemory(m)
+	}
+	return s
+}
+
+// SearchMemory searches through previously visited web pages using BM25 ranking (zero-network).
+func (s *Session) SearchMemory(query string, limit int) ([]memory.PageRecord, error) {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	if s.Memory == nil {
+		return nil, fmt.Errorf("memory engine not initialized")
+	}
+	return s.Memory.SearchVisitedPages(query, limit)
 }
 
 // Navigate opens the specified URL, updates cookies, and parses the new PageSnapshot.
@@ -176,6 +199,11 @@ func (s *Session) Navigate(ctx context.Context, destURL string) (*PageSnapshot, 
 
 	s.Current = snapshot
 	s.History = append(s.History, finalURL)
+
+	if s.Memory != nil && snapshot != nil {
+		_ = s.Memory.RecordVisit(finalURL, snapshot.Title, snapshot.CleanText, snapshot.StatusCode)
+	}
+
 	return snapshot, nil
 }
 

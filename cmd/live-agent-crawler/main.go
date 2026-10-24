@@ -21,6 +21,7 @@ import (
 	"time"
 
 	"ai-go-browser/browser"
+	"ai-go-browser/pkg/memory"
 	"ai-go-browser/pkg/search"
 	"github.com/kbelludoo/agent-go/pkg/agent"
 	"github.com/kbelludoo/agent-go/pkg/navigator"
@@ -76,6 +77,8 @@ type TelemetryPayload struct {
 	BytesSaved            int64                `json:"bytes_saved"`
 	CurrentRSSMiB         float64              `json:"current_rss_mib"`
 	ChromiumRAMEstimate   string               `json:"chromium_ram_estimate"`
+	CognitiveMemoryActive bool                 `json:"cognitive_memory_active"`
+	CognitiveMemoryDB     string               `json:"cognitive_memory_db,omitempty"`
 	RecentVisits          []DistinctSiteRecord `json:"recent_visits"`
 }
 
@@ -264,6 +267,7 @@ func main() {
 	distinctJSON := flag.String("distinct-output", "docs/distinct_sites.json", "Path to save distinct sites catalog")
 	quarantineJSON := flag.String("quarantine-output", "docs/quarantine_sites.json", "Path to save quarantined failed sites for browser self-healing research")
 	seedFile := flag.String("seed", "data/distinct_seed_sites.txt", "Path to text file containing seed URLs")
+	memoryDB := flag.String("memory-db", "data/browser_memory.db", "Path to SQLite persistent cognitive memory database")
 	intervalSec := flag.Int("interval", 12, "Seconds between autonomous site visits")
 	gitPushInterval := flag.Int("git-interval", 0, "Minutes between internal git commit/push (0 = managed by systemd timer)")
 	flag.Parse()
@@ -275,8 +279,16 @@ func main() {
 	// Ensure directories exist
 	_ = os.MkdirAll(filepath.Dir(*outputJSON), 0755)
 	_ = os.MkdirAll(filepath.Dir(*distinctJSON), 0755)
+	_ = os.MkdirAll(filepath.Dir(*memoryDB), 0755)
 
 	session := navigator.NewSession()
+	memEngine, err := memory.NewEngine(*memoryDB)
+	if err != nil {
+		log.Printf("⚠️ Erro ao iniciar Cognitive Memory Engine em %s: %v", *memoryDB, err)
+	} else {
+		session.WithMemory(memEngine)
+		log.Printf("🧠 [Cognitive Memory] Browser Playbooks & FTS5 ativados em %s", *memoryDB)
+	}
 	llmClient := agent.NewLLMClient("", "", "")
 	log.Printf("🤖 Agent-Go LLM Cascade inicializado com %d provedor(es) de IA configurado(s)", len(llmClient.Providers))
 
@@ -446,6 +458,8 @@ func main() {
 			BytesSaved:           totalRaw - totalMD,
 			CurrentRSSMiB:        curRSS,
 			ChromiumRAMEstimate:  "900 - 1400 MB (Causaria OOM Kill nesta VPS de 1GB)",
+			CognitiveMemoryActive: memEngine != nil,
+			CognitiveMemoryDB:    *memoryDB,
 			RecentVisits:         recentCopy,
 		}
 	}
@@ -541,6 +555,27 @@ func main() {
 			_ = json.NewEncoder(w).Encode(map[string]any{
 				"total": len(qList),
 				"sites": qList,
+			})
+		})
+
+		mux.HandleFunc("/api/memory/search", func(w http.ResponseWriter, r *http.Request) {
+			w.Header().Set("Access-Control-Allow-Origin", "*")
+			w.Header().Set("Content-Type", "application/json")
+			query := r.URL.Query().Get("q")
+			if query == "" {
+				_ = json.NewEncoder(w).Encode(map[string]any{"total": 0, "hits": []any{}})
+				return
+			}
+			hits, err := session.SearchMemory(query, 10)
+			if err != nil {
+				w.WriteHeader(http.StatusInternalServerError)
+				_ = json.NewEncoder(w).Encode(map[string]string{"error": err.Error()})
+				return
+			}
+			_ = json.NewEncoder(w).Encode(map[string]any{
+				"query": query,
+				"total": len(hits),
+				"hits":  hits,
 			})
 		})
 
