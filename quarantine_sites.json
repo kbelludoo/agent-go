@@ -1,84 +1,7 @@
 {
-  "last_updated": "2026-10-24T18:09:36Z",
+  "last_updated": "2026-10-24T18:10:36Z",
   "total_quarantine": 133,
   "quarantine_sites": [
-    {
-      "id": 38,
-      "domain": "www.sciencedirect.com",
-      "url": "https://www.sciencedirect.com/user/institution/login?targetURL=%2F",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:31:46Z",
-      "last_seen": "2026-10-23T14:31:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 6,
-      "domain": "producthunt.com",
-      "url": "https://producthunt.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:02:57Z",
-      "last_seen": "2026-10-23T13:02:57Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 110,
-      "domain": "www.podiobooks.com",
-      "url": "http://www.podiobooks.com/podiobooks/book.php?ID=126",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T20:37:46Z",
-      "last_seen": "2026-10-23T20:37:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 109,
-      "domain": "www.etsy.com",
-      "url": "https://www.etsy.com/your/account/privacy",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T23:19:21Z",
-      "last_seen": "2026-10-23T23:27:09Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 117,
-      "domain": "app.slack.com",
-      "url": "https://app.slack.com/block-kit-builder/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:46:47Z",
-      "last_seen": "2026-10-24T00:49:47Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 121,
-      "domain": "ldcnetwork.hsites.harvard.edu",
-      "url": "https://ldcnetwork.hsites.harvard.edu/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:57:24Z",
-      "last_seen": "2026-10-24T01:00:23Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 122,
-      "domain": "www.security.harvard.edu",
-      "url": "https://www.security.harvard.edu/privacy-policy",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T02:18:23Z",
-      "last_seen": "2026-10-24T03:39:59Z",
-      "attempts": 16,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 51,
       "domain": "www.ft.com",
@@ -1464,6 +1387,83 @@
       "last_seen": "2026-10-23T22:56:55Z",
       "attempts": 2,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL https://webservices.esa.int/blog/blog/5: Get \"https://webservices.esa.int/blog/blog/5\": dial tcp4: lookup webservices.esa.int on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 38,
+      "domain": "www.sciencedirect.com",
+      "url": "https://www.sciencedirect.com/user/institution/login?targetURL=%2F",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:31:46Z",
+      "last_seen": "2026-10-23T14:31:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 6,
+      "domain": "producthunt.com",
+      "url": "https://producthunt.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:02:57Z",
+      "last_seen": "2026-10-23T13:02:57Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 110,
+      "domain": "www.podiobooks.com",
+      "url": "http://www.podiobooks.com/podiobooks/book.php?ID=126",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T20:37:46Z",
+      "last_seen": "2026-10-23T20:37:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 109,
+      "domain": "www.etsy.com",
+      "url": "https://www.etsy.com/your/account/privacy",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T23:19:21Z",
+      "last_seen": "2026-10-23T23:27:09Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 117,
+      "domain": "app.slack.com",
+      "url": "https://app.slack.com/block-kit-builder/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:46:47Z",
+      "last_seen": "2026-10-24T00:49:47Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 121,
+      "domain": "ldcnetwork.hsites.harvard.edu",
+      "url": "https://ldcnetwork.hsites.harvard.edu/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:57:24Z",
+      "last_seen": "2026-10-24T01:00:23Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 122,
+      "domain": "www.security.harvard.edu",
+      "url": "https://www.security.harvard.edu/privacy-policy",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T02:18:23Z",
+      "last_seen": "2026-10-24T03:39:59Z",
+      "attempts": 16,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
