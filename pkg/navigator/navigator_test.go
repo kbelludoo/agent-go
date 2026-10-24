@@ -123,3 +123,53 @@ func TestSnapshotAndSession(t *testing.T) {
 	t.Logf("Autonomous Navigation Completed!\nSteps: %d\nFinal Answer: %s\nTrajectory:\n%s",
 		res.StepsTaken, res.FinalAnswer, strings.Join(res.Trajectory, "\n"))
 }
+
+func TestPageSnapshotMBVMDBComparison(t *testing.T) {
+	htmlSample := `<!DOCTYPE html>
+<html>
+<head><title>E-Commerce Portal Checkout</title></head>
+<body>
+	<header><nav><a href="/">Home</a><a href="/deals">Deals</a><a href="/support">Help</a></nav></header>
+	<main>
+		<h1>Finalizar Pedido</h1>
+		<p>Revise os detalhes da sua compra e insira suas informações de pagamento.</p>
+		<form id="checkout_form" action="/pay" method="POST">
+			<input type="text" name="card_number" placeholder="Número do Cartão" id="cardNum">
+			<input type="text" name="expiry" placeholder="MM/AA" id="exp">
+			<input type="password" name="cvv" placeholder="CVV" id="cvv">
+			<button type="submit" id="btnPay">Confirmar Pagamento</button>
+		</form>
+		<section id="policy">
+			<h3>Políticas de Devolução</h3>
+			<p>Garantia de 30 dias para devolução total do dinheiro.</p>
+		</section>
+	</main>
+	<footer><a href="/privacy">Privacidade</a><a href="/terms">Termos</a><a href="/contact">Contato</a></footer>
+</body>
+</html>`
+
+	snap, err := ParseHTML("https://loja.exemplo.com/checkout", 200, strings.NewReader(htmlSample))
+	if err != nil {
+		t.Fatalf("ParseHTML failed: %v", err)
+	}
+
+	rawTokens := len(htmlSample) / 4
+	mdTokens := len(snap.RenderLLMSnapshot(40)) / 4
+	mbvmSlice := snap.SlicedPrompt("checkout", 150)
+	mbvmTokens := len(mbvmSlice) / 4
+
+	t.Logf("═════════════════════════════════════════════════════════════════════════════")
+	t.Logf("⚡ [BENCHMARK EMPÍRICO REAL] HTML vs. LLM SNAPSHOT vs. MBVM-DB SLICE")
+	t.Logf("═════════════════════════════════════════════════════════════════════════════")
+	t.Logf("📄 1. HTML BRUTO:              %d bytes (~%d tokens)", len(htmlSample), rawTokens)
+	t.Logf("📄 2. SNAPSHOT LLM CONVENCIONAL: %d bytes (~%d tokens)", len(snap.RenderLLMSnapshot(40)), mdTokens)
+	t.Logf("⚡ 3. MBVM-DB BYTECODE (DISCO): %d bytes", len(snap.MBVMDBBytes))
+	t.Logf("🎯 4. MBVM-DB SLICE (PROMPT IA): %d bytes (~%d tokens) -> -%.1f%% tokens vs Snapshot!",
+		len(mbvmSlice), mbvmTokens, (1.0-float64(mbvmTokens)/float64(mdTokens))*100)
+	t.Logf("Projeção Entregue à IA:\n%s", mbvmSlice)
+	t.Logf("═════════════════════════════════════════════════════════════════════════════")
+
+	if mbvmTokens >= mdTokens {
+		t.Fatalf("esperava mbvmTokens (%d) < mdTokens (%d)", mbvmTokens, mdTokens)
+	}
+}

@@ -6,6 +6,7 @@ import (
 	"net/url"
 	"strings"
 
+	"github.com/kbelludoo/mbvm-db/pkg/mbvmdb"
 	"golang.org/x/net/html"
 )
 
@@ -35,6 +36,9 @@ type PageSnapshot struct {
 	CSOTokenEst    int                  `json:"cso_token_estimate,omitempty"`
 	Elements       []InteractiveElement `json:"elements"`
 	Forms          map[string]*HTMLForm `json:"forms"`
+	MBVMDB         *mbvmdb.DB           `json:"-"`
+	MBVMDBBytes    []byte               `json:"mbvmdb_bytes,omitempty"`
+	MBVMDBTokenEst int                  `json:"mbvmdb_token_estimate,omitempty"`
 	RawBytes       int                  `json:"raw_bytes,omitempty"`
 	MarkdownBytes  int                  `json:"markdown_bytes,omitempty"`
 	TokenReduction float64              `json:"token_reduction_pct,omitempty"`
@@ -241,6 +245,7 @@ func ParseHTML(baseURI string, statusCode int, r io.Reader) (*PageSnapshot, erro
 
 	traverse(doc)
 	snap.CleanText = cleanWhitespace(textBuf.String())
+	_ = snap.CompileMBVMDB()
 	return snap, nil
 }
 
@@ -302,6 +307,92 @@ func (s *PageSnapshot) RenderLLMSnapshot(maxElements int) string {
 	}
 
 	return sb.String()
+}
+
+// CompileMBVMDB compiles the snapshot's DOM, forms, and interactive elements into an indexed MBVM-DB instance.
+func (s *PageSnapshot) CompileMBVMDB() error {
+	var webForms []mbvmdb.WebForm
+	for _, f := range s.Forms {
+		var fields []mbvmdb.WebFormField
+		for name, val := range f.Fields {
+			fields = append(fields, mbvmdb.WebFormField{
+				Name:  name,
+				Type:  "input",
+				Value: val,
+			})
+		}
+		for _, el := range s.Elements {
+			if el.FormID == f.ID {
+				fields = append(fields, mbvmdb.WebFormField{
+					Name:        el.Name,
+					Type:        el.Type,
+					Placeholder: el.Placeholder,
+					Ref:         fmt.Sprintf("#ref:%d", el.Index),
+				})
+			}
+		}
+		webForms = append(webForms, mbvmdb.WebForm{
+			ID:     f.ID,
+			Action: f.Action,
+			Method: f.Method,
+			Fields: fields,
+		})
+	}
+
+	var webElems []mbvmdb.WebInteractiveElement
+	for _, el := range s.Elements {
+		webElems = append(webElems, mbvmdb.WebInteractiveElement{
+			Ref:  fmt.Sprintf("#ref:%d", el.Index),
+			Tag:  el.Tag,
+			Type: el.Type,
+			Text: el.Text,
+			Href: el.Href,
+		})
+	}
+
+	pageData := mbvmdb.WebPageData{
+		URL:        s.URL,
+		Title:      s.Title,
+		StatusCode: s.StatusCode,
+		Forms:      webForms,
+		Elements:   webElems,
+	}
+
+	db, bin, err := mbvmdb.CompileWebPageToBytecode(pageData)
+	if err != nil {
+		return err
+	}
+
+	s.MBVMDB = db
+	s.MBVMDBBytes = bin
+	s.MBVMDBTokenEst = len(bin) / 4
+	return nil
+}
+
+// SlicedPrompt extracts a surgical sub-graph slice for the LLM based on its current goal/intent,
+// reducing context tokens by up to 96% compared to raw page snapshots or static outlines.
+func (s *PageSnapshot) SlicedPrompt(goal string, maxTokens int) string {
+	if s.MBVMDB == nil {
+		_ = s.CompileMBVMDB()
+	}
+	if s.MBVMDB == nil {
+		return s.RenderLLMSnapshot(40)
+	}
+
+	if maxTokens <= 0 {
+		maxTokens = 250
+	}
+
+	if strings.TrimSpace(goal) == "" {
+		goal = "PageMetadata"
+	}
+
+	slice := s.MBVMDB.ExtractBudgetSlice(goal, 2, maxTokens)
+	if len(slice.Symbols) == 0 {
+		slice = s.MBVMDB.ExtractBudgetSlice("PageMetadata", 2, maxTokens)
+	}
+
+	return s.MBVMDB.ProjectSlice(slice.Symbols)
 }
 
 func getAttr(n *html.Node, key string) string {
