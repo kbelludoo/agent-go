@@ -1,40 +1,7 @@
 {
-  "last_updated": "2026-10-24T23:32:15Z",
+  "last_updated": "2026-10-24T23:33:25Z",
   "total_quarantine": 173,
   "quarantine_sites": [
-    {
-      "id": 117,
-      "domain": "cybersecuritynews.com",
-      "url": "https://cybersecuritynews.com/popular-zero-day-vulnerabilities/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T22:38:28Z",
-      "last_seen": "2026-10-23T22:38:28Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 112,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/jodybailey/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T21:16:22Z",
-      "last_seen": "2026-10-23T21:17:22Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 110,
-      "domain": "blog.coursera.org",
-      "url": "https://blog.coursera.org/coursera-and-udemy-are-now-one-company-creating-the-worlds-most-comprehensive-skills-platform/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T23:24:21Z",
-      "last_seen": "2026-10-23T23:25:09Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 94,
       "domain": "tsc.worldwildlife.org",
@@ -1904,6 +1871,39 @@
       "last_seen": "2026-10-24T21:55:35Z",
       "attempts": 1,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 117,
+      "domain": "cybersecuritynews.com",
+      "url": "https://cybersecuritynews.com/popular-zero-day-vulnerabilities/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T22:38:28Z",
+      "last_seen": "2026-10-23T22:38:28Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 112,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/jodybailey/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T21:16:22Z",
+      "last_seen": "2026-10-23T21:17:22Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 110,
+      "domain": "blog.coursera.org",
+      "url": "https://blog.coursera.org/coursera-and-udemy-are-now-one-company-creating-the-worlds-most-comprehensive-skills-platform/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T23:24:21Z",
+      "last_seen": "2026-10-23T23:25:09Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
