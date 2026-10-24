@@ -1,84 +1,7 @@
 {
-  "last_updated": "2026-10-24T19:01:12Z",
+  "last_updated": "2026-10-24T19:02:25Z",
   "total_quarantine": 144,
   "quarantine_sites": [
-    {
-      "id": 62,
-      "domain": "help.x.com",
-      "url": "https://help.x.com/resources/accessibility",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:51:09Z",
-      "last_seen": "2026-10-23T17:09:57Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 77,
-      "domain": "cern.ch",
-      "url": "https://cern.ch/scientists",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T17:13:13Z",
-      "last_seen": "2026-10-23T17:13:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 81,
-      "domain": "speakerdex.co",
-      "url": "https://speakerdex.co/marcel",
-      "status_code": 436,
-      "error_message": "HTTP 436",
-      "first_seen": "2026-10-23T17:30:13Z",
-      "last_seen": "2026-10-23T17:30:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 436 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 76,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/TR/sparql11-query/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T16:49:45Z",
-      "last_seen": "2026-10-23T17:46:22Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 25,
-      "domain": "www.reddit.com",
-      "url": "https://www.reddit.com/r/brasil",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:24:33Z",
-      "last_seen": "2026-10-23T13:24:33Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 63,
-      "domain": "www.efc.ca",
-      "url": "http://www.efc.ca/pages/doc/crypto-export.html",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.efc.ca/pages/doc/crypto-export.html: Get \"http://www.efc.ca/pages/doc/crypto-export.html\": dial tcp4: lookup www.efc.ca on 127.0.0.53:53: server misbehaving",
-      "first_seen": "2026-10-23T15:54:48Z",
-      "last_seen": "2026-10-23T22:58:24Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.efc.ca/pages/doc/crypto-export.html: Get \"http://www.efc.ca/pages/doc/crypto-export.html\": dial tcp4: lookup www.efc.ca on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 143,
-      "domain": "twitter.com",
-      "url": "https://twitter.com/intent/tweet?url=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026status=Cosmic Pathways+https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-24T18:52:46Z",
-      "last_seen": "2026-10-24T18:52:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 41,
       "domain": "www.hashicorp.com",
@@ -1583,6 +1506,83 @@
       "error_message": "HTTP 400",
       "first_seen": "2026-10-23T19:19:57Z",
       "last_seen": "2026-10-23T19:19:57Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 62,
+      "domain": "help.x.com",
+      "url": "https://help.x.com/resources/accessibility",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:51:09Z",
+      "last_seen": "2026-10-23T17:09:57Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 77,
+      "domain": "cern.ch",
+      "url": "https://cern.ch/scientists",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T17:13:13Z",
+      "last_seen": "2026-10-23T17:13:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 81,
+      "domain": "speakerdex.co",
+      "url": "https://speakerdex.co/marcel",
+      "status_code": 436,
+      "error_message": "HTTP 436",
+      "first_seen": "2026-10-23T17:30:13Z",
+      "last_seen": "2026-10-23T17:30:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 436 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 76,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/TR/sparql11-query/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T16:49:45Z",
+      "last_seen": "2026-10-23T17:46:22Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 25,
+      "domain": "www.reddit.com",
+      "url": "https://www.reddit.com/r/brasil",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:24:33Z",
+      "last_seen": "2026-10-23T13:24:33Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 63,
+      "domain": "www.efc.ca",
+      "url": "http://www.efc.ca/pages/doc/crypto-export.html",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.efc.ca/pages/doc/crypto-export.html: Get \"http://www.efc.ca/pages/doc/crypto-export.html\": dial tcp4: lookup www.efc.ca on 127.0.0.53:53: server misbehaving",
+      "first_seen": "2026-10-23T15:54:48Z",
+      "last_seen": "2026-10-23T22:58:24Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.efc.ca/pages/doc/crypto-export.html: Get \"http://www.efc.ca/pages/doc/crypto-export.html\": dial tcp4: lookup www.efc.ca on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 143,
+      "domain": "twitter.com",
+      "url": "https://twitter.com/intent/tweet?url=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026status=Cosmic Pathways+https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-24T18:52:46Z",
+      "last_seen": "2026-10-24T18:52:46Z",
       "attempts": 1,
       "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
