@@ -1,62 +1,7 @@
 {
-  "last_updated": "2026-10-24T13:30:15Z",
-  "total_quarantine": 129,
+  "last_updated": "2026-10-24T13:31:15Z",
+  "total_quarantine": 128,
   "quarantine_sites": [
-    {
-      "id": 53,
-      "domain": "getbootstrap.com",
-      "url": "https://getbootstrap.com/docs/6.0/getting-started/introduction/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T15:20:58Z",
-      "last_seen": "2026-10-23T22:56:03Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 31,
-      "domain": "trust.grafana.com",
-      "url": "https://trust.grafana.com/?pg=hp\u0026plcmt=secure-compliant-proven-button",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:47:58Z",
-      "last_seen": "2026-10-23T22:59:44Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 20,
-      "domain": "www.engadget.com",
-      "url": "https://www.engadget.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:17:33Z",
-      "last_seen": "2026-10-23T13:17:33Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 47,
-      "domain": "brasil.gov.br",
-      "url": "https://brasil.gov.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z",
-      "first_seen": "2026-10-23T15:00:09Z",
-      "last_seen": "2026-10-23T15:00:09Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 88,
-      "domain": "lp.suno.com.br",
-      "url": "https://lp.suno.com.br/suno-mentoria-de-sucesso/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://lp.suno.com.br/suno-mentoria-de-sucesso/: Get \"https://lp.suno.com.br/suno-mentoria-de-sucesso/\": context deadline exceeded",
-      "first_seen": "2026-10-23T17:57:33Z",
-      "last_seen": "2026-10-23T22:59:20Z",
-      "attempts": 3,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
     {
       "id": 83,
       "domain": "community.kde.org",
@@ -1367,17 +1312,6 @@
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
-      "id": 129,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/nielsen-norman-group",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T13:19:59Z",
-      "last_seen": "2026-10-24T13:29:47Z",
-      "attempts": 8,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
       "id": 15,
       "domain": "specs.openstack.org",
       "url": "https://specs.openstack.org/",
@@ -1420,6 +1354,61 @@
       "last_seen": "2026-10-24T04:48:23Z",
       "attempts": 9,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 53,
+      "domain": "getbootstrap.com",
+      "url": "https://getbootstrap.com/docs/6.0/getting-started/introduction/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T15:20:58Z",
+      "last_seen": "2026-10-23T22:56:03Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 31,
+      "domain": "trust.grafana.com",
+      "url": "https://trust.grafana.com/?pg=hp\u0026plcmt=secure-compliant-proven-button",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:47:58Z",
+      "last_seen": "2026-10-23T22:59:44Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 20,
+      "domain": "www.engadget.com",
+      "url": "https://www.engadget.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:17:33Z",
+      "last_seen": "2026-10-23T13:17:33Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 47,
+      "domain": "brasil.gov.br",
+      "url": "https://brasil.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z",
+      "first_seen": "2026-10-23T15:00:09Z",
+      "last_seen": "2026-10-23T15:00:09Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 88,
+      "domain": "lp.suno.com.br",
+      "url": "https://lp.suno.com.br/suno-mentoria-de-sucesso/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://lp.suno.com.br/suno-mentoria-de-sucesso/: Get \"https://lp.suno.com.br/suno-mentoria-de-sucesso/\": context deadline exceeded",
+      "first_seen": "2026-10-23T17:57:33Z",
+      "last_seen": "2026-10-23T22:59:20Z",
+      "attempts": 3,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     }
   ]
 }
