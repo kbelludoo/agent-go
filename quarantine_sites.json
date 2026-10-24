@@ -1,18 +1,7 @@
 {
-  "last_updated": "2026-10-24T04:46:11Z",
+  "last_updated": "2026-10-24T04:47:23Z",
   "total_quarantine": 125,
   "quarantine_sites": [
-    {
-      "id": 124,
-      "domain": "www.legacy.com",
-      "url": "https://www.legacy.com/us/obituaries/bostonglobe/browse",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T03:59:59Z",
-      "last_seen": "2026-10-24T04:46:10Z",
-      "attempts": 15,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 117,
       "domain": "cybersecuritynews.com",
@@ -152,8 +141,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-24T04:00:23Z",
-      "last_seen": "2026-10-24T04:44:47Z",
-      "attempts": 7,
+      "last_seen": "2026-10-24T04:46:35Z",
+      "attempts": 8,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -1376,6 +1365,17 @@
       "last_seen": "2026-10-24T00:30:04Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 124,
+      "domain": "www.legacy.com",
+      "url": "https://www.legacy.com/us/obituaries/bostonglobe/browse",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T03:59:59Z",
+      "last_seen": "2026-10-24T04:47:22Z",
+      "attempts": 16,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
