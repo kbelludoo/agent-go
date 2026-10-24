@@ -1,7 +1,18 @@
 {
-  "last_updated": "2026-10-24T05:12:50Z",
+  "last_updated": "2026-10-24T05:13:50Z",
   "total_quarantine": 125,
   "quarantine_sites": [
+    {
+      "id": 110,
+      "domain": "www.podiobooks.com",
+      "url": "http://www.podiobooks.com/podiobooks/book.php?ID=126",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T20:37:46Z",
+      "last_seen": "2026-10-23T20:37:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 109,
       "domain": "www.etsy.com",
@@ -1365,17 +1376,6 @@
       "last_seen": "2026-10-23T13:02:57Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 110,
-      "domain": "www.podiobooks.com",
-      "url": "http://www.podiobooks.com/podiobooks/book.php?ID=126",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T20:37:46Z",
-      "last_seen": "2026-10-23T20:37:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
