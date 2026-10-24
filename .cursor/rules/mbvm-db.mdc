@@ -1,0 +1,19 @@
+---
+description: Mandatory MBVM-DB Smart Slicing rule for ultra-low token consumption
+globs: **/*.go, **/*.mbvm
+---
+
+# MBVM-DB Smart Slicing Rule
+
+1. **PROIBIDO LER ARQUIVOS GO BRUTOS ANTES DO SLICE:**
+   Antes de abrir múltiplos arquivos `.go` ou inspecionar funções, execute no terminal:
+   ```bash
+   mbvm-db slice . <SymbolName> [depth]
+   ```
+   Exemplo:
+   `mbvm-db slice . Store 2`
+   Retorna apenas o subgrafo exato da struct, métodos e chamadas conectadas com **~200 tokens (99.5% de economia)**.
+
+2. **INSPEÇÃO GLOBAL RÁPIDA:**
+   `mbvm-db inspect .`
+   Verifica quantos arquivos e símbolos estão compilados no micro-bytecode.

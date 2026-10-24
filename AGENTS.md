@@ -20,5 +20,6 @@ Ou via ferramenta MCP `hindsight_retain(bank="agent", type="lesson", subject="..
 
 ### 3. Diretrizes Ativas no Banco `agent`:
 - **Preferência:** Sempre priorizar ferramentas em Go puro sem CGO ou Python/Node.js adicionais.
+- **MBVM-DB Smart Slicing:** Antes de inspecionar ou alterar código, use mbvm-db slice . <Symbol> [depth] para obter apenas o subgrafo de dependências (~200 tokens, 99.5% de economia) em vez de ler arquivos brutos.
 - **Lição VPS:** Na VPS Oracle, compilações Go devem definir `export GOTMPDIR=/home/ubuntu/tmp` para não esgotar o disco em memória `tmpfs` (/tmp).
 - **Monitoramento:** A frota possui 15 bots em produção (portas 3000-3015 e 8090) e deve ser verificada via `go-tools bots 127.0.0.1`.
