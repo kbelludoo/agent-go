@@ -1,29 +1,7 @@
 {
-  "last_updated": "2026-10-24T06:25:51Z",
+  "last_updated": "2026-10-24T06:26:50Z",
   "total_quarantine": 125,
   "quarantine_sites": [
-    {
-      "id": 87,
-      "domain": "content.digitalpublicgoods.net",
-      "url": "https://content.digitalpublicgoods.net/2025-DPG-Ecosystem-Report.pdf",
-      "status_code": 504,
-      "error_message": "failed to parse HTML: html: open stack of elements exceeds 512 nodes",
-      "first_seen": "2026-10-23T17:49:23Z",
-      "last_seen": "2026-10-23T17:49:23Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to parse HTML: html: open stack of elements exceeds 512 nodes. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 115,
-      "domain": "key.accessibility.harvard.edu",
-      "url": "https://key.accessibility.harvard.edu/get-involved",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:43:12Z",
-      "last_seen": "2026-10-24T00:45:12Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 66,
       "domain": "medicalxpress.com",
@@ -1376,6 +1354,28 @@
       "last_seen": "2026-10-24T00:29:52Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 87,
+      "domain": "content.digitalpublicgoods.net",
+      "url": "https://content.digitalpublicgoods.net/2025-DPG-Ecosystem-Report.pdf",
+      "status_code": 504,
+      "error_message": "failed to parse HTML: html: open stack of elements exceeds 512 nodes",
+      "first_seen": "2026-10-23T17:49:23Z",
+      "last_seen": "2026-10-23T17:49:23Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to parse HTML: html: open stack of elements exceeds 512 nodes. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 115,
+      "domain": "key.accessibility.harvard.edu",
+      "url": "https://key.accessibility.harvard.edu/get-involved",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:43:12Z",
+      "last_seen": "2026-10-24T00:45:12Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
