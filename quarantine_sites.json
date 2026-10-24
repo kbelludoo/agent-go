@@ -1,7 +1,29 @@
 {
-  "last_updated": "2026-10-24T00:38:51Z",
+  "last_updated": "2026-10-24T00:39:50Z",
   "total_quarantine": 111,
   "quarantine_sites": [
+    {
+      "id": 24,
+      "domain": "www.nytimes.com",
+      "url": "https://www.nytimes.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:23:22Z",
+      "last_seen": "2026-10-24T00:12:18Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 101,
+      "domain": "ds.tl",
+      "url": "http://ds.tl/help-third-party-plugins",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://ds.tl/help-third-party-plugins: Get \"http://ds.tl/help-third-party-plugins\": dial tcp4: lookup ds.tl on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-23T19:53:58Z",
+      "last_seen": "2026-10-24T00:08:54Z",
+      "attempts": 4,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://ds.tl/help-third-party-plugins: Get \"http://ds.tl/help-third-party-plugins\": dial tcp4: lookup ds.tl on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
     {
       "id": 80,
       "domain": "shop.alz.org",
@@ -647,8 +669,8 @@
       "status_code": 999,
       "error_message": "HTTP 999",
       "first_seen": "2026-10-24T00:38:23Z",
-      "last_seen": "2026-10-24T00:38:23Z",
-      "attempts": 1,
+      "last_seen": "2026-10-24T00:38:59Z",
+      "attempts": 2,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
@@ -1200,28 +1222,6 @@
       "last_seen": "2026-10-24T00:28:11Z",
       "attempts": 3,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 24,
-      "domain": "www.nytimes.com",
-      "url": "https://www.nytimes.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:23:22Z",
-      "last_seen": "2026-10-24T00:12:18Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 101,
-      "domain": "ds.tl",
-      "url": "http://ds.tl/help-third-party-plugins",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://ds.tl/help-third-party-plugins: Get \"http://ds.tl/help-third-party-plugins\": dial tcp4: lookup ds.tl on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-23T19:53:58Z",
-      "last_seen": "2026-10-24T00:08:54Z",
-      "attempts": 4,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://ds.tl/help-third-party-plugins: Get \"http://ds.tl/help-third-party-plugins\": dial tcp4: lookup ds.tl on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
