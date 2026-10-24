@@ -1,7 +1,51 @@
 {
-  "last_updated": "2026-10-24T05:56:27Z",
+  "last_updated": "2026-10-24T05:57:28Z",
   "total_quarantine": 125,
   "quarantine_sites": [
+    {
+      "id": 113,
+      "domain": "blog.wikimedia.dk",
+      "url": "http://blog.wikimedia.dk/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://blog.wikimedia.dk/: Get \"http://blog.wikimedia.dk/\": dial tcp4: lookup blog.wikimedia.dk on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-23T23:36:09Z",
+      "last_seen": "2026-10-23T23:36:09Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://blog.wikimedia.dk/: Get \"http://blog.wikimedia.dk/\": dial tcp4: lookup blog.wikimedia.dk on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 91,
+      "domain": "education.github.com",
+      "url": "https://education.github.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects",
+      "first_seen": "2026-10-23T18:04:59Z",
+      "last_seen": "2026-10-23T18:04:59Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 84,
+      "domain": "www.loc.gov",
+      "url": "https://www.loc.gov/collections/copyright-historical-record-books-1870-to-1977/about-this-collection/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T17:38:58Z",
+      "last_seen": "2026-10-23T17:38:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 114,
+      "domain": "hwpi.harvard.edu",
+      "url": "https://hwpi.harvard.edu/ldcnetwork",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:43:00Z",
+      "last_seen": "2026-10-24T00:45:00Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 78,
       "domain": "app.beehiiv.com",
@@ -1332,50 +1376,6 @@
       "last_seen": "2026-10-23T13:53:24Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 113,
-      "domain": "blog.wikimedia.dk",
-      "url": "http://blog.wikimedia.dk/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://blog.wikimedia.dk/: Get \"http://blog.wikimedia.dk/\": dial tcp4: lookup blog.wikimedia.dk on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-23T23:36:09Z",
-      "last_seen": "2026-10-23T23:36:09Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://blog.wikimedia.dk/: Get \"http://blog.wikimedia.dk/\": dial tcp4: lookup blog.wikimedia.dk on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 91,
-      "domain": "education.github.com",
-      "url": "https://education.github.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects",
-      "first_seen": "2026-10-23T18:04:59Z",
-      "last_seen": "2026-10-23T18:04:59Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 84,
-      "domain": "www.loc.gov",
-      "url": "https://www.loc.gov/collections/copyright-historical-record-books-1870-to-1977/about-this-collection/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T17:38:58Z",
-      "last_seen": "2026-10-23T17:38:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 114,
-      "domain": "hwpi.harvard.edu",
-      "url": "https://hwpi.harvard.edu/ldcnetwork",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:43:00Z",
-      "last_seen": "2026-10-24T00:45:00Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
