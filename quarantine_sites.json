@@ -1,18 +1,7 @@
 {
-  "last_updated": "2026-10-24T03:06:21Z",
+  "last_updated": "2026-10-24T03:07:13Z",
   "total_quarantine": 123,
   "quarantine_sites": [
-    {
-      "id": 113,
-      "domain": "blog.wikimedia.dk",
-      "url": "http://blog.wikimedia.dk/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://blog.wikimedia.dk/: Get \"http://blog.wikimedia.dk/\": dial tcp4: lookup blog.wikimedia.dk on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-23T23:36:09Z",
-      "last_seen": "2026-10-23T23:36:09Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://blog.wikimedia.dk/: Get \"http://blog.wikimedia.dk/\": dial tcp4: lookup blog.wikimedia.dk on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
     {
       "id": 91,
       "domain": "education.github.com",
@@ -1354,6 +1343,17 @@
       "last_seen": "2026-10-23T13:53:24Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 113,
+      "domain": "blog.wikimedia.dk",
+      "url": "http://blog.wikimedia.dk/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://blog.wikimedia.dk/: Get \"http://blog.wikimedia.dk/\": dial tcp4: lookup blog.wikimedia.dk on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-23T23:36:09Z",
+      "last_seen": "2026-10-23T23:36:09Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://blog.wikimedia.dk/: Get \"http://blog.wikimedia.dk/\": dial tcp4: lookup blog.wikimedia.dk on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
