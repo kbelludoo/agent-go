@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-24T15:14:50Z",
+  "last_updated": "2026-10-24T15:15:51Z",
   "total_distinct_sites": 2571,
   "distinct_sites": [
     {
@@ -6858,21 +6858,21 @@
       "ai_provider": "stop"
     },
     {
-      "id": 6654,
+      "id": 6659,
       "domain": "feverup.com",
       "category": "Documentações \u0026 Web Aberta",
       "url": "https://feverup.com/en/support",
       "title": "Fever - Discover the best events in your city",
       "status_code": 200,
-      "duration_ms": 49,
+      "duration_ms": 57,
       "raw_bytes": 34346,
       "markdown_bytes": 0,
       "cso_bytes": 66,
       "token_reduction_pct": 100,
       "interactive_elements": 0,
-      "rss_mib": 83.79296875,
-      "first_seen": "2026-10-24T15:14:23Z",
-      "ai_summary": "O Fever é uma plataforma para descobrir e comprar ingressos de eventos e experiências na sua cidade. Esta página de suporte oferece ajuda sobre compras, ingressos e uso do serviço.",
+      "rss_mib": 78.015625,
+      "first_seen": "2026-10-24T15:15:23Z",
+      "ai_summary": "O Fever é uma plataforma para descobrir e reservar ingressos dos melhores eventos e experiências na sua cidade, como shows, exposições e atividades imersivas. Esta seção específica reúne o suporte ao usuário, com ajuda sobre compras, ingressos e reservas.",
       "ai_provider": "stop"
     },
     {
@@ -7829,22 +7829,22 @@
       "ai_provider": "stop"
     },
     {
-      "id": 6656,
+      "id": 6661,
       "domain": "becasexcelencia.com",
       "category": "Documentações \u0026 Web Aberta",
       "url": "https://becasexcelencia.com",
       "title": "Becas de Excelencia Fever | Estudiantes de Ingeniería",
       "status_code": 200,
-      "duration_ms": 354,
+      "duration_ms": 24,
       "raw_bytes": 112082,
       "markdown_bytes": 9909,
       "cso_bytes": 7314,
       "token_reduction_pct": 91.15915133562928,
       "cso_token_reduction_pct": 26.188313654253715,
       "interactive_elements": 43,
-      "rss_mib": 87.62109375,
-      "first_seen": "2026-10-24T15:14:47Z",
-      "ai_summary": "O site apresenta as Becas de Excelencia Fever, bolsas de até 24.000€ ao ano para estudantes de engenharia no último ano ou recém-licenciados no top 10% da turma. Oferece a oportunidade de integrar a Fever, com requisitos, benefícios, depoimentos e candidatura aberta também em Barcelona.",
+      "rss_mib": 86.765625,
+      "first_seen": "2026-10-24T15:15:46Z",
+      "ai_summary": "O site apresenta as Becas de Excelencia Fever, uma bolsa de até 24.000 € por ano para estudantes de engenharia no último ano ou recém-licenciados que estejam no top 10% da turma. Reúne requisitos, benefícios, depoimentos e notícias, além de permitir que o candidato se inscreva.",
       "ai_provider": "stop"
     },
     {
@@ -16645,22 +16645,22 @@
       "ai_provider": "stop"
     },
     {
-      "id": 6655,
+      "id": 6660,
       "domain": "newsroom.feverup.com",
       "category": "Documentações \u0026 Web Aberta",
       "url": "https://newsroom.feverup.com/en-GB/",
       "title": "Fever Newsroom",
       "status_code": 200,
-      "duration_ms": 854,
+      "duration_ms": 645,
       "raw_bytes": 172895,
       "markdown_bytes": 41408,
       "cso_bytes": 12000,
       "token_reduction_pct": 76.05020388096821,
       "cso_token_reduction_pct": 71.02009273570324,
       "interactive_elements": 230,
-      "rss_mib": 85.73046875,
-      "first_seen": "2026-10-24T15:14:35Z",
-      "ai_summary": "O site é o newsroom oficial da Fever, plataforma de entretenimento ao vivo e cultura, reunindo notícias, comunicados e novidades sobre experiências e eventos. Ele oferece acesso a media kits, arquivo de notícias, informações sobre a empresa e contato para imprensa.",
+      "rss_mib": 86.71875,
+      "first_seen": "2026-10-24T15:15:35Z",
+      "ai_summary": "Este é o newsroom da Fever, plataforma de entretenimento ao vivo e cultura, com notícias e anúncios sobre experiências e eventos. Ele oferece kits de imprensa, arquivo de notícias, contato para mídia e informações institucionais.",
       "ai_provider": "stop"
     },
     {
@@ -19103,22 +19103,22 @@
       "ai_provider": "stop"
     },
     {
-      "id": 6648,
+      "id": 6657,
       "domain": "www.google.com",
       "category": "Documentações \u0026 Web Aberta",
       "url": "https://www.google.com/docs/about",
       "title": "Documentos Google: editor de documentos e PDFs on-line | Google Workspace",
       "status_code": 200,
-      "duration_ms": 291,
+      "duration_ms": 351,
       "raw_bytes": 515629,
       "markdown_bytes": 68761,
       "cso_bytes": 12000,
       "token_reduction_pct": 86.66463678342375,
       "cso_token_reduction_pct": 82.5482468259624,
       "interactive_elements": 510,
-      "rss_mib": 81.1796875,
-      "first_seen": "2026-10-24T15:13:11Z",
-      "ai_summary": "O Google Docs é um editor de documentos e PDFs on-line e gratuito que permite criar, editar e colaborar em tempo real de qualquer dispositivo. Ele ainda oferece recursos de IA (Gemini) para gerar rascunhos, modelos e otimizar tarefas do dia a dia.",
+      "rss_mib": 77.4453125,
+      "first_seen": "2026-10-24T15:14:59Z",
+      "ai_summary": "O site apresenta os Documentos Google, um editor on-line e colaborativo da Google Workspace para criar documentos e editar PDFs em tempo real, de qualquer dispositivo. Ele destaca recursos como IA do Gemini para gerar rascunhos e modelos, tela inteligente, guias, reuniões integradas, controle de acesso e colaboração em equipe.",
       "ai_provider": "stop"
     },
     {
@@ -21331,6 +21331,23 @@
       "rss_mib": 22.703125,
       "first_seen": "2026-10-23T12:58:58Z",
       "ai_summary": "O nginx.org é o site oficial do NGINX, um servidor web e proxy reverso de alto desempenho usado também como cache, balanceador de carga e proxy TCP/UDP e de e-mail. Ele oferece downloads, documentação, notícias de segurança, fóruns/comunidade e informações sobre suporte empresarial da F5.",
+      "ai_provider": "stop"
+    },
+    {
+      "id": 408,
+      "domain": "web.mit.edu",
+      "category": "Documentações \u0026 Web Aberta",
+      "url": "https://web.mit.edu/",
+      "title": "MIT - Massachusetts Institute of Technology",
+      "status_code": 200,
+      "duration_ms": 37,
+      "raw_bytes": 47958,
+      "markdown_bytes": 6173,
+      "token_reduction_pct": 87.12832061387047,
+      "interactive_elements": 60,
+      "rss_mib": 26.87109375,
+      "first_seen": "2026-10-23T14:05:21Z",
+      "ai_summary": "O site oficial do MIT apresenta a universidade e suas áreas de educação, pesquisa, inovação, admissões, vida no campus, notícias, alumni e aprendizado ao longo da vida. Ele oferece informações institucionais, histórias de destaque e recursos para explorar pessoas, cursos e iniciativas do MIT.",
       "ai_provider": "stop"
     },
     {
@@ -32444,21 +32461,19 @@
       "ai_provider": "stop"
     },
     {
-      "id": 408,
-      "domain": "web.mit.edu",
+      "id": 2482,
+      "domain": "l.facebook.com",
       "category": "Documentações \u0026 Web Aberta",
-      "url": "https://web.mit.edu/",
-      "title": "MIT - Massachusetts Institute of Technology",
+      "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.meta.com%2Ftechnologies%2Fmeta-pay\u0026h=AUC3yoMgrsI_3f3Y2IlUDHOdq4Ln4TTOBqUi_G9asARbtwHuXeiya2MfRLTd-Zqgk4UjrqQ4aMmAz_0kY9S_AKtx4Bnu93mryByfMapiYqFl74VzAwfAVkynF7MEjFtlKZK6RW1retp3Dp2LnbCupg",
+      "title": "",
       "status_code": 200,
-      "duration_ms": 37,
-      "raw_bytes": 47958,
-      "markdown_bytes": 6173,
-      "token_reduction_pct": 87.12832061387047,
-      "interactive_elements": 60,
-      "rss_mib": 26.87109375,
-      "first_seen": "2026-10-23T14:05:21Z",
-      "ai_summary": "O site oficial do MIT apresenta a universidade e suas áreas de educação, pesquisa, inovação, admissões, vida no campus, notícias, alumni e aprendizado ao longo da vida. Ele oferece informações institucionais, histórias de destaque e recursos para explorar pessoas, cursos e iniciativas do MIT.",
-      "ai_provider": "stop"
+      "duration_ms": 192,
+      "raw_bytes": 239,
+      "markdown_bytes": 0,
+      "token_reduction_pct": 100,
+      "interactive_elements": 0,
+      "rss_mib": 33.32421875,
+      "first_seen": "2026-10-23T21:00:10Z"
     },
     {
       "id": 2162,
@@ -43587,21 +43602,6 @@
       "first_seen": "2026-10-24T00:25:59Z",
       "ai_summary": "Este é o portal da Ouvidoria do Estado de São Paulo, ligado à Controladoria Geral do Estado, onde o cidadão pode registrar e acompanhar manifestações (reclamações, denúncias, sugestões e elogios). Desde 13/05/2024, os atendimentos passaram a ser feitos pela Plataforma Integrada Fala.SP, que também permite pedidos de acesso à informação.",
       "ai_provider": "stop"
-    },
-    {
-      "id": 2482,
-      "domain": "l.facebook.com",
-      "category": "Documentações \u0026 Web Aberta",
-      "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.meta.com%2Ftechnologies%2Fmeta-pay\u0026h=AUC3yoMgrsI_3f3Y2IlUDHOdq4Ln4TTOBqUi_G9asARbtwHuXeiya2MfRLTd-Zqgk4UjrqQ4aMmAz_0kY9S_AKtx4Bnu93mryByfMapiYqFl74VzAwfAVkynF7MEjFtlKZK6RW1retp3Dp2LnbCupg",
-      "title": "",
-      "status_code": 200,
-      "duration_ms": 192,
-      "raw_bytes": 239,
-      "markdown_bytes": 0,
-      "token_reduction_pct": 100,
-      "interactive_elements": 0,
-      "rss_mib": 33.32421875,
-      "first_seen": "2026-10-23T21:00:10Z"
     }
   ]
 }
