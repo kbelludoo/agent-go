@@ -1,7 +1,106 @@
 {
-  "last_updated": "2026-10-24T02:50:48Z",
+  "last_updated": "2026-10-24T02:52:00Z",
   "total_quarantine": 123,
   "quarantine_sites": [
+    {
+      "id": 76,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/TR/sparql11-query/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T16:49:45Z",
+      "last_seen": "2026-10-23T17:46:22Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 25,
+      "domain": "www.reddit.com",
+      "url": "https://www.reddit.com/r/brasil",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:24:33Z",
+      "last_seen": "2026-10-23T13:24:33Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 63,
+      "domain": "www.efc.ca",
+      "url": "http://www.efc.ca/pages/doc/crypto-export.html",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.efc.ca/pages/doc/crypto-export.html: Get \"http://www.efc.ca/pages/doc/crypto-export.html\": dial tcp4: lookup www.efc.ca on 127.0.0.53:53: server misbehaving",
+      "first_seen": "2026-10-23T15:54:48Z",
+      "last_seen": "2026-10-23T22:58:24Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.efc.ca/pages/doc/crypto-export.html: Get \"http://www.efc.ca/pages/doc/crypto-export.html\": dial tcp4: lookup www.efc.ca on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 41,
+      "domain": "www.hashicorp.com",
+      "url": "https://www.hashicorp.com/conferences/hashiconf#livestream",
+      "status_code": 429,
+      "error_message": "HTTP 429",
+      "first_seen": "2026-10-23T14:43:58Z",
+      "last_seen": "2026-10-23T14:43:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
+    },
+    {
+      "id": 22,
+      "domain": "www.gov.br",
+      "url": "https://www.gov.br/receitafederal/pt-b",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:19:22Z",
+      "last_seen": "2026-10-23T13:19:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 36,
+      "domain": "symposium.opentechresearch.org",
+      "url": "https://symposium.opentechresearch.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:17:10Z",
+      "last_seen": "2026-10-23T14:17:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 75,
+      "domain": "www.who.int",
+      "url": "https://www.who.int/about/finances-accountability/reports/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T16:49:33Z",
+      "last_seen": "2026-10-23T16:49:33Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 68,
+      "domain": "service.elsevier.com",
+      "url": "https://service.elsevier.com/app/contact/supporthub/sciencedirect/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T16:11:24Z",
+      "last_seen": "2026-10-23T22:59:58Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 113,
+      "domain": "codeberg.org",
+      "url": "https://codeberg.org/kytta/toot",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T21:37:34Z",
+      "last_seen": "2026-10-23T21:37:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 61,
       "domain": "support.x.com",
@@ -1255,105 +1354,6 @@
       "last_seen": "2026-10-23T17:30:13Z",
       "attempts": 1,
       "diagnosis": "HTTP 436 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 76,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/TR/sparql11-query/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T16:49:45Z",
-      "last_seen": "2026-10-23T17:46:22Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 25,
-      "domain": "www.reddit.com",
-      "url": "https://www.reddit.com/r/brasil",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:24:33Z",
-      "last_seen": "2026-10-23T13:24:33Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 63,
-      "domain": "www.efc.ca",
-      "url": "http://www.efc.ca/pages/doc/crypto-export.html",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.efc.ca/pages/doc/crypto-export.html: Get \"http://www.efc.ca/pages/doc/crypto-export.html\": dial tcp4: lookup www.efc.ca on 127.0.0.53:53: server misbehaving",
-      "first_seen": "2026-10-23T15:54:48Z",
-      "last_seen": "2026-10-23T22:58:24Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.efc.ca/pages/doc/crypto-export.html: Get \"http://www.efc.ca/pages/doc/crypto-export.html\": dial tcp4: lookup www.efc.ca on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 41,
-      "domain": "www.hashicorp.com",
-      "url": "https://www.hashicorp.com/conferences/hashiconf#livestream",
-      "status_code": 429,
-      "error_message": "HTTP 429",
-      "first_seen": "2026-10-23T14:43:58Z",
-      "last_seen": "2026-10-23T14:43:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
-    },
-    {
-      "id": 22,
-      "domain": "www.gov.br",
-      "url": "https://www.gov.br/receitafederal/pt-b",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:19:22Z",
-      "last_seen": "2026-10-23T13:19:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 36,
-      "domain": "symposium.opentechresearch.org",
-      "url": "https://symposium.opentechresearch.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:17:10Z",
-      "last_seen": "2026-10-23T14:17:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 75,
-      "domain": "www.who.int",
-      "url": "https://www.who.int/about/finances-accountability/reports/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T16:49:33Z",
-      "last_seen": "2026-10-23T16:49:33Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 68,
-      "domain": "service.elsevier.com",
-      "url": "https://service.elsevier.com/app/contact/supporthub/sciencedirect/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T16:11:24Z",
-      "last_seen": "2026-10-23T22:59:58Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 113,
-      "domain": "codeberg.org",
-      "url": "https://codeberg.org/kytta/toot",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T21:37:34Z",
-      "last_seen": "2026-10-23T21:37:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
