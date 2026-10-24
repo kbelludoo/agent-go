@@ -1,150 +1,7 @@
 {
-  "last_updated": "2026-10-24T20:36:49Z",
+  "last_updated": "2026-10-24T20:37:49Z",
   "total_quarantine": 156,
   "quarantine_sites": [
-    {
-      "id": 96,
-      "domain": "medium.com",
-      "url": "https://medium.com/@Medium/cccf29534bf4",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T19:03:34Z",
-      "last_seen": "2026-10-23T19:03:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 16,
-      "domain": "stackoverflow.com",
-      "url": "https://stackoverflow.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:09:10Z",
-      "last_seen": "2026-10-23T13:09:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 27,
-      "domain": "www.reuters.com",
-      "url": "https://www.reuters.com",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T13:24:58Z",
-      "last_seen": "2026-10-24T00:12:42Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 45,
-      "domain": "especiais.gazetadopovo.com.br",
-      "url": "https://especiais.gazetadopovo.com.br/lp/quem-e-quem-nas-fraudes-do-inss-ebook-gratis/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:58:22Z",
-      "last_seen": "2026-10-23T14:58:34Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 153,
-      "domain": "www.apec.org",
-      "url": "http://www.apec.org/Groups/Committee-on-Trade-and-Investment/Electronic-Commerce-Steering-Group/Cross-border-Privacy-Enforcement-Arrangement.aspx",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T19:37:32Z",
-      "last_seen": "2026-10-24T19:37:32Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 64,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/tanishq-sangwan/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T15:56:10Z",
-      "last_seen": "2026-10-23T15:56:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 108,
-      "domain": "iris.paho.org",
-      "url": "https://iris.paho.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T20:09:22Z",
-      "last_seen": "2026-10-23T22:58:34Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 5,
-      "domain": "phys.org",
-      "url": "https://phys.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:01:58Z",
-      "last_seen": "2026-10-23T13:01:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 42,
-      "domain": "infograficos.valor.globo.com",
-      "url": "https://infograficos.valor.globo.com/carteira-valor/?menu_valor",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:47:34Z",
-      "last_seen": "2026-10-23T14:47:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 116,
-      "domain": "key.accessibility.harvard.edu",
-      "url": "https://key.accessibility.harvard.edu/request-asl-interpreting",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:43:23Z",
-      "last_seen": "2026-10-24T00:45:23Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 156,
-      "domain": "slack.sparkpost.com",
-      "url": "https://slack.sparkpost.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-24T20:07:11Z",
-      "last_seen": "2026-10-24T20:19:11Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 28,
-      "domain": "www.theguardian.com",
-      "url": "https://www.theguardian.com/internatio",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:26:58Z",
-      "last_seen": "2026-10-23T23:01:33Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 85,
-      "domain": "paineldecompras.economia.gov.br",
-      "url": "http://paineldecompras.economia.gov.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host",
-      "first_seen": "2026-10-23T17:39:51Z",
-      "last_seen": "2026-10-23T18:19:14Z",
-      "attempts": 4,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
     {
       "id": 115,
       "domain": "learning.linkedin.com",
@@ -1717,6 +1574,149 @@
       "last_seen": "2026-10-24T18:52:22Z",
       "attempts": 1,
       "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 96,
+      "domain": "medium.com",
+      "url": "https://medium.com/@Medium/cccf29534bf4",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T19:03:34Z",
+      "last_seen": "2026-10-23T19:03:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 16,
+      "domain": "stackoverflow.com",
+      "url": "https://stackoverflow.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:09:10Z",
+      "last_seen": "2026-10-23T13:09:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 27,
+      "domain": "www.reuters.com",
+      "url": "https://www.reuters.com",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T13:24:58Z",
+      "last_seen": "2026-10-24T00:12:42Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 45,
+      "domain": "especiais.gazetadopovo.com.br",
+      "url": "https://especiais.gazetadopovo.com.br/lp/quem-e-quem-nas-fraudes-do-inss-ebook-gratis/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:58:22Z",
+      "last_seen": "2026-10-23T14:58:34Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 153,
+      "domain": "www.apec.org",
+      "url": "http://www.apec.org/Groups/Committee-on-Trade-and-Investment/Electronic-Commerce-Steering-Group/Cross-border-Privacy-Enforcement-Arrangement.aspx",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T19:37:32Z",
+      "last_seen": "2026-10-24T19:37:32Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 64,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/tanishq-sangwan/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T15:56:10Z",
+      "last_seen": "2026-10-23T15:56:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 108,
+      "domain": "iris.paho.org",
+      "url": "https://iris.paho.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T20:09:22Z",
+      "last_seen": "2026-10-23T22:58:34Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 5,
+      "domain": "phys.org",
+      "url": "https://phys.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:01:58Z",
+      "last_seen": "2026-10-23T13:01:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 42,
+      "domain": "infograficos.valor.globo.com",
+      "url": "https://infograficos.valor.globo.com/carteira-valor/?menu_valor",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:47:34Z",
+      "last_seen": "2026-10-23T14:47:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 116,
+      "domain": "key.accessibility.harvard.edu",
+      "url": "https://key.accessibility.harvard.edu/request-asl-interpreting",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:43:23Z",
+      "last_seen": "2026-10-24T00:45:23Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 156,
+      "domain": "slack.sparkpost.com",
+      "url": "https://slack.sparkpost.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-24T20:07:11Z",
+      "last_seen": "2026-10-24T20:19:11Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 28,
+      "domain": "www.theguardian.com",
+      "url": "https://www.theguardian.com/internatio",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:26:58Z",
+      "last_seen": "2026-10-23T23:01:33Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 85,
+      "domain": "paineldecompras.economia.gov.br",
+      "url": "http://paineldecompras.economia.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host",
+      "first_seen": "2026-10-23T17:39:51Z",
+      "last_seen": "2026-10-23T18:19:14Z",
+      "attempts": 4,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
