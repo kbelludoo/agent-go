@@ -1,7 +1,62 @@
 {
-  "last_updated": "2026-10-25T09:38:26Z",
+  "last_updated": "2026-10-25T09:39:27Z",
   "total_quarantine": 193,
   "quarantine_sites": [
+    {
+      "id": 148,
+      "domain": "ibm.enterprise.slack.com",
+      "url": "https://ibm.enterprise.slack.com/workspace-signin",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T19:12:35Z",
+      "last_seen": "2026-10-24T19:12:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 84,
+      "domain": "www.loc.gov",
+      "url": "https://www.loc.gov/collections/copyright-historical-record-books-1870-to-1977/about-this-collection/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T17:38:58Z",
+      "last_seen": "2026-10-23T17:38:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 90,
+      "domain": "www.nytimes.com",
+      "url": "https://www.nytimes.com/2010/09/29/technology/29aol.html",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T18:02:34Z",
+      "last_seen": "2026-10-24T00:10:54Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 140,
+      "domain": "www.allaboutcookies.org",
+      "url": "https://www.allaboutcookies.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T18:51:11Z",
+      "last_seen": "2026-10-24T18:51:11Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 59,
+      "domain": "sverigesradio.se",
+      "url": "https://sverigesradio.se/artikel/kontakta-ekots-granskande-reportrar",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:49:11Z",
+      "last_seen": "2026-10-24T00:25:02Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 75,
       "domain": "www.who.int",
@@ -295,8 +350,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-25T08:45:25Z",
-      "last_seen": "2026-10-25T09:37:01Z",
-      "attempts": 29,
+      "last_seen": "2026-10-25T09:38:36Z",
+      "attempts": 30,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -2069,61 +2124,6 @@
       "last_seen": "2026-10-24T21:52:35Z",
       "attempts": 1,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 148,
-      "domain": "ibm.enterprise.slack.com",
-      "url": "https://ibm.enterprise.slack.com/workspace-signin",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T19:12:35Z",
-      "last_seen": "2026-10-24T19:12:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 84,
-      "domain": "www.loc.gov",
-      "url": "https://www.loc.gov/collections/copyright-historical-record-books-1870-to-1977/about-this-collection/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T17:38:58Z",
-      "last_seen": "2026-10-23T17:38:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 90,
-      "domain": "www.nytimes.com",
-      "url": "https://www.nytimes.com/2010/09/29/technology/29aol.html",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T18:02:34Z",
-      "last_seen": "2026-10-24T00:10:54Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 140,
-      "domain": "www.allaboutcookies.org",
-      "url": "https://www.allaboutcookies.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T18:51:11Z",
-      "last_seen": "2026-10-24T18:51:11Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 59,
-      "domain": "sverigesradio.se",
-      "url": "https://sverigesradio.se/artikel/kontakta-ekots-granskande-reportrar",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:49:11Z",
-      "last_seen": "2026-10-24T00:25:02Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
