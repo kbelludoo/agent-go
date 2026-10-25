@@ -1,7 +1,73 @@
 {
-  "last_updated": "2026-10-25T04:10:27Z",
+  "last_updated": "2026-10-25T04:11:30Z",
   "total_quarantine": 185,
   "quarantine_sites": [
+    {
+      "id": 106,
+      "domain": "kubegrade.com",
+      "url": "https://kubegrade.com/kubernetes-cloud-native-architecture/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T23:07:33Z",
+      "last_seen": "2026-10-24T00:09:41Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 94,
+      "domain": "tsc.worldwildlife.org",
+      "url": "https://tsc.worldwildlife.org/page/support-wwf",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T18:29:58Z",
+      "last_seen": "2026-10-23T18:30:22Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 60,
+      "domain": "sverigesradio.se",
+      "url": "https://sverigesradio.se/radioleaks",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:49:23Z",
+      "last_seen": "2026-10-24T00:10:32Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 54,
+      "domain": "gitlab.com",
+      "url": "https://gitlab.com/users/sign_in/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:24:34Z",
+      "last_seen": "2026-10-23T15:24:58Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 142,
+      "domain": "www.linkedin.com",
+      "url": "http://www.linkedin.com/shareArticle?mini=true\u0026url=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026title=Cosmic Pathways\u0026source=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-24T18:52:34Z",
+      "last_seen": "2026-10-24T18:52:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 185,
+      "domain": "www.justice.gov",
+      "url": "https://www.justice.gov/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T03:57:01Z",
+      "last_seen": "2026-10-25T04:03:37Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 105,
       "domain": "chat.stackexchange.com",
@@ -1970,72 +2036,6 @@
       "last_seen": "2026-10-24T00:26:35Z",
       "attempts": 2,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 106,
-      "domain": "kubegrade.com",
-      "url": "https://kubegrade.com/kubernetes-cloud-native-architecture/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T23:07:33Z",
-      "last_seen": "2026-10-24T00:09:41Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 94,
-      "domain": "tsc.worldwildlife.org",
-      "url": "https://tsc.worldwildlife.org/page/support-wwf",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T18:29:58Z",
-      "last_seen": "2026-10-23T18:30:22Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 60,
-      "domain": "sverigesradio.se",
-      "url": "https://sverigesradio.se/radioleaks",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:49:23Z",
-      "last_seen": "2026-10-24T00:10:32Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 54,
-      "domain": "gitlab.com",
-      "url": "https://gitlab.com/users/sign_in/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:24:34Z",
-      "last_seen": "2026-10-23T15:24:58Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 142,
-      "domain": "www.linkedin.com",
-      "url": "http://www.linkedin.com/shareArticle?mini=true\u0026url=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026title=Cosmic Pathways\u0026source=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-24T18:52:34Z",
-      "last_seen": "2026-10-24T18:52:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 185,
-      "domain": "www.justice.gov",
-      "url": "https://www.justice.gov/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T03:57:01Z",
-      "last_seen": "2026-10-25T04:03:37Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
