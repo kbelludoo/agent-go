@@ -1,7 +1,18 @@
 {
-  "last_updated": "2026-10-25T13:26:52Z",
+  "last_updated": "2026-10-25T13:27:51Z",
   "total_quarantine": 220,
   "quarantine_sites": [
+    {
+      "id": 172,
+      "domain": "help.x.com",
+      "url": "https://help.x.com/rules-and-policies/x-services-and-corporate-affiliates",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T00:49:01Z",
+      "last_seen": "2026-10-25T00:49:37Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 91,
       "domain": "education.github.com",
@@ -2410,17 +2421,6 @@
       "last_seen": "2026-10-23T22:59:20Z",
       "attempts": 3,
       "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 172,
-      "domain": "help.x.com",
-      "url": "https://help.x.com/rules-and-policies/x-services-and-corporate-affiliates",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T00:49:01Z",
-      "last_seen": "2026-10-25T00:49:37Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
