@@ -1,18 +1,7 @@
 {
-  "last_updated": "2026-10-25T09:53:38Z",
+  "last_updated": "2026-10-25T09:54:39Z",
   "total_quarantine": 194,
   "quarantine_sites": [
-    {
-      "id": 137,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/sachinsharmaofficial/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T18:31:35Z",
-      "last_seen": "2026-10-24T18:31:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 153,
       "domain": "www.apec.org",
@@ -2135,6 +2124,17 @@
       "last_seen": "2026-10-25T00:25:24Z",
       "attempts": 1,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL https://status.twitterstat.us/: Get \"https://status.twitterstat.us/\": dial tcp4: lookup status.twitterstat.us on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 137,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/sachinsharmaofficial/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T18:31:35Z",
+      "last_seen": "2026-10-24T18:31:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
