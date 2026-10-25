@@ -1,40 +1,7 @@
 {
-  "last_updated": "2026-10-25T11:46:26Z",
+  "last_updated": "2026-10-25T11:47:27Z",
   "total_quarantine": 211,
   "quarantine_sites": [
-    {
-      "id": 115,
-      "domain": "key.accessibility.harvard.edu",
-      "url": "https://key.accessibility.harvard.edu/get-involved",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:43:12Z",
-      "last_seen": "2026-10-24T00:45:12Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 113,
-      "domain": "blog.wikimedia.dk",
-      "url": "http://blog.wikimedia.dk/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://blog.wikimedia.dk/: Get \"http://blog.wikimedia.dk/\": dial tcp4: lookup blog.wikimedia.dk on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-23T23:36:09Z",
-      "last_seen": "2026-10-23T23:36:09Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://blog.wikimedia.dk/: Get \"http://blog.wikimedia.dk/\": dial tcp4: lookup blog.wikimedia.dk on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 68,
-      "domain": "service.elsevier.com",
-      "url": "https://service.elsevier.com/app/contact/supporthub/sciencedirect/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T16:11:24Z",
-      "last_seen": "2026-10-23T22:59:58Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 61,
       "domain": "support.x.com",
@@ -2322,6 +2289,39 @@
       "last_seen": "2026-10-25T09:57:37Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 115,
+      "domain": "key.accessibility.harvard.edu",
+      "url": "https://key.accessibility.harvard.edu/get-involved",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:43:12Z",
+      "last_seen": "2026-10-24T00:45:12Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 113,
+      "domain": "blog.wikimedia.dk",
+      "url": "http://blog.wikimedia.dk/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://blog.wikimedia.dk/: Get \"http://blog.wikimedia.dk/\": dial tcp4: lookup blog.wikimedia.dk on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-23T23:36:09Z",
+      "last_seen": "2026-10-23T23:36:09Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://blog.wikimedia.dk/: Get \"http://blog.wikimedia.dk/\": dial tcp4: lookup blog.wikimedia.dk on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 68,
+      "domain": "service.elsevier.com",
+      "url": "https://service.elsevier.com/app/contact/supporthub/sciencedirect/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T16:11:24Z",
+      "last_seen": "2026-10-23T22:59:58Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
