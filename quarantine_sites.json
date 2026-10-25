@@ -1,40 +1,7 @@
 {
-  "last_updated": "2026-10-25T04:02:27Z",
+  "last_updated": "2026-10-25T04:03:26Z",
   "total_quarantine": 185,
   "quarantine_sites": [
-    {
-      "id": 114,
-      "domain": "it.linkedin.com",
-      "url": "https://it.linkedin.com/school/universit-degli-studi-di-perugia/?trk=public_profile_topcard-school",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T23:42:22Z",
-      "last_seen": "2026-10-23T23:42:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 64,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/tanishq-sangwan/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T15:56:10Z",
-      "last_seen": "2026-10-23T15:56:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 184,
-      "domain": "sa.www4.irs.gov",
-      "url": "https://sa.www4.irs.gov/taxpro",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T03:17:01Z",
-      "last_seen": "2026-10-25T03:22:25Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 164,
       "domain": "www.linkedin.com",
@@ -2036,6 +2003,39 @@
       "last_seen": "2026-10-24T00:25:11Z",
       "attempts": 3,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 114,
+      "domain": "it.linkedin.com",
+      "url": "https://it.linkedin.com/school/universit-degli-studi-di-perugia/?trk=public_profile_topcard-school",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T23:42:22Z",
+      "last_seen": "2026-10-23T23:42:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 64,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/tanishq-sangwan/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T15:56:10Z",
+      "last_seen": "2026-10-23T15:56:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 184,
+      "domain": "sa.www4.irs.gov",
+      "url": "https://sa.www4.irs.gov/taxpro",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T03:17:01Z",
+      "last_seen": "2026-10-25T03:22:25Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
