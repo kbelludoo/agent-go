@@ -1,7 +1,29 @@
 {
-  "last_updated": "2026-10-25T06:12:14Z",
+  "last_updated": "2026-10-25T06:13:27Z",
   "total_quarantine": 186,
   "quarantine_sites": [
+    {
+      "id": 128,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/ready-education/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T11:12:35Z",
+      "last_seen": "2026-10-24T11:13:11Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 126,
+      "domain": "www.linkedin.com",
+      "url": "http://www.linkedin.com/shareArticle?mini=true\u0026url=http://www.nngroup.com/articles/designing-effective-carousels/\u0026title=Carousel Usability: Designing an Effective UI for Websites with Content Overload\u0026source=Nielsen%20Norman%20Group",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-24T09:39:34Z",
+      "last_seen": "2026-10-24T11:15:11Z",
+      "attempts": 37,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 116,
       "domain": "key.accessibility.harvard.edu",
@@ -2025,28 +2047,6 @@
       "last_seen": "2026-10-25T03:21:37Z",
       "attempts": 4,
       "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 128,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/ready-education/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T11:12:35Z",
-      "last_seen": "2026-10-24T11:13:11Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 126,
-      "domain": "www.linkedin.com",
-      "url": "http://www.linkedin.com/shareArticle?mini=true\u0026url=http://www.nngroup.com/articles/designing-effective-carousels/\u0026title=Carousel Usability: Designing an Effective UI for Websites with Content Overload\u0026source=Nielsen%20Norman%20Group",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-24T09:39:34Z",
-      "last_seen": "2026-10-24T11:15:11Z",
-      "attempts": 37,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
