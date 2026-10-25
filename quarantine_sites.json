@@ -1,62 +1,7 @@
 {
-  "last_updated": "2026-10-25T16:19:26Z",
+  "last_updated": "2026-10-25T16:20:25Z",
   "total_quarantine": 253,
   "quarantine_sites": [
-    {
-      "id": 118,
-      "domain": "analytics.scielo.org",
-      "url": "https://analytics.scielo.org/w/accesses?collection=scl",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:55:47Z",
-      "last_seen": "2026-10-24T00:55:47Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 113,
-      "domain": "www.scielo.org",
-      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T00:42:05Z",
-      "last_seen": "2026-10-24T00:55:33Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 204,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/TR/resource-timing/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T10:10:24Z",
-      "last_seen": "2026-10-25T10:10:24Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 66,
-      "domain": "medicalxpress.com",
-      "url": "https://medicalxpress.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:58:58Z",
-      "last_seen": "2026-10-23T15:58:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 149,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/textilefuturesinstitute/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T19:13:23Z",
-      "last_seen": "2026-10-24T19:13:23Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 156,
       "domain": "slack.sparkpost.com",
@@ -2385,8 +2330,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-23T13:23:22Z",
-      "last_seen": "2026-10-24T00:12:18Z",
-      "attempts": 3,
+      "last_seen": "2026-10-25T16:20:25Z",
+      "attempts": 4,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -2784,6 +2729,61 @@
       "last_seen": "2026-10-23T17:34:22Z",
       "attempts": 2,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.securityfocus.com/: Get \"http://www.securityfocus.com/\": dial tcp4 135.125.97.155:80: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 118,
+      "domain": "analytics.scielo.org",
+      "url": "https://analytics.scielo.org/w/accesses?collection=scl",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:55:47Z",
+      "last_seen": "2026-10-24T00:55:47Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 113,
+      "domain": "www.scielo.org",
+      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T00:42:05Z",
+      "last_seen": "2026-10-24T00:55:33Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 204,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/TR/resource-timing/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T10:10:24Z",
+      "last_seen": "2026-10-25T10:10:24Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 66,
+      "domain": "medicalxpress.com",
+      "url": "https://medicalxpress.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:58:58Z",
+      "last_seen": "2026-10-23T15:58:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 149,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/textilefuturesinstitute/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T19:13:23Z",
+      "last_seen": "2026-10-24T19:13:23Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
