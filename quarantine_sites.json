@@ -1,62 +1,7 @@
 {
-  "last_updated": "2026-10-25T23:19:03Z",
+  "last_updated": "2026-10-25T23:20:03Z",
   "total_quarantine": 298,
   "quarantine_sites": [
-    {
-      "id": 130,
-      "domain": "www.timeanddate.com",
-      "url": "https://www.timeanddate.com/worldclock/fixedtime.html?msg=NN%2FG+Live+Online+Training+26-29+October+2026\u0026iso=20261029T06\u0026p1=224\u0026ah=3\u0026am=30",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T15:49:59Z",
-      "last_seen": "2026-10-24T16:07:47Z",
-      "attempts": 8,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 195,
-      "domain": "devops.com",
-      "url": "https://devops.com/continuous-security-in-devsecops-moving-beyond-one-time-testing/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T09:57:37Z",
-      "last_seen": "2026-10-25T09:57:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 259,
-      "domain": "biblioteca.ibge.gov.br",
-      "url": "http://biblioteca.ibge.gov.br/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T17:01:24Z",
-      "last_seen": "2026-10-25T17:01:24Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 115,
-      "domain": "key.accessibility.harvard.edu",
-      "url": "https://key.accessibility.harvard.edu/get-involved",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:43:12Z",
-      "last_seen": "2026-10-24T00:45:12Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 273,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/harrymoseley/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-25T18:30:13Z",
-      "last_seen": "2026-10-25T18:32:37Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 9,
       "domain": "pt.wikipedia.org",
@@ -3279,6 +3224,61 @@
       "last_seen": "2026-10-25T16:16:25Z",
       "attempts": 2,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 130,
+      "domain": "www.timeanddate.com",
+      "url": "https://www.timeanddate.com/worldclock/fixedtime.html?msg=NN%2FG+Live+Online+Training+26-29+October+2026\u0026iso=20261029T06\u0026p1=224\u0026ah=3\u0026am=30",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T15:49:59Z",
+      "last_seen": "2026-10-24T16:07:47Z",
+      "attempts": 8,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 195,
+      "domain": "devops.com",
+      "url": "https://devops.com/continuous-security-in-devsecops-moving-beyond-one-time-testing/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T09:57:37Z",
+      "last_seen": "2026-10-25T09:57:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 259,
+      "domain": "biblioteca.ibge.gov.br",
+      "url": "http://biblioteca.ibge.gov.br/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T17:01:24Z",
+      "last_seen": "2026-10-25T17:01:24Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 115,
+      "domain": "key.accessibility.harvard.edu",
+      "url": "https://key.accessibility.harvard.edu/get-involved",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:43:12Z",
+      "last_seen": "2026-10-24T00:45:12Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 273,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/harrymoseley/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-25T18:30:13Z",
+      "last_seen": "2026-10-25T18:32:37Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
