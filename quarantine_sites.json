@@ -1,7 +1,117 @@
 {
-  "last_updated": "2026-10-25T17:51:51Z",
-  "total_quarantine": 264,
+  "last_updated": "2026-10-25T17:52:52Z",
+  "total_quarantine": 265,
   "quarantine_sites": [
+    {
+      "id": 113,
+      "domain": "www.scielo.org",
+      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T00:42:05Z",
+      "last_seen": "2026-10-24T00:55:33Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 204,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/TR/resource-timing/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T10:10:24Z",
+      "last_seen": "2026-10-25T10:10:24Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 66,
+      "domain": "medicalxpress.com",
+      "url": "https://medicalxpress.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:58:58Z",
+      "last_seen": "2026-10-23T15:58:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 149,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/textilefuturesinstitute/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T19:13:23Z",
+      "last_seen": "2026-10-24T19:13:23Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 156,
+      "domain": "slack.sparkpost.com",
+      "url": "https://slack.sparkpost.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-24T20:07:11Z",
+      "last_seen": "2026-10-25T00:18:27Z",
+      "attempts": 3,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 225,
+      "domain": "register.paloaltonetworks.com",
+      "url": "https://register.paloaltonetworks.com/observabilityfortheaiera",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T14:06:12Z",
+      "last_seen": "2026-10-25T14:06:12Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 14,
+      "domain": "sciencedirect.com",
+      "url": "https://sciencedirect.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:07:22Z",
+      "last_seen": "2026-10-25T16:04:13Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 38,
+      "domain": "www.sciencedirect.com",
+      "url": "https://www.sciencedirect.com/user/institution/login?targetURL=%2F",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:31:46Z",
+      "last_seen": "2026-10-23T14:31:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 213,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/wasm/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T12:58:37Z",
+      "last_seen": "2026-10-25T13:01:00Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 262,
+      "domain": "gitlab.alpinelinux.org",
+      "url": "https://gitlab.alpinelinux.org/alpine/aports/-/issues",
+      "status_code": 418,
+      "error_message": "HTTP 418",
+      "first_seen": "2026-10-25T17:12:37Z",
+      "last_seen": "2026-10-25T17:12:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 418 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 27,
       "domain": "www.reuters.com",
@@ -2159,6 +2269,17 @@
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
+      "id": 265,
+      "domain": "web.whatsapp.com",
+      "url": "https://web.whatsapp.com/send?text=%20Curso Gratuito: Estado de Direito | Gazeta do Povo%20https://especiais.gazetadopovo.com.br/cursos/curso-gratuito-estado-de-direito-gazeta-do-povo%3Fcomp%3Dwhatsapp",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-25T17:52:36Z",
+      "last_seen": "2026-10-25T17:52:36Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
       "id": 81,
       "domain": "speakerdex.co",
       "url": "https://speakerdex.co/marcel",
@@ -2795,116 +2916,6 @@
       "last_seen": "2026-10-24T00:55:47Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 113,
-      "domain": "www.scielo.org",
-      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T00:42:05Z",
-      "last_seen": "2026-10-24T00:55:33Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 204,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/TR/resource-timing/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T10:10:24Z",
-      "last_seen": "2026-10-25T10:10:24Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 66,
-      "domain": "medicalxpress.com",
-      "url": "https://medicalxpress.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:58:58Z",
-      "last_seen": "2026-10-23T15:58:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 149,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/textilefuturesinstitute/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T19:13:23Z",
-      "last_seen": "2026-10-24T19:13:23Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 156,
-      "domain": "slack.sparkpost.com",
-      "url": "https://slack.sparkpost.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-24T20:07:11Z",
-      "last_seen": "2026-10-25T00:18:27Z",
-      "attempts": 3,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 225,
-      "domain": "register.paloaltonetworks.com",
-      "url": "https://register.paloaltonetworks.com/observabilityfortheaiera",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T14:06:12Z",
-      "last_seen": "2026-10-25T14:06:12Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 14,
-      "domain": "sciencedirect.com",
-      "url": "https://sciencedirect.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:07:22Z",
-      "last_seen": "2026-10-25T16:04:13Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 38,
-      "domain": "www.sciencedirect.com",
-      "url": "https://www.sciencedirect.com/user/institution/login?targetURL=%2F",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:31:46Z",
-      "last_seen": "2026-10-23T14:31:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 213,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/wasm/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T12:58:37Z",
-      "last_seen": "2026-10-25T13:01:00Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 262,
-      "domain": "gitlab.alpinelinux.org",
-      "url": "https://gitlab.alpinelinux.org/alpine/aports/-/issues",
-      "status_code": 418,
-      "error_message": "HTTP 418",
-      "first_seen": "2026-10-25T17:12:37Z",
-      "last_seen": "2026-10-25T17:12:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 418 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
