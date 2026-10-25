@@ -1,7 +1,84 @@
 {
-  "last_updated": "2026-10-25T18:11:51Z",
+  "last_updated": "2026-10-25T18:13:03Z",
   "total_quarantine": 269,
   "quarantine_sites": [
+    {
+      "id": 141,
+      "domain": "www.facebook.com",
+      "url": "http://www.facebook.com/share.php?u=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026title=Cosmic Pathways",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-24T18:52:22Z",
+      "last_seen": "2026-10-24T18:52:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 157,
+      "domain": "sdgs.un.org",
+      "url": "https://sdgs.un.org/ar",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T20:40:06Z",
+      "last_seen": "2026-10-24T21:03:59Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 85,
+      "domain": "paineldecompras.economia.gov.br",
+      "url": "http://paineldecompras.economia.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host",
+      "first_seen": "2026-10-23T17:39:51Z",
+      "last_seen": "2026-10-23T18:19:14Z",
+      "attempts": 4,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 138,
+      "domain": "web.dio.me",
+      "url": "https://web.dio.me/track/ibm-bob-ia-nivel-empresarial-para-desenvolvedores",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T18:34:35Z",
+      "last_seen": "2026-10-24T18:34:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 205,
+      "domain": "lists.w3.org",
+      "url": "https://lists.w3.org/Archives/Public/public-web-perf/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T10:10:36Z",
+      "last_seen": "2026-10-25T10:10:36Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 244,
+      "domain": "cheat.sh",
+      "url": "https://cheat.sh/go",
+      "status_code": 500,
+      "error_message": "HTTP 500",
+      "first_seen": "2026-10-25T15:31:25Z",
+      "last_seen": "2026-10-25T15:31:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 48,
+      "domain": "www.commerce.gov",
+      "url": "https://www.commerce.gov",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:02:58Z",
+      "last_seen": "2026-10-23T22:57:05Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 127,
       "domain": "twitter.com",
@@ -1514,11 +1591,11 @@
       "domain": "myads.bestbuyads.com",
       "url": "http://myads.bestbuyads.com/",
       "status_code": 504,
-      "error_message": "failed to fetch URL http://myads.bestbuyads.com/: Get \"http://myads.bestbuyads.com/\": read tcp4 10.0.1.126:34554-\u003e23.10.56.85:80: use of closed network connection",
+      "error_message": "failed to fetch URL http://myads.bestbuyads.com/: Get \"http://myads.bestbuyads.com/\": read tcp4 10.0.1.126:46602-\u003e23.10.56.85:80: use of closed network connection",
       "first_seen": "2026-10-25T18:08:36Z",
-      "last_seen": "2026-10-25T18:10:36Z",
-      "attempts": 4,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://myads.bestbuyads.com/: Get \"http://myads.bestbuyads.com/\": read tcp4 10.0.1.126:34554-\u003e23.10.56.85:80: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
+      "last_seen": "2026-10-25T18:12:24Z",
+      "attempts": 6,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://myads.bestbuyads.com/: Get \"http://myads.bestbuyads.com/\": read tcp4 10.0.1.126:46602-\u003e23.10.56.85:80: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
     },
     {
       "id": 101,
@@ -2882,83 +2959,6 @@
       "first_seen": "2026-10-25T15:31:15Z",
       "last_seen": "2026-10-25T15:31:15Z",
       "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 141,
-      "domain": "www.facebook.com",
-      "url": "http://www.facebook.com/share.php?u=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026title=Cosmic Pathways",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-24T18:52:22Z",
-      "last_seen": "2026-10-24T18:52:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 157,
-      "domain": "sdgs.un.org",
-      "url": "https://sdgs.un.org/ar",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T20:40:06Z",
-      "last_seen": "2026-10-24T21:03:59Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 85,
-      "domain": "paineldecompras.economia.gov.br",
-      "url": "http://paineldecompras.economia.gov.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host",
-      "first_seen": "2026-10-23T17:39:51Z",
-      "last_seen": "2026-10-23T18:19:14Z",
-      "attempts": 4,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 138,
-      "domain": "web.dio.me",
-      "url": "https://web.dio.me/track/ibm-bob-ia-nivel-empresarial-para-desenvolvedores",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T18:34:35Z",
-      "last_seen": "2026-10-24T18:34:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 205,
-      "domain": "lists.w3.org",
-      "url": "https://lists.w3.org/Archives/Public/public-web-perf/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T10:10:36Z",
-      "last_seen": "2026-10-25T10:10:36Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 244,
-      "domain": "cheat.sh",
-      "url": "https://cheat.sh/go",
-      "status_code": 500,
-      "error_message": "HTTP 500",
-      "first_seen": "2026-10-25T15:31:25Z",
-      "last_seen": "2026-10-25T15:31:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 48,
-      "domain": "www.commerce.gov",
-      "url": "https://www.commerce.gov",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:02:58Z",
-      "last_seen": "2026-10-23T22:57:05Z",
-      "attempts": 2,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
