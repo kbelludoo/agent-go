@@ -1,29 +1,7 @@
 {
-  "last_updated": "2026-10-25T13:13:38Z",
+  "last_updated": "2026-10-25T13:14:40Z",
   "total_quarantine": 217,
   "quarantine_sites": [
-    {
-      "id": 154,
-      "domain": "trust.schellman.com",
-      "url": "https://trust.schellman.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T20:06:23Z",
-      "last_seen": "2026-10-25T00:20:01Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 112,
-      "domain": "www.scielo.org",
-      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForAlphabeticList\u0026xsl=secondLevelForAlphabeticList",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T00:41:53Z",
-      "last_seen": "2026-10-25T00:20:18Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 98,
       "domain": "www.wpintelligence.com",
@@ -2387,6 +2365,28 @@
       "first_seen": "2026-10-24T00:29:52Z",
       "last_seen": "2026-10-25T00:19:56Z",
       "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 154,
+      "domain": "trust.schellman.com",
+      "url": "https://trust.schellman.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T20:06:23Z",
+      "last_seen": "2026-10-25T00:20:01Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 112,
+      "domain": "www.scielo.org",
+      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForAlphabeticList\u0026xsl=secondLevelForAlphabeticList",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T00:41:53Z",
+      "last_seen": "2026-10-25T00:20:18Z",
+      "attempts": 3,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
