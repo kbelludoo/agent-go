@@ -72,12 +72,13 @@ type UpstreamProvider struct {
 }
 
 type LLMClient struct {
-	Providers  []UpstreamProvider
-	HTTPClient *http.Client
-	Daemon     *opencode.DaemonClient
-	ACP        *opencode.ACPClient
-	acpError   error
-	acpModel   string
+	Providers        []UpstreamProvider
+	HTTPClient       *http.Client
+	Daemon           *opencode.DaemonClient
+	ACP              *opencode.ACPClient
+	acpError         error
+	acpModel         string
+	LastProviderName string
 }
 
 func (c *LLMClient) SetModel(model string) {
@@ -454,6 +455,7 @@ func (c *LLMClient) Complete(ctx context.Context, messages []Message, tools []To
 		if err == nil {
 			result, err := c.ACP.Complete(ctx, c.acpModel, messages, sdkTools...)
 			if err == nil {
+				c.LastProviderName = fmt.Sprintf("OpenCode ACP (%s)", c.acpModel)
 				return &Message{Role: "assistant", Content: result.AssistantText}, "stop", nil
 			}
 			log.Printf("[llm] ACP falhou: %v. Tentando provedores upstream em cascata...", err)
@@ -472,6 +474,7 @@ func (c *LLMClient) Complete(ctx context.Context, messages []Message, tools []To
 			ans, err := c.Daemon.Complete(ctx, userPrompt)
 			if err == nil && strings.TrimSpace(ans) != "" {
 				log.Printf("[llm] ✅ Resposta atendida com sucesso pelo OpenCode Headless Daemon")
+				c.LastProviderName = "OpenCode Headless Local"
 				return &Message{
 					Role:    "assistant",
 					Content: ans,
@@ -500,6 +503,7 @@ func (c *LLMClient) Complete(ctx context.Context, messages []Message, tools []To
 		msg, finishReason, err := c.completeWithProvider(ctx, prov, messages, tools)
 		if err == nil {
 			defaultCircuitBreaker.RecordSuccess(prov.Name)
+			c.LastProviderName = fmt.Sprintf("%s (%s)", prov.Name, prov.Model)
 			if i > 0 {
 				log.Printf("[llm-fallback] ✅ Resposta atendida com sucesso pelo fallback gratuito: %s (%s)", prov.Name, prov.Model)
 			}

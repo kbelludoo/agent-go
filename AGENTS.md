@@ -1,26 +1,31 @@
-# Diretrizes de Memória Longa (Hindsight em Go Puro)
+# AGENTS.md — Go 1.27 Solo Agent & MBVM-DB Standard
 
-Este repositório utiliza o **Hindsight Nativo em Go Puro** (`go-tools memory`) para persistência de memória cognitiva entre sessões e agentes (Cursor, OpenCode, Antigravity, CLIs).
+Universal configuration following the open `agents.md` specification.
+Canonical specification: `AGENTS.mbvm`.
 
-## Protocolo de Memória dos Agentes
+## Overview
+- **Language**: Go 1.27 (Solo autonomous agent execution, zero external orchestrators).
+- **Context Engine**: MBVM-DB Smart Slicing (99% token reduction over raw files).
+- **Single-Ingestion Law**: Heavy assets (Protobuf, JSON catalogs, AST, game data) are ingested ONCE into `.mbvmdb` binary databases (`codebase.mbvmdb`, `game.mbvmdb`). The AI NEVER reads raw 50k+ token files. Always query `mbvm-db slice <db> <term/symbol> [depth]` (60–200 tokens, 1-3ms).
 
-### 1. Antes de Iniciar Tarefas Críticas (Auto-Recall)
-Consulte a memória ativa antes de propor soluções ou alterar a infraestrutura para não repetir erros passados:
-```bash
-go-tools memory recall agent "<termo_da_tarefa>"
-```
-Ou via ferramenta MCP `hindsight_recall(bank="agent", query="...")`.
+## Commands
+- **Context Slice**: `mbvm-db slice <db_or_dir> <symbol_or_term> [depth]`
+- **Inspect Bytecode**: `mbvm-db inspect .`
+- **Test Suite**: `go test -race -count=1 -v ./...`
+- **Static Vet**: `go vet ./...`
+- **Security Audit**: `govulncheck ./...`
+- **Pre-commit Compile**: `go-tools mbvm .`
 
-### 2. Ao Concluir um Fix ou Aprender uma Regra Nova (Auto-Retain)
-Sempre que o usuário definir uma preferência de desenvolvimento ou após corrigir um bug de sistema/VPS, salve a lição atômica:
-```bash
-go-tools memory retain agent lesson <identificador_curto> "<descricao_da_regra_ou_correcao>"
-```
-Ou via ferramenta MCP `hindsight_retain(bank="agent", type="lesson", subject="...", content="...")`.
+## Architecture & Go Conventions
+- **Errors**: Always wrap with context using `%w` (`fmt.Errorf("context: %w", err)`). Never use `%v` for errors.
+- **Consumer-side Interfaces**: Define interfaces in the package that consumes them (*"accept interfaces, return structs"*).
+- **Goroutine Leak Prevention**: Every goroutine must have a deterministic exit path listening to `<-ctx.Done()`.
+- **Modern Stdlib**: Use `slog` for structured logging, `slices`/`maps`, `unique` for value interning, and `iter` for range-over-func.
+- **Modularity**: Strict 400 LOC ceiling per file. Refactor into cohesive submodules near the limit.
 
-### 3. Diretrizes Ativas no Banco `agent`:
-- **Regra Fundamental de Rigor:** Todo resultado, benchmark, consumo de RAM e latência DEVE ser medido com testes reais (go test -bench), nunca inventado ou estimado.
-- **Preferência:** Sempre priorizar ferramentas em Go puro sem CGO ou Python/Node.js adicionais.
-- **MBVM-DB Smart Slicing:** Antes de inspecionar ou alterar código, use mbvm-db slice . <Symbol> [depth] para obter apenas o subgrafo de dependências (~200 tokens, 99.5% de economia) em vez de ler arquivos brutos.
-- **Lição VPS:** Na VPS Oracle, compilações Go devem definir `export GOTMPDIR=/home/ubuntu/tmp` para não esgotar o disco em memória `tmpfs` (/tmp).
-- **Monitoramento:** A frota possui 15 bots em produção (portas 3000-3015 e 8090) e deve ser verificada via `go-tools bots 127.0.0.1`.
+## Never-Do List (Guardrails)
+- Never read raw heavy catalogs, Protobuf definitions, or whole packages when a `.mbvmdb` exists.
+- Never omit `-race` or `-count=1` when validating tests.
+- Never use `time.Sleep` for concurrency synchronization in tests.
+- Never introduce `interface{}` or `any` without strict codec justification.
+- Never commit with `--no-verify`; the global pre-commit hook must validate AST integrity.

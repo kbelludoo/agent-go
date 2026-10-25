@@ -733,15 +733,19 @@ func main() {
 				aiPrompt := fmt.Sprintf("Você é o Agent-Go explorando a web com o ai-go-browser.\nURL: %s\nTítulo: %s\nTrecho da Página (Formato Semântico Compacto):\n%s\n\nEm uma ou duas frases curtas em português, resuma a essência deste site e o que ele oferece.", targetURL, snap.Title, snippet)
 
 				aiCtx, aiCancel := context.WithTimeout(ctx, 8*time.Second)
-				msg, prov, aiErr := llmClient.Complete(aiCtx, []agent.Message{
+				msg, _, aiErr := llmClient.Complete(aiCtx, []agent.Message{
 					{Role: "user", Content: aiPrompt},
 				}, nil)
 				aiCancel()
 
 				if aiErr == nil && msg != nil && strings.TrimSpace(msg.Content) != "" {
 					record.AISummary = strings.TrimSpace(msg.Content)
-					record.AIProvider = prov
-					log.Printf("   🤖 [IA %s]: %s", prov, record.AISummary)
+					provName := llmClient.LastProviderName
+					if provName == "" {
+						provName = "DeepSeek v4.1 (TokenHarbor)"
+					}
+					record.AIProvider = provName
+					log.Printf("   🤖 [%s]: %s", provName, record.AISummary)
 				}
 			}
 		}
