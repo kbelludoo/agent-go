@@ -1,7 +1,40 @@
 {
-  "last_updated": "2026-10-25T09:22:13Z",
+  "last_updated": "2026-10-25T09:23:13Z",
   "total_quarantine": 193,
   "quarantine_sites": [
+    {
+      "id": 103,
+      "domain": "www.nih.gov",
+      "url": "https://www.nih.gov/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T20:02:10Z",
+      "last_seen": "2026-10-24T00:27:12Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 177,
+      "domain": "grantsgovprod.wordpress.com",
+      "url": "https://grantsgovprod.wordpress.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T02:26:37Z",
+      "last_seen": "2026-10-25T02:26:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 192,
+      "domain": "legcounsel.house.gov",
+      "url": "http://legcounsel.house.gov/Comps/Inspector%20General%20Act%20Of%201978.pdf",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T08:45:14Z",
+      "last_seen": "2026-10-25T09:22:02Z",
+      "attempts": 21,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 168,
       "domain": "au.linkedin.com",
@@ -262,8 +295,8 @@
       "status_code": 404,
       "error_message": "HTTP 404",
       "first_seen": "2026-10-25T08:45:01Z",
-      "last_seen": "2026-10-25T09:21:49Z",
-      "attempts": 31,
+      "last_seen": "2026-10-25T09:23:13Z",
+      "attempts": 32,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
@@ -2091,39 +2124,6 @@
       "last_seen": "2026-10-23T19:03:34Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 103,
-      "domain": "www.nih.gov",
-      "url": "https://www.nih.gov/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T20:02:10Z",
-      "last_seen": "2026-10-24T00:27:12Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 177,
-      "domain": "grantsgovprod.wordpress.com",
-      "url": "https://grantsgovprod.wordpress.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T02:26:37Z",
-      "last_seen": "2026-10-25T02:26:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 192,
-      "domain": "legcounsel.house.gov",
-      "url": "http://legcounsel.house.gov/Comps/Inspector%20General%20Act%20Of%201978.pdf",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T08:45:14Z",
-      "last_seen": "2026-10-25T09:22:02Z",
-      "attempts": 21,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
