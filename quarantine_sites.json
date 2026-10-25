@@ -1,7 +1,18 @@
 {
-  "last_updated": "2026-10-25T12:05:38Z",
+  "last_updated": "2026-10-25T12:06:38Z",
   "total_quarantine": 211,
   "quarantine_sites": [
+    {
+      "id": 31,
+      "domain": "trust.grafana.com",
+      "url": "https://trust.grafana.com/?pg=hp\u0026plcmt=secure-compliant-proven-button",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:47:58Z",
+      "last_seen": "2026-10-23T22:59:44Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 51,
       "domain": "www.ft.com",
@@ -2311,17 +2322,6 @@
       "last_seen": "2026-10-24T19:37:32Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 31,
-      "domain": "trust.grafana.com",
-      "url": "https://trust.grafana.com/?pg=hp\u0026plcmt=secure-compliant-proven-button",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:47:58Z",
-      "last_seen": "2026-10-23T22:59:44Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
