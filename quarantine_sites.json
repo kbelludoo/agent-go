@@ -1,7 +1,40 @@
 {
-  "last_updated": "2026-10-25T07:36:37Z",
+  "last_updated": "2026-10-25T07:37:40Z",
   "total_quarantine": 188,
   "quarantine_sites": [
+    {
+      "id": 4,
+      "domain": "nytimes.com",
+      "url": "https://nytimes.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T12:59:58Z",
+      "last_seen": "2026-10-23T22:57:27Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 158,
+      "domain": "sdgs.un.org",
+      "url": "https://sdgs.un.org/zh",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T20:40:17Z",
+      "last_seen": "2026-10-24T21:04:11Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 138,
+      "domain": "web.dio.me",
+      "url": "https://web.dio.me/track/ibm-bob-ia-nivel-empresarial-para-desenvolvedores",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T18:34:35Z",
+      "last_seen": "2026-10-24T18:34:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 93,
       "domain": "digisusgmp.saude.gov.br",
@@ -1208,8 +1241,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-25T07:30:49Z",
-      "last_seen": "2026-10-25T07:35:01Z",
-      "attempts": 4,
+      "last_seen": "2026-10-25T07:36:49Z",
+      "attempts": 5,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -2036,39 +2069,6 @@
       "last_seen": "2026-10-23T18:19:14Z",
       "attempts": 4,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 4,
-      "domain": "nytimes.com",
-      "url": "https://nytimes.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T12:59:58Z",
-      "last_seen": "2026-10-23T22:57:27Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 158,
-      "domain": "sdgs.un.org",
-      "url": "https://sdgs.un.org/zh",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T20:40:17Z",
-      "last_seen": "2026-10-24T21:04:11Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 138,
-      "domain": "web.dio.me",
-      "url": "https://web.dio.me/track/ibm-bob-ia-nivel-empresarial-para-desenvolvedores",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T18:34:35Z",
-      "last_seen": "2026-10-24T18:34:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
