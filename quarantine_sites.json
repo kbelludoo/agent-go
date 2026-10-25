@@ -1,62 +1,7 @@
 {
-  "last_updated": "2026-10-25T01:00:39Z",
+  "last_updated": "2026-10-25T01:01:38Z",
   "total_quarantine": 172,
   "quarantine_sites": [
-    {
-      "id": 91,
-      "domain": "education.github.com",
-      "url": "https://education.github.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects",
-      "first_seen": "2026-10-23T18:04:59Z",
-      "last_seen": "2026-10-23T18:04:59Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 114,
-      "domain": "hwpi.harvard.edu",
-      "url": "https://hwpi.harvard.edu/ldcnetwork",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:43:00Z",
-      "last_seen": "2026-10-24T00:45:00Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 150,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/build-freedom-summit",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T19:13:35Z",
-      "last_seen": "2026-10-24T19:14:47Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 108,
-      "domain": "etsy.app.link",
-      "url": "https://etsy.app.link/d7nDUdp49V",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://etsy.app.link/d7nDUdp49V: Get \"https://etsy.app.link/d7nDUdp49V\": stopped after 10 redirects",
-      "first_seen": "2026-10-23T23:10:34Z",
-      "last_seen": "2026-10-23T23:16:22Z",
-      "attempts": 8,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://etsy.app.link/d7nDUdp49V: Get \"https://etsy.app.link/d7nDUdp49V\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 15,
-      "domain": "specs.openstack.org",
-      "url": "https://specs.openstack.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:08:34Z",
-      "last_seen": "2026-10-23T13:08:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 115,
       "domain": "learning.linkedin.com",
@@ -1893,6 +1838,61 @@
       "last_seen": "2026-10-25T00:49:37Z",
       "attempts": 2,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 91,
+      "domain": "education.github.com",
+      "url": "https://education.github.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects",
+      "first_seen": "2026-10-23T18:04:59Z",
+      "last_seen": "2026-10-23T18:04:59Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 114,
+      "domain": "hwpi.harvard.edu",
+      "url": "https://hwpi.harvard.edu/ldcnetwork",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:43:00Z",
+      "last_seen": "2026-10-24T00:45:00Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 150,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/build-freedom-summit",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T19:13:35Z",
+      "last_seen": "2026-10-24T19:14:47Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 108,
+      "domain": "etsy.app.link",
+      "url": "https://etsy.app.link/d7nDUdp49V",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://etsy.app.link/d7nDUdp49V: Get \"https://etsy.app.link/d7nDUdp49V\": stopped after 10 redirects",
+      "first_seen": "2026-10-23T23:10:34Z",
+      "last_seen": "2026-10-23T23:16:22Z",
+      "attempts": 8,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://etsy.app.link/d7nDUdp49V: Get \"https://etsy.app.link/d7nDUdp49V\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 15,
+      "domain": "specs.openstack.org",
+      "url": "https://specs.openstack.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:08:34Z",
+      "last_seen": "2026-10-23T13:08:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
