@@ -1,7 +1,150 @@
 {
-  "last_updated": "2026-10-25T11:26:02Z",
-  "total_quarantine": 212,
+  "last_updated": "2026-10-25T11:27:02Z",
+  "total_quarantine": 211,
   "quarantine_sites": [
+    {
+      "id": 66,
+      "domain": "medicalxpress.com",
+      "url": "https://medicalxpress.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:58:58Z",
+      "last_seen": "2026-10-23T15:58:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 149,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/textilefuturesinstitute/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T19:13:23Z",
+      "last_seen": "2026-10-24T19:13:23Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 156,
+      "domain": "slack.sparkpost.com",
+      "url": "https://slack.sparkpost.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-24T20:07:11Z",
+      "last_seen": "2026-10-25T00:18:27Z",
+      "attempts": 3,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 189,
+      "domain": "oversight.gov",
+      "url": "https://oversight.gov/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://oversight.gov/: Get \"https://www.oversight.gov/\": context deadline exceeded",
+      "first_seen": "2026-10-25T07:53:36Z",
+      "last_seen": "2026-10-25T07:53:36Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 198,
+      "domain": "www.figma.com",
+      "url": "https://www.figma.com/blog/webassembly-in-production/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T10:00:14Z",
+      "last_seen": "2026-10-25T10:00:14Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 200,
+      "domain": "azure.microsoft.com",
+      "url": "https://azure.microsoft.com/pt-br/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://azure.microsoft.com/pt-br/: Get \"https://azure.microsoft.com/pt-br\": read tcp4 10.0.1.126:46806-\u003e23.201.218.61:443: use of closed network connection",
+      "first_seen": "2026-10-25T10:03:36Z",
+      "last_seen": "2026-10-25T10:03:36Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://azure.microsoft.com/pt-br/: Get \"https://azure.microsoft.com/pt-br\": read tcp4 10.0.1.126:46806-\u003e23.201.218.61:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 202,
+      "domain": "github.com",
+      "url": "https://github.com/get_started?with=risk-assessment",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T10:07:13Z",
+      "last_seen": "2026-10-25T10:07:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 23,
+      "domain": "www.inpe.br",
+      "url": "https://www.inpe.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.inpe.br: Get \"https://www.inpe.br\": tls: failed to verify certificate: x509: certificate signed by unknown authority",
+      "first_seen": "2026-10-23T13:20:57Z",
+      "last_seen": "2026-10-23T13:20:57Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.inpe.br: Get \"https://www.inpe.br\": tls: failed to verify certificate: x509: certificate signed by unknown authority. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 13,
+      "domain": "science.org",
+      "url": "https://science.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:07:10Z",
+      "last_seen": "2026-10-23T22:54:28Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 14,
+      "domain": "sciencedirect.com",
+      "url": "https://sciencedirect.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:07:22Z",
+      "last_seen": "2026-10-25T00:17:54Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 38,
+      "domain": "www.sciencedirect.com",
+      "url": "https://www.sciencedirect.com/user/institution/login?targetURL=%2F",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:31:46Z",
+      "last_seen": "2026-10-23T14:31:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 35,
+      "domain": "opentechresearch.org",
+      "url": "https://opentechresearch.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:16:58Z",
+      "last_seen": "2026-10-23T14:16:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 18,
+      "domain": "wsj.com",
+      "url": "https://wsj.com/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T13:14:46Z",
+      "last_seen": "2026-10-23T13:14:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 27,
       "domain": "www.reuters.com",
@@ -2038,17 +2181,6 @@
       "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
-      "id": 209,
-      "domain": "support.microsoft.com",
-      "url": "https://support.microsoft.com/topic/206f6928-2694-4adf-a50f-9edb95897d81",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T11:03:36Z",
-      "last_seen": "2026-10-25T11:03:36Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
       "id": 164,
       "domain": "www.linkedin.com",
       "url": "https://www.linkedin.com/uas/request-password-reset?trk=csm-v2_forgot_password",
@@ -2190,149 +2322,6 @@
       "last_seen": "2026-10-25T10:10:24Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 66,
-      "domain": "medicalxpress.com",
-      "url": "https://medicalxpress.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:58:58Z",
-      "last_seen": "2026-10-23T15:58:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 149,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/textilefuturesinstitute/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T19:13:23Z",
-      "last_seen": "2026-10-24T19:13:23Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 156,
-      "domain": "slack.sparkpost.com",
-      "url": "https://slack.sparkpost.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-24T20:07:11Z",
-      "last_seen": "2026-10-25T00:18:27Z",
-      "attempts": 3,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 189,
-      "domain": "oversight.gov",
-      "url": "https://oversight.gov/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://oversight.gov/: Get \"https://www.oversight.gov/\": context deadline exceeded",
-      "first_seen": "2026-10-25T07:53:36Z",
-      "last_seen": "2026-10-25T07:53:36Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 198,
-      "domain": "www.figma.com",
-      "url": "https://www.figma.com/blog/webassembly-in-production/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T10:00:14Z",
-      "last_seen": "2026-10-25T10:00:14Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 200,
-      "domain": "azure.microsoft.com",
-      "url": "https://azure.microsoft.com/pt-br/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://azure.microsoft.com/pt-br/: Get \"https://azure.microsoft.com/pt-br\": read tcp4 10.0.1.126:46806-\u003e23.201.218.61:443: use of closed network connection",
-      "first_seen": "2026-10-25T10:03:36Z",
-      "last_seen": "2026-10-25T10:03:36Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://azure.microsoft.com/pt-br/: Get \"https://azure.microsoft.com/pt-br\": read tcp4 10.0.1.126:46806-\u003e23.201.218.61:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 202,
-      "domain": "github.com",
-      "url": "https://github.com/get_started?with=risk-assessment",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T10:07:13Z",
-      "last_seen": "2026-10-25T10:07:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 23,
-      "domain": "www.inpe.br",
-      "url": "https://www.inpe.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.inpe.br: Get \"https://www.inpe.br\": tls: failed to verify certificate: x509: certificate signed by unknown authority",
-      "first_seen": "2026-10-23T13:20:57Z",
-      "last_seen": "2026-10-23T13:20:57Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.inpe.br: Get \"https://www.inpe.br\": tls: failed to verify certificate: x509: certificate signed by unknown authority. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 13,
-      "domain": "science.org",
-      "url": "https://science.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:07:10Z",
-      "last_seen": "2026-10-23T22:54:28Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 14,
-      "domain": "sciencedirect.com",
-      "url": "https://sciencedirect.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:07:22Z",
-      "last_seen": "2026-10-25T00:17:54Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 38,
-      "domain": "www.sciencedirect.com",
-      "url": "https://www.sciencedirect.com/user/institution/login?targetURL=%2F",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:31:46Z",
-      "last_seen": "2026-10-23T14:31:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 35,
-      "domain": "opentechresearch.org",
-      "url": "https://opentechresearch.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:16:58Z",
-      "last_seen": "2026-10-23T14:16:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 18,
-      "domain": "wsj.com",
-      "url": "https://wsj.com/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T13:14:46Z",
-      "last_seen": "2026-10-23T13:14:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
