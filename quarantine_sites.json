@@ -1,7 +1,73 @@
 {
-  "last_updated": "2026-10-25T21:53:27Z",
+  "last_updated": "2026-10-25T21:54:28Z",
   "total_quarantine": 291,
   "quarantine_sites": [
+    {
+      "id": 279,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/ministeriet-for-groen-trepart/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-25T20:16:13Z",
+      "last_seen": "2026-10-25T20:16:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 116,
+      "domain": "join.slack.com",
+      "url": "https://join.slack.com/share/enQtMTE1OTk4NTI5NzUyMTctMDY3ODA1YzNkYzlmOGFkNTA3YzE0MjdlMzFkODZmYzNmNTg1Yjk3YzY3MmNmMjI1YWU5MzgyNjcwZDg1N2QyNQ",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T22:16:46Z",
+      "last_seen": "2026-10-24T00:25:11Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 184,
+      "domain": "sa.www4.irs.gov",
+      "url": "https://sa.www4.irs.gov/taxpro",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T03:17:01Z",
+      "last_seen": "2026-10-25T03:22:25Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 237,
+      "domain": "www.cse.iitd.ac.in",
+      "url": "https://www.cse.iitd.ac.in/~srsarangi/osbook/osbook-v0.93.pdf",
+      "status_code": 504,
+      "error_message": "context cancelled or timed out while reading response from https://www.cse.iitd.ac.in/~srsarangi/osbook/osbook-v0.93.pdf: context deadline exceeded",
+      "first_seen": "2026-10-25T15:23:48Z",
+      "last_seen": "2026-10-25T15:23:48Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 290,
+      "domain": "unsplash.com",
+      "url": "https://unsplash.com/photos/6orUY98fw9s",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T21:34:13Z",
+      "last_seen": "2026-10-25T21:36:37Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 164,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/uas/request-password-reset?trk=csm-v2_forgot_password",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T21:55:35Z",
+      "last_seen": "2026-10-24T21:55:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 97,
       "domain": "www.gov.br",
@@ -3135,72 +3201,6 @@
       "first_seen": "2026-10-24T00:38:23Z",
       "last_seen": "2026-10-24T00:38:59Z",
       "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 279,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/ministeriet-for-groen-trepart/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-25T20:16:13Z",
-      "last_seen": "2026-10-25T20:16:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 116,
-      "domain": "join.slack.com",
-      "url": "https://join.slack.com/share/enQtMTE1OTk4NTI5NzUyMTctMDY3ODA1YzNkYzlmOGFkNTA3YzE0MjdlMzFkODZmYzNmNTg1Yjk3YzY3MmNmMjI1YWU5MzgyNjcwZDg1N2QyNQ",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T22:16:46Z",
-      "last_seen": "2026-10-24T00:25:11Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 184,
-      "domain": "sa.www4.irs.gov",
-      "url": "https://sa.www4.irs.gov/taxpro",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T03:17:01Z",
-      "last_seen": "2026-10-25T03:22:25Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 237,
-      "domain": "www.cse.iitd.ac.in",
-      "url": "https://www.cse.iitd.ac.in/~srsarangi/osbook/osbook-v0.93.pdf",
-      "status_code": 504,
-      "error_message": "context cancelled or timed out while reading response from https://www.cse.iitd.ac.in/~srsarangi/osbook/osbook-v0.93.pdf: context deadline exceeded",
-      "first_seen": "2026-10-25T15:23:48Z",
-      "last_seen": "2026-10-25T15:23:48Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 290,
-      "domain": "unsplash.com",
-      "url": "https://unsplash.com/photos/6orUY98fw9s",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T21:34:13Z",
-      "last_seen": "2026-10-25T21:36:37Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 164,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/uas/request-password-reset?trk=csm-v2_forgot_password",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T21:55:35Z",
-      "last_seen": "2026-10-24T21:55:35Z",
-      "attempts": 1,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
