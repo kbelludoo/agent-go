@@ -1,7 +1,95 @@
 {
-  "last_updated": "2026-10-25T19:44:26Z",
+  "last_updated": "2026-10-25T19:45:27Z",
   "total_quarantine": 278,
   "quarantine_sites": [
+    {
+      "id": 126,
+      "domain": "www.linkedin.com",
+      "url": "http://www.linkedin.com/shareArticle?mini=true\u0026url=http://www.nngroup.com/articles/designing-effective-carousels/\u0026title=Carousel Usability: Designing an Effective UI for Websites with Content Overload\u0026source=Nielsen%20Norman%20Group",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-24T09:39:34Z",
+      "last_seen": "2026-10-24T11:15:11Z",
+      "attempts": 37,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 76,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/TR/sparql11-query/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T16:49:45Z",
+      "last_seen": "2026-10-23T17:46:22Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 201,
+      "domain": "events.microsoft.com",
+      "url": "https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1\u0026scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals\u0026startTime=08:00\u0026endTime=17:00",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1\u0026scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals\u0026startTime=08:00\u0026endTime=17:00: Get \"https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1\u0026scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals\u0026startTime=08:00\u0026endTime=17:00\": stopped after 10 redirects",
+      "first_seen": "2026-10-25T10:06:06Z",
+      "last_seen": "2026-10-25T10:06:30Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1\u0026scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals\u0026startTime=08:00\u0026endTime=17:00: Get \"https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1\u0026scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals\u0026startTime=08:00\u0026endTime=17:00\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 254,
+      "domain": "www.wsj.com",
+      "url": "https://www.wsj.com/tech/personal-tech/iphone-duo-review-cafcbbe7?st=GaYVMf",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T16:41:25Z",
+      "last_seen": "2026-10-25T16:41:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 261,
+      "domain": "analytics.scielo.org",
+      "url": "http://analytics.scielo.org/?collection=scl",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T17:06:37Z",
+      "last_seen": "2026-10-25T17:06:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 11,
+      "domain": "reference.deno.land",
+      "url": "https://reference.deno.land/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-23T13:06:10Z",
+      "last_seen": "2026-10-25T16:03:01Z",
+      "attempts": 5,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 133,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/thecodeforge-io-a0676b3b5/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T18:06:47Z",
+      "last_seen": "2026-10-24T18:07:00Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 170,
+      "domain": "status.twitterstat.us",
+      "url": "https://status.twitterstat.us/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://status.twitterstat.us/: Get \"https://status.twitterstat.us/\": dial tcp4: lookup status.twitterstat.us on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-25T00:25:24Z",
+      "last_seen": "2026-10-25T00:25:24Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://status.twitterstat.us/: Get \"https://status.twitterstat.us/\": dial tcp4: lookup status.twitterstat.us on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
     {
       "id": 137,
       "domain": "www.linkedin.com",
@@ -2971,94 +3059,6 @@
       "last_seen": "2026-10-24T23:25:35Z",
       "attempts": 2,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 126,
-      "domain": "www.linkedin.com",
-      "url": "http://www.linkedin.com/shareArticle?mini=true\u0026url=http://www.nngroup.com/articles/designing-effective-carousels/\u0026title=Carousel Usability: Designing an Effective UI for Websites with Content Overload\u0026source=Nielsen%20Norman%20Group",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-24T09:39:34Z",
-      "last_seen": "2026-10-24T11:15:11Z",
-      "attempts": 37,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 76,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/TR/sparql11-query/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T16:49:45Z",
-      "last_seen": "2026-10-23T17:46:22Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 201,
-      "domain": "events.microsoft.com",
-      "url": "https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1\u0026scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals\u0026startTime=08:00\u0026endTime=17:00",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1\u0026scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals\u0026startTime=08:00\u0026endTime=17:00: Get \"https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1\u0026scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals\u0026startTime=08:00\u0026endTime=17:00\": stopped after 10 redirects",
-      "first_seen": "2026-10-25T10:06:06Z",
-      "last_seen": "2026-10-25T10:06:30Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1\u0026scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals\u0026startTime=08:00\u0026endTime=17:00: Get \"https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1\u0026scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals\u0026startTime=08:00\u0026endTime=17:00\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 254,
-      "domain": "www.wsj.com",
-      "url": "https://www.wsj.com/tech/personal-tech/iphone-duo-review-cafcbbe7?st=GaYVMf",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T16:41:25Z",
-      "last_seen": "2026-10-25T16:41:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 261,
-      "domain": "analytics.scielo.org",
-      "url": "http://analytics.scielo.org/?collection=scl",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T17:06:37Z",
-      "last_seen": "2026-10-25T17:06:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 11,
-      "domain": "reference.deno.land",
-      "url": "https://reference.deno.land/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-23T13:06:10Z",
-      "last_seen": "2026-10-25T16:03:01Z",
-      "attempts": 5,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 133,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/thecodeforge-io-a0676b3b5/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T18:06:47Z",
-      "last_seen": "2026-10-24T18:07:00Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 170,
-      "domain": "status.twitterstat.us",
-      "url": "https://status.twitterstat.us/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://status.twitterstat.us/: Get \"https://status.twitterstat.us/\": dial tcp4: lookup status.twitterstat.us on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-25T00:25:24Z",
-      "last_seen": "2026-10-25T00:25:24Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://status.twitterstat.us/: Get \"https://status.twitterstat.us/\": dial tcp4: lookup status.twitterstat.us on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
