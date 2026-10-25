@@ -1,7 +1,40 @@
 {
-  "last_updated": "2026-10-25T16:32:38Z",
+  "last_updated": "2026-10-25T16:33:39Z",
   "total_quarantine": 252,
   "quarantine_sites": [
+    {
+      "id": 109,
+      "domain": "www.etsy.com",
+      "url": "https://www.etsy.com/your/account/privacy",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T23:19:21Z",
+      "last_seen": "2026-10-23T23:27:09Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 145,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/predictiveanalytics/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T19:10:59Z",
+      "last_seen": "2026-10-24T19:10:59Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 230,
+      "domain": "sdtimes.com",
+      "url": "https://sdtimes.com/cloud-native-architecture/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T14:20:02Z",
+      "last_seen": "2026-10-25T14:20:02Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 111,
       "domain": "www.linkedin.com",
@@ -2740,39 +2773,6 @@
       "last_seen": "2026-10-25T15:27:49Z",
       "attempts": 1,
       "diagnosis": "HTTP 405 Method Not Allowed: Servidor rejeita certas requisições uTLS/H2 ou exige barra final ('/'). Sugestão: Testar fallback HTTP/1.1 e normalizar trailing slash."
-    },
-    {
-      "id": 109,
-      "domain": "www.etsy.com",
-      "url": "https://www.etsy.com/your/account/privacy",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T23:19:21Z",
-      "last_seen": "2026-10-23T23:27:09Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 145,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/predictiveanalytics/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T19:10:59Z",
-      "last_seen": "2026-10-24T19:10:59Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 230,
-      "domain": "sdtimes.com",
-      "url": "https://sdtimes.com/cloud-native-architecture/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T14:20:02Z",
-      "last_seen": "2026-10-25T14:20:02Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
