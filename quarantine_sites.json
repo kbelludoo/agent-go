@@ -1,7 +1,51 @@
 {
-  "last_updated": "2026-10-25T22:02:26Z",
-  "total_quarantine": 293,
+  "last_updated": "2026-10-25T22:03:26Z",
+  "total_quarantine": 294,
   "quarantine_sites": [
+    {
+      "id": 227,
+      "domain": "www.oreilly.com",
+      "url": "https://www.oreilly.com/content/devopssec-securing-software-through-continuous-delivery/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T14:15:13Z",
+      "last_seen": "2026-10-25T14:15:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 284,
+      "domain": "codeberg.org",
+      "url": "https://codeberg.org/forgejo/forgejo",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T20:39:38Z",
+      "last_seen": "2026-10-25T20:40:14Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 45,
+      "domain": "especiais.gazetadopovo.com.br",
+      "url": "https://especiais.gazetadopovo.com.br/lp/quem-e-quem-nas-fraudes-do-inss-ebook-gratis/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:58:22Z",
+      "last_seen": "2026-10-23T14:58:34Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 231,
+      "domain": "about.pypl.com",
+      "url": "https://about.pypl.com/home/default.aspx",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T14:55:01Z",
+      "last_seen": "2026-10-25T15:08:49Z",
+      "attempts": 18,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 247,
       "domain": "economist.com",
@@ -100,6 +144,17 @@
       "last_seen": "2026-10-25T00:19:13Z",
       "attempts": 3,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 294,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/unicode-inc/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-25T22:02:37Z",
+      "last_seen": "2026-10-25T22:02:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
       "id": 112,
@@ -3179,50 +3234,6 @@
       "first_seen": "2026-10-25T13:11:25Z",
       "last_seen": "2026-10-25T13:11:25Z",
       "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 227,
-      "domain": "www.oreilly.com",
-      "url": "https://www.oreilly.com/content/devopssec-securing-software-through-continuous-delivery/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T14:15:13Z",
-      "last_seen": "2026-10-25T14:15:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 284,
-      "domain": "codeberg.org",
-      "url": "https://codeberg.org/forgejo/forgejo",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T20:39:38Z",
-      "last_seen": "2026-10-25T20:40:14Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 45,
-      "domain": "especiais.gazetadopovo.com.br",
-      "url": "https://especiais.gazetadopovo.com.br/lp/quem-e-quem-nas-fraudes-do-inss-ebook-gratis/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:58:22Z",
-      "last_seen": "2026-10-23T14:58:34Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 231,
-      "domain": "about.pypl.com",
-      "url": "https://about.pypl.com/home/default.aspx",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T14:55:01Z",
-      "last_seen": "2026-10-25T15:08:49Z",
-      "attempts": 18,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
