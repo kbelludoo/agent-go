@@ -1,7 +1,106 @@
 {
-  "last_updated": "2026-10-25T22:48:16Z",
+  "last_updated": "2026-10-25T22:49:14Z",
   "total_quarantine": 296,
   "quarantine_sites": [
+    {
+      "id": 33,
+      "domain": "home.web.cern.ch",
+      "url": "http://home.web.cern.ch/topics/birth-web",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:53:24Z",
+      "last_seen": "2026-10-23T13:53:24Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 4,
+      "domain": "nytimes.com",
+      "url": "https://nytimes.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T12:59:58Z",
+      "last_seen": "2026-10-25T15:56:49Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 158,
+      "domain": "sdgs.un.org",
+      "url": "https://sdgs.un.org/zh",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T20:40:17Z",
+      "last_seen": "2026-10-24T21:04:11Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 93,
+      "domain": "digisusgmp.saude.gov.br",
+      "url": "https://digisusgmp.saude.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://digisusgmp.saude.gov.br: Get \"https://digisusgmp.saude.gov.br\": read tcp4 10.0.1.126:37608-\u003e189.9.35.156:443: read: connection reset by peer",
+      "first_seen": "2026-10-23T18:19:21Z",
+      "last_seen": "2026-10-23T18:19:21Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://digisusgmp.saude.gov.br: Get \"https://digisusgmp.saude.gov.br\": read tcp4 10.0.1.126:37608-\u003e189.9.35.156:443: read: connection reset by peer. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 179,
+      "domain": "grantsgovprod.wordpress.com",
+      "url": "http://grantsgovprod.wordpress.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T02:55:13Z",
+      "last_seen": "2026-10-25T02:55:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 219,
+      "domain": "unsplash.com",
+      "url": "https://unsplash.com/terms",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T13:15:25Z",
+      "last_seen": "2026-10-25T13:16:25Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 269,
+      "domain": "myads.bestbuyads.com",
+      "url": "http://myads.bestbuyads.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://myads.bestbuyads.com/: Get \"http://myads.bestbuyads.com/\": read tcp4 10.0.1.126:46602-\u003e23.10.56.85:80: use of closed network connection",
+      "first_seen": "2026-10-25T18:08:36Z",
+      "last_seen": "2026-10-25T18:12:24Z",
+      "attempts": 6,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://myads.bestbuyads.com/: Get \"http://myads.bestbuyads.com/\": read tcp4 10.0.1.126:46602-\u003e23.10.56.85:80: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 286,
+      "domain": "br.indeed.com",
+      "url": "https://br.indeed.com/companies",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T21:21:24Z",
+      "last_seen": "2026-10-25T21:21:24Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 101,
+      "domain": "ds.tl",
+      "url": "http://ds.tl/help-third-party-plugins",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://ds.tl/help-third-party-plugins: Get \"http://ds.tl/help-third-party-plugins\": dial tcp4: lookup ds.tl on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-23T19:53:58Z",
+      "last_seen": "2026-10-24T00:08:54Z",
+      "attempts": 4,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://ds.tl/help-third-party-plugins: Get \"http://ds.tl/help-third-party-plugins\": dial tcp4: lookup ds.tl on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
     {
       "id": 67,
       "domain": "esic.cgu.gov.br",
@@ -3158,105 +3257,6 @@
       "last_seen": "2026-10-25T18:15:01Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 33,
-      "domain": "home.web.cern.ch",
-      "url": "http://home.web.cern.ch/topics/birth-web",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:53:24Z",
-      "last_seen": "2026-10-23T13:53:24Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 4,
-      "domain": "nytimes.com",
-      "url": "https://nytimes.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T12:59:58Z",
-      "last_seen": "2026-10-25T15:56:49Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 158,
-      "domain": "sdgs.un.org",
-      "url": "https://sdgs.un.org/zh",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T20:40:17Z",
-      "last_seen": "2026-10-24T21:04:11Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 93,
-      "domain": "digisusgmp.saude.gov.br",
-      "url": "https://digisusgmp.saude.gov.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://digisusgmp.saude.gov.br: Get \"https://digisusgmp.saude.gov.br\": read tcp4 10.0.1.126:37608-\u003e189.9.35.156:443: read: connection reset by peer",
-      "first_seen": "2026-10-23T18:19:21Z",
-      "last_seen": "2026-10-23T18:19:21Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://digisusgmp.saude.gov.br: Get \"https://digisusgmp.saude.gov.br\": read tcp4 10.0.1.126:37608-\u003e189.9.35.156:443: read: connection reset by peer. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 179,
-      "domain": "grantsgovprod.wordpress.com",
-      "url": "http://grantsgovprod.wordpress.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T02:55:13Z",
-      "last_seen": "2026-10-25T02:55:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 219,
-      "domain": "unsplash.com",
-      "url": "https://unsplash.com/terms",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T13:15:25Z",
-      "last_seen": "2026-10-25T13:16:25Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 269,
-      "domain": "myads.bestbuyads.com",
-      "url": "http://myads.bestbuyads.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://myads.bestbuyads.com/: Get \"http://myads.bestbuyads.com/\": read tcp4 10.0.1.126:46602-\u003e23.10.56.85:80: use of closed network connection",
-      "first_seen": "2026-10-25T18:08:36Z",
-      "last_seen": "2026-10-25T18:12:24Z",
-      "attempts": 6,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://myads.bestbuyads.com/: Get \"http://myads.bestbuyads.com/\": read tcp4 10.0.1.126:46602-\u003e23.10.56.85:80: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 286,
-      "domain": "br.indeed.com",
-      "url": "https://br.indeed.com/companies",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T21:21:24Z",
-      "last_seen": "2026-10-25T21:21:24Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 101,
-      "domain": "ds.tl",
-      "url": "http://ds.tl/help-third-party-plugins",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://ds.tl/help-third-party-plugins: Get \"http://ds.tl/help-third-party-plugins\": dial tcp4: lookup ds.tl on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-23T19:53:58Z",
-      "last_seen": "2026-10-24T00:08:54Z",
-      "attempts": 4,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://ds.tl/help-third-party-plugins: Get \"http://ds.tl/help-third-party-plugins\": dial tcp4: lookup ds.tl on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
