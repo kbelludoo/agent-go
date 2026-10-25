@@ -1,18 +1,7 @@
 {
-  "last_updated": "2026-10-25T08:12:03Z",
+  "last_updated": "2026-10-25T08:13:03Z",
   "total_quarantine": 190,
   "quarantine_sites": [
-    {
-      "id": 41,
-      "domain": "www.hashicorp.com",
-      "url": "https://www.hashicorp.com/conferences/hashiconf#livestream",
-      "status_code": 429,
-      "error_message": "HTTP 429",
-      "first_seen": "2026-10-23T14:43:58Z",
-      "last_seen": "2026-10-23T14:43:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
-    },
     {
       "id": 24,
       "domain": "www.nytimes.com",
@@ -2091,6 +2080,17 @@
       "last_seen": "2026-10-23T14:43:10Z",
       "attempts": 1,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 41,
+      "domain": "www.hashicorp.com",
+      "url": "https://www.hashicorp.com/conferences/hashiconf#livestream",
+      "status_code": 429,
+      "error_message": "HTTP 429",
+      "first_seen": "2026-10-23T14:43:58Z",
+      "last_seen": "2026-10-23T14:43:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
     }
   ]
 }
