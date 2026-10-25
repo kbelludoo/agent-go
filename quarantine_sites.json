@@ -1,7 +1,29 @@
 {
-  "last_updated": "2026-10-25T00:31:15Z",
+  "last_updated": "2026-10-25T00:32:15Z",
   "total_quarantine": 170,
   "quarantine_sites": [
+    {
+      "id": 111,
+      "domain": "account.ncbi.nlm.nih.gov",
+      "url": "https://account.ncbi.nlm.nih.gov/myncbi/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T21:07:10Z",
+      "last_seen": "2026-10-23T21:07:22Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 65,
+      "domain": "invent.kde.org",
+      "url": "https://invent.kde.org/websites/endof10-org",
+      "status_code": 501,
+      "error_message": "HTTP 501",
+      "first_seen": "2026-10-23T15:56:58Z",
+      "last_seen": "2026-10-23T15:56:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 501 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 173,
       "domain": "au.linkedin.com",
@@ -1849,28 +1871,6 @@
       "last_seen": "2026-10-24T03:10:14Z",
       "attempts": 9,
       "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 111,
-      "domain": "account.ncbi.nlm.nih.gov",
-      "url": "https://account.ncbi.nlm.nih.gov/myncbi/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T21:07:10Z",
-      "last_seen": "2026-10-23T21:07:22Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 65,
-      "domain": "invent.kde.org",
-      "url": "https://invent.kde.org/websites/endof10-org",
-      "status_code": 501,
-      "error_message": "HTTP 501",
-      "first_seen": "2026-10-23T15:56:58Z",
-      "last_seen": "2026-10-23T15:56:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 501 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
