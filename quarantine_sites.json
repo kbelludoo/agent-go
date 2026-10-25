@@ -1,51 +1,7 @@
 {
-  "last_updated": "2026-10-25T19:38:16Z",
+  "last_updated": "2026-10-25T19:39:14Z",
   "total_quarantine": 278,
   "quarantine_sites": [
-    {
-      "id": 212,
-      "domain": "rustwasm.github.io",
-      "url": "https://rustwasm.github.io/wasm-bindgen/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T12:52:37Z",
-      "last_seen": "2026-10-25T12:52:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 105,
-      "domain": "chat.stackexchange.com",
-      "url": "https://chat.stackexchange.com?tab=site\u0026host=stackexchange.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T23:03:09Z",
-      "last_seen": "2026-10-23T23:03:09Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 99,
-      "domain": "careers.washingtonpost.com",
-      "url": "https://careers.washingtonpost.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://careers.washingtonpost.com/: Get \"https://careers.washingtonpost.com/\": read tcp4 10.0.1.126:55150-\u003e23.11.234.135:443: use of closed network connection",
-      "first_seen": "2026-10-23T19:49:33Z",
-      "last_seen": "2026-10-23T19:49:33Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://careers.washingtonpost.com/: Get \"https://careers.washingtonpost.com/\": read tcp4 10.0.1.126:55150-\u003e23.11.234.135:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 122,
-      "domain": "www.security.harvard.edu",
-      "url": "https://www.security.harvard.edu/privacy-policy",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T02:18:23Z",
-      "last_seen": "2026-10-24T03:39:59Z",
-      "attempts": 16,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 8,
       "domain": "pt.wikihow.com",
@@ -3059,6 +3015,50 @@
       "last_seen": "2026-10-25T04:03:37Z",
       "attempts": 4,
       "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 212,
+      "domain": "rustwasm.github.io",
+      "url": "https://rustwasm.github.io/wasm-bindgen/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T12:52:37Z",
+      "last_seen": "2026-10-25T12:52:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 105,
+      "domain": "chat.stackexchange.com",
+      "url": "https://chat.stackexchange.com?tab=site\u0026host=stackexchange.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T23:03:09Z",
+      "last_seen": "2026-10-23T23:03:09Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 99,
+      "domain": "careers.washingtonpost.com",
+      "url": "https://careers.washingtonpost.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://careers.washingtonpost.com/: Get \"https://careers.washingtonpost.com/\": read tcp4 10.0.1.126:55150-\u003e23.11.234.135:443: use of closed network connection",
+      "first_seen": "2026-10-23T19:49:33Z",
+      "last_seen": "2026-10-23T19:49:33Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://careers.washingtonpost.com/: Get \"https://careers.washingtonpost.com/\": read tcp4 10.0.1.126:55150-\u003e23.11.234.135:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 122,
+      "domain": "www.security.harvard.edu",
+      "url": "https://www.security.harvard.edu/privacy-policy",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T02:18:23Z",
+      "last_seen": "2026-10-24T03:39:59Z",
+      "attempts": 16,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
