@@ -1,7 +1,40 @@
 {
-  "last_updated": "2026-10-25T03:55:15Z",
+  "last_updated": "2026-10-25T03:56:13Z",
   "total_quarantine": 184,
   "quarantine_sites": [
+    {
+      "id": 159,
+      "domain": "cookiedatabase.org",
+      "url": "https://cookiedatabase.org/tcf/purposes/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T21:24:35Z",
+      "last_seen": "2026-10-24T21:38:59Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 163,
+      "domain": "de.linkedin.com",
+      "url": "https://de.linkedin.com/company/springernature/life?trk=nav_type_life",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T21:52:35Z",
+      "last_seen": "2026-10-24T21:52:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 148,
+      "domain": "ibm.enterprise.slack.com",
+      "url": "https://ibm.enterprise.slack.com/workspace-signin",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T19:12:35Z",
+      "last_seen": "2026-10-24T19:12:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 84,
       "domain": "www.loc.gov",
@@ -1992,39 +2025,6 @@
       "last_seen": "2026-10-25T00:21:37Z",
       "attempts": 2,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 159,
-      "domain": "cookiedatabase.org",
-      "url": "https://cookiedatabase.org/tcf/purposes/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T21:24:35Z",
-      "last_seen": "2026-10-24T21:38:59Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 163,
-      "domain": "de.linkedin.com",
-      "url": "https://de.linkedin.com/company/springernature/life?trk=nav_type_life",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T21:52:35Z",
-      "last_seen": "2026-10-24T21:52:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 148,
-      "domain": "ibm.enterprise.slack.com",
-      "url": "https://ibm.enterprise.slack.com/workspace-signin",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T19:12:35Z",
-      "last_seen": "2026-10-24T19:12:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
