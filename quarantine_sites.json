@@ -1,51 +1,7 @@
 {
-  "last_updated": "2026-10-25T07:57:52Z",
+  "last_updated": "2026-10-25T07:58:50Z",
   "total_quarantine": 190,
   "quarantine_sites": [
-    {
-      "id": 170,
-      "domain": "au.linkedin.com",
-      "url": "https://au.linkedin.com/in/stephenmok?trk=article-ssr-frontend-pulse_little-mention",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T22:42:35Z",
-      "last_seen": "2026-10-24T23:26:00Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 129,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/nielsen-norman-group",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T14:21:47Z",
-      "last_seen": "2026-10-24T14:25:59Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 5,
-      "domain": "phys.org",
-      "url": "https://phys.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:01:58Z",
-      "last_seen": "2026-10-23T13:01:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 135,
-      "domain": "linkedin.com",
-      "url": "https://linkedin.com/company/mojodocs",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T18:17:35Z",
-      "last_seen": "2026-10-24T18:17:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 16,
       "domain": "stackoverflow.com",
@@ -2091,6 +2047,50 @@
       "last_seen": "2026-10-23T13:18:22Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 170,
+      "domain": "au.linkedin.com",
+      "url": "https://au.linkedin.com/in/stephenmok?trk=article-ssr-frontend-pulse_little-mention",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T22:42:35Z",
+      "last_seen": "2026-10-24T23:26:00Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 129,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/nielsen-norman-group",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T14:21:47Z",
+      "last_seen": "2026-10-24T14:25:59Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 5,
+      "domain": "phys.org",
+      "url": "https://phys.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:01:58Z",
+      "last_seen": "2026-10-23T13:01:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 135,
+      "domain": "linkedin.com",
+      "url": "https://linkedin.com/company/mojodocs",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T18:17:35Z",
+      "last_seen": "2026-10-24T18:17:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
