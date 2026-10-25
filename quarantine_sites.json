@@ -1,7 +1,29 @@
 {
-  "last_updated": "2026-10-25T13:56:14Z",
+  "last_updated": "2026-10-25T13:57:14Z",
   "total_quarantine": 224,
   "quarantine_sites": [
+    {
+      "id": 211,
+      "domain": "www.EXAMPLE.com",
+      "url": "https://www.EXAMPLE.com/apps/tracktor",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T11:22:12Z",
+      "last_seen": "2026-10-25T11:22:48Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 212,
+      "domain": "rustwasm.github.io",
+      "url": "https://rustwasm.github.io/wasm-bindgen/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T12:52:37Z",
+      "last_seen": "2026-10-25T12:52:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 105,
       "domain": "chat.stackexchange.com",
@@ -2443,28 +2465,6 @@
       "last_seen": "2026-10-25T09:53:13Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 211,
-      "domain": "www.EXAMPLE.com",
-      "url": "https://www.EXAMPLE.com/apps/tracktor",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T11:22:12Z",
-      "last_seen": "2026-10-25T11:22:48Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 212,
-      "domain": "rustwasm.github.io",
-      "url": "https://rustwasm.github.io/wasm-bindgen/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T12:52:37Z",
-      "last_seen": "2026-10-25T12:52:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
