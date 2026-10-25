@@ -1,51 +1,7 @@
 {
-  "last_updated": "2026-10-25T22:41:03Z",
+  "last_updated": "2026-10-25T22:42:02Z",
   "total_quarantine": 296,
   "quarantine_sites": [
-    {
-      "id": 218,
-      "domain": "unsplash.com",
-      "url": "https://unsplash.com/about",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T13:15:13Z",
-      "last_seen": "2026-10-25T13:16:13Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 252,
-      "domain": "opensource.org",
-      "url": "https://opensource.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T15:58:01Z",
-      "last_seen": "2026-10-25T15:58:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 291,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/cal-hacks/posts/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-25T21:38:13Z",
-      "last_seen": "2026-10-25T21:39:13Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 98,
-      "domain": "www.wpintelligence.com",
-      "url": "https://www.wpintelligence.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.wpintelligence.com/: Get \"https://wpintelligence.washingtonpost.com/products/wp-intelligence/\": read tcp4 10.0.1.126:52042-\u003e2.16.169.209:443: use of closed network connection",
-      "first_seen": "2026-10-23T19:49:09Z",
-      "last_seen": "2026-10-25T00:20:36Z",
-      "attempts": 4,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.wpintelligence.com/: Get \"https://wpintelligence.washingtonpost.com/products/wp-intelligence/\": read tcp4 10.0.1.126:52042-\u003e2.16.169.209:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
-    },
     {
       "id": 144,
       "domain": "www.springernature.com",
@@ -3257,6 +3213,50 @@
       "last_seen": "2026-10-25T00:20:01Z",
       "attempts": 2,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 218,
+      "domain": "unsplash.com",
+      "url": "https://unsplash.com/about",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T13:15:13Z",
+      "last_seen": "2026-10-25T13:16:13Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 252,
+      "domain": "opensource.org",
+      "url": "https://opensource.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T15:58:01Z",
+      "last_seen": "2026-10-25T15:58:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 291,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/cal-hacks/posts/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-25T21:38:13Z",
+      "last_seen": "2026-10-25T21:39:13Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 98,
+      "domain": "www.wpintelligence.com",
+      "url": "https://www.wpintelligence.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.wpintelligence.com/: Get \"https://wpintelligence.washingtonpost.com/products/wp-intelligence/\": read tcp4 10.0.1.126:52042-\u003e2.16.169.209:443: use of closed network connection",
+      "first_seen": "2026-10-23T19:49:09Z",
+      "last_seen": "2026-10-25T00:20:36Z",
+      "attempts": 4,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.wpintelligence.com/: Get \"https://wpintelligence.washingtonpost.com/products/wp-intelligence/\": read tcp4 10.0.1.126:52042-\u003e2.16.169.209:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
