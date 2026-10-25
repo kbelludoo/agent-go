@@ -1,18 +1,7 @@
 {
-  "last_updated": "2026-10-25T20:29:02Z",
+  "last_updated": "2026-10-25T20:30:02Z",
   "total_quarantine": 281,
   "quarantine_sites": [
-    {
-      "id": 259,
-      "domain": "biblioteca.ibge.gov.br",
-      "url": "http://biblioteca.ibge.gov.br/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T17:01:24Z",
-      "last_seen": "2026-10-25T17:01:24Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 115,
       "domain": "key.accessibility.harvard.edu",
@@ -3090,6 +3079,17 @@
       "error_message": "HTTP 403",
       "first_seen": "2026-10-25T09:57:37Z",
       "last_seen": "2026-10-25T09:57:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 259,
+      "domain": "biblioteca.ibge.gov.br",
+      "url": "http://biblioteca.ibge.gov.br/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T17:01:24Z",
+      "last_seen": "2026-10-25T17:01:24Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
