@@ -1,7 +1,106 @@
 {
-  "last_updated": "2026-10-25T02:27:51Z",
+  "last_updated": "2026-10-25T02:29:03Z",
   "total_quarantine": 177,
   "quarantine_sites": [
+    {
+      "id": 166,
+      "domain": "se.linkedin.com",
+      "url": "https://se.linkedin.com/in/andreas-axhamre123?trk=article-ssr-frontend-pulse_x-social-details_comments-action_comment_actor-name",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T22:41:36Z",
+      "last_seen": "2026-10-24T23:24:59Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 96,
+      "domain": "medium.com",
+      "url": "https://medium.com/@Medium/cccf29534bf4",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T19:03:34Z",
+      "last_seen": "2026-10-23T19:03:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 103,
+      "domain": "www.nih.gov",
+      "url": "https://www.nih.gov/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T20:02:10Z",
+      "last_seen": "2026-10-24T00:27:12Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 177,
+      "domain": "grantsgovprod.wordpress.com",
+      "url": "https://grantsgovprod.wordpress.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T02:26:37Z",
+      "last_seen": "2026-10-25T02:26:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 168,
+      "domain": "au.linkedin.com",
+      "url": "https://au.linkedin.com/in/mariachristley",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T22:42:12Z",
+      "last_seen": "2026-10-24T23:25:35Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 136,
+      "domain": "uk.trustpilot.com",
+      "url": "https://uk.trustpilot.com/review/link.springer.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T18:24:47Z",
+      "last_seen": "2026-10-24T18:37:59Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 36,
+      "domain": "symposium.opentechresearch.org",
+      "url": "https://symposium.opentechresearch.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:17:10Z",
+      "last_seen": "2026-10-23T14:17:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 169,
+      "domain": "twitter.com",
+      "url": "https://twitter.com/TwitterA11y",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T00:25:01Z",
+      "last_seen": "2026-10-25T00:25:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 174,
+      "domain": "www.gsaauctions.gov",
+      "url": "https://www.gsaauctions.gov/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T01:27:24Z",
+      "last_seen": "2026-10-25T01:27:24Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 128,
       "domain": "www.linkedin.com",
@@ -1847,105 +1946,6 @@
       "error_message": "HTTP 403",
       "first_seen": "2026-10-23T22:38:28Z",
       "last_seen": "2026-10-23T22:38:28Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 166,
-      "domain": "se.linkedin.com",
-      "url": "https://se.linkedin.com/in/andreas-axhamre123?trk=article-ssr-frontend-pulse_x-social-details_comments-action_comment_actor-name",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T22:41:36Z",
-      "last_seen": "2026-10-24T23:24:59Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 96,
-      "domain": "medium.com",
-      "url": "https://medium.com/@Medium/cccf29534bf4",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T19:03:34Z",
-      "last_seen": "2026-10-23T19:03:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 103,
-      "domain": "www.nih.gov",
-      "url": "https://www.nih.gov/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T20:02:10Z",
-      "last_seen": "2026-10-24T00:27:12Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 177,
-      "domain": "grantsgovprod.wordpress.com",
-      "url": "https://grantsgovprod.wordpress.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T02:26:37Z",
-      "last_seen": "2026-10-25T02:26:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 168,
-      "domain": "au.linkedin.com",
-      "url": "https://au.linkedin.com/in/mariachristley",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T22:42:12Z",
-      "last_seen": "2026-10-24T23:25:35Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 136,
-      "domain": "uk.trustpilot.com",
-      "url": "https://uk.trustpilot.com/review/link.springer.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T18:24:47Z",
-      "last_seen": "2026-10-24T18:37:59Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 36,
-      "domain": "symposium.opentechresearch.org",
-      "url": "https://symposium.opentechresearch.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:17:10Z",
-      "last_seen": "2026-10-23T14:17:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 169,
-      "domain": "twitter.com",
-      "url": "https://twitter.com/TwitterA11y",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T00:25:01Z",
-      "last_seen": "2026-10-25T00:25:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 174,
-      "domain": "www.gsaauctions.gov",
-      "url": "https://www.gsaauctions.gov/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T01:27:24Z",
-      "last_seen": "2026-10-25T01:27:24Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
