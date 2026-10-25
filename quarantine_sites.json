@@ -1,128 +1,7 @@
 {
-  "last_updated": "2026-10-25T08:47:39Z",
+  "last_updated": "2026-10-25T08:48:40Z",
   "total_quarantine": 193,
   "quarantine_sites": [
-    {
-      "id": 73,
-      "domain": "www.gov.br",
-      "url": "https://www.gov.br/conselho-nacional-de-saude/pt-br/search?origem=termos\u0026SearchableText=Desenrola Brasil",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-23T16:39:33Z",
-      "last_seen": "2026-10-23T16:39:33Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 107,
-      "domain": "spmaisdigital.sp.gov.br",
-      "url": "https://spmaisdigital.sp.gov.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://spmaisdigital.sp.gov.br: Get \"https://spmaisdigital.sp.gov.br\": dial tcp4: lookup spmaisdigital.sp.gov.br on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-24T00:28:59Z",
-      "last_seen": "2026-10-25T00:18:15Z",
-      "attempts": 3,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://spmaisdigital.sp.gov.br: Get \"https://spmaisdigital.sp.gov.br\": dial tcp4: lookup spmaisdigital.sp.gov.br on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 34,
-      "domain": "www.reuters.com",
-      "url": "https://www.reuters.com/world/asia-pacific/eu-agency-warns-websites-may-need-be-taken-offline-php-prepares-patches-2026-10-21/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T13:58:46Z",
-      "last_seen": "2026-10-23T13:58:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 143,
-      "domain": "twitter.com",
-      "url": "https://twitter.com/intent/tweet?url=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026status=Cosmic Pathways+https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-24T18:52:46Z",
-      "last_seen": "2026-10-24T18:52:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 141,
-      "domain": "www.facebook.com",
-      "url": "http://www.facebook.com/share.php?u=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026title=Cosmic Pathways",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-24T18:52:22Z",
-      "last_seen": "2026-10-24T18:52:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 157,
-      "domain": "sdgs.un.org",
-      "url": "https://sdgs.un.org/ar",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T20:40:06Z",
-      "last_seen": "2026-10-24T21:03:59Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 33,
-      "domain": "home.web.cern.ch",
-      "url": "http://home.web.cern.ch/topics/birth-web",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:53:24Z",
-      "last_seen": "2026-10-23T13:53:24Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 85,
-      "domain": "paineldecompras.economia.gov.br",
-      "url": "http://paineldecompras.economia.gov.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host",
-      "first_seen": "2026-10-23T17:39:51Z",
-      "last_seen": "2026-10-23T18:19:14Z",
-      "attempts": 4,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 4,
-      "domain": "nytimes.com",
-      "url": "https://nytimes.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T12:59:58Z",
-      "last_seen": "2026-10-23T22:57:27Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 158,
-      "domain": "sdgs.un.org",
-      "url": "https://sdgs.un.org/zh",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T20:40:17Z",
-      "last_seen": "2026-10-24T21:04:11Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 138,
-      "domain": "web.dio.me",
-      "url": "https://web.dio.me/track/ibm-bob-ia-nivel-empresarial-para-desenvolvedores",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T18:34:35Z",
-      "last_seen": "2026-10-24T18:34:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 93,
       "domain": "digisusgmp.saude.gov.br",
@@ -1285,8 +1164,8 @@
       "status_code": 404,
       "error_message": "HTTP 404",
       "first_seen": "2026-10-25T08:45:14Z",
-      "last_seen": "2026-10-25T08:46:50Z",
-      "attempts": 2,
+      "last_seen": "2026-10-25T08:48:14Z",
+      "attempts": 3,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
@@ -1549,8 +1428,8 @@
       "status_code": 404,
       "error_message": "HTTP 404",
       "first_seen": "2026-10-25T08:45:01Z",
-      "last_seen": "2026-10-25T08:46:37Z",
-      "attempts": 3,
+      "last_seen": "2026-10-25T08:48:01Z",
+      "attempts": 4,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
@@ -2077,8 +1956,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-25T08:45:25Z",
-      "last_seen": "2026-10-25T08:47:01Z",
-      "attempts": 2,
+      "last_seen": "2026-10-25T08:48:25Z",
+      "attempts": 3,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -2124,6 +2003,127 @@
       "last_seen": "2026-10-24T00:55:58Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 73,
+      "domain": "www.gov.br",
+      "url": "https://www.gov.br/conselho-nacional-de-saude/pt-br/search?origem=termos\u0026SearchableText=Desenrola Brasil",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-23T16:39:33Z",
+      "last_seen": "2026-10-23T16:39:33Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 107,
+      "domain": "spmaisdigital.sp.gov.br",
+      "url": "https://spmaisdigital.sp.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://spmaisdigital.sp.gov.br: Get \"https://spmaisdigital.sp.gov.br\": dial tcp4: lookup spmaisdigital.sp.gov.br on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-24T00:28:59Z",
+      "last_seen": "2026-10-25T00:18:15Z",
+      "attempts": 3,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://spmaisdigital.sp.gov.br: Get \"https://spmaisdigital.sp.gov.br\": dial tcp4: lookup spmaisdigital.sp.gov.br on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 34,
+      "domain": "www.reuters.com",
+      "url": "https://www.reuters.com/world/asia-pacific/eu-agency-warns-websites-may-need-be-taken-offline-php-prepares-patches-2026-10-21/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T13:58:46Z",
+      "last_seen": "2026-10-23T13:58:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 143,
+      "domain": "twitter.com",
+      "url": "https://twitter.com/intent/tweet?url=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026status=Cosmic Pathways+https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-24T18:52:46Z",
+      "last_seen": "2026-10-24T18:52:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 141,
+      "domain": "www.facebook.com",
+      "url": "http://www.facebook.com/share.php?u=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026title=Cosmic Pathways",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-24T18:52:22Z",
+      "last_seen": "2026-10-24T18:52:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 157,
+      "domain": "sdgs.un.org",
+      "url": "https://sdgs.un.org/ar",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T20:40:06Z",
+      "last_seen": "2026-10-24T21:03:59Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 33,
+      "domain": "home.web.cern.ch",
+      "url": "http://home.web.cern.ch/topics/birth-web",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:53:24Z",
+      "last_seen": "2026-10-23T13:53:24Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 85,
+      "domain": "paineldecompras.economia.gov.br",
+      "url": "http://paineldecompras.economia.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host",
+      "first_seen": "2026-10-23T17:39:51Z",
+      "last_seen": "2026-10-23T18:19:14Z",
+      "attempts": 4,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 4,
+      "domain": "nytimes.com",
+      "url": "https://nytimes.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T12:59:58Z",
+      "last_seen": "2026-10-23T22:57:27Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 158,
+      "domain": "sdgs.un.org",
+      "url": "https://sdgs.un.org/zh",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T20:40:17Z",
+      "last_seen": "2026-10-24T21:04:11Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 138,
+      "domain": "web.dio.me",
+      "url": "https://web.dio.me/track/ibm-bob-ia-nivel-empresarial-para-desenvolvedores",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T18:34:35Z",
+      "last_seen": "2026-10-24T18:34:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
