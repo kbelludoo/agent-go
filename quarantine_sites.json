@@ -1,51 +1,7 @@
 {
-  "last_updated": "2026-10-26T22:00:39Z",
-  "total_quarantine": 466,
+  "last_updated": "2026-10-26T22:01:39Z",
+  "total_quarantine": 467,
   "quarantine_sites": [
-    {
-      "id": 326,
-      "domain": "poem-editions.com",
-      "url": "http://poem-editions.com/",
-      "status_code": 503,
-      "error_message": "HTTP 503",
-      "first_seen": "2026-10-26T02:32:29Z",
-      "last_seen": "2026-10-26T02:42:55Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 445,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=926185d7-3799-433a-af89-590a6f03da56",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:30:13Z",
-      "last_seen": "2026-10-26T20:30:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 452,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=d02cf2b6-08e3-487e-98a4-02d5dc204d9c",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:37:13Z",
-      "last_seen": "2026-10-26T20:37:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 115,
-      "domain": "key.accessibility.harvard.edu",
-      "url": "https://key.accessibility.harvard.edu/get-involved",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:43:12Z",
-      "last_seen": "2026-10-24T00:45:12Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 315,
       "domain": "community.atlassian.com",
@@ -2267,6 +2223,17 @@
       "last_seen": "2026-10-25T10:10:24Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 467,
+      "domain": "github.com",
+      "url": "https://github.com/nomoat/free-asr",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T22:01:01Z",
+      "last_seen": "2026-10-26T22:01:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
       "id": 66,
@@ -5127,6 +5094,50 @@
       "last_seen": "2026-10-26T20:47:13Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 326,
+      "domain": "poem-editions.com",
+      "url": "http://poem-editions.com/",
+      "status_code": 503,
+      "error_message": "HTTP 503",
+      "first_seen": "2026-10-26T02:32:29Z",
+      "last_seen": "2026-10-26T02:42:55Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 445,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=926185d7-3799-433a-af89-590a6f03da56",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:30:13Z",
+      "last_seen": "2026-10-26T20:30:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 452,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=d02cf2b6-08e3-487e-98a4-02d5dc204d9c",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:37:13Z",
+      "last_seen": "2026-10-26T20:37:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 115,
+      "domain": "key.accessibility.harvard.edu",
+      "url": "https://key.accessibility.harvard.edu/get-involved",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:43:12Z",
+      "last_seen": "2026-10-24T00:45:12Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
