@@ -1,7 +1,51 @@
 {
-  "last_updated": "2026-10-26T06:10:15Z",
+  "last_updated": "2026-10-26T06:11:13Z",
   "total_quarantine": 346,
   "quarantine_sites": [
+    {
+      "id": 282,
+      "domain": "x.com",
+      "url": "https://x.com/GforPublishers",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T20:33:25Z",
+      "last_seen": "2026-10-25T20:34:01Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 142,
+      "domain": "www.linkedin.com",
+      "url": "http://www.linkedin.com/shareArticle?mini=true\u0026url=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026title=Cosmic Pathways\u0026source=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-24T18:52:34Z",
+      "last_seen": "2026-10-24T18:52:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 185,
+      "domain": "www.justice.gov",
+      "url": "https://www.justice.gov/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T03:57:01Z",
+      "last_seen": "2026-10-25T04:03:37Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 212,
+      "domain": "rustwasm.github.io",
+      "url": "https://rustwasm.github.io/wasm-bindgen/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T12:52:37Z",
+      "last_seen": "2026-10-25T12:52:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 105,
       "domain": "chat.stackexchange.com",
@@ -3763,50 +3807,6 @@
       "last_seen": "2026-10-25T18:02:25Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 282,
-      "domain": "x.com",
-      "url": "https://x.com/GforPublishers",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T20:33:25Z",
-      "last_seen": "2026-10-25T20:34:01Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 142,
-      "domain": "www.linkedin.com",
-      "url": "http://www.linkedin.com/shareArticle?mini=true\u0026url=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026title=Cosmic Pathways\u0026source=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-24T18:52:34Z",
-      "last_seen": "2026-10-24T18:52:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 185,
-      "domain": "www.justice.gov",
-      "url": "https://www.justice.gov/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T03:57:01Z",
-      "last_seen": "2026-10-25T04:03:37Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 212,
-      "domain": "rustwasm.github.io",
-      "url": "https://rustwasm.github.io/wasm-bindgen/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T12:52:37Z",
-      "last_seen": "2026-10-25T12:52:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
