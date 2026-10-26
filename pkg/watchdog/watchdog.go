@@ -49,7 +49,9 @@ type FleetReport struct {
 	Uptime     string      `json:"uptime"`
 }
 
-// Registry of the 9 monitored bots on the VPS
+// Registry of the monitored bots on the VPS (14 active; LoL Idle :3011 is
+// intentionally excluded because lolidle-farm.service is disabled and the
+// watchdog auto-restarts any registered bot found offline).
 var BotsRegistry = []MonitoredBot{
 	{
 		ID:         "huntera",
@@ -84,6 +86,14 @@ var BotsRegistry = []MonitoredBot{
 		Service:    "leveling-bot.service",
 	},
 	{
+		ID:         "pokelegacy",
+		Name:       "🔥 PokeLegacy",
+		Port:       3005,
+		URL:        "http://127.0.0.1:3005/api/status",
+		RestartCmd: "sudo systemctl restart pokelegacy.service",
+		Service:    "pokelegacy.service",
+	},
+	{
 		ID:         "pokeidle",
 		Name:       "⚡ PokeIdle.io",
 		Port:       3006,
@@ -114,6 +124,38 @@ var BotsRegistry = []MonitoredBot{
 		URL:        "http://127.0.0.1:3010/api/status",
 		RestartCmd: "sudo systemctl restart twitch-miner.service",
 		Service:    "twitch-miner.service",
+	},
+	{
+		ID:         "luxidle",
+		Name:       "✨ Lux Idle",
+		Port:       3012,
+		URL:        "http://127.0.0.1:3012/api/status",
+		RestartCmd: "sudo systemctl restart luxidle.service",
+		Service:    "luxidle.service",
+	},
+	{
+		ID:         "farmbot",
+		Name:       "🌾 FarmBot Ricochet",
+		Port:       3013,
+		URL:        "http://127.0.0.1:3013/api/status",
+		RestartCmd: "sudo systemctl restart farmbot.service",
+		Service:    "farmbot.service",
+	},
+	{
+		ID:         "poketrue",
+		Name:       "🎯 PokeTrue",
+		Port:       3014,
+		URL:        "http://127.0.0.1:3014/api/status",
+		RestartCmd: "sudo systemctl restart poketrue.service",
+		Service:    "poketrue.service",
+	},
+	{
+		ID:         "pokepixel",
+		Name:       "🟦 PokePixel",
+		Port:       3015,
+		URL:        "http://127.0.0.1:3015/api/status",
+		RestartCmd: "sudo systemctl restart pokepixel.service",
+		Service:    "pokepixel.service",
 	},
 	{
 		ID:         "baiak",
