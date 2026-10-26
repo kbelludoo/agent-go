@@ -1,7 +1,62 @@
 {
-  "last_updated": "2026-10-26T17:45:51Z",
-  "total_quarantine": 386,
+  "last_updated": "2026-10-26T17:46:52Z",
+  "total_quarantine": 387,
   "quarantine_sites": [
+    {
+      "id": 144,
+      "domain": "www.springernature.com",
+      "url": "https://www.springernature.com/gp/librarians/contact-%20us",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T18:57:35Z",
+      "last_seen": "2026-10-24T19:19:23Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 124,
+      "domain": "www.legacy.com",
+      "url": "https://www.legacy.com/us/obituaries/bostonglobe/browse",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T03:59:59Z",
+      "last_seen": "2026-10-24T04:49:11Z",
+      "attempts": 18,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 148,
+      "domain": "ibm.enterprise.slack.com",
+      "url": "https://ibm.enterprise.slack.com/workspace-signin",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T19:12:35Z",
+      "last_seen": "2026-10-24T19:12:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 251,
+      "domain": "fedoraproject.org",
+      "url": "https://fedoraproject.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T15:42:02Z",
+      "last_seen": "2026-10-26T16:10:38Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 265,
+      "domain": "web.whatsapp.com",
+      "url": "https://web.whatsapp.com/send?text=%20Curso Gratuito: Estado de Direito | Gazeta do Povo%20https://especiais.gazetadopovo.com.br/cursos/curso-gratuito-estado-de-direito-gazeta-do-povo%3Fcomp%3Dwhatsapp",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-25T17:52:36Z",
+      "last_seen": "2026-10-25T17:52:36Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 281,
       "domain": "account.icann.org",
@@ -1574,6 +1629,17 @@
       "last_seen": "2026-10-26T04:46:25Z",
       "attempts": 6,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 387,
+      "domain": "www.facebook.com",
+      "url": "https://www.facebook.com/sharer.php?u=ZZZZZ_JS_LINK_TO_SHARE_ZZZZZ",
+      "status_code": 500,
+      "error_message": "HTTP 500",
+      "first_seen": "2026-10-26T17:46:37Z",
+      "last_seen": "2026-10-26T17:46:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
     },
     {
       "id": 115,
@@ -4192,61 +4258,6 @@
       "last_seen": "2026-10-25T00:20:36Z",
       "attempts": 4,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.wpintelligence.com/: Get \"https://wpintelligence.washingtonpost.com/products/wp-intelligence/\": read tcp4 10.0.1.126:52042-\u003e2.16.169.209:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 144,
-      "domain": "www.springernature.com",
-      "url": "https://www.springernature.com/gp/librarians/contact-%20us",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T18:57:35Z",
-      "last_seen": "2026-10-24T19:19:23Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 124,
-      "domain": "www.legacy.com",
-      "url": "https://www.legacy.com/us/obituaries/bostonglobe/browse",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T03:59:59Z",
-      "last_seen": "2026-10-24T04:49:11Z",
-      "attempts": 18,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 148,
-      "domain": "ibm.enterprise.slack.com",
-      "url": "https://ibm.enterprise.slack.com/workspace-signin",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T19:12:35Z",
-      "last_seen": "2026-10-24T19:12:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 251,
-      "domain": "fedoraproject.org",
-      "url": "https://fedoraproject.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T15:42:02Z",
-      "last_seen": "2026-10-26T16:10:38Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 265,
-      "domain": "web.whatsapp.com",
-      "url": "https://web.whatsapp.com/send?text=%20Curso Gratuito: Estado de Direito | Gazeta do Povo%20https://especiais.gazetadopovo.com.br/cursos/curso-gratuito-estado-de-direito-gazeta-do-povo%3Fcomp%3Dwhatsapp",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-25T17:52:36Z",
-      "last_seen": "2026-10-25T17:52:36Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
