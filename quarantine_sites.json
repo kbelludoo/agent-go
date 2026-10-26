@@ -1,7 +1,95 @@
 {
-  "last_updated": "2026-10-26T03:49:14Z",
+  "last_updated": "2026-10-26T03:50:15Z",
   "total_quarantine": 336,
   "quarantine_sites": [
+    {
+      "id": 80,
+      "domain": "shop.alz.org",
+      "url": "https://shop.alz.org",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T17:27:33Z",
+      "last_seen": "2026-10-24T00:26:35Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 203,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/standards/types/#ED",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T10:10:13Z",
+      "last_seen": "2026-10-25T10:10:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 268,
+      "domain": "maas.io",
+      "url": "https://maas.io/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://maas.io/: Get \"https://canonical.com/maas/\": context deadline exceeded",
+      "first_seen": "2026-10-25T18:07:00Z",
+      "last_seen": "2026-10-25T18:07:00Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 314,
+      "domain": "community.atlassian.com",
+      "url": "https://community.atlassian.com/t5/custom/page/page-id/create-post-step-1?add-tags=jira-software,Cloud",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T01:42:49Z",
+      "last_seen": "2026-10-26T02:30:25Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 327,
+      "domain": "account.ncbi.nlm.nih.gov",
+      "url": "https://account.ncbi.nlm.nih.gov/myncbi/collections/bibliography/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T02:34:25Z",
+      "last_seen": "2026-10-26T02:44:49Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 106,
+      "domain": "kubegrade.com",
+      "url": "https://kubegrade.com/kubernetes-cloud-native-architecture/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T23:07:33Z",
+      "last_seen": "2026-10-24T00:09:41Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 94,
+      "domain": "tsc.worldwildlife.org",
+      "url": "https://tsc.worldwildlife.org/page/support-wwf",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T18:29:58Z",
+      "last_seen": "2026-10-23T18:30:22Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 60,
+      "domain": "sverigesradio.se",
+      "url": "https://sverigesradio.se/radioleaks",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:49:23Z",
+      "last_seen": "2026-10-24T00:10:32Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 54,
       "domain": "gitlab.com",
@@ -1571,8 +1659,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-26T03:32:01Z",
-      "last_seen": "2026-10-26T03:40:49Z",
-      "attempts": 2,
+      "last_seen": "2026-10-26T03:49:25Z",
+      "attempts": 3,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -2528,8 +2616,8 @@
       "status_code": 404,
       "error_message": "HTTP 404",
       "first_seen": "2026-10-26T03:32:15Z",
-      "last_seen": "2026-10-26T03:41:02Z",
-      "attempts": 2,
+      "last_seen": "2026-10-26T03:49:38Z",
+      "attempts": 3,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
@@ -3609,94 +3697,6 @@
       "last_seen": "2026-10-23T21:17:22Z",
       "attempts": 2,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 80,
-      "domain": "shop.alz.org",
-      "url": "https://shop.alz.org",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T17:27:33Z",
-      "last_seen": "2026-10-24T00:26:35Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 203,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/standards/types/#ED",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T10:10:13Z",
-      "last_seen": "2026-10-25T10:10:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 268,
-      "domain": "maas.io",
-      "url": "https://maas.io/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://maas.io/: Get \"https://canonical.com/maas/\": context deadline exceeded",
-      "first_seen": "2026-10-25T18:07:00Z",
-      "last_seen": "2026-10-25T18:07:00Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 314,
-      "domain": "community.atlassian.com",
-      "url": "https://community.atlassian.com/t5/custom/page/page-id/create-post-step-1?add-tags=jira-software,Cloud",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T01:42:49Z",
-      "last_seen": "2026-10-26T02:30:25Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 327,
-      "domain": "account.ncbi.nlm.nih.gov",
-      "url": "https://account.ncbi.nlm.nih.gov/myncbi/collections/bibliography/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T02:34:25Z",
-      "last_seen": "2026-10-26T02:44:49Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 106,
-      "domain": "kubegrade.com",
-      "url": "https://kubegrade.com/kubernetes-cloud-native-architecture/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T23:07:33Z",
-      "last_seen": "2026-10-24T00:09:41Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 94,
-      "domain": "tsc.worldwildlife.org",
-      "url": "https://tsc.worldwildlife.org/page/support-wwf",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T18:29:58Z",
-      "last_seen": "2026-10-23T18:30:22Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 60,
-      "domain": "sverigesradio.se",
-      "url": "https://sverigesradio.se/radioleaks",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:49:23Z",
-      "last_seen": "2026-10-24T00:10:32Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
