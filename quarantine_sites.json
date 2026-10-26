@@ -1,7 +1,18 @@
 {
-  "last_updated": "2026-10-26T03:02:26Z",
+  "last_updated": "2026-10-26T03:03:26Z",
   "total_quarantine": 328,
   "quarantine_sites": [
+    {
+      "id": 276,
+      "domain": "account.icann.org",
+      "url": "http://account.icann.org/logout?app_id=undefined",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-25T19:01:04Z",
+      "last_seen": "2026-10-25T19:01:04Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 128,
       "domain": "www.linkedin.com",
@@ -3598,17 +3609,6 @@
       "last_seen": "2026-10-25T15:29:24Z",
       "attempts": 1,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL https://azure.microsoft.com/: Get \"https://azure.microsoft.com/pt-br\": read tcp4 10.0.1.126:48204-\u003e23.201.218.61:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 276,
-      "domain": "account.icann.org",
-      "url": "http://account.icann.org/logout?app_id=undefined",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-25T19:01:04Z",
-      "last_seen": "2026-10-25T19:01:04Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
