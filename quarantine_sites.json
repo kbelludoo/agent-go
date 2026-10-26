@@ -1,7 +1,29 @@
 {
-  "last_updated": "2026-10-26T08:21:04Z",
-  "total_quarantine": 349,
+  "last_updated": "2026-10-26T08:22:15Z",
+  "total_quarantine": 350,
   "quarantine_sites": [
+    {
+      "id": 232,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/non-human-identity-management-group/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-25T15:19:37Z",
+      "last_seen": "2026-10-25T15:19:49Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 250,
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Water_pu",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T15:39:13Z",
+      "last_seen": "2026-10-25T15:39:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 252,
       "domain": "",
@@ -727,6 +749,17 @@
       "last_seen": "2026-10-25T21:36:37Z",
       "attempts": 3,
       "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 350,
+      "domain": "www.peqqik.gl",
+      "url": "http://www.peqqik.gl?sc_lang=kl-GL",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.peqqik.gl?sc_lang=kl-GL: Get \"http://www.peqqik.gl?sc_lang=kl-GL\": dial tcp4 194.177.235.197:80: i/o timeout",
+      "first_seen": "2026-10-26T08:21:24Z",
+      "last_seen": "2026-10-26T08:21:24Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     },
     {
       "id": 164,
@@ -3818,28 +3851,6 @@
       "last_seen": "2026-10-25T13:09:01Z",
       "attempts": 1,
       "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 232,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/non-human-identity-management-group/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-25T15:19:37Z",
-      "last_seen": "2026-10-25T15:19:49Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 250,
-      "domain": "en.wikipedia.org",
-      "url": "https://en.wikipedia.org/wiki/Water_pu",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T15:39:13Z",
-      "last_seen": "2026-10-25T15:39:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
