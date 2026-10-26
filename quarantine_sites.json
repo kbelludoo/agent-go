@@ -1,51 +1,7 @@
 {
-  "last_updated": "2026-10-26T13:18:53Z",
+  "last_updated": "2026-10-26T13:19:51Z",
   "total_quarantine": 365,
   "quarantine_sites": [
-    {
-      "id": 360,
-      "domain": "post.borger.dk",
-      "url": "https://post.borger.dk/?lang=en",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://post.borger.dk/?lang=en: Get \"https://post.borger.dk/?lang=en\": dial tcp4 188.180.120.148:443: i/o timeout",
-      "first_seen": "2026-10-26T12:02:48Z",
-      "last_seen": "2026-10-26T13:03:13Z",
-      "attempts": 12,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 189,
-      "domain": "oversight.gov",
-      "url": "https://oversight.gov/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://oversight.gov/: Get \"https://www.oversight.gov/\": context deadline exceeded",
-      "first_seen": "2026-10-25T07:53:36Z",
-      "last_seen": "2026-10-25T07:53:36Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 198,
-      "domain": "www.figma.com",
-      "url": "https://www.figma.com/blog/webassembly-in-production/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T10:00:14Z",
-      "last_seen": "2026-10-25T10:00:14Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 200,
-      "domain": "azure.microsoft.com",
-      "url": "https://azure.microsoft.com/pt-br/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://azure.microsoft.com/pt-br/: Get \"https://azure.microsoft.com/pt-br\": read tcp4 10.0.1.126:46806-\u003e23.201.218.61:443: use of closed network connection",
-      "first_seen": "2026-10-25T10:03:36Z",
-      "last_seen": "2026-10-25T10:03:36Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://azure.microsoft.com/pt-br/: Get \"https://azure.microsoft.com/pt-br\": read tcp4 10.0.1.126:46806-\u003e23.201.218.61:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
-    },
     {
       "id": 202,
       "domain": "github.com",
@@ -4016,6 +3972,50 @@
       "last_seen": "2026-10-26T02:13:25Z",
       "attempts": 6,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 360,
+      "domain": "post.borger.dk",
+      "url": "https://post.borger.dk/?lang=en",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://post.borger.dk/?lang=en: Get \"https://post.borger.dk/?lang=en\": dial tcp4 188.180.120.148:443: i/o timeout",
+      "first_seen": "2026-10-26T12:02:48Z",
+      "last_seen": "2026-10-26T13:03:13Z",
+      "attempts": 12,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 189,
+      "domain": "oversight.gov",
+      "url": "https://oversight.gov/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://oversight.gov/: Get \"https://www.oversight.gov/\": context deadline exceeded",
+      "first_seen": "2026-10-25T07:53:36Z",
+      "last_seen": "2026-10-25T07:53:36Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 198,
+      "domain": "www.figma.com",
+      "url": "https://www.figma.com/blog/webassembly-in-production/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T10:00:14Z",
+      "last_seen": "2026-10-25T10:00:14Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 200,
+      "domain": "azure.microsoft.com",
+      "url": "https://azure.microsoft.com/pt-br/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://azure.microsoft.com/pt-br/: Get \"https://azure.microsoft.com/pt-br\": read tcp4 10.0.1.126:46806-\u003e23.201.218.61:443: use of closed network connection",
+      "first_seen": "2026-10-25T10:03:36Z",
+      "last_seen": "2026-10-25T10:03:36Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://azure.microsoft.com/pt-br/: Get \"https://azure.microsoft.com/pt-br\": read tcp4 10.0.1.126:46806-\u003e23.201.218.61:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
