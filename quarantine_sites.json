@@ -1,106 +1,7 @@
 {
-  "last_updated": "2026-10-26T05:22:39Z",
+  "last_updated": "2026-10-26T05:23:40Z",
   "total_quarantine": 344,
   "quarantine_sites": [
-    {
-      "id": 274,
-      "domain": "tetr8.io",
-      "url": "https://tetr8.io/tetrate-community",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T18:51:25Z",
-      "last_seen": "2026-10-25T18:51:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 278,
-      "domain": "documentation.ubuntu.com",
-      "url": "https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-a-pre-built-app/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-a-pre-built-app/: Get \"https://ubuntu.com/docs/snapcraft/stable/how-to/integrations/craft-a-pre-built-app/\": context deadline exceeded",
-      "first_seen": "2026-10-25T19:14:12Z",
-      "last_seen": "2026-10-25T19:14:12Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 334,
-      "domain": "docutils.sourceforge.net",
-      "url": "http://docutils.sourceforge.net/rst.html",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T03:29:25Z",
-      "last_seen": "2026-10-26T03:47:13Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 168,
-      "domain": "au.linkedin.com",
-      "url": "https://au.linkedin.com/in/mariachristley",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T22:42:12Z",
-      "last_seen": "2026-10-24T23:25:35Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 283,
-      "domain": "liberapay.com",
-      "url": "https://liberapay.com/forgejo",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T20:39:25Z",
-      "last_seen": "2026-10-25T20:40:01Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 287,
-      "domain": "br.indeed.com",
-      "url": "https://br.indeed.com/career/salaries",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T21:21:37Z",
-      "last_seen": "2026-10-25T21:21:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 288,
-      "domain": "www.ietf.org",
-      "url": "https://www.ietf.org/mailman/listinfo/tlp-interest",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T21:33:01Z",
-      "last_seen": "2026-10-25T21:33:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 293,
-      "domain": "vilderenatur.dk",
-      "url": "https://vilderenatur.dk/",
-      "status_code": 454,
-      "error_message": "HTTP 454",
-      "first_seen": "2026-10-25T21:56:14Z",
-      "last_seen": "2026-10-25T21:56:14Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 454 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 318,
-      "domain": "app.readthedocs.com",
-      "url": "https://app.readthedocs.com/dashboard/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T02:16:49Z",
-      "last_seen": "2026-10-26T02:18:01Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 324,
       "domain": "icu4c-demos.unicode.org",
@@ -3785,6 +3686,105 @@
       "last_seen": "2026-10-25T15:22:36Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 274,
+      "domain": "tetr8.io",
+      "url": "https://tetr8.io/tetrate-community",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T18:51:25Z",
+      "last_seen": "2026-10-25T18:51:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 278,
+      "domain": "documentation.ubuntu.com",
+      "url": "https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-a-pre-built-app/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-a-pre-built-app/: Get \"https://ubuntu.com/docs/snapcraft/stable/how-to/integrations/craft-a-pre-built-app/\": context deadline exceeded",
+      "first_seen": "2026-10-25T19:14:12Z",
+      "last_seen": "2026-10-25T19:14:12Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 334,
+      "domain": "docutils.sourceforge.net",
+      "url": "http://docutils.sourceforge.net/rst.html",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T03:29:25Z",
+      "last_seen": "2026-10-26T03:47:13Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 168,
+      "domain": "au.linkedin.com",
+      "url": "https://au.linkedin.com/in/mariachristley",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T22:42:12Z",
+      "last_seen": "2026-10-24T23:25:35Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 283,
+      "domain": "liberapay.com",
+      "url": "https://liberapay.com/forgejo",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T20:39:25Z",
+      "last_seen": "2026-10-25T20:40:01Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 287,
+      "domain": "br.indeed.com",
+      "url": "https://br.indeed.com/career/salaries",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T21:21:37Z",
+      "last_seen": "2026-10-25T21:21:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 288,
+      "domain": "www.ietf.org",
+      "url": "https://www.ietf.org/mailman/listinfo/tlp-interest",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T21:33:01Z",
+      "last_seen": "2026-10-25T21:33:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 293,
+      "domain": "vilderenatur.dk",
+      "url": "https://vilderenatur.dk/",
+      "status_code": 454,
+      "error_message": "HTTP 454",
+      "first_seen": "2026-10-25T21:56:14Z",
+      "last_seen": "2026-10-25T21:56:14Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 454 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 318,
+      "domain": "app.readthedocs.com",
+      "url": "https://app.readthedocs.com/dashboard/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T02:16:49Z",
+      "last_seen": "2026-10-26T02:18:01Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
