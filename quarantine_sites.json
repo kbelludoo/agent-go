@@ -1,73 +1,7 @@
 {
-  "last_updated": "2026-10-26T16:02:15Z",
+  "last_updated": "2026-10-26T16:03:14Z",
   "total_quarantine": 374,
   "quarantine_sites": [
-    {
-      "id": 9,
-      "domain": "pt.wikipedia.org",
-      "url": "https://pt.wikipedia.org/wiki/Crise_cl",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:04:10Z",
-      "last_seen": "2026-10-25T16:01:01Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 6,
-      "domain": "producthunt.com",
-      "url": "https://producthunt.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:02:57Z",
-      "last_seen": "2026-10-25T15:59:48Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 182,
-      "domain": "sa.www4.irs.gov",
-      "url": "https://sa.www4.irs.gov/ola",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T03:16:37Z",
-      "last_seen": "2026-10-25T03:22:01Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 295,
-      "domain": "blog.google",
-      "url": "https://blog.google/?utm_source=about.google\u0026utm_medium=referral\u0026utm_campaign=navigation ",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-25T22:13:13Z",
-      "last_seen": "2026-10-25T22:16:01Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 96,
-      "domain": "medium.com",
-      "url": "https://medium.com/@Medium/cccf29534bf4",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T19:03:34Z",
-      "last_seen": "2026-10-23T19:03:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 103,
-      "domain": "www.nih.gov",
-      "url": "https://www.nih.gov/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T20:02:10Z",
-      "last_seen": "2026-10-24T00:27:12Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 177,
       "domain": "grantsgovprod.wordpress.com",
@@ -4115,6 +4049,72 @@
       "last_seen": "2026-10-26T02:30:37Z",
       "attempts": 3,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 9,
+      "domain": "pt.wikipedia.org",
+      "url": "https://pt.wikipedia.org/wiki/Crise_cl",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:04:10Z",
+      "last_seen": "2026-10-25T16:01:01Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 6,
+      "domain": "producthunt.com",
+      "url": "https://producthunt.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:02:57Z",
+      "last_seen": "2026-10-25T15:59:48Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 182,
+      "domain": "sa.www4.irs.gov",
+      "url": "https://sa.www4.irs.gov/ola",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T03:16:37Z",
+      "last_seen": "2026-10-25T03:22:01Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 295,
+      "domain": "blog.google",
+      "url": "https://blog.google/?utm_source=about.google\u0026utm_medium=referral\u0026utm_campaign=navigation ",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-25T22:13:13Z",
+      "last_seen": "2026-10-25T22:16:01Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 96,
+      "domain": "medium.com",
+      "url": "https://medium.com/@Medium/cccf29534bf4",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T19:03:34Z",
+      "last_seen": "2026-10-23T19:03:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 103,
+      "domain": "www.nih.gov",
+      "url": "https://www.nih.gov/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T20:02:10Z",
+      "last_seen": "2026-10-24T00:27:12Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
