@@ -1,194 +1,7 @@
 {
-  "last_updated": "2026-10-26T19:17:09Z",
-  "total_quarantine": 417,
+  "last_updated": "2026-10-26T19:18:01Z",
+  "total_quarantine": 420,
   "quarantine_sites": [
-    {
-      "id": 109,
-      "domain": "www.scielo.org",
-      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter\u0026lang=en",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T00:30:04Z",
-      "last_seen": "2026-10-24T00:30:04Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 354,
-      "domain": "post.borger.dk",
-      "url": "https://post.borger.dk",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://post.borger.dk: Get \"https://post.borger.dk\": dial tcp4 188.180.120.148:443: i/o timeout",
-      "first_seen": "2026-10-26T11:15:00Z",
-      "last_seen": "2026-10-26T11:56:48Z",
-      "attempts": 6,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 388,
-      "domain": "de.linkedin.com",
-      "url": "https://de.linkedin.com/company/universit-tsklinikum-hamburg-eppendorf?trk=public_jobs_topcard_org_name",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T18:05:37Z",
-      "last_seen": "2026-10-26T18:06:25Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 272,
-      "domain": "www.bloomberg.com",
-      "url": "https://www.bloomberg.com/professional/products/indices/equity/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T18:15:25Z",
-      "last_seen": "2026-10-25T18:15:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 135,
-      "domain": "linkedin.com",
-      "url": "https://linkedin.com/company/mojodocs",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T18:17:35Z",
-      "last_seen": "2026-10-24T18:17:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 173,
-      "domain": "www.justice.gov",
-      "url": "https://www.justice.gov/disaster-fraud",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T01:10:49Z",
-      "last_seen": "2026-10-25T01:10:49Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 193,
-      "domain": "www.gao.gov",
-      "url": "http://www.gao.gov/fraudnet/fraudnet.htm",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T08:45:25Z",
-      "last_seen": "2026-10-25T09:40:01Z",
-      "attempts": 31,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 347,
-      "domain": "www.capterra.com.de",
-      "url": "https://www.capterra.com.de/reviews/218617/eventfrog",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T06:39:49Z",
-      "last_seen": "2026-10-26T06:56:37Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 40,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/techcrunch",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T14:43:10Z",
-      "last_seen": "2026-10-23T14:43:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 87,
-      "domain": "content.digitalpublicgoods.net",
-      "url": "https://content.digitalpublicgoods.net/2025-DPG-Ecosystem-Report.pdf",
-      "status_code": 504,
-      "error_message": "failed to parse HTML: html: open stack of elements exceeds 512 nodes",
-      "first_seen": "2026-10-23T17:49:23Z",
-      "last_seen": "2026-10-23T17:49:23Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to parse HTML: html: open stack of elements exceeds 512 nodes. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 151,
-      "domain": "www.twitter.com",
-      "url": "http://www.twitter.com/rgcooke",
-      "status_code": 520,
-      "error_message": "HTTP 520",
-      "first_seen": "2026-10-24T19:35:11Z",
-      "last_seen": "2026-10-24T19:35:11Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 520 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 28,
-      "domain": "www.theguardian.com",
-      "url": "https://www.theguardian.com/internatio",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:26:58Z",
-      "last_seen": "2026-10-26T16:52:37Z",
-      "attempts": 5,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 143,
-      "domain": "twitter.com",
-      "url": "https://twitter.com/intent/tweet?url=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026status=Cosmic Pathways+https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-24T18:52:46Z",
-      "last_seen": "2026-10-24T18:52:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 233,
-      "domain": "localhost",
-      "url": "http://localhost:9090",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://localhost:9090: Get \"http://localhost:9090\": dial tcp4 127.0.0.1:9090: connect: connection refused",
-      "first_seen": "2026-10-25T15:21:00Z",
-      "last_seen": "2026-10-25T15:21:00Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://localhost:9090: Get \"http://localhost:9090\": dial tcp4 127.0.0.1:9090: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 243,
-      "domain": "cell.com",
-      "url": "https://cell.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T15:31:15Z",
-      "last_seen": "2026-10-26T15:59:50Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 141,
-      "domain": "www.facebook.com",
-      "url": "http://www.facebook.com/share.php?u=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026title=Cosmic Pathways",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-24T18:52:22Z",
-      "last_seen": "2026-10-24T18:52:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 157,
-      "domain": "sdgs.un.org",
-      "url": "https://sdgs.un.org/ar",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T20:40:06Z",
-      "last_seen": "2026-10-24T21:03:59Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 85,
       "domain": "paineldecompras.economia.gov.br",
@@ -331,6 +144,17 @@
       "last_seen": "2026-10-26T19:02:36Z",
       "attempts": 6,
       "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 419,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=147bdeb3-1715-4391-b01b-05b8c67ea1c0",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:17:49Z",
+      "last_seen": "2026-10-26T19:17:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
       "id": 120,
@@ -791,6 +615,17 @@
       "error_message": "HTTP 404",
       "first_seen": "2026-10-26T19:05:49Z",
       "last_seen": "2026-10-26T19:05:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 418,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=6fe29e4f-9a5a-4c5e-904c-5b30c5fb82b1",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:17:37Z",
+      "last_seen": "2026-10-26T19:17:37Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
@@ -1827,6 +1662,17 @@
       "last_seen": "2026-10-25T03:21:49Z",
       "attempts": 4,
       "diagnosis": "HTTP 502 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 420,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=7042472c-1bfd-4fd3-bcb4-dd2da9ba24f3",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:18:01Z",
+      "last_seen": "2026-10-26T19:18:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
       "id": 214,
@@ -4588,6 +4434,193 @@
       "last_seen": "2026-10-24T23:26:00Z",
       "attempts": 2,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 109,
+      "domain": "www.scielo.org",
+      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter\u0026lang=en",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T00:30:04Z",
+      "last_seen": "2026-10-24T00:30:04Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 354,
+      "domain": "post.borger.dk",
+      "url": "https://post.borger.dk",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://post.borger.dk: Get \"https://post.borger.dk\": dial tcp4 188.180.120.148:443: i/o timeout",
+      "first_seen": "2026-10-26T11:15:00Z",
+      "last_seen": "2026-10-26T11:56:48Z",
+      "attempts": 6,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 388,
+      "domain": "de.linkedin.com",
+      "url": "https://de.linkedin.com/company/universit-tsklinikum-hamburg-eppendorf?trk=public_jobs_topcard_org_name",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T18:05:37Z",
+      "last_seen": "2026-10-26T18:06:25Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 272,
+      "domain": "www.bloomberg.com",
+      "url": "https://www.bloomberg.com/professional/products/indices/equity/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T18:15:25Z",
+      "last_seen": "2026-10-25T18:15:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 135,
+      "domain": "linkedin.com",
+      "url": "https://linkedin.com/company/mojodocs",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T18:17:35Z",
+      "last_seen": "2026-10-24T18:17:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 173,
+      "domain": "www.justice.gov",
+      "url": "https://www.justice.gov/disaster-fraud",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T01:10:49Z",
+      "last_seen": "2026-10-25T01:10:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 193,
+      "domain": "www.gao.gov",
+      "url": "http://www.gao.gov/fraudnet/fraudnet.htm",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T08:45:25Z",
+      "last_seen": "2026-10-25T09:40:01Z",
+      "attempts": 31,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 347,
+      "domain": "www.capterra.com.de",
+      "url": "https://www.capterra.com.de/reviews/218617/eventfrog",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T06:39:49Z",
+      "last_seen": "2026-10-26T06:56:37Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 40,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/techcrunch",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T14:43:10Z",
+      "last_seen": "2026-10-23T14:43:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 87,
+      "domain": "content.digitalpublicgoods.net",
+      "url": "https://content.digitalpublicgoods.net/2025-DPG-Ecosystem-Report.pdf",
+      "status_code": 504,
+      "error_message": "failed to parse HTML: html: open stack of elements exceeds 512 nodes",
+      "first_seen": "2026-10-23T17:49:23Z",
+      "last_seen": "2026-10-23T17:49:23Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to parse HTML: html: open stack of elements exceeds 512 nodes. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 151,
+      "domain": "www.twitter.com",
+      "url": "http://www.twitter.com/rgcooke",
+      "status_code": 520,
+      "error_message": "HTTP 520",
+      "first_seen": "2026-10-24T19:35:11Z",
+      "last_seen": "2026-10-24T19:35:11Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 520 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 28,
+      "domain": "www.theguardian.com",
+      "url": "https://www.theguardian.com/internatio",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:26:58Z",
+      "last_seen": "2026-10-26T16:52:37Z",
+      "attempts": 5,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 143,
+      "domain": "twitter.com",
+      "url": "https://twitter.com/intent/tweet?url=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026status=Cosmic Pathways+https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-24T18:52:46Z",
+      "last_seen": "2026-10-24T18:52:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 233,
+      "domain": "localhost",
+      "url": "http://localhost:9090",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://localhost:9090: Get \"http://localhost:9090\": dial tcp4 127.0.0.1:9090: connect: connection refused",
+      "first_seen": "2026-10-25T15:21:00Z",
+      "last_seen": "2026-10-25T15:21:00Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://localhost:9090: Get \"http://localhost:9090\": dial tcp4 127.0.0.1:9090: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 243,
+      "domain": "cell.com",
+      "url": "https://cell.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T15:31:15Z",
+      "last_seen": "2026-10-26T15:59:50Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 141,
+      "domain": "www.facebook.com",
+      "url": "http://www.facebook.com/share.php?u=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026title=Cosmic Pathways",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-24T18:52:22Z",
+      "last_seen": "2026-10-24T18:52:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 157,
+      "domain": "sdgs.un.org",
+      "url": "https://sdgs.un.org/ar",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T20:40:06Z",
+      "last_seen": "2026-10-24T21:03:59Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
