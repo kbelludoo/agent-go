@@ -1,40 +1,7 @@
 {
-  "last_updated": "2026-10-26T13:44:09Z",
+  "last_updated": "2026-10-26T13:45:17Z",
   "total_quarantine": 367,
   "quarantine_sites": [
-    {
-      "id": 234,
-      "domain": "localhost",
-      "url": "http://localhost:9090/metrics",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused",
-      "first_seen": "2026-10-25T15:21:12Z",
-      "last_seen": "2026-10-25T15:21:12Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 320,
-      "domain": "fosstodon.org",
-      "url": "https://fosstodon.org/@plausible",
-      "status_code": 429,
-      "error_message": "HTTP 429",
-      "first_seen": "2026-10-26T02:21:26Z",
-      "last_seen": "2026-10-26T02:21:26Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
-    },
-    {
-      "id": 358,
-      "domain": "pav.perst.dk",
-      "url": "http://pav.perst.dk/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://pav.perst.dk/: Get \"http://pav.perst.dk/\": dial tcp4: lookup pav.perst.dk on 127.0.0.53:53: server misbehaving",
-      "first_seen": "2026-10-26T12:00:41Z",
-      "last_seen": "2026-10-26T13:07:50Z",
-      "attempts": 54,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://pav.perst.dk/: Get \"http://pav.perst.dk/\": dial tcp4: lookup pav.perst.dk on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
-    },
     {
       "id": 63,
       "domain": "www.efc.ca",
@@ -4038,6 +4005,39 @@
       "last_seen": "2026-10-26T00:39:49Z",
       "attempts": 6,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 234,
+      "domain": "localhost",
+      "url": "http://localhost:9090/metrics",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused",
+      "first_seen": "2026-10-25T15:21:12Z",
+      "last_seen": "2026-10-25T15:21:12Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 320,
+      "domain": "fosstodon.org",
+      "url": "https://fosstodon.org/@plausible",
+      "status_code": 429,
+      "error_message": "HTTP 429",
+      "first_seen": "2026-10-26T02:21:26Z",
+      "last_seen": "2026-10-26T02:21:26Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
+    },
+    {
+      "id": 358,
+      "domain": "pav.perst.dk",
+      "url": "http://pav.perst.dk/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://pav.perst.dk/: Get \"http://pav.perst.dk/\": dial tcp4: lookup pav.perst.dk on 127.0.0.53:53: server misbehaving",
+      "first_seen": "2026-10-26T12:00:41Z",
+      "last_seen": "2026-10-26T13:07:50Z",
+      "attempts": 54,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://pav.perst.dk/: Get \"http://pav.perst.dk/\": dial tcp4: lookup pav.perst.dk on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
