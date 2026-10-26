@@ -1,95 +1,7 @@
 {
-  "last_updated": "2026-10-26T15:38:51Z",
+  "last_updated": "2026-10-26T15:39:50Z",
   "total_quarantine": 370,
   "quarantine_sites": [
-    {
-      "id": 200,
-      "domain": "azure.microsoft.com",
-      "url": "https://azure.microsoft.com/pt-br/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://azure.microsoft.com/pt-br/: Get \"https://azure.microsoft.com/pt-br\": read tcp4 10.0.1.126:46806-\u003e23.201.218.61:443: use of closed network connection",
-      "first_seen": "2026-10-25T10:03:36Z",
-      "last_seen": "2026-10-25T10:03:36Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://azure.microsoft.com/pt-br/: Get \"https://azure.microsoft.com/pt-br\": read tcp4 10.0.1.126:46806-\u003e23.201.218.61:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 202,
-      "domain": "github.com",
-      "url": "https://github.com/get_started?with=risk-assessment",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T10:07:13Z",
-      "last_seen": "2026-10-25T10:07:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 220,
-      "domain": "unsplash.com",
-      "url": "https://unsplash.com/license",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T13:15:37Z",
-      "last_seen": "2026-10-25T13:16:37Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 23,
-      "domain": "www.inpe.br",
-      "url": "https://www.inpe.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.inpe.br: Get \"https://www.inpe.br\": dial tcp4 150.163.105.41:443: i/o timeout",
-      "first_seen": "2026-10-23T13:20:57Z",
-      "last_seen": "2026-10-25T16:18:12Z",
-      "attempts": 2,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 13,
-      "domain": "science.org",
-      "url": "https://science.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:07:10Z",
-      "last_seen": "2026-10-25T16:04:02Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 35,
-      "domain": "opentechresearch.org",
-      "url": "https://opentechresearch.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:16:58Z",
-      "last_seen": "2026-10-23T14:16:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 18,
-      "domain": "wsj.com",
-      "url": "https://wsj.com/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T13:14:46Z",
-      "last_seen": "2026-10-25T16:11:49Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 289,
-      "domain": "itscj.ipsj.or.jp",
-      "url": "https://itscj.ipsj.or.jp/english/vbcqpr00000004qn-att/ISO-IR.pdf",
-      "status_code": 503,
-      "error_message": "HTTP 503",
-      "first_seen": "2026-10-25T21:33:27Z",
-      "last_seen": "2026-10-25T21:33:39Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
     {
       "id": 351,
       "domain": "twitter.com",
@@ -4071,6 +3983,94 @@
       "last_seen": "2026-10-25T10:00:14Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 200,
+      "domain": "azure.microsoft.com",
+      "url": "https://azure.microsoft.com/pt-br/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://azure.microsoft.com/pt-br/: Get \"https://azure.microsoft.com/pt-br\": read tcp4 10.0.1.126:46806-\u003e23.201.218.61:443: use of closed network connection",
+      "first_seen": "2026-10-25T10:03:36Z",
+      "last_seen": "2026-10-25T10:03:36Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://azure.microsoft.com/pt-br/: Get \"https://azure.microsoft.com/pt-br\": read tcp4 10.0.1.126:46806-\u003e23.201.218.61:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 202,
+      "domain": "github.com",
+      "url": "https://github.com/get_started?with=risk-assessment",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T10:07:13Z",
+      "last_seen": "2026-10-25T10:07:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 220,
+      "domain": "unsplash.com",
+      "url": "https://unsplash.com/license",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T13:15:37Z",
+      "last_seen": "2026-10-25T13:16:37Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 23,
+      "domain": "www.inpe.br",
+      "url": "https://www.inpe.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.inpe.br: Get \"https://www.inpe.br\": dial tcp4 150.163.105.41:443: i/o timeout",
+      "first_seen": "2026-10-23T13:20:57Z",
+      "last_seen": "2026-10-25T16:18:12Z",
+      "attempts": 2,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 13,
+      "domain": "science.org",
+      "url": "https://science.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:07:10Z",
+      "last_seen": "2026-10-25T16:04:02Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 35,
+      "domain": "opentechresearch.org",
+      "url": "https://opentechresearch.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:16:58Z",
+      "last_seen": "2026-10-23T14:16:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 18,
+      "domain": "wsj.com",
+      "url": "https://wsj.com/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T13:14:46Z",
+      "last_seen": "2026-10-25T16:11:49Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 289,
+      "domain": "itscj.ipsj.or.jp",
+      "url": "https://itscj.ipsj.or.jp/english/vbcqpr00000004qn-att/ISO-IR.pdf",
+      "status_code": 503,
+      "error_message": "HTTP 503",
+      "first_seen": "2026-10-25T21:33:27Z",
+      "last_seen": "2026-10-25T21:33:39Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
     }
   ]
 }
