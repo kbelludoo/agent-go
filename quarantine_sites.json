@@ -1,7 +1,95 @@
 {
-  "last_updated": "2026-10-26T22:29:51Z",
+  "last_updated": "2026-10-26T22:30:53Z",
   "total_quarantine": 473,
   "quarantine_sites": [
+    {
+      "id": 285,
+      "domain": "www.aboutamazon.com",
+      "url": "https://www.aboutamazon.com/our-communities",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T20:44:13Z",
+      "last_seen": "2026-10-25T20:45:25Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 392,
+      "domain": "de.linkedin.com",
+      "url": "https://de.linkedin.com/in/gabrielrath?trk=public_post_comment-text",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T18:30:37Z",
+      "last_seen": "2026-10-26T18:46:37Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 68,
+      "domain": "service.elsevier.com",
+      "url": "https://service.elsevier.com/app/contact/supporthub/sciencedirect/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T16:11:24Z",
+      "last_seen": "2026-10-23T22:59:58Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 169,
+      "domain": "nz.linkedin.com",
+      "url": "https://nz.linkedin.com/in/zachary-sanderson-harris-43333179?trk=article-ssr-frontend-pulse_little-mention",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T22:42:24Z",
+      "last_seen": "2026-10-24T23:25:47Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 42,
+      "domain": "infograficos.valor.globo.com",
+      "url": "https://infograficos.valor.globo.com/carteira-valor/?menu_valor",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:47:34Z",
+      "last_seen": "2026-10-23T14:47:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 280,
+      "domain": "account.icann.org",
+      "url": "http://account.icann.org/",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-25T20:26:15Z",
+      "last_seen": "2026-10-25T20:26:15Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 413,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=79de7d54-31e6-43d6-bff6-c69bd9358a3e",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:09:25Z",
+      "last_seen": "2026-10-26T19:09:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 17,
+      "domain": "stackoverflow.com",
+      "url": "https://stackoverflow.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:09:22Z",
+      "last_seen": "2026-10-26T21:36:13Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 253,
       "domain": "target.com",
@@ -5116,94 +5204,6 @@
       "last_seen": "2026-10-26T21:08:13Z",
       "attempts": 3,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 285,
-      "domain": "www.aboutamazon.com",
-      "url": "https://www.aboutamazon.com/our-communities",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T20:44:13Z",
-      "last_seen": "2026-10-25T20:45:25Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 392,
-      "domain": "de.linkedin.com",
-      "url": "https://de.linkedin.com/in/gabrielrath?trk=public_post_comment-text",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T18:30:37Z",
-      "last_seen": "2026-10-26T18:46:37Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 68,
-      "domain": "service.elsevier.com",
-      "url": "https://service.elsevier.com/app/contact/supporthub/sciencedirect/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T16:11:24Z",
-      "last_seen": "2026-10-23T22:59:58Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 169,
-      "domain": "nz.linkedin.com",
-      "url": "https://nz.linkedin.com/in/zachary-sanderson-harris-43333179?trk=article-ssr-frontend-pulse_little-mention",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T22:42:24Z",
-      "last_seen": "2026-10-24T23:25:47Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 42,
-      "domain": "infograficos.valor.globo.com",
-      "url": "https://infograficos.valor.globo.com/carteira-valor/?menu_valor",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:47:34Z",
-      "last_seen": "2026-10-23T14:47:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 280,
-      "domain": "account.icann.org",
-      "url": "http://account.icann.org/",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-25T20:26:15Z",
-      "last_seen": "2026-10-25T20:26:15Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 413,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=79de7d54-31e6-43d6-bff6-c69bd9358a3e",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:09:25Z",
-      "last_seen": "2026-10-26T19:09:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 17,
-      "domain": "stackoverflow.com",
-      "url": "https://stackoverflow.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:09:22Z",
-      "last_seen": "2026-10-26T21:36:13Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
