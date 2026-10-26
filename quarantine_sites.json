@@ -1,139 +1,7 @@
 {
-  "last_updated": "2026-10-26T16:17:27Z",
+  "last_updated": "2026-10-26T16:18:27Z",
   "total_quarantine": 373,
   "quarantine_sites": [
-    {
-      "id": 110,
-      "domain": "www.scielo.org.za",
-      "url": "http://www.scielo.org.za",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.scielo.org.za: Get \"http://www.scielo.org.za\": dial tcp4 45.220.164.163:80: connect: connection refused",
-      "first_seen": "2026-10-24T00:34:10Z",
-      "last_seen": "2026-10-24T00:41:22Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.scielo.org.za: Get \"http://www.scielo.org.za\": dial tcp4 45.220.164.163:80: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 160,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/springernature/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T21:29:11Z",
-      "last_seen": "2026-10-24T21:29:11Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 208,
-      "domain": "account.microsoft.com",
-      "url": "https://account.microsoft.com/privacy",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-25T10:38:49Z",
-      "last_seen": "2026-10-25T10:53:01Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 267,
-      "domain": "www.cftc.gov",
-      "url": "https://www.cftc.gov/sites/default/files/idc/groups/public/@newsroom/documents/file/federalregister112415.pdf",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T18:02:25Z",
-      "last_seen": "2026-10-25T18:02:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 282,
-      "domain": "x.com",
-      "url": "https://x.com/GforPublishers",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T20:33:25Z",
-      "last_seen": "2026-10-25T20:34:01Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 352,
-      "domain": "stm.dk",
-      "url": "http://stm.dk/publikationer/GL_Lovregister_12/index.htm",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T10:09:14Z",
-      "last_seen": "2026-10-26T10:43:26Z",
-      "attempts": 8,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 355,
-      "domain": "www.zkb.ch",
-      "url": "http://www.zkb.ch/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.zkb.ch/: Get \"http://www.zkb.ch/\": dial tcp4 62.240.192.154:80: i/o timeout",
-      "first_seen": "2026-10-26T11:31:00Z",
-      "last_seen": "2026-10-26T11:43:36Z",
-      "attempts": 8,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 366,
-      "domain": "dk.linkedin.com",
-      "url": "https://dk.linkedin.com/in/christian-gausbo?trk=org-employees",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T13:29:49Z",
-      "last_seen": "2026-10-26T14:09:02Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 142,
-      "domain": "www.linkedin.com",
-      "url": "http://www.linkedin.com/shareArticle?mini=true\u0026url=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026title=Cosmic Pathways\u0026source=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-24T18:52:34Z",
-      "last_seen": "2026-10-24T18:52:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 185,
-      "domain": "www.justice.gov",
-      "url": "https://www.justice.gov/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T03:57:01Z",
-      "last_seen": "2026-10-25T04:03:37Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 212,
-      "domain": "rustwasm.github.io",
-      "url": "https://rustwasm.github.io/wasm-bindgen/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T12:52:37Z",
-      "last_seen": "2026-10-25T12:52:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 362,
-      "domain": "virksomhedsguiden.dk",
-      "url": "https://virksomhedsguiden.dk/content/ydelser/faa-overblik-over-virksomhedsformer/1669d3e5-d022-4c85-99b4-e4369c235593/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T12:03:13Z",
-      "last_seen": "2026-10-26T13:08:25Z",
-      "attempts": 12,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 368,
       "domain": "admin.statens-tilskudspuljer.dk",
@@ -4104,6 +3972,138 @@
       "last_seen": "2026-10-26T04:57:37Z",
       "attempts": 18,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 110,
+      "domain": "www.scielo.org.za",
+      "url": "http://www.scielo.org.za",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.scielo.org.za: Get \"http://www.scielo.org.za\": dial tcp4 45.220.164.163:80: connect: connection refused",
+      "first_seen": "2026-10-24T00:34:10Z",
+      "last_seen": "2026-10-24T00:41:22Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.scielo.org.za: Get \"http://www.scielo.org.za\": dial tcp4 45.220.164.163:80: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 160,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/springernature/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T21:29:11Z",
+      "last_seen": "2026-10-24T21:29:11Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 208,
+      "domain": "account.microsoft.com",
+      "url": "https://account.microsoft.com/privacy",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-25T10:38:49Z",
+      "last_seen": "2026-10-25T10:53:01Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 267,
+      "domain": "www.cftc.gov",
+      "url": "https://www.cftc.gov/sites/default/files/idc/groups/public/@newsroom/documents/file/federalregister112415.pdf",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T18:02:25Z",
+      "last_seen": "2026-10-25T18:02:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 282,
+      "domain": "x.com",
+      "url": "https://x.com/GforPublishers",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T20:33:25Z",
+      "last_seen": "2026-10-25T20:34:01Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 352,
+      "domain": "stm.dk",
+      "url": "http://stm.dk/publikationer/GL_Lovregister_12/index.htm",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T10:09:14Z",
+      "last_seen": "2026-10-26T10:43:26Z",
+      "attempts": 8,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 355,
+      "domain": "www.zkb.ch",
+      "url": "http://www.zkb.ch/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.zkb.ch/: Get \"http://www.zkb.ch/\": dial tcp4 62.240.192.154:80: i/o timeout",
+      "first_seen": "2026-10-26T11:31:00Z",
+      "last_seen": "2026-10-26T11:43:36Z",
+      "attempts": 8,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 366,
+      "domain": "dk.linkedin.com",
+      "url": "https://dk.linkedin.com/in/christian-gausbo?trk=org-employees",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T13:29:49Z",
+      "last_seen": "2026-10-26T14:09:02Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 142,
+      "domain": "www.linkedin.com",
+      "url": "http://www.linkedin.com/shareArticle?mini=true\u0026url=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0\u0026title=Cosmic Pathways\u0026source=https://www.manufacturingusa.com/index%2ephp/events/cosmic-pathways-0",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-24T18:52:34Z",
+      "last_seen": "2026-10-24T18:52:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 185,
+      "domain": "www.justice.gov",
+      "url": "https://www.justice.gov/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T03:57:01Z",
+      "last_seen": "2026-10-25T04:03:37Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 212,
+      "domain": "rustwasm.github.io",
+      "url": "https://rustwasm.github.io/wasm-bindgen/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T12:52:37Z",
+      "last_seen": "2026-10-25T12:52:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 362,
+      "domain": "virksomhedsguiden.dk",
+      "url": "https://virksomhedsguiden.dk/content/ydelser/faa-overblik-over-virksomhedsformer/1669d3e5-d022-4c85-99b4-e4369c235593/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T12:03:13Z",
+      "last_seen": "2026-10-26T13:08:25Z",
+      "attempts": 12,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
