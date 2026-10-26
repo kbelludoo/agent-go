@@ -1,18 +1,7 @@
 {
-  "last_updated": "2026-10-26T15:32:52Z",
+  "last_updated": "2026-10-26T15:33:54Z",
   "total_quarantine": 370,
   "quarantine_sites": [
-    {
-      "id": 261,
-      "domain": "analytics.scielo.org",
-      "url": "http://analytics.scielo.org/?collection=scl",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T17:06:37Z",
-      "last_seen": "2026-10-25T17:06:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 11,
       "domain": "reference.deno.land",
@@ -4071,6 +4060,17 @@
       "last_seen": "2026-10-25T16:41:25Z",
       "attempts": 1,
       "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 261,
+      "domain": "analytics.scielo.org",
+      "url": "http://analytics.scielo.org/?collection=scl",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T17:06:37Z",
+      "last_seen": "2026-10-25T17:06:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
