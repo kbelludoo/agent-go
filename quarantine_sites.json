@@ -1,7 +1,106 @@
 {
-  "last_updated": "2026-10-26T22:18:51Z",
+  "last_updated": "2026-10-26T22:19:49Z",
   "total_quarantine": 473,
   "quarantine_sites": [
+    {
+      "id": 83,
+      "domain": "community.kde.org",
+      "url": "https://community.kde.org/Get_Involved",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T17:36:45Z",
+      "last_seen": "2026-10-23T17:36:45Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 416,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=04597ea4-4d75-4202-b57d-93fbb9a957ad",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:14:13Z",
+      "last_seen": "2026-10-26T19:14:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 455,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=3a4a9e56-de41-483c-b193-24161e9889fa",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:40:13Z",
+      "last_seen": "2026-10-26T20:40:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 110,
+      "domain": "www.scielo.org.za",
+      "url": "http://www.scielo.org.za",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.scielo.org.za: Get \"http://www.scielo.org.za\": dial tcp4 45.220.164.163:80: connect: connection refused",
+      "first_seen": "2026-10-24T00:34:10Z",
+      "last_seen": "2026-10-24T00:41:22Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.scielo.org.za: Get \"http://www.scielo.org.za\": dial tcp4 45.220.164.163:80: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 160,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/springernature/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T21:29:11Z",
+      "last_seen": "2026-10-24T21:29:11Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 267,
+      "domain": "www.cftc.gov",
+      "url": "https://www.cftc.gov/sites/default/files/idc/groups/public/@newsroom/documents/file/federalregister112415.pdf",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T18:02:25Z",
+      "last_seen": "2026-10-25T18:02:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 282,
+      "domain": "x.com",
+      "url": "https://x.com/GforPublishers",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T20:33:25Z",
+      "last_seen": "2026-10-25T20:34:01Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 368,
+      "domain": "admin.statens-tilskudspuljer.dk",
+      "url": "https://admin.statens-tilskudspuljer.dk/Lists/SLKS/DispForm.aspx?ID=1143",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-26T15:00:25Z",
+      "last_seen": "2026-10-26T15:08:01Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 362,
+      "domain": "virksomhedsguiden.dk",
+      "url": "https://virksomhedsguiden.dk/content/ydelser/faa-overblik-over-virksomhedsformer/1669d3e5-d022-4c85-99b4-e4369c235593/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T12:03:13Z",
+      "last_seen": "2026-10-26T13:08:25Z",
+      "attempts": 12,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 391,
       "domain": "de.linkedin.com",
@@ -5104,105 +5203,6 @@
       "first_seen": "2026-10-23T16:01:22Z",
       "last_seen": "2026-10-24T00:25:47Z",
       "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 83,
-      "domain": "community.kde.org",
-      "url": "https://community.kde.org/Get_Involved",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T17:36:45Z",
-      "last_seen": "2026-10-23T17:36:45Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 416,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=04597ea4-4d75-4202-b57d-93fbb9a957ad",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:14:13Z",
-      "last_seen": "2026-10-26T19:14:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 455,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=3a4a9e56-de41-483c-b193-24161e9889fa",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:40:13Z",
-      "last_seen": "2026-10-26T20:40:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 110,
-      "domain": "www.scielo.org.za",
-      "url": "http://www.scielo.org.za",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.scielo.org.za: Get \"http://www.scielo.org.za\": dial tcp4 45.220.164.163:80: connect: connection refused",
-      "first_seen": "2026-10-24T00:34:10Z",
-      "last_seen": "2026-10-24T00:41:22Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.scielo.org.za: Get \"http://www.scielo.org.za\": dial tcp4 45.220.164.163:80: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 160,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/springernature/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T21:29:11Z",
-      "last_seen": "2026-10-24T21:29:11Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 267,
-      "domain": "www.cftc.gov",
-      "url": "https://www.cftc.gov/sites/default/files/idc/groups/public/@newsroom/documents/file/federalregister112415.pdf",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T18:02:25Z",
-      "last_seen": "2026-10-25T18:02:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 282,
-      "domain": "x.com",
-      "url": "https://x.com/GforPublishers",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T20:33:25Z",
-      "last_seen": "2026-10-25T20:34:01Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 368,
-      "domain": "admin.statens-tilskudspuljer.dk",
-      "url": "https://admin.statens-tilskudspuljer.dk/Lists/SLKS/DispForm.aspx?ID=1143",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-26T15:00:25Z",
-      "last_seen": "2026-10-26T15:08:01Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 362,
-      "domain": "virksomhedsguiden.dk",
-      "url": "https://virksomhedsguiden.dk/content/ydelser/faa-overblik-over-virksomhedsformer/1669d3e5-d022-4c85-99b4-e4369c235593/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T12:03:13Z",
-      "last_seen": "2026-10-26T13:08:25Z",
-      "attempts": 12,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
