@@ -1,40 +1,7 @@
 {
-  "last_updated": "2026-10-26T01:30:02Z",
+  "last_updated": "2026-10-26T01:31:02Z",
   "total_quarantine": 310,
   "quarantine_sites": [
-    {
-      "id": 102,
-      "domain": "shop.fsf.org",
-      "url": "http://shop.fsf.org/",
-      "status_code": 503,
-      "error_message": "HTTP 503",
-      "first_seen": "2026-10-23T19:57:58Z",
-      "last_seen": "2026-10-25T00:20:39Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 163,
-      "domain": "de.linkedin.com",
-      "url": "https://de.linkedin.com/company/springernature?trk=nav_type_overview",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T21:31:11Z",
-      "last_seen": "2026-10-25T00:20:49Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 175,
-      "domain": "vsc.gsa.gov",
-      "url": "https://vsc.gsa.gov/vsc/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://vsc.gsa.gov/vsc/: Get \"https://vsc.gsa.gov/vsc/\": dial tcp4 35.170.14.33:443: i/o timeout",
-      "first_seen": "2026-10-25T01:28:00Z",
-      "last_seen": "2026-10-25T01:28:00Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
     {
       "id": 216,
       "domain": "unsplash.com",
@@ -3411,6 +3378,39 @@
       "last_seen": "2026-10-25T00:20:18Z",
       "attempts": 3,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 102,
+      "domain": "shop.fsf.org",
+      "url": "http://shop.fsf.org/",
+      "status_code": 503,
+      "error_message": "HTTP 503",
+      "first_seen": "2026-10-23T19:57:58Z",
+      "last_seen": "2026-10-25T00:20:39Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 163,
+      "domain": "de.linkedin.com",
+      "url": "https://de.linkedin.com/company/springernature?trk=nav_type_overview",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T21:31:11Z",
+      "last_seen": "2026-10-25T00:20:49Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 175,
+      "domain": "vsc.gsa.gov",
+      "url": "https://vsc.gsa.gov/vsc/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://vsc.gsa.gov/vsc/: Get \"https://vsc.gsa.gov/vsc/\": dial tcp4 35.170.14.33:443: i/o timeout",
+      "first_seen": "2026-10-25T01:28:00Z",
+      "last_seen": "2026-10-25T01:28:00Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     }
   ]
 }
