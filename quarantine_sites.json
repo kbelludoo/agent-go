@@ -1,29 +1,7 @@
 {
-  "last_updated": "2026-10-26T04:10:26Z",
+  "last_updated": "2026-10-26T04:11:29Z",
   "total_quarantine": 336,
   "quarantine_sites": [
-    {
-      "id": 114,
-      "domain": "hwpi.harvard.edu",
-      "url": "https://hwpi.harvard.edu/ldcnetwork",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:43:00Z",
-      "last_seen": "2026-10-24T00:45:00Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 150,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/build-freedom-summit",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T19:13:35Z",
-      "last_seen": "2026-10-24T19:14:47Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 15,
       "domain": "specs.openstack.org",
@@ -3697,6 +3675,28 @@
       "last_seen": "2026-10-23T18:04:59Z",
       "attempts": 1,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 114,
+      "domain": "hwpi.harvard.edu",
+      "url": "https://hwpi.harvard.edu/ldcnetwork",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:43:00Z",
+      "last_seen": "2026-10-24T00:45:00Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 150,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/build-freedom-summit",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T19:13:35Z",
+      "last_seen": "2026-10-24T19:14:47Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
