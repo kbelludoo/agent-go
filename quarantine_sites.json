@@ -1,7 +1,18 @@
 {
-  "last_updated": "2026-10-26T00:03:40Z",
-  "total_quarantine": 299,
+  "last_updated": "2026-10-26T00:04:51Z",
+  "total_quarantine": 300,
   "quarantine_sites": [
+    {
+      "id": 149,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/textilefuturesinstitute/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T19:13:23Z",
+      "last_seen": "2026-10-24T19:13:23Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 156,
       "domain": "slack.sparkpost.com",
@@ -1376,6 +1387,17 @@
       "last_seen": "2026-10-25T15:27:49Z",
       "attempts": 1,
       "diagnosis": "HTTP 405 Method Not Allowed: Servidor rejeita certas requisições uTLS/H2 ou exige barra final ('/'). Sugestão: Testar fallback HTTP/1.1 e normalizar trailing slash."
+    },
+    {
+      "id": 300,
+      "domain": "www.oac.uci.edu",
+      "url": "http://www.oac.uci.edu/indiv/ehood/mhonarc.html",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.oac.uci.edu/indiv/ehood/mhonarc.html: Get \"http://www.oac.uci.edu/indiv/ehood/mhonarc.html\": dial tcp4: lookup www.oac.uci.edu on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-26T00:04:13Z",
+      "last_seen": "2026-10-26T00:04:13Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.oac.uci.edu/indiv/ehood/mhonarc.html: Get \"http://www.oac.uci.edu/indiv/ehood/mhonarc.html\": dial tcp4: lookup www.oac.uci.edu on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
     },
     {
       "id": 109,
@@ -3279,17 +3301,6 @@
       "last_seen": "2026-10-23T15:58:58Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 149,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/textilefuturesinstitute/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T19:13:23Z",
-      "last_seen": "2026-10-24T19:13:23Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
