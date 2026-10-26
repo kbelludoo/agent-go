@@ -1,51 +1,7 @@
 {
-  "last_updated": "2026-10-26T09:57:50Z",
+  "last_updated": "2026-10-26T09:58:39Z",
   "total_quarantine": 351,
   "quarantine_sites": [
-    {
-      "id": 287,
-      "domain": "br.indeed.com",
-      "url": "https://br.indeed.com/career/salaries",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T21:21:37Z",
-      "last_seen": "2026-10-25T21:21:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 288,
-      "domain": "www.ietf.org",
-      "url": "https://www.ietf.org/mailman/listinfo/tlp-interest",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T21:33:01Z",
-      "last_seen": "2026-10-25T21:33:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 293,
-      "domain": "vilderenatur.dk",
-      "url": "https://vilderenatur.dk/",
-      "status_code": 454,
-      "error_message": "HTTP 454",
-      "first_seen": "2026-10-25T21:56:14Z",
-      "last_seen": "2026-10-25T21:56:14Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 454 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 318,
-      "domain": "app.readthedocs.com",
-      "url": "https://app.readthedocs.com/dashboard/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T02:16:49Z",
-      "last_seen": "2026-10-26T02:18:01Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 324,
       "domain": "icu4c-demos.unicode.org",
@@ -3861,6 +3817,50 @@
       "first_seen": "2026-10-25T20:39:25Z",
       "last_seen": "2026-10-25T20:40:01Z",
       "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 287,
+      "domain": "br.indeed.com",
+      "url": "https://br.indeed.com/career/salaries",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T21:21:37Z",
+      "last_seen": "2026-10-25T21:21:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 288,
+      "domain": "www.ietf.org",
+      "url": "https://www.ietf.org/mailman/listinfo/tlp-interest",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T21:33:01Z",
+      "last_seen": "2026-10-25T21:33:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 293,
+      "domain": "vilderenatur.dk",
+      "url": "https://vilderenatur.dk/",
+      "status_code": 454,
+      "error_message": "HTTP 454",
+      "first_seen": "2026-10-25T21:56:14Z",
+      "last_seen": "2026-10-25T21:56:14Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 454 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 318,
+      "domain": "app.readthedocs.com",
+      "url": "https://app.readthedocs.com/dashboard/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T02:16:49Z",
+      "last_seen": "2026-10-26T02:18:01Z",
+      "attempts": 3,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
