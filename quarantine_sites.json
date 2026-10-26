@@ -1,73 +1,7 @@
 {
-  "last_updated": "2026-10-26T18:47:40Z",
-  "total_quarantine": 398,
+  "last_updated": "2026-10-26T18:48:49Z",
+  "total_quarantine": 397,
   "quarantine_sites": [
-    {
-      "id": 66,
-      "domain": "medicalxpress.com",
-      "url": "https://medicalxpress.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:58:58Z",
-      "last_seen": "2026-10-23T15:58:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 149,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/textilefuturesinstitute/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T19:13:23Z",
-      "last_seen": "2026-10-24T19:13:23Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 156,
-      "domain": "slack.sparkpost.com",
-      "url": "https://slack.sparkpost.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-24T20:07:11Z",
-      "last_seen": "2026-10-25T00:18:27Z",
-      "attempts": 3,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 225,
-      "domain": "register.paloaltonetworks.com",
-      "url": "https://register.paloaltonetworks.com/observabilityfortheaiera",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T14:06:12Z",
-      "last_seen": "2026-10-25T14:06:12Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 359,
-      "domain": "www.facebook.com",
-      "url": "https://www.facebook.com/sharer.php?u=%2fborger%2fdigital-svindel%2fuvedkommende-har-faaet-adgang-til-borgeres-cpr-oplysninger-saadan-skal-du-forholde-dig",
-      "status_code": 500,
-      "error_message": "HTTP 500",
-      "first_seen": "2026-10-26T12:02:01Z",
-      "last_seen": "2026-10-26T13:02:13Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 382,
-      "domain": "uk.linkedin.com",
-      "url": "https://uk.linkedin.com/school/st-johns-college-durham/?trk=public_profile_topcard-school",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T17:31:14Z",
-      "last_seen": "2026-10-26T17:31:14Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 14,
       "domain": "sciencedirect.com",
@@ -1422,17 +1356,6 @@
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
-      "id": 398,
-      "domain": "fr.linkedin.com",
-      "url": "https://fr.linkedin.com/company/schneider-electric?trk=organization_guest_main-feed-card-text",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T18:47:25Z",
-      "last_seen": "2026-10-26T18:47:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
       "id": 272,
       "domain": "www.bloomberg.com",
       "url": "https://www.bloomberg.com/professional/products/indices/equity/",
@@ -1915,6 +1838,17 @@
       "last_seen": "2026-10-26T01:36:38Z",
       "attempts": 2,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 397,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/linkedin?trk=public_jobs_sub-nav-cta-optional-url",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T18:48:49Z",
+      "last_seen": "2026-10-26T18:48:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
       "id": 109,
@@ -4282,17 +4216,6 @@
       "diagnosis": "HTTP 406 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
-      "id": 396,
-      "domain": "fr.linkedin.com",
-      "url": "https://fr.linkedin.com/company/schneider-electric?trk=organization_guest_main-feed-card_feed-actor-name",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T18:32:01Z",
-      "last_seen": "2026-10-26T18:47:01Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
       "id": 82,
       "domain": "www.securityfocus.com",
       "url": "http://www.securityfocus.com/",
@@ -4376,8 +4299,74 @@
       "status_code": 999,
       "error_message": "HTTP 999",
       "first_seen": "2026-10-26T18:31:13Z",
-      "last_seen": "2026-10-26T18:47:13Z",
+      "last_seen": "2026-10-26T18:48:13Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 66,
+      "domain": "medicalxpress.com",
+      "url": "https://medicalxpress.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:58:58Z",
+      "last_seen": "2026-10-23T15:58:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 149,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/textilefuturesinstitute/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T19:13:23Z",
+      "last_seen": "2026-10-24T19:13:23Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 156,
+      "domain": "slack.sparkpost.com",
+      "url": "https://slack.sparkpost.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-24T20:07:11Z",
+      "last_seen": "2026-10-25T00:18:27Z",
       "attempts": 3,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 225,
+      "domain": "register.paloaltonetworks.com",
+      "url": "https://register.paloaltonetworks.com/observabilityfortheaiera",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T14:06:12Z",
+      "last_seen": "2026-10-25T14:06:12Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 359,
+      "domain": "www.facebook.com",
+      "url": "https://www.facebook.com/sharer.php?u=%2fborger%2fdigital-svindel%2fuvedkommende-har-faaet-adgang-til-borgeres-cpr-oplysninger-saadan-skal-du-forholde-dig",
+      "status_code": 500,
+      "error_message": "HTTP 500",
+      "first_seen": "2026-10-26T12:02:01Z",
+      "last_seen": "2026-10-26T13:02:13Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 382,
+      "domain": "uk.linkedin.com",
+      "url": "https://uk.linkedin.com/school/st-johns-college-durham/?trk=public_profile_topcard-school",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T17:31:14Z",
+      "last_seen": "2026-10-26T17:31:14Z",
+      "attempts": 1,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
