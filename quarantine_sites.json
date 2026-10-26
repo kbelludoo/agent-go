@@ -1,7 +1,51 @@
 {
-  "last_updated": "2026-10-26T17:49:53Z",
+  "last_updated": "2026-10-26T17:50:52Z",
   "total_quarantine": 387,
   "quarantine_sites": [
+    {
+      "id": 330,
+      "domain": "www.gnu.org",
+      "url": "http://www.gnu.org/licenses/gpl-2.0.html",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.gnu.org/licenses/gpl-2.0.html: Get \"http://www.gnu.org/licenses/gpl-2.0.html\": dial tcp4: lookup www.gnu.org: i/o timeout",
+      "first_seen": "2026-10-26T03:10:12Z",
+      "last_seen": "2026-10-26T04:05:36Z",
+      "attempts": 2,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 45,
+      "domain": "especiais.gazetadopovo.com.br",
+      "url": "https://especiais.gazetadopovo.com.br/lp/quem-e-quem-nas-fraudes-do-inss-ebook-gratis/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:58:22Z",
+      "last_seen": "2026-10-23T14:58:34Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 231,
+      "domain": "about.pypl.com",
+      "url": "https://about.pypl.com/home/default.aspx",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T14:55:01Z",
+      "last_seen": "2026-10-25T15:08:49Z",
+      "attempts": 18,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 247,
+      "domain": "economist.com",
+      "url": "https://economist.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T15:36:49Z",
+      "last_seen": "2026-10-26T16:05:25Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 277,
       "domain": "kevinmontrose.com",
@@ -3881,8 +3925,8 @@
       "status_code": 500,
       "error_message": "HTTP 500",
       "first_seen": "2026-10-26T17:46:37Z",
-      "last_seen": "2026-10-26T17:46:37Z",
-      "attempts": 1,
+      "last_seen": "2026-10-26T17:50:37Z",
+      "attempts": 2,
       "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
     },
     {
@@ -4212,50 +4256,6 @@
       "error_message": "HTTP 403",
       "first_seen": "2026-10-26T02:23:49Z",
       "last_seen": "2026-10-26T02:25:25Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 330,
-      "domain": "www.gnu.org",
-      "url": "http://www.gnu.org/licenses/gpl-2.0.html",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.gnu.org/licenses/gpl-2.0.html: Get \"http://www.gnu.org/licenses/gpl-2.0.html\": dial tcp4: lookup www.gnu.org: i/o timeout",
-      "first_seen": "2026-10-26T03:10:12Z",
-      "last_seen": "2026-10-26T04:05:36Z",
-      "attempts": 2,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 45,
-      "domain": "especiais.gazetadopovo.com.br",
-      "url": "https://especiais.gazetadopovo.com.br/lp/quem-e-quem-nas-fraudes-do-inss-ebook-gratis/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:58:22Z",
-      "last_seen": "2026-10-23T14:58:34Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 231,
-      "domain": "about.pypl.com",
-      "url": "https://about.pypl.com/home/default.aspx",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T14:55:01Z",
-      "last_seen": "2026-10-25T15:08:49Z",
-      "attempts": 18,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 247,
-      "domain": "economist.com",
-      "url": "https://economist.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T15:36:49Z",
-      "last_seen": "2026-10-26T16:05:25Z",
       "attempts": 2,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
