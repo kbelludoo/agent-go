@@ -1,7 +1,40 @@
 {
-  "last_updated": "2026-10-26T08:04:04Z",
+  "last_updated": "2026-10-26T08:05:03Z",
   "total_quarantine": 348,
   "quarantine_sites": [
+    {
+      "id": 57,
+      "domain": "docs.tuxcare.com",
+      "url": "https://docs.tuxcare.com/els-for-runtimes-and-libraries/jquery/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T15:36:22Z",
+      "last_seen": "2026-10-25T00:19:13Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 294,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/unicode-inc/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-25T22:02:37Z",
+      "last_seen": "2026-10-25T22:02:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 112,
+      "domain": "www.scielo.org",
+      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForAlphabeticList\u0026xsl=secondLevelForAlphabeticList",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T00:41:53Z",
+      "last_seen": "2026-10-25T00:20:18Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 102,
       "domain": "shop.fsf.org",
@@ -3796,39 +3829,6 @@
       "last_seen": "2026-10-25T09:59:48Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 57,
-      "domain": "docs.tuxcare.com",
-      "url": "https://docs.tuxcare.com/els-for-runtimes-and-libraries/jquery/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T15:36:22Z",
-      "last_seen": "2026-10-25T00:19:13Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 294,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/unicode-inc/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-25T22:02:37Z",
-      "last_seen": "2026-10-25T22:02:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 112,
-      "domain": "www.scielo.org",
-      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForAlphabeticList\u0026xsl=secondLevelForAlphabeticList",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T00:41:53Z",
-      "last_seen": "2026-10-25T00:20:18Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
