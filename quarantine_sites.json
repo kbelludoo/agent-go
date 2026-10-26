@@ -1,150 +1,7 @@
 {
-  "last_updated": "2026-10-26T16:59:03Z",
+  "last_updated": "2026-10-26T17:00:02Z",
   "total_quarantine": 376,
   "quarantine_sites": [
-    {
-      "id": 319,
-      "domain": "www.gnu.org",
-      "url": "http://www.gnu.org/thankgnus",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.gnu.org/thankgnus: Get \"http://www.gnu.org/thankgnus\": dial tcp4: lookup www.gnu.org: i/o timeout",
-      "first_seen": "2026-10-26T02:18:24Z",
-      "last_seen": "2026-10-26T02:18:24Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 332,
-      "domain": "datacvr.virk.dk",
-      "url": "https://datacvr.virk.dk/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T03:14:13Z",
-      "last_seen": "2026-10-26T03:16:25Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 353,
-      "domain": "www.lovgivning.gl",
-      "url": "http://www.lovgivning.gl/gh.gl-love/kn/2012/context_2011.htm#Bekendtg%C3%B8relser:",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T10:43:13Z",
-      "last_seen": "2026-10-26T11:12:37Z",
-      "attempts": 12,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 72,
-      "domain": "shop.fsf.org",
-      "url": "https://shop.fsf.org/",
-      "status_code": 503,
-      "error_message": "HTTP 503",
-      "first_seen": "2026-10-23T16:38:34Z",
-      "last_seen": "2026-10-23T16:38:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 260,
-      "domain": "lemmy.eco.br",
-      "url": "https://lemmy.eco.br/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T17:05:36Z",
-      "last_seen": "2026-10-25T17:05:36Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 305,
-      "domain": "www.facebook.com",
-      "url": "https://www.facebook.com/sharer.php?u=%2fnyheder",
-      "status_code": 500,
-      "error_message": "HTTP 500",
-      "first_seen": "2026-10-26T00:56:49Z",
-      "last_seen": "2026-10-26T00:56:49Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 367,
-      "domain": "dk.linkedin.com",
-      "url": "https://dk.linkedin.com/company/oekonomistyrelsen?trk=organization_guest_main-feed-card_feed-actor-name",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T14:09:25Z",
-      "last_seen": "2026-10-26T14:09:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 82,
-      "domain": "www.securityfocus.com",
-      "url": "http://www.securityfocus.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.securityfocus.com/: Get \"http://www.securityfocus.com/\": dial tcp4 135.125.97.155:80: connect: connection refused",
-      "first_seen": "2026-10-23T17:33:58Z",
-      "last_seen": "2026-10-23T17:34:22Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.securityfocus.com/: Get \"http://www.securityfocus.com/\": dial tcp4 135.125.97.155:80: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 258,
-      "domain": "agenciadenoticias.ibge.gov.br",
-      "url": "http://agenciadenoticias.ibge.gov.br/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T17:01:12Z",
-      "last_seen": "2026-10-25T17:01:12Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 275,
-      "domain": "www.cidadao.sp.gov.br",
-      "url": "http://www.cidadao.sp.gov.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.cidadao.sp.gov.br: Get \"http://www.cidadao.sp.gov.br\": dial tcp4: lookup www.cidadao.sp.gov.br on 127.0.0.53:53: server misbehaving",
-      "first_seen": "2026-10-25T18:55:49Z",
-      "last_seen": "2026-10-25T18:55:49Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.cidadao.sp.gov.br: Get \"http://www.cidadao.sp.gov.br\": dial tcp4: lookup www.cidadao.sp.gov.br on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 118,
-      "domain": "analytics.scielo.org",
-      "url": "https://analytics.scielo.org/w/accesses?collection=scl",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:55:47Z",
-      "last_seen": "2026-10-24T00:55:47Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 113,
-      "domain": "www.scielo.org",
-      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T00:42:05Z",
-      "last_seen": "2026-10-24T00:55:33Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 204,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/TR/resource-timing/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T10:10:24Z",
-      "last_seen": "2026-10-25T10:10:24Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 66,
       "domain": "medicalxpress.com",
@@ -4137,6 +3994,149 @@
       "last_seen": "2026-10-26T00:57:25Z",
       "attempts": 1,
       "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 319,
+      "domain": "www.gnu.org",
+      "url": "http://www.gnu.org/thankgnus",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.gnu.org/thankgnus: Get \"http://www.gnu.org/thankgnus\": dial tcp4: lookup www.gnu.org: i/o timeout",
+      "first_seen": "2026-10-26T02:18:24Z",
+      "last_seen": "2026-10-26T02:18:24Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 332,
+      "domain": "datacvr.virk.dk",
+      "url": "https://datacvr.virk.dk/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T03:14:13Z",
+      "last_seen": "2026-10-26T03:16:25Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 353,
+      "domain": "www.lovgivning.gl",
+      "url": "http://www.lovgivning.gl/gh.gl-love/kn/2012/context_2011.htm#Bekendtg%C3%B8relser:",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T10:43:13Z",
+      "last_seen": "2026-10-26T11:12:37Z",
+      "attempts": 12,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 72,
+      "domain": "shop.fsf.org",
+      "url": "https://shop.fsf.org/",
+      "status_code": 503,
+      "error_message": "HTTP 503",
+      "first_seen": "2026-10-23T16:38:34Z",
+      "last_seen": "2026-10-23T16:38:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 260,
+      "domain": "lemmy.eco.br",
+      "url": "https://lemmy.eco.br/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T17:05:36Z",
+      "last_seen": "2026-10-25T17:05:36Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 305,
+      "domain": "www.facebook.com",
+      "url": "https://www.facebook.com/sharer.php?u=%2fnyheder",
+      "status_code": 500,
+      "error_message": "HTTP 500",
+      "first_seen": "2026-10-26T00:56:49Z",
+      "last_seen": "2026-10-26T00:56:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 367,
+      "domain": "dk.linkedin.com",
+      "url": "https://dk.linkedin.com/company/oekonomistyrelsen?trk=organization_guest_main-feed-card_feed-actor-name",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T14:09:25Z",
+      "last_seen": "2026-10-26T14:09:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 82,
+      "domain": "www.securityfocus.com",
+      "url": "http://www.securityfocus.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.securityfocus.com/: Get \"http://www.securityfocus.com/\": dial tcp4 135.125.97.155:80: connect: connection refused",
+      "first_seen": "2026-10-23T17:33:58Z",
+      "last_seen": "2026-10-23T17:34:22Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.securityfocus.com/: Get \"http://www.securityfocus.com/\": dial tcp4 135.125.97.155:80: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 258,
+      "domain": "agenciadenoticias.ibge.gov.br",
+      "url": "http://agenciadenoticias.ibge.gov.br/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T17:01:12Z",
+      "last_seen": "2026-10-25T17:01:12Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 275,
+      "domain": "www.cidadao.sp.gov.br",
+      "url": "http://www.cidadao.sp.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.cidadao.sp.gov.br: Get \"http://www.cidadao.sp.gov.br\": dial tcp4: lookup www.cidadao.sp.gov.br on 127.0.0.53:53: server misbehaving",
+      "first_seen": "2026-10-25T18:55:49Z",
+      "last_seen": "2026-10-25T18:55:49Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.cidadao.sp.gov.br: Get \"http://www.cidadao.sp.gov.br\": dial tcp4: lookup www.cidadao.sp.gov.br on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 118,
+      "domain": "analytics.scielo.org",
+      "url": "https://analytics.scielo.org/w/accesses?collection=scl",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:55:47Z",
+      "last_seen": "2026-10-24T00:55:47Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 113,
+      "domain": "www.scielo.org",
+      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T00:42:05Z",
+      "last_seen": "2026-10-24T00:55:33Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 204,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/TR/resource-timing/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T10:10:24Z",
+      "last_seen": "2026-10-25T10:10:24Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
