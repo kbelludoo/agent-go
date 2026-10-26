@@ -1,7 +1,194 @@
 {
-  "last_updated": "2026-10-26T12:01:43Z",
-  "total_quarantine": 358,
+  "last_updated": "2026-10-26T12:02:27Z",
+  "total_quarantine": 359,
   "quarantine_sites": [
+    {
+      "id": 238,
+      "domain": "twitter.com",
+      "url": "https://twitter.com/programmingline",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T15:24:49Z",
+      "last_seen": "2026-10-25T15:24:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 328,
+      "domain": "www.ihs.gov",
+      "url": "https://www.ihs.gov/findhealthcare/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.ihs.gov/findhealthcare/: Get \"https://www.ihs.gov/findhealthcare/\": dial tcp4 198.45.0.67:443: i/o timeout",
+      "first_seen": "2026-10-26T02:40:00Z",
+      "last_seen": "2026-10-26T02:40:00Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 120,
+      "domain": "scielosp.org",
+      "url": "https://scielosp.org/journals/feed/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:56:11Z",
+      "last_seen": "2026-10-24T00:56:59Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 112,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/jodybailey/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T21:16:22Z",
+      "last_seen": "2026-10-23T21:17:22Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 80,
+      "domain": "shop.alz.org",
+      "url": "https://shop.alz.org",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T17:27:33Z",
+      "last_seen": "2026-10-24T00:26:35Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 203,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/standards/types/#ED",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T10:10:13Z",
+      "last_seen": "2026-10-25T10:10:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 268,
+      "domain": "maas.io",
+      "url": "https://maas.io/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://maas.io/: Get \"https://canonical.com/maas/\": context deadline exceeded",
+      "first_seen": "2026-10-25T18:07:00Z",
+      "last_seen": "2026-10-25T18:07:00Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 314,
+      "domain": "community.atlassian.com",
+      "url": "https://community.atlassian.com/t5/custom/page/page-id/create-post-step-1?add-tags=jira-software,Cloud",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T01:42:49Z",
+      "last_seen": "2026-10-26T02:30:25Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 327,
+      "domain": "account.ncbi.nlm.nih.gov",
+      "url": "https://account.ncbi.nlm.nih.gov/myncbi/collections/bibliography/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T02:34:25Z",
+      "last_seen": "2026-10-26T02:44:49Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 106,
+      "domain": "kubegrade.com",
+      "url": "https://kubegrade.com/kubernetes-cloud-native-architecture/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T23:07:33Z",
+      "last_seen": "2026-10-24T00:09:41Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 94,
+      "domain": "tsc.worldwildlife.org",
+      "url": "https://tsc.worldwildlife.org/page/support-wwf",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T18:29:58Z",
+      "last_seen": "2026-10-23T18:30:22Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 60,
+      "domain": "sverigesradio.se",
+      "url": "https://sverigesradio.se/radioleaks",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:49:23Z",
+      "last_seen": "2026-10-24T00:10:32Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 54,
+      "domain": "gitlab.com",
+      "url": "https://gitlab.com/users/sign_in/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:24:34Z",
+      "last_seen": "2026-10-23T15:24:58Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 190,
+      "domain": "www.oversight.gov",
+      "url": "http://www.oversight.gov",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.oversight.gov: Get \"https://www.oversight.gov/\": context deadline exceeded",
+      "first_seen": "2026-10-25T07:53:48Z",
+      "last_seen": "2026-10-25T07:53:48Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 194,
+      "domain": "www.researchgate.net",
+      "url": "https://www.researchgate.net/publication/389517325_Optimizing_Web_Performance_and_Computational_Efficiency_A_Deep_Dive_into_WebAssembly's_Technical_Advancements_and_Real-World_Applications",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T09:53:13Z",
+      "last_seen": "2026-10-25T09:53:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 240,
+      "domain": "arstechnica.com",
+      "url": "https://arstechnica.com/",
+      "status_code": 405,
+      "error_message": "HTTP 405",
+      "first_seen": "2026-10-25T15:27:49Z",
+      "last_seen": "2026-10-25T15:27:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 405 Method Not Allowed: Servidor rejeita certas requisições uTLS/H2 ou exige barra final ('/'). Sugestão: Testar fallback HTTP/1.1 e normalizar trailing slash."
+    },
+    {
+      "id": 300,
+      "domain": "www.oac.uci.edu",
+      "url": "http://www.oac.uci.edu/indiv/ehood/mhonarc.html",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.oac.uci.edu/indiv/ehood/mhonarc.html: Get \"http://www.oac.uci.edu/indiv/ehood/mhonarc.html\": dial tcp4: lookup www.oac.uci.edu on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-26T00:04:13Z",
+      "last_seen": "2026-10-26T00:04:13Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.oac.uci.edu/indiv/ehood/mhonarc.html: Get \"http://www.oac.uci.edu/indiv/ehood/mhonarc.html\": dial tcp4: lookup www.oac.uci.edu on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
     {
       "id": 310,
       "domain": "www.gnu.org",
@@ -1406,8 +1593,8 @@
       "status_code": 504,
       "error_message": "failed to fetch URL http://pav.perst.dk/: Get \"http://pav.perst.dk/\": dial tcp4: lookup pav.perst.dk on 127.0.0.53:53: server misbehaving",
       "first_seen": "2026-10-26T12:00:41Z",
-      "last_seen": "2026-10-26T12:00:50Z",
-      "attempts": 2,
+      "last_seen": "2026-10-26T12:01:44Z",
+      "attempts": 3,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL http://pav.perst.dk/: Get \"http://pav.perst.dk/\": dial tcp4: lookup pav.perst.dk on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
     },
     {
@@ -2278,6 +2465,17 @@
       "last_seen": "2026-10-25T14:06:12Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 359,
+      "domain": "www.facebook.com",
+      "url": "https://www.facebook.com/sharer.php?u=%2fborger%2fdigital-svindel%2fuvedkommende-har-faaet-adgang-til-borgeres-cpr-oplysninger-saadan-skal-du-forholde-dig",
+      "status_code": 500,
+      "error_message": "HTTP 500",
+      "first_seen": "2026-10-26T12:02:01Z",
+      "last_seen": "2026-10-26T12:02:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
     },
     {
       "id": 14,
@@ -3752,193 +3950,6 @@
       "last_seen": "2026-10-23T22:58:34Z",
       "attempts": 2,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 238,
-      "domain": "twitter.com",
-      "url": "https://twitter.com/programmingline",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T15:24:49Z",
-      "last_seen": "2026-10-25T15:24:49Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 328,
-      "domain": "www.ihs.gov",
-      "url": "https://www.ihs.gov/findhealthcare/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.ihs.gov/findhealthcare/: Get \"https://www.ihs.gov/findhealthcare/\": dial tcp4 198.45.0.67:443: i/o timeout",
-      "first_seen": "2026-10-26T02:40:00Z",
-      "last_seen": "2026-10-26T02:40:00Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 120,
-      "domain": "scielosp.org",
-      "url": "https://scielosp.org/journals/feed/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:56:11Z",
-      "last_seen": "2026-10-24T00:56:59Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 112,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/jodybailey/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T21:16:22Z",
-      "last_seen": "2026-10-23T21:17:22Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 80,
-      "domain": "shop.alz.org",
-      "url": "https://shop.alz.org",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T17:27:33Z",
-      "last_seen": "2026-10-24T00:26:35Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 203,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/standards/types/#ED",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T10:10:13Z",
-      "last_seen": "2026-10-25T10:10:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 268,
-      "domain": "maas.io",
-      "url": "https://maas.io/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://maas.io/: Get \"https://canonical.com/maas/\": context deadline exceeded",
-      "first_seen": "2026-10-25T18:07:00Z",
-      "last_seen": "2026-10-25T18:07:00Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 314,
-      "domain": "community.atlassian.com",
-      "url": "https://community.atlassian.com/t5/custom/page/page-id/create-post-step-1?add-tags=jira-software,Cloud",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T01:42:49Z",
-      "last_seen": "2026-10-26T02:30:25Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 327,
-      "domain": "account.ncbi.nlm.nih.gov",
-      "url": "https://account.ncbi.nlm.nih.gov/myncbi/collections/bibliography/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T02:34:25Z",
-      "last_seen": "2026-10-26T02:44:49Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 106,
-      "domain": "kubegrade.com",
-      "url": "https://kubegrade.com/kubernetes-cloud-native-architecture/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T23:07:33Z",
-      "last_seen": "2026-10-24T00:09:41Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 94,
-      "domain": "tsc.worldwildlife.org",
-      "url": "https://tsc.worldwildlife.org/page/support-wwf",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T18:29:58Z",
-      "last_seen": "2026-10-23T18:30:22Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 60,
-      "domain": "sverigesradio.se",
-      "url": "https://sverigesradio.se/radioleaks",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:49:23Z",
-      "last_seen": "2026-10-24T00:10:32Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 54,
-      "domain": "gitlab.com",
-      "url": "https://gitlab.com/users/sign_in/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:24:34Z",
-      "last_seen": "2026-10-23T15:24:58Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 190,
-      "domain": "www.oversight.gov",
-      "url": "http://www.oversight.gov",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.oversight.gov: Get \"https://www.oversight.gov/\": context deadline exceeded",
-      "first_seen": "2026-10-25T07:53:48Z",
-      "last_seen": "2026-10-25T07:53:48Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 194,
-      "domain": "www.researchgate.net",
-      "url": "https://www.researchgate.net/publication/389517325_Optimizing_Web_Performance_and_Computational_Efficiency_A_Deep_Dive_into_WebAssembly's_Technical_Advancements_and_Real-World_Applications",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T09:53:13Z",
-      "last_seen": "2026-10-25T09:53:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 240,
-      "domain": "arstechnica.com",
-      "url": "https://arstechnica.com/",
-      "status_code": 405,
-      "error_message": "HTTP 405",
-      "first_seen": "2026-10-25T15:27:49Z",
-      "last_seen": "2026-10-25T15:27:49Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 405 Method Not Allowed: Servidor rejeita certas requisições uTLS/H2 ou exige barra final ('/'). Sugestão: Testar fallback HTTP/1.1 e normalizar trailing slash."
-    },
-    {
-      "id": 300,
-      "domain": "www.oac.uci.edu",
-      "url": "http://www.oac.uci.edu/indiv/ehood/mhonarc.html",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.oac.uci.edu/indiv/ehood/mhonarc.html: Get \"http://www.oac.uci.edu/indiv/ehood/mhonarc.html\": dial tcp4: lookup www.oac.uci.edu on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-26T00:04:13Z",
-      "last_seen": "2026-10-26T00:04:13Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.oac.uci.edu/indiv/ehood/mhonarc.html: Get \"http://www.oac.uci.edu/indiv/ehood/mhonarc.html\": dial tcp4: lookup www.oac.uci.edu on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
