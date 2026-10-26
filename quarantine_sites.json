@@ -1,73 +1,7 @@
 {
-  "last_updated": "2026-10-26T20:02:51Z",
+  "last_updated": "2026-10-26T20:03:53Z",
   "total_quarantine": 436,
   "quarantine_sites": [
-    {
-      "id": 396,
-      "domain": "akademie.easysoft.de",
-      "url": "https://akademie.easysoft.de/LS/2096749342/INF",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://akademie.easysoft.de/LS/2096749342/INF: Get \"https://akademie.easysoft.de/LS/2096749342/INF\": dial tcp4 62.153.198.100:443: i/o timeout",
-      "first_seen": "2026-10-26T18:42:24Z",
-      "last_seen": "2026-10-26T18:45:24Z",
-      "attempts": 6,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 117,
-      "domain": "app.slack.com",
-      "url": "https://app.slack.com/block-kit-builder/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:46:47Z",
-      "last_seen": "2026-10-24T00:49:47Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 19,
-      "domain": "www.bloomberg.com",
-      "url": "https://www.bloomberg.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:16:10Z",
-      "last_seen": "2026-10-26T16:41:49Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 119,
-      "domain": "analytics.scielo.org",
-      "url": "https://analytics.scielo.org/w/publication/article?collection=scl",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:55:58Z",
-      "last_seen": "2026-10-24T00:55:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 73,
-      "domain": "www.gov.br",
-      "url": "https://www.gov.br/conselho-nacional-de-saude/pt-br/search?origem=termos\u0026SearchableText=Desenrola Brasil",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-23T16:39:33Z",
-      "last_seen": "2026-10-23T16:39:33Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 107,
-      "domain": "spmaisdigital.sp.gov.br",
-      "url": "https://spmaisdigital.sp.gov.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://spmaisdigital.sp.gov.br: Get \"https://spmaisdigital.sp.gov.br\": dial tcp4: lookup spmaisdigital.sp.gov.br on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-24T00:28:59Z",
-      "last_seen": "2026-10-25T00:18:15Z",
-      "attempts": 3,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://spmaisdigital.sp.gov.br: Get \"https://spmaisdigital.sp.gov.br\": dial tcp4: lookup spmaisdigital.sp.gov.br on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
     {
       "id": 34,
       "domain": "www.reuters.com",
@@ -4797,6 +4731,72 @@
       "last_seen": "2026-10-26T14:13:13Z",
       "attempts": 24,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 396,
+      "domain": "akademie.easysoft.de",
+      "url": "https://akademie.easysoft.de/LS/2096749342/INF",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://akademie.easysoft.de/LS/2096749342/INF: Get \"https://akademie.easysoft.de/LS/2096749342/INF\": dial tcp4 62.153.198.100:443: i/o timeout",
+      "first_seen": "2026-10-26T18:42:24Z",
+      "last_seen": "2026-10-26T18:45:24Z",
+      "attempts": 6,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 117,
+      "domain": "app.slack.com",
+      "url": "https://app.slack.com/block-kit-builder/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:46:47Z",
+      "last_seen": "2026-10-24T00:49:47Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 19,
+      "domain": "www.bloomberg.com",
+      "url": "https://www.bloomberg.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:16:10Z",
+      "last_seen": "2026-10-26T16:41:49Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 119,
+      "domain": "analytics.scielo.org",
+      "url": "https://analytics.scielo.org/w/publication/article?collection=scl",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:55:58Z",
+      "last_seen": "2026-10-24T00:55:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 73,
+      "domain": "www.gov.br",
+      "url": "https://www.gov.br/conselho-nacional-de-saude/pt-br/search?origem=termos\u0026SearchableText=Desenrola Brasil",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-23T16:39:33Z",
+      "last_seen": "2026-10-23T16:39:33Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 107,
+      "domain": "spmaisdigital.sp.gov.br",
+      "url": "https://spmaisdigital.sp.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://spmaisdigital.sp.gov.br: Get \"https://spmaisdigital.sp.gov.br\": dial tcp4: lookup spmaisdigital.sp.gov.br on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-24T00:28:59Z",
+      "last_seen": "2026-10-25T00:18:15Z",
+      "attempts": 3,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://spmaisdigital.sp.gov.br: Get \"https://spmaisdigital.sp.gov.br\": dial tcp4: lookup spmaisdigital.sp.gov.br on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
