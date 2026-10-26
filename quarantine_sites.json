@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-26T04:57:17Z",
+  "last_updated": "2026-10-26T04:58:16Z",
   "total_quarantine": 342,
   "quarantine_sites": [
     {
@@ -1384,8 +1384,8 @@
       "status_code": 404,
       "error_message": "HTTP 404",
       "first_seen": "2026-10-26T04:26:50Z",
-      "last_seen": "2026-10-26T04:55:49Z",
-      "attempts": 16,
+      "last_seen": "2026-10-26T04:57:37Z",
+      "attempts": 18,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
