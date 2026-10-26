@@ -1,18 +1,7 @@
 {
-  "last_updated": "2026-10-26T14:19:40Z",
+  "last_updated": "2026-10-26T14:20:40Z",
   "total_quarantine": 367,
   "quarantine_sites": [
-    {
-      "id": 88,
-      "domain": "lp.suno.com.br",
-      "url": "https://lp.suno.com.br/suno-mentoria-de-sucesso/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://lp.suno.com.br/suno-mentoria-de-sucesso/: Get \"https://lp.suno.com.br/suno-mentoria-de-sucesso/\": context deadline exceeded",
-      "first_seen": "2026-10-23T17:57:33Z",
-      "last_seen": "2026-10-23T22:59:20Z",
-      "attempts": 3,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
     {
       "id": 65,
       "domain": "invent.kde.org",
@@ -4038,6 +4027,17 @@
       "last_seen": "2026-10-24T03:10:14Z",
       "attempts": 9,
       "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 88,
+      "domain": "lp.suno.com.br",
+      "url": "https://lp.suno.com.br/suno-mentoria-de-sucesso/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://lp.suno.com.br/suno-mentoria-de-sucesso/: Get \"https://lp.suno.com.br/suno-mentoria-de-sucesso/\": context deadline exceeded",
+      "first_seen": "2026-10-23T17:57:33Z",
+      "last_seen": "2026-10-23T22:59:20Z",
+      "attempts": 3,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     }
   ]
 }
