@@ -1,7 +1,106 @@
 {
-  "last_updated": "2026-10-26T17:15:28Z",
+  "last_updated": "2026-10-26T17:16:26Z",
   "total_quarantine": 378,
   "quarantine_sites": [
+    {
+      "id": 150,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/build-freedom-summit",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T19:13:35Z",
+      "last_seen": "2026-10-24T19:14:47Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 15,
+      "domain": "specs.openstack.org",
+      "url": "https://specs.openstack.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:08:34Z",
+      "last_seen": "2026-10-26T16:34:02Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 115,
+      "domain": "learning.linkedin.com",
+      "url": "https://learning.linkedin.com/pt-br/resources/workplace-learning-report",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T23:45:09Z",
+      "last_seen": "2026-10-23T23:57:09Z",
+      "attempts": 12,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 316,
+      "domain": "mx.indeed.com",
+      "url": "https://mx.indeed.com/companies",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T02:10:13Z",
+      "last_seen": "2026-10-26T02:13:13Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 325,
+      "domain": "www.jeromeknebusch.net",
+      "url": "http://www.jeromeknebusch.net",
+      "status_code": 503,
+      "error_message": "HTTP 503",
+      "first_seen": "2026-10-26T02:32:16Z",
+      "last_seen": "2026-10-26T02:42:41Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 22,
+      "domain": "www.gov.br",
+      "url": "https://www.gov.br/receitafederal/pt-b",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:19:22Z",
+      "last_seen": "2026-10-26T16:45:01Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 302,
+      "domain": "www.ftc.gov",
+      "url": "http://www.ftc.gov/foia/sysnot/vi-1.pdf",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T00:37:25Z",
+      "last_seen": "2026-10-26T00:39:37Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 333,
+      "domain": "datacenter.scaleway.com",
+      "url": "https://datacenter.scaleway.com",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://datacenter.scaleway.com: Get \"https://datacenter.scaleway.com\": dial tcp4: lookup datacenter.scaleway.com on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-26T03:24:49Z",
+      "last_seen": "2026-10-26T03:42:48Z",
+      "attempts": 6,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://datacenter.scaleway.com: Get \"https://datacenter.scaleway.com\": dial tcp4: lookup datacenter.scaleway.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 336,
+      "domain": "www.din.de",
+      "url": "http://www.din.de/gremien/nas/nabd/iso3166ma/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T03:32:15Z",
+      "last_seen": "2026-10-26T03:49:38Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 340,
       "domain": "slack.scaleway.com",
@@ -4060,105 +4159,6 @@
       "last_seen": "2026-10-24T00:45:00Z",
       "attempts": 3,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 150,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/build-freedom-summit",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T19:13:35Z",
-      "last_seen": "2026-10-24T19:14:47Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 15,
-      "domain": "specs.openstack.org",
-      "url": "https://specs.openstack.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:08:34Z",
-      "last_seen": "2026-10-26T16:34:02Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 115,
-      "domain": "learning.linkedin.com",
-      "url": "https://learning.linkedin.com/pt-br/resources/workplace-learning-report",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T23:45:09Z",
-      "last_seen": "2026-10-23T23:57:09Z",
-      "attempts": 12,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 316,
-      "domain": "mx.indeed.com",
-      "url": "https://mx.indeed.com/companies",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T02:10:13Z",
-      "last_seen": "2026-10-26T02:13:13Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 325,
-      "domain": "www.jeromeknebusch.net",
-      "url": "http://www.jeromeknebusch.net",
-      "status_code": 503,
-      "error_message": "HTTP 503",
-      "first_seen": "2026-10-26T02:32:16Z",
-      "last_seen": "2026-10-26T02:42:41Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 22,
-      "domain": "www.gov.br",
-      "url": "https://www.gov.br/receitafederal/pt-b",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:19:22Z",
-      "last_seen": "2026-10-26T16:45:01Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 302,
-      "domain": "www.ftc.gov",
-      "url": "http://www.ftc.gov/foia/sysnot/vi-1.pdf",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T00:37:25Z",
-      "last_seen": "2026-10-26T00:39:37Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 333,
-      "domain": "datacenter.scaleway.com",
-      "url": "https://datacenter.scaleway.com",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://datacenter.scaleway.com: Get \"https://datacenter.scaleway.com\": dial tcp4: lookup datacenter.scaleway.com on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-26T03:24:49Z",
-      "last_seen": "2026-10-26T03:42:48Z",
-      "attempts": 6,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://datacenter.scaleway.com: Get \"https://datacenter.scaleway.com\": dial tcp4: lookup datacenter.scaleway.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 336,
-      "domain": "www.din.de",
-      "url": "http://www.din.de/gremien/nas/nabd/iso3166ma/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T03:32:15Z",
-      "last_seen": "2026-10-26T03:49:38Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
