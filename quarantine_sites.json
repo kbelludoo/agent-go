@@ -1,7 +1,18 @@
 {
-  "last_updated": "2026-10-26T08:26:26Z",
-  "total_quarantine": 350,
+  "last_updated": "2026-10-26T08:27:25Z",
+  "total_quarantine": 351,
   "quarantine_sites": [
+    {
+      "id": 176,
+      "domain": "www.justice.gov",
+      "url": "https://www.justice.gov/opcl/privstat.htm",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T02:24:24Z",
+      "last_seen": "2026-10-25T02:26:24Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 199,
       "domain": "azure.microsoft.com",
@@ -2291,6 +2302,17 @@
       "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
     },
     {
+      "id": 351,
+      "domain": "twitter.com",
+      "url": "http://twitter.com/un",
+      "status_code": 520,
+      "error_message": "HTTP 520",
+      "first_seen": "2026-10-26T08:26:37Z",
+      "last_seen": "2026-10-26T08:27:25Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 520 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
       "id": 111,
       "domain": "account.ncbi.nlm.nih.gov",
       "url": "https://account.ncbi.nlm.nih.gov/myncbi/",
@@ -3840,17 +3862,6 @@
       "last_seen": "2026-10-25T16:00:37Z",
       "attempts": 4,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 176,
-      "domain": "www.justice.gov",
-      "url": "https://www.justice.gov/opcl/privstat.htm",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T02:24:24Z",
-      "last_seen": "2026-10-25T02:26:24Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
