@@ -1,18 +1,7 @@
 {
-  "last_updated": "2026-10-26T15:47:04Z",
+  "last_updated": "2026-10-26T15:48:03Z",
   "total_quarantine": 374,
   "quarantine_sites": [
-    {
-      "id": 137,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/sachinsharmaofficial/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T18:31:35Z",
-      "last_seen": "2026-10-24T18:31:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 153,
       "domain": "www.apec.org",
@@ -4115,6 +4104,17 @@
       "last_seen": "2026-10-26T06:17:13Z",
       "attempts": 4,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 137,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/sachinsharmaofficial/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T18:31:35Z",
+      "last_seen": "2026-10-24T18:31:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
