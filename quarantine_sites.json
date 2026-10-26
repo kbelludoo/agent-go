@@ -1,95 +1,7 @@
 {
-  "last_updated": "2026-10-26T03:23:51Z",
-  "total_quarantine": 332,
+  "last_updated": "2026-10-26T03:24:49Z",
+  "total_quarantine": 333,
   "quarantine_sites": [
-    {
-      "id": 211,
-      "domain": "www.EXAMPLE.com",
-      "url": "https://www.EXAMPLE.com/apps/tracktor",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T11:22:12Z",
-      "last_seen": "2026-10-25T11:22:48Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 299,
-      "domain": "www.ftc.gov",
-      "url": "http://www.ftc.gov/foia/listofpaysystems.shtm",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T23:47:49Z",
-      "last_seen": "2026-10-26T00:37:49Z",
-      "attempts": 7,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 117,
-      "domain": "app.slack.com",
-      "url": "https://app.slack.com/block-kit-builder/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:46:47Z",
-      "last_seen": "2026-10-24T00:49:47Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 19,
-      "domain": "www.bloomberg.com",
-      "url": "https://www.bloomberg.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:16:10Z",
-      "last_seen": "2026-10-25T16:13:13Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 119,
-      "domain": "analytics.scielo.org",
-      "url": "https://analytics.scielo.org/w/publication/article?collection=scl",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:55:58Z",
-      "last_seen": "2026-10-24T00:55:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 73,
-      "domain": "www.gov.br",
-      "url": "https://www.gov.br/conselho-nacional-de-saude/pt-br/search?origem=termos\u0026SearchableText=Desenrola Brasil",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-23T16:39:33Z",
-      "last_seen": "2026-10-23T16:39:33Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 107,
-      "domain": "spmaisdigital.sp.gov.br",
-      "url": "https://spmaisdigital.sp.gov.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://spmaisdigital.sp.gov.br: Get \"https://spmaisdigital.sp.gov.br\": dial tcp4: lookup spmaisdigital.sp.gov.br on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-24T00:28:59Z",
-      "last_seen": "2026-10-25T00:18:15Z",
-      "attempts": 3,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://spmaisdigital.sp.gov.br: Get \"https://spmaisdigital.sp.gov.br\": dial tcp4: lookup spmaisdigital.sp.gov.br on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 34,
-      "domain": "www.reuters.com",
-      "url": "https://www.reuters.com/world/asia-pacific/eu-agency-warns-websites-may-need-be-taken-offline-php-prepares-patches-2026-10-21/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T13:58:46Z",
-      "last_seen": "2026-10-23T13:58:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 229,
       "domain": "ndsasp.ams.incircuit.com",
@@ -958,6 +870,17 @@
       "last_seen": "2026-10-26T00:39:37Z",
       "attempts": 6,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 333,
+      "domain": "datacenter.scaleway.com",
+      "url": "https://datacenter.scaleway.com",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://datacenter.scaleway.com: Get \"https://datacenter.scaleway.com\": dial tcp4: lookup datacenter.scaleway.com on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-26T03:24:49Z",
+      "last_seen": "2026-10-26T03:24:49Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://datacenter.scaleway.com: Get \"https://datacenter.scaleway.com\": dial tcp4: lookup datacenter.scaleway.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
     },
     {
       "id": 130,
@@ -3653,6 +3576,94 @@
       "last_seen": "2026-10-25T16:01:49Z",
       "attempts": 4,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 211,
+      "domain": "www.EXAMPLE.com",
+      "url": "https://www.EXAMPLE.com/apps/tracktor",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T11:22:12Z",
+      "last_seen": "2026-10-25T11:22:48Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 299,
+      "domain": "www.ftc.gov",
+      "url": "http://www.ftc.gov/foia/listofpaysystems.shtm",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T23:47:49Z",
+      "last_seen": "2026-10-26T00:37:49Z",
+      "attempts": 7,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 117,
+      "domain": "app.slack.com",
+      "url": "https://app.slack.com/block-kit-builder/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:46:47Z",
+      "last_seen": "2026-10-24T00:49:47Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 19,
+      "domain": "www.bloomberg.com",
+      "url": "https://www.bloomberg.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:16:10Z",
+      "last_seen": "2026-10-25T16:13:13Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 119,
+      "domain": "analytics.scielo.org",
+      "url": "https://analytics.scielo.org/w/publication/article?collection=scl",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:55:58Z",
+      "last_seen": "2026-10-24T00:55:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 73,
+      "domain": "www.gov.br",
+      "url": "https://www.gov.br/conselho-nacional-de-saude/pt-br/search?origem=termos\u0026SearchableText=Desenrola Brasil",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-23T16:39:33Z",
+      "last_seen": "2026-10-23T16:39:33Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 107,
+      "domain": "spmaisdigital.sp.gov.br",
+      "url": "https://spmaisdigital.sp.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://spmaisdigital.sp.gov.br: Get \"https://spmaisdigital.sp.gov.br\": dial tcp4: lookup spmaisdigital.sp.gov.br on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-24T00:28:59Z",
+      "last_seen": "2026-10-25T00:18:15Z",
+      "attempts": 3,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://spmaisdigital.sp.gov.br: Get \"https://spmaisdigital.sp.gov.br\": dial tcp4: lookup spmaisdigital.sp.gov.br on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 34,
+      "domain": "www.reuters.com",
+      "url": "https://www.reuters.com/world/asia-pacific/eu-agency-warns-websites-may-need-be-taken-offline-php-prepares-patches-2026-10-21/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T13:58:46Z",
+      "last_seen": "2026-10-23T13:58:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
