@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-26T12:57:28Z",
+  "last_updated": "2026-10-26T12:58:25Z",
   "total_quarantine": 362,
   "quarantine_sites": [
     {
@@ -1582,8 +1582,8 @@
       "status_code": 504,
       "error_message": "failed to fetch URL http://pav.perst.dk/: Get \"http://pav.perst.dk/\": dial tcp4: lookup pav.perst.dk on 127.0.0.53:53: server misbehaving",
       "first_seen": "2026-10-26T12:00:41Z",
-      "last_seen": "2026-10-26T12:57:13Z",
-      "attempts": 44,
+      "last_seen": "2026-10-26T12:58:00Z",
+      "attempts": 45,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL http://pav.perst.dk/: Get \"http://pav.perst.dk/\": dial tcp4: lookup pav.perst.dk on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
     },
     {
@@ -3089,8 +3089,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-26T12:03:01Z",
-      "last_seen": "2026-10-26T12:53:25Z",
-      "attempts": 9,
+      "last_seen": "2026-10-26T12:58:25Z",
+      "attempts": 10,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
