@@ -1,40 +1,7 @@
 {
-  "last_updated": "2026-10-26T06:19:27Z",
+  "last_updated": "2026-10-26T06:20:15Z",
   "total_quarantine": 346,
   "quarantine_sites": [
-    {
-      "id": 248,
-      "domain": "elpais.com",
-      "url": "https://elpais.com/america",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T15:37:37Z",
-      "last_seen": "2026-10-25T15:37:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 129,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/nielsen-norman-group",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T14:21:47Z",
-      "last_seen": "2026-10-24T14:25:59Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 16,
-      "domain": "stackoverflow.com",
-      "url": "https://stackoverflow.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:09:10Z",
-      "last_seen": "2026-10-25T16:06:01Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 37,
       "domain": "www.sciencedirect.com",
@@ -3806,6 +3773,39 @@
       "first_seen": "2026-10-24T18:02:11Z",
       "last_seen": "2026-10-24T18:02:11Z",
       "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 248,
+      "domain": "elpais.com",
+      "url": "https://elpais.com/america",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T15:37:37Z",
+      "last_seen": "2026-10-25T15:37:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 129,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/nielsen-norman-group",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T14:21:47Z",
+      "last_seen": "2026-10-24T14:25:59Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 16,
+      "domain": "stackoverflow.com",
+      "url": "https://stackoverflow.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:09:10Z",
+      "last_seen": "2026-10-25T16:06:01Z",
+      "attempts": 2,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
