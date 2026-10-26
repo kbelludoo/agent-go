@@ -1,7 +1,29 @@
 {
-  "last_updated": "2026-10-26T13:10:42Z",
+  "last_updated": "2026-10-26T13:11:41Z",
   "total_quarantine": 362,
   "quarantine_sites": [
+    {
+      "id": 234,
+      "domain": "localhost",
+      "url": "http://localhost:9090/metrics",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused",
+      "first_seen": "2026-10-25T15:21:12Z",
+      "last_seen": "2026-10-25T15:21:12Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 320,
+      "domain": "fosstodon.org",
+      "url": "https://fosstodon.org/@plausible",
+      "status_code": 429,
+      "error_message": "HTTP 429",
+      "first_seen": "2026-10-26T02:21:26Z",
+      "last_seen": "2026-10-26T02:21:26Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
+    },
     {
       "id": 358,
       "domain": "pav.perst.dk",
@@ -3961,28 +3983,6 @@
       "last_seen": "2026-10-26T00:39:49Z",
       "attempts": 6,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 234,
-      "domain": "localhost",
-      "url": "http://localhost:9090/metrics",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused",
-      "first_seen": "2026-10-25T15:21:12Z",
-      "last_seen": "2026-10-25T15:21:12Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 320,
-      "domain": "fosstodon.org",
-      "url": "https://fosstodon.org/@plausible",
-      "status_code": 429,
-      "error_message": "HTTP 429",
-      "first_seen": "2026-10-26T02:21:26Z",
-      "last_seen": "2026-10-26T02:21:26Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
     }
   ]
 }
