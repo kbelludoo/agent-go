@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-27T09:38:51Z",
-  "total_quarantine": 524,
+  "last_updated": "2026-10-27T09:39:52Z",
+  "total_quarantine": 525,
   "quarantine_sites": [
     {
       "id": 164,
@@ -2784,6 +2784,17 @@
       "last_seen": "2026-10-26T22:12:37Z",
       "attempts": 1,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 525,
+      "domain": "graydon2.dreamwidth.org",
+      "url": "https://graydon2.dreamwidth.org/1597.html",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T09:39:26Z",
+      "last_seen": "2026-10-27T09:39:26Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
       "id": 120,
