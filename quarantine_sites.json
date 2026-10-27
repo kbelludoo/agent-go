@@ -1,7 +1,18 @@
 {
-  "last_updated": "2026-10-27T00:25:42Z",
+  "last_updated": "2026-10-27T00:26:42Z",
   "total_quarantine": 481,
   "quarantine_sites": [
+    {
+      "id": 258,
+      "domain": "agenciadenoticias.ibge.gov.br",
+      "url": "http://agenciadenoticias.ibge.gov.br/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T17:01:12Z",
+      "last_seen": "2026-10-25T17:01:12Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 204,
       "domain": "www.w3.org",
@@ -5168,8 +5179,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-27T00:21:38Z",
-      "last_seen": "2026-10-27T00:25:13Z",
-      "attempts": 4,
+      "last_seen": "2026-10-27T00:26:25Z",
+      "attempts": 5,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -5281,17 +5292,6 @@
       "last_seen": "2026-10-23T17:34:22Z",
       "attempts": 2,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.securityfocus.com/: Get \"http://www.securityfocus.com/\": dial tcp4 135.125.97.155:80: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 258,
-      "domain": "agenciadenoticias.ibge.gov.br",
-      "url": "http://agenciadenoticias.ibge.gov.br/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T17:01:12Z",
-      "last_seen": "2026-10-25T17:01:12Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
