@@ -1,7 +1,106 @@
 {
-  "last_updated": "2026-10-27T22:56:41Z",
+  "last_updated": "2026-10-27T22:57:37Z",
   "total_quarantine": 574,
   "quarantine_sites": [
+    {
+      "id": 238,
+      "domain": "twitter.com",
+      "url": "https://twitter.com/programmingline",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T15:24:49Z",
+      "last_seen": "2026-10-25T15:24:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 469,
+      "domain": "www.sciencedirect.com",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0277379121000743",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T22:04:49Z",
+      "last_seen": "2026-10-26T22:04:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 491,
+      "domain": "aidirs.org",
+      "url": "https://aidirs.org",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T04:57:01Z",
+      "last_seen": "2026-10-27T04:57:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 203,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/standards/types/#ED",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T10:10:13Z",
+      "last_seen": "2026-10-25T10:10:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 504,
+      "domain": "twitter.com",
+      "url": "https://twitter.com/intent/?text=Price%20Guarantee%20Spurred%20Vaccine%20Development%20for%20Poor%20Nations\u0026url=https://www.nber.org/digest/apr20/price-guarantee-spurred-vaccine-development-poor-nations",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-27T06:02:01Z",
+      "last_seen": "2026-10-27T06:02:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 523,
+      "domain": "bitbucket.org",
+      "url": "https://bitbucket.org/iopq/fizzbuzz-in-rust",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-27T09:32:49Z",
+      "last_seen": "2026-10-27T09:32:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 532,
+      "domain": "websh.com",
+      "url": "http://websh.com",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://websh.com: Get \"http://websh.com\": dial tcp4 194.126.145.138:80: i/o timeout",
+      "first_seen": "2026-10-27T09:57:48Z",
+      "last_seen": "2026-10-27T09:57:48Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 94,
+      "domain": "tsc.worldwildlife.org",
+      "url": "https://tsc.worldwildlife.org/page/support-wwf",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T18:29:58Z",
+      "last_seen": "2026-10-23T18:30:22Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 190,
+      "domain": "www.oversight.gov",
+      "url": "http://www.oversight.gov",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.oversight.gov: Get \"https://www.oversight.gov/\": context deadline exceeded",
+      "first_seen": "2026-10-25T07:53:48Z",
+      "last_seen": "2026-10-25T07:53:48Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
     {
       "id": 194,
       "domain": "www.researchgate.net",
@@ -6216,105 +6315,6 @@
       "last_seen": "2026-10-24T11:15:22Z",
       "attempts": 37,
       "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 238,
-      "domain": "twitter.com",
-      "url": "https://twitter.com/programmingline",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T15:24:49Z",
-      "last_seen": "2026-10-25T15:24:49Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 469,
-      "domain": "www.sciencedirect.com",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0277379121000743",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T22:04:49Z",
-      "last_seen": "2026-10-26T22:04:49Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 491,
-      "domain": "aidirs.org",
-      "url": "https://aidirs.org",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T04:57:01Z",
-      "last_seen": "2026-10-27T04:57:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 203,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/standards/types/#ED",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T10:10:13Z",
-      "last_seen": "2026-10-25T10:10:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 504,
-      "domain": "twitter.com",
-      "url": "https://twitter.com/intent/?text=Price%20Guarantee%20Spurred%20Vaccine%20Development%20for%20Poor%20Nations\u0026url=https://www.nber.org/digest/apr20/price-guarantee-spurred-vaccine-development-poor-nations",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-27T06:02:01Z",
-      "last_seen": "2026-10-27T06:02:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 523,
-      "domain": "bitbucket.org",
-      "url": "https://bitbucket.org/iopq/fizzbuzz-in-rust",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-27T09:32:49Z",
-      "last_seen": "2026-10-27T09:32:49Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 532,
-      "domain": "websh.com",
-      "url": "http://websh.com",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://websh.com: Get \"http://websh.com\": dial tcp4 194.126.145.138:80: i/o timeout",
-      "first_seen": "2026-10-27T09:57:48Z",
-      "last_seen": "2026-10-27T09:57:48Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 94,
-      "domain": "tsc.worldwildlife.org",
-      "url": "https://tsc.worldwildlife.org/page/support-wwf",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T18:29:58Z",
-      "last_seen": "2026-10-23T18:30:22Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 190,
-      "domain": "www.oversight.gov",
-      "url": "http://www.oversight.gov",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.oversight.gov: Get \"https://www.oversight.gov/\": context deadline exceeded",
-      "first_seen": "2026-10-25T07:53:48Z",
-      "last_seen": "2026-10-25T07:53:48Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     }
   ]
 }
