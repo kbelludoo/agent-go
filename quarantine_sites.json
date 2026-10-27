@@ -1,40 +1,7 @@
 {
-  "last_updated": "2026-10-27T06:30:05Z",
-  "total_quarantine": 510,
+  "last_updated": "2026-10-27T06:31:03Z",
+  "total_quarantine": 511,
   "quarantine_sites": [
-    {
-      "id": 153,
-      "domain": "www.apec.org",
-      "url": "http://www.apec.org/Groups/Committee-on-Trade-and-Investment/Electronic-Commerce-Steering-Group/Cross-border-Privacy-Enforcement-Arrangement.aspx",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T19:37:32Z",
-      "last_seen": "2026-10-24T19:37:32Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 433,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=82b8a0e2-9e75-4ffe-b714-3318f860aeb0",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:53:13Z",
-      "last_seen": "2026-10-26T19:53:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 475,
-      "domain": "tinyurl.com",
-      "url": "https://tinyurl.com/4k9brwnn",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://tinyurl.com/4k9brwnn: Get \"mailto:entrepreneurship@euspa.europa.eu?subject=Send%20me%20opportunities\u0026body=Hi%2C%20I%E2%80%99m%20interested%20in%20receiving%20opportunities%20from%20EUSPA.%20%0D%0A%0D%0ABy%20sending%20this%20e-mail%2C%20I%20consent%20to%20the%20processing%20of%20my%20personal%20data%20in%20order%20to%20be%20informed%20of%20currently%20open%20opportunities%20that%20support%20companies%20working%20with%20EU%20space%20data.%20Occasionally%2C%20I%20might%20receive%20a%20satisfaction%20survey%20in%20order%20to%20obtain%20feedback%20on%20the%20newsletter.%20%0D%0A%0D%0AFurther%20information%20on%20the%20processing%20of%20personal%20data%20are%20provided%20in%20the%20enclosed%20Privacy%20Statement%20-%20https%3A%2F%2Fwww.euspa.europa.eu%2Fsites%2Fdefault%2Ffiles%2Fprivacy_statement_euspa_entrepreneurship_opportunities.pdf%0D%0A\": dial tcp4 :443: connect: connection refused",
-      "first_seen": "2026-10-26T23:06:37Z",
-      "last_seen": "2026-10-26T23:07:00Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://tinyurl.com/4k9brwnn: Get \"mailto:entrepreneurship@euspa.europa.eu?subject=Send%20me%20opportunities\u0026body=Hi%2C%20I%E2%80%99m%20interested%20in%20receiving%20opportunities%20from%20EUSPA.%20%0D%0A%0D%0ABy%20sending%20this%20e-mail%2C%20I%20consent%20to%20the%20processing%20of%20my%20personal%20data%20in%20order%20to%20be%20informed%20of%20currently%20open%20opportunities%20that%20support%20companies%20working%20with%20EU%20space%20data.%20Occasionally%2C%20I%20might%20receive%20a%20satisfaction%20survey%20in%20order%20to%20obtain%20feedback%20on%20the%20newsletter.%20%0D%0A%0D%0AFurther%20information%20on%20the%20processing%20of%20personal%20data%20are%20provided%20in%20the%20enclosed%20Privacy%20Statement%20-%20https%3A%2F%2Fwww.euspa.europa.eu%2Fsites%2Fdefault%2Ffiles%2Fprivacy_statement_euspa_entrepreneurship_opportunities.pdf%0D%0A\": dial tcp4 :443: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
-    },
     {
       "id": 497,
       "domain": "www.linkedin.com",
@@ -3556,6 +3523,17 @@
       "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     },
     {
+      "id": 511,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/the-manila-times",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-27T06:30:13Z",
+      "last_seen": "2026-10-27T06:30:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
       "id": 118,
       "domain": "analytics.scielo.org",
       "url": "https://analytics.scielo.org/w/accesses?collection=scl",
@@ -5611,6 +5589,39 @@
       "last_seen": "2026-10-26T22:06:01Z",
       "attempts": 2,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 153,
+      "domain": "www.apec.org",
+      "url": "http://www.apec.org/Groups/Committee-on-Trade-and-Investment/Electronic-Commerce-Steering-Group/Cross-border-Privacy-Enforcement-Arrangement.aspx",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T19:37:32Z",
+      "last_seen": "2026-10-24T19:37:32Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 433,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=82b8a0e2-9e75-4ffe-b714-3318f860aeb0",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:53:13Z",
+      "last_seen": "2026-10-26T19:53:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 475,
+      "domain": "tinyurl.com",
+      "url": "https://tinyurl.com/4k9brwnn",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://tinyurl.com/4k9brwnn: Get \"mailto:entrepreneurship@euspa.europa.eu?subject=Send%20me%20opportunities\u0026body=Hi%2C%20I%E2%80%99m%20interested%20in%20receiving%20opportunities%20from%20EUSPA.%20%0D%0A%0D%0ABy%20sending%20this%20e-mail%2C%20I%20consent%20to%20the%20processing%20of%20my%20personal%20data%20in%20order%20to%20be%20informed%20of%20currently%20open%20opportunities%20that%20support%20companies%20working%20with%20EU%20space%20data.%20Occasionally%2C%20I%20might%20receive%20a%20satisfaction%20survey%20in%20order%20to%20obtain%20feedback%20on%20the%20newsletter.%20%0D%0A%0D%0AFurther%20information%20on%20the%20processing%20of%20personal%20data%20are%20provided%20in%20the%20enclosed%20Privacy%20Statement%20-%20https%3A%2F%2Fwww.euspa.europa.eu%2Fsites%2Fdefault%2Ffiles%2Fprivacy_statement_euspa_entrepreneurship_opportunities.pdf%0D%0A\": dial tcp4 :443: connect: connection refused",
+      "first_seen": "2026-10-26T23:06:37Z",
+      "last_seen": "2026-10-26T23:07:00Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://tinyurl.com/4k9brwnn: Get \"mailto:entrepreneurship@euspa.europa.eu?subject=Send%20me%20opportunities\u0026body=Hi%2C%20I%E2%80%99m%20interested%20in%20receiving%20opportunities%20from%20EUSPA.%20%0D%0A%0D%0ABy%20sending%20this%20e-mail%2C%20I%20consent%20to%20the%20processing%20of%20my%20personal%20data%20in%20order%20to%20be%20informed%20of%20currently%20open%20opportunities%20that%20support%20companies%20working%20with%20EU%20space%20data.%20Occasionally%2C%20I%20might%20receive%20a%20satisfaction%20survey%20in%20order%20to%20obtain%20feedback%20on%20the%20newsletter.%20%0D%0A%0D%0AFurther%20information%20on%20the%20processing%20of%20personal%20data%20are%20provided%20in%20the%20enclosed%20Privacy%20Statement%20-%20https%3A%2F%2Fwww.euspa.europa.eu%2Fsites%2Fdefault%2Ffiles%2Fprivacy_statement_euspa_entrepreneurship_opportunities.pdf%0D%0A\": dial tcp4 :443: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
