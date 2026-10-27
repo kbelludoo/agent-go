@@ -1,7 +1,84 @@
 {
-  "last_updated": "2026-10-27T23:09:50Z",
+  "last_updated": "2026-10-27T23:10:50Z",
   "total_quarantine": 576,
   "quarantine_sites": [
+    {
+      "id": 257,
+      "domain": "directory.fsf.org",
+      "url": "https://directory.fsf.org",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://directory.fsf.org: Get \"https://directory.fsf.org\": context deadline exceeded",
+      "first_seen": "2026-10-25T17:00:00Z",
+      "last_seen": "2026-10-25T17:00:00Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 446,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=c025ca6c-ca67-4673-b0b0-74d7a40a7b80",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:31:13Z",
+      "last_seen": "2026-10-26T20:31:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 356,
+      "domain": "www.zkb.ch",
+      "url": "http://www.zkb.ch",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.zkb.ch: Get \"http://www.zkb.ch\": dial tcp4 62.240.192.154:80: i/o timeout",
+      "first_seen": "2026-10-26T11:31:24Z",
+      "last_seen": "2026-10-26T11:44:00Z",
+      "attempts": 8,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 404,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=274beb59-d123-4577-878d-7170ff10954e",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:06:25Z",
+      "last_seen": "2026-10-26T19:06:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 499,
+      "domain": "fiddlebops.fun",
+      "url": "https://fiddlebops.fun",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://fiddlebops.fun: Get \"https://fiddlebops.fun\": dial tcp4: lookup fiddlebops.fun on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-27T05:40:24Z",
+      "last_seen": "2026-10-27T05:53:37Z",
+      "attempts": 3,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://fiddlebops.fun: Get \"https://fiddlebops.fun\": dial tcp4: lookup fiddlebops.fun on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 166,
+      "domain": "se.linkedin.com",
+      "url": "https://se.linkedin.com/in/andreas-axhamre123?trk=article-ssr-frontend-pulse_x-social-details_comments-action_comment_actor-name",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T22:41:36Z",
+      "last_seen": "2026-10-24T23:24:59Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 236,
+      "domain": "tools.be10x.com",
+      "url": "https://tools.be10x.com/ai-career-planner",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T15:22:36Z",
+      "last_seen": "2026-10-25T15:22:36Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 168,
       "domain": "au.linkedin.com",
@@ -6260,83 +6337,6 @@
       "last_seen": "2026-10-27T16:39:25Z",
       "attempts": 13,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 257,
-      "domain": "directory.fsf.org",
-      "url": "https://directory.fsf.org",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://directory.fsf.org: Get \"https://directory.fsf.org\": context deadline exceeded",
-      "first_seen": "2026-10-25T17:00:00Z",
-      "last_seen": "2026-10-25T17:00:00Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 446,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=c025ca6c-ca67-4673-b0b0-74d7a40a7b80",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:31:13Z",
-      "last_seen": "2026-10-26T20:31:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 356,
-      "domain": "www.zkb.ch",
-      "url": "http://www.zkb.ch",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.zkb.ch: Get \"http://www.zkb.ch\": dial tcp4 62.240.192.154:80: i/o timeout",
-      "first_seen": "2026-10-26T11:31:24Z",
-      "last_seen": "2026-10-26T11:44:00Z",
-      "attempts": 8,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 404,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=274beb59-d123-4577-878d-7170ff10954e",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:06:25Z",
-      "last_seen": "2026-10-26T19:06:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 499,
-      "domain": "fiddlebops.fun",
-      "url": "https://fiddlebops.fun",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://fiddlebops.fun: Get \"https://fiddlebops.fun\": dial tcp4: lookup fiddlebops.fun on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-27T05:40:24Z",
-      "last_seen": "2026-10-27T05:53:37Z",
-      "attempts": 3,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://fiddlebops.fun: Get \"https://fiddlebops.fun\": dial tcp4: lookup fiddlebops.fun on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 166,
-      "domain": "se.linkedin.com",
-      "url": "https://se.linkedin.com/in/andreas-axhamre123?trk=article-ssr-frontend-pulse_x-social-details_comments-action_comment_actor-name",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T22:41:36Z",
-      "last_seen": "2026-10-24T23:24:59Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 236,
-      "domain": "tools.be10x.com",
-      "url": "https://tools.be10x.com/ai-career-planner",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T15:22:36Z",
-      "last_seen": "2026-10-25T15:22:36Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
