@@ -1,106 +1,7 @@
 {
-  "last_updated": "2026-10-27T10:32:38Z",
+  "last_updated": "2026-10-27T10:33:38Z",
   "total_quarantine": 538,
   "quarantine_sites": [
-    {
-      "id": 205,
-      "domain": "lists.w3.org",
-      "url": "https://lists.w3.org/Archives/Public/public-web-perf/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T10:10:36Z",
-      "last_seen": "2026-10-25T10:10:36Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 292,
-      "domain": "ec.europa.eu",
-      "url": "https://ec.europa.eu/info/food-farming-fisheries/key-policies/common-agricultural-policy/rural-development",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T21:55:02Z",
-      "last_seen": "2026-10-25T21:55:26Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 309,
-      "domain": "www.gnu.org",
-      "url": "https://www.gnu.org/philosophy/free-sw.html",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.gnu.org/philosophy/free-sw.html: Get \"https://www.gnu.org/philosophy/free-sw.html\": dial tcp4: lookup www.gnu.org: i/o timeout",
-      "first_seen": "2026-10-26T01:24:36Z",
-      "last_seen": "2026-10-26T01:24:36Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 373,
-      "domain": "www.iso.ch",
-      "url": "http://www.iso.ch",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.iso.ch: Get \"http://www.iso.ch\": dial tcp4: lookup www.iso.ch on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-26T15:46:37Z",
-      "last_seen": "2026-10-26T15:46:37Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.iso.ch: Get \"http://www.iso.ch\": dial tcp4: lookup www.iso.ch on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 48,
-      "domain": "www.commerce.gov",
-      "url": "https://www.commerce.gov",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:02:58Z",
-      "last_seen": "2026-10-23T22:57:05Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 108,
-      "domain": "iris.paho.org",
-      "url": "https://iris.paho.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T20:09:22Z",
-      "last_seen": "2026-10-23T22:58:34Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 328,
-      "domain": "www.ihs.gov",
-      "url": "https://www.ihs.gov/findhealthcare/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.ihs.gov/findhealthcare/: Get \"https://www.ihs.gov/findhealthcare/\": dial tcp4 198.45.0.67:443: i/o timeout",
-      "first_seen": "2026-10-26T02:40:00Z",
-      "last_seen": "2026-10-26T02:40:00Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 399,
-      "domain": "akademie.easysoft.de",
-      "url": "https://akademie.easysoft.de/LS/2096749393/KIP?wss_1=esGrid_KipUebersicht\u0026wss_1_anzahl=10\u0026wss_1_sort=asc---Kursdauer%20von\u0026linktype=menue",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://akademie.easysoft.de/LS/2096749393/KIP?wss_1=esGrid_KipUebersicht\u0026wss_1_anzahl=10\u0026wss_1_sort=asc---Kursdauer%20von\u0026linktype=menue: Get \"https://akademie.easysoft.de/LS/2096749393/KIP?wss_1=esGrid_KipUebersicht\u0026wss_1_anzahl=10\u0026wss_1_sort=asc---Kursdauer%20von\u0026linktype=menue\": dial tcp4 62.153.198.100:443: i/o timeout",
-      "first_seen": "2026-10-26T18:59:00Z",
-      "last_seen": "2026-10-26T19:02:36Z",
-      "attempts": 6,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 419,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=147bdeb3-1715-4391-b01b-05b8c67ea1c0",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:17:49Z",
-      "last_seen": "2026-10-26T19:17:49Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 468,
       "domain": "arstechnica.com",
@@ -3562,8 +3463,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-23T12:46:22Z",
-      "last_seen": "2026-10-27T08:30:01Z",
-      "attempts": 8,
+      "last_seen": "2026-10-27T10:33:01Z",
+      "attempts": 9,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -5919,6 +5820,105 @@
       "last_seen": "2026-10-23T18:19:14Z",
       "attempts": 4,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL http://paineldecompras.economia.gov.br: Get \"http://paineldecompras.economia.gov.br\": dial tcp4 189.9.7.16:80: connect: no route to host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 205,
+      "domain": "lists.w3.org",
+      "url": "https://lists.w3.org/Archives/Public/public-web-perf/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T10:10:36Z",
+      "last_seen": "2026-10-25T10:10:36Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 292,
+      "domain": "ec.europa.eu",
+      "url": "https://ec.europa.eu/info/food-farming-fisheries/key-policies/common-agricultural-policy/rural-development",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T21:55:02Z",
+      "last_seen": "2026-10-25T21:55:26Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 309,
+      "domain": "www.gnu.org",
+      "url": "https://www.gnu.org/philosophy/free-sw.html",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.gnu.org/philosophy/free-sw.html: Get \"https://www.gnu.org/philosophy/free-sw.html\": dial tcp4: lookup www.gnu.org: i/o timeout",
+      "first_seen": "2026-10-26T01:24:36Z",
+      "last_seen": "2026-10-26T01:24:36Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 373,
+      "domain": "www.iso.ch",
+      "url": "http://www.iso.ch",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.iso.ch: Get \"http://www.iso.ch\": dial tcp4: lookup www.iso.ch on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-26T15:46:37Z",
+      "last_seen": "2026-10-26T15:46:37Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.iso.ch: Get \"http://www.iso.ch\": dial tcp4: lookup www.iso.ch on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 48,
+      "domain": "www.commerce.gov",
+      "url": "https://www.commerce.gov",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:02:58Z",
+      "last_seen": "2026-10-23T22:57:05Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 108,
+      "domain": "iris.paho.org",
+      "url": "https://iris.paho.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T20:09:22Z",
+      "last_seen": "2026-10-23T22:58:34Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 328,
+      "domain": "www.ihs.gov",
+      "url": "https://www.ihs.gov/findhealthcare/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.ihs.gov/findhealthcare/: Get \"https://www.ihs.gov/findhealthcare/\": dial tcp4 198.45.0.67:443: i/o timeout",
+      "first_seen": "2026-10-26T02:40:00Z",
+      "last_seen": "2026-10-26T02:40:00Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 399,
+      "domain": "akademie.easysoft.de",
+      "url": "https://akademie.easysoft.de/LS/2096749393/KIP?wss_1=esGrid_KipUebersicht\u0026wss_1_anzahl=10\u0026wss_1_sort=asc---Kursdauer%20von\u0026linktype=menue",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://akademie.easysoft.de/LS/2096749393/KIP?wss_1=esGrid_KipUebersicht\u0026wss_1_anzahl=10\u0026wss_1_sort=asc---Kursdauer%20von\u0026linktype=menue: Get \"https://akademie.easysoft.de/LS/2096749393/KIP?wss_1=esGrid_KipUebersicht\u0026wss_1_anzahl=10\u0026wss_1_sort=asc---Kursdauer%20von\u0026linktype=menue\": dial tcp4 62.153.198.100:443: i/o timeout",
+      "first_seen": "2026-10-26T18:59:00Z",
+      "last_seen": "2026-10-26T19:02:36Z",
+      "attempts": 6,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 419,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=147bdeb3-1715-4391-b01b-05b8c67ea1c0",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:17:49Z",
+      "last_seen": "2026-10-26T19:17:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
