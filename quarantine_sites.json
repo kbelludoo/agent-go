@@ -1,7 +1,84 @@
 {
-  "last_updated": "2026-10-27T22:23:04Z",
+  "last_updated": "2026-10-27T22:24:04Z",
   "total_quarantine": 571,
   "quarantine_sites": [
+    {
+      "id": 114,
+      "domain": "it.linkedin.com",
+      "url": "https://it.linkedin.com/school/universit-degli-studi-di-perugia/?trk=public_profile_topcard-school",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T23:42:22Z",
+      "last_seen": "2026-10-23T23:42:22Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 64,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/tanishq-sangwan/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T15:56:10Z",
+      "last_seen": "2026-10-23T15:56:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 239,
+      "domain": "arstechnica.com",
+      "url": "https://arstechnica.com",
+      "status_code": 405,
+      "error_message": "HTTP 405",
+      "first_seen": "2026-10-25T15:27:38Z",
+      "last_seen": "2026-10-27T16:15:02Z",
+      "attempts": 12,
+      "diagnosis": "HTTP 405 Method Not Allowed: Servidor rejeita certas requisições uTLS/H2 ou exige barra final ('/'). Sugestão: Testar fallback HTTP/1.1 e normalizar trailing slash."
+    },
+    {
+      "id": 306,
+      "domain": "www.facebook.com",
+      "url": "https://www.facebook.com/sharer.php?u=%2fom-digitaliserdk",
+      "status_code": 500,
+      "error_message": "HTTP 500",
+      "first_seen": "2026-10-26T00:57:25Z",
+      "last_seen": "2026-10-26T00:57:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 319,
+      "domain": "www.gnu.org",
+      "url": "http://www.gnu.org/thankgnus",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.gnu.org/thankgnus: Get \"http://www.gnu.org/thankgnus\": dial tcp4: lookup www.gnu.org: i/o timeout",
+      "first_seen": "2026-10-26T02:18:24Z",
+      "last_seen": "2026-10-26T02:18:24Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 332,
+      "domain": "datacvr.virk.dk",
+      "url": "https://datacvr.virk.dk/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T03:14:13Z",
+      "last_seen": "2026-10-26T03:16:25Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 353,
+      "domain": "www.lovgivning.gl",
+      "url": "http://www.lovgivning.gl/gh.gl-love/kn/2012/context_2011.htm#Bekendtg%C3%B8relser:",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T10:43:13Z",
+      "last_seen": "2026-10-26T11:12:37Z",
+      "attempts": 12,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 72,
       "domain": "shop.fsf.org",
@@ -1659,8 +1736,8 @@
       "status_code": 504,
       "error_message": "failed to fetch URL http://international.gc.ca/world-monde/index.aspx?lang=eng: Get \"http://international.gc.ca/world-monde/index.aspx?lang=eng\": dial tcp4 198.103.198.137:80: connect: no route to host",
       "first_seen": "2026-10-27T21:56:36Z",
-      "last_seen": "2026-10-27T22:21:00Z",
-      "attempts": 6,
+      "last_seen": "2026-10-27T22:23:24Z",
+      "attempts": 7,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL http://international.gc.ca/world-monde/index.aspx?lang=eng: Get \"http://international.gc.ca/world-monde/index.aspx?lang=eng\": dial tcp4 198.103.198.137:80: connect: no route to host. Sugestão: Verificar rota de egress e resolução DNS."
     },
     {
@@ -6205,83 +6282,6 @@
       "last_seen": "2026-10-27T17:34:50Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 114,
-      "domain": "it.linkedin.com",
-      "url": "https://it.linkedin.com/school/universit-degli-studi-di-perugia/?trk=public_profile_topcard-school",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T23:42:22Z",
-      "last_seen": "2026-10-23T23:42:22Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 64,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/tanishq-sangwan/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T15:56:10Z",
-      "last_seen": "2026-10-23T15:56:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 239,
-      "domain": "arstechnica.com",
-      "url": "https://arstechnica.com",
-      "status_code": 405,
-      "error_message": "HTTP 405",
-      "first_seen": "2026-10-25T15:27:38Z",
-      "last_seen": "2026-10-27T16:15:02Z",
-      "attempts": 12,
-      "diagnosis": "HTTP 405 Method Not Allowed: Servidor rejeita certas requisições uTLS/H2 ou exige barra final ('/'). Sugestão: Testar fallback HTTP/1.1 e normalizar trailing slash."
-    },
-    {
-      "id": 306,
-      "domain": "www.facebook.com",
-      "url": "https://www.facebook.com/sharer.php?u=%2fom-digitaliserdk",
-      "status_code": 500,
-      "error_message": "HTTP 500",
-      "first_seen": "2026-10-26T00:57:25Z",
-      "last_seen": "2026-10-26T00:57:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 319,
-      "domain": "www.gnu.org",
-      "url": "http://www.gnu.org/thankgnus",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.gnu.org/thankgnus: Get \"http://www.gnu.org/thankgnus\": dial tcp4: lookup www.gnu.org: i/o timeout",
-      "first_seen": "2026-10-26T02:18:24Z",
-      "last_seen": "2026-10-26T02:18:24Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 332,
-      "domain": "datacvr.virk.dk",
-      "url": "https://datacvr.virk.dk/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T03:14:13Z",
-      "last_seen": "2026-10-26T03:16:25Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 353,
-      "domain": "www.lovgivning.gl",
-      "url": "http://www.lovgivning.gl/gh.gl-love/kn/2012/context_2011.htm#Bekendtg%C3%B8relser:",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T10:43:13Z",
-      "last_seen": "2026-10-26T11:12:37Z",
-      "attempts": 12,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
