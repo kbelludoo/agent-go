@@ -1,84 +1,7 @@
 {
-  "last_updated": "2026-10-27T15:37:04Z",
+  "last_updated": "2026-10-27T15:38:03Z",
   "total_quarantine": 551,
   "quarantine_sites": [
-    {
-      "id": 35,
-      "domain": "opentechresearch.org",
-      "url": "https://opentechresearch.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:16:58Z",
-      "last_seen": "2026-10-23T14:16:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 18,
-      "domain": "wsj.com",
-      "url": "https://wsj.com/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T13:14:46Z",
-      "last_seen": "2026-10-27T14:23:25Z",
-      "attempts": 11,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 351,
-      "domain": "twitter.com",
-      "url": "http://twitter.com/un",
-      "status_code": 520,
-      "error_message": "HTTP 520",
-      "first_seen": "2026-10-26T08:26:37Z",
-      "last_seen": "2026-10-26T08:32:37Z",
-      "attempts": 9,
-      "diagnosis": "HTTP 520 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 500,
-      "domain": "sg.linkedin.com",
-      "url": "https://sg.linkedin.com/company/flaq-ai?trk=organization_guest_main-feed-card_feed-actor-name",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-27T05:44:49Z",
-      "last_seen": "2026-10-27T05:47:01Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 501,
-      "domain": "sg.linkedin.com",
-      "url": "https://sg.linkedin.com/in/james-li-2571b835b?trk=org-employees",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-27T05:45:26Z",
-      "last_seen": "2026-10-27T05:46:49Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 507,
-      "domain": "www.quarkaiso.link",
-      "url": "https://www.quarkaiso.link/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.quarkaiso.link/: Get \"https://www.quarkaiso.link/\": dial tcp4: lookup www.quarkaiso.link on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-27T06:04:12Z",
-      "last_seen": "2026-10-27T06:08:36Z",
-      "attempts": 3,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.quarkaiso.link/: Get \"https://www.quarkaiso.link/\": dial tcp4: lookup www.quarkaiso.link on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 172,
-      "domain": "help.x.com",
-      "url": "https://help.x.com/rules-and-policies/x-services-and-corporate-affiliates",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T00:49:01Z",
-      "last_seen": "2026-10-25T00:49:37Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 221,
       "domain": "www.linkedin.com",
@@ -6062,6 +5985,83 @@
       "last_seen": "2026-10-27T10:13:49Z",
       "attempts": 2,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 35,
+      "domain": "opentechresearch.org",
+      "url": "https://opentechresearch.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:16:58Z",
+      "last_seen": "2026-10-23T14:16:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 18,
+      "domain": "wsj.com",
+      "url": "https://wsj.com/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T13:14:46Z",
+      "last_seen": "2026-10-27T14:23:25Z",
+      "attempts": 11,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 351,
+      "domain": "twitter.com",
+      "url": "http://twitter.com/un",
+      "status_code": 520,
+      "error_message": "HTTP 520",
+      "first_seen": "2026-10-26T08:26:37Z",
+      "last_seen": "2026-10-26T08:32:37Z",
+      "attempts": 9,
+      "diagnosis": "HTTP 520 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 500,
+      "domain": "sg.linkedin.com",
+      "url": "https://sg.linkedin.com/company/flaq-ai?trk=organization_guest_main-feed-card_feed-actor-name",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-27T05:44:49Z",
+      "last_seen": "2026-10-27T05:47:01Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 501,
+      "domain": "sg.linkedin.com",
+      "url": "https://sg.linkedin.com/in/james-li-2571b835b?trk=org-employees",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-27T05:45:26Z",
+      "last_seen": "2026-10-27T05:46:49Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 507,
+      "domain": "www.quarkaiso.link",
+      "url": "https://www.quarkaiso.link/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.quarkaiso.link/: Get \"https://www.quarkaiso.link/\": dial tcp4: lookup www.quarkaiso.link on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-27T06:04:12Z",
+      "last_seen": "2026-10-27T06:08:36Z",
+      "attempts": 3,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.quarkaiso.link/: Get \"https://www.quarkaiso.link/\": dial tcp4: lookup www.quarkaiso.link on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 172,
+      "domain": "help.x.com",
+      "url": "https://help.x.com/rules-and-policies/x-services-and-corporate-affiliates",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T00:49:01Z",
+      "last_seen": "2026-10-25T00:49:37Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
