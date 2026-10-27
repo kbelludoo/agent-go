@@ -1,117 +1,7 @@
 {
-  "last_updated": "2026-10-27T01:13:27Z",
+  "last_updated": "2026-10-27T01:14:27Z",
   "total_quarantine": 484,
   "quarantine_sites": [
-    {
-      "id": 115,
-      "domain": "key.accessibility.harvard.edu",
-      "url": "https://key.accessibility.harvard.edu/get-involved",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:43:12Z",
-      "last_seen": "2026-10-24T00:45:12Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 315,
-      "domain": "community.atlassian.com",
-      "url": "https://community.atlassian.com/t5/jira-software/ct-p/jira-software",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T01:43:01Z",
-      "last_seen": "2026-10-26T02:30:37Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 414,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=1ccee63a-1a2a-4624-8fa1-8c344db47948",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:09:37Z",
-      "last_seen": "2026-10-26T19:09:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 448,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=4197745c-829b-4eae-986e-cd049cba79ac",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:33:13Z",
-      "last_seen": "2026-10-26T20:33:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 182,
-      "domain": "sa.www4.irs.gov",
-      "url": "https://sa.www4.irs.gov/ola",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T03:16:37Z",
-      "last_seen": "2026-10-25T03:22:01Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 295,
-      "domain": "blog.google",
-      "url": "https://blog.google/?utm_source=about.google\u0026utm_medium=referral\u0026utm_campaign=navigation ",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-25T22:13:13Z",
-      "last_seen": "2026-10-25T22:16:01Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 422,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=386c5094-4d30-4737-85b7-2f371cbde589",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:21:25Z",
-      "last_seen": "2026-10-26T19:21:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 177,
-      "domain": "grantsgovprod.wordpress.com",
-      "url": "https://grantsgovprod.wordpress.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T02:26:37Z",
-      "last_seen": "2026-10-25T02:26:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 192,
-      "domain": "legcounsel.house.gov",
-      "url": "http://legcounsel.house.gov/Comps/Inspector%20General%20Act%20Of%201978.pdf",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T08:45:14Z",
-      "last_seen": "2026-10-25T09:39:50Z",
-      "attempts": 31,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 226,
-      "domain": "register.paloaltonetworks.com",
-      "url": "https://register.paloaltonetworks.com/igniteontour",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T14:12:25Z",
-      "last_seen": "2026-10-25T14:12:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 136,
       "domain": "uk.trustpilot.com",
@@ -1802,8 +1692,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-25T15:42:02Z",
-      "last_seen": "2026-10-26T21:12:02Z",
-      "attempts": 3,
+      "last_seen": "2026-10-27T01:13:38Z",
+      "attempts": 4,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -5325,6 +5215,116 @@
       "last_seen": "2026-10-26T20:37:13Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 115,
+      "domain": "key.accessibility.harvard.edu",
+      "url": "https://key.accessibility.harvard.edu/get-involved",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:43:12Z",
+      "last_seen": "2026-10-24T00:45:12Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 315,
+      "domain": "community.atlassian.com",
+      "url": "https://community.atlassian.com/t5/jira-software/ct-p/jira-software",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T01:43:01Z",
+      "last_seen": "2026-10-26T02:30:37Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 414,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=1ccee63a-1a2a-4624-8fa1-8c344db47948",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:09:37Z",
+      "last_seen": "2026-10-26T19:09:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 448,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=4197745c-829b-4eae-986e-cd049cba79ac",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:33:13Z",
+      "last_seen": "2026-10-26T20:33:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 182,
+      "domain": "sa.www4.irs.gov",
+      "url": "https://sa.www4.irs.gov/ola",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T03:16:37Z",
+      "last_seen": "2026-10-25T03:22:01Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 295,
+      "domain": "blog.google",
+      "url": "https://blog.google/?utm_source=about.google\u0026utm_medium=referral\u0026utm_campaign=navigation ",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-25T22:13:13Z",
+      "last_seen": "2026-10-25T22:16:01Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 422,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=386c5094-4d30-4737-85b7-2f371cbde589",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:21:25Z",
+      "last_seen": "2026-10-26T19:21:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 177,
+      "domain": "grantsgovprod.wordpress.com",
+      "url": "https://grantsgovprod.wordpress.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T02:26:37Z",
+      "last_seen": "2026-10-25T02:26:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 192,
+      "domain": "legcounsel.house.gov",
+      "url": "http://legcounsel.house.gov/Comps/Inspector%20General%20Act%20Of%201978.pdf",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T08:45:14Z",
+      "last_seen": "2026-10-25T09:39:50Z",
+      "attempts": 31,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 226,
+      "domain": "register.paloaltonetworks.com",
+      "url": "https://register.paloaltonetworks.com/igniteontour",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T14:12:25Z",
+      "last_seen": "2026-10-25T14:12:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
