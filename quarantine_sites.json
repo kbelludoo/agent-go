@@ -1,62 +1,7 @@
 {
-  "last_updated": "2026-10-27T12:34:27Z",
+  "last_updated": "2026-10-27T12:35:27Z",
   "total_quarantine": 542,
   "quarantine_sites": [
-    {
-      "id": 2,
-      "domain": "forbes.com",
-      "url": "https://forbes.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T12:46:22Z",
-      "last_seen": "2026-10-27T11:48:01Z",
-      "attempts": 10,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 249,
-      "domain": "en.wikipedia.org",
-      "url": "https://en.wikipedia.org/wiki/Emergenc",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T15:38:13Z",
-      "last_seen": "2026-10-27T11:43:13Z",
-      "attempts": 9,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 285,
-      "domain": "www.aboutamazon.com",
-      "url": "https://www.aboutamazon.com/our-communities",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T20:44:13Z",
-      "last_seen": "2026-10-25T20:45:25Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 392,
-      "domain": "de.linkedin.com",
-      "url": "https://de.linkedin.com/in/gabrielrath?trk=public_post_comment-text",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T18:30:37Z",
-      "last_seen": "2026-10-26T18:46:37Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 68,
-      "domain": "service.elsevier.com",
-      "url": "https://service.elsevier.com/app/contact/supporthub/sciencedirect/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T16:11:24Z",
-      "last_seen": "2026-10-23T22:59:58Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 169,
       "domain": "nz.linkedin.com",
@@ -5963,6 +5908,61 @@
       "last_seen": "2026-10-27T08:10:24Z",
       "attempts": 1,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL https://elespare.com/: Get \"https://elespare.com/\": dial tcp4: lookup elespare.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 2,
+      "domain": "forbes.com",
+      "url": "https://forbes.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T12:46:22Z",
+      "last_seen": "2026-10-27T11:48:01Z",
+      "attempts": 10,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 249,
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Emergenc",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T15:38:13Z",
+      "last_seen": "2026-10-27T11:43:13Z",
+      "attempts": 9,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 285,
+      "domain": "www.aboutamazon.com",
+      "url": "https://www.aboutamazon.com/our-communities",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T20:44:13Z",
+      "last_seen": "2026-10-25T20:45:25Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 392,
+      "domain": "de.linkedin.com",
+      "url": "https://de.linkedin.com/in/gabrielrath?trk=public_post_comment-text",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T18:30:37Z",
+      "last_seen": "2026-10-26T18:46:37Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 68,
+      "domain": "service.elsevier.com",
+      "url": "https://service.elsevier.com/app/contact/supporthub/sciencedirect/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T16:11:24Z",
+      "last_seen": "2026-10-23T22:59:58Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
