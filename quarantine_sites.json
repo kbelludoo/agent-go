@@ -1,7 +1,40 @@
 {
-  "last_updated": "2026-10-27T03:23:14Z",
+  "last_updated": "2026-10-27T03:24:13Z",
   "total_quarantine": 486,
   "quarantine_sites": [
+    {
+      "id": 40,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/techcrunch",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T14:43:10Z",
+      "last_seen": "2026-10-23T14:43:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 87,
+      "domain": "content.digitalpublicgoods.net",
+      "url": "https://content.digitalpublicgoods.net/2025-DPG-Ecosystem-Report.pdf",
+      "status_code": 504,
+      "error_message": "failed to parse HTML: html: open stack of elements exceeds 512 nodes",
+      "first_seen": "2026-10-23T17:49:23Z",
+      "last_seen": "2026-10-23T17:49:23Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to parse HTML: html: open stack of elements exceeds 512 nodes. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 151,
+      "domain": "www.twitter.com",
+      "url": "http://www.twitter.com/rgcooke",
+      "status_code": 520,
+      "error_message": "HTTP 520",
+      "first_seen": "2026-10-24T19:35:11Z",
+      "last_seen": "2026-10-24T19:35:11Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 520 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 143,
       "domain": "twitter.com",
@@ -20,8 +53,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-25T15:31:15Z",
-      "last_seen": "2026-10-27T02:15:25Z",
-      "attempts": 5,
+      "last_seen": "2026-10-27T03:24:13Z",
+      "attempts": 6,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -5314,39 +5347,6 @@
       "last_seen": "2026-10-27T00:52:15Z",
       "attempts": 2,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 40,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/techcrunch",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T14:43:10Z",
-      "last_seen": "2026-10-23T14:43:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 87,
-      "domain": "content.digitalpublicgoods.net",
-      "url": "https://content.digitalpublicgoods.net/2025-DPG-Ecosystem-Report.pdf",
-      "status_code": 504,
-      "error_message": "failed to parse HTML: html: open stack of elements exceeds 512 nodes",
-      "first_seen": "2026-10-23T17:49:23Z",
-      "last_seen": "2026-10-23T17:49:23Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to parse HTML: html: open stack of elements exceeds 512 nodes. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 151,
-      "domain": "www.twitter.com",
-      "url": "http://www.twitter.com/rgcooke",
-      "status_code": 520,
-      "error_message": "HTTP 520",
-      "first_seen": "2026-10-24T19:35:11Z",
-      "last_seen": "2026-10-24T19:35:11Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 520 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
