@@ -1,150 +1,7 @@
 {
-  "last_updated": "2026-10-27T05:21:03Z",
+  "last_updated": "2026-10-27T05:22:03Z",
   "total_quarantine": 496,
   "quarantine_sites": [
-    {
-      "id": 331,
-      "domain": "validator.w3.org",
-      "url": "http://validator.w3.org/check?uri=referer",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T03:10:13Z",
-      "last_seen": "2026-10-26T04:05:37Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 387,
-      "domain": "www.facebook.com",
-      "url": "https://www.facebook.com/sharer.php?u=ZZZZZ_JS_LINK_TO_SHARE_ZZZZZ",
-      "status_code": 500,
-      "error_message": "HTTP 500",
-      "first_seen": "2026-10-26T17:46:37Z",
-      "last_seen": "2026-10-26T17:50:37Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 273,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/harrymoseley/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-25T18:30:13Z",
-      "last_seen": "2026-10-25T18:32:37Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 454,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=8672e53b-8d2a-4959-8b49-37f8f963c3fd",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:39:13Z",
-      "last_seen": "2026-10-26T20:39:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 9,
-      "domain": "pt.wikipedia.org",
-      "url": "https://pt.wikipedia.org/wiki/Crise_cl",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:04:10Z",
-      "last_seen": "2026-10-27T03:54:01Z",
-      "attempts": 9,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 6,
-      "domain": "producthunt.com",
-      "url": "https://producthunt.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:02:57Z",
-      "last_seen": "2026-10-27T03:52:49Z",
-      "attempts": 7,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 96,
-      "domain": "medium.com",
-      "url": "https://medium.com/@Medium/cccf29534bf4",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T19:03:34Z",
-      "last_seen": "2026-10-23T19:03:34Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 103,
-      "domain": "www.nih.gov",
-      "url": "https://www.nih.gov/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T20:02:10Z",
-      "last_seen": "2026-10-24T00:27:12Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 207,
-      "domain": "github.com",
-      "url": "https://github.com/MicrosoftDocs/lifecycle-pr/blob/main/lifecycle-docs/faq/internet-explorer-microsoft-edge.yml",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T10:13:25Z",
-      "last_seen": "2026-10-25T10:14:24Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 348,
-      "domain": "half.sourceforge.net",
-      "url": "https://half.sourceforge.net/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T07:31:01Z",
-      "last_seen": "2026-10-26T08:01:25Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 361,
-      "domain": "virksomhedsguiden.dk",
-      "url": "https://virksomhedsguiden.dk/content/temaer/kom-godt-fra-start/ydelser/vaelg-virksomhedsform/531d8f6d-adb1-4635-8d5c-839793d0305d/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T12:03:01Z",
-      "last_seen": "2026-10-26T13:08:13Z",
-      "attempts": 12,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 169,
-      "domain": "twitter.com",
-      "url": "https://twitter.com/TwitterA11y",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T00:25:01Z",
-      "last_seen": "2026-10-25T00:25:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 276,
-      "domain": "account.icann.org",
-      "url": "http://account.icann.org/logout?app_id=undefined",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-25T19:01:04Z",
-      "last_seen": "2026-10-25T19:01:04Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 128,
       "domain": "www.linkedin.com",
@@ -5457,6 +5314,149 @@
       "last_seen": "2026-10-25T17:01:24Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 331,
+      "domain": "validator.w3.org",
+      "url": "http://validator.w3.org/check?uri=referer",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T03:10:13Z",
+      "last_seen": "2026-10-26T04:05:37Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 387,
+      "domain": "www.facebook.com",
+      "url": "https://www.facebook.com/sharer.php?u=ZZZZZ_JS_LINK_TO_SHARE_ZZZZZ",
+      "status_code": 500,
+      "error_message": "HTTP 500",
+      "first_seen": "2026-10-26T17:46:37Z",
+      "last_seen": "2026-10-26T17:50:37Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 273,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/harrymoseley/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-25T18:30:13Z",
+      "last_seen": "2026-10-25T18:32:37Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 454,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=8672e53b-8d2a-4959-8b49-37f8f963c3fd",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:39:13Z",
+      "last_seen": "2026-10-26T20:39:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 9,
+      "domain": "pt.wikipedia.org",
+      "url": "https://pt.wikipedia.org/wiki/Crise_cl",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:04:10Z",
+      "last_seen": "2026-10-27T03:54:01Z",
+      "attempts": 9,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 6,
+      "domain": "producthunt.com",
+      "url": "https://producthunt.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:02:57Z",
+      "last_seen": "2026-10-27T03:52:49Z",
+      "attempts": 7,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 96,
+      "domain": "medium.com",
+      "url": "https://medium.com/@Medium/cccf29534bf4",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T19:03:34Z",
+      "last_seen": "2026-10-23T19:03:34Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 103,
+      "domain": "www.nih.gov",
+      "url": "https://www.nih.gov/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T20:02:10Z",
+      "last_seen": "2026-10-24T00:27:12Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 207,
+      "domain": "github.com",
+      "url": "https://github.com/MicrosoftDocs/lifecycle-pr/blob/main/lifecycle-docs/faq/internet-explorer-microsoft-edge.yml",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T10:13:25Z",
+      "last_seen": "2026-10-25T10:14:24Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 348,
+      "domain": "half.sourceforge.net",
+      "url": "https://half.sourceforge.net/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T07:31:01Z",
+      "last_seen": "2026-10-26T08:01:25Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 361,
+      "domain": "virksomhedsguiden.dk",
+      "url": "https://virksomhedsguiden.dk/content/temaer/kom-godt-fra-start/ydelser/vaelg-virksomhedsform/531d8f6d-adb1-4635-8d5c-839793d0305d/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T12:03:01Z",
+      "last_seen": "2026-10-26T13:08:13Z",
+      "attempts": 12,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 169,
+      "domain": "twitter.com",
+      "url": "https://twitter.com/TwitterA11y",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T00:25:01Z",
+      "last_seen": "2026-10-25T00:25:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 276,
+      "domain": "account.icann.org",
+      "url": "http://account.icann.org/logout?app_id=undefined",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-25T19:01:04Z",
+      "last_seen": "2026-10-25T19:01:04Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
