@@ -1,7 +1,29 @@
 {
-  "last_updated": "2026-10-27T18:16:26Z",
+  "last_updated": "2026-10-27T18:17:25Z",
   "total_quarantine": 562,
   "quarantine_sites": [
+    {
+      "id": 338,
+      "domain": "www.205.tf",
+      "url": "https://www.205.tf/collection/album",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T04:19:02Z",
+      "last_seen": "2026-10-26T04:46:25Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 206,
+      "domain": "github.com",
+      "url": "https://github.com/MicrosoftDocs/security/blob/main/security-docs/zero-trust/microsoft-reference-architecture.md",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T10:11:01Z",
+      "last_seen": "2026-10-25T10:11:24Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 91,
       "domain": "education.github.com",
@@ -493,8 +515,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-27T18:11:13Z",
-      "last_seen": "2026-10-27T18:15:25Z",
-      "attempts": 6,
+      "last_seen": "2026-10-27T18:17:13Z",
+      "attempts": 8,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -1219,8 +1241,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-27T18:11:25Z",
-      "last_seen": "2026-10-27T18:15:37Z",
-      "attempts": 6,
+      "last_seen": "2026-10-27T18:17:25Z",
+      "attempts": 8,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -1769,8 +1791,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-27T18:11:37Z",
-      "last_seen": "2026-10-27T18:15:49Z",
-      "attempts": 6,
+      "last_seen": "2026-10-27T18:17:01Z",
+      "attempts": 7,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -6161,28 +6183,6 @@
       "last_seen": "2026-10-25T16:41:01Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 338,
-      "domain": "www.205.tf",
-      "url": "https://www.205.tf/collection/album",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T04:19:02Z",
-      "last_seen": "2026-10-26T04:46:25Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 206,
-      "domain": "github.com",
-      "url": "https://github.com/MicrosoftDocs/security/blob/main/security-docs/zero-trust/microsoft-reference-architecture.md",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T10:11:01Z",
-      "last_seen": "2026-10-25T10:11:24Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
