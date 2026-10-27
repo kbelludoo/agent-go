@@ -1,7 +1,95 @@
 {
-  "last_updated": "2026-10-27T14:02:50Z",
+  "last_updated": "2026-10-27T14:03:37Z",
   "total_quarantine": 552,
   "quarantine_sites": [
+    {
+      "id": 486,
+      "domain": "www.tindie.com",
+      "url": "https://www.tindie.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T03:17:37Z",
+      "last_seen": "2026-10-27T03:17:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 191,
+      "domain": "Oversight.gov",
+      "url": "http://Oversight.gov",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T08:45:01Z",
+      "last_seen": "2026-10-25T09:39:37Z",
+      "attempts": 46,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 378,
+      "domain": "www.ebay.com",
+      "url": "https://www.ebay.com/help/account/ebay-users-special-access-needs/ebay-users-special-access-needs?id=4658",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.ebay.com/help/account/ebay-users-special-access-needs/ebay-users-special-access-needs?id=4658: Get \"https://www.ebay.com/help/account/ebay-users-special-access-needs/ebay-users-special-access-needs?id=4658\": context deadline exceeded",
+      "first_seen": "2026-10-26T17:06:00Z",
+      "last_seen": "2026-10-26T17:06:36Z",
+      "attempts": 2,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 322,
+      "domain": "landbrugsindberetning.dk",
+      "url": "https://landbrugsindberetning.dk/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T02:26:15Z",
+      "last_seen": "2026-10-26T03:14:51Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 374,
+      "domain": "www.DTU.dk",
+      "url": "http://www.DTU.dk/english",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.DTU.dk/english: Get \"http://www.DTU.dk/english\": read tcp4 10.0.1.126:35062-\u003e52.236.166.178:80: use of closed network connection",
+      "first_seen": "2026-10-26T15:47:00Z",
+      "last_seen": "2026-10-26T15:47:00Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.DTU.dk/english: Get \"http://www.DTU.dk/english\": read tcp4 10.0.1.126:35062-\u003e52.236.166.178:80: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 175,
+      "domain": "vsc.gsa.gov",
+      "url": "https://vsc.gsa.gov/vsc/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://vsc.gsa.gov/vsc/: Get \"https://vsc.gsa.gov/vsc/\": dial tcp4 35.170.14.33:443: i/o timeout",
+      "first_seen": "2026-10-25T01:28:00Z",
+      "last_seen": "2026-10-25T01:28:00Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 536,
+      "domain": "rustwasm.github.io",
+      "url": "https://rustwasm.github.io/wasm-pack/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-27T10:07:13Z",
+      "last_seen": "2026-10-27T10:09:01Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 539,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/adriana-de-luca-a08115102/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-27T11:25:37Z",
+      "last_seen": "2026-10-27T11:25:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 215,
       "domain": "unsplash.com",
@@ -1164,8 +1252,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-23T12:55:21Z",
-      "last_seen": "2026-10-27T11:57:01Z",
-      "attempts": 10,
+      "last_seen": "2026-10-27T14:03:37Z",
+      "attempts": 11,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -5985,94 +6073,6 @@
       "last_seen": "2026-10-26T15:08:13Z",
       "attempts": 6,
       "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 486,
-      "domain": "www.tindie.com",
-      "url": "https://www.tindie.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T03:17:37Z",
-      "last_seen": "2026-10-27T03:17:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 191,
-      "domain": "Oversight.gov",
-      "url": "http://Oversight.gov",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T08:45:01Z",
-      "last_seen": "2026-10-25T09:39:37Z",
-      "attempts": 46,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 378,
-      "domain": "www.ebay.com",
-      "url": "https://www.ebay.com/help/account/ebay-users-special-access-needs/ebay-users-special-access-needs?id=4658",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.ebay.com/help/account/ebay-users-special-access-needs/ebay-users-special-access-needs?id=4658: Get \"https://www.ebay.com/help/account/ebay-users-special-access-needs/ebay-users-special-access-needs?id=4658\": context deadline exceeded",
-      "first_seen": "2026-10-26T17:06:00Z",
-      "last_seen": "2026-10-26T17:06:36Z",
-      "attempts": 2,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 322,
-      "domain": "landbrugsindberetning.dk",
-      "url": "https://landbrugsindberetning.dk/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T02:26:15Z",
-      "last_seen": "2026-10-26T03:14:51Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 374,
-      "domain": "www.DTU.dk",
-      "url": "http://www.DTU.dk/english",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.DTU.dk/english: Get \"http://www.DTU.dk/english\": read tcp4 10.0.1.126:35062-\u003e52.236.166.178:80: use of closed network connection",
-      "first_seen": "2026-10-26T15:47:00Z",
-      "last_seen": "2026-10-26T15:47:00Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.DTU.dk/english: Get \"http://www.DTU.dk/english\": read tcp4 10.0.1.126:35062-\u003e52.236.166.178:80: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 175,
-      "domain": "vsc.gsa.gov",
-      "url": "https://vsc.gsa.gov/vsc/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://vsc.gsa.gov/vsc/: Get \"https://vsc.gsa.gov/vsc/\": dial tcp4 35.170.14.33:443: i/o timeout",
-      "first_seen": "2026-10-25T01:28:00Z",
-      "last_seen": "2026-10-25T01:28:00Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 536,
-      "domain": "rustwasm.github.io",
-      "url": "https://rustwasm.github.io/wasm-pack/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-27T10:07:13Z",
-      "last_seen": "2026-10-27T10:09:01Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 539,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/adriana-de-luca-a08115102/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-27T11:25:37Z",
-      "last_seen": "2026-10-27T11:25:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
