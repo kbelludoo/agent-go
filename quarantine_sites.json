@@ -1,7 +1,260 @@
 {
-  "last_updated": "2026-10-27T04:42:28Z",
-  "total_quarantine": 488,
+  "last_updated": "2026-10-27T04:43:25Z",
+  "total_quarantine": 490,
   "quarantine_sites": [
+    {
+      "id": 405,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=b5687534-094e-4f0c-b60f-e78e48b79d8f",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:07:13Z",
+      "last_seen": "2026-10-26T19:07:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 156,
+      "domain": "slack.sparkpost.com",
+      "url": "https://slack.sparkpost.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-24T20:07:11Z",
+      "last_seen": "2026-10-25T00:18:27Z",
+      "attempts": 3,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 359,
+      "domain": "www.facebook.com",
+      "url": "https://www.facebook.com/sharer.php?u=%2fborger%2fdigital-svindel%2fuvedkommende-har-faaet-adgang-til-borgeres-cpr-oplysninger-saadan-skal-du-forholde-dig",
+      "status_code": 500,
+      "error_message": "HTTP 500",
+      "first_seen": "2026-10-26T12:02:01Z",
+      "last_seen": "2026-10-26T13:02:13Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 426,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=e07a1661-4fa5-4334-9513-6c19facf5a4b",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:46:13Z",
+      "last_seen": "2026-10-26T19:46:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 436,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=81ea25c9-6d9a-4c84-9af1-97a7d74ea631",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:56:13Z",
+      "last_seen": "2026-10-26T19:56:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 38,
+      "domain": "www.sciencedirect.com",
+      "url": "https://www.sciencedirect.com/user/institution/login?targetURL=%2F",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:31:46Z",
+      "last_seen": "2026-10-23T14:31:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 262,
+      "domain": "gitlab.alpinelinux.org",
+      "url": "https://gitlab.alpinelinux.org/alpine/aports/-/issues",
+      "status_code": 418,
+      "error_message": "HTTP 418",
+      "first_seen": "2026-10-25T17:12:37Z",
+      "last_seen": "2026-10-25T17:12:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 418 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 69,
+      "domain": "www.instagram.com",
+      "url": "https://www.instagram.com/accounts/password/reset/?next=https%3A%2F%2Fwww.instagram.com%2FShopee_BR",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T16:13:09Z",
+      "last_seen": "2026-10-24T00:26:59Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 139,
+      "domain": "br.linkedin.com",
+      "url": "https://br.linkedin.com/school/digitalinnovation-one/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T18:34:47Z",
+      "last_seen": "2026-10-24T18:34:47Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 123,
+      "domain": "projects.iq.harvard.edu",
+      "url": "https://projects.iq.harvard.edu/files/diverse-education/files/legal_-_card_report_revised_filing.pdf",
+      "status_code": 503,
+      "error_message": "HTTP 503",
+      "first_seen": "2026-10-24T02:29:13Z",
+      "last_seen": "2026-10-24T03:10:14Z",
+      "attempts": 9,
+      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 228,
+      "domain": "www.samhsa.gov",
+      "url": "https://www.samhsa.gov/find-support/in-crisis",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T14:15:49Z",
+      "last_seen": "2026-10-25T14:17:38Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 266,
+      "domain": "twitter.com",
+      "url": "http://twitter.com/librivox",
+      "status_code": 520,
+      "error_message": "HTTP 520",
+      "first_seen": "2026-10-25T17:53:13Z",
+      "last_seen": "2026-10-25T17:53:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 520 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 313,
+      "domain": "info.rejseplanen.dk",
+      "url": "http://info.rejseplanen.dk/hjaelp/om_rejseplanen/kontakt/",
+      "status_code": 409,
+      "error_message": "HTTP 409",
+      "first_seen": "2026-10-26T01:37:37Z",
+      "last_seen": "2026-10-26T02:25:02Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 409 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 340,
+      "domain": "slack.scaleway.com",
+      "url": "https://slack.scaleway.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T04:20:14Z",
+      "last_seen": "2026-10-26T04:48:14Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 441,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=de9071f8-0bd9-4516-ae7c-6dcda07794bd",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:26:13Z",
+      "last_seen": "2026-10-26T20:26:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 65,
+      "domain": "invent.kde.org",
+      "url": "https://invent.kde.org/websites/endof10-org",
+      "status_code": 501,
+      "error_message": "HTTP 501",
+      "first_seen": "2026-10-23T15:56:58Z",
+      "last_seen": "2026-10-23T15:56:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 501 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 245,
+      "domain": "distrowatch.com",
+      "url": "https://distrowatch.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T15:35:26Z",
+      "last_seen": "2026-10-27T03:28:26Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 316,
+      "domain": "mx.indeed.com",
+      "url": "https://mx.indeed.com/companies",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T02:10:13Z",
+      "last_seen": "2026-10-26T02:13:13Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 325,
+      "domain": "www.jeromeknebusch.net",
+      "url": "http://www.jeromeknebusch.net",
+      "status_code": 503,
+      "error_message": "HTTP 503",
+      "first_seen": "2026-10-26T02:32:16Z",
+      "last_seen": "2026-10-26T02:42:41Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 333,
+      "domain": "datacenter.scaleway.com",
+      "url": "https://datacenter.scaleway.com",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://datacenter.scaleway.com: Get \"https://datacenter.scaleway.com\": dial tcp4: lookup datacenter.scaleway.com on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-26T03:24:49Z",
+      "last_seen": "2026-10-26T03:42:48Z",
+      "attempts": 6,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://datacenter.scaleway.com: Get \"https://datacenter.scaleway.com\": dial tcp4: lookup datacenter.scaleway.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 344,
+      "domain": "virksomhedsguiden.dk",
+      "url": "https://virksomhedsguiden.dk/content/ydelser/one-stop-shop-for-etablering-af-produktionsanlaeg/aea45b46-7def-41eb-94d5-564aee7600c9/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T05:18:37Z",
+      "last_seen": "2026-10-26T06:17:25Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 349,
+      "domain": "virk.dk",
+      "url": "https://virk.dk/emner/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T08:17:51Z",
+      "last_seen": "2026-10-26T08:17:51Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 479,
+      "domain": "www.acer.europa.eu",
+      "url": "https://www.acer.europa.eu/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.acer.europa.eu/: Get \"https://www.acer.europa.eu/\": dial tcp4 193.189.171.12:443: i/o timeout",
+      "first_seen": "2026-10-26T23:54:48Z",
+      "last_seen": "2026-10-26T23:54:48Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
     {
       "id": 22,
       "domain": "www.gov.br",
@@ -4502,6 +4755,17 @@
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
+      "id": 489,
+      "domain": "www.saashub.com",
+      "url": "https://www.saashub.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T04:43:13Z",
+      "last_seen": "2026-10-27T04:43:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
       "id": 129,
       "domain": "www.linkedin.com",
       "url": "https://www.linkedin.com/company/nielsen-norman-group",
@@ -4742,6 +5006,17 @@
       "last_seen": "2026-10-26T18:48:13Z",
       "attempts": 4,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 490,
+      "domain": "www.saashub.com",
+      "url": "https://www.saashub.com/register",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T04:43:25Z",
+      "last_seen": "2026-10-27T04:43:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
       "id": 431,
@@ -5116,259 +5391,6 @@
       "last_seen": "2026-10-24T00:55:33Z",
       "attempts": 2,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 405,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=b5687534-094e-4f0c-b60f-e78e48b79d8f",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:07:13Z",
-      "last_seen": "2026-10-26T19:07:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 156,
-      "domain": "slack.sparkpost.com",
-      "url": "https://slack.sparkpost.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-24T20:07:11Z",
-      "last_seen": "2026-10-25T00:18:27Z",
-      "attempts": 3,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://slack.sparkpost.com/: Get \"https://slack.sparkpost.com/\": dial tcp4: lookup slack.sparkpost.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 359,
-      "domain": "www.facebook.com",
-      "url": "https://www.facebook.com/sharer.php?u=%2fborger%2fdigital-svindel%2fuvedkommende-har-faaet-adgang-til-borgeres-cpr-oplysninger-saadan-skal-du-forholde-dig",
-      "status_code": 500,
-      "error_message": "HTTP 500",
-      "first_seen": "2026-10-26T12:02:01Z",
-      "last_seen": "2026-10-26T13:02:13Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 426,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=e07a1661-4fa5-4334-9513-6c19facf5a4b",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:46:13Z",
-      "last_seen": "2026-10-26T19:46:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 436,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=81ea25c9-6d9a-4c84-9af1-97a7d74ea631",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:56:13Z",
-      "last_seen": "2026-10-26T19:56:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 38,
-      "domain": "www.sciencedirect.com",
-      "url": "https://www.sciencedirect.com/user/institution/login?targetURL=%2F",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:31:46Z",
-      "last_seen": "2026-10-23T14:31:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 262,
-      "domain": "gitlab.alpinelinux.org",
-      "url": "https://gitlab.alpinelinux.org/alpine/aports/-/issues",
-      "status_code": 418,
-      "error_message": "HTTP 418",
-      "first_seen": "2026-10-25T17:12:37Z",
-      "last_seen": "2026-10-25T17:12:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 418 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 69,
-      "domain": "www.instagram.com",
-      "url": "https://www.instagram.com/accounts/password/reset/?next=https%3A%2F%2Fwww.instagram.com%2FShopee_BR",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T16:13:09Z",
-      "last_seen": "2026-10-24T00:26:59Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 139,
-      "domain": "br.linkedin.com",
-      "url": "https://br.linkedin.com/school/digitalinnovation-one/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T18:34:47Z",
-      "last_seen": "2026-10-24T18:34:47Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 123,
-      "domain": "projects.iq.harvard.edu",
-      "url": "https://projects.iq.harvard.edu/files/diverse-education/files/legal_-_card_report_revised_filing.pdf",
-      "status_code": 503,
-      "error_message": "HTTP 503",
-      "first_seen": "2026-10-24T02:29:13Z",
-      "last_seen": "2026-10-24T03:10:14Z",
-      "attempts": 9,
-      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 228,
-      "domain": "www.samhsa.gov",
-      "url": "https://www.samhsa.gov/find-support/in-crisis",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T14:15:49Z",
-      "last_seen": "2026-10-25T14:17:38Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 266,
-      "domain": "twitter.com",
-      "url": "http://twitter.com/librivox",
-      "status_code": 520,
-      "error_message": "HTTP 520",
-      "first_seen": "2026-10-25T17:53:13Z",
-      "last_seen": "2026-10-25T17:53:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 520 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 313,
-      "domain": "info.rejseplanen.dk",
-      "url": "http://info.rejseplanen.dk/hjaelp/om_rejseplanen/kontakt/",
-      "status_code": 409,
-      "error_message": "HTTP 409",
-      "first_seen": "2026-10-26T01:37:37Z",
-      "last_seen": "2026-10-26T02:25:02Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 409 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 340,
-      "domain": "slack.scaleway.com",
-      "url": "https://slack.scaleway.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T04:20:14Z",
-      "last_seen": "2026-10-26T04:48:14Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 441,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=de9071f8-0bd9-4516-ae7c-6dcda07794bd",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:26:13Z",
-      "last_seen": "2026-10-26T20:26:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 65,
-      "domain": "invent.kde.org",
-      "url": "https://invent.kde.org/websites/endof10-org",
-      "status_code": 501,
-      "error_message": "HTTP 501",
-      "first_seen": "2026-10-23T15:56:58Z",
-      "last_seen": "2026-10-23T15:56:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 501 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 245,
-      "domain": "distrowatch.com",
-      "url": "https://distrowatch.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T15:35:26Z",
-      "last_seen": "2026-10-27T03:28:26Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 316,
-      "domain": "mx.indeed.com",
-      "url": "https://mx.indeed.com/companies",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T02:10:13Z",
-      "last_seen": "2026-10-26T02:13:13Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 325,
-      "domain": "www.jeromeknebusch.net",
-      "url": "http://www.jeromeknebusch.net",
-      "status_code": 503,
-      "error_message": "HTTP 503",
-      "first_seen": "2026-10-26T02:32:16Z",
-      "last_seen": "2026-10-26T02:42:41Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 333,
-      "domain": "datacenter.scaleway.com",
-      "url": "https://datacenter.scaleway.com",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://datacenter.scaleway.com: Get \"https://datacenter.scaleway.com\": dial tcp4: lookup datacenter.scaleway.com on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-26T03:24:49Z",
-      "last_seen": "2026-10-26T03:42:48Z",
-      "attempts": 6,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://datacenter.scaleway.com: Get \"https://datacenter.scaleway.com\": dial tcp4: lookup datacenter.scaleway.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 344,
-      "domain": "virksomhedsguiden.dk",
-      "url": "https://virksomhedsguiden.dk/content/ydelser/one-stop-shop-for-etablering-af-produktionsanlaeg/aea45b46-7def-41eb-94d5-564aee7600c9/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T05:18:37Z",
-      "last_seen": "2026-10-26T06:17:25Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 349,
-      "domain": "virk.dk",
-      "url": "https://virk.dk/emner/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T08:17:51Z",
-      "last_seen": "2026-10-26T08:17:51Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 479,
-      "domain": "www.acer.europa.eu",
-      "url": "https://www.acer.europa.eu/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.acer.europa.eu/: Get \"https://www.acer.europa.eu/\": dial tcp4 193.189.171.12:443: i/o timeout",
-      "first_seen": "2026-10-26T23:54:48Z",
-      "last_seen": "2026-10-26T23:54:48Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     }
   ]
 }
