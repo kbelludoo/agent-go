@@ -1,7 +1,139 @@
 {
-  "last_updated": "2026-10-27T22:50:40Z",
+  "last_updated": "2026-10-27T22:51:39Z",
   "total_quarantine": 574,
   "quarantine_sites": [
+    {
+      "id": 267,
+      "domain": "www.cftc.gov",
+      "url": "https://www.cftc.gov/sites/default/files/idc/groups/public/@newsroom/documents/file/federalregister112415.pdf",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T18:02:25Z",
+      "last_seen": "2026-10-25T18:02:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 282,
+      "domain": "x.com",
+      "url": "https://x.com/GforPublishers",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T20:33:25Z",
+      "last_seen": "2026-10-25T20:34:01Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 368,
+      "domain": "admin.statens-tilskudspuljer.dk",
+      "url": "https://admin.statens-tilskudspuljer.dk/Lists/SLKS/DispForm.aspx?ID=1143",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-26T15:00:25Z",
+      "last_seen": "2026-10-26T15:08:01Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 487,
+      "domain": "devops.com",
+      "url": "https://devops.com/9-pillars-of-continuous-security-best-practices",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T03:18:01Z",
+      "last_seen": "2026-10-27T03:18:49Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 362,
+      "domain": "virksomhedsguiden.dk",
+      "url": "https://virksomhedsguiden.dk/content/ydelser/faa-overblik-over-virksomhedsformer/1669d3e5-d022-4c85-99b4-e4369c235593/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T12:03:13Z",
+      "last_seen": "2026-10-26T13:08:25Z",
+      "attempts": 12,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 535,
+      "domain": "web.dev",
+      "url": "https://web.dev/webassembly-video-editor/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-27T10:07:01Z",
+      "last_seen": "2026-10-27T10:08:50Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 558,
+      "domain": "www.axs.com",
+      "url": "https://www.axs.com/series/31523/t-mobile-arena-pbr-team-series-championship-tickets?skin=tmobile\u0026_gl=1*17q8ka4*_gcl_au*MjcwNTc5MDkzLjE3NjYzNzE5Nzg.*_ga*MjA1ODY5NzA4My4xNzU4NTc5ODk4*_ga_YWWHJK3LM5*czE3NzE2MDM2OTkkbzUzOCRnMSR0MTc3MTYwMzg2NSRqNTQkbDAkaDA.",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T17:41:52Z",
+      "last_seen": "2026-10-27T17:41:52Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 391,
+      "domain": "de.linkedin.com",
+      "url": "https://de.linkedin.com/in/peer-knoops-b4346b7b?trk=public_post_comment_actor-name",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T18:30:25Z",
+      "last_seen": "2026-10-26T18:46:25Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 99,
+      "domain": "careers.washingtonpost.com",
+      "url": "https://careers.washingtonpost.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://careers.washingtonpost.com/: Get \"https://careers.washingtonpost.com/\": read tcp4 10.0.1.126:55150-\u003e23.11.234.135:443: use of closed network connection",
+      "first_seen": "2026-10-23T19:49:33Z",
+      "last_seen": "2026-10-23T19:49:33Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://careers.washingtonpost.com/: Get \"https://careers.washingtonpost.com/\": read tcp4 10.0.1.126:55150-\u003e23.11.234.135:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 122,
+      "domain": "www.security.harvard.edu",
+      "url": "https://www.security.harvard.edu/privacy-policy",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T02:18:23Z",
+      "last_seen": "2026-10-24T03:39:59Z",
+      "attempts": 16,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 8,
+      "domain": "pt.wikihow.com",
+      "url": "https://pt.wikihow.com/Tratar-uma-Quei",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:03:46Z",
+      "last_seen": "2026-10-27T16:48:02Z",
+      "attempts": 15,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 376,
+      "domain": "www.gnu.org",
+      "url": "https://www.gnu.org/software/emacs/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.gnu.org/software/emacs/: Get \"https://www.gnu.org/software/emacs/\": dial tcp4: lookup www.gnu.org: i/o timeout",
+      "first_seen": "2026-10-26T16:44:48Z",
+      "last_seen": "2026-10-27T17:03:37Z",
+      "attempts": 11,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
     {
       "id": 402,
       "domain": "accounts.shopify.com",
@@ -6183,138 +6315,6 @@
       "last_seen": "2026-10-24T21:29:11Z",
       "attempts": 1,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 267,
-      "domain": "www.cftc.gov",
-      "url": "https://www.cftc.gov/sites/default/files/idc/groups/public/@newsroom/documents/file/federalregister112415.pdf",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T18:02:25Z",
-      "last_seen": "2026-10-25T18:02:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 282,
-      "domain": "x.com",
-      "url": "https://x.com/GforPublishers",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T20:33:25Z",
-      "last_seen": "2026-10-25T20:34:01Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 368,
-      "domain": "admin.statens-tilskudspuljer.dk",
-      "url": "https://admin.statens-tilskudspuljer.dk/Lists/SLKS/DispForm.aspx?ID=1143",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-26T15:00:25Z",
-      "last_seen": "2026-10-26T15:08:01Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 487,
-      "domain": "devops.com",
-      "url": "https://devops.com/9-pillars-of-continuous-security-best-practices",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T03:18:01Z",
-      "last_seen": "2026-10-27T03:18:49Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 362,
-      "domain": "virksomhedsguiden.dk",
-      "url": "https://virksomhedsguiden.dk/content/ydelser/faa-overblik-over-virksomhedsformer/1669d3e5-d022-4c85-99b4-e4369c235593/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T12:03:13Z",
-      "last_seen": "2026-10-26T13:08:25Z",
-      "attempts": 12,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 535,
-      "domain": "web.dev",
-      "url": "https://web.dev/webassembly-video-editor/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-27T10:07:01Z",
-      "last_seen": "2026-10-27T10:08:50Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 558,
-      "domain": "www.axs.com",
-      "url": "https://www.axs.com/series/31523/t-mobile-arena-pbr-team-series-championship-tickets?skin=tmobile\u0026_gl=1*17q8ka4*_gcl_au*MjcwNTc5MDkzLjE3NjYzNzE5Nzg.*_ga*MjA1ODY5NzA4My4xNzU4NTc5ODk4*_ga_YWWHJK3LM5*czE3NzE2MDM2OTkkbzUzOCRnMSR0MTc3MTYwMzg2NSRqNTQkbDAkaDA.",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T17:41:52Z",
-      "last_seen": "2026-10-27T17:41:52Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 391,
-      "domain": "de.linkedin.com",
-      "url": "https://de.linkedin.com/in/peer-knoops-b4346b7b?trk=public_post_comment_actor-name",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T18:30:25Z",
-      "last_seen": "2026-10-26T18:46:25Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 99,
-      "domain": "careers.washingtonpost.com",
-      "url": "https://careers.washingtonpost.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://careers.washingtonpost.com/: Get \"https://careers.washingtonpost.com/\": read tcp4 10.0.1.126:55150-\u003e23.11.234.135:443: use of closed network connection",
-      "first_seen": "2026-10-23T19:49:33Z",
-      "last_seen": "2026-10-23T19:49:33Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://careers.washingtonpost.com/: Get \"https://careers.washingtonpost.com/\": read tcp4 10.0.1.126:55150-\u003e23.11.234.135:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 122,
-      "domain": "www.security.harvard.edu",
-      "url": "https://www.security.harvard.edu/privacy-policy",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T02:18:23Z",
-      "last_seen": "2026-10-24T03:39:59Z",
-      "attempts": 16,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 8,
-      "domain": "pt.wikihow.com",
-      "url": "https://pt.wikihow.com/Tratar-uma-Quei",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:03:46Z",
-      "last_seen": "2026-10-27T16:48:02Z",
-      "attempts": 15,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 376,
-      "domain": "www.gnu.org",
-      "url": "https://www.gnu.org/software/emacs/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.gnu.org/software/emacs/: Get \"https://www.gnu.org/software/emacs/\": dial tcp4: lookup www.gnu.org: i/o timeout",
-      "first_seen": "2026-10-26T16:44:48Z",
-      "last_seen": "2026-10-27T17:03:37Z",
-      "attempts": 11,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     }
   ]
 }
