@@ -1,7 +1,84 @@
 {
-  "last_updated": "2026-10-27T03:08:02Z",
+  "last_updated": "2026-10-27T03:09:04Z",
   "total_quarantine": 485,
   "quarantine_sites": [
+    {
+      "id": 159,
+      "domain": "cookiedatabase.org",
+      "url": "https://cookiedatabase.org/tcf/purposes/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T21:24:35Z",
+      "last_seen": "2026-10-24T21:38:59Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 303,
+      "domain": "www.ftc.gov",
+      "url": "http://www.ftc.gov/foia/sysnot/appendix1.pdf",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T00:37:37Z",
+      "last_seen": "2026-10-26T00:39:49Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 443,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=e99e51a3-a479-48cb-83d7-68d1db921136",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:28:13Z",
+      "last_seen": "2026-10-26T20:28:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 131,
+      "domain": "resonance-newsletters.beehiiv.com",
+      "url": "https://resonance-newsletters.beehiiv.com/subscribe",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T18:02:11Z",
+      "last_seen": "2026-10-24T18:02:11Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 329,
+      "domain": "video.google.de",
+      "url": "http://video.google.de/videoplay?docid=-6459339159268485356\u0026q=python+programming",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T03:09:13Z",
+      "last_seen": "2026-10-26T04:05:13Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 341,
+      "domain": "six.pairlist.net",
+      "url": "http://six.pairlist.net/mailman/listinfo/markdown-discuss",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://six.pairlist.net/mailman/listinfo/markdown-discuss: Get \"http://six.pairlist.net/mailman/listinfo/markdown-discuss\": dial tcp4 209.68.2.254:80: i/o timeout",
+      "first_seen": "2026-10-26T04:26:36Z",
+      "last_seen": "2026-10-26T04:53:48Z",
+      "attempts": 6,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 459,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=07945c85-5219-4f8a-8bb3-34d836cf0667",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:44:13Z",
+      "last_seen": "2026-10-26T20:44:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 24,
       "domain": "www.nytimes.com",
@@ -1395,8 +1472,8 @@
       "status_code": 404,
       "error_message": "HTTP 404",
       "first_seen": "2026-10-23T13:26:58Z",
-      "last_seen": "2026-10-27T01:55:37Z",
-      "attempts": 7,
+      "last_seen": "2026-10-27T03:08:13Z",
+      "attempts": 8,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
@@ -5259,83 +5336,6 @@
       "last_seen": "2026-10-27T01:59:37Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 159,
-      "domain": "cookiedatabase.org",
-      "url": "https://cookiedatabase.org/tcf/purposes/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T21:24:35Z",
-      "last_seen": "2026-10-24T21:38:59Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 303,
-      "domain": "www.ftc.gov",
-      "url": "http://www.ftc.gov/foia/sysnot/appendix1.pdf",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T00:37:37Z",
-      "last_seen": "2026-10-26T00:39:49Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 443,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=e99e51a3-a479-48cb-83d7-68d1db921136",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:28:13Z",
-      "last_seen": "2026-10-26T20:28:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 131,
-      "domain": "resonance-newsletters.beehiiv.com",
-      "url": "https://resonance-newsletters.beehiiv.com/subscribe",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T18:02:11Z",
-      "last_seen": "2026-10-24T18:02:11Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 329,
-      "domain": "video.google.de",
-      "url": "http://video.google.de/videoplay?docid=-6459339159268485356\u0026q=python+programming",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T03:09:13Z",
-      "last_seen": "2026-10-26T04:05:13Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 341,
-      "domain": "six.pairlist.net",
-      "url": "http://six.pairlist.net/mailman/listinfo/markdown-discuss",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://six.pairlist.net/mailman/listinfo/markdown-discuss: Get \"http://six.pairlist.net/mailman/listinfo/markdown-discuss\": dial tcp4 209.68.2.254:80: i/o timeout",
-      "first_seen": "2026-10-26T04:26:36Z",
-      "last_seen": "2026-10-26T04:53:48Z",
-      "attempts": 6,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 459,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=07945c85-5219-4f8a-8bb3-34d836cf0667",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:44:13Z",
-      "last_seen": "2026-10-26T20:44:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
