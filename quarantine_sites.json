@@ -1,7 +1,29 @@
 {
-  "last_updated": "2026-10-27T22:49:39Z",
-  "total_quarantine": 572,
+  "last_updated": "2026-10-27T22:50:40Z",
+  "total_quarantine": 574,
   "quarantine_sites": [
+    {
+      "id": 402,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=f4e931f2-d353-452d-8104-c264f4419ecb",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:06:01Z",
+      "last_seen": "2026-10-26T19:06:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 435,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=7de05786-b727-4ce0-aac4-9168476070e1",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:55:13Z",
+      "last_seen": "2026-10-26T19:55:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 304,
       "domain": "www.facebook.com",
@@ -254,6 +276,17 @@
       "last_seen": "2026-10-27T12:37:13Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 574,
+      "domain": "services.etatcivil.gouv.qc.ca",
+      "url": "https://services.etatcivil.gouv.qc.ca/declic2/xpress/DXIndex.aspx",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://services.etatcivil.gouv.qc.ca/declic2/xpress/DXIndex.aspx: Get \"https://services.etatcivil.gouv.qc.ca/declic2/xpress/DXIndex.aspx\": dial tcp4 142.213.14.10:443: i/o timeout",
+      "first_seen": "2026-10-27T22:50:37Z",
+      "last_seen": "2026-10-27T22:50:37Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     },
     {
       "id": 69,
@@ -2399,6 +2432,17 @@
       "last_seen": "2026-10-27T05:26:15Z",
       "attempts": 3,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 573,
+      "domain": "services.etatcivil.gouv.qc.ca",
+      "url": "https://services.etatcivil.gouv.qc.ca/declic2/index.aspx",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://services.etatcivil.gouv.qc.ca/declic2/index.aspx: Get \"https://services.etatcivil.gouv.qc.ca/declic2/index.aspx\": dial tcp4 142.213.14.10:443: i/o timeout",
+      "first_seen": "2026-10-27T22:50:24Z",
+      "last_seen": "2026-10-27T22:50:24Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     },
     {
       "id": 214,
@@ -6271,28 +6315,6 @@
       "last_seen": "2026-10-27T17:03:37Z",
       "attempts": 11,
       "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 402,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=f4e931f2-d353-452d-8104-c264f4419ecb",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:06:01Z",
-      "last_seen": "2026-10-26T19:06:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 435,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=7de05786-b727-4ce0-aac4-9168476070e1",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:55:13Z",
-      "last_seen": "2026-10-26T19:55:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
