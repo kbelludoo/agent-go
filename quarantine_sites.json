@@ -1,7 +1,106 @@
 {
-  "last_updated": "2026-10-27T06:38:14Z",
+  "last_updated": "2026-10-27T06:39:16Z",
   "total_quarantine": 511,
   "quarantine_sites": [
+    {
+      "id": 465,
+      "domain": "sixcolors.com",
+      "url": "https://sixcolors.com/post/2026/10/why-notes-will-never-let-us-edit-markdown/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T21:58:01Z",
+      "last_seen": "2026-10-26T21:58:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 478,
+      "domain": "www.usatoday.com",
+      "url": "https://www.usatoday.com/reporters/",
+      "status_code": 406,
+      "error_message": "HTTP 406",
+      "first_seen": "2026-10-26T23:29:13Z",
+      "last_seen": "2026-10-26T23:50:13Z",
+      "attempts": 8,
+      "diagnosis": "HTTP 406 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 100,
+      "domain": "wpintelligence.washingtonpost.com",
+      "url": "https://wpintelligence.washingtonpost.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://wpintelligence.washingtonpost.com/: Get \"https://wpintelligence.washingtonpost.com/\": read tcp4 10.0.1.126:41780-\u003e2.16.169.205:443: use of closed network connection",
+      "first_seen": "2026-10-23T19:49:45Z",
+      "last_seen": "2026-10-23T23:00:32Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://wpintelligence.washingtonpost.com/: Get \"https://wpintelligence.washingtonpost.com/\": read tcp4 10.0.1.126:41780-\u003e2.16.169.205:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 125,
+      "domain": "provost.harvard.edu",
+      "url": "http://provost.harvard.edu",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T04:00:23Z",
+      "last_seen": "2026-10-24T04:48:23Z",
+      "attempts": 9,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 12,
+      "domain": "reuters.com",
+      "url": "https://reuters.com/",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T13:06:22Z",
+      "last_seen": "2026-10-27T03:56:13Z",
+      "attempts": 11,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 58,
+      "domain": "cayugacollection.com",
+      "url": "https://cayugacollection.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:47:10Z",
+      "last_seen": "2026-10-23T15:47:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 460,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=1caf956d-83a5-4569-ab46-456ec94ea81b",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:45:13Z",
+      "last_seen": "2026-10-26T20:45:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 256,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/thehackernews/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-25T16:57:37Z",
+      "last_seen": "2026-10-25T16:57:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 264,
+      "domain": "jbc.bj.uj.edu.pl",
+      "url": "http://jbc.bj.uj.edu.pl/dlibra/doccontent?id=258834",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://jbc.bj.uj.edu.pl/dlibra/doccontent?id=258834: Get \"http://jbc.bj.uj.edu.pl/dlibra/doccontent?id=258834\": dial tcp4 150.254.158.159:80: i/o timeout",
+      "first_seen": "2026-10-25T17:46:48Z",
+      "last_seen": "2026-10-25T17:47:25Z",
+      "attempts": 4,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
     {
       "id": 113,
       "domain": "blog.wikimedia.dk",
@@ -4046,8 +4145,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-27T06:29:13Z",
-      "last_seen": "2026-10-27T06:33:49Z",
-      "attempts": 2,
+      "last_seen": "2026-10-27T06:38:25Z",
+      "attempts": 3,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -5523,105 +5622,6 @@
       "last_seen": "2026-10-26T19:06:13Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 465,
-      "domain": "sixcolors.com",
-      "url": "https://sixcolors.com/post/2026/10/why-notes-will-never-let-us-edit-markdown/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T21:58:01Z",
-      "last_seen": "2026-10-26T21:58:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 478,
-      "domain": "www.usatoday.com",
-      "url": "https://www.usatoday.com/reporters/",
-      "status_code": 406,
-      "error_message": "HTTP 406",
-      "first_seen": "2026-10-26T23:29:13Z",
-      "last_seen": "2026-10-26T23:50:13Z",
-      "attempts": 8,
-      "diagnosis": "HTTP 406 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 100,
-      "domain": "wpintelligence.washingtonpost.com",
-      "url": "https://wpintelligence.washingtonpost.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://wpintelligence.washingtonpost.com/: Get \"https://wpintelligence.washingtonpost.com/\": read tcp4 10.0.1.126:41780-\u003e2.16.169.205:443: use of closed network connection",
-      "first_seen": "2026-10-23T19:49:45Z",
-      "last_seen": "2026-10-23T23:00:32Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://wpintelligence.washingtonpost.com/: Get \"https://wpintelligence.washingtonpost.com/\": read tcp4 10.0.1.126:41780-\u003e2.16.169.205:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 125,
-      "domain": "provost.harvard.edu",
-      "url": "http://provost.harvard.edu",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T04:00:23Z",
-      "last_seen": "2026-10-24T04:48:23Z",
-      "attempts": 9,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 12,
-      "domain": "reuters.com",
-      "url": "https://reuters.com/",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T13:06:22Z",
-      "last_seen": "2026-10-27T03:56:13Z",
-      "attempts": 11,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 58,
-      "domain": "cayugacollection.com",
-      "url": "https://cayugacollection.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:47:10Z",
-      "last_seen": "2026-10-23T15:47:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 460,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=1caf956d-83a5-4569-ab46-456ec94ea81b",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:45:13Z",
-      "last_seen": "2026-10-26T20:45:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 256,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/thehackernews/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-25T16:57:37Z",
-      "last_seen": "2026-10-25T16:57:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 264,
-      "domain": "jbc.bj.uj.edu.pl",
-      "url": "http://jbc.bj.uj.edu.pl/dlibra/doccontent?id=258834",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://jbc.bj.uj.edu.pl/dlibra/doccontent?id=258834: Get \"http://jbc.bj.uj.edu.pl/dlibra/doccontent?id=258834\": dial tcp4 150.254.158.159:80: i/o timeout",
-      "first_seen": "2026-10-25T17:46:48Z",
-      "last_seen": "2026-10-25T17:47:25Z",
-      "attempts": 4,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     }
   ]
 }
