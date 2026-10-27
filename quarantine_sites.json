@@ -1,40 +1,7 @@
 {
-  "last_updated": "2026-10-27T03:09:04Z",
+  "last_updated": "2026-10-27T03:10:03Z",
   "total_quarantine": 485,
   "quarantine_sites": [
-    {
-      "id": 159,
-      "domain": "cookiedatabase.org",
-      "url": "https://cookiedatabase.org/tcf/purposes/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T21:24:35Z",
-      "last_seen": "2026-10-24T21:38:59Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 303,
-      "domain": "www.ftc.gov",
-      "url": "http://www.ftc.gov/foia/sysnot/appendix1.pdf",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T00:37:37Z",
-      "last_seen": "2026-10-26T00:39:49Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 443,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=e99e51a3-a479-48cb-83d7-68d1db921136",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:28:13Z",
-      "last_seen": "2026-10-26T20:28:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 131,
       "domain": "resonance-newsletters.beehiiv.com",
@@ -5336,6 +5303,39 @@
       "last_seen": "2026-10-27T01:59:37Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 159,
+      "domain": "cookiedatabase.org",
+      "url": "https://cookiedatabase.org/tcf/purposes/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T21:24:35Z",
+      "last_seen": "2026-10-24T21:38:59Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 303,
+      "domain": "www.ftc.gov",
+      "url": "http://www.ftc.gov/foia/sysnot/appendix1.pdf",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T00:37:37Z",
+      "last_seen": "2026-10-26T00:39:49Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 443,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=e99e51a3-a479-48cb-83d7-68d1db921136",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:28:13Z",
+      "last_seen": "2026-10-26T20:28:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
