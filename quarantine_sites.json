@@ -1,106 +1,7 @@
 {
-  "last_updated": "2026-10-27T12:18:13Z",
-  "total_quarantine": 540,
+  "last_updated": "2026-10-27T12:19:13Z",
+  "total_quarantine": 541,
   "quarantine_sites": [
-    {
-      "id": 74,
-      "domain": "azure.microsoft.com",
-      "url": "https://azure.microsoft.com/blog/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://azure.microsoft.com/blog/: Get \"https://azure.microsoft.com/pt-br/blog/\": read tcp4 10.0.1.126:54842-\u003e23.201.218.61:443: use of closed network connection",
-      "first_seen": "2026-10-23T16:47:57Z",
-      "last_seen": "2026-10-25T00:19:48Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://azure.microsoft.com/blog/: Get \"https://azure.microsoft.com/pt-br/blog/\": read tcp4 10.0.1.126:54842-\u003e23.201.218.61:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 154,
-      "domain": "trust.schellman.com",
-      "url": "https://trust.schellman.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T20:06:23Z",
-      "last_seen": "2026-10-25T00:20:01Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 291,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/cal-hacks/posts/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-25T21:38:13Z",
-      "last_seen": "2026-10-25T21:39:13Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 450,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=57058f09-49f8-40e3-9140-54ec4b9e32eb",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:35:13Z",
-      "last_seen": "2026-10-26T20:35:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 144,
-      "domain": "www.springernature.com",
-      "url": "https://www.springernature.com/gp/librarians/contact-%20us",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T18:57:35Z",
-      "last_seen": "2026-10-24T19:19:23Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 148,
-      "domain": "ibm.enterprise.slack.com",
-      "url": "https://ibm.enterprise.slack.com/workspace-signin",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T19:12:35Z",
-      "last_seen": "2026-10-24T19:12:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 265,
-      "domain": "web.whatsapp.com",
-      "url": "https://web.whatsapp.com/send?text=%20Curso Gratuito: Estado de Direito | Gazeta do Povo%20https://especiais.gazetadopovo.com.br/cursos/curso-gratuito-estado-de-direito-gazeta-do-povo%3Fcomp%3Dwhatsapp",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-25T17:52:36Z",
-      "last_seen": "2026-10-25T17:52:36Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 281,
-      "domain": "account.icann.org",
-      "url": "https://account.icann.org/authorize?redirect_uri=https://www.icann.org/oauth\u0026client_id=0oa9o9k9rp8VUcyJL2p7\u0026nonce=6f5398ba-8a62-4370-99a8-e00d981b692d\u0026state=https://www.icann.org/",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-25T20:26:26Z",
-      "last_seen": "2026-10-25T20:26:26Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 430,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=b76bc0ae-ae83-4827-943f-7f819ae79552",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:50:13Z",
-      "last_seen": "2026-10-26T19:50:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 81,
       "domain": "speakerdex.co",
@@ -4997,6 +4898,17 @@
       "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     },
     {
+      "id": 541,
+      "domain": "www.defesacivil.sp.gov.br",
+      "url": "https://www.defesacivil.sp.gov.br",
+      "status_code": 503,
+      "error_message": "HTTP 503",
+      "first_seen": "2026-10-27T12:19:13Z",
+      "last_seen": "2026-10-27T12:19:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
       "id": 94,
       "domain": "tsc.worldwildlife.org",
       "url": "https://tsc.worldwildlife.org/page/support-wwf",
@@ -5941,6 +5853,105 @@
       "last_seen": "2026-10-26T22:48:37Z",
       "attempts": 1,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 74,
+      "domain": "azure.microsoft.com",
+      "url": "https://azure.microsoft.com/blog/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://azure.microsoft.com/blog/: Get \"https://azure.microsoft.com/pt-br/blog/\": read tcp4 10.0.1.126:54842-\u003e23.201.218.61:443: use of closed network connection",
+      "first_seen": "2026-10-23T16:47:57Z",
+      "last_seen": "2026-10-25T00:19:48Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://azure.microsoft.com/blog/: Get \"https://azure.microsoft.com/pt-br/blog/\": read tcp4 10.0.1.126:54842-\u003e23.201.218.61:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 154,
+      "domain": "trust.schellman.com",
+      "url": "https://trust.schellman.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T20:06:23Z",
+      "last_seen": "2026-10-25T00:20:01Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 291,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/cal-hacks/posts/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-25T21:38:13Z",
+      "last_seen": "2026-10-25T21:39:13Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 450,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=57058f09-49f8-40e3-9140-54ec4b9e32eb",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:35:13Z",
+      "last_seen": "2026-10-26T20:35:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 144,
+      "domain": "www.springernature.com",
+      "url": "https://www.springernature.com/gp/librarians/contact-%20us",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T18:57:35Z",
+      "last_seen": "2026-10-24T19:19:23Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 148,
+      "domain": "ibm.enterprise.slack.com",
+      "url": "https://ibm.enterprise.slack.com/workspace-signin",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T19:12:35Z",
+      "last_seen": "2026-10-24T19:12:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 265,
+      "domain": "web.whatsapp.com",
+      "url": "https://web.whatsapp.com/send?text=%20Curso Gratuito: Estado de Direito | Gazeta do Povo%20https://especiais.gazetadopovo.com.br/cursos/curso-gratuito-estado-de-direito-gazeta-do-povo%3Fcomp%3Dwhatsapp",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-25T17:52:36Z",
+      "last_seen": "2026-10-25T17:52:36Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 281,
+      "domain": "account.icann.org",
+      "url": "https://account.icann.org/authorize?redirect_uri=https://www.icann.org/oauth\u0026client_id=0oa9o9k9rp8VUcyJL2p7\u0026nonce=6f5398ba-8a62-4370-99a8-e00d981b692d\u0026state=https://www.icann.org/",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-25T20:26:26Z",
+      "last_seen": "2026-10-25T20:26:26Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 430,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=b76bc0ae-ae83-4827-943f-7f819ae79552",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:50:13Z",
+      "last_seen": "2026-10-26T19:50:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
