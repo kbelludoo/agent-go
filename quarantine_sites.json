@@ -1,40 +1,7 @@
 {
-  "last_updated": "2026-10-27T20:54:51Z",
+  "last_updated": "2026-10-27T20:55:51Z",
   "total_quarantine": 567,
   "quarantine_sites": [
-    {
-      "id": 11,
-      "domain": "reference.deno.land",
-      "url": "https://reference.deno.land/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-23T13:06:10Z",
-      "last_seen": "2026-10-27T16:50:25Z",
-      "attempts": 16,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 133,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/thecodeforge-io-a0676b3b5/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T18:06:47Z",
-      "last_seen": "2026-10-24T18:07:00Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 337,
-      "domain": "apps.rejseplanen.dk",
-      "url": "http://apps.rejseplanen.dk",
-      "status_code": 504,
-      "error_message": "context cancelled or timed out while reading response from http://apps.rejseplanen.dk: context deadline exceeded",
-      "first_seen": "2026-10-26T04:14:12Z",
-      "last_seen": "2026-10-26T05:20:12Z",
-      "attempts": 6,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
     {
       "id": 385,
       "domain": "ciencianomar.mctic.gov.br",
@@ -6237,6 +6204,39 @@
       "first_seen": "2026-10-27T09:40:12Z",
       "last_seen": "2026-10-27T09:40:12Z",
       "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 11,
+      "domain": "reference.deno.land",
+      "url": "https://reference.deno.land/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-23T13:06:10Z",
+      "last_seen": "2026-10-27T16:50:25Z",
+      "attempts": 16,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 133,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/thecodeforge-io-a0676b3b5/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T18:06:47Z",
+      "last_seen": "2026-10-24T18:07:00Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 337,
+      "domain": "apps.rejseplanen.dk",
+      "url": "http://apps.rejseplanen.dk",
+      "status_code": 504,
+      "error_message": "context cancelled or timed out while reading response from http://apps.rejseplanen.dk: context deadline exceeded",
+      "first_seen": "2026-10-26T04:14:12Z",
+      "last_seen": "2026-10-26T05:20:12Z",
+      "attempts": 6,
       "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     }
   ]
