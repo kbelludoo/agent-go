@@ -1,7 +1,29 @@
 {
-  "last_updated": "2026-10-27T21:29:16Z",
+  "last_updated": "2026-10-27T21:30:27Z",
   "total_quarantine": 567,
   "quarantine_sites": [
+    {
+      "id": 275,
+      "domain": "www.cidadao.sp.gov.br",
+      "url": "http://www.cidadao.sp.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.cidadao.sp.gov.br: Get \"http://www.cidadao.sp.gov.br\": dial tcp4: lookup www.cidadao.sp.gov.br on 127.0.0.53:53: server misbehaving",
+      "first_seen": "2026-10-25T18:55:49Z",
+      "last_seen": "2026-10-25T18:55:49Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.cidadao.sp.gov.br: Get \"http://www.cidadao.sp.gov.br\": dial tcp4: lookup www.cidadao.sp.gov.br on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 423,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=c9ef2674-a52b-4393-8ba2-e4cc013cef9f",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:43:13Z",
+      "last_seen": "2026-10-26T19:43:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 502,
       "domain": "scholar.harvard.edu",
@@ -6214,28 +6236,6 @@
       "error_message": "HTTP 404",
       "first_seen": "2026-10-26T20:42:13Z",
       "last_seen": "2026-10-26T20:42:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 275,
-      "domain": "www.cidadao.sp.gov.br",
-      "url": "http://www.cidadao.sp.gov.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.cidadao.sp.gov.br: Get \"http://www.cidadao.sp.gov.br\": dial tcp4: lookup www.cidadao.sp.gov.br on 127.0.0.53:53: server misbehaving",
-      "first_seen": "2026-10-25T18:55:49Z",
-      "last_seen": "2026-10-25T18:55:49Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.cidadao.sp.gov.br: Get \"http://www.cidadao.sp.gov.br\": dial tcp4: lookup www.cidadao.sp.gov.br on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 423,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=c9ef2674-a52b-4393-8ba2-e4cc013cef9f",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:43:13Z",
-      "last_seen": "2026-10-26T19:43:13Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
