@@ -1,40 +1,7 @@
 {
-  "last_updated": "2026-10-27T08:32:50Z",
+  "last_updated": "2026-10-27T08:33:50Z",
   "total_quarantine": 517,
   "quarantine_sites": [
-    {
-      "id": 177,
-      "domain": "grantsgovprod.wordpress.com",
-      "url": "https://grantsgovprod.wordpress.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T02:26:37Z",
-      "last_seen": "2026-10-25T02:26:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 192,
-      "domain": "legcounsel.house.gov",
-      "url": "http://legcounsel.house.gov/Comps/Inspector%20General%20Act%20Of%201978.pdf",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T08:45:14Z",
-      "last_seen": "2026-10-25T09:39:50Z",
-      "attempts": 31,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 226,
-      "domain": "register.paloaltonetworks.com",
-      "url": "https://register.paloaltonetworks.com/igniteontour",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T14:12:25Z",
-      "last_seen": "2026-10-25T14:12:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 136,
       "domain": "uk.trustpilot.com",
@@ -5688,6 +5655,39 @@
       "last_seen": "2026-10-26T19:21:25Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 177,
+      "domain": "grantsgovprod.wordpress.com",
+      "url": "https://grantsgovprod.wordpress.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T02:26:37Z",
+      "last_seen": "2026-10-25T02:26:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 192,
+      "domain": "legcounsel.house.gov",
+      "url": "http://legcounsel.house.gov/Comps/Inspector%20General%20Act%20Of%201978.pdf",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T08:45:14Z",
+      "last_seen": "2026-10-25T09:39:50Z",
+      "attempts": 31,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 226,
+      "domain": "register.paloaltonetworks.com",
+      "url": "https://register.paloaltonetworks.com/igniteontour",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T14:12:25Z",
+      "last_seen": "2026-10-25T14:12:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
