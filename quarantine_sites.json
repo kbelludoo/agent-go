@@ -1,18 +1,7 @@
 {
-  "last_updated": "2026-10-27T01:33:39Z",
+  "last_updated": "2026-10-27T01:34:37Z",
   "total_quarantine": 483,
   "quarantine_sites": [
-    {
-      "id": 114,
-      "domain": "account.microsoft.com",
-      "url": "https://account.microsoft.com",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-23T21:46:46Z",
-      "last_seen": "2026-10-23T22:55:03Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 110,
       "domain": "www.podiobooks.com",
@@ -3056,8 +3045,8 @@
       "status_code": 504,
       "error_message": "failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host",
       "first_seen": "2026-10-23T13:06:10Z",
-      "last_seen": "2026-10-26T21:33:01Z",
-      "attempts": 7,
+      "last_seen": "2026-10-27T01:34:37Z",
+      "attempts": 8,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL https://reference.deno.land/: Get \"https://reference.deno.land/\": dial tcp4: lookup reference.deno.land on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
     },
     {
@@ -5314,6 +5303,17 @@
       "last_seen": "2026-10-26T19:05:49Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 114,
+      "domain": "account.microsoft.com",
+      "url": "https://account.microsoft.com",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-23T21:46:46Z",
+      "last_seen": "2026-10-23T22:55:03Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
