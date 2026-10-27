@@ -1,7 +1,40 @@
 {
-  "last_updated": "2026-10-27T06:55:27Z",
+  "last_updated": "2026-10-27T06:56:26Z",
   "total_quarantine": 512,
   "quarantine_sites": [
+    {
+      "id": 173,
+      "domain": "au.linkedin.com",
+      "url": "https://au.linkedin.com/in/charliesutton?trk=article-ssr-frontend-pulse_little-mention",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T23:26:35Z",
+      "last_seen": "2026-10-24T23:26:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 20,
+      "domain": "www.engadget.com",
+      "url": "https://www.engadget.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:17:33Z",
+      "last_seen": "2026-10-27T04:07:37Z",
+      "attempts": 7,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 47,
+      "domain": "brasil.gov.br",
+      "url": "https://brasil.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z",
+      "first_seen": "2026-10-23T15:00:09Z",
+      "last_seen": "2026-10-23T15:00:09Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z. Sugestão: Verificar rota de egress e resolução DNS."
+    },
     {
       "id": 174,
       "domain": "www.gsaauctions.gov",
@@ -4222,8 +4255,8 @@
       "status_code": 504,
       "error_message": "failed to fetch URL https://beautycalculator.net\u003e: Get \"https://beautycalculator.net\u003e\": dial tcp4: lookup beautycalculator.net\u003e: no such host",
       "first_seen": "2026-10-27T06:41:48Z",
-      "last_seen": "2026-10-27T06:42:12Z",
-      "attempts": 2,
+      "last_seen": "2026-10-27T06:56:12Z",
+      "attempts": 3,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL https://beautycalculator.net\u003e: Get \"https://beautycalculator.net\u003e\": dial tcp4: lookup beautycalculator.net\u003e: no such host. Sugestão: Verificar rota de egress e resolução DNS."
     },
     {
@@ -5600,39 +5633,6 @@
       "last_seen": "2026-10-26T19:04:01Z",
       "attempts": 2,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 173,
-      "domain": "au.linkedin.com",
-      "url": "https://au.linkedin.com/in/charliesutton?trk=article-ssr-frontend-pulse_little-mention",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T23:26:35Z",
-      "last_seen": "2026-10-24T23:26:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 20,
-      "domain": "www.engadget.com",
-      "url": "https://www.engadget.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:17:33Z",
-      "last_seen": "2026-10-27T04:07:37Z",
-      "attempts": 7,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 47,
-      "domain": "brasil.gov.br",
-      "url": "https://brasil.gov.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z",
-      "first_seen": "2026-10-23T15:00:09Z",
-      "last_seen": "2026-10-23T15:00:09Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
