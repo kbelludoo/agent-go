@@ -1,29 +1,7 @@
 {
-  "last_updated": "2026-10-27T11:03:02Z",
-  "total_quarantine": 539,
+  "last_updated": "2026-10-27T11:04:03Z",
+  "total_quarantine": 538,
   "quarantine_sites": [
-    {
-      "id": 256,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/thehackernews/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-25T16:57:37Z",
-      "last_seen": "2026-10-25T16:57:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 264,
-      "domain": "jbc.bj.uj.edu.pl",
-      "url": "http://jbc.bj.uj.edu.pl/dlibra/doccontent?id=258834",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://jbc.bj.uj.edu.pl/dlibra/doccontent?id=258834: Get \"http://jbc.bj.uj.edu.pl/dlibra/doccontent?id=258834\": dial tcp4 150.254.158.159:80: i/o timeout",
-      "first_seen": "2026-10-25T17:46:48Z",
-      "last_seen": "2026-10-25T17:47:25Z",
-      "attempts": 4,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
     {
       "id": 113,
       "domain": "blog.wikimedia.dk",
@@ -647,8 +625,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-23T13:16:10Z",
-      "last_seen": "2026-10-27T09:00:13Z",
-      "attempts": 8,
+      "last_seen": "2026-10-27T11:03:14Z",
+      "attempts": 9,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -3004,17 +2982,6 @@
       "last_seen": "2026-10-27T06:01:49Z",
       "attempts": 1,
       "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 517,
-      "domain": "www.britannica.com",
-      "url": "https://www.britannica.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T09:00:25Z",
-      "last_seen": "2026-10-27T09:00:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
       "id": 254,
@@ -5930,6 +5897,28 @@
       "last_seen": "2026-10-27T09:21:13Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 256,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/thehackernews/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-25T16:57:37Z",
+      "last_seen": "2026-10-25T16:57:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 264,
+      "domain": "jbc.bj.uj.edu.pl",
+      "url": "http://jbc.bj.uj.edu.pl/dlibra/doccontent?id=258834",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://jbc.bj.uj.edu.pl/dlibra/doccontent?id=258834: Get \"http://jbc.bj.uj.edu.pl/dlibra/doccontent?id=258834\": dial tcp4 150.254.158.159:80: i/o timeout",
+      "first_seen": "2026-10-25T17:46:48Z",
+      "last_seen": "2026-10-25T17:47:25Z",
+      "attempts": 4,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     }
   ]
 }
