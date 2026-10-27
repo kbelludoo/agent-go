@@ -1,7 +1,150 @@
 {
-  "last_updated": "2026-10-27T20:34:28Z",
+  "last_updated": "2026-10-27T20:35:30Z",
   "total_quarantine": 566,
   "quarantine_sites": [
+    {
+      "id": 565,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T18:50:25Z",
+      "last_seen": "2026-10-27T19:15:25Z",
+      "attempts": 12,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 117,
+      "domain": "app.slack.com",
+      "url": "https://app.slack.com/block-kit-builder/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:46:47Z",
+      "last_seen": "2026-10-24T00:49:47Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 19,
+      "domain": "www.bloomberg.com",
+      "url": "https://www.bloomberg.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:16:10Z",
+      "last_seen": "2026-10-27T17:00:37Z",
+      "attempts": 13,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 119,
+      "domain": "analytics.scielo.org",
+      "url": "https://analytics.scielo.org/w/publication/article?collection=scl",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:55:58Z",
+      "last_seen": "2026-10-24T00:55:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 270,
+      "domain": "www.bloomberg.com",
+      "url": "https://www.bloomberg.com/professional/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T18:15:01Z",
+      "last_seen": "2026-10-25T18:15:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 352,
+      "domain": "stm.dk",
+      "url": "http://stm.dk/publikationer/GL_Lovregister_12/index.htm",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T10:09:14Z",
+      "last_seen": "2026-10-26T10:43:26Z",
+      "attempts": 8,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 366,
+      "domain": "dk.linkedin.com",
+      "url": "https://dk.linkedin.com/in/christian-gausbo?trk=org-employees",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T13:29:49Z",
+      "last_seen": "2026-10-26T14:09:02Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 158,
+      "domain": "sdgs.un.org",
+      "url": "https://sdgs.un.org/zh",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T20:40:17Z",
+      "last_seen": "2026-10-24T21:04:11Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 219,
+      "domain": "unsplash.com",
+      "url": "https://unsplash.com/terms",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T13:15:25Z",
+      "last_seen": "2026-10-25T13:16:25Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 342,
+      "domain": "pt.squarespace.com",
+      "url": "https://pt.squarespace.com/pt/templates/comece-agora",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T04:26:50Z",
+      "last_seen": "2026-10-26T04:57:37Z",
+      "attempts": 18,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 410,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=67e0ddd5-8d8c-4bf4-998b-48131f647008",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:08:49Z",
+      "last_seen": "2026-10-26T19:08:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 530,
+      "domain": "+4317294999",
+      "url": "http://+4317294999",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://+4317294999: Get \"http://+4317294999\": dial tcp4: lookup +4317294999: no such host",
+      "first_seen": "2026-10-27T09:54:24Z",
+      "last_seen": "2026-10-27T09:54:24Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://+4317294999: Get \"http://+4317294999\": dial tcp4: lookup +4317294999: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 101,
+      "domain": "ds.tl",
+      "url": "http://ds.tl/help-third-party-plugins",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://ds.tl/help-third-party-plugins: Get \"http://ds.tl/help-third-party-plugins\": dial tcp4: lookup ds.tl on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-23T19:53:58Z",
+      "last_seen": "2026-10-24T00:08:54Z",
+      "attempts": 4,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://ds.tl/help-third-party-plugins: Get \"http://ds.tl/help-third-party-plugins\": dial tcp4: lookup ds.tl on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
     {
       "id": 212,
       "domain": "www.EXAMPLE.com",
@@ -6084,149 +6227,6 @@
       "last_seen": "2026-10-27T12:49:01Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 565,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T18:50:25Z",
-      "last_seen": "2026-10-27T19:15:25Z",
-      "attempts": 12,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 117,
-      "domain": "app.slack.com",
-      "url": "https://app.slack.com/block-kit-builder/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:46:47Z",
-      "last_seen": "2026-10-24T00:49:47Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 19,
-      "domain": "www.bloomberg.com",
-      "url": "https://www.bloomberg.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:16:10Z",
-      "last_seen": "2026-10-27T17:00:37Z",
-      "attempts": 13,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 119,
-      "domain": "analytics.scielo.org",
-      "url": "https://analytics.scielo.org/w/publication/article?collection=scl",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:55:58Z",
-      "last_seen": "2026-10-24T00:55:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 270,
-      "domain": "www.bloomberg.com",
-      "url": "https://www.bloomberg.com/professional/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T18:15:01Z",
-      "last_seen": "2026-10-25T18:15:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 352,
-      "domain": "stm.dk",
-      "url": "http://stm.dk/publikationer/GL_Lovregister_12/index.htm",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T10:09:14Z",
-      "last_seen": "2026-10-26T10:43:26Z",
-      "attempts": 8,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 366,
-      "domain": "dk.linkedin.com",
-      "url": "https://dk.linkedin.com/in/christian-gausbo?trk=org-employees",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T13:29:49Z",
-      "last_seen": "2026-10-26T14:09:02Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 158,
-      "domain": "sdgs.un.org",
-      "url": "https://sdgs.un.org/zh",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T20:40:17Z",
-      "last_seen": "2026-10-24T21:04:11Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 219,
-      "domain": "unsplash.com",
-      "url": "https://unsplash.com/terms",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T13:15:25Z",
-      "last_seen": "2026-10-25T13:16:25Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 342,
-      "domain": "pt.squarespace.com",
-      "url": "https://pt.squarespace.com/pt/templates/comece-agora",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T04:26:50Z",
-      "last_seen": "2026-10-26T04:57:37Z",
-      "attempts": 18,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 410,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=67e0ddd5-8d8c-4bf4-998b-48131f647008",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:08:49Z",
-      "last_seen": "2026-10-26T19:08:49Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 530,
-      "domain": "+4317294999",
-      "url": "http://+4317294999",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://+4317294999: Get \"http://+4317294999\": dial tcp4: lookup +4317294999: no such host",
-      "first_seen": "2026-10-27T09:54:24Z",
-      "last_seen": "2026-10-27T09:54:24Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://+4317294999: Get \"http://+4317294999\": dial tcp4: lookup +4317294999: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 101,
-      "domain": "ds.tl",
-      "url": "http://ds.tl/help-third-party-plugins",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://ds.tl/help-third-party-plugins: Get \"http://ds.tl/help-third-party-plugins\": dial tcp4: lookup ds.tl on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-23T19:53:58Z",
-      "last_seen": "2026-10-24T00:08:54Z",
-      "attempts": 4,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://ds.tl/help-third-party-plugins: Get \"http://ds.tl/help-third-party-plugins\": dial tcp4: lookup ds.tl on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
