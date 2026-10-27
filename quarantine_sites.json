@@ -1,18 +1,7 @@
 {
-  "last_updated": "2026-10-27T05:55:26Z",
+  "last_updated": "2026-10-27T05:56:26Z",
   "total_quarantine": 502,
   "quarantine_sites": [
-    {
-      "id": 328,
-      "domain": "www.ihs.gov",
-      "url": "https://www.ihs.gov/findhealthcare/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.ihs.gov/findhealthcare/: Get \"https://www.ihs.gov/findhealthcare/\": dial tcp4 198.45.0.67:443: i/o timeout",
-      "first_seen": "2026-10-26T02:40:00Z",
-      "last_seen": "2026-10-26T02:40:00Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
     {
       "id": 399,
       "domain": "akademie.easysoft.de",
@@ -5523,6 +5512,17 @@
       "last_seen": "2026-10-23T22:58:34Z",
       "attempts": 2,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 328,
+      "domain": "www.ihs.gov",
+      "url": "https://www.ihs.gov/findhealthcare/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.ihs.gov/findhealthcare/: Get \"https://www.ihs.gov/findhealthcare/\": dial tcp4 198.45.0.67:443: i/o timeout",
+      "first_seen": "2026-10-26T02:40:00Z",
+      "last_seen": "2026-10-26T02:40:00Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     }
   ]
 }
