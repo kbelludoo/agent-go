@@ -1,62 +1,7 @@
 {
-  "last_updated": "2026-10-27T05:58:40Z",
+  "last_updated": "2026-10-27T05:59:39Z",
   "total_quarantine": 502,
   "quarantine_sites": [
-    {
-      "id": 170,
-      "domain": "au.linkedin.com",
-      "url": "https://au.linkedin.com/in/stephenmok?trk=article-ssr-frontend-pulse_little-mention",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T22:42:35Z",
-      "last_seen": "2026-10-24T23:26:00Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 109,
-      "domain": "www.scielo.org",
-      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter\u0026lang=en",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T00:30:04Z",
-      "last_seen": "2026-10-24T00:30:04Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 354,
-      "domain": "post.borger.dk",
-      "url": "https://post.borger.dk",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://post.borger.dk: Get \"https://post.borger.dk\": dial tcp4 188.180.120.148:443: i/o timeout",
-      "first_seen": "2026-10-26T11:15:00Z",
-      "last_seen": "2026-10-26T11:56:48Z",
-      "attempts": 6,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 388,
-      "domain": "de.linkedin.com",
-      "url": "https://de.linkedin.com/company/universit-tsklinikum-hamburg-eppendorf?trk=public_jobs_topcard_org_name",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T18:05:37Z",
-      "last_seen": "2026-10-26T18:06:25Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 347,
-      "domain": "www.capterra.com.de",
-      "url": "https://www.capterra.com.de/reviews/218617/eventfrog",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T06:39:49Z",
-      "last_seen": "2026-10-26T06:56:37Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 28,
       "domain": "www.theguardian.com",
@@ -5523,6 +5468,61 @@
       "last_seen": "2026-10-23T18:00:50Z",
       "attempts": 1,
       "diagnosis": "Erro de transporte de rede: failed to parse HTML: html: open stack of elements exceeds 512 nodes. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 170,
+      "domain": "au.linkedin.com",
+      "url": "https://au.linkedin.com/in/stephenmok?trk=article-ssr-frontend-pulse_little-mention",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T22:42:35Z",
+      "last_seen": "2026-10-24T23:26:00Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 109,
+      "domain": "www.scielo.org",
+      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter\u0026lang=en",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T00:30:04Z",
+      "last_seen": "2026-10-24T00:30:04Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 354,
+      "domain": "post.borger.dk",
+      "url": "https://post.borger.dk",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://post.borger.dk: Get \"https://post.borger.dk\": dial tcp4 188.180.120.148:443: i/o timeout",
+      "first_seen": "2026-10-26T11:15:00Z",
+      "last_seen": "2026-10-26T11:56:48Z",
+      "attempts": 6,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 388,
+      "domain": "de.linkedin.com",
+      "url": "https://de.linkedin.com/company/universit-tsklinikum-hamburg-eppendorf?trk=public_jobs_topcard_org_name",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T18:05:37Z",
+      "last_seen": "2026-10-26T18:06:25Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 347,
+      "domain": "www.capterra.com.de",
+      "url": "https://www.capterra.com.de/reviews/218617/eventfrog",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T06:39:49Z",
+      "last_seen": "2026-10-26T06:56:37Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
