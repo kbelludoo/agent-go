@@ -1,7 +1,40 @@
 {
-  "last_updated": "2026-10-27T07:13:38Z",
+  "last_updated": "2026-10-27T07:14:39Z",
   "total_quarantine": 515,
   "quarantine_sites": [
+    {
+      "id": 270,
+      "domain": "www.bloomberg.com",
+      "url": "https://www.bloomberg.com/professional/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T18:15:01Z",
+      "last_seen": "2026-10-25T18:15:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 352,
+      "domain": "stm.dk",
+      "url": "http://stm.dk/publikationer/GL_Lovregister_12/index.htm",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T10:09:14Z",
+      "last_seen": "2026-10-26T10:43:26Z",
+      "attempts": 8,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 366,
+      "domain": "dk.linkedin.com",
+      "url": "https://dk.linkedin.com/in/christian-gausbo?trk=org-employees",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T13:29:49Z",
+      "last_seen": "2026-10-26T14:09:02Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 158,
       "domain": "sdgs.un.org",
@@ -5633,39 +5666,6 @@
       "last_seen": "2026-10-24T00:55:58Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 270,
-      "domain": "www.bloomberg.com",
-      "url": "https://www.bloomberg.com/professional/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T18:15:01Z",
-      "last_seen": "2026-10-25T18:15:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 352,
-      "domain": "stm.dk",
-      "url": "http://stm.dk/publikationer/GL_Lovregister_12/index.htm",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T10:09:14Z",
-      "last_seen": "2026-10-26T10:43:26Z",
-      "attempts": 8,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 366,
-      "domain": "dk.linkedin.com",
-      "url": "https://dk.linkedin.com/in/christian-gausbo?trk=org-employees",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T13:29:49Z",
-      "last_seen": "2026-10-26T14:09:02Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
