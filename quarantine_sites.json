@@ -1,29 +1,7 @@
 {
-  "last_updated": "2026-10-27T23:38:25Z",
+  "last_updated": "2026-10-27T23:39:15Z",
   "total_quarantine": 579,
   "quarantine_sites": [
-    {
-      "id": 38,
-      "domain": "www.sciencedirect.com",
-      "url": "https://www.sciencedirect.com/user/institution/login?targetURL=%2F",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:31:46Z",
-      "last_seen": "2026-10-23T14:31:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 262,
-      "domain": "gitlab.alpinelinux.org",
-      "url": "https://gitlab.alpinelinux.org/alpine/aports/-/issues",
-      "status_code": 418,
-      "error_message": "HTTP 418",
-      "first_seen": "2026-10-25T17:12:37Z",
-      "last_seen": "2026-10-25T17:12:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 418 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 515,
       "domain": "www.namepros.com",
@@ -6370,6 +6348,28 @@
       "last_seen": "2026-10-26T19:56:13Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 38,
+      "domain": "www.sciencedirect.com",
+      "url": "https://www.sciencedirect.com/user/institution/login?targetURL=%2F",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:31:46Z",
+      "last_seen": "2026-10-23T14:31:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 262,
+      "domain": "gitlab.alpinelinux.org",
+      "url": "https://gitlab.alpinelinux.org/alpine/aports/-/issues",
+      "status_code": 418,
+      "error_message": "HTTP 418",
+      "first_seen": "2026-10-25T17:12:37Z",
+      "last_seen": "2026-10-25T17:12:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 418 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
