@@ -1,7 +1,29 @@
 {
-  "last_updated": "2026-10-28T07:30:28Z",
+  "last_updated": "2026-10-28T07:31:26Z",
   "total_quarantine": 590,
   "quarantine_sites": [
+    {
+      "id": 312,
+      "domain": "nemhandel.dk",
+      "url": "https://nemhandel.dk/nemhandel-support-og-hjaelp",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T01:35:39Z",
+      "last_seen": "2026-10-26T01:36:38Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 531,
+      "domain": "wiki.endsoftwarepatents.org",
+      "url": "https://wiki.endsoftwarepatents.org/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://wiki.endsoftwarepatents.org/: Get \"https://wiki.endsoftwarepatents.org/wiki/\": dial tcp4: lookup wiki.endsoftwarepatents.org: i/o timeout",
+      "first_seen": "2026-10-27T09:56:36Z",
+      "last_seen": "2026-10-27T09:56:36Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
     {
       "id": 397,
       "domain": "www.linkedin.com",
@@ -3683,8 +3705,8 @@
       "status_code": 404,
       "error_message": "HTTP 404",
       "first_seen": "2026-10-25T15:38:13Z",
-      "last_seen": "2026-10-28T05:54:01Z",
-      "attempts": 13,
+      "last_seen": "2026-10-28T07:31:25Z",
+      "attempts": 14,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
@@ -6467,28 +6489,6 @@
       "error_message": "failed to fetch URL https://www.gnu.org/licenses/licenses.html#GPL: Get \"https://www.gnu.org/licenses/licenses.html#GPL\": dial tcp4: lookup www.gnu.org: i/o timeout",
       "first_seen": "2026-10-26T01:25:00Z",
       "last_seen": "2026-10-26T01:25:00Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 312,
-      "domain": "nemhandel.dk",
-      "url": "https://nemhandel.dk/nemhandel-support-og-hjaelp",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T01:35:39Z",
-      "last_seen": "2026-10-26T01:36:38Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 531,
-      "domain": "wiki.endsoftwarepatents.org",
-      "url": "https://wiki.endsoftwarepatents.org/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://wiki.endsoftwarepatents.org/: Get \"https://wiki.endsoftwarepatents.org/wiki/\": dial tcp4: lookup wiki.endsoftwarepatents.org: i/o timeout",
-      "first_seen": "2026-10-27T09:56:36Z",
-      "last_seen": "2026-10-27T09:56:36Z",
       "attempts": 1,
       "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     }
