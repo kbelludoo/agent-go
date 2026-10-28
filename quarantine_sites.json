@@ -1,73 +1,7 @@
 {
-  "last_updated": "2026-10-28T10:16:03Z",
+  "last_updated": "2026-10-28T10:16:53Z",
   "total_quarantine": 590,
   "quarantine_sites": [
-    {
-      "id": 533,
-      "domain": "en.swpat.org",
-      "url": "https://en.swpat.org/wiki?title=Special:CategoryTree\u0026target=Top_level_category",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://en.swpat.org/wiki?title=Special:CategoryTree\u0026target=Top_level_category: Get \"https://en.swpat.org/wiki?title=Special:CategoryTree\u0026target=Top_level_category\": dial tcp4 209.51.188.177:443: i/o timeout",
-      "first_seen": "2026-10-27T09:59:36Z",
-      "last_seen": "2026-10-27T09:59:36Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 138,
-      "domain": "web.dio.me",
-      "url": "https://web.dio.me/track/ibm-bob-ia-nivel-empresarial-para-desenvolvedores",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T18:34:35Z",
-      "last_seen": "2026-10-24T18:34:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 458,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=4991853f-1850-431b-8bf1-8f2a0e3a6a39",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:43:13Z",
-      "last_seen": "2026-10-26T20:43:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 506,
-      "domain": "brat-generator.pro",
-      "url": "https://brat-generator.pro/greeting/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-27T06:03:25Z",
-      "last_seen": "2026-10-27T06:07:49Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 527,
-      "domain": "opensource.org",
-      "url": "https://opensource.org/licenses/BSD-3-Clause",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T09:50:13Z",
-      "last_seen": "2026-10-27T09:50:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 528,
-      "domain": "sourceforge.net",
-      "url": "https://sourceforge.net/projects/magicsplat/files/magicsplat-tcl/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T09:50:49Z",
-      "last_seen": "2026-10-27T09:50:49Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 127,
       "domain": "twitter.com",
@@ -6491,6 +6425,72 @@
       "last_seen": "2026-10-25T15:21:00Z",
       "attempts": 1,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL http://localhost:9090: Get \"http://localhost:9090\": dial tcp4 127.0.0.1:9090: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 533,
+      "domain": "en.swpat.org",
+      "url": "https://en.swpat.org/wiki?title=Special:CategoryTree\u0026target=Top_level_category",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://en.swpat.org/wiki?title=Special:CategoryTree\u0026target=Top_level_category: Get \"https://en.swpat.org/wiki?title=Special:CategoryTree\u0026target=Top_level_category\": dial tcp4 209.51.188.177:443: i/o timeout",
+      "first_seen": "2026-10-27T09:59:36Z",
+      "last_seen": "2026-10-27T09:59:36Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 138,
+      "domain": "web.dio.me",
+      "url": "https://web.dio.me/track/ibm-bob-ia-nivel-empresarial-para-desenvolvedores",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T18:34:35Z",
+      "last_seen": "2026-10-24T18:34:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 458,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=4991853f-1850-431b-8bf1-8f2a0e3a6a39",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:43:13Z",
+      "last_seen": "2026-10-26T20:43:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 506,
+      "domain": "brat-generator.pro",
+      "url": "https://brat-generator.pro/greeting/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-27T06:03:25Z",
+      "last_seen": "2026-10-27T06:07:49Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 527,
+      "domain": "opensource.org",
+      "url": "https://opensource.org/licenses/BSD-3-Clause",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T09:50:13Z",
+      "last_seen": "2026-10-27T09:50:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 528,
+      "domain": "sourceforge.net",
+      "url": "https://sourceforge.net/projects/magicsplat/files/magicsplat-tcl/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T09:50:49Z",
+      "last_seen": "2026-10-27T09:50:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
