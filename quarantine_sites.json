@@ -1,7 +1,40 @@
 {
-  "last_updated": "2026-10-28T11:51:14Z",
+  "last_updated": "2026-10-28T11:52:25Z",
   "total_quarantine": 597,
   "quarantine_sites": [
+    {
+      "id": 136,
+      "domain": "uk.trustpilot.com",
+      "url": "https://uk.trustpilot.com/review/link.springer.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T18:24:47Z",
+      "last_seen": "2026-10-24T18:37:59Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 36,
+      "domain": "symposium.opentechresearch.org",
+      "url": "https://symposium.opentechresearch.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T14:17:10Z",
+      "last_seen": "2026-10-23T14:17:10Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 222,
+      "domain": "register.paloaltonetworks.com",
+      "url": "https://register.paloaltonetworks.com/frontier-ai-defense",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T13:30:49Z",
+      "last_seen": "2026-10-25T13:30:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 224,
       "domain": "sso.paloaltonetworks.com",
@@ -5542,8 +5575,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-23T12:59:58Z",
-      "last_seen": "2026-10-28T10:02:13Z",
-      "attempts": 19,
+      "last_seen": "2026-10-28T11:52:25Z",
+      "attempts": 20,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -6533,39 +6566,6 @@
       "error_message": "HTTP 403",
       "first_seen": "2026-10-25T14:12:25Z",
       "last_seen": "2026-10-25T14:12:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 136,
-      "domain": "uk.trustpilot.com",
-      "url": "https://uk.trustpilot.com/review/link.springer.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T18:24:47Z",
-      "last_seen": "2026-10-24T18:37:59Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 36,
-      "domain": "symposium.opentechresearch.org",
-      "url": "https://symposium.opentechresearch.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T14:17:10Z",
-      "last_seen": "2026-10-23T14:17:10Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 222,
-      "domain": "register.paloaltonetworks.com",
-      "url": "https://register.paloaltonetworks.com/frontier-ai-defense",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T13:30:49Z",
-      "last_seen": "2026-10-25T13:30:49Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
