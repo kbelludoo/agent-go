@@ -1,106 +1,7 @@
 {
-  "last_updated": "2026-10-28T13:37:54Z",
+  "last_updated": "2026-10-28T13:38:57Z",
   "total_quarantine": 605,
   "quarantine_sites": [
-    {
-      "id": 497,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/flaq-ai/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-27T05:25:01Z",
-      "last_seen": "2026-10-27T05:26:15Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 573,
-      "domain": "services.etatcivil.gouv.qc.ca",
-      "url": "https://services.etatcivil.gouv.qc.ca/declic2/index.aspx",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://services.etatcivil.gouv.qc.ca/declic2/index.aspx: Get \"https://services.etatcivil.gouv.qc.ca/declic2/index.aspx\": dial tcp4 142.213.14.10:443: i/o timeout",
-      "first_seen": "2026-10-27T22:50:24Z",
-      "last_seen": "2026-10-27T23:05:12Z",
-      "attempts": 6,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 214,
-      "domain": "stackoverflow.com",
-      "url": "https://stackoverflow.com/questions/48173979/why-is-webassembly-function-almost-300-time-slower-than-same-js-function",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T13:06:00Z",
-      "last_seen": "2026-10-25T13:06:00Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 108,
-      "domain": "www.scielo.org",
-      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForAlphabeticList\u0026xsl=secondLevelForAlphabeticList\u0026lang=en",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T00:29:52Z",
-      "last_seen": "2026-10-25T00:19:56Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 218,
-      "domain": "unsplash.com",
-      "url": "https://unsplash.com/about",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T13:15:13Z",
-      "last_seen": "2026-10-25T13:16:13Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 252,
-      "domain": "opensource.org",
-      "url": "https://opensource.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T15:58:01Z",
-      "last_seen": "2026-10-28T11:53:37Z",
-      "attempts": 17,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 346,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/205tf",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T05:30:25Z",
-      "last_seen": "2026-10-26T05:51:13Z",
-      "attempts": 15,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 362,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/oekonomistyrelsen/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T13:06:37Z",
-      "last_seen": "2026-10-26T13:06:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 358,
-      "domain": "pav.perst.dk",
-      "url": "http://pav.perst.dk/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://pav.perst.dk/: Get \"http://pav.perst.dk/\": dial tcp4: lookup pav.perst.dk on 127.0.0.53:53: server misbehaving",
-      "first_seen": "2026-10-26T12:00:41Z",
-      "last_seen": "2026-10-26T13:07:50Z",
-      "attempts": 54,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://pav.perst.dk/: Get \"http://pav.perst.dk/\": dial tcp4: lookup pav.perst.dk on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
-    },
     {
       "id": 377,
       "domain": "www.gov.br",
@@ -6656,6 +6557,105 @@
       "last_seen": "2026-10-26T23:07:00Z",
       "attempts": 2,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL https://tinyurl.com/4k9brwnn: Get \"mailto:entrepreneurship@euspa.europa.eu?subject=Send%20me%20opportunities\u0026body=Hi%2C%20I%E2%80%99m%20interested%20in%20receiving%20opportunities%20from%20EUSPA.%20%0D%0A%0D%0ABy%20sending%20this%20e-mail%2C%20I%20consent%20to%20the%20processing%20of%20my%20personal%20data%20in%20order%20to%20be%20informed%20of%20currently%20open%20opportunities%20that%20support%20companies%20working%20with%20EU%20space%20data.%20Occasionally%2C%20I%20might%20receive%20a%20satisfaction%20survey%20in%20order%20to%20obtain%20feedback%20on%20the%20newsletter.%20%0D%0A%0D%0AFurther%20information%20on%20the%20processing%20of%20personal%20data%20are%20provided%20in%20the%20enclosed%20Privacy%20Statement%20-%20https%3A%2F%2Fwww.euspa.europa.eu%2Fsites%2Fdefault%2Ffiles%2Fprivacy_statement_euspa_entrepreneurship_opportunities.pdf%0D%0A\": dial tcp4 :443: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 497,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/flaq-ai/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-27T05:25:01Z",
+      "last_seen": "2026-10-27T05:26:15Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 573,
+      "domain": "services.etatcivil.gouv.qc.ca",
+      "url": "https://services.etatcivil.gouv.qc.ca/declic2/index.aspx",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://services.etatcivil.gouv.qc.ca/declic2/index.aspx: Get \"https://services.etatcivil.gouv.qc.ca/declic2/index.aspx\": dial tcp4 142.213.14.10:443: i/o timeout",
+      "first_seen": "2026-10-27T22:50:24Z",
+      "last_seen": "2026-10-27T23:05:12Z",
+      "attempts": 6,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 214,
+      "domain": "stackoverflow.com",
+      "url": "https://stackoverflow.com/questions/48173979/why-is-webassembly-function-almost-300-time-slower-than-same-js-function",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T13:06:00Z",
+      "last_seen": "2026-10-25T13:06:00Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 108,
+      "domain": "www.scielo.org",
+      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForAlphabeticList\u0026xsl=secondLevelForAlphabeticList\u0026lang=en",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T00:29:52Z",
+      "last_seen": "2026-10-25T00:19:56Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 218,
+      "domain": "unsplash.com",
+      "url": "https://unsplash.com/about",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T13:15:13Z",
+      "last_seen": "2026-10-25T13:16:13Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 252,
+      "domain": "opensource.org",
+      "url": "https://opensource.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T15:58:01Z",
+      "last_seen": "2026-10-28T11:53:37Z",
+      "attempts": 17,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 346,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/205tf",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T05:30:25Z",
+      "last_seen": "2026-10-26T05:51:13Z",
+      "attempts": 15,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 362,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/oekonomistyrelsen/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T13:06:37Z",
+      "last_seen": "2026-10-26T13:06:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 358,
+      "domain": "pav.perst.dk",
+      "url": "http://pav.perst.dk/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://pav.perst.dk/: Get \"http://pav.perst.dk/\": dial tcp4: lookup pav.perst.dk on 127.0.0.53:53: server misbehaving",
+      "first_seen": "2026-10-26T12:00:41Z",
+      "last_seen": "2026-10-26T13:07:50Z",
+      "attempts": 54,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://pav.perst.dk/: Get \"http://pav.perst.dk/\": dial tcp4: lookup pav.perst.dk on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
