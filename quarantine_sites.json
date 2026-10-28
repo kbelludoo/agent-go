@@ -1,7 +1,40 @@
 {
-  "last_updated": "2026-10-28T14:48:03Z",
+  "last_updated": "2026-10-28T14:49:03Z",
   "total_quarantine": 607,
   "quarantine_sites": [
+    {
+      "id": 388,
+      "domain": "de.linkedin.com",
+      "url": "https://de.linkedin.com/company/universit-tsklinikum-hamburg-eppendorf?trk=public_jobs_topcard_org_name",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T18:05:37Z",
+      "last_seen": "2026-10-26T18:06:25Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 347,
+      "domain": "www.capterra.com.de",
+      "url": "https://www.capterra.com.de/reviews/218617/eventfrog",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T06:39:49Z",
+      "last_seen": "2026-10-26T06:56:37Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 555,
+      "domain": "act.aclu.org",
+      "url": "https://act.aclu.org/a/join-aclu-people-power",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T17:28:25Z",
+      "last_seen": "2026-10-27T17:28:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 544,
       "domain": "x.com",
@@ -3056,8 +3089,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-28T14:30:02Z",
-      "last_seen": "2026-10-28T14:30:02Z",
-      "attempts": 1,
+      "last_seen": "2026-10-28T14:48:53Z",
+      "attempts": 2,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -6645,39 +6678,6 @@
       "last_seen": "2026-10-26T11:56:48Z",
       "attempts": 6,
       "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 388,
-      "domain": "de.linkedin.com",
-      "url": "https://de.linkedin.com/company/universit-tsklinikum-hamburg-eppendorf?trk=public_jobs_topcard_org_name",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T18:05:37Z",
-      "last_seen": "2026-10-26T18:06:25Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 347,
-      "domain": "www.capterra.com.de",
-      "url": "https://www.capterra.com.de/reviews/218617/eventfrog",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T06:39:49Z",
-      "last_seen": "2026-10-26T06:56:37Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 555,
-      "domain": "act.aclu.org",
-      "url": "https://act.aclu.org/a/join-aclu-people-power",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T17:28:25Z",
-      "last_seen": "2026-10-27T17:28:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
