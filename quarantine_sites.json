@@ -1,161 +1,7 @@
 {
-  "last_updated": "2026-10-28T02:59:13Z",
+  "last_updated": "2026-10-28T03:00:15Z",
   "total_quarantine": 584,
   "quarantine_sites": [
-    {
-      "id": 302,
-      "domain": "www.ftc.gov",
-      "url": "http://www.ftc.gov/foia/sysnot/vi-1.pdf",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T00:37:25Z",
-      "last_seen": "2026-10-26T00:39:37Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 336,
-      "domain": "www.din.de",
-      "url": "http://www.din.de/gremien/nas/nabd/iso3166ma/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T03:32:15Z",
-      "last_seen": "2026-10-26T03:49:38Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 415,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=374d5b8f-604d-4cfd-9b8d-cef7055c8c54",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:14:01Z",
-      "last_seen": "2026-10-26T19:14:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 482,
-      "domain": "eisoukr.guaranteefund.org",
-      "url": "http://eisoukr.guaranteefund.org/searchpolicy?pc=null\u0026l=en",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://eisoukr.guaranteefund.org/searchpolicy?pc=null\u0026l=en: Get \"http://eisoukr.guaranteefund.org/searchpolicy?pc=null\u0026l=en\": dial tcp4 212.5.131.78:80: i/o timeout",
-      "first_seen": "2026-10-27T00:29:36Z",
-      "last_seen": "2026-10-27T00:35:36Z",
-      "attempts": 6,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 551,
-      "domain": "www.ucdavis.edu",
-      "url": "https://www.ucdavis.edu/curiosity/news/researchers-unearth-fossil-evidence-first-fully-marine-amphibian",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T16:10:25Z",
-      "last_seen": "2026-10-27T16:10:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 564,
-      "domain": "www.gov.bc.ca",
-      "url": "http://www.gov.bc.ca/com/help.html",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-27T18:22:47Z",
-      "last_seen": "2026-10-27T18:31:02Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 130,
-      "domain": "www.timeanddate.com",
-      "url": "https://www.timeanddate.com/worldclock/fixedtime.html?msg=NN%2FG+Live+Online+Training+26-29+October+2026\u0026iso=20261029T06\u0026p1=224\u0026ah=3\u0026am=30",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T15:49:59Z",
-      "last_seen": "2026-10-24T16:07:47Z",
-      "attempts": 8,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 195,
-      "domain": "devops.com",
-      "url": "https://devops.com/continuous-security-in-devsecops-moving-beyond-one-time-testing/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T09:57:37Z",
-      "last_seen": "2026-10-25T09:57:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 259,
-      "domain": "biblioteca.ibge.gov.br",
-      "url": "http://biblioteca.ibge.gov.br/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T17:01:24Z",
-      "last_seen": "2026-10-25T17:01:24Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 331,
-      "domain": "validator.w3.org",
-      "url": "http://validator.w3.org/check?uri=referer",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T03:10:13Z",
-      "last_seen": "2026-10-26T04:05:37Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 387,
-      "domain": "www.facebook.com",
-      "url": "https://www.facebook.com/sharer.php?u=ZZZZZ_JS_LINK_TO_SHARE_ZZZZZ",
-      "status_code": 500,
-      "error_message": "HTTP 500",
-      "first_seen": "2026-10-26T17:46:37Z",
-      "last_seen": "2026-10-26T17:50:37Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 273,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/harrymoseley/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-25T18:30:13Z",
-      "last_seen": "2026-10-25T18:32:37Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 454,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=8672e53b-8d2a-4959-8b49-37f8f963c3fd",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:39:13Z",
-      "last_seen": "2026-10-26T20:39:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 551,
-      "domain": "fr.linkedin.com",
-      "url": "https://fr.linkedin.com/company/cnil---commission-nationale-de-l%27informatique-et-des-libert-s",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-27T13:28:49Z",
-      "last_seen": "2026-10-27T13:30:25Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 9,
       "domain": "pt.wikipedia.org",
@@ -6425,6 +6271,160 @@
       "last_seen": "2026-10-26T20:50:13Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 302,
+      "domain": "www.ftc.gov",
+      "url": "http://www.ftc.gov/foia/sysnot/vi-1.pdf",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T00:37:25Z",
+      "last_seen": "2026-10-26T00:39:37Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 336,
+      "domain": "www.din.de",
+      "url": "http://www.din.de/gremien/nas/nabd/iso3166ma/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T03:32:15Z",
+      "last_seen": "2026-10-26T03:49:38Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 415,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=374d5b8f-604d-4cfd-9b8d-cef7055c8c54",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:14:01Z",
+      "last_seen": "2026-10-26T19:14:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 482,
+      "domain": "eisoukr.guaranteefund.org",
+      "url": "http://eisoukr.guaranteefund.org/searchpolicy?pc=null\u0026l=en",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://eisoukr.guaranteefund.org/searchpolicy?pc=null\u0026l=en: Get \"http://eisoukr.guaranteefund.org/searchpolicy?pc=null\u0026l=en\": dial tcp4 212.5.131.78:80: i/o timeout",
+      "first_seen": "2026-10-27T00:29:36Z",
+      "last_seen": "2026-10-27T00:35:36Z",
+      "attempts": 6,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 551,
+      "domain": "www.ucdavis.edu",
+      "url": "https://www.ucdavis.edu/curiosity/news/researchers-unearth-fossil-evidence-first-fully-marine-amphibian",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T16:10:25Z",
+      "last_seen": "2026-10-27T16:10:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 564,
+      "domain": "www.gov.bc.ca",
+      "url": "http://www.gov.bc.ca/com/help.html",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-27T18:22:47Z",
+      "last_seen": "2026-10-27T18:31:02Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 130,
+      "domain": "www.timeanddate.com",
+      "url": "https://www.timeanddate.com/worldclock/fixedtime.html?msg=NN%2FG+Live+Online+Training+26-29+October+2026\u0026iso=20261029T06\u0026p1=224\u0026ah=3\u0026am=30",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T15:49:59Z",
+      "last_seen": "2026-10-24T16:07:47Z",
+      "attempts": 8,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 195,
+      "domain": "devops.com",
+      "url": "https://devops.com/continuous-security-in-devsecops-moving-beyond-one-time-testing/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T09:57:37Z",
+      "last_seen": "2026-10-25T09:57:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 259,
+      "domain": "biblioteca.ibge.gov.br",
+      "url": "http://biblioteca.ibge.gov.br/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T17:01:24Z",
+      "last_seen": "2026-10-25T17:01:24Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 331,
+      "domain": "validator.w3.org",
+      "url": "http://validator.w3.org/check?uri=referer",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T03:10:13Z",
+      "last_seen": "2026-10-26T04:05:37Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 387,
+      "domain": "www.facebook.com",
+      "url": "https://www.facebook.com/sharer.php?u=ZZZZZ_JS_LINK_TO_SHARE_ZZZZZ",
+      "status_code": 500,
+      "error_message": "HTTP 500",
+      "first_seen": "2026-10-26T17:46:37Z",
+      "last_seen": "2026-10-26T17:50:37Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 273,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/harrymoseley/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-25T18:30:13Z",
+      "last_seen": "2026-10-25T18:32:37Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 454,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=8672e53b-8d2a-4959-8b49-37f8f963c3fd",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:39:13Z",
+      "last_seen": "2026-10-26T20:39:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 551,
+      "domain": "fr.linkedin.com",
+      "url": "https://fr.linkedin.com/company/cnil---commission-nationale-de-l%27informatique-et-des-libert-s",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-27T13:28:49Z",
+      "last_seen": "2026-10-27T13:30:25Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
