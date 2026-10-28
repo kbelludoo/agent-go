@@ -1,7 +1,73 @@
 {
-  "last_updated": "2026-10-28T05:15:27Z",
+  "last_updated": "2026-10-28T05:16:26Z",
   "total_quarantine": 587,
   "quarantine_sites": [
+    {
+      "id": 383,
+      "domain": "semanact.mcti.gov.br",
+      "url": "https://semanact.mcti.gov.br/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T17:32:37Z",
+      "last_seen": "2026-10-26T17:38:37Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 424,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=944ff8a7-18a4-4a0f-93b6-231cf3c8bb8e",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:44:13Z",
+      "last_seen": "2026-10-26T19:44:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 495,
+      "domain": "www.producthunt.com",
+      "url": "https://www.producthunt.com/products/shipfast-2",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T05:17:49Z",
+      "last_seen": "2026-10-27T05:17:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 550,
+      "domain": "www.nytimes.com",
+      "url": "https://www.nytimes.com/2026/10/21/us/politics/php-vulnerability-ai-openai-cybersecurity.html?unlocked_article_code=1.KVE.ompY.9fTYV5OfCIS5\u0026smid=url-share",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T14:56:01Z",
+      "last_seen": "2026-10-27T14:56:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 562,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/TR/privacy-principles/#dfn-opt-out",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T18:11:37Z",
+      "last_seen": "2026-10-27T18:21:13Z",
+      "attempts": 12,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 110,
+      "domain": "blog.coursera.org",
+      "url": "https://blog.coursera.org/coursera-and-udemy-are-now-one-company-creating-the-worlds-most-comprehensive-skills-platform/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T23:24:21Z",
+      "last_seen": "2026-10-23T23:25:09Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 117,
       "domain": "cybersecuritynews.com",
@@ -6392,72 +6458,6 @@
       "last_seen": "2026-10-27T16:55:39Z",
       "attempts": 12,
       "diagnosis": "HTTP 502 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 383,
-      "domain": "semanact.mcti.gov.br",
-      "url": "https://semanact.mcti.gov.br/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T17:32:37Z",
-      "last_seen": "2026-10-26T17:38:37Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 424,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=944ff8a7-18a4-4a0f-93b6-231cf3c8bb8e",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:44:13Z",
-      "last_seen": "2026-10-26T19:44:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 495,
-      "domain": "www.producthunt.com",
-      "url": "https://www.producthunt.com/products/shipfast-2",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T05:17:49Z",
-      "last_seen": "2026-10-27T05:17:49Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 550,
-      "domain": "www.nytimes.com",
-      "url": "https://www.nytimes.com/2026/10/21/us/politics/php-vulnerability-ai-openai-cybersecurity.html?unlocked_article_code=1.KVE.ompY.9fTYV5OfCIS5\u0026smid=url-share",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T14:56:01Z",
-      "last_seen": "2026-10-27T14:56:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 562,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/TR/privacy-principles/#dfn-opt-out",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T18:11:37Z",
-      "last_seen": "2026-10-27T18:21:13Z",
-      "attempts": 12,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 110,
-      "domain": "blog.coursera.org",
-      "url": "https://blog.coursera.org/coursera-and-udemy-are-now-one-company-creating-the-worlds-most-comprehensive-skills-platform/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T23:24:21Z",
-      "last_seen": "2026-10-23T23:25:09Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
