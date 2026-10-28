@@ -1,51 +1,7 @@
 {
-  "last_updated": "2026-10-28T15:26:40Z",
+  "last_updated": "2026-10-28T15:27:39Z",
   "total_quarantine": 608,
   "quarantine_sites": [
-    {
-      "id": 305,
-      "domain": "www.facebook.com",
-      "url": "https://www.facebook.com/sharer.php?u=%2fnyheder",
-      "status_code": 500,
-      "error_message": "HTTP 500",
-      "first_seen": "2026-10-26T00:56:49Z",
-      "last_seen": "2026-10-26T00:56:49Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 367,
-      "domain": "dk.linkedin.com",
-      "url": "https://dk.linkedin.com/company/oekonomistyrelsen?trk=organization_guest_main-feed-card_feed-actor-name",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T14:09:25Z",
-      "last_seen": "2026-10-26T14:09:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 379,
-      "domain": "secure.hulu.com",
-      "url": "https://secure.hulu.com/account",
-      "status_code": 406,
-      "error_message": "HTTP 406",
-      "first_seen": "2026-10-26T17:18:25Z",
-      "last_seen": "2026-10-26T17:18:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 406 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 457,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=a4f34623-63cf-4716-b3ca-95fb1b1e7d83",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:42:13Z",
-      "last_seen": "2026-10-26T20:42:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 275,
       "domain": "www.cidadao.sp.gov.br",
@@ -6689,6 +6645,50 @@
       "last_seen": "2026-10-27T10:14:13Z",
       "attempts": 2,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL http://mhonarc.ipmedia.de/: Get \"http://mhonarc.ipmedia.de/\": dial tcp4: lookup mhonarc.ipmedia.de on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 305,
+      "domain": "www.facebook.com",
+      "url": "https://www.facebook.com/sharer.php?u=%2fnyheder",
+      "status_code": 500,
+      "error_message": "HTTP 500",
+      "first_seen": "2026-10-26T00:56:49Z",
+      "last_seen": "2026-10-26T00:56:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 367,
+      "domain": "dk.linkedin.com",
+      "url": "https://dk.linkedin.com/company/oekonomistyrelsen?trk=organization_guest_main-feed-card_feed-actor-name",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T14:09:25Z",
+      "last_seen": "2026-10-26T14:09:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 379,
+      "domain": "secure.hulu.com",
+      "url": "https://secure.hulu.com/account",
+      "status_code": 406,
+      "error_message": "HTTP 406",
+      "first_seen": "2026-10-26T17:18:25Z",
+      "last_seen": "2026-10-26T17:18:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 406 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 457,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=a4f34623-63cf-4716-b3ca-95fb1b1e7d83",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:42:13Z",
+      "last_seen": "2026-10-26T20:42:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
