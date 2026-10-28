@@ -1,7 +1,73 @@
 {
-  "last_updated": "2026-10-28T18:33:28Z",
+  "last_updated": "2026-10-28T18:34:27Z",
   "total_quarantine": 614,
   "quarantine_sites": [
+    {
+      "id": 461,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=ac595941-afc4-4653-a828-7f5dd4f95ef6",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:46:13Z",
+      "last_seen": "2026-10-26T20:46:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 484,
+      "domain": "www.nytimes.com",
+      "url": "https://www.nytimes.com/2026/10/25/style/marissa-mayer-ai-assistants-women.html?unlocked_article_code=1.L1E.xBwx.X_EjBGNsRNqr",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T01:59:37Z",
+      "last_seen": "2026-10-27T01:59:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 505,
+      "domain": "www.brat-genreator.pro",
+      "url": "http://www.brat-genreator.pro",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.brat-genreator.pro: Get \"http://www.brat-genreator.pro\": dial tcp4: lookup www.brat-genreator.pro on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-27T06:03:00Z",
+      "last_seen": "2026-10-27T06:07:24Z",
+      "attempts": 3,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.brat-genreator.pro: Get \"http://www.brat-genreator.pro\": dial tcp4: lookup www.brat-genreator.pro on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 159,
+      "domain": "cookiedatabase.org",
+      "url": "https://cookiedatabase.org/tcf/purposes/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T21:24:35Z",
+      "last_seen": "2026-10-24T21:38:59Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 303,
+      "domain": "www.ftc.gov",
+      "url": "http://www.ftc.gov/foia/sysnot/appendix1.pdf",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T00:37:37Z",
+      "last_seen": "2026-10-26T00:39:49Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 443,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=e99e51a3-a479-48cb-83d7-68d1db921136",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:28:13Z",
+      "last_seen": "2026-10-26T20:28:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 509,
       "domain": "x.com",
@@ -6689,72 +6755,6 @@
       "last_seen": "2026-10-26T17:20:49Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 461,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=ac595941-afc4-4653-a828-7f5dd4f95ef6",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:46:13Z",
-      "last_seen": "2026-10-26T20:46:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 484,
-      "domain": "www.nytimes.com",
-      "url": "https://www.nytimes.com/2026/10/25/style/marissa-mayer-ai-assistants-women.html?unlocked_article_code=1.L1E.xBwx.X_EjBGNsRNqr",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T01:59:37Z",
-      "last_seen": "2026-10-27T01:59:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 505,
-      "domain": "www.brat-genreator.pro",
-      "url": "http://www.brat-genreator.pro",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.brat-genreator.pro: Get \"http://www.brat-genreator.pro\": dial tcp4: lookup www.brat-genreator.pro on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-27T06:03:00Z",
-      "last_seen": "2026-10-27T06:07:24Z",
-      "attempts": 3,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.brat-genreator.pro: Get \"http://www.brat-genreator.pro\": dial tcp4: lookup www.brat-genreator.pro on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 159,
-      "domain": "cookiedatabase.org",
-      "url": "https://cookiedatabase.org/tcf/purposes/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T21:24:35Z",
-      "last_seen": "2026-10-24T21:38:59Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 303,
-      "domain": "www.ftc.gov",
-      "url": "http://www.ftc.gov/foia/sysnot/appendix1.pdf",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T00:37:37Z",
-      "last_seen": "2026-10-26T00:39:49Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 443,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=e99e51a3-a479-48cb-83d7-68d1db921136",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:28:13Z",
-      "last_seen": "2026-10-26T20:28:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
