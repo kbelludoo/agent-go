@@ -1,7 +1,106 @@
 {
-  "last_updated": "2026-10-28T02:34:03Z",
+  "last_updated": "2026-10-28T02:35:03Z",
   "total_quarantine": 583,
   "quarantine_sites": [
+    {
+      "id": 112,
+      "domain": "www.scielo.org",
+      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForAlphabeticList\u0026xsl=secondLevelForAlphabeticList",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T00:41:53Z",
+      "last_seen": "2026-10-25T00:20:18Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 102,
+      "domain": "shop.fsf.org",
+      "url": "http://shop.fsf.org/",
+      "status_code": 503,
+      "error_message": "HTTP 503",
+      "first_seen": "2026-10-23T19:57:58Z",
+      "last_seen": "2026-10-25T00:20:39Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 163,
+      "domain": "de.linkedin.com",
+      "url": "https://de.linkedin.com/company/springernature?trk=nav_type_overview",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T21:31:11Z",
+      "last_seen": "2026-10-25T00:20:49Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 216,
+      "domain": "unsplash.com",
+      "url": "https://unsplash.com?utm_source=medium\u0026utm_medium=referral",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T13:09:13Z",
+      "last_seen": "2026-10-25T13:09:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 345,
+      "domain": "twitter.com",
+      "url": "https://twitter.com/intent/tweet?url=https://www.filecloud.com/blog/tech-tip-how-to-do-hard-refresh-in-browsers/\u0026text=Need to Clear Your Cache? Here’s How\u0026via=",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-26T05:28:13Z",
+      "last_seen": "2026-10-26T05:28:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 550,
+      "domain": "twitter.com",
+      "url": "http://twitter.com/cnil",
+      "status_code": 520,
+      "error_message": "HTTP 520",
+      "first_seen": "2026-10-27T13:25:25Z",
+      "last_seen": "2026-10-27T13:30:13Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 520 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 569,
+      "domain": "www150.statcan.gc.ca",
+      "url": "https://www150.statcan.gc.ca/n1/en/type/data?MM=1",
+      "status_code": 504,
+      "error_message": "context cancelled or timed out while reading response from https://www150.statcan.gc.ca/n1/en/type/data?MM=1: context deadline exceeded",
+      "first_seen": "2026-10-27T21:39:02Z",
+      "last_seen": "2026-10-27T21:39:37Z",
+      "attempts": 3,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 121,
+      "domain": "ldcnetwork.hsites.harvard.edu",
+      "url": "https://ldcnetwork.hsites.harvard.edu/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:57:24Z",
+      "last_seen": "2026-10-24T01:00:23Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 132,
+      "domain": "stratos.seas.harvard.edu",
+      "url": "https://stratos.seas.harvard.edu/files/stratos/files/rum.pdf",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T18:05:47Z",
+      "last_seen": "2026-10-25T00:21:37Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 250,
       "domain": "en.wikipedia.org",
@@ -6315,105 +6414,6 @@
       "last_seen": "2026-10-27T17:03:24Z",
       "attempts": 11,
       "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 112,
-      "domain": "www.scielo.org",
-      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForAlphabeticList\u0026xsl=secondLevelForAlphabeticList",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T00:41:53Z",
-      "last_seen": "2026-10-25T00:20:18Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 102,
-      "domain": "shop.fsf.org",
-      "url": "http://shop.fsf.org/",
-      "status_code": 503,
-      "error_message": "HTTP 503",
-      "first_seen": "2026-10-23T19:57:58Z",
-      "last_seen": "2026-10-25T00:20:39Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 163,
-      "domain": "de.linkedin.com",
-      "url": "https://de.linkedin.com/company/springernature?trk=nav_type_overview",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T21:31:11Z",
-      "last_seen": "2026-10-25T00:20:49Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 216,
-      "domain": "unsplash.com",
-      "url": "https://unsplash.com?utm_source=medium\u0026utm_medium=referral",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T13:09:13Z",
-      "last_seen": "2026-10-25T13:09:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 345,
-      "domain": "twitter.com",
-      "url": "https://twitter.com/intent/tweet?url=https://www.filecloud.com/blog/tech-tip-how-to-do-hard-refresh-in-browsers/\u0026text=Need to Clear Your Cache? Here’s How\u0026via=",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-26T05:28:13Z",
-      "last_seen": "2026-10-26T05:28:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 550,
-      "domain": "twitter.com",
-      "url": "http://twitter.com/cnil",
-      "status_code": 520,
-      "error_message": "HTTP 520",
-      "first_seen": "2026-10-27T13:25:25Z",
-      "last_seen": "2026-10-27T13:30:13Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 520 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 569,
-      "domain": "www150.statcan.gc.ca",
-      "url": "https://www150.statcan.gc.ca/n1/en/type/data?MM=1",
-      "status_code": 504,
-      "error_message": "context cancelled or timed out while reading response from https://www150.statcan.gc.ca/n1/en/type/data?MM=1: context deadline exceeded",
-      "first_seen": "2026-10-27T21:39:02Z",
-      "last_seen": "2026-10-27T21:39:37Z",
-      "attempts": 3,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 121,
-      "domain": "ldcnetwork.hsites.harvard.edu",
-      "url": "https://ldcnetwork.hsites.harvard.edu/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:57:24Z",
-      "last_seen": "2026-10-24T01:00:23Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 132,
-      "domain": "stratos.seas.harvard.edu",
-      "url": "https://stratos.seas.harvard.edu/files/stratos/files/rum.pdf",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T18:05:47Z",
-      "last_seen": "2026-10-25T00:21:37Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
