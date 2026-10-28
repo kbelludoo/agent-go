@@ -1,62 +1,7 @@
 {
-  "last_updated": "2026-10-28T08:31:27Z",
+  "last_updated": "2026-10-28T08:32:27Z",
   "total_quarantine": 590,
   "quarantine_sites": [
-    {
-      "id": 362,
-      "domain": "virksomhedsguiden.dk",
-      "url": "https://virksomhedsguiden.dk/content/ydelser/faa-overblik-over-virksomhedsformer/1669d3e5-d022-4c85-99b4-e4369c235593/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T12:03:13Z",
-      "last_seen": "2026-10-26T13:08:25Z",
-      "attempts": 12,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 535,
-      "domain": "web.dev",
-      "url": "https://web.dev/webassembly-video-editor/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-27T10:07:01Z",
-      "last_seen": "2026-10-27T10:08:50Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 558,
-      "domain": "www.axs.com",
-      "url": "https://www.axs.com/series/31523/t-mobile-arena-pbr-team-series-championship-tickets?skin=tmobile\u0026_gl=1*17q8ka4*_gcl_au*MjcwNTc5MDkzLjE3NjYzNzE5Nzg.*_ga*MjA1ODY5NzA4My4xNzU4NTc5ODk4*_ga_YWWHJK3LM5*czE3NzE2MDM2OTkkbzUzOCRnMSR0MTc3MTYwMzg2NSRqNTQkbDAkaDA.",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T17:41:52Z",
-      "last_seen": "2026-10-27T17:41:52Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 581,
-      "domain": "portal.first.org",
-      "url": "https://portal.first.org/fellowship",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-28T00:17:50Z",
-      "last_seen": "2026-10-28T01:23:49Z",
-      "attempts": 60,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 391,
-      "domain": "de.linkedin.com",
-      "url": "https://de.linkedin.com/in/peer-knoops-b4346b7b?trk=public_post_comment_actor-name",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T18:30:25Z",
-      "last_seen": "2026-10-26T18:46:25Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 99,
       "domain": "careers.washingtonpost.com",
@@ -6491,6 +6436,61 @@
       "last_seen": "2026-10-27T03:18:49Z",
       "attempts": 2,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 362,
+      "domain": "virksomhedsguiden.dk",
+      "url": "https://virksomhedsguiden.dk/content/ydelser/faa-overblik-over-virksomhedsformer/1669d3e5-d022-4c85-99b4-e4369c235593/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T12:03:13Z",
+      "last_seen": "2026-10-26T13:08:25Z",
+      "attempts": 12,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 535,
+      "domain": "web.dev",
+      "url": "https://web.dev/webassembly-video-editor/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-27T10:07:01Z",
+      "last_seen": "2026-10-27T10:08:50Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 558,
+      "domain": "www.axs.com",
+      "url": "https://www.axs.com/series/31523/t-mobile-arena-pbr-team-series-championship-tickets?skin=tmobile\u0026_gl=1*17q8ka4*_gcl_au*MjcwNTc5MDkzLjE3NjYzNzE5Nzg.*_ga*MjA1ODY5NzA4My4xNzU4NTc5ODk4*_ga_YWWHJK3LM5*czE3NzE2MDM2OTkkbzUzOCRnMSR0MTc3MTYwMzg2NSRqNTQkbDAkaDA.",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T17:41:52Z",
+      "last_seen": "2026-10-27T17:41:52Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 581,
+      "domain": "portal.first.org",
+      "url": "https://portal.first.org/fellowship",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-28T00:17:50Z",
+      "last_seen": "2026-10-28T01:23:49Z",
+      "attempts": 60,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 391,
+      "domain": "de.linkedin.com",
+      "url": "https://de.linkedin.com/in/peer-knoops-b4346b7b?trk=public_post_comment_actor-name",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T18:30:25Z",
+      "last_seen": "2026-10-26T18:46:25Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
