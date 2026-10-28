@@ -1,7 +1,29 @@
 {
-  "last_updated": "2026-10-28T21:40:14Z",
+  "last_updated": "2026-10-28T21:41:14Z",
   "total_quarantine": 625,
   "quarantine_sites": [
+    {
+      "id": 110,
+      "domain": "www.podiobooks.com",
+      "url": "http://www.podiobooks.com/podiobooks/book.php?ID=126",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T20:37:46Z",
+      "last_seen": "2026-10-23T20:37:46Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 235,
+      "domain": "localhost",
+      "url": "http://localhost:9090/query",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://localhost:9090/query: Get \"http://localhost:9090/query\": dial tcp4 127.0.0.1:9090: connect: connection refused",
+      "first_seen": "2026-10-25T15:21:24Z",
+      "last_seen": "2026-10-25T15:21:24Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://localhost:9090/query: Get \"http://localhost:9090/query\": dial tcp4 127.0.0.1:9090: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
+    },
     {
       "id": 296,
       "domain": "host",
@@ -6854,28 +6876,6 @@
       "last_seen": "2026-10-28T16:06:37Z",
       "attempts": 2,
       "diagnosis": "HTTP 520 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 110,
-      "domain": "www.podiobooks.com",
-      "url": "http://www.podiobooks.com/podiobooks/book.php?ID=126",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T20:37:46Z",
-      "last_seen": "2026-10-23T20:37:46Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 235,
-      "domain": "localhost",
-      "url": "http://localhost:9090/query",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://localhost:9090/query: Get \"http://localhost:9090/query\": dial tcp4 127.0.0.1:9090: connect: connection refused",
-      "first_seen": "2026-10-25T15:21:24Z",
-      "last_seen": "2026-10-25T15:21:24Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://localhost:9090/query: Get \"http://localhost:9090/query\": dial tcp4 127.0.0.1:9090: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
