@@ -1,62 +1,7 @@
 {
-  "last_updated": "2026-10-28T02:01:25Z",
+  "last_updated": "2026-10-28T02:02:28Z",
   "total_quarantine": 582,
   "quarantine_sites": [
-    {
-      "id": 110,
-      "domain": "blog.coursera.org",
-      "url": "https://blog.coursera.org/coursera-and-udemy-are-now-one-company-creating-the-worlds-most-comprehensive-skills-platform/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T23:24:21Z",
-      "last_seen": "2026-10-23T23:25:09Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 117,
-      "domain": "cybersecuritynews.com",
-      "url": "https://cybersecuritynews.com/popular-zero-day-vulnerabilities/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T22:38:28Z",
-      "last_seen": "2026-10-23T22:38:28Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 274,
-      "domain": "tetr8.io",
-      "url": "https://tetr8.io/tetrate-community",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T18:51:25Z",
-      "last_seen": "2026-10-25T18:51:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 278,
-      "domain": "documentation.ubuntu.com",
-      "url": "https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-a-pre-built-app/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-a-pre-built-app/: Get \"https://ubuntu.com/docs/snapcraft/stable/how-to/integrations/craft-a-pre-built-app/\": context deadline exceeded",
-      "first_seen": "2026-10-25T19:14:12Z",
-      "last_seen": "2026-10-25T19:14:12Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 334,
-      "domain": "docutils.sourceforge.net",
-      "url": "http://docutils.sourceforge.net/rst.html",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T03:29:25Z",
-      "last_seen": "2026-10-26T03:47:13Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 287,
       "domain": "br.indeed.com",
@@ -6402,6 +6347,61 @@
       "first_seen": "2026-10-27T18:11:37Z",
       "last_seen": "2026-10-27T18:21:13Z",
       "attempts": 12,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 110,
+      "domain": "blog.coursera.org",
+      "url": "https://blog.coursera.org/coursera-and-udemy-are-now-one-company-creating-the-worlds-most-comprehensive-skills-platform/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T23:24:21Z",
+      "last_seen": "2026-10-23T23:25:09Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 117,
+      "domain": "cybersecuritynews.com",
+      "url": "https://cybersecuritynews.com/popular-zero-day-vulnerabilities/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T22:38:28Z",
+      "last_seen": "2026-10-23T22:38:28Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 274,
+      "domain": "tetr8.io",
+      "url": "https://tetr8.io/tetrate-community",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T18:51:25Z",
+      "last_seen": "2026-10-25T18:51:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 278,
+      "domain": "documentation.ubuntu.com",
+      "url": "https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-a-pre-built-app/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-a-pre-built-app/: Get \"https://ubuntu.com/docs/snapcraft/stable/how-to/integrations/craft-a-pre-built-app/\": context deadline exceeded",
+      "first_seen": "2026-10-25T19:14:12Z",
+      "last_seen": "2026-10-25T19:14:12Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 334,
+      "domain": "docutils.sourceforge.net",
+      "url": "http://docutils.sourceforge.net/rst.html",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T03:29:25Z",
+      "last_seen": "2026-10-26T03:47:13Z",
+      "attempts": 6,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
