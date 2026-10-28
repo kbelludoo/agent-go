@@ -1,7 +1,117 @@
 {
-  "last_updated": "2026-10-28T11:22:51Z",
+  "last_updated": "2026-10-28T11:23:51Z",
   "total_quarantine": 597,
   "quarantine_sites": [
+    {
+      "id": 163,
+      "domain": "de.linkedin.com",
+      "url": "https://de.linkedin.com/company/springernature/life?trk=nav_type_life",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T21:52:35Z",
+      "last_seen": "2026-10-24T21:52:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 84,
+      "domain": "www.loc.gov",
+      "url": "https://www.loc.gov/collections/copyright-historical-record-books-1870-to-1977/about-this-collection/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T17:38:58Z",
+      "last_seen": "2026-10-23T17:38:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 90,
+      "domain": "www.nytimes.com",
+      "url": "https://www.nytimes.com/2010/09/29/technology/29aol.html",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T18:02:34Z",
+      "last_seen": "2026-10-24T00:10:54Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 568,
+      "domain": "www150.statcan.gc.ca",
+      "url": "https://www150.statcan.gc.ca/n1/fr/type/donnees?MM=1",
+      "status_code": 429,
+      "error_message": "HTTP 429",
+      "first_seen": "2026-10-27T21:37:12Z",
+      "last_seen": "2026-10-27T21:38:50Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
+    },
+    {
+      "id": 234,
+      "domain": "localhost",
+      "url": "http://localhost:9090/metrics",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused",
+      "first_seen": "2026-10-25T15:21:12Z",
+      "last_seen": "2026-10-25T15:21:12Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 320,
+      "domain": "fosstodon.org",
+      "url": "https://fosstodon.org/@plausible",
+      "status_code": 429,
+      "error_message": "HTTP 429",
+      "first_seen": "2026-10-26T02:21:26Z",
+      "last_seen": "2026-10-26T02:21:26Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
+    },
+    {
+      "id": 472,
+      "domain": "forum.inter.co",
+      "url": "https://forum.inter.co/cnnbrasil/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T22:13:13Z",
+      "last_seen": "2026-10-26T22:13:37Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 63,
+      "domain": "www.efc.ca",
+      "url": "http://www.efc.ca/pages/doc/crypto-export.html",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.efc.ca/pages/doc/crypto-export.html: Get \"http://www.efc.ca/pages/doc/crypto-export.html\": dial tcp4: lookup www.efc.ca on 127.0.0.53:53: server misbehaving",
+      "first_seen": "2026-10-23T15:54:48Z",
+      "last_seen": "2026-10-23T22:58:24Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.efc.ca/pages/doc/crypto-export.html: Get \"http://www.efc.ca/pages/doc/crypto-export.html\": dial tcp4: lookup www.efc.ca on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 95,
+      "domain": "docs.moodle.org",
+      "url": "https://docs.moodle.org",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T18:38:10Z",
+      "last_seen": "2026-10-23T20:17:58Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 107,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/pub/dir/+/+?trk=organization_guest_guest_nav_menu_people",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-23T23:09:33Z",
+      "last_seen": "2026-10-24T00:08:30Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 78,
       "domain": "app.beehiiv.com",
@@ -3859,8 +3969,8 @@
       "status_code": 405,
       "error_message": "HTTP 405",
       "first_seen": "2026-10-25T15:27:38Z",
-      "last_seen": "2026-10-28T09:33:02Z",
-      "attempts": 16,
+      "last_seen": "2026-10-28T11:23:14Z",
+      "attempts": 17,
       "diagnosis": "HTTP 405 Method Not Allowed: Servidor rejeita certas requisições uTLS/H2 ou exige barra final ('/'). Sugestão: Testar fallback HTTP/1.1 e normalizar trailing slash."
     },
     {
@@ -4156,8 +4266,8 @@
       "status_code": 405,
       "error_message": "HTTP 405",
       "first_seen": "2026-10-25T15:28:01Z",
-      "last_seen": "2026-10-28T09:33:26Z",
-      "attempts": 16,
+      "last_seen": "2026-10-28T11:23:37Z",
+      "attempts": 17,
       "diagnosis": "HTTP 405 Method Not Allowed: Servidor rejeita certas requisições uTLS/H2 ou exige barra final ('/'). Sugestão: Testar fallback HTTP/1.1 e normalizar trailing slash."
     },
     {
@@ -5311,8 +5421,8 @@
       "status_code": 405,
       "error_message": "HTTP 405",
       "first_seen": "2026-10-25T15:27:49Z",
-      "last_seen": "2026-10-28T09:33:13Z",
-      "attempts": 16,
+      "last_seen": "2026-10-28T11:23:25Z",
+      "attempts": 17,
       "diagnosis": "HTTP 405 Method Not Allowed: Servidor rejeita certas requisições uTLS/H2 ou exige barra final ('/'). Sugestão: Testar fallback HTTP/1.1 e normalizar trailing slash."
     },
     {
@@ -6458,116 +6568,6 @@
       "last_seen": "2026-10-25T00:21:27Z",
       "attempts": 2,
       "diagnosis": "HTTP 436 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 163,
-      "domain": "de.linkedin.com",
-      "url": "https://de.linkedin.com/company/springernature/life?trk=nav_type_life",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T21:52:35Z",
-      "last_seen": "2026-10-24T21:52:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 84,
-      "domain": "www.loc.gov",
-      "url": "https://www.loc.gov/collections/copyright-historical-record-books-1870-to-1977/about-this-collection/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T17:38:58Z",
-      "last_seen": "2026-10-23T17:38:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 90,
-      "domain": "www.nytimes.com",
-      "url": "https://www.nytimes.com/2010/09/29/technology/29aol.html",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T18:02:34Z",
-      "last_seen": "2026-10-24T00:10:54Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 568,
-      "domain": "www150.statcan.gc.ca",
-      "url": "https://www150.statcan.gc.ca/n1/fr/type/donnees?MM=1",
-      "status_code": 429,
-      "error_message": "HTTP 429",
-      "first_seen": "2026-10-27T21:37:12Z",
-      "last_seen": "2026-10-27T21:38:50Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
-    },
-    {
-      "id": 234,
-      "domain": "localhost",
-      "url": "http://localhost:9090/metrics",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused",
-      "first_seen": "2026-10-25T15:21:12Z",
-      "last_seen": "2026-10-25T15:21:12Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 320,
-      "domain": "fosstodon.org",
-      "url": "https://fosstodon.org/@plausible",
-      "status_code": 429,
-      "error_message": "HTTP 429",
-      "first_seen": "2026-10-26T02:21:26Z",
-      "last_seen": "2026-10-26T02:21:26Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
-    },
-    {
-      "id": 472,
-      "domain": "forum.inter.co",
-      "url": "https://forum.inter.co/cnnbrasil/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T22:13:13Z",
-      "last_seen": "2026-10-26T22:13:37Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 63,
-      "domain": "www.efc.ca",
-      "url": "http://www.efc.ca/pages/doc/crypto-export.html",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.efc.ca/pages/doc/crypto-export.html: Get \"http://www.efc.ca/pages/doc/crypto-export.html\": dial tcp4: lookup www.efc.ca on 127.0.0.53:53: server misbehaving",
-      "first_seen": "2026-10-23T15:54:48Z",
-      "last_seen": "2026-10-23T22:58:24Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.efc.ca/pages/doc/crypto-export.html: Get \"http://www.efc.ca/pages/doc/crypto-export.html\": dial tcp4: lookup www.efc.ca on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 95,
-      "domain": "docs.moodle.org",
-      "url": "https://docs.moodle.org",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T18:38:10Z",
-      "last_seen": "2026-10-23T20:17:58Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 107,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/pub/dir/+/+?trk=organization_guest_guest_nav_menu_people",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-23T23:09:33Z",
-      "last_seen": "2026-10-24T00:08:30Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
