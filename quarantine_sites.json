@@ -1,128 +1,7 @@
 {
-  "last_updated": "2026-10-28T08:27:15Z",
+  "last_updated": "2026-10-28T08:28:13Z",
   "total_quarantine": 590,
   "quarantine_sites": [
-    {
-      "id": 509,
-      "domain": "x.com",
-      "url": "https://x.com/MkdirsHQ",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-27T06:28:13Z",
-      "last_seen": "2026-10-27T06:37:25Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 131,
-      "domain": "resonance-newsletters.beehiiv.com",
-      "url": "https://resonance-newsletters.beehiiv.com/subscribe",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T18:02:11Z",
-      "last_seen": "2026-10-24T18:02:11Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 329,
-      "domain": "video.google.de",
-      "url": "http://video.google.de/videoplay?docid=-6459339159268485356\u0026q=python+programming",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T03:09:13Z",
-      "last_seen": "2026-10-26T04:05:13Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 341,
-      "domain": "six.pairlist.net",
-      "url": "http://six.pairlist.net/mailman/listinfo/markdown-discuss",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://six.pairlist.net/mailman/listinfo/markdown-discuss: Get \"http://six.pairlist.net/mailman/listinfo/markdown-discuss\": dial tcp4 209.68.2.254:80: i/o timeout",
-      "first_seen": "2026-10-26T04:26:36Z",
-      "last_seen": "2026-10-26T04:53:48Z",
-      "attempts": 6,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 459,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=07945c85-5219-4f8a-8bb3-34d836cf0667",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:44:13Z",
-      "last_seen": "2026-10-26T20:44:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 24,
-      "domain": "www.nytimes.com",
-      "url": "https://www.nytimes.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:23:22Z",
-      "last_seen": "2026-10-28T08:13:37Z",
-      "attempts": 17,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 299,
-      "domain": "www.ftc.gov",
-      "url": "http://www.ftc.gov/foia/listofpaysystems.shtm",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T23:47:49Z",
-      "last_seen": "2026-10-26T00:37:49Z",
-      "attempts": 7,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 335,
-      "domain": "www.loc.gov",
-      "url": "http://www.loc.gov/standards/iso639",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T03:32:01Z",
-      "last_seen": "2026-10-26T03:49:25Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 546,
-      "domain": "event.newschool.edu",
-      "url": "https://event.newschool.edu/2026Honorees",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T12:49:01Z",
-      "last_seen": "2026-10-27T12:49:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 565,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T18:50:25Z",
-      "last_seen": "2026-10-27T19:15:25Z",
-      "attempts": 12,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 580,
-      "domain": "portal.first.org",
-      "url": "https://portal.first.org",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-28T00:17:37Z",
-      "last_seen": "2026-10-28T01:23:37Z",
-      "attempts": 60,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 117,
       "domain": "app.slack.com",
@@ -504,8 +383,8 @@
       "status_code": 405,
       "error_message": "HTTP 405",
       "first_seen": "2026-10-25T15:27:38Z",
-      "last_seen": "2026-10-28T07:20:50Z",
-      "attempts": 14,
+      "last_seen": "2026-10-28T08:27:50Z",
+      "attempts": 15,
       "diagnosis": "HTTP 405 Method Not Allowed: Servidor rejeita certas requisições uTLS/H2 ou exige barra final ('/'). Sugestão: Testar fallback HTTP/1.1 e normalizar trailing slash."
     },
     {
@@ -801,8 +680,8 @@
       "status_code": 405,
       "error_message": "HTTP 405",
       "first_seen": "2026-10-25T15:28:01Z",
-      "last_seen": "2026-10-28T07:21:13Z",
-      "attempts": 14,
+      "last_seen": "2026-10-28T08:28:13Z",
+      "attempts": 15,
       "diagnosis": "HTTP 405 Method Not Allowed: Servidor rejeita certas requisições uTLS/H2 ou exige barra final ('/'). Sugestão: Testar fallback HTTP/1.1 e normalizar trailing slash."
     },
     {
@@ -1945,8 +1824,8 @@
       "status_code": 405,
       "error_message": "HTTP 405",
       "first_seen": "2026-10-25T15:27:49Z",
-      "last_seen": "2026-10-28T07:21:01Z",
-      "attempts": 14,
+      "last_seen": "2026-10-28T08:28:01Z",
+      "attempts": 15,
       "diagnosis": "HTTP 405 Method Not Allowed: Servidor rejeita certas requisições uTLS/H2 ou exige barra final ('/'). Sugestão: Testar fallback HTTP/1.1 e normalizar trailing slash."
     },
     {
@@ -6491,6 +6370,127 @@
       "last_seen": "2026-10-26T20:28:13Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 509,
+      "domain": "x.com",
+      "url": "https://x.com/MkdirsHQ",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-27T06:28:13Z",
+      "last_seen": "2026-10-27T06:37:25Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 131,
+      "domain": "resonance-newsletters.beehiiv.com",
+      "url": "https://resonance-newsletters.beehiiv.com/subscribe",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T18:02:11Z",
+      "last_seen": "2026-10-24T18:02:11Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 329,
+      "domain": "video.google.de",
+      "url": "http://video.google.de/videoplay?docid=-6459339159268485356\u0026q=python+programming",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T03:09:13Z",
+      "last_seen": "2026-10-26T04:05:13Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 341,
+      "domain": "six.pairlist.net",
+      "url": "http://six.pairlist.net/mailman/listinfo/markdown-discuss",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://six.pairlist.net/mailman/listinfo/markdown-discuss: Get \"http://six.pairlist.net/mailman/listinfo/markdown-discuss\": dial tcp4 209.68.2.254:80: i/o timeout",
+      "first_seen": "2026-10-26T04:26:36Z",
+      "last_seen": "2026-10-26T04:53:48Z",
+      "attempts": 6,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 459,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=07945c85-5219-4f8a-8bb3-34d836cf0667",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:44:13Z",
+      "last_seen": "2026-10-26T20:44:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 24,
+      "domain": "www.nytimes.com",
+      "url": "https://www.nytimes.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:23:22Z",
+      "last_seen": "2026-10-28T08:13:37Z",
+      "attempts": 17,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 299,
+      "domain": "www.ftc.gov",
+      "url": "http://www.ftc.gov/foia/listofpaysystems.shtm",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T23:47:49Z",
+      "last_seen": "2026-10-26T00:37:49Z",
+      "attempts": 7,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 335,
+      "domain": "www.loc.gov",
+      "url": "http://www.loc.gov/standards/iso639",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T03:32:01Z",
+      "last_seen": "2026-10-26T03:49:25Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 546,
+      "domain": "event.newschool.edu",
+      "url": "https://event.newschool.edu/2026Honorees",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T12:49:01Z",
+      "last_seen": "2026-10-27T12:49:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 565,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T18:50:25Z",
+      "last_seen": "2026-10-27T19:15:25Z",
+      "attempts": 12,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 580,
+      "domain": "portal.first.org",
+      "url": "https://portal.first.org",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-28T00:17:37Z",
+      "last_seen": "2026-10-28T01:23:37Z",
+      "attempts": 60,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
