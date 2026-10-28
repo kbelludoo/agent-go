@@ -1,7 +1,51 @@
 {
-  "last_updated": "2026-10-28T10:53:27Z",
+  "last_updated": "2026-10-28T10:54:27Z",
   "total_quarantine": 595,
   "quarantine_sites": [
+    {
+      "id": 111,
+      "domain": "account.ncbi.nlm.nih.gov",
+      "url": "https://account.ncbi.nlm.nih.gov/myncbi/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T21:07:10Z",
+      "last_seen": "2026-10-23T21:07:22Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 398,
+      "domain": "doi.org",
+      "url": "https://doi.org/10.1145/3442381.3450078",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T18:50:13Z",
+      "last_seen": "2026-10-26T19:04:01Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 173,
+      "domain": "au.linkedin.com",
+      "url": "https://au.linkedin.com/in/charliesutton?trk=article-ssr-frontend-pulse_little-mention",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T23:26:35Z",
+      "last_seen": "2026-10-24T23:26:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 47,
+      "domain": "brasil.gov.br",
+      "url": "https://brasil.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z",
+      "first_seen": "2026-10-23T15:00:09Z",
+      "last_seen": "2026-10-23T15:00:09Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z. Sugestão: Verificar rota de egress e resolução DNS."
+    },
     {
       "id": 174,
       "domain": "www.gsaauctions.gov",
@@ -6502,50 +6546,6 @@
       "last_seen": "2026-10-26T19:45:13Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 111,
-      "domain": "account.ncbi.nlm.nih.gov",
-      "url": "https://account.ncbi.nlm.nih.gov/myncbi/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T21:07:10Z",
-      "last_seen": "2026-10-23T21:07:22Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 398,
-      "domain": "doi.org",
-      "url": "https://doi.org/10.1145/3442381.3450078",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T18:50:13Z",
-      "last_seen": "2026-10-26T19:04:01Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 173,
-      "domain": "au.linkedin.com",
-      "url": "https://au.linkedin.com/in/charliesutton?trk=article-ssr-frontend-pulse_little-mention",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T23:26:35Z",
-      "last_seen": "2026-10-24T23:26:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 47,
-      "domain": "brasil.gov.br",
-      "url": "https://brasil.gov.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z",
-      "first_seen": "2026-10-23T15:00:09Z",
-      "last_seen": "2026-10-23T15:00:09Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://brasil.gov.br: Get \"https://brasil.gov.br\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-23T15:00:09Z is after 2020-11-05T23:59:59Z. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
