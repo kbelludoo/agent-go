@@ -1,29 +1,7 @@
 {
-  "last_updated": "2026-10-28T06:22:27Z",
+  "last_updated": "2026-10-28T06:23:28Z",
   "total_quarantine": 589,
   "quarantine_sites": [
-    {
-      "id": 82,
-      "domain": "www.securityfocus.com",
-      "url": "http://www.securityfocus.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.securityfocus.com/: Get \"http://www.securityfocus.com/\": dial tcp4 135.125.97.155:80: connect: connection refused",
-      "first_seen": "2026-10-23T17:33:58Z",
-      "last_seen": "2026-10-23T17:34:22Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.securityfocus.com/: Get \"http://www.securityfocus.com/\": dial tcp4 135.125.97.155:80: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 258,
-      "domain": "agenciadenoticias.ibge.gov.br",
-      "url": "http://agenciadenoticias.ibge.gov.br/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T17:01:12Z",
-      "last_seen": "2026-10-25T17:01:12Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 576,
       "domain": "www150.statcan.gc.ca",
@@ -6478,6 +6456,28 @@
       "error_message": "HTTP 403",
       "first_seen": "2026-10-25T17:05:36Z",
       "last_seen": "2026-10-25T17:05:36Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 82,
+      "domain": "www.securityfocus.com",
+      "url": "http://www.securityfocus.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.securityfocus.com/: Get \"http://www.securityfocus.com/\": dial tcp4 135.125.97.155:80: connect: connection refused",
+      "first_seen": "2026-10-23T17:33:58Z",
+      "last_seen": "2026-10-23T17:34:22Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.securityfocus.com/: Get \"http://www.securityfocus.com/\": dial tcp4 135.125.97.155:80: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 258,
+      "domain": "agenciadenoticias.ibge.gov.br",
+      "url": "http://agenciadenoticias.ibge.gov.br/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T17:01:12Z",
+      "last_seen": "2026-10-25T17:01:12Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
