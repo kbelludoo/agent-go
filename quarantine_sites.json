@@ -1,7 +1,73 @@
 {
-  "last_updated": "2026-10-28T05:40:53Z",
+  "last_updated": "2026-10-28T05:41:52Z",
   "total_quarantine": 588,
   "quarantine_sites": [
+    {
+      "id": 376,
+      "domain": "www.gnu.org",
+      "url": "https://www.gnu.org/software/emacs/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.gnu.org/software/emacs/: Get \"https://www.gnu.org/software/emacs/\": dial tcp4: lookup www.gnu.org: i/o timeout",
+      "first_seen": "2026-10-26T16:44:48Z",
+      "last_seen": "2026-10-27T17:03:37Z",
+      "attempts": 11,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 402,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=f4e931f2-d353-452d-8104-c264f4419ecb",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:06:01Z",
+      "last_seen": "2026-10-26T19:06:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 435,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=7de05786-b727-4ce0-aac4-9168476070e1",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:55:13Z",
+      "last_seen": "2026-10-26T19:55:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 304,
+      "domain": "www.facebook.com",
+      "url": "https://www.facebook.com/sharer.php?u=%2fdriftsstatus",
+      "status_code": 500,
+      "error_message": "HTTP 500",
+      "first_seen": "2026-10-26T00:56:13Z",
+      "last_seen": "2026-10-26T00:56:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 524,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/fast-company-brasil/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-27T09:36:13Z",
+      "last_seen": "2026-10-27T09:37:25Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 539,
+      "domain": "mhonarc.ipmedia.de",
+      "url": "http://mhonarc.ipmedia.de/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://mhonarc.ipmedia.de/: Get \"http://mhonarc.ipmedia.de/\": dial tcp4: lookup mhonarc.ipmedia.de on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-27T10:12:13Z",
+      "last_seen": "2026-10-27T10:14:13Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://mhonarc.ipmedia.de/: Get \"http://mhonarc.ipmedia.de/\": dial tcp4: lookup mhonarc.ipmedia.de on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
     {
       "id": 305,
       "domain": "www.facebook.com",
@@ -6403,72 +6469,6 @@
       "last_seen": "2026-10-27T16:48:02Z",
       "attempts": 15,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 376,
-      "domain": "www.gnu.org",
-      "url": "https://www.gnu.org/software/emacs/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.gnu.org/software/emacs/: Get \"https://www.gnu.org/software/emacs/\": dial tcp4: lookup www.gnu.org: i/o timeout",
-      "first_seen": "2026-10-26T16:44:48Z",
-      "last_seen": "2026-10-27T17:03:37Z",
-      "attempts": 11,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 402,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=f4e931f2-d353-452d-8104-c264f4419ecb",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:06:01Z",
-      "last_seen": "2026-10-26T19:06:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 435,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=7de05786-b727-4ce0-aac4-9168476070e1",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:55:13Z",
-      "last_seen": "2026-10-26T19:55:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 304,
-      "domain": "www.facebook.com",
-      "url": "https://www.facebook.com/sharer.php?u=%2fdriftsstatus",
-      "status_code": 500,
-      "error_message": "HTTP 500",
-      "first_seen": "2026-10-26T00:56:13Z",
-      "last_seen": "2026-10-26T00:56:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 524,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/fast-company-brasil/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-27T09:36:13Z",
-      "last_seen": "2026-10-27T09:37:25Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 539,
-      "domain": "mhonarc.ipmedia.de",
-      "url": "http://mhonarc.ipmedia.de/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://mhonarc.ipmedia.de/: Get \"http://mhonarc.ipmedia.de/\": dial tcp4: lookup mhonarc.ipmedia.de on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-27T10:12:13Z",
-      "last_seen": "2026-10-27T10:14:13Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://mhonarc.ipmedia.de/: Get \"http://mhonarc.ipmedia.de/\": dial tcp4: lookup mhonarc.ipmedia.de on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
