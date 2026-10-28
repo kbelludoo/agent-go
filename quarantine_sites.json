@@ -1,161 +1,7 @@
 {
-  "last_updated": "2026-10-28T05:54:02Z",
+  "last_updated": "2026-10-28T05:55:01Z",
   "total_quarantine": 589,
   "quarantine_sites": [
-    {
-      "id": 14,
-      "domain": "sciencedirect.com",
-      "url": "https://sciencedirect.com/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:07:22Z",
-      "last_seen": "2026-10-27T16:51:38Z",
-      "attempts": 14,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 213,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/wasm/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T12:58:37Z",
-      "last_seen": "2026-10-25T13:01:00Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 406,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=6bed37b9-de0c-41fb-9b9e-ec6d26063c9c",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:07:25Z",
-      "last_seen": "2026-10-26T19:07:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 27,
-      "domain": "www.reuters.com",
-      "url": "https://www.reuters.com",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-23T13:24:58Z",
-      "last_seen": "2026-10-27T17:09:25Z",
-      "attempts": 16,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 53,
-      "domain": "getbootstrap.com",
-      "url": "https://getbootstrap.com/docs/6.0/getting-started/introduction/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T15:20:58Z",
-      "last_seen": "2026-10-23T22:56:03Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 167,
-      "domain": "pl.linkedin.com",
-      "url": "https://pl.linkedin.com/in/aestrada92?trk=article-ssr-frontend-pulse_x-social-details_comments-action_comment_actor-name",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T22:41:48Z",
-      "last_seen": "2026-10-24T23:25:11Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 146,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/thomas-baumann-007/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T19:11:11Z",
-      "last_seen": "2026-10-24T19:11:11Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 88,
-      "domain": "lp.suno.com.br",
-      "url": "https://lp.suno.com.br/suno-mentoria-de-sucesso/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://lp.suno.com.br/suno-mentoria-de-sucesso/: Get \"https://lp.suno.com.br/suno-mentoria-de-sucesso/\": context deadline exceeded",
-      "first_seen": "2026-10-23T17:57:33Z",
-      "last_seen": "2026-10-23T22:59:20Z",
-      "attempts": 3,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 241,
-      "domain": "arstechnica.com",
-      "url": "https://arstechnica.com/science/",
-      "status_code": 405,
-      "error_message": "HTTP 405",
-      "first_seen": "2026-10-25T15:28:01Z",
-      "last_seen": "2026-10-28T05:43:37Z",
-      "attempts": 13,
-      "diagnosis": "HTTP 405 Method Not Allowed: Servidor rejeita certas requisições uTLS/H2 ou exige barra final ('/'). Sugestão: Testar fallback HTTP/1.1 e normalizar trailing slash."
-    },
-    {
-      "id": 307,
-      "domain": "anushahhossain.org",
-      "url": "https://anushahhossain.org",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://anushahhossain.org: Get \"https://anushahhossain.org\": dial tcp4: lookup anushahhossain.org on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-26T01:05:01Z",
-      "last_seen": "2026-10-26T01:09:25Z",
-      "attempts": 3,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://anushahhossain.org: Get \"https://anushahhossain.org\": dial tcp4: lookup anushahhossain.org on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 253,
-      "domain": "dithering.fm",
-      "url": "https://dithering.fm/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T16:41:01Z",
-      "last_seen": "2026-10-25T16:41:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 338,
-      "domain": "www.205.tf",
-      "url": "https://www.205.tf/collection/album",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T04:19:02Z",
-      "last_seen": "2026-10-26T04:46:25Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 206,
-      "domain": "github.com",
-      "url": "https://github.com/MicrosoftDocs/security/blob/main/security-docs/zero-trust/microsoft-reference-architecture.md",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T10:11:01Z",
-      "last_seen": "2026-10-25T10:11:24Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 91,
-      "domain": "education.github.com",
-      "url": "https://education.github.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects",
-      "first_seen": "2026-10-23T18:04:59Z",
-      "last_seen": "2026-10-23T18:04:59Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
-    },
     {
       "id": 114,
       "domain": "hwpi.harvard.edu",
@@ -845,8 +691,8 @@
       "status_code": 404,
       "error_message": "HTTP 404",
       "first_seen": "2026-10-25T15:39:13Z",
-      "last_seen": "2026-10-27T16:26:38Z",
-      "attempts": 12,
+      "last_seen": "2026-10-28T05:55:01Z",
+      "attempts": 13,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
@@ -6480,6 +6326,160 @@
       "last_seen": "2026-10-26T17:31:14Z",
       "attempts": 1,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 14,
+      "domain": "sciencedirect.com",
+      "url": "https://sciencedirect.com/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:07:22Z",
+      "last_seen": "2026-10-27T16:51:38Z",
+      "attempts": 14,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 213,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/wasm/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T12:58:37Z",
+      "last_seen": "2026-10-25T13:01:00Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 406,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=6bed37b9-de0c-41fb-9b9e-ec6d26063c9c",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:07:25Z",
+      "last_seen": "2026-10-26T19:07:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 27,
+      "domain": "www.reuters.com",
+      "url": "https://www.reuters.com",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-23T13:24:58Z",
+      "last_seen": "2026-10-27T17:09:25Z",
+      "attempts": 16,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 53,
+      "domain": "getbootstrap.com",
+      "url": "https://getbootstrap.com/docs/6.0/getting-started/introduction/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T15:20:58Z",
+      "last_seen": "2026-10-23T22:56:03Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 167,
+      "domain": "pl.linkedin.com",
+      "url": "https://pl.linkedin.com/in/aestrada92?trk=article-ssr-frontend-pulse_x-social-details_comments-action_comment_actor-name",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T22:41:48Z",
+      "last_seen": "2026-10-24T23:25:11Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 146,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/thomas-baumann-007/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T19:11:11Z",
+      "last_seen": "2026-10-24T19:11:11Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 88,
+      "domain": "lp.suno.com.br",
+      "url": "https://lp.suno.com.br/suno-mentoria-de-sucesso/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://lp.suno.com.br/suno-mentoria-de-sucesso/: Get \"https://lp.suno.com.br/suno-mentoria-de-sucesso/\": context deadline exceeded",
+      "first_seen": "2026-10-23T17:57:33Z",
+      "last_seen": "2026-10-23T22:59:20Z",
+      "attempts": 3,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 241,
+      "domain": "arstechnica.com",
+      "url": "https://arstechnica.com/science/",
+      "status_code": 405,
+      "error_message": "HTTP 405",
+      "first_seen": "2026-10-25T15:28:01Z",
+      "last_seen": "2026-10-28T05:43:37Z",
+      "attempts": 13,
+      "diagnosis": "HTTP 405 Method Not Allowed: Servidor rejeita certas requisições uTLS/H2 ou exige barra final ('/'). Sugestão: Testar fallback HTTP/1.1 e normalizar trailing slash."
+    },
+    {
+      "id": 307,
+      "domain": "anushahhossain.org",
+      "url": "https://anushahhossain.org",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://anushahhossain.org: Get \"https://anushahhossain.org\": dial tcp4: lookup anushahhossain.org on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-26T01:05:01Z",
+      "last_seen": "2026-10-26T01:09:25Z",
+      "attempts": 3,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://anushahhossain.org: Get \"https://anushahhossain.org\": dial tcp4: lookup anushahhossain.org on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 253,
+      "domain": "dithering.fm",
+      "url": "https://dithering.fm/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T16:41:01Z",
+      "last_seen": "2026-10-25T16:41:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 338,
+      "domain": "www.205.tf",
+      "url": "https://www.205.tf/collection/album",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T04:19:02Z",
+      "last_seen": "2026-10-26T04:46:25Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 206,
+      "domain": "github.com",
+      "url": "https://github.com/MicrosoftDocs/security/blob/main/security-docs/zero-trust/microsoft-reference-architecture.md",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T10:11:01Z",
+      "last_seen": "2026-10-25T10:11:24Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 91,
+      "domain": "education.github.com",
+      "url": "https://education.github.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects",
+      "first_seen": "2026-10-23T18:04:59Z",
+      "last_seen": "2026-10-23T18:04:59Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
