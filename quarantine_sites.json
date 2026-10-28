@@ -1,62 +1,7 @@
 {
-  "last_updated": "2026-10-28T09:42:28Z",
-  "total_quarantine": 590,
+  "last_updated": "2026-10-28T09:43:26Z",
+  "total_quarantine": 589,
   "quarantine_sites": [
-    {
-      "id": 109,
-      "domain": "www.etsy.com",
-      "url": "https://www.etsy.com/your/account/privacy",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T23:19:21Z",
-      "last_seen": "2026-10-23T23:27:09Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 579,
-      "domain": "international.gc.ca",
-      "url": "http://international.gc.ca/world-monde/index.aspx?lang=fra",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://international.gc.ca/world-monde/index.aspx?lang=fra: Get \"http://international.gc.ca/world-monde/index.aspx?lang=fra\": dial tcp4 198.103.198.137:80: i/o timeout",
-      "first_seen": "2026-10-27T23:37:36Z",
-      "last_seen": "2026-10-28T00:08:24Z",
-      "attempts": 12,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 279,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/ministeriet-for-groen-trepart/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-25T20:16:13Z",
-      "last_seen": "2026-10-25T20:16:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 184,
-      "domain": "sa.www4.irs.gov",
-      "url": "https://sa.www4.irs.gov/taxpro",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T03:17:01Z",
-      "last_seen": "2026-10-25T03:22:25Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 237,
-      "domain": "www.cse.iitd.ac.in",
-      "url": "https://www.cse.iitd.ac.in/~srsarangi/osbook/osbook-v0.93.pdf",
-      "status_code": 504,
-      "error_message": "context cancelled or timed out while reading response from https://www.cse.iitd.ac.in/~srsarangi/osbook/osbook-v0.93.pdf: context deadline exceeded",
-      "first_seen": "2026-10-25T15:23:48Z",
-      "last_seen": "2026-10-25T15:23:48Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
     {
       "id": 290,
       "domain": "unsplash.com",
@@ -1132,17 +1077,6 @@
       "error_message": "HTTP 403",
       "first_seen": "2026-10-24T18:02:11Z",
       "last_seen": "2026-10-24T18:02:11Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 591,
-      "domain": "elpais.com",
-      "url": "https://elpais.com/america",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-28T08:37:49Z",
-      "last_seen": "2026-10-28T08:37:49Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
@@ -6491,6 +6425,61 @@
       "last_seen": "2026-10-26T23:08:25Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 109,
+      "domain": "www.etsy.com",
+      "url": "https://www.etsy.com/your/account/privacy",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T23:19:21Z",
+      "last_seen": "2026-10-23T23:27:09Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 579,
+      "domain": "international.gc.ca",
+      "url": "http://international.gc.ca/world-monde/index.aspx?lang=fra",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://international.gc.ca/world-monde/index.aspx?lang=fra: Get \"http://international.gc.ca/world-monde/index.aspx?lang=fra\": dial tcp4 198.103.198.137:80: i/o timeout",
+      "first_seen": "2026-10-27T23:37:36Z",
+      "last_seen": "2026-10-28T00:08:24Z",
+      "attempts": 12,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 279,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/ministeriet-for-groen-trepart/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-25T20:16:13Z",
+      "last_seen": "2026-10-25T20:16:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 184,
+      "domain": "sa.www4.irs.gov",
+      "url": "https://sa.www4.irs.gov/taxpro",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T03:17:01Z",
+      "last_seen": "2026-10-25T03:22:25Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 237,
+      "domain": "www.cse.iitd.ac.in",
+      "url": "https://www.cse.iitd.ac.in/~srsarangi/osbook/osbook-v0.93.pdf",
+      "status_code": 504,
+      "error_message": "context cancelled or timed out while reading response from https://www.cse.iitd.ac.in/~srsarangi/osbook/osbook-v0.93.pdf: context deadline exceeded",
+      "first_seen": "2026-10-25T15:23:48Z",
+      "last_seen": "2026-10-25T15:23:48Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     }
   ]
 }
