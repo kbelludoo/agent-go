@@ -1,7 +1,150 @@
 {
-  "last_updated": "2026-10-28T19:06:51Z",
+  "last_updated": "2026-10-28T19:07:57Z",
   "total_quarantine": 616,
   "quarantine_sites": [
+    {
+      "id": 190,
+      "domain": "www.oversight.gov",
+      "url": "http://www.oversight.gov",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.oversight.gov: Get \"https://www.oversight.gov/\": context deadline exceeded",
+      "first_seen": "2026-10-25T07:53:48Z",
+      "last_seen": "2026-10-25T07:53:48Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 194,
+      "domain": "www.researchgate.net",
+      "url": "https://www.researchgate.net/publication/389517325_Optimizing_Web_Performance_and_Computational_Efficiency_A_Deep_Dive_into_WebAssembly's_Technical_Advancements_and_Real-World_Applications",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T09:53:13Z",
+      "last_seen": "2026-10-25T09:53:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 240,
+      "domain": "arstechnica.com",
+      "url": "https://arstechnica.com/",
+      "status_code": 405,
+      "error_message": "HTTP 405",
+      "first_seen": "2026-10-25T15:27:49Z",
+      "last_seen": "2026-10-28T11:23:25Z",
+      "attempts": 17,
+      "diagnosis": "HTTP 405 Method Not Allowed: Servidor rejeita certas requisições uTLS/H2 ou exige barra final ('/'). Sugestão: Testar fallback HTTP/1.1 e normalizar trailing slash."
+    },
+    {
+      "id": 434,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=055cf857-7b79-4a52-a080-68652a96c2a0",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:54:13Z",
+      "last_seen": "2026-10-26T19:54:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 492,
+      "domain": "Flux1.shop",
+      "url": "https://Flux1.shop",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://Flux1.shop: Get \"https://Flux1.shop\": dial tcp4 128.199.126.49:443: i/o timeout",
+      "first_seen": "2026-10-27T05:03:12Z",
+      "last_seen": "2026-10-27T05:03:12Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 463,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=b0407803-10dd-4169-aad7-3cc12d82518f",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:48:13Z",
+      "last_seen": "2026-10-26T20:48:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 513,
+      "domain": "sprunkiincredibox.app",
+      "url": "https://sprunkiincredibox.app/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://sprunkiincredibox.app/: Get \"https://sprunkiincredibox.app/\": dial tcp4: lookup sprunkiincredibox.app on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-27T06:57:01Z",
+      "last_seen": "2026-10-27T07:17:12Z",
+      "attempts": 4,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://sprunkiincredibox.app/: Get \"https://sprunkiincredibox.app/\": dial tcp4: lookup sprunkiincredibox.app on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 585,
+      "domain": "ca.linkedin.com",
+      "url": "https://ca.linkedin.com/in/gwen-beauchemin-b12835b?trk=org-employees",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-28T03:22:51Z",
+      "last_seen": "2026-10-28T03:59:49Z",
+      "attempts": 5,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 145,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/predictiveanalytics/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T19:10:59Z",
+      "last_seen": "2026-10-24T19:10:59Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 230,
+      "domain": "sdtimes.com",
+      "url": "https://sdtimes.com/cloud-native-architecture/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T14:20:02Z",
+      "last_seen": "2026-10-25T14:20:02Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 111,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/tiny-spec-inc/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T00:38:23Z",
+      "last_seen": "2026-10-24T00:38:59Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 116,
+      "domain": "join.slack.com",
+      "url": "https://join.slack.com/share/enQtMTE1OTk4NTI5NzUyMTctMDY3ODA1YzNkYzlmOGFkNTA3YzE0MjdlMzFkODZmYzNmNTg1Yjk3YzY3MmNmMjI1YWU5MzgyNjcwZDg1N2QyNQ",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T22:16:46Z",
+      "last_seen": "2026-10-24T00:25:11Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 350,
+      "domain": "www.peqqik.gl",
+      "url": "http://www.peqqik.gl?sc_lang=kl-GL",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.peqqik.gl?sc_lang=kl-GL: Get \"http://www.peqqik.gl?sc_lang=kl-GL\": dial tcp4 194.177.235.197:80: i/o timeout",
+      "first_seen": "2026-10-26T08:21:24Z",
+      "last_seen": "2026-10-26T09:50:48Z",
+      "attempts": 6,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
     {
       "id": 365,
       "domain": "boligejer.dk",
@@ -6634,149 +6777,6 @@
       "last_seen": "2026-10-23T18:30:22Z",
       "attempts": 2,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 190,
-      "domain": "www.oversight.gov",
-      "url": "http://www.oversight.gov",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.oversight.gov: Get \"https://www.oversight.gov/\": context deadline exceeded",
-      "first_seen": "2026-10-25T07:53:48Z",
-      "last_seen": "2026-10-25T07:53:48Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 194,
-      "domain": "www.researchgate.net",
-      "url": "https://www.researchgate.net/publication/389517325_Optimizing_Web_Performance_and_Computational_Efficiency_A_Deep_Dive_into_WebAssembly's_Technical_Advancements_and_Real-World_Applications",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T09:53:13Z",
-      "last_seen": "2026-10-25T09:53:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 240,
-      "domain": "arstechnica.com",
-      "url": "https://arstechnica.com/",
-      "status_code": 405,
-      "error_message": "HTTP 405",
-      "first_seen": "2026-10-25T15:27:49Z",
-      "last_seen": "2026-10-28T11:23:25Z",
-      "attempts": 17,
-      "diagnosis": "HTTP 405 Method Not Allowed: Servidor rejeita certas requisições uTLS/H2 ou exige barra final ('/'). Sugestão: Testar fallback HTTP/1.1 e normalizar trailing slash."
-    },
-    {
-      "id": 434,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=055cf857-7b79-4a52-a080-68652a96c2a0",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:54:13Z",
-      "last_seen": "2026-10-26T19:54:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 492,
-      "domain": "Flux1.shop",
-      "url": "https://Flux1.shop",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://Flux1.shop: Get \"https://Flux1.shop\": dial tcp4 128.199.126.49:443: i/o timeout",
-      "first_seen": "2026-10-27T05:03:12Z",
-      "last_seen": "2026-10-27T05:03:12Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 463,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=b0407803-10dd-4169-aad7-3cc12d82518f",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:48:13Z",
-      "last_seen": "2026-10-26T20:48:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 513,
-      "domain": "sprunkiincredibox.app",
-      "url": "https://sprunkiincredibox.app/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://sprunkiincredibox.app/: Get \"https://sprunkiincredibox.app/\": dial tcp4: lookup sprunkiincredibox.app on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-27T06:57:01Z",
-      "last_seen": "2026-10-27T07:17:12Z",
-      "attempts": 4,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://sprunkiincredibox.app/: Get \"https://sprunkiincredibox.app/\": dial tcp4: lookup sprunkiincredibox.app on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 585,
-      "domain": "ca.linkedin.com",
-      "url": "https://ca.linkedin.com/in/gwen-beauchemin-b12835b?trk=org-employees",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-28T03:22:51Z",
-      "last_seen": "2026-10-28T03:59:49Z",
-      "attempts": 5,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 145,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/predictiveanalytics/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T19:10:59Z",
-      "last_seen": "2026-10-24T19:10:59Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 230,
-      "domain": "sdtimes.com",
-      "url": "https://sdtimes.com/cloud-native-architecture/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T14:20:02Z",
-      "last_seen": "2026-10-25T14:20:02Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 111,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/tiny-spec-inc/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T00:38:23Z",
-      "last_seen": "2026-10-24T00:38:59Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 116,
-      "domain": "join.slack.com",
-      "url": "https://join.slack.com/share/enQtMTE1OTk4NTI5NzUyMTctMDY3ODA1YzNkYzlmOGFkNTA3YzE0MjdlMzFkODZmYzNmNTg1Yjk3YzY3MmNmMjI1YWU5MzgyNjcwZDg1N2QyNQ",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T22:16:46Z",
-      "last_seen": "2026-10-24T00:25:11Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 350,
-      "domain": "www.peqqik.gl",
-      "url": "http://www.peqqik.gl?sc_lang=kl-GL",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.peqqik.gl?sc_lang=kl-GL: Get \"http://www.peqqik.gl?sc_lang=kl-GL\": dial tcp4 194.177.235.197:80: i/o timeout",
-      "first_seen": "2026-10-26T08:21:24Z",
-      "last_seen": "2026-10-26T09:50:48Z",
-      "attempts": 6,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     }
   ]
 }
