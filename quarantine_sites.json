@@ -1,62 +1,7 @@
 {
-  "last_updated": "2026-10-28T21:51:14Z",
+  "last_updated": "2026-10-28T21:52:26Z",
   "total_quarantine": 625,
   "quarantine_sites": [
-    {
-      "id": 477,
-      "domain": "github.com",
-      "url": "https://github.com/ecmwf/earthkit/blob/stable/docs/source/index.rst?plain=true",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T23:08:25Z",
-      "last_seen": "2026-10-26T23:08:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 602,
-      "domain": "investors.rtx.com",
-      "url": "https://investors.rtx.com/stock-information/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://investors.rtx.com/stock-information/: Get \"https://investors.rtx.com/stock-information/\": stream error: stream ID 1; INTERNAL_ERROR; received from peer",
-      "first_seen": "2026-10-28T13:11:25Z",
-      "last_seen": "2026-10-28T13:16:49Z",
-      "attempts": 9,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://investors.rtx.com/stock-information/: Get \"https://investors.rtx.com/stock-information/\": stream error: stream ID 1; INTERNAL_ERROR; received from peer. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 620,
-      "domain": "discussions.unity.com",
-      "url": "https://discussions.unity.com/c/asset-store-publishers/41/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-28T21:15:25Z",
-      "last_seen": "2026-10-28T21:15:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 109,
-      "domain": "www.etsy.com",
-      "url": "https://www.etsy.com/your/account/privacy",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T23:19:21Z",
-      "last_seen": "2026-10-23T23:27:09Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 579,
-      "domain": "international.gc.ca",
-      "url": "http://international.gc.ca/world-monde/index.aspx?lang=fra",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://international.gc.ca/world-monde/index.aspx?lang=fra: Get \"http://international.gc.ca/world-monde/index.aspx?lang=fra\": dial tcp4 198.103.198.137:80: i/o timeout",
-      "first_seen": "2026-10-27T23:37:36Z",
-      "last_seen": "2026-10-28T00:08:24Z",
-      "attempts": 12,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
     {
       "id": 279,
       "domain": "www.linkedin.com",
@@ -6876,6 +6821,61 @@
       "last_seen": "2026-10-26T20:32:13Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 477,
+      "domain": "github.com",
+      "url": "https://github.com/ecmwf/earthkit/blob/stable/docs/source/index.rst?plain=true",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T23:08:25Z",
+      "last_seen": "2026-10-26T23:08:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 602,
+      "domain": "investors.rtx.com",
+      "url": "https://investors.rtx.com/stock-information/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://investors.rtx.com/stock-information/: Get \"https://investors.rtx.com/stock-information/\": stream error: stream ID 1; INTERNAL_ERROR; received from peer",
+      "first_seen": "2026-10-28T13:11:25Z",
+      "last_seen": "2026-10-28T13:16:49Z",
+      "attempts": 9,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://investors.rtx.com/stock-information/: Get \"https://investors.rtx.com/stock-information/\": stream error: stream ID 1; INTERNAL_ERROR; received from peer. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 620,
+      "domain": "discussions.unity.com",
+      "url": "https://discussions.unity.com/c/asset-store-publishers/41/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-28T21:15:25Z",
+      "last_seen": "2026-10-28T21:15:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 109,
+      "domain": "www.etsy.com",
+      "url": "https://www.etsy.com/your/account/privacy",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T23:19:21Z",
+      "last_seen": "2026-10-23T23:27:09Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 579,
+      "domain": "international.gc.ca",
+      "url": "http://international.gc.ca/world-monde/index.aspx?lang=fra",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://international.gc.ca/world-monde/index.aspx?lang=fra: Get \"http://international.gc.ca/world-monde/index.aspx?lang=fra\": dial tcp4 198.103.198.137:80: i/o timeout",
+      "first_seen": "2026-10-27T23:37:36Z",
+      "last_seen": "2026-10-28T00:08:24Z",
+      "attempts": 12,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     }
   ]
 }
