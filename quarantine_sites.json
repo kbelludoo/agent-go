@@ -1,7 +1,84 @@
 {
-  "last_updated": "2026-10-28T23:45:03Z",
+  "last_updated": "2026-10-28T23:46:03Z",
   "total_quarantine": 627,
   "quarantine_sites": [
+    {
+      "id": 82,
+      "domain": "www.securityfocus.com",
+      "url": "http://www.securityfocus.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.securityfocus.com/: Get \"http://www.securityfocus.com/\": dial tcp4 135.125.97.155:80: connect: connection refused",
+      "first_seen": "2026-10-23T17:33:58Z",
+      "last_seen": "2026-10-23T17:34:22Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.securityfocus.com/: Get \"http://www.securityfocus.com/\": dial tcp4 135.125.97.155:80: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 258,
+      "domain": "agenciadenoticias.ibge.gov.br",
+      "url": "http://agenciadenoticias.ibge.gov.br/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T17:01:12Z",
+      "last_seen": "2026-10-25T17:01:12Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 576,
+      "domain": "www150.statcan.gc.ca",
+      "url": "https://www150.statcan.gc.ca/n1/en/type/data?HPA=CD",
+      "status_code": 504,
+      "error_message": "context cancelled or timed out while reading response from https://www150.statcan.gc.ca/n1/en/type/data?HPA=CD: context deadline exceeded",
+      "first_seen": "2026-10-27T23:06:48Z",
+      "last_seen": "2026-10-27T23:08:00Z",
+      "attempts": 3,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 598,
+      "domain": "www.nytimes.com",
+      "url": "https://www.nytimes.com/2026/10/22/world/php-vulnerability-websites-cybersecurity-ai.html",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-28T12:27:02Z",
+      "last_seen": "2026-10-28T12:27:02Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 204,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/TR/resource-timing/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T10:10:24Z",
+      "last_seen": "2026-10-25T10:10:24Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 467,
+      "domain": "github.com",
+      "url": "https://github.com/nomoat/free-asr",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T22:01:01Z",
+      "last_seen": "2026-10-26T22:01:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 508,
+      "domain": "sedo.com",
+      "url": "https://sedo.com",
+      "status_code": 503,
+      "error_message": "HTTP 503",
+      "first_seen": "2026-10-27T06:16:50Z",
+      "last_seen": "2026-10-27T06:21:14Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
     {
       "id": 522,
       "domain": "zenodo.org",
@@ -6821,83 +6898,6 @@
       "last_seen": "2026-10-25T17:05:36Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 82,
-      "domain": "www.securityfocus.com",
-      "url": "http://www.securityfocus.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.securityfocus.com/: Get \"http://www.securityfocus.com/\": dial tcp4 135.125.97.155:80: connect: connection refused",
-      "first_seen": "2026-10-23T17:33:58Z",
-      "last_seen": "2026-10-23T17:34:22Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.securityfocus.com/: Get \"http://www.securityfocus.com/\": dial tcp4 135.125.97.155:80: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 258,
-      "domain": "agenciadenoticias.ibge.gov.br",
-      "url": "http://agenciadenoticias.ibge.gov.br/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T17:01:12Z",
-      "last_seen": "2026-10-25T17:01:12Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 576,
-      "domain": "www150.statcan.gc.ca",
-      "url": "https://www150.statcan.gc.ca/n1/en/type/data?HPA=CD",
-      "status_code": 504,
-      "error_message": "context cancelled or timed out while reading response from https://www150.statcan.gc.ca/n1/en/type/data?HPA=CD: context deadline exceeded",
-      "first_seen": "2026-10-27T23:06:48Z",
-      "last_seen": "2026-10-27T23:08:00Z",
-      "attempts": 3,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 598,
-      "domain": "www.nytimes.com",
-      "url": "https://www.nytimes.com/2026/10/22/world/php-vulnerability-websites-cybersecurity-ai.html",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-28T12:27:02Z",
-      "last_seen": "2026-10-28T12:27:02Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 204,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/TR/resource-timing/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T10:10:24Z",
-      "last_seen": "2026-10-25T10:10:24Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 467,
-      "domain": "github.com",
-      "url": "https://github.com/nomoat/free-asr",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T22:01:01Z",
-      "last_seen": "2026-10-26T22:01:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 508,
-      "domain": "sedo.com",
-      "url": "https://sedo.com",
-      "status_code": 503,
-      "error_message": "HTTP 503",
-      "first_seen": "2026-10-27T06:16:50Z",
-      "last_seen": "2026-10-27T06:21:14Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
     }
   ]
 }
