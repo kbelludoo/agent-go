@@ -1,7 +1,51 @@
 {
-  "last_updated": "2026-10-28T01:28:03Z",
+  "last_updated": "2026-10-28T01:29:03Z",
   "total_quarantine": 581,
   "quarantine_sites": [
+    {
+      "id": 298,
+      "domain": "www.president.gov.ua",
+      "url": "https://www.president.gov.ua/en/news/prezident-ogolosiv-pro-zapusk-united24-globalnoyi-iniciativi-74789",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T23:06:37Z",
+      "last_seen": "2026-10-25T23:09:01Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 360,
+      "domain": "post.borger.dk",
+      "url": "https://post.borger.dk/?lang=en",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://post.borger.dk/?lang=en: Get \"https://post.borger.dk/?lang=en\": dial tcp4 188.180.120.148:443: i/o timeout",
+      "first_seen": "2026-10-26T12:02:48Z",
+      "last_seen": "2026-10-26T13:03:13Z",
+      "attempts": 12,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 559,
+      "domain": "am.ticketmaster.com",
+      "url": "https://am.ticketmaster.com/pbr/buy/TS-ALL",
+      "status_code": 901,
+      "error_message": "HTTP 901",
+      "first_seen": "2026-10-27T17:42:01Z",
+      "last_seen": "2026-10-27T17:42:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 901 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 570,
+      "domain": "international.gc.ca",
+      "url": "http://international.gc.ca/world-monde/index.aspx?lang=eng",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://international.gc.ca/world-monde/index.aspx?lang=eng: Get \"http://international.gc.ca/world-monde/index.aspx?lang=eng\": dial tcp4 198.103.198.137:80: connect: no route to host",
+      "first_seen": "2026-10-27T21:56:36Z",
+      "last_seen": "2026-10-27T22:37:24Z",
+      "attempts": 12,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://international.gc.ca/world-monde/index.aspx?lang=eng: Get \"http://international.gc.ca/world-monde/index.aspx?lang=eng\": dial tcp4 198.103.198.137:80: connect: no route to host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
     {
       "id": 198,
       "domain": "www.figma.com",
@@ -6348,50 +6392,6 @@
       "last_seen": "2026-10-24T22:31:35Z",
       "attempts": 10,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 298,
-      "domain": "www.president.gov.ua",
-      "url": "https://www.president.gov.ua/en/news/prezident-ogolosiv-pro-zapusk-united24-globalnoyi-iniciativi-74789",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T23:06:37Z",
-      "last_seen": "2026-10-25T23:09:01Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 360,
-      "domain": "post.borger.dk",
-      "url": "https://post.borger.dk/?lang=en",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://post.borger.dk/?lang=en: Get \"https://post.borger.dk/?lang=en\": dial tcp4 188.180.120.148:443: i/o timeout",
-      "first_seen": "2026-10-26T12:02:48Z",
-      "last_seen": "2026-10-26T13:03:13Z",
-      "attempts": 12,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 559,
-      "domain": "am.ticketmaster.com",
-      "url": "https://am.ticketmaster.com/pbr/buy/TS-ALL",
-      "status_code": 901,
-      "error_message": "HTTP 901",
-      "first_seen": "2026-10-27T17:42:01Z",
-      "last_seen": "2026-10-27T17:42:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 901 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 570,
-      "domain": "international.gc.ca",
-      "url": "http://international.gc.ca/world-monde/index.aspx?lang=eng",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://international.gc.ca/world-monde/index.aspx?lang=eng: Get \"http://international.gc.ca/world-monde/index.aspx?lang=eng\": dial tcp4 198.103.198.137:80: connect: no route to host",
-      "first_seen": "2026-10-27T21:56:36Z",
-      "last_seen": "2026-10-27T22:37:24Z",
-      "attempts": 12,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://international.gc.ca/world-monde/index.aspx?lang=eng: Get \"http://international.gc.ca/world-monde/index.aspx?lang=eng\": dial tcp4 198.103.198.137:80: connect: no route to host. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
