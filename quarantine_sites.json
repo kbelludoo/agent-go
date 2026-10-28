@@ -1,18 +1,7 @@
 {
-  "last_updated": "2026-10-28T00:24:02Z",
+  "last_updated": "2026-10-28T00:25:01Z",
   "total_quarantine": 581,
   "quarantine_sites": [
-    {
-      "id": 208,
-      "domain": "account.microsoft.com",
-      "url": "https://account.microsoft.com/privacy",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-25T10:38:49Z",
-      "last_seen": "2026-10-25T10:53:01Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 355,
       "domain": "www.zkb.ch",
@@ -3386,8 +3375,8 @@
       "status_code": 401,
       "error_message": "HTTP 401",
       "first_seen": "2026-10-28T00:17:50Z",
-      "last_seen": "2026-10-28T00:22:49Z",
-      "attempts": 6,
+      "last_seen": "2026-10-28T00:25:01Z",
+      "attempts": 8,
       "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
@@ -6235,8 +6224,8 @@
       "status_code": 401,
       "error_message": "HTTP 401",
       "first_seen": "2026-10-28T00:17:37Z",
-      "last_seen": "2026-10-28T00:22:37Z",
-      "attempts": 6,
+      "last_seen": "2026-10-28T00:24:49Z",
+      "attempts": 8,
       "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
@@ -6392,6 +6381,17 @@
       "last_seen": "2026-10-26T19:09:13Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 208,
+      "domain": "account.microsoft.com",
+      "url": "https://account.microsoft.com/privacy",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-25T10:38:49Z",
+      "last_seen": "2026-10-25T10:53:01Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
