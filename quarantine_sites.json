@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-28T11:56:27Z",
+  "last_updated": "2026-10-28T11:57:25Z",
   "total_quarantine": 597,
   "quarantine_sites": [
     {
@@ -1076,8 +1076,8 @@
       "status_code": 404,
       "error_message": "HTTP 404",
       "first_seen": "2026-10-23T13:04:10Z",
-      "last_seen": "2026-10-28T10:06:25Z",
-      "attempts": 19,
+      "last_seen": "2026-10-28T11:56:37Z",
+      "attempts": 20,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
@@ -3331,8 +3331,8 @@
       "status_code": 404,
       "error_message": "HTTP 404",
       "first_seen": "2026-10-23T13:04:58Z",
-      "last_seen": "2026-10-28T10:07:13Z",
-      "attempts": 19,
+      "last_seen": "2026-10-28T11:57:25Z",
+      "attempts": 20,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
