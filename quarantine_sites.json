@@ -1,73 +1,7 @@
 {
-  "last_updated": "2026-10-28T09:13:52Z",
+  "last_updated": "2026-10-28T09:15:06Z",
   "total_quarantine": 590,
   "quarantine_sites": [
-    {
-      "id": 24,
-      "domain": "www.nytimes.com",
-      "url": "https://www.nytimes.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:23:22Z",
-      "last_seen": "2026-10-28T08:13:37Z",
-      "attempts": 17,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 299,
-      "domain": "www.ftc.gov",
-      "url": "http://www.ftc.gov/foia/listofpaysystems.shtm",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T23:47:49Z",
-      "last_seen": "2026-10-26T00:37:49Z",
-      "attempts": 7,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 335,
-      "domain": "www.loc.gov",
-      "url": "http://www.loc.gov/standards/iso639",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T03:32:01Z",
-      "last_seen": "2026-10-26T03:49:25Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 546,
-      "domain": "event.newschool.edu",
-      "url": "https://event.newschool.edu/2026Honorees",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T12:49:01Z",
-      "last_seen": "2026-10-27T12:49:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 565,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T18:50:25Z",
-      "last_seen": "2026-10-27T19:15:25Z",
-      "attempts": 12,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 580,
-      "domain": "portal.first.org",
-      "url": "https://portal.first.org",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-28T00:17:37Z",
-      "last_seen": "2026-10-28T01:23:37Z",
-      "attempts": 60,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 117,
       "domain": "app.slack.com",
@@ -6491,6 +6425,72 @@
       "last_seen": "2026-10-26T20:44:13Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 24,
+      "domain": "www.nytimes.com",
+      "url": "https://www.nytimes.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:23:22Z",
+      "last_seen": "2026-10-28T08:13:37Z",
+      "attempts": 17,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 299,
+      "domain": "www.ftc.gov",
+      "url": "http://www.ftc.gov/foia/listofpaysystems.shtm",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T23:47:49Z",
+      "last_seen": "2026-10-26T00:37:49Z",
+      "attempts": 7,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 335,
+      "domain": "www.loc.gov",
+      "url": "http://www.loc.gov/standards/iso639",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T03:32:01Z",
+      "last_seen": "2026-10-26T03:49:25Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 546,
+      "domain": "event.newschool.edu",
+      "url": "https://event.newschool.edu/2026Honorees",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T12:49:01Z",
+      "last_seen": "2026-10-27T12:49:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 565,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T18:50:25Z",
+      "last_seen": "2026-10-27T19:15:25Z",
+      "attempts": 12,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 580,
+      "domain": "portal.first.org",
+      "url": "https://portal.first.org",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-28T00:17:37Z",
+      "last_seen": "2026-10-28T01:23:37Z",
+      "attempts": 60,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
