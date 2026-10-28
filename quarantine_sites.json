@@ -1,117 +1,7 @@
 {
-  "last_updated": "2026-10-28T12:25:52Z",
+  "last_updated": "2026-10-28T12:26:51Z",
   "total_quarantine": 597,
   "quarantine_sites": [
-    {
-      "id": 121,
-      "domain": "ldcnetwork.hsites.harvard.edu",
-      "url": "https://ldcnetwork.hsites.harvard.edu/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:57:24Z",
-      "last_seen": "2026-10-24T01:00:23Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 132,
-      "domain": "stratos.seas.harvard.edu",
-      "url": "https://stratos.seas.harvard.edu/files/stratos/files/rum.pdf",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T18:05:47Z",
-      "last_seen": "2026-10-25T00:21:37Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 250,
-      "domain": "en.wikipedia.org",
-      "url": "https://en.wikipedia.org/wiki/Water_pu",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T15:39:13Z",
-      "last_seen": "2026-10-28T11:34:49Z",
-      "attempts": 17,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 263,
-      "domain": "errata.rfc-editor.org",
-      "url": "https://errata.rfc-editor.org/oidc/authenticate/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T17:31:13Z",
-      "last_seen": "2026-10-25T17:31:49Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 397,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/easysoft-gmbh",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T18:43:49Z",
-      "last_seen": "2026-10-26T18:45:37Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 542,
-      "domain": "github.com",
-      "url": "https://github.com/alsyun",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-27T12:33:13Z",
-      "last_seen": "2026-10-27T12:33:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 140,
-      "domain": "www.allaboutcookies.org",
-      "url": "https://www.allaboutcookies.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T18:51:11Z",
-      "last_seen": "2026-10-24T18:51:11Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 59,
-      "domain": "sverigesradio.se",
-      "url": "https://sverigesradio.se/artikel/kontakta-ekots-granskande-reportrar",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T15:49:11Z",
-      "last_seen": "2026-10-24T00:25:02Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 178,
-      "domain": "www.regulations.gov",
-      "url": "http://www.regulations.gov",
-      "status_code": 502,
-      "error_message": "HTTP 502",
-      "first_seen": "2026-10-25T02:53:14Z",
-      "last_seen": "2026-10-25T02:53:37Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 502 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 197,
-      "domain": "people.eecs.berkeley.edu",
-      "url": "https://people.eecs.berkeley.edu/~krste/papers/wasm.pdf",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://people.eecs.berkeley.edu/~krste/papers/wasm.pdf: Get \"https://people.eecs.berkeley.edu/~krste/papers/wasm.pdf\": context deadline exceeded",
-      "first_seen": "2026-10-25T10:00:12Z",
-      "last_seen": "2026-10-25T10:00:12Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
     {
       "id": 89,
       "domain": "updates.opal.camera",
@@ -6567,6 +6457,116 @@
       "first_seen": "2026-10-27T21:39:02Z",
       "last_seen": "2026-10-27T21:39:37Z",
       "attempts": 3,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 121,
+      "domain": "ldcnetwork.hsites.harvard.edu",
+      "url": "https://ldcnetwork.hsites.harvard.edu/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:57:24Z",
+      "last_seen": "2026-10-24T01:00:23Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 132,
+      "domain": "stratos.seas.harvard.edu",
+      "url": "https://stratos.seas.harvard.edu/files/stratos/files/rum.pdf",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T18:05:47Z",
+      "last_seen": "2026-10-25T00:21:37Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 250,
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Water_pu",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T15:39:13Z",
+      "last_seen": "2026-10-28T11:34:49Z",
+      "attempts": 17,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 263,
+      "domain": "errata.rfc-editor.org",
+      "url": "https://errata.rfc-editor.org/oidc/authenticate/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T17:31:13Z",
+      "last_seen": "2026-10-25T17:31:49Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 397,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/easysoft-gmbh",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T18:43:49Z",
+      "last_seen": "2026-10-26T18:45:37Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 542,
+      "domain": "github.com",
+      "url": "https://github.com/alsyun",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-27T12:33:13Z",
+      "last_seen": "2026-10-27T12:33:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 140,
+      "domain": "www.allaboutcookies.org",
+      "url": "https://www.allaboutcookies.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T18:51:11Z",
+      "last_seen": "2026-10-24T18:51:11Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 59,
+      "domain": "sverigesradio.se",
+      "url": "https://sverigesradio.se/artikel/kontakta-ekots-granskande-reportrar",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T15:49:11Z",
+      "last_seen": "2026-10-24T00:25:02Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 178,
+      "domain": "www.regulations.gov",
+      "url": "http://www.regulations.gov",
+      "status_code": 502,
+      "error_message": "HTTP 502",
+      "first_seen": "2026-10-25T02:53:14Z",
+      "last_seen": "2026-10-25T02:53:37Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 502 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 197,
+      "domain": "people.eecs.berkeley.edu",
+      "url": "https://people.eecs.berkeley.edu/~krste/papers/wasm.pdf",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://people.eecs.berkeley.edu/~krste/papers/wasm.pdf: Get \"https://people.eecs.berkeley.edu/~krste/papers/wasm.pdf\": context deadline exceeded",
+      "first_seen": "2026-10-25T10:00:12Z",
+      "last_seen": "2026-10-25T10:00:12Z",
+      "attempts": 1,
       "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     }
   ]
