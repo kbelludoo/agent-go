@@ -1,7 +1,128 @@
 {
-  "last_updated": "2026-10-29T07:00:29Z",
+  "last_updated": "2026-10-29T07:01:26Z",
   "total_quarantine": 654,
   "quarantine_sites": [
+    {
+      "id": 111,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/tiny-spec-inc/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T00:38:23Z",
+      "last_seen": "2026-10-24T00:38:59Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 116,
+      "domain": "join.slack.com",
+      "url": "https://join.slack.com/share/enQtMTE1OTk4NTI5NzUyMTctMDY3ODA1YzNkYzlmOGFkNTA3YzE0MjdlMzFkODZmYzNmNTg1Yjk3YzY3MmNmMjI1YWU5MzgyNjcwZDg1N2QyNQ",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T22:16:46Z",
+      "last_seen": "2026-10-24T00:25:11Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 350,
+      "domain": "www.peqqik.gl",
+      "url": "http://www.peqqik.gl?sc_lang=kl-GL",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.peqqik.gl?sc_lang=kl-GL: Get \"http://www.peqqik.gl?sc_lang=kl-GL\": dial tcp4 194.177.235.197:80: i/o timeout",
+      "first_seen": "2026-10-26T08:21:24Z",
+      "last_seen": "2026-10-26T09:50:48Z",
+      "attempts": 6,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 365,
+      "domain": "boligejer.dk",
+      "url": "https://boligejer.dk/spoergsmaal-og-svar-ejendomsmaegler",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T13:12:13Z",
+      "last_seen": "2026-10-26T14:13:37Z",
+      "attempts": 24,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 421,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=781a980e-171b-4490-b0ab-d0392d977768",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:21:13Z",
+      "last_seen": "2026-10-26T19:21:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 437,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=93ba09b3-60d9-498b-a99c-24437fa6d591",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:22:13Z",
+      "last_seen": "2026-10-26T20:22:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 518,
+      "domain": "doi.org",
+      "url": "https://doi.org/10.5281/zenodo.23661668",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T09:15:14Z",
+      "last_seen": "2026-10-27T09:15:14Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 561,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/TR/privacy-principles/#dfn-data-processor",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T18:11:25Z",
+      "last_seen": "2026-10-27T18:21:01Z",
+      "attempts": 12,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 164,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/uas/request-password-reset?trk=csm-v2_forgot_password",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T21:55:35Z",
+      "last_seen": "2026-10-24T21:55:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 97,
+      "domain": "www.gov.br",
+      "url": "https://www.gov.br/governodigital/pt-br/search?origem=termos\u0026SearchableText=Desenrola Brasil",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-23T19:19:57Z",
+      "last_seen": "2026-10-23T19:19:57Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 71,
+      "domain": "webservices.esa.int",
+      "url": "https://webservices.esa.int/blog/blog/5",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://webservices.esa.int/blog/blog/5: Get \"https://webservices.esa.int/blog/blog/5\": dial tcp4: lookup webservices.esa.int on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-23T16:37:46Z",
+      "last_seen": "2026-10-23T22:56:55Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://webservices.esa.int/blog/blog/5: Get \"https://webservices.esa.int/blog/blog/5\": dial tcp4: lookup webservices.esa.int on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
     {
       "id": 183,
       "domain": "sa.www4.irs.gov",
@@ -7074,127 +7195,6 @@
       "last_seen": "2026-10-25T14:20:02Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 111,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/tiny-spec-inc/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T00:38:23Z",
-      "last_seen": "2026-10-24T00:38:59Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 116,
-      "domain": "join.slack.com",
-      "url": "https://join.slack.com/share/enQtMTE1OTk4NTI5NzUyMTctMDY3ODA1YzNkYzlmOGFkNTA3YzE0MjdlMzFkODZmYzNmNTg1Yjk3YzY3MmNmMjI1YWU5MzgyNjcwZDg1N2QyNQ",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T22:16:46Z",
-      "last_seen": "2026-10-24T00:25:11Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 350,
-      "domain": "www.peqqik.gl",
-      "url": "http://www.peqqik.gl?sc_lang=kl-GL",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.peqqik.gl?sc_lang=kl-GL: Get \"http://www.peqqik.gl?sc_lang=kl-GL\": dial tcp4 194.177.235.197:80: i/o timeout",
-      "first_seen": "2026-10-26T08:21:24Z",
-      "last_seen": "2026-10-26T09:50:48Z",
-      "attempts": 6,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 365,
-      "domain": "boligejer.dk",
-      "url": "https://boligejer.dk/spoergsmaal-og-svar-ejendomsmaegler",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T13:12:13Z",
-      "last_seen": "2026-10-26T14:13:37Z",
-      "attempts": 24,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 421,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=781a980e-171b-4490-b0ab-d0392d977768",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:21:13Z",
-      "last_seen": "2026-10-26T19:21:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 437,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=93ba09b3-60d9-498b-a99c-24437fa6d591",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:22:13Z",
-      "last_seen": "2026-10-26T20:22:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 518,
-      "domain": "doi.org",
-      "url": "https://doi.org/10.5281/zenodo.23661668",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T09:15:14Z",
-      "last_seen": "2026-10-27T09:15:14Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 561,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/TR/privacy-principles/#dfn-data-processor",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T18:11:25Z",
-      "last_seen": "2026-10-27T18:21:01Z",
-      "attempts": 12,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 164,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/uas/request-password-reset?trk=csm-v2_forgot_password",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T21:55:35Z",
-      "last_seen": "2026-10-24T21:55:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 97,
-      "domain": "www.gov.br",
-      "url": "https://www.gov.br/governodigital/pt-br/search?origem=termos\u0026SearchableText=Desenrola Brasil",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-23T19:19:57Z",
-      "last_seen": "2026-10-23T19:19:57Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 71,
-      "domain": "webservices.esa.int",
-      "url": "https://webservices.esa.int/blog/blog/5",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://webservices.esa.int/blog/blog/5: Get \"https://webservices.esa.int/blog/blog/5\": dial tcp4: lookup webservices.esa.int on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-23T16:37:46Z",
-      "last_seen": "2026-10-23T22:56:55Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://webservices.esa.int/blog/blog/5: Get \"https://webservices.esa.int/blog/blog/5\": dial tcp4: lookup webservices.esa.int on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
     }
   ]
 }
