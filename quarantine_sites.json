@@ -1,40 +1,7 @@
 {
-  "last_updated": "2026-10-29T11:58:50Z",
+  "last_updated": "2026-10-29T11:59:51Z",
   "total_quarantine": 661,
   "quarantine_sites": [
-    {
-      "id": 109,
-      "domain": "www.scielo.org",
-      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter\u0026lang=en",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T00:30:04Z",
-      "last_seen": "2026-10-24T00:30:04Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 354,
-      "domain": "post.borger.dk",
-      "url": "https://post.borger.dk",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://post.borger.dk: Get \"https://post.borger.dk\": dial tcp4 188.180.120.148:443: i/o timeout",
-      "first_seen": "2026-10-26T11:15:00Z",
-      "last_seen": "2026-10-26T11:56:48Z",
-      "attempts": 6,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 388,
-      "domain": "de.linkedin.com",
-      "url": "https://de.linkedin.com/company/universit-tsklinikum-hamburg-eppendorf?trk=public_jobs_topcard_org_name",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T18:05:37Z",
-      "last_seen": "2026-10-26T18:06:25Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 347,
       "domain": "www.capterra.com.de",
@@ -7270,6 +7237,39 @@
       "error_message": "HTTP 999",
       "first_seen": "2026-10-24T22:42:35Z",
       "last_seen": "2026-10-24T23:26:00Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 109,
+      "domain": "www.scielo.org",
+      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter\u0026lang=en",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T00:30:04Z",
+      "last_seen": "2026-10-24T00:30:04Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 354,
+      "domain": "post.borger.dk",
+      "url": "https://post.borger.dk",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://post.borger.dk: Get \"https://post.borger.dk\": dial tcp4 188.180.120.148:443: i/o timeout",
+      "first_seen": "2026-10-26T11:15:00Z",
+      "last_seen": "2026-10-26T11:56:48Z",
+      "attempts": 6,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 388,
+      "domain": "de.linkedin.com",
+      "url": "https://de.linkedin.com/company/universit-tsklinikum-hamburg-eppendorf?trk=public_jobs_topcard_org_name",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T18:05:37Z",
+      "last_seen": "2026-10-26T18:06:25Z",
       "attempts": 2,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
