@@ -1,51 +1,7 @@
 {
-  "last_updated": "2026-10-29T12:11:03Z",
+  "last_updated": "2026-10-29T12:12:08Z",
   "total_quarantine": 661,
   "quarantine_sites": [
-    {
-      "id": 458,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=4991853f-1850-431b-8bf1-8f2a0e3a6a39",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:43:13Z",
-      "last_seen": "2026-10-26T20:43:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 506,
-      "domain": "brat-generator.pro",
-      "url": "https://brat-generator.pro/greeting/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-27T06:03:25Z",
-      "last_seen": "2026-10-27T06:07:49Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 527,
-      "domain": "opensource.org",
-      "url": "https://opensource.org/licenses/BSD-3-Clause",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T09:50:13Z",
-      "last_seen": "2026-10-27T09:50:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 528,
-      "domain": "sourceforge.net",
-      "url": "https://sourceforge.net/projects/magicsplat/files/magicsplat-tcl/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T09:50:49Z",
-      "last_seen": "2026-10-27T09:50:49Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 127,
       "domain": "twitter.com",
@@ -7272,6 +7228,50 @@
       "last_seen": "2026-10-24T18:34:35Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 458,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=4991853f-1850-431b-8bf1-8f2a0e3a6a39",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:43:13Z",
+      "last_seen": "2026-10-26T20:43:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 506,
+      "domain": "brat-generator.pro",
+      "url": "https://brat-generator.pro/greeting/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-27T06:03:25Z",
+      "last_seen": "2026-10-27T06:07:49Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 527,
+      "domain": "opensource.org",
+      "url": "https://opensource.org/licenses/BSD-3-Clause",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T09:50:13Z",
+      "last_seen": "2026-10-27T09:50:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 528,
+      "domain": "sourceforge.net",
+      "url": "https://sourceforge.net/projects/magicsplat/files/magicsplat-tcl/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T09:50:49Z",
+      "last_seen": "2026-10-27T09:50:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
