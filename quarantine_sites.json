@@ -1,7 +1,40 @@
 {
-  "last_updated": "2026-10-29T10:45:42Z",
+  "last_updated": "2026-10-29T10:46:52Z",
   "total_quarantine": 660,
   "quarantine_sites": [
+    {
+      "id": 166,
+      "domain": "se.linkedin.com",
+      "url": "https://se.linkedin.com/in/andreas-axhamre123?trk=article-ssr-frontend-pulse_x-social-details_comments-action_comment_actor-name",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T22:41:36Z",
+      "last_seen": "2026-10-24T23:24:59Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 236,
+      "domain": "tools.be10x.com",
+      "url": "https://tools.be10x.com/ai-career-planner",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T15:22:36Z",
+      "last_seen": "2026-10-25T15:22:36Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 168,
+      "domain": "au.linkedin.com",
+      "url": "https://au.linkedin.com/in/mariachristley",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T22:42:12Z",
+      "last_seen": "2026-10-24T23:25:35Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 288,
       "domain": "www.ietf.org",
@@ -7228,39 +7261,6 @@
       "last_seen": "2026-10-29T05:43:37Z",
       "attempts": 2,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 166,
-      "domain": "se.linkedin.com",
-      "url": "https://se.linkedin.com/in/andreas-axhamre123?trk=article-ssr-frontend-pulse_x-social-details_comments-action_comment_actor-name",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T22:41:36Z",
-      "last_seen": "2026-10-24T23:24:59Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 236,
-      "domain": "tools.be10x.com",
-      "url": "https://tools.be10x.com/ai-career-planner",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T15:22:36Z",
-      "last_seen": "2026-10-25T15:22:36Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 168,
-      "domain": "au.linkedin.com",
-      "url": "https://au.linkedin.com/in/mariachristley",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T22:42:12Z",
-      "last_seen": "2026-10-24T23:25:35Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
