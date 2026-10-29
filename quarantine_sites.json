@@ -1,150 +1,7 @@
 {
-  "last_updated": "2026-10-29T12:23:15Z",
+  "last_updated": "2026-10-29T12:24:15Z",
   "total_quarantine": 661,
   "quarantine_sites": [
-    {
-      "id": 144,
-      "domain": "www.springernature.com",
-      "url": "https://www.springernature.com/gp/librarians/contact-%20us",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T18:57:35Z",
-      "last_seen": "2026-10-24T19:19:23Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 148,
-      "domain": "ibm.enterprise.slack.com",
-      "url": "https://ibm.enterprise.slack.com/workspace-signin",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T19:12:35Z",
-      "last_seen": "2026-10-24T19:12:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 265,
-      "domain": "web.whatsapp.com",
-      "url": "https://web.whatsapp.com/send?text=%20Curso Gratuito: Estado de Direito | Gazeta do Povo%20https://especiais.gazetadopovo.com.br/cursos/curso-gratuito-estado-de-direito-gazeta-do-povo%3Fcomp%3Dwhatsapp",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-25T17:52:36Z",
-      "last_seen": "2026-10-25T17:52:36Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 281,
-      "domain": "account.icann.org",
-      "url": "https://account.icann.org/authorize?redirect_uri=https://www.icann.org/oauth\u0026client_id=0oa9o9k9rp8VUcyJL2p7\u0026nonce=6f5398ba-8a62-4370-99a8-e00d981b692d\u0026state=https://www.icann.org/",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-25T20:26:26Z",
-      "last_seen": "2026-10-25T20:26:26Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 430,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=b76bc0ae-ae83-4827-943f-7f819ae79552",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:50:13Z",
-      "last_seen": "2026-10-26T19:50:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 613,
-      "domain": "paradoxicalrenegade.com",
-      "url": "http://paradoxicalrenegade.com",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://paradoxicalrenegade.com: Get \"http://paradoxicalrenegade.com\": dial tcp4: lookup paradoxicalrenegade.com on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-28T16:15:25Z",
-      "last_seen": "2026-10-28T17:07:13Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://paradoxicalrenegade.com: Get \"http://paradoxicalrenegade.com\": dial tcp4: lookup paradoxicalrenegade.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 81,
-      "domain": "speakerdex.co",
-      "url": "https://speakerdex.co/marcel",
-      "status_code": 436,
-      "error_message": "HTTP 436",
-      "first_seen": "2026-10-23T17:30:13Z",
-      "last_seen": "2026-10-25T00:21:27Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 436 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 163,
-      "domain": "de.linkedin.com",
-      "url": "https://de.linkedin.com/company/springernature/life?trk=nav_type_life",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T21:52:35Z",
-      "last_seen": "2026-10-24T21:52:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 84,
-      "domain": "www.loc.gov",
-      "url": "https://www.loc.gov/collections/copyright-historical-record-books-1870-to-1977/about-this-collection/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T17:38:58Z",
-      "last_seen": "2026-10-23T17:38:58Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 90,
-      "domain": "www.nytimes.com",
-      "url": "https://www.nytimes.com/2010/09/29/technology/29aol.html",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T18:02:34Z",
-      "last_seen": "2026-10-24T00:10:54Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 568,
-      "domain": "www150.statcan.gc.ca",
-      "url": "https://www150.statcan.gc.ca/n1/fr/type/donnees?MM=1",
-      "status_code": 429,
-      "error_message": "HTTP 429",
-      "first_seen": "2026-10-27T21:37:12Z",
-      "last_seen": "2026-10-27T21:38:50Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
-    },
-    {
-      "id": 234,
-      "domain": "localhost",
-      "url": "http://localhost:9090/metrics",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused",
-      "first_seen": "2026-10-25T15:21:12Z",
-      "last_seen": "2026-10-25T15:21:12Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 320,
-      "domain": "fosstodon.org",
-      "url": "https://fosstodon.org/@plausible",
-      "status_code": 429,
-      "error_message": "HTTP 429",
-      "first_seen": "2026-10-26T02:21:26Z",
-      "last_seen": "2026-10-26T02:21:26Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
-    },
     {
       "id": 472,
       "domain": "forum.inter.co",
@@ -7272,6 +7129,149 @@
       "last_seen": "2026-10-26T20:35:13Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 144,
+      "domain": "www.springernature.com",
+      "url": "https://www.springernature.com/gp/librarians/contact-%20us",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T18:57:35Z",
+      "last_seen": "2026-10-24T19:19:23Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 148,
+      "domain": "ibm.enterprise.slack.com",
+      "url": "https://ibm.enterprise.slack.com/workspace-signin",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T19:12:35Z",
+      "last_seen": "2026-10-24T19:12:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 265,
+      "domain": "web.whatsapp.com",
+      "url": "https://web.whatsapp.com/send?text=%20Curso Gratuito: Estado de Direito | Gazeta do Povo%20https://especiais.gazetadopovo.com.br/cursos/curso-gratuito-estado-de-direito-gazeta-do-povo%3Fcomp%3Dwhatsapp",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-25T17:52:36Z",
+      "last_seen": "2026-10-25T17:52:36Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 281,
+      "domain": "account.icann.org",
+      "url": "https://account.icann.org/authorize?redirect_uri=https://www.icann.org/oauth\u0026client_id=0oa9o9k9rp8VUcyJL2p7\u0026nonce=6f5398ba-8a62-4370-99a8-e00d981b692d\u0026state=https://www.icann.org/",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-25T20:26:26Z",
+      "last_seen": "2026-10-25T20:26:26Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 430,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=b76bc0ae-ae83-4827-943f-7f819ae79552",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:50:13Z",
+      "last_seen": "2026-10-26T19:50:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 613,
+      "domain": "paradoxicalrenegade.com",
+      "url": "http://paradoxicalrenegade.com",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://paradoxicalrenegade.com: Get \"http://paradoxicalrenegade.com\": dial tcp4: lookup paradoxicalrenegade.com on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-28T16:15:25Z",
+      "last_seen": "2026-10-28T17:07:13Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://paradoxicalrenegade.com: Get \"http://paradoxicalrenegade.com\": dial tcp4: lookup paradoxicalrenegade.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 81,
+      "domain": "speakerdex.co",
+      "url": "https://speakerdex.co/marcel",
+      "status_code": 436,
+      "error_message": "HTTP 436",
+      "first_seen": "2026-10-23T17:30:13Z",
+      "last_seen": "2026-10-25T00:21:27Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 436 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 163,
+      "domain": "de.linkedin.com",
+      "url": "https://de.linkedin.com/company/springernature/life?trk=nav_type_life",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T21:52:35Z",
+      "last_seen": "2026-10-24T21:52:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 84,
+      "domain": "www.loc.gov",
+      "url": "https://www.loc.gov/collections/copyright-historical-record-books-1870-to-1977/about-this-collection/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T17:38:58Z",
+      "last_seen": "2026-10-23T17:38:58Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 90,
+      "domain": "www.nytimes.com",
+      "url": "https://www.nytimes.com/2010/09/29/technology/29aol.html",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T18:02:34Z",
+      "last_seen": "2026-10-24T00:10:54Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 568,
+      "domain": "www150.statcan.gc.ca",
+      "url": "https://www150.statcan.gc.ca/n1/fr/type/donnees?MM=1",
+      "status_code": 429,
+      "error_message": "HTTP 429",
+      "first_seen": "2026-10-27T21:37:12Z",
+      "last_seen": "2026-10-27T21:38:50Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
+    },
+    {
+      "id": 234,
+      "domain": "localhost",
+      "url": "http://localhost:9090/metrics",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused",
+      "first_seen": "2026-10-25T15:21:12Z",
+      "last_seen": "2026-10-25T15:21:12Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 320,
+      "domain": "fosstodon.org",
+      "url": "https://fosstodon.org/@plausible",
+      "status_code": 429,
+      "error_message": "HTTP 429",
+      "first_seen": "2026-10-26T02:21:26Z",
+      "last_seen": "2026-10-26T02:21:26Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
     }
   ]
 }
