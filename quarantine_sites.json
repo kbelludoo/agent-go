@@ -1,7 +1,84 @@
 {
-  "last_updated": "2026-10-29T05:35:03Z",
+  "last_updated": "2026-10-29T05:36:05Z",
   "total_quarantine": 646,
   "quarantine_sites": [
+    {
+      "id": 267,
+      "domain": "www.cftc.gov",
+      "url": "https://www.cftc.gov/sites/default/files/idc/groups/public/@newsroom/documents/file/federalregister112415.pdf",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T18:02:25Z",
+      "last_seen": "2026-10-25T18:02:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 282,
+      "domain": "x.com",
+      "url": "https://x.com/GforPublishers",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T20:33:25Z",
+      "last_seen": "2026-10-25T20:34:01Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 368,
+      "domain": "admin.statens-tilskudspuljer.dk",
+      "url": "https://admin.statens-tilskudspuljer.dk/Lists/SLKS/DispForm.aspx?ID=1143",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-26T15:00:25Z",
+      "last_seen": "2026-10-26T15:08:01Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 487,
+      "domain": "devops.com",
+      "url": "https://devops.com/9-pillars-of-continuous-security-best-practices",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T03:18:01Z",
+      "last_seen": "2026-10-27T03:18:49Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 639,
+      "domain": "grimmshollow.tumblr.com",
+      "url": "http://grimmshollow.tumblr.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-29T03:52:14Z",
+      "last_seen": "2026-10-29T04:10:03Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 362,
+      "domain": "virksomhedsguiden.dk",
+      "url": "https://virksomhedsguiden.dk/content/ydelser/faa-overblik-over-virksomhedsformer/1669d3e5-d022-4c85-99b4-e4369c235593/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T12:03:13Z",
+      "last_seen": "2026-10-26T13:08:25Z",
+      "attempts": 12,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 535,
+      "domain": "web.dev",
+      "url": "https://web.dev/webassembly-video-editor/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-27T10:07:01Z",
+      "last_seen": "2026-10-27T10:08:50Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 558,
       "domain": "www.axs.com",
@@ -7030,83 +7107,6 @@
       "last_seen": "2026-10-24T21:29:11Z",
       "attempts": 1,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 267,
-      "domain": "www.cftc.gov",
-      "url": "https://www.cftc.gov/sites/default/files/idc/groups/public/@newsroom/documents/file/federalregister112415.pdf",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T18:02:25Z",
-      "last_seen": "2026-10-25T18:02:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 282,
-      "domain": "x.com",
-      "url": "https://x.com/GforPublishers",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T20:33:25Z",
-      "last_seen": "2026-10-25T20:34:01Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 368,
-      "domain": "admin.statens-tilskudspuljer.dk",
-      "url": "https://admin.statens-tilskudspuljer.dk/Lists/SLKS/DispForm.aspx?ID=1143",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-26T15:00:25Z",
-      "last_seen": "2026-10-26T15:08:01Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 487,
-      "domain": "devops.com",
-      "url": "https://devops.com/9-pillars-of-continuous-security-best-practices",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T03:18:01Z",
-      "last_seen": "2026-10-27T03:18:49Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 639,
-      "domain": "grimmshollow.tumblr.com",
-      "url": "http://grimmshollow.tumblr.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-29T03:52:14Z",
-      "last_seen": "2026-10-29T04:10:03Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 362,
-      "domain": "virksomhedsguiden.dk",
-      "url": "https://virksomhedsguiden.dk/content/ydelser/faa-overblik-over-virksomhedsformer/1669d3e5-d022-4c85-99b4-e4369c235593/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T12:03:13Z",
-      "last_seen": "2026-10-26T13:08:25Z",
-      "attempts": 12,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 535,
-      "domain": "web.dev",
-      "url": "https://web.dev/webassembly-video-editor/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-27T10:07:01Z",
-      "last_seen": "2026-10-27T10:08:50Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
