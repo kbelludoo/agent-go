@@ -1,51 +1,7 @@
 {
-  "last_updated": "2026-10-29T06:16:51Z",
+  "last_updated": "2026-10-29T06:17:50Z",
   "total_quarantine": 649,
   "quarantine_sites": [
-    {
-      "id": 439,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=bc7f9d03-2343-4e91-ba7a-0b6110803335",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:24:13Z",
-      "last_seen": "2026-10-26T20:24:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 476,
-      "domain": "ec.europa.eu",
-      "url": "http://ec.europa.eu/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T23:07:38Z",
-      "last_seen": "2026-10-26T23:07:38Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 625,
-      "domain": "www.gnu.org",
-      "url": "https://www.gnu.org/philosophy/free-sw.html.en",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://www.gnu.org/philosophy/free-sw.html.en: Get \"https://www.gnu.org/philosophy/free-sw.html.en\": dial tcp4: lookup www.gnu.org: i/o timeout",
-      "first_seen": "2026-10-28T21:23:12Z",
-      "last_seen": "2026-10-28T22:08:48Z",
-      "attempts": 3,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 173,
-      "domain": "ec.europa.eu",
-      "url": "http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T22:43:35Z",
-      "last_seen": "2026-10-24T23:06:59Z",
-      "attempts": 10,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 370,
       "domain": "admin.statens-tilskudspuljer.dk",
@@ -7140,6 +7096,50 @@
       "last_seen": "2026-10-28T11:25:00Z",
       "attempts": 17,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL https://azure.microsoft.com/: Get \"https://azure.microsoft.com/pt-br\": read tcp4 10.0.1.126:38748-\u003e23.201.218.61:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 439,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=bc7f9d03-2343-4e91-ba7a-0b6110803335",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:24:13Z",
+      "last_seen": "2026-10-26T20:24:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 476,
+      "domain": "ec.europa.eu",
+      "url": "http://ec.europa.eu/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T23:07:38Z",
+      "last_seen": "2026-10-26T23:07:38Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 625,
+      "domain": "www.gnu.org",
+      "url": "https://www.gnu.org/philosophy/free-sw.html.en",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.gnu.org/philosophy/free-sw.html.en: Get \"https://www.gnu.org/philosophy/free-sw.html.en\": dial tcp4: lookup www.gnu.org: i/o timeout",
+      "first_seen": "2026-10-28T21:23:12Z",
+      "last_seen": "2026-10-28T22:08:48Z",
+      "attempts": 3,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 173,
+      "domain": "ec.europa.eu",
+      "url": "http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T22:43:35Z",
+      "last_seen": "2026-10-24T23:06:59Z",
+      "attempts": 10,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
 }
