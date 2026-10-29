@@ -1,7 +1,62 @@
 {
-  "last_updated": "2026-10-29T00:07:14Z",
+  "last_updated": "2026-10-29T00:08:18Z",
   "total_quarantine": 627,
   "quarantine_sites": [
+    {
+      "id": 145,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/in/predictiveanalytics/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T19:10:59Z",
+      "last_seen": "2026-10-24T19:10:59Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 230,
+      "domain": "sdtimes.com",
+      "url": "https://sdtimes.com/cloud-native-architecture/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T14:20:02Z",
+      "last_seen": "2026-10-25T14:20:02Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 111,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/tiny-spec-inc/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T00:38:23Z",
+      "last_seen": "2026-10-24T00:38:59Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 116,
+      "domain": "join.slack.com",
+      "url": "https://join.slack.com/share/enQtMTE1OTk4NTI5NzUyMTctMDY3ODA1YzNkYzlmOGFkNTA3YzE0MjdlMzFkODZmYzNmNTg1Yjk3YzY3MmNmMjI1YWU5MzgyNjcwZDg1N2QyNQ",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T22:16:46Z",
+      "last_seen": "2026-10-24T00:25:11Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 350,
+      "domain": "www.peqqik.gl",
+      "url": "http://www.peqqik.gl?sc_lang=kl-GL",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.peqqik.gl?sc_lang=kl-GL: Get \"http://www.peqqik.gl?sc_lang=kl-GL\": dial tcp4 194.177.235.197:80: i/o timeout",
+      "first_seen": "2026-10-26T08:21:24Z",
+      "last_seen": "2026-10-26T09:50:48Z",
+      "attempts": 6,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
     {
       "id": 365,
       "domain": "boligejer.dk",
@@ -6843,61 +6898,6 @@
       "last_seen": "2026-10-28T03:59:49Z",
       "attempts": 5,
       "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 145,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/in/predictiveanalytics/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T19:10:59Z",
-      "last_seen": "2026-10-24T19:10:59Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 230,
-      "domain": "sdtimes.com",
-      "url": "https://sdtimes.com/cloud-native-architecture/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T14:20:02Z",
-      "last_seen": "2026-10-25T14:20:02Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 111,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/tiny-spec-inc/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T00:38:23Z",
-      "last_seen": "2026-10-24T00:38:59Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 116,
-      "domain": "join.slack.com",
-      "url": "https://join.slack.com/share/enQtMTE1OTk4NTI5NzUyMTctMDY3ODA1YzNkYzlmOGFkNTA3YzE0MjdlMzFkODZmYzNmNTg1Yjk3YzY3MmNmMjI1YWU5MzgyNjcwZDg1N2QyNQ",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T22:16:46Z",
-      "last_seen": "2026-10-24T00:25:11Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 350,
-      "domain": "www.peqqik.gl",
-      "url": "http://www.peqqik.gl?sc_lang=kl-GL",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.peqqik.gl?sc_lang=kl-GL: Get \"http://www.peqqik.gl?sc_lang=kl-GL\": dial tcp4 194.177.235.197:80: i/o timeout",
-      "first_seen": "2026-10-26T08:21:24Z",
-      "last_seen": "2026-10-26T09:50:48Z",
-      "attempts": 6,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     }
   ]
 }
