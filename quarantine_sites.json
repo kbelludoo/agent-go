@@ -1,139 +1,7 @@
 {
-  "last_updated": "2026-10-29T22:16:06Z",
-  "total_quarantine": 664,
+  "last_updated": "2026-10-29T22:17:10Z",
+  "total_quarantine": 663,
   "quarantine_sites": [
-    {
-      "id": 576,
-      "domain": "www150.statcan.gc.ca",
-      "url": "https://www150.statcan.gc.ca/n1/en/type/data?HPA=CD",
-      "status_code": 504,
-      "error_message": "context cancelled or timed out while reading response from https://www150.statcan.gc.ca/n1/en/type/data?HPA=CD: context deadline exceeded",
-      "first_seen": "2026-10-27T23:06:48Z",
-      "last_seen": "2026-10-27T23:08:00Z",
-      "attempts": 3,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 331,
-      "domain": "validator.w3.org",
-      "url": "http://validator.w3.org/check?uri=referer",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T03:10:13Z",
-      "last_seen": "2026-10-26T04:05:37Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 555,
-      "domain": "act.aclu.org",
-      "url": "https://act.aclu.org/a/join-aclu-people-power",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T17:28:25Z",
-      "last_seen": "2026-10-27T17:28:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 234,
-      "domain": "localhost",
-      "url": "http://localhost:9090/metrics",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused",
-      "first_seen": "2026-10-25T15:21:12Z",
-      "last_seen": "2026-10-25T15:21:12Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 120,
-      "domain": "scielosp.org",
-      "url": "https://scielosp.org/journals/feed/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:56:11Z",
-      "last_seen": "2026-10-24T00:56:59Z",
-      "attempts": 4,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 400,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=000f5d2f-d991-45f0-909f-7130e3b02bb6",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:05:37Z",
-      "last_seen": "2026-10-26T19:05:37Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 77,
-      "domain": "cern.ch",
-      "url": "https://cern.ch/scientists",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T17:13:13Z",
-      "last_seen": "2026-10-23T17:13:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 508,
-      "domain": "sedo.com",
-      "url": "https://sedo.com",
-      "status_code": 503,
-      "error_message": "HTTP 503",
-      "first_seen": "2026-10-27T06:16:50Z",
-      "last_seen": "2026-10-27T06:21:14Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 225,
-      "domain": "register.paloaltonetworks.com",
-      "url": "https://register.paloaltonetworks.com/observabilityfortheaiera",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T14:06:12Z",
-      "last_seen": "2026-10-25T14:06:12Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 9,
-      "domain": "pt.wikipedia.org",
-      "url": "https://pt.wikipedia.org/wiki/Crise_cl",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T13:04:10Z",
-      "last_seen": "2026-10-28T11:56:37Z",
-      "attempts": 20,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 138,
-      "domain": "web.dio.me",
-      "url": "https://web.dio.me/track/ibm-bob-ia-nivel-empresarial-para-desenvolvedores",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T18:34:35Z",
-      "last_seen": "2026-10-24T18:34:35Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 429,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=b681e90e-1192-474a-a7cf-068c9a8c367c",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:49:13Z",
-      "last_seen": "2026-10-26T19:49:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 143,
       "domain": "twitter.com",
@@ -6939,8 +6807,8 @@
       "status_code": 504,
       "error_message": "failed to fetch URL https://Flux1.shop: Get \"https://Flux1.shop\": dial tcp4 128.199.126.49:443: i/o timeout",
       "first_seen": "2026-10-27T05:03:12Z",
-      "last_seen": "2026-10-27T05:03:12Z",
-      "attempts": 1,
+      "last_seen": "2026-10-29T22:16:18Z",
+      "attempts": 2,
       "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     },
     {
@@ -6950,19 +6818,8 @@
       "status_code": 404,
       "error_message": "HTTP 404",
       "first_seen": "2026-10-25T20:44:13Z",
-      "last_seen": "2026-10-25T20:45:25Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 428,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=4812e85f-5106-4e85-8acf-6c28ee880e63",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:48:13Z",
-      "last_seen": "2026-10-26T19:48:13Z",
-      "attempts": 1,
+      "last_seen": "2026-10-29T22:16:42Z",
+      "attempts": 3,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
@@ -6983,8 +6840,8 @@
       "status_code": 404,
       "error_message": "HTTP 404",
       "first_seen": "2026-10-26T19:05:49Z",
-      "last_seen": "2026-10-26T19:05:49Z",
-      "attempts": 1,
+      "last_seen": "2026-10-29T22:17:04Z",
+      "attempts": 2,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
     {
@@ -6994,8 +6851,8 @@
       "status_code": 403,
       "error_message": "HTTP 403",
       "first_seen": "2026-10-26T18:50:13Z",
-      "last_seen": "2026-10-26T19:04:01Z",
-      "attempts": 2,
+      "last_seen": "2026-10-29T22:17:10Z",
+      "attempts": 3,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     },
     {
@@ -7305,6 +7162,138 @@
       "last_seen": "2026-10-26T17:27:12Z",
       "attempts": 1,
       "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.stine.uni-hamburg.de/scripts/mgrqispi.dll?APPNAME=CampusNet\u0026PRGNAME=EXTERNALPAGES\u0026ARGUMENTS=-N000000000000002,-N000034,-Awelcome: Get \"https://www.stine.uni-hamburg.de/scripts/mgrqispi.dll?APPNAME=CampusNet\u0026PRGNAME=EXTERNALPAGES\u0026ARGUMENTS=-N000000000000002,-N000034,-Awelcome\": read tcp4 10.0.1.126:58004-\u003e134.100.36.33:443: use of closed network connection. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 576,
+      "domain": "www150.statcan.gc.ca",
+      "url": "https://www150.statcan.gc.ca/n1/en/type/data?HPA=CD",
+      "status_code": 504,
+      "error_message": "context cancelled or timed out while reading response from https://www150.statcan.gc.ca/n1/en/type/data?HPA=CD: context deadline exceeded",
+      "first_seen": "2026-10-27T23:06:48Z",
+      "last_seen": "2026-10-27T23:08:00Z",
+      "attempts": 3,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 331,
+      "domain": "validator.w3.org",
+      "url": "http://validator.w3.org/check?uri=referer",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T03:10:13Z",
+      "last_seen": "2026-10-26T04:05:37Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 555,
+      "domain": "act.aclu.org",
+      "url": "https://act.aclu.org/a/join-aclu-people-power",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T17:28:25Z",
+      "last_seen": "2026-10-27T17:28:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 234,
+      "domain": "localhost",
+      "url": "http://localhost:9090/metrics",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused",
+      "first_seen": "2026-10-25T15:21:12Z",
+      "last_seen": "2026-10-25T15:21:12Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://localhost:9090/metrics: Get \"http://localhost:9090/metrics\": dial tcp4 127.0.0.1:9090: connect: connection refused. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 120,
+      "domain": "scielosp.org",
+      "url": "https://scielosp.org/journals/feed/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:56:11Z",
+      "last_seen": "2026-10-24T00:56:59Z",
+      "attempts": 4,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 400,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=000f5d2f-d991-45f0-909f-7130e3b02bb6",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:05:37Z",
+      "last_seen": "2026-10-26T19:05:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 77,
+      "domain": "cern.ch",
+      "url": "https://cern.ch/scientists",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T17:13:13Z",
+      "last_seen": "2026-10-23T17:13:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 508,
+      "domain": "sedo.com",
+      "url": "https://sedo.com",
+      "status_code": 503,
+      "error_message": "HTTP 503",
+      "first_seen": "2026-10-27T06:16:50Z",
+      "last_seen": "2026-10-27T06:21:14Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 503 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 225,
+      "domain": "register.paloaltonetworks.com",
+      "url": "https://register.paloaltonetworks.com/observabilityfortheaiera",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T14:06:12Z",
+      "last_seen": "2026-10-25T14:06:12Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 9,
+      "domain": "pt.wikipedia.org",
+      "url": "https://pt.wikipedia.org/wiki/Crise_cl",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T13:04:10Z",
+      "last_seen": "2026-10-28T11:56:37Z",
+      "attempts": 20,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 138,
+      "domain": "web.dio.me",
+      "url": "https://web.dio.me/track/ibm-bob-ia-nivel-empresarial-para-desenvolvedores",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T18:34:35Z",
+      "last_seen": "2026-10-24T18:34:35Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 429,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=b681e90e-1192-474a-a7cf-068c9a8c367c",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:49:13Z",
+      "last_seen": "2026-10-26T19:49:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
