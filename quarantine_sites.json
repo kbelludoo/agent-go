@@ -1,128 +1,7 @@
 {
-  "last_updated": "2026-10-29T11:08:05Z",
+  "last_updated": "2026-10-29T11:09:03Z",
   "total_quarantine": 660,
   "quarantine_sites": [
-    {
-      "id": 206,
-      "domain": "github.com",
-      "url": "https://github.com/MicrosoftDocs/security/blob/main/security-docs/zero-trust/microsoft-reference-architecture.md",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T10:11:01Z",
-      "last_seen": "2026-10-25T10:11:24Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 91,
-      "domain": "education.github.com",
-      "url": "https://education.github.com/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects",
-      "first_seen": "2026-10-23T18:04:59Z",
-      "last_seen": "2026-10-23T18:04:59Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 114,
-      "domain": "hwpi.harvard.edu",
-      "url": "https://hwpi.harvard.edu/ldcnetwork",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:43:00Z",
-      "last_seen": "2026-10-24T00:45:00Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 150,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/build-freedom-summit",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T19:13:35Z",
-      "last_seen": "2026-10-24T19:14:47Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 15,
-      "domain": "specs.openstack.org",
-      "url": "https://specs.openstack.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:08:34Z",
-      "last_seen": "2026-10-28T12:01:03Z",
-      "attempts": 18,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 115,
-      "domain": "learning.linkedin.com",
-      "url": "https://learning.linkedin.com/pt-br/resources/workplace-learning-report",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-23T23:45:09Z",
-      "last_seen": "2026-10-23T23:57:09Z",
-      "attempts": 12,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 427,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=247a6ac3-3d38-48ca-829d-bce4fd09bc83",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:47:13Z",
-      "last_seen": "2026-10-26T19:47:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 465,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=9e6a72cb-e917-42f3-a61d-c890ce77aaa1",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:50:13Z",
-      "last_seen": "2026-10-26T20:50:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 302,
-      "domain": "www.ftc.gov",
-      "url": "http://www.ftc.gov/foia/sysnot/vi-1.pdf",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T00:37:25Z",
-      "last_seen": "2026-10-26T00:39:37Z",
-      "attempts": 6,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 336,
-      "domain": "www.din.de",
-      "url": "http://www.din.de/gremien/nas/nabd/iso3166ma/",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T03:32:15Z",
-      "last_seen": "2026-10-26T03:49:38Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 415,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=374d5b8f-604d-4cfd-9b8d-cef7055c8c54",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:14:01Z",
-      "last_seen": "2026-10-26T19:14:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
     {
       "id": 482,
       "domain": "eisoukr.guaranteefund.org",
@@ -7260,6 +7139,127 @@
       "first_seen": "2026-10-26T04:19:02Z",
       "last_seen": "2026-10-26T04:46:25Z",
       "attempts": 6,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 206,
+      "domain": "github.com",
+      "url": "https://github.com/MicrosoftDocs/security/blob/main/security-docs/zero-trust/microsoft-reference-architecture.md",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T10:11:01Z",
+      "last_seen": "2026-10-25T10:11:24Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 91,
+      "domain": "education.github.com",
+      "url": "https://education.github.com/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects",
+      "first_seen": "2026-10-23T18:04:59Z",
+      "last_seen": "2026-10-23T18:04:59Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://education.github.com/: Get \"https://github.com/education?locale=pt-br\": stopped after 10 redirects. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 114,
+      "domain": "hwpi.harvard.edu",
+      "url": "https://hwpi.harvard.edu/ldcnetwork",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:43:00Z",
+      "last_seen": "2026-10-24T00:45:00Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 150,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/build-freedom-summit",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T19:13:35Z",
+      "last_seen": "2026-10-24T19:14:47Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 15,
+      "domain": "specs.openstack.org",
+      "url": "https://specs.openstack.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:08:34Z",
+      "last_seen": "2026-10-28T12:01:03Z",
+      "attempts": 18,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 115,
+      "domain": "learning.linkedin.com",
+      "url": "https://learning.linkedin.com/pt-br/resources/workplace-learning-report",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-23T23:45:09Z",
+      "last_seen": "2026-10-23T23:57:09Z",
+      "attempts": 12,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 427,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=247a6ac3-3d38-48ca-829d-bce4fd09bc83",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:47:13Z",
+      "last_seen": "2026-10-26T19:47:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 465,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=9e6a72cb-e917-42f3-a61d-c890ce77aaa1",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:50:13Z",
+      "last_seen": "2026-10-26T20:50:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 302,
+      "domain": "www.ftc.gov",
+      "url": "http://www.ftc.gov/foia/sysnot/vi-1.pdf",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T00:37:25Z",
+      "last_seen": "2026-10-26T00:39:37Z",
+      "attempts": 6,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 336,
+      "domain": "www.din.de",
+      "url": "http://www.din.de/gremien/nas/nabd/iso3166ma/",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T03:32:15Z",
+      "last_seen": "2026-10-26T03:49:38Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 415,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=374d5b8f-604d-4cfd-9b8d-cef7055c8c54",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:14:01Z",
+      "last_seen": "2026-10-26T19:14:01Z",
+      "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
