@@ -1,51 +1,7 @@
 {
-  "last_updated": "2026-10-29T12:49:39Z",
+  "last_updated": "2026-10-29T12:50:39Z",
   "total_quarantine": 664,
   "quarantine_sites": [
-    {
-      "id": 215,
-      "domain": "unsplash.com",
-      "url": "https://unsplash.com/@nkend?utm_source=medium\u0026utm_medium=referral",
-      "status_code": 401,
-      "error_message": "HTTP 401",
-      "first_seen": "2026-10-25T13:09:01Z",
-      "last_seen": "2026-10-25T13:09:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 232,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/non-human-identity-management-group/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-25T15:19:37Z",
-      "last_seen": "2026-10-25T15:19:49Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 252,
-      "domain": "",
-      "url": "https://pt.wikihow.com/Purificar-%C3%8",
-      "status_code": 504,
-      "error_message": "failed to create request: parse \"https://pt.wikihow.com/Purificar-%C3%8\": invalid URL escape \"%8\"",
-      "first_seen": "2026-10-25T16:00:24Z",
-      "last_seen": "2026-10-28T11:56:00Z",
-      "attempts": 17,
-      "diagnosis": "Erro de transporte de rede: failed to create request: parse \"https://pt.wikihow.com/Purificar-%C3%8\": invalid URL escape \"%8\". Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 473,
-      "domain": "elpais.com",
-      "url": "https://elpais.com/subscriptions/#/sign-in?prod=REG5D\u0026o=CABEP\u0026prm=login_cabecera_cincodias\u0026backURL=https%3A%2F%2Fcincodias.elpais.com%2Fcompanias%2F2026-10-26%2Fbayer-sube-con-fuerza-en-bolsa-tras-la-luz-verde-de-china-a-su-medicamento-para-prevenir-el-ictus.html",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T22:14:49Z",
-      "last_seen": "2026-10-26T22:14:49Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 75,
       "domain": "www.who.int",
@@ -7304,6 +7260,50 @@
       "first_seen": "2026-10-28T21:22:02Z",
       "last_seen": "2026-10-28T22:07:49Z",
       "attempts": 6,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 215,
+      "domain": "unsplash.com",
+      "url": "https://unsplash.com/@nkend?utm_source=medium\u0026utm_medium=referral",
+      "status_code": 401,
+      "error_message": "HTTP 401",
+      "first_seen": "2026-10-25T13:09:01Z",
+      "last_seen": "2026-10-25T13:09:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 401 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 232,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/non-human-identity-management-group/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-25T15:19:37Z",
+      "last_seen": "2026-10-25T15:19:49Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 252,
+      "domain": "",
+      "url": "https://pt.wikihow.com/Purificar-%C3%8",
+      "status_code": 504,
+      "error_message": "failed to create request: parse \"https://pt.wikihow.com/Purificar-%C3%8\": invalid URL escape \"%8\"",
+      "first_seen": "2026-10-25T16:00:24Z",
+      "last_seen": "2026-10-28T11:56:00Z",
+      "attempts": 17,
+      "diagnosis": "Erro de transporte de rede: failed to create request: parse \"https://pt.wikihow.com/Purificar-%C3%8\": invalid URL escape \"%8\". Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 473,
+      "domain": "elpais.com",
+      "url": "https://elpais.com/subscriptions/#/sign-in?prod=REG5D\u0026o=CABEP\u0026prm=login_cabecera_cincodias\u0026backURL=https%3A%2F%2Fcincodias.elpais.com%2Fcompanias%2F2026-10-26%2Fbayer-sube-con-fuerza-en-bolsa-tras-la-luz-verde-de-china-a-su-medicamento-para-prevenir-el-ictus.html",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T22:14:49Z",
+      "last_seen": "2026-10-26T22:14:49Z",
+      "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
