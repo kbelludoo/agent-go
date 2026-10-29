@@ -1,7 +1,73 @@
 {
-  "last_updated": "2026-10-29T08:17:39Z",
+  "last_updated": "2026-10-29T08:18:40Z",
   "total_quarantine": 658,
   "quarantine_sites": [
+    {
+      "id": 166,
+      "domain": "se.linkedin.com",
+      "url": "https://se.linkedin.com/in/andreas-axhamre123?trk=article-ssr-frontend-pulse_x-social-details_comments-action_comment_actor-name",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T22:41:36Z",
+      "last_seen": "2026-10-24T23:24:59Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 236,
+      "domain": "tools.be10x.com",
+      "url": "https://tools.be10x.com/ai-career-planner",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T15:22:36Z",
+      "last_seen": "2026-10-25T15:22:36Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 168,
+      "domain": "au.linkedin.com",
+      "url": "https://au.linkedin.com/in/mariachristley",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-24T22:42:12Z",
+      "last_seen": "2026-10-24T23:25:35Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 288,
+      "domain": "www.ietf.org",
+      "url": "https://www.ietf.org/mailman/listinfo/tlp-interest",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-25T21:33:01Z",
+      "last_seen": "2026-10-25T21:33:01Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 318,
+      "domain": "app.readthedocs.com",
+      "url": "https://app.readthedocs.com/dashboard/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T02:16:49Z",
+      "last_seen": "2026-10-26T02:18:01Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 324,
+      "domain": "icu4c-demos.unicode.org",
+      "url": "https://icu4c-demos.unicode.org/icu-bin/translit",
+      "status_code": 429,
+      "error_message": "HTTP 429",
+      "first_seen": "2026-10-26T02:29:49Z",
+      "last_seen": "2026-10-26T02:29:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
+    },
     {
       "id": 393,
       "domain": "uk.linkedin.com",
@@ -7173,72 +7239,6 @@
       "last_seen": "2026-10-29T05:43:37Z",
       "attempts": 2,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 166,
-      "domain": "se.linkedin.com",
-      "url": "https://se.linkedin.com/in/andreas-axhamre123?trk=article-ssr-frontend-pulse_x-social-details_comments-action_comment_actor-name",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T22:41:36Z",
-      "last_seen": "2026-10-24T23:24:59Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 236,
-      "domain": "tools.be10x.com",
-      "url": "https://tools.be10x.com/ai-career-planner",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T15:22:36Z",
-      "last_seen": "2026-10-25T15:22:36Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 168,
-      "domain": "au.linkedin.com",
-      "url": "https://au.linkedin.com/in/mariachristley",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-24T22:42:12Z",
-      "last_seen": "2026-10-24T23:25:35Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 288,
-      "domain": "www.ietf.org",
-      "url": "https://www.ietf.org/mailman/listinfo/tlp-interest",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-25T21:33:01Z",
-      "last_seen": "2026-10-25T21:33:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 318,
-      "domain": "app.readthedocs.com",
-      "url": "https://app.readthedocs.com/dashboard/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T02:16:49Z",
-      "last_seen": "2026-10-26T02:18:01Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 324,
-      "domain": "icu4c-demos.unicode.org",
-      "url": "https://icu4c-demos.unicode.org/icu-bin/translit",
-      "status_code": 429,
-      "error_message": "HTTP 429",
-      "first_seen": "2026-10-26T02:29:49Z",
-      "last_seen": "2026-10-26T02:29:49Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 429 Too Many Requests: Limite de taxa do servidor atingido. Sugestão: Adicionar jitter e delay de re-tentativa exponencial."
     }
   ]
 }
