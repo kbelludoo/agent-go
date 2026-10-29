@@ -1,7 +1,73 @@
 {
-  "last_updated": "2026-10-29T13:46:01Z",
+  "last_updated": "2026-10-29T13:47:48Z",
   "total_quarantine": 664,
   "quarantine_sites": [
+    {
+      "id": 517,
+      "domain": "shutterstock.com",
+      "url": "https://shutterstock.com",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T08:10:38Z",
+      "last_seen": "2026-10-27T08:10:38Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 548,
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30305434/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://pubmed.ncbi.nlm.nih.gov/30305434/: Get \"https://pubmed.ncbi.nlm.nih.gov/30305434/\": context deadline exceeded",
+      "first_seen": "2026-10-27T12:54:48Z",
+      "last_seen": "2026-10-27T12:54:48Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 560,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/TR/privacy-principles/#dfn-privacy",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T18:11:13Z",
+      "last_seen": "2026-10-27T18:20:49Z",
+      "attempts": 12,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 31,
+      "domain": "trust.grafana.com",
+      "url": "https://trust.grafana.com/?pg=hp\u0026plcmt=secure-compliant-proven-button",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:47:58Z",
+      "last_seen": "2026-10-23T22:59:44Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 147,
+      "domain": "w3.ibm.com",
+      "url": "https://w3.ibm.com/w3publisher/w3-privacy-notice",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://w3.ibm.com/w3publisher/w3-privacy-notice: Get \"https://w3.ibm.com/w3publisher/w3-privacy-notice\": dial tcp4: lookup w3.ibm.com on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-24T19:12:23Z",
+      "last_seen": "2026-10-24T19:12:23Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://w3.ibm.com/w3publisher/w3-privacy-notice: Get \"https://w3.ibm.com/w3publisher/w3-privacy-notice\": dial tcp4: lookup w3.ibm.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 29,
+      "domain": "www.w3.org",
+      "url": "https://www.w3.org/",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-23T13:28:57Z",
+      "last_seen": "2026-10-28T12:21:37Z",
+      "attempts": 22,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
     {
       "id": 196,
       "domain": "www.w3.org",
@@ -7238,72 +7304,6 @@
       "first_seen": "2026-10-26T21:58:25Z",
       "last_seen": "2026-10-26T21:58:25Z",
       "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 517,
-      "domain": "shutterstock.com",
-      "url": "https://shutterstock.com",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T08:10:38Z",
-      "last_seen": "2026-10-27T08:10:38Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 548,
-      "domain": "pubmed.ncbi.nlm.nih.gov",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/30305434/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://pubmed.ncbi.nlm.nih.gov/30305434/: Get \"https://pubmed.ncbi.nlm.nih.gov/30305434/\": context deadline exceeded",
-      "first_seen": "2026-10-27T12:54:48Z",
-      "last_seen": "2026-10-27T12:54:48Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 560,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/TR/privacy-principles/#dfn-privacy",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T18:11:13Z",
-      "last_seen": "2026-10-27T18:20:49Z",
-      "attempts": 12,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 31,
-      "domain": "trust.grafana.com",
-      "url": "https://trust.grafana.com/?pg=hp\u0026plcmt=secure-compliant-proven-button",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:47:58Z",
-      "last_seen": "2026-10-23T22:59:44Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 147,
-      "domain": "w3.ibm.com",
-      "url": "https://w3.ibm.com/w3publisher/w3-privacy-notice",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://w3.ibm.com/w3publisher/w3-privacy-notice: Get \"https://w3.ibm.com/w3publisher/w3-privacy-notice\": dial tcp4: lookup w3.ibm.com on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-24T19:12:23Z",
-      "last_seen": "2026-10-24T19:12:23Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://w3.ibm.com/w3publisher/w3-privacy-notice: Get \"https://w3.ibm.com/w3publisher/w3-privacy-notice\": dial tcp4: lookup w3.ibm.com on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 29,
-      "domain": "www.w3.org",
-      "url": "https://www.w3.org/",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-23T13:28:57Z",
-      "last_seen": "2026-10-28T12:21:37Z",
-      "attempts": 22,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
   ]
