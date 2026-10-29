@@ -1,7 +1,172 @@
 {
-  "last_updated": "2026-10-29T06:41:03Z",
-  "total_quarantine": 652,
+  "last_updated": "2026-10-29T06:42:01Z",
+  "total_quarantine": 653,
   "quarantine_sites": [
+    {
+      "id": 304,
+      "domain": "www.facebook.com",
+      "url": "https://www.facebook.com/sharer.php?u=%2fdriftsstatus",
+      "status_code": 500,
+      "error_message": "HTTP 500",
+      "first_seen": "2026-10-26T00:56:13Z",
+      "last_seen": "2026-10-26T00:56:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 524,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/fast-company-brasil/",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-27T09:36:13Z",
+      "last_seen": "2026-10-27T09:37:25Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 539,
+      "domain": "mhonarc.ipmedia.de",
+      "url": "http://mhonarc.ipmedia.de/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://mhonarc.ipmedia.de/: Get \"http://mhonarc.ipmedia.de/\": dial tcp4: lookup mhonarc.ipmedia.de on 127.0.0.53:53: no such host",
+      "first_seen": "2026-10-27T10:12:13Z",
+      "last_seen": "2026-10-27T10:14:13Z",
+      "attempts": 2,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://mhonarc.ipmedia.de/: Get \"http://mhonarc.ipmedia.de/\": dial tcp4: lookup mhonarc.ipmedia.de on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 305,
+      "domain": "www.facebook.com",
+      "url": "https://www.facebook.com/sharer.php?u=%2fnyheder",
+      "status_code": 500,
+      "error_message": "HTTP 500",
+      "first_seen": "2026-10-26T00:56:49Z",
+      "last_seen": "2026-10-26T00:56:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
+    },
+    {
+      "id": 367,
+      "domain": "dk.linkedin.com",
+      "url": "https://dk.linkedin.com/company/oekonomistyrelsen?trk=organization_guest_main-feed-card_feed-actor-name",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-26T14:09:25Z",
+      "last_seen": "2026-10-26T14:09:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 379,
+      "domain": "secure.hulu.com",
+      "url": "https://secure.hulu.com/account",
+      "status_code": 406,
+      "error_message": "HTTP 406",
+      "first_seen": "2026-10-26T17:18:25Z",
+      "last_seen": "2026-10-26T17:18:25Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 406 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 457,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=a4f34623-63cf-4716-b3ca-95fb1b1e7d83",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T20:42:13Z",
+      "last_seen": "2026-10-26T20:42:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 275,
+      "domain": "www.cidadao.sp.gov.br",
+      "url": "http://www.cidadao.sp.gov.br",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.cidadao.sp.gov.br: Get \"http://www.cidadao.sp.gov.br\": dial tcp4: lookup www.cidadao.sp.gov.br on 127.0.0.53:53: server misbehaving",
+      "first_seen": "2026-10-25T18:55:49Z",
+      "last_seen": "2026-10-25T18:55:49Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.cidadao.sp.gov.br: Get \"http://www.cidadao.sp.gov.br\": dial tcp4: lookup www.cidadao.sp.gov.br on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
+      "id": 423,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=c9ef2674-a52b-4393-8ba2-e4cc013cef9f",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:43:13Z",
+      "last_seen": "2026-10-26T19:43:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 502,
+      "domain": "scholar.harvard.edu",
+      "url": "https://scholar.harvard.edu/files/kremer/files/amc_pp_20_20_01_13.pdf",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://scholar.harvard.edu/files/kremer/files/amc_pp_20_20_01_13.pdf: Get \"https://scholar.harvard.edu/files/kremer/files/amc_pp_20_20_01_13.pdf\": context deadline exceeded",
+      "first_seen": "2026-10-27T05:52:24Z",
+      "last_seen": "2026-10-27T05:52:24Z",
+      "attempts": 1,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 511,
+      "domain": "www.linkedin.com",
+      "url": "https://www.linkedin.com/company/the-manila-times",
+      "status_code": 999,
+      "error_message": "HTTP 999",
+      "first_seen": "2026-10-27T06:30:13Z",
+      "last_seen": "2026-10-27T06:39:25Z",
+      "attempts": 3,
+      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 621,
+      "domain": "www.gnu.org",
+      "url": "http://www.gnu.org/software/classpath/license.html",
+      "status_code": 504,
+      "error_message": "failed to fetch URL http://www.gnu.org/software/classpath/license.html: Get \"http://www.gnu.org/software/classpath/license.html\": dial tcp4: lookup www.gnu.org: i/o timeout",
+      "first_seen": "2026-10-28T21:21:48Z",
+      "last_seen": "2026-10-28T22:07:24Z",
+      "attempts": 3,
+      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
+    },
+    {
+      "id": 118,
+      "domain": "analytics.scielo.org",
+      "url": "https://analytics.scielo.org/w/accesses?collection=scl",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-24T00:55:47Z",
+      "last_seen": "2026-10-24T00:55:47Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 113,
+      "domain": "www.scielo.org",
+      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-24T00:42:05Z",
+      "last_seen": "2026-10-24T00:55:33Z",
+      "attempts": 2,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 405,
+      "domain": "accounts.shopify.com",
+      "url": "https://accounts.shopify.com/signup/whatsapp?rid=b5687534-094e-4f0c-b60f-e78e48b79d8f",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-26T19:07:13Z",
+      "last_seen": "2026-10-26T19:07:13Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
     {
       "id": 572,
       "domain": "www.statcan.gc.ca",
@@ -1627,6 +1792,17 @@
       "error_message": "HTTP 404",
       "first_seen": "2026-10-27T05:39:37Z",
       "last_seen": "2026-10-27T05:39:37Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 653,
+      "domain": "twitter.com",
+      "url": "https://twitter.com/rocknightgames",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-29T06:42:01Z",
+      "last_seen": "2026-10-29T06:42:01Z",
       "attempts": 1,
       "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     },
@@ -7008,171 +7184,6 @@
       "last_seen": "2026-10-28T12:11:48Z",
       "attempts": 4,
       "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 304,
-      "domain": "www.facebook.com",
-      "url": "https://www.facebook.com/sharer.php?u=%2fdriftsstatus",
-      "status_code": 500,
-      "error_message": "HTTP 500",
-      "first_seen": "2026-10-26T00:56:13Z",
-      "last_seen": "2026-10-26T00:56:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 524,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/fast-company-brasil/",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-27T09:36:13Z",
-      "last_seen": "2026-10-27T09:37:25Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 539,
-      "domain": "mhonarc.ipmedia.de",
-      "url": "http://mhonarc.ipmedia.de/",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://mhonarc.ipmedia.de/: Get \"http://mhonarc.ipmedia.de/\": dial tcp4: lookup mhonarc.ipmedia.de on 127.0.0.53:53: no such host",
-      "first_seen": "2026-10-27T10:12:13Z",
-      "last_seen": "2026-10-27T10:14:13Z",
-      "attempts": 2,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://mhonarc.ipmedia.de/: Get \"http://mhonarc.ipmedia.de/\": dial tcp4: lookup mhonarc.ipmedia.de on 127.0.0.53:53: no such host. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 305,
-      "domain": "www.facebook.com",
-      "url": "https://www.facebook.com/sharer.php?u=%2fnyheder",
-      "status_code": 500,
-      "error_message": "HTTP 500",
-      "first_seen": "2026-10-26T00:56:49Z",
-      "last_seen": "2026-10-26T00:56:49Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 500 Gateway/Server Error: Servidor de destino com instabilidade temporária. Sugestão: Re-enfileirar após 15 minutos."
-    },
-    {
-      "id": 367,
-      "domain": "dk.linkedin.com",
-      "url": "https://dk.linkedin.com/company/oekonomistyrelsen?trk=organization_guest_main-feed-card_feed-actor-name",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-26T14:09:25Z",
-      "last_seen": "2026-10-26T14:09:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 379,
-      "domain": "secure.hulu.com",
-      "url": "https://secure.hulu.com/account",
-      "status_code": 406,
-      "error_message": "HTTP 406",
-      "first_seen": "2026-10-26T17:18:25Z",
-      "last_seen": "2026-10-26T17:18:25Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 406 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 457,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=a4f34623-63cf-4716-b3ca-95fb1b1e7d83",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T20:42:13Z",
-      "last_seen": "2026-10-26T20:42:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 275,
-      "domain": "www.cidadao.sp.gov.br",
-      "url": "http://www.cidadao.sp.gov.br",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.cidadao.sp.gov.br: Get \"http://www.cidadao.sp.gov.br\": dial tcp4: lookup www.cidadao.sp.gov.br on 127.0.0.53:53: server misbehaving",
-      "first_seen": "2026-10-25T18:55:49Z",
-      "last_seen": "2026-10-25T18:55:49Z",
-      "attempts": 1,
-      "diagnosis": "Erro de transporte de rede: failed to fetch URL http://www.cidadao.sp.gov.br: Get \"http://www.cidadao.sp.gov.br\": dial tcp4: lookup www.cidadao.sp.gov.br on 127.0.0.53:53: server misbehaving. Sugestão: Verificar rota de egress e resolução DNS."
-    },
-    {
-      "id": 423,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=c9ef2674-a52b-4393-8ba2-e4cc013cef9f",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:43:13Z",
-      "last_seen": "2026-10-26T19:43:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 502,
-      "domain": "scholar.harvard.edu",
-      "url": "https://scholar.harvard.edu/files/kremer/files/amc_pp_20_20_01_13.pdf",
-      "status_code": 504,
-      "error_message": "failed to fetch URL https://scholar.harvard.edu/files/kremer/files/amc_pp_20_20_01_13.pdf: Get \"https://scholar.harvard.edu/files/kremer/files/amc_pp_20_20_01_13.pdf\": context deadline exceeded",
-      "first_seen": "2026-10-27T05:52:24Z",
-      "last_seen": "2026-10-27T05:52:24Z",
-      "attempts": 1,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 511,
-      "domain": "www.linkedin.com",
-      "url": "https://www.linkedin.com/company/the-manila-times",
-      "status_code": 999,
-      "error_message": "HTTP 999",
-      "first_seen": "2026-10-27T06:30:13Z",
-      "last_seen": "2026-10-27T06:39:25Z",
-      "attempts": 3,
-      "diagnosis": "HTTP 999 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 621,
-      "domain": "www.gnu.org",
-      "url": "http://www.gnu.org/software/classpath/license.html",
-      "status_code": 504,
-      "error_message": "failed to fetch URL http://www.gnu.org/software/classpath/license.html: Get \"http://www.gnu.org/software/classpath/license.html\": dial tcp4: lookup www.gnu.org: i/o timeout",
-      "first_seen": "2026-10-28T21:21:48Z",
-      "last_seen": "2026-10-28T22:07:24Z",
-      "attempts": 3,
-      "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
-    },
-    {
-      "id": 118,
-      "domain": "analytics.scielo.org",
-      "url": "https://analytics.scielo.org/w/accesses?collection=scl",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-24T00:55:47Z",
-      "last_seen": "2026-10-24T00:55:47Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 113,
-      "domain": "www.scielo.org",
-      "url": "http://www.scielo.org/applications/scielo-org/php/secondLevel.php?xml=secondLevelForSubjectByLetter\u0026xsl=secondLevelForSubjectByLetter",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-24T00:42:05Z",
-      "last_seen": "2026-10-24T00:55:33Z",
-      "attempts": 2,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 405,
-      "domain": "accounts.shopify.com",
-      "url": "https://accounts.shopify.com/signup/whatsapp?rid=b5687534-094e-4f0c-b60f-e78e48b79d8f",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-26T19:07:13Z",
-      "last_seen": "2026-10-26T19:07:13Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
     }
   ]
 }
