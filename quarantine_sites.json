@@ -1,51 +1,7 @@
 {
-  "last_updated": "2026-10-29T02:08:03Z",
-  "total_quarantine": 630,
+  "last_updated": "2026-10-29T02:09:03Z",
+  "total_quarantine": 631,
   "quarantine_sites": [
-    {
-      "id": 127,
-      "domain": "twitter.com",
-      "url": "https://twitter.com/intent/tweet?url=http://www.nngroup.com/articles/designing-effective-carousels/\u0026text=Carousel Usability: Designing an Effective UI for Websites with Content Overload\u0026via=nngroup",
-      "status_code": 400,
-      "error_message": "HTTP 400",
-      "first_seen": "2026-10-24T09:39:47Z",
-      "last_seen": "2026-10-24T11:15:22Z",
-      "attempts": 37,
-      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 238,
-      "domain": "twitter.com",
-      "url": "https://twitter.com/programmingline",
-      "status_code": 404,
-      "error_message": "HTTP 404",
-      "first_seen": "2026-10-25T15:24:49Z",
-      "last_seen": "2026-10-25T15:24:49Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
-    },
-    {
-      "id": 469,
-      "domain": "www.sciencedirect.com",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0277379121000743",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-26T22:04:49Z",
-      "last_seen": "2026-10-26T22:04:49Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
-    {
-      "id": 491,
-      "domain": "aidirs.org",
-      "url": "https://aidirs.org",
-      "status_code": 403,
-      "error_message": "HTTP 403",
-      "first_seen": "2026-10-27T04:57:01Z",
-      "last_seen": "2026-10-27T04:57:01Z",
-      "attempts": 1,
-      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
-    },
     {
       "id": 203,
       "domain": "www.w3.org",
@@ -4799,6 +4755,17 @@
       "diagnosis": "Timeout de conexão: Servidor lento ou conexão descartada pelo firewall. Sugestão: Aumentar timeout ou chavear TLS dialer."
     },
     {
+      "id": 631,
+      "domain": "www.forbrukslån.no",
+      "url": "https://www.forbruksl%C3%A5n.no/l%C3%A5n-p%C3%A5-dagen/",
+      "status_code": 504,
+      "error_message": "failed to fetch URL https://www.forbruksl%C3%A5n.no/l%C3%A5n-p%C3%A5-dagen/: Get \"https://www.forbruksl%C3%A5n.no/l%C3%A5n-p%C3%A5-dagen/\": dial tcp4: lookup www.forbrukslån.no: no such host",
+      "first_seen": "2026-10-29T02:08:48Z",
+      "last_seen": "2026-10-29T02:08:48Z",
+      "attempts": 1,
+      "diagnosis": "Erro de transporte de rede: failed to fetch URL https://www.forbruksl%C3%A5n.no/l%C3%A5n-p%C3%A5-dagen/: Get \"https://www.forbruksl%C3%A5n.no/l%C3%A5n-p%C3%A5-dagen/\": dial tcp4: lookup www.forbrukslån.no: no such host. Sugestão: Verificar rota de egress e resolução DNS."
+    },
+    {
       "id": 214,
       "domain": "stackoverflow.com",
       "url": "https://stackoverflow.com/questions/48173979/why-is-webassembly-function-almost-300-time-slower-than-same-js-function",
@@ -6929,6 +6896,50 @@
       "error_message": "HTTP 403",
       "first_seen": "2026-10-27T09:50:49Z",
       "last_seen": "2026-10-27T09:50:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 127,
+      "domain": "twitter.com",
+      "url": "https://twitter.com/intent/tweet?url=http://www.nngroup.com/articles/designing-effective-carousels/\u0026text=Carousel Usability: Designing an Effective UI for Websites with Content Overload\u0026via=nngroup",
+      "status_code": 400,
+      "error_message": "HTTP 400",
+      "first_seen": "2026-10-24T09:39:47Z",
+      "last_seen": "2026-10-24T11:15:22Z",
+      "attempts": 37,
+      "diagnosis": "HTTP 400 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 238,
+      "domain": "twitter.com",
+      "url": "https://twitter.com/programmingline",
+      "status_code": 404,
+      "error_message": "HTTP 404",
+      "first_seen": "2026-10-25T15:24:49Z",
+      "last_seen": "2026-10-25T15:24:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 404 inesperado. Salvo para análise e aprimoramento do motor de navegação."
+    },
+    {
+      "id": 469,
+      "domain": "www.sciencedirect.com",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0277379121000743",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-26T22:04:49Z",
+      "last_seen": "2026-10-26T22:04:49Z",
+      "attempts": 1,
+      "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
+    },
+    {
+      "id": 491,
+      "domain": "aidirs.org",
+      "url": "https://aidirs.org",
+      "status_code": 403,
+      "error_message": "HTTP 403",
+      "first_seen": "2026-10-27T04:57:01Z",
+      "last_seen": "2026-10-27T04:57:01Z",
       "attempts": 1,
       "diagnosis": "HTTP 403 Forbidden: WAF / Cloudflare acionado (IP de Datacenter detectado). Sugestão: Ativar rotação com IP residencial ou simular cookies prévios com stealth."
     }
